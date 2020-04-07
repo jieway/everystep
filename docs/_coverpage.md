@@ -6,4 +6,4 @@
 
 
 [GitHub](https://github.com/weijiew/klog)
-[Get Started](#klog)
+[Get Started](#knowledge-log)
