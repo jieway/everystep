@@ -2,7 +2,7 @@
 
 # weijiew
 
-> 记录学习课程，总结知识，沉淀自我，欢迎指正。
+> 记录一些知识。
 
 
 [GitHub](https://github.com/weijiew/klog)
