@@ -1,4 +1,4 @@
-# knowledge-log
+# klog
 记录一些所学知识，欢迎指正！本文档采用 [docsify](https://docsify.js.org/) 部署。
 
 # 目录
