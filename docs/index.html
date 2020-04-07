@@ -67,7 +67,7 @@
       noEmoji: false,
       // logo: '/_media/巴黎.png', 
       name: 'klog', 
-      repo: 'klog',
+      repo: 'weijiew/klog',
 
       // 设置更新日期
       formatUpdated: '{MM}/{DD} {HH}:{mm}',
@@ -84,6 +84,7 @@
         color:'rgb(90,90,90)',
         language:'chinese'
       },
+
       // 插件
       plugins: [
       // footer
@@ -143,23 +144,23 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script>
-    var gitalk = new Gitalk({
+    const gitalk = new Gitalk({
       clientID: '95a353220012cf99aabf',
       clientSecret: '05fcdc0d96677264caad3b8b6142d502f80a2761',
       repo: 'klog',
       owner: 'weijiew',
       admin: ['weijiew'],
-      title: location.hash.match(/#(.*?)([?]|$)/)[1],
-      id: location.hash.match(/#(.*?)([?]|$)/)[1],
+      // title: location.hash.match(/#(.*?)([?]|$)/)[1],
+      // id: location.hash.match(/#(.*?)([?]|$)/)[1],
       // facebook-like distraction free mode
       // distractionFreeMode: false
     })
       // 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题。
-      window.onhashchange = function(event){
-      if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
-          location.reload()
-        }
-      }
+      // window.onhashchange = function(event){
+      // if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
+      //     location.reload()
+      //   }
+      // }
 
   </script>
 
