@@ -16,7 +16,12 @@
       ga: 'UA-144595390-1',
       
       // 搜索
-      search: 'auto', 
+      search: {
+          maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+          noData: '找不到结果',//搜索不到结果时显示
+          paths: 'auto',//自动
+          placeholder: '搜索',//搜索框提示
+      }, 
       
       // 主题色彩
       themeColor: '#3F51B5', 
@@ -99,7 +104,7 @@
       plugins: [
       function(hook, vm) {
         hook.beforeEach(function (html) {
-          var url = 'https://github.com/weijiew/klog/blob/master/docs/README.md' + vm.route.file
+          var url = 'https://github.com/weijiew/klog/blob/master/docs/README.md/' + vm.route.file
           var editHtml = '[📝 EDIT DOCUMENT](' + url + ')\n'
 
           return editHtml
@@ -111,6 +116,8 @@
       }
     ]
     }
+    
+
     
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
@@ -141,10 +148,19 @@
       clientSecret: '05fcdc0d96677264caad3b8b6142d502f80a2761',
       repo: 'klog',
       owner: 'weijiew',
-      admin: 'weijiew',
+      admin: ['weijiew'],
+      title: location.hash.match(/#(.*?)([?]|$)/)[1],
+      id: location.hash.match(/#(.*?)([?]|$)/)[1],
       // facebook-like distraction free mode
       distractionFreeMode: false
     })
+      // 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题。
+      window.onhashchange = function(event){
+      if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
+          location.reload()
+        }
+      }
+
   </script>
 
   <!-- 离线模式 -->
