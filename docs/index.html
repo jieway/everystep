@@ -66,9 +66,8 @@
       // 不解析 emoji ， false 解析，true 不解析。 
       noEmoji: false,
       // logo: '/_media/巴黎.png', 
-      
-      name: 'step', 
-      repo: '',
+      name: 'klog', 
+      repo: 'klog',
 
       // 设置更新日期
       formatUpdated: '{MM}/{DD} {HH}:{mm}',
@@ -85,9 +84,9 @@
         color:'rgb(90,90,90)',
         language:'chinese'
       },
-
-      // footer
+      // 插件
       plugins: [
+      // footer
       function (hook) {
         var footer = [
           '<hr/>',
@@ -99,13 +98,11 @@
         hook.afterEach(function (html) {
           return html + footer
         })
-      }
-    ],
-    // 编辑
-      plugins: [
+      },
+      // 编辑
       function(hook, vm) {
         hook.beforeEach(function (html) {
-          var url = 'https://github.com/weijiew/klog/blob/master/docs/README.md/' + vm.route.file
+          var url = 'https://github.com/weijiew/klog/blob/master/docs/' + vm.route.file
           var editHtml = '[📝 EDIT DOCUMENT](' + url + ')\n'
 
           return editHtml
@@ -115,13 +112,12 @@
             + editHtml
         })
       }
-    ]
-    }
-    
-
-    
+    ],
+  }
+        
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  
   <!-- 谷歌统计 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
   
@@ -133,18 +129,21 @@
   
   <!-- 上一页，下一页 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  
+  <!-- 代码高亮 -->
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-cpp.min.js"></script>
   
   <!-- 字数统计 -->
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  
   <!-- 评论插件 -->
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script>
-    const gitalk = new Gitalk({
+    var gitalk = new Gitalk({
       clientID: '95a353220012cf99aabf',
       clientSecret: '05fcdc0d96677264caad3b8b6142d502f80a2761',
       repo: 'klog',
@@ -153,7 +152,7 @@
       title: location.hash.match(/#(.*?)([?]|$)/)[1],
       id: location.hash.match(/#(.*?)([?]|$)/)[1],
       // facebook-like distraction free mode
-      distractionFreeMode: false
+      // distractionFreeMode: false
     })
       // 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题。
       window.onhashchange = function(event){
@@ -171,8 +170,7 @@
     }
   </script>
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css"/>
-<script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
-
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css"/>
+  <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
 </body>
 </html>
