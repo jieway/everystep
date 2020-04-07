@@ -1,0 +1,869 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>二分搜索 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="二叉树.html" />
+    
+    
+    <link rel="prev" href="图论.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">算法导论</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../算法导论/堆排序.html">
+            
+                <a href="../算法导论/堆排序.html">
+            
+                    
+                    第六章：堆排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">算法笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="基础算法.html">
+            
+                <a href="基础算法.html">
+            
+                    
+                    基础算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="链表.html">
+            
+                <a href="链表.html">
+            
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="图论.html">
+            
+                <a href="图论.html">
+            
+                    
+                    图论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="二分搜索.html">
+            
+                <a href="二分搜索.html">
+            
+                    
+                    二分搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="二叉树.html">
+            
+                <a href="二叉树.html">
+            
+                    
+                    二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="排序.html">
+            
+                <a href="排序.html">
+            
+                    
+                    排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="STL.html">
+            
+                <a href="STL.html">
+            
+                    
+                    STL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="字符串.html">
+            
+                <a href="字符串.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="数学.html">
+            
+                <a href="数学.html">
+            
+                    
+                    数学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="广搜.html">
+            
+                <a href="广搜.html">
+            
+                    
+                    广搜
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../算法比较/搜索.md">
+            
+                <span>
+            
+                    
+                    搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="乙级.html">
+            
+                <a href="乙级.html">
+            
+                    
+                    PAT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="甲级.html">
+            
+                <a href="甲级.html">
+            
+                    
+                    PAT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="动态规划.html">
+            
+                <a href="动态规划.html">
+            
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="贪心.html">
+            
+                <a href="贪心.html">
+            
+                    
+                    贪心
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">数据库</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../数据库/题目.html">
+            
+                <a href="../数据库/题目.html">
+            
+                    
+                    题目
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">汇编语言</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../汇编语言/基础知识.html">
+            
+                <a href="../汇编语言/基础知识.html">
+            
+                    
+                    基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../汇编语言/寄存器.html">
+            
+                <a href="../汇编语言/寄存器.html">
+            
+                    
+                    寄存器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../汇编语言/寄存器">
+            
+                <span>
+            
+                    
+                    寄存器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../汇编语言/第一个程序.html">
+            
+                <a href="../汇编语言/第一个程序.html">
+            
+                    
+                    第一个程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">计算机网络</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../计算机网络/概述.html">
+            
+                <a href="../计算机网络/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../计算机网络/物理层.html">
+            
+                <a href="../计算机网络/物理层.html">
+            
+                    
+                    物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../计算机网络/数据链路层.html">
+            
+                <a href="../计算机网络/数据链路层.html">
+            
+                    
+                    数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../计算机网络/网络层.html">
+            
+                <a href="../计算机网络/网络层.html">
+            
+                    
+                    网络层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../计算机网络/传输层.html">
+            
+                <a href="../计算机网络/传输层.html">
+            
+                    
+                    传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../计算机网络/应用层.html">
+            
+                <a href="../计算机网络/应用层.html">
+            
+                    
+                    应用层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../计算机网络/网络安全.html">
+            
+                <a href="../计算机网络/网络安全.html">
+            
+                    
+                    网络安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">操作系统</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../操作系统/概述.html">
+            
+                <a href="../操作系统/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../操作系统/lab0-环境搭建.html">
+            
+                <a href="../操作系统/lab0-环境搭建.html">
+            
+                    
+                    lab0-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../操作系统/lab1.html">
+            
+                <a href="../操作系统/lab1.html">
+            
+                    
+                    lab1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../操作系统/lab2.html">
+            
+                <a href="../操作系统/lab2.html">
+            
+                    
+                    lab2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../操作系统/lab3.html">
+            
+                <a href="../操作系统/lab3.html">
+            
+                    
+                    lab3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="../操作系统/lab4.html">
+            
+                <a href="../操作系统/lab4.html">
+            
+                    
+                    lab4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="../操作系统/lab5.html">
+            
+                <a href="../操作系统/lab5.html">
+            
+                    
+                    lab5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="../操作系统/lab6.html">
+            
+                <a href="../操作系统/lab6.html">
+            
+                    
+                    lab6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="../操作系统/lab7.html">
+            
+                <a href="../操作系统/lab7.html">
+            
+                    
+                    lab7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="../操作系统/lab8.html">
+            
+                <a href="../操作系统/lab8.html">
+            
+                    
+                    lab8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="../Python-程序设计/概述.html">
+            
+                <a href="../Python-程序设计/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">英语</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../英语/听力练习.html">
+            
+                <a href="../英语/听力练习.html">
+            
+                    
+                    听力练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../CET-4/2019-12-笔记.html">
+            
+                <a href="../CET-4/2019-12-笔记.html">
+            
+                    
+                    2019-12-笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">政治</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../政治/概述.html">
+            
+                <a href="../政治/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >二分搜索</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="540-single-element-in-a-sorted-array">540. Single Element in a Sorted Array</h1>
+<p><a href="https://leetcode-cn.com/problems/single-element-in-a-sorted-array/" target="_blank">&#x4F20;&#x9001;&#x95E8;</a></p>
+<h2 id="&#x601D;&#x8003;">&#x601D;&#x8003;</h2>
+<p>&#x9996;&#x5148;&#x6709;&#x5E8F;&#xFF0C;&#x5176;&#x6B21;&#x6709;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x51FA;&#x73B0;&#x4E00;&#x6B21;&#x3002;&#x6CE8;&#x610F;&#x6570;&#x7EC4;&#x4E0D;&#x8981;&#x8D8A;&#x754C;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">singleNonDuplicate</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] nums)</span> </span>{
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.length - <span class="hljs-number">1</span>; i = i + <span class="hljs-number">2</span>) {
+            <span class="hljs-keyword">if</span> (nums[i] != nums[i + <span class="hljs-number">1</span>]) {
+                <span class="hljs-keyword">return</span> nums[i];
+            }
+        }
+        <span class="hljs-keyword">return</span> nums[nums.length - <span class="hljs-number">1</span>];
+    }
+}
+</code></pre>
+<ul>
+<li>&#x9488;&#x5BF9;&#x5076;&#x6570;&#x4F4D;&#x8FDB;&#x884C;&#x4E8C;&#x5206;&#x641C;&#x7D22;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5728;&#x5076;&#x6570;&#x4F4D;&#x4E0A;&#x5C31;&#x540E;&#x9000;&#x4E00;&#x4F4D;&#x4FDD;&#x8BC1;&#x5904;&#x4E8E;&#x5076;&#x6570;&#x4F4D;&#x4E0A;&#x3002;<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">singleNonDuplicate</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] nums)</span> </span>{
+      <span class="hljs-keyword">int</span> lo = <span class="hljs-number">0</span>;
+      <span class="hljs-keyword">int</span> hi = nums.length - <span class="hljs-number">2</span>;
+      <span class="hljs-keyword">while</span> (lo &lt; hi) {
+          <span class="hljs-keyword">int</span> mid = lo + (hi - lo) / <span class="hljs-number">2</span>;
+          <span class="hljs-keyword">if</span> (mid % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>) {
+              mid--;
+          }
+          <span class="hljs-keyword">if</span> (nums[mid] == nums[mid + <span class="hljs-number">1</span>] ) {
+              hi = mid;
+          }<span class="hljs-keyword">else</span> {
+              lo = mid + <span class="hljs-number">2</span>;
+          }
+      }
+      <span class="hljs-keyword">return</span> nums[lo];
+  }
+}
+</code></pre>
+</li>
+</ul>
+<p>&#xB7;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="图论.html" class="navigation navigation-prev " aria-label="Previous page: 图论">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="二叉树.html" class="navigation navigation-next " aria-label="Next page: 二叉树">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"二分搜索","level":"3.4","depth":1,"next":{"title":"二叉树","level":"3.5","depth":1,"path":"算法笔记/二叉树.md","ref":"算法笔记/二叉树.md","articles":[]},"previous":{"title":"图论","level":"3.3","depth":1,"path":"算法笔记/图论.md","ref":"算法笔记/图论.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"算法笔记/二分搜索.md","mtime":"2020-02-09T07:44:48.765Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-05T12:14:35.891Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
