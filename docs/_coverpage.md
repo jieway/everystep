@@ -6,4 +6,4 @@
 
 
 [GitHub](https://github.com/weijiew/klog)
-[Get Started](#CS基础知识)
+[Get Started](#Knowledge-log)
