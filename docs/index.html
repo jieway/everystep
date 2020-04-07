@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+</head>
+<body>
+  <div id="app">Please wait...</div>
+  <script>
+    window.$docsify = {
+      // 谷歌分析
+      ga: 'UA-144595390-1',
+      
+      // 搜索
+      search: 'auto', 
+      
+      // 主题色彩
+      themeColor: '#3F51B5', 
+      
+      // 黑暗模式
+      darkMode: {
+        dark: {
+          background: "#232129",
+          toggleBtnBg: "#ff5874",
+          textColor: "white"
+        },
+        light: {
+          background: "#f6f6f6",
+          toggleBtnBg: "#6c5ce7",
+          textColor: "black"
+        }
+      },
+      // 隐藏侧边栏 
+      hideSidebar: false,
+      // 更改路线时滑动到屏幕顶部
+      auto2top: true,
+      // 设置封面 
+      coverpage: true,  
+      onlyCover: false,
+
+      // 加载侧边栏，也就是加载对应得 _sidebar.md 文件
+      loadSidebar: true,
+      autoHeader: true,
+
+      // 小屏设备合并导航栏到侧边栏。
+      mergeNavbar: true,
+      loadNavbar: false, 
+      notFoundPage: true,
+        // topMargin: 90, // default: 0
+      subMaxLevel: 0,
+      // 不解析 emoji ， false 解析，true 不解析。 
+      noEmoji: false,
+      // logo: '/_media/巴黎.png', 
+      
+      name: 'step', 
+      repo: '',
+
+      // 设置更新日期
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      formatUpdated: function(time) {
+      // ...
+
+        return time;
+      },
+
+      // 字数统计
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese'
+      },
+
+      // footer
+      plugins: [
+      function (hook) {
+        var footer = [
+          '<hr/>',
+          '<footer>',
+          '<span><a href="https://github.com/weijiew">weijiew</a> &copy;2020.</span>',
+          '</footer>'
+        ].join('')
+
+        hook.afterEach(function (html) {
+          return html + footer
+        })
+      }
+    ],
+      plugins: [
+      function(hook, vm) {
+        hook.beforeEach(function (html) {
+          var url = 'https://github.com/docsifyjs/docsify/blob/master/docs' + vm.route.file
+          var editHtml = '[📝 EDIT DOCUMENT](' + url + ')\n'
+
+          return editHtml
+            + html
+            + '\n----\n'
+            + 'Last modified {docsify-updated} '
+            + editHtml
+        })
+      }
+    ]
+    }
+    
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!-- 谷歌统计 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+  
+  <!-- 搜索 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  
+  <!-- 代码复制 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  
+  <!-- 上一页，下一页 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-cpp.min.js"></script>
+  
+  <!-- 字数统计 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- 评论插件 -->
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+
+  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'ee05c85bee82ca9d119c',
+      clientSecret: 'f253794ac406dab419928cd3fe355c8d9e4c2a4d',
+      repo: 'klog',
+      owner: 'weijiew',
+      admin: ['weijiew'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+  </script>
+
+  <!-- 离线模式 -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css"/>
+<script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
+
+</body>
+</html>
