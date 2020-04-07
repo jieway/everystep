@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </head>
 <body>
@@ -33,10 +34,13 @@
           textColor: "black"
         }
       },
+      
       // 隐藏侧边栏 
       hideSidebar: false,
+      
       // 更改路线时滑动到屏幕顶部
       auto2top: true,
+      
       // 设置封面 
       coverpage: true,  
       onlyCover: false,
@@ -49,8 +53,10 @@
       mergeNavbar: true,
       loadNavbar: false, 
       notFoundPage: true,
-        // topMargin: 90, // default: 0
+      
+      // topMargin: 90, // default: 0
       subMaxLevel: 0,
+      
       // 不解析 emoji ， false 解析，true 不解析。 
       noEmoji: false,
       // logo: '/_media/巴黎.png', 
@@ -89,10 +95,11 @@
         })
       }
     ],
+    // 编辑
       plugins: [
       function(hook, vm) {
         hook.beforeEach(function (html) {
-          var url = 'https://github.com/docsifyjs/docsify/blob/master/docs' + vm.route.file
+          var url = 'https://github.com/weijiew/klog/blob/master/docs/README.md' + vm.route.file
           var editHtml = '[📝 EDIT DOCUMENT](' + url + ')\n'
 
           return editHtml
@@ -126,13 +133,12 @@
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
   <!-- 评论插件 -->
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
-
-  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script>
     const gitalk = new Gitalk({
-      clientID: 'ee05c85bee82ca9d119c',
-      clientSecret: 'f253794ac406dab419928cd3fe355c8d9e4c2a4d',
+      clientID: '95a353220012cf99aabf',
+      clientSecret: '05fcdc0d96677264caad3b8b6142d502f80a2761',
       repo: 'klog',
       owner: 'weijiew',
       admin: ['weijiew'],
