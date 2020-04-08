@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="_media/巴黎.png" /> 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
-  
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </head>
 <body>
@@ -15,6 +14,7 @@
     window.$docsify = {
       // 谷歌分析
       ga: 'UA-144595390-1',
+
       // 搜索
       search: {
           maxAge: 86400000, // 过期时间，单位毫秒，默认一天
@@ -61,21 +61,13 @@
       
       // topMargin: 90, // default: 0
       subMaxLevel: 0,
-      
+      executeScript: true,
       // 不解析 emoji ， false 解析，true 不解析。 
       noEmoji: false,
       // logo: '/_media/巴黎.png', 
       name: 'klog', 
       repo: 'weijiew/klog',
-
-      // 设置更新日期
-      formatUpdated: '{MM}/{DD} {HH}:{mm}',
-      formatUpdated: function(time) {
-      // ...
-
-        return time;
-      },
-
+      homepage: 'home.md',
       // 字数统计
       count:{
         countable:true,
@@ -112,7 +104,7 @@
             + editHtml
         })
       }
-    ],
+    ]
   }
         
   </script>
