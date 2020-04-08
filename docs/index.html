@@ -1,82 +1,378 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
-  <link rel="shortcut icon" href="_media/巴黎.png" /> 
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <title>Klog</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <link rel="shortcut icon" href="favicon.ico" /> 
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <!-- 将自定义样式放在 Github 上会导致加载速度变得非常慢，所以采取直接内嵌的方式 -->
+    <style type="text/css">
+
+    /* 隐藏头部的目录 */
+    #main>ul:nth-child(1) {
+        display: none;
+    }
+
+    #main>ul:nth-child(2) {
+        display: none;
+    }
+
+    .markdown-section h1 {
+        margin: 3rem 0 2rem 0;
+    }
+
+    .markdown-section h2 {
+        margin: 2rem 0 1rem;
+    }
+
+    img,
+    pre {
+        border-radius: 8px;
+    }
+
+    .content,
+    .sidebar,
+    .markdown-section,
+    body,
+    .search input {
+        background-color: rgba(243, 242, 238, 1) !important;
+    }
+
+    @media (min-width:600px) {
+        .sidebar-toggle {
+            background-color: #f3f2ee;
+        }
+    }
+
+    .docsify-copy-code-button {
+        background: #f8f8f8 !important;
+        color: #7a7a7a !important;
+    }
+
+    body {
+        /*font-family: Microsoft YaHei, Source Sans Pro, Helvetica Neue, Arial, sans-serif !important;*/
+    }
+
+    .markdown-section>p {
+        font-size: 16px !important;
+    }
+
+    .markdown-section pre>code {
+        font-family: Consolas, Roboto Mono, Monaco, courier, monospace !important;
+        /*font-size: .9rem !important;*/
+    }
+
+    /*.anchor span {
+    color: rgb(66, 185, 131);
+	}*/
+
+    section.cover h1 {
+        margin: 0;
+    }
+
+    body>section>div.cover-main>ul>li>a {
+        color: #42b983;
+    }
+
+    .markdown-section img {
+        box-shadow: 7px 9px 10px #aaa !important;
+    }
+
+    pre {
+        background-color: #f3f2ee !important;
+    }
+
+    @media (min-width:600px) {
+        pre code {
+            /*box-shadow: 2px 1px 20px 2px #aaa;*/
+            /*border-radius: 10px !important;*/
+            padding-left: 20px !important;
+        }
+    }
+
+    @media (max-width:600px) {
+        pre {
+            padding-left : 0px !important;
+            padding-right : 0px !important;
+        }
+    }
+
+    .markdown-section pre {
+        padding-left: 0 !important;
+        padding-right: 0px !important;
+        box-shadow: 2px 1px 20px 2px #aaa;
+    }
+    </style>
+    <style type="text/css">
+    /**
+ * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
+ * @author Tim  Shedor
+ */
+
+    code[class*="language-"],
+    pre[class*="language-"] {
+        color: black;
+        background: none;
+        font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        text-align: left;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        word-wrap: normal;
+        line-height: 1.5;
+
+        -moz-tab-size: 4;
+        -o-tab-size: 4;
+        tab-size: 4;
+
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+    }
+
+    /* Code blocks */
+    pre[class*="language-"] {
+        position: relative;
+        margin: .5em 0;
+        overflow: visible;
+        padding: 0;
+    }
+
+    pre[class*="language-"]>code {
+        position: relative;
+        border-left: 10px solid #358ccb;
+        box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+        background-color: #fdfdfd;
+        background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+        background-size: 3em 3em;
+        background-origin: content-box;
+        background-attachment: local;
+    }
+
+    code[class*="language"] {
+        max-height: inherit;
+        height: inherit;
+        padding: 0 1em;
+        display: block;
+        overflow: auto;
+    }
+
+    /* Margin bottom to accommodate shadow */
+    :not(pre)>code[class*="language-"],
+    pre[class*="language-"] {
+        background-color: #fdfdfd;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-bottom: 1em;
+    }
+
+    /* Inline code */
+    :not(pre)>code[class*="language-"] {
+        position: relative;
+        padding: .2em;
+        border-radius: 0.3em;
+        color: #c92c2c;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        display: inline;
+        white-space: normal;
+    }
+
+    pre[class*="language-"]:before,
+    pre[class*="language-"]:after {
+        content: '';
+        z-index: -2;
+        display: block;
+        position: absolute;
+        bottom: 0.75em;
+        left: 0.18em;
+        width: 40%;
+        height: 20%;
+        max-height: 13em;
+        box-shadow: 0px 13px 8px #979797;
+        -webkit-transform: rotate(-2deg);
+        -moz-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -o-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+
+    :not(pre)>code[class*="language-"]:after,
+    pre[class*="language-"]:after {
+        right: 0.75em;
+        left: auto;
+        -webkit-transform: rotate(2deg);
+        -moz-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+
+    .token.comment,
+    .token.block-comment,
+    .token.prolog,
+    .token.doctype,
+    .token.cdata {
+        color: #7D8B99;
+    }
+
+    .token.punctuation {
+        color: #5F6364;
+    }
+
+    .token.property,
+    .token.tag,
+    .token.boolean,
+    .token.number,
+    .token.function-name,
+    .token.constant,
+    .token.symbol,
+    .token.deleted {
+        color: #c92c2c;
+    }
+
+    .token.selector,
+    .token.attr-name,
+    .token.string,
+    .token.char,
+    .token.function,
+    .token.builtin,
+    .token.inserted {
+        color: #2f9c0a;
+    }
+
+    .token.operator,
+    .token.entity,
+    .token.url,
+    .token.variable {
+        color: #a67f59;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .token.atrule,
+    .token.attr-value,
+    .token.keyword,
+    .token.class-name {
+        color: #1990b8;
+    }
+
+    .token.regex,
+    .token.important {
+        color: #e90;
+    }
+
+    .language-css .token.string,
+    .style .token.string {
+        color: #a67f59;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .token.important {
+        font-weight: normal;
+    }
+
+    .token.bold {
+        font-weight: bold;
+    }
+
+    .token.italic {
+        font-style: italic;
+    }
+
+    .token.entity {
+        cursor: help;
+    }
+
+    .namespace {
+        opacity: .7;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        pre[class*="language-"]:before,
+        pre[class*="language-"]:after {
+            bottom: 14px;
+            box-shadow: none;
+        }
+
+    }
+
+    /* Plugin styles */
+    .token.tab:not(:empty):before,
+    .token.cr:before,
+    .token.lf:before {
+        color: #e0d7d1;
+    }
+
+    /* Plugin styles: Line Numbers */
+    pre[class*="language-"].line-numbers.line-numbers {
+        padding-left: 0;
+    }
+
+    pre[class*="language-"].line-numbers.line-numbers code {
+        padding-left: 3.8em;
+    }
+
+    pre[class*="language-"].line-numbers.line-numbers .line-numbers-rows {
+        left: 0;
+    }
+
+    /* Plugin styles: Line Highlight */
+    pre[class*="language-"][data-line] {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+
+    pre[data-line] code {
+        position: relative;
+        padding-left: 4em;
+    }
+
+    pre .line-highlight {
+        margin-top: 0;
+    }
+    </style>
+
 </head>
 <body>
-  <div id="app">Please wait...</div>
+  <div id="app"></div>
   <script>
     window.$docsify = {
-      // 谷歌分析
-      ga: 'UA-144595390-1',
-
-      // 搜索
-      search: {
-          maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-          noData: '找不到结果',//搜索不到结果时显示
-          paths: 'auto',//自动
-          placeholder: '搜索',//搜索框提示
-      }, 
-      
-      // 主题色彩
-      themeColor: '#3F51B5', 
-      
-      // 黑暗模式
-      darkMode: {
-        dark: {
-          background: "#232129",
-          toggleBtnBg: "#ff5874",
-          textColor: "white"
+      name: 'klog',
+      repo: 'https://github.com/weijiew/klog',
+	//   loadSidebar: true,
+	  subMaxLevel: 3,
+	   search: {
+            paths: 'auto',
+            placeholder: '🔍 点击搜索 ',
+            noData: '😞 没有结果! ',
+            // Headline depth, 1 - 6
+            depth: 6
         },
-        light: {
-          background: "#f6f6f6",
-          toggleBtnBg: "#6c5ce7",
-          textColor: "black"
-        }
-      },
-      
-      // 隐藏侧边栏 
-      hideSidebar: false,
-      
-      // 更改路线时滑动到屏幕顶部
-      auto2top: true,
-      
-      // 设置封面 
-      coverpage: true,  
-      onlyCover: false,
+		copyCode: {
+			buttonText : '复制',
+			errorText  : 'Error',
+			successText: 'OK!'
+		},
+		pagination: {
+			previousText: '上一章节',
+			nextText: '下一章节',
+		},
 
-      // 加载侧边栏，也就是加载对应得 _sidebar.md 文件
-      loadSidebar: true,
-      autoHeader: true,
+        count:{
+            countable:true,
+            fontsize:'0.9em',
+            color:'rgb(90,90,90)',
+            language:'chinese'
+        },
 
-      // 小屏设备合并导航栏到侧边栏。
-      mergeNavbar: true,
-      loadNavbar: false, 
-      notFoundPage: true,
-      
-      // topMargin: 90, // default: 0
-      subMaxLevel: 0,
-      executeScript: true,
-      // 不解析 emoji ， false 解析，true 不解析。 
-      noEmoji: false,
-      // logo: '/_media/巴黎.png', 
-      name: 'klog', 
-      repo: 'weijiew/klog',
-      homepage: 'home.md',
-      // 字数统计
-      count:{
-        countable:true,
-        fontsize:'0.9em',
-        color:'rgb(90,90,90)',
-        language:'chinese'
-      },
-
-      // 插件
+              // 插件
       plugins: [
       // footer
       function (hook) {
@@ -104,40 +400,54 @@
             + editHtml
         })
       }
-    ]
-  }
-        
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  
-  <!-- 谷歌统计 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
-  
-  <!-- 搜索 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  
-  <!-- 代码复制 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-  
-  <!-- 上一页，下一页 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  
-  <!-- 代码高亮 -->
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-cpp.min.js"></script>
-  
-  <!-- 字数统计 -->
-  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
-  
-  <!-- 离线模式 -->
-  <script>
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
+    ],
+	  coverpage: true
     }
   </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+	<!--代码块复制插件-->
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <!-- 图片缩放插件 -->
+  <script src="https://cyc-1256109796.cos.ap-guangzhou.myqcloud.com/zoom-image.min.js"></script>
+     <!--搜索插件-->
+  <script src="https://cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
+    <!--语法高亮插件-->
+  <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script> 
+  <script src="//unpkg.com/prismjs/components/prism-cpp.min.js"></script> 
+  <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script> 
+  <script src="//unpkg.com/prismjs/components/prism-sql.min.js"></script> 
+  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+    <!--分页插件-->
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!--统计访问量插件-->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <!-- 字数统计 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css"/>
-  <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
+    <!-- 评论插件 -->
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+  
+    <script>
+      const gitalk = new Gitalk({
+        clientID: '95a353220012cf99aabf',
+        clientSecret: '05fcdc0d96677264caad3b8b6142d502f80a2761',
+        repo: 'klog',
+        owner: 'weijiew',
+        admin: ['weijiew'],
+        title: location.hash.match(/#(.*?)([?]|$)/)[1],
+        id: location.hash.match(/#(.*?)([?]|$)/)[1],
+        // facebook-like distraction free mode
+        distractionFreeMode: false
+      })
+        // 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题。
+        window.onhashchange = function(event){
+        if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
+            location.reload()
+          }
+        }
+    </script>
+  
 </body>
 </html>
