@@ -51,10 +51,12 @@ class Solution {
 
 
 ## 2.0 
+
 # 最长公共子序列
 
-## 1.0 最长公共子序列
-[1143. 最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/)
+## 1.0 练手！
+
+[Leetcode_1143](https://leetcode-cn.com/problems/longest-common-subsequence/)
 
 ```java
 class Solution {
@@ -75,6 +77,40 @@ class Solution {
     }
 }
 ```
+
+## 2.0 熟悉！
+
+[VJ_HDU_1159](https://vjudge.net/problem/HDU-1159)
+
+```cpp
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std;
+string a, b;
+int dp[1010][1010];
+int main() {
+    while(cin >> a >> b) {
+        int m = a.length();
+        int n = b.length();
+        memset(dp, 0, sizeof(dp));
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (a[i - 1] == b[j - 1]) {
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                }else {
+                    dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+                }
+            }
+        }
+        cout << dp[m][n] << endl;
+    } 
+    return 0;
+}
+```
+
+## 3.0 变换！
+
 
 ## 1.0 交换硬币
 
