@@ -1,28 +1,22 @@
-
 > 动态规划的核心是数学归纳法！
-
 
 # 01背包
 
 ## 推荐资料
+
 [背包九讲](https://github.com/tianyicui/pack)
 
+# 最长上升子序列
 
-# 最长增长子序列
-
-## 1.0 最长上升子序列
-
-[300. 最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
-
-### 思考
 什么是序列？什么是子序列？区别是什么？ 序列必须连续，子序列可以不连续，最长上升子序列就是在里面寻找值不断增加的子序列！
 
 首先将每一个下标的当前的最长上升子序列数存下来，然后再从当前下标和之前的值中取最大值。
 
 初始化为 1 ， 是因为每一个下标的最长上升子序列就是其本身，也就是 1.
 
+## 1.0 最长上升子序列
 
-### code
+[300. 最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 
 ```java
 class Solution {
@@ -47,12 +41,11 @@ class Solution {
     }
 }
 ```
-
-
-
 ## 2.0 
 
 # 最长公共子序列
+
+最长公共子序列 ，即 LCS（Longest Common Subsequence）
 
 ## 1.0 练手！
 
@@ -82,6 +75,8 @@ class Solution {
 
 [VJ_HDU_1159](https://vjudge.net/problem/HDU-1159)
 
+和上一题一样。
+
 ```cpp
 #include <iostream>
 #include <cstring>
@@ -110,6 +105,149 @@ int main() {
 ```
 
 ## 3.0 变换！
+
+[VJ_51Nod-1006](https://vjudge.net/problem/51Nod-1006)
+
+这道题同样是求 LCS 但是增加了需要把路径打印出来！
+
+如何将路径打印出来，仔细想一下，问题就变成了将两个字符串相同的字符打印出来，字符相同就是 `dp[i - 1][j - 1] + 1` 的状态。把 dp 表输出看一下，看一下路径变换的规律就可以实现了。
+
+```cpp
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std;
+int dp[1010][1010];
+char a[1010], b[1010], c[1010];
+void lcs(int m, int n) {
+    for (int i = 1; i <= m; i ++) {
+        for (int j = 1; j <= n; j ++) {
+            if (a[i - 1] == b[j - 1]) {
+                dp [i][j] = dp[i - 1][j - 1] + 1;
+            }else {
+                dp [i][j] = max (dp [i - 1][j] , dp [i][j - 1]);
+            }
+        }
+    }
+}
+void path(int m, int n) {
+    int i = m;
+    int j = n;
+    int k = 0;
+    memset(c, 0, sizeof(c));
+    while (i != 0 && j != 0) {
+        if (a[i - 1] == b[j - 1]) {
+            c[k++] = a[--i];
+            j--;
+        }else if (dp[i - 1][j] <= dp[i][j - 1] ) {
+            j--;
+        }else if (dp[i - 1][j] > dp[i][j - 1] ) {
+            i--;
+        }
+    }
+    for (int i = k - 1; i >= 0; i--) {
+        cout << c[i];
+    }
+    cout << endl;
+}
+int main() {
+    while (cin >> a >> b) {
+        int m = strlen(a);
+        int n = strlen(b);
+        memset(dp , 0, sizeof(dp));
+        lcs(m , n);
+        path(m , n);
+    }    
+    return 0;
+}
+```
+
+在提供一种打印路径的思路，用递归的思想，相对好理解一些，把递归树画一遍后就明白了！
+
+```cpp
+void print (int i , int j) {
+    if(i == 0 || j == 0)return;
+    if (map[i][j] == 0) {
+        print(i - 1, j - 1);
+        cout << b[j - 1];
+    }else if (map[i][j] == 1) {
+        print(i - 1, j);
+    }else  {
+        print(i, j - 1);
+    }
+}
+```
+
+
+## 4.0 进阶！
+
+路径打印技巧！
+
+[VJ_HDU_1503](https://vjudge.net/problem/HDU-1503)
+
+```cpp
+#include <iostream>
+#include <cstring>
+using namespace std;
+char a[1010], b[1010];
+int dp[1010][1010];
+int map[1010][1010];
+void lcs(int m, int n) {
+    for (int i = 0; i <= m; i++) {
+        map[i][0] = 1;
+    }
+    for (int j = 0; j <= n; j++) {
+        map[0][j] = -1;
+    }
+        for (int i = 1; i <= m; i++)
+        {
+            for (int j = 1; j <= n; j++)
+            {
+                if (a[i - 1] == b[j - 1])
+                {
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                    map[i][j] = 0;
+                }
+                else if (dp[i - 1][j] >= dp[i][j - 1])
+                {
+                    dp[i][j] = dp[i - 1][j];
+                    map[i][j] = 1;
+                }
+                else
+                {
+                    dp[i][j] = dp[i][j - 1];
+                    map[i][j] = -1;
+                }
+            }
+        }
+}
+void print(int i, int j) {
+    if (!i && !j) return;
+    if (map[i][j] == 0) {
+        print(i - 1, j - 1);
+        cout << a[i - 1];
+    }else if (map[i][j] == 1) {
+        print(i - 1, j);
+        cout << a[i - 1];
+    }else {
+        print(i, j - 1);
+        cout << b[j - 1];
+    }
+}
+int main() {
+    while (cin >> a >> b) {
+        memset(dp, 0, sizeof(dp));
+        memset(map, 0, sizeof(map));
+        int m = strlen(a);
+        int n = strlen(b);
+        lcs(m, n);
+        print(m, n);
+        cout << endl;
+    }
+    return 0;
+}
+```
+## 5.0 
 
 
 ## 1.0 交换硬币
