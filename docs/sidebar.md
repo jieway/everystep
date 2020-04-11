@@ -12,6 +12,7 @@
 ## 🧐 算法&题目
 * [经验](book/alg_lab_0.md)
 * [基础算法](book/alg_lab_1.md)
+* [数据结构](book/alg_lab_19.md)
 * [双指针](book/alg_lab_3.md)
 * [链表](book/alg_lab_4.md)
 * [图论](book/alg_lab_5.md)
@@ -25,9 +26,12 @@
 * [PAT乙级](book/alg_lab_14.md)
 * [PAT甲级](book/alg_lab_15.md)
 * [动态规划](book/alg_lab_16.md)
+* [并查集](book/alg_lab_17.md)
+* [贪心](book/asm_lab_18.md)
 
 ## 🐷数据库
 * [题目](book/sql_lab_1.md)
+* [概述](book/sql_lab_0.md)
 
 ## 👓汇编语言
 * [基础知识](book/asm_lab_0.md)
@@ -57,6 +61,23 @@
 
 ## 🍳政治
 * [概述](book/pol_lab_0.md)
+* [思修](book/pol_lab_1.md)
+* [马克思](book/pol_lab_2.md)
 
 ## 🎆英语
 * [英语语法记录](book/eng_lab_0.md)
+
+## 🎊爬虫
+* [0.0 概述](book/spi_lab_0.md)
+* [1.0 爬取小说](book/spi_lab_1.md)
+* [2.0 爬取豆瓣](bool/spi_lab_2.md)
+
+## 🎁MatLab
+* [0.0 概述]()
+* [1.0 实验一](book/mat_lab_1.md)
+
+## 👒Java
+* [0.0 概述]()
+* [1.0 笔记](book/java_lab_1.md)
+* [2.0 类与对象]
+* [2.0 Hibernate](book/java_lab_2.md)
