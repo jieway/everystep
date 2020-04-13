@@ -224,7 +224,7 @@ int main() {
 
 初始状态为 1 ， 是因为每一个下标的最长上升子序列就是其本身，也就是 1.
 
-## 1.0 练习！
+## 2.1 练习！
 
 [Leetcode-300](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 
@@ -280,7 +280,7 @@ class Solution {
 ```
 
 
-## 2.0 LIS 熟悉！
+## 2.2 LIS 熟悉！
 [Leetcode-646](https://leetcode-cn.com/problems/maximum-length-of-pair-chain/)
 
 * 这道题和[Leetcode-300](https://leetcode-cn.com/problems/longest-increasing-subsequence/)几乎类似，用贪心也可以动态规划反而复杂鉴于目前正在练动态规划，下面是动态规划的写法，贪心写法在贪心的那一节里面。注意 vector 的一些用法。
@@ -313,6 +313,31 @@ public:
 };
 ```
 
+## 2.3 掌握！
+
+[Leetcode-376](https://leetcode-cn.com/problems/wiggle-subsequence/)
+
+```cpp
+class Solution {
+public:
+    int wiggleMaxLength(vector<int>& nums) {
+        int n = nums.size();
+        if (n < 2) {
+            return n;
+        }
+        int up = 1 , down = 1;
+        for (int i = 1; i < n; i++) {
+            if (nums[i] > nums[i - 1]) {
+                up = down + 1;
+            }
+            if (nums[i] < nums[i - 1]) {
+                down = up + 1;
+            }
+        }
+        return max(up, down);
+    }
+};
+```
 
 
 ## 198. 打家劫舍
