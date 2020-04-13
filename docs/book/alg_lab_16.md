@@ -1,58 +1,14 @@
 > 动态规划的核心是数学归纳法！
 
-# 01背包
-
-## 推荐资料
-
-[背包九讲](https://github.com/tianyicui/pack)
-
-# 最长上升子序列 （LIS）
+# 1.0 最长公共子序列
 
 什么是序列？什么是子序列？区别是什么？ 
 
-序列必须连续，子序列可以不连续当然也可以连续，最长上升子序列（Longest  Increasing Subsequence）简称 LIS。LIS 就是在里面寻找值不断增加的子序列！
+序列必须连续，子序列可以连续也可以不连续！
 
-首先将每一个下标的当前的最长上升子序列数存下来，然后再从当前下标和之前的值中取最大值。
+最长公共子序列 ，即 LCS（Longest Common Subsequence）。用在什么地方？假如小明怀疑自己的儿砸和隔壁老王长得很像，然后小明去做 DNA 鉴定了，很明显需要比对小明和儿砸两条 DNA 的相似程度，而相似度越高来源于两条 DNA 链的公共部分，公共部分多则相似度高，反之比较低！
 
-初始状态为 1 ， 是因为每一个下标的最长上升子序列就是其本身，也就是 1.
-
-## 1.0 LIS 练习！
-
-[300. 最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
-
-```java
-class Solution {
-    public int lengthOfLIS(int[] nums) {
-        int[] dp = new int[nums.length];
-        Arrays.fill(dp,1);
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = 0; j < i; j++) {
-                if (nums[i] > nums[j]) {
-                    dp[i] = Math.max(dp[i],dp[j]+1);
-                }
-            }
-        }
-
-        int ans = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (dp[i] > ans) {
-                ans = dp[i];
-            }
-        }
-        return ans;
-    }
-}
-```
-
-## 2.0 LIS 熟悉！
-
-
-
-# 最长公共子序列
-
-最长公共子序列 ，即 LCS（Longest Common Subsequence）
-
-## 1.0 练手！
+## 1.1 练手！
 
 [Leetcode_1143](https://leetcode-cn.com/problems/longest-common-subsequence/)
 
@@ -76,7 +32,7 @@ class Solution {
 }
 ```
 
-## 2.0 熟悉！
+## 1.2 熟悉！
 
 [VJ_HDU_1159](https://vjudge.net/problem/HDU-1159)
 
@@ -109,7 +65,7 @@ int main() {
 }
 ```
 
-## 3.0 变换！
+## 1.3 变换！
 
 [VJ_51Nod-1006](https://vjudge.net/problem/51Nod-1006)
 
@@ -184,7 +140,7 @@ void print (int i , int j) {
 ```
 
 
-## 4.0 进阶！
+## 1.4 进阶！
 
 路径打印技巧！
 
@@ -255,31 +211,108 @@ int main() {
 
 
 
-## 1.0 交换硬币
 
-[322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
 
-### 思考
 
-### code
-```java
+## 总结
+
+# 2.0 最长上升子序列 （LIS）
+
+最长上升子序列（Longest  Increasing Subsequence）简称 LIS。LIS 就是在里面寻找值不断增加的子序列！
+
+首先将每一个下标的当前的最长上升子序列数存下来，然后再从当前下标和之前的值中取最大值。
+
+初始状态为 1 ， 是因为每一个下标的最长上升子序列就是其本身，也就是 1.
+
+## 1.0 练习！
+
+[Leetcode-300](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
+
+```cpp
 class Solution {
-    public int coinChange(int[] coins, int amount) {
-        int[] dp = new int[amount + 1];
-        for (int i = 0 ; i < dp.length ; i ++) {
-            dp[i] = amount + 1;
+public:
+    int lengthOfLIS(vector<int>& nums) {
+        int len = nums.size();
+        int a[nums.size()];
+        for (int i = 0; i < len; i++) {
+            a[i] = 1;
         }
-        dp[0] = 0;
-        for (int i = 0 ; i < dp.length ; i ++) {
-            for (int j = 0 ; j < coins.length ; j ++) {
-                if (i < coins[j]) continue;
-                dp[i] = Math.min(dp[i] , 1 + dp[i - coins[j]]);
+        
+        for (int i = 0; i < len; i++) {
+            for (int j = 0; j < i; j++) {
+                if (nums[i] > nums[j]) {
+                    a[i] = max( a[i] , a[j] + 1);
+                }
             }
         }
-        return dp[amount] == amount + 1 ? -1 : dp[amount];
+
+        int t = 0;
+        for (int i = 0; i < len; i++) {
+            t = max(a[i], t);
+        }
+        return t;
+    }
+};
+```
+
+```java
+class Solution {
+    public int lengthOfLIS(int[] nums) {
+        int[] dp = new int[nums.length];
+        Arrays.fill(dp,1);
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (nums[i] > nums[j]) {
+                    dp[i] = Math.max(dp[i],dp[j]+1);
+                }
+            }
+        }
+
+        int ans = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (dp[i] > ans) {
+                ans = dp[i];
+            }
+        }
+        return ans;
     }
 }
 ```
+
+
+## 2.0 LIS 熟悉！
+[Leetcode-646](https://leetcode-cn.com/problems/maximum-length-of-pair-chain/)
+
+* 这道题和[Leetcode-300](https://leetcode-cn.com/problems/longest-increasing-subsequence/)几乎类似，用贪心也可以动态规划反而复杂鉴于目前正在练动态规划，下面是动态规划的写法，贪心写法在贪心的那一节里面。注意 vector 的一些用法。
+
+* 起初我不理解为什么要排序，仔细读题后发现并没有上一题强制的顺序，每一个数对组合都可以任选，而为了实现尽可能多的数对，所以需要先排个序。
+
+* 注意 `pairs[i][0] > pairs[j][1]` ，分析二维数组，外面的 i j 控制第几个数对，内部则控制每个数对（数对一共俩数组成，所以就 0 1 两位）
+
+```cpp
+class Solution {
+public:
+    static bool cmp(vector<int> &a, vector<int> &b) {
+        return a[1] < b[1];
+    }
+    int findLongestChain(vector<vector<int>>& pairs) {
+        int len = pairs.size();
+        sort(pairs.begin(),pairs.end(),cmp); // 默认升序，可以不用写cmp，不过最好写上严谨一些，题意是任意选数对，所以需要排序
+        vector<int> dp(len, 1); // 对 dp 初始化为 1
+        int t = 1;
+        for (int i = 0; i < len; i++) {
+            for (int j = 0; j < i; j++) {
+                if (pairs[i][0] > pairs[j][1]) {
+                    dp[i] = max(dp[i], dp[j] + 1);
+                }
+            }
+            t = max(t, dp[i]);
+        }
+        return t;
+    }
+};
+```
+
 
 
 ## 198. 打家劫舍
@@ -450,3 +483,34 @@ class Solution {
 }
 ```
 
+## 1.5 交换硬币
+
+[322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
+
+### 思考
+
+### code
+```java
+class Solution {
+    public int coinChange(int[] coins, int amount) {
+        int[] dp = new int[amount + 1];
+        for (int i = 0 ; i < dp.length ; i ++) {
+            dp[i] = amount + 1;
+        }
+        dp[0] = 0;
+        for (int i = 0 ; i < dp.length ; i ++) {
+            for (int j = 0 ; j < coins.length ; j ++) {
+                if (i < coins[j]) continue;
+                dp[i] = Math.min(dp[i] , 1 + dp[i - coins[j]]);
+            }
+        }
+        return dp[amount] == amount + 1 ? -1 : dp[amount];
+    }
+}
+```
+
+# 01背包
+
+## 推荐资料
+
+[背包九讲](https://github.com/tianyicui/pack)

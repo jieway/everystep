@@ -10,8 +10,8 @@
 * [1.7 网络安全](book/net_lab_6.md)
 
 ## 🧐 算法&题目
-* [经验](book/alg_lab_0.md)
-* [基础算法](book/alg_lab_1.md)
+* [概述](book/alg_lab_0.md)
+* [基础知识](book/alg_lab_1.md)
 * [数据结构](book/alg_lab_19.md)
 * [双指针](book/alg_lab_3.md)
 * [链表](book/alg_lab_4.md)
@@ -27,7 +27,7 @@
 * [PAT甲级](book/alg_lab_15.md)
 * [动态规划](book/alg_lab_16.md)
 * [并查集](book/alg_lab_17.md)
-* [贪心](book/asm_lab_18.md)
+* [贪心](book/alg_lab_18.md)
 
 ## 🐷数据库
 * [题目](book/sql_lab_1.md)
@@ -73,7 +73,7 @@
 * [2.0 爬取豆瓣](bool/spi_lab_2.md)
 
 ## 🎁MatLab
-* [0.0 概述]()
+* [0.0 概述](book/mat_lan_0.md)
 * [1.0 实验一](book/mat_lab_1.md)
 
 ## 👒Java

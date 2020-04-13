@@ -1,7 +1,10 @@
 # 1.0 
 ## 1.1 
+
 [Leetcode-646](https://leetcode-cn.com/problems/maximum-length-of-pair-chain/)
-这道题的标签是动态规划，可以直接用贪心来写，动态规划的[写法](alg)
+
+这道题的标签是动态规划，动态规划的[写法](alg_lab_16.md#)，可以直接用贪心来写，下面是贪心写法。
+
 ```cpp
 class Solution {
 public:

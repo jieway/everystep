@@ -3,11 +3,54 @@
 # 例题
 
 ## 1.0
-[167. 两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
+
+[leetcode-167](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
 
 ### 思考
 前提的数组升序，如果值小，右边的下标就减减，反之左边的值就加加。
 
+暴力解法如下，直接枚举即可，但是会超时！
+
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& numbers, int target) {
+        vector<int> a;
+        for (int  i = 0; i < numbers.size() - 1; i++) {
+            for (int j = i + 1; j < numbers.size(); j++) {
+                if (numbers[i] + numbers[j] == target) {
+                    a.push_back(i+1);
+                    a.push_back(j+1);
+                }
+            }
+        }
+        return a;
+    }
+};
+```
+
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& numbers, int target) {
+        int i = 0, j = numbers.size() - 1;
+        vector<int> a;
+        while(i < j) {
+            int sum = numbers[i] + numbers[j];
+            if (sum == target) {
+                a.push_back(i+1);
+                a.push_back(j+1);
+                return a;
+            }else if (sum > target) {
+                j--;
+            }else if (sum < target) {
+                i++;
+            }
+        }
+        return a;
+    }
+};
+```
 ```java
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
@@ -26,6 +69,32 @@ class Solution {
         return null;
     }
 }
+```
+
+## 1.1 进阶！
+[leetcode-01](https://leetcode-cn.com/problems/two-sum/)
+
+这道题和上一题的区别是容器中的元素是无序的！
+
+所以玩排序后可以直接用上一题的做法，也可以暴力，这一题暴力不超时！
+
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> a;
+        for (int i = 0; i < nums.size() - 1; i++) {
+            for (int j = i + 1; j < nums.size(); j++) {
+                if (nums[i] + nums[j] == target) {
+                    a.push_back(i);
+                    a.push_back(j);
+                    break;
+                }
+            }
+        }
+        return a;
+    }
+};
 ```
 
 ## 2.0
