@@ -19,6 +19,8 @@
 * [图论](book/alg_lab_5.md)
   * [搜索](book/os_lab_20.md)
   * [最小生成树](book/alg_lab_21.md)
+  * [最短路](book/alg_lab_23.md)
+  * [并查集](book/alg_lab_24.md)
 * [二分搜索](book/alg_lab_6.md)
 * [二叉树](book/alg_lab_7.md)
 * [排序](book/alg_lab_8.md)
