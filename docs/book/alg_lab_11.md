@@ -1,4 +1,5 @@
 ## 1.0 三角形边长问题
+
 [976. 三角形的最大周长](https://leetcode-cn.com/problems/largest-perimeter-triangle/)
 
 ### 思考
@@ -71,14 +72,192 @@ class Solution {
 
 
 
-# 8.9
+# 1.0 素数问题
+
+什么是素数？素数也称质数，指大于 1 的自然数中除了 1 和其本身外不再有其他因数的自然数。
+
+## 1.1 统计素数个数
+
+[Leetcode-204](https://leetcode-cn.com/problems/count-primes)
+
+这个写法显然大家都能想到，但是超时！需要采用更高效的写法，埃氏筛法求素数可以通过。
+
+先开一个数组，从 2 开始枚举，将 2 的倍数尽数剔除，再将 3 的倍数尽数剔除，剔除到 sqrt(n) 的倍数即可，因为大于 sqrt(n) 的倍数在之前已经被枚举过了，可以手动试一下，这是归纳出来的。然后没有被剔除来的就是素数了！
+
+```cpp
+class Solution {
+public:
+    int prime(int n){
+        for (int i = 2; i <= sqrt(n); i++){
+            if (n % i == 0){
+                return 0;
+            }
+        }
+        return 1;
+    }
+    int countPrimes(int n) {
+        int k = 0;
+        for (int i = 2; i < n; i ++) {
+            if (prime(i)) {
+                k ++;
+            }
+        }
+        return k;
+    }
+};
+```
+
+> Time Limit 
+> Exceeded 20/20 cases passed (N/A)
+
+```cpp
+class Solution {
+public:
+    int countPrimes(int n) {
+        vector<int> a(n + 1, 1);
+        for (int i = 2; i <= sqrt(n); i++) {
+            if(a[i]) {
+                for (int j= i * i; j < n; j += i) {
+                    a[j] = 0;
+                }
+            }
+        }
+        int cnt = 0;
+        for (int i = 2; i < n; i ++) {
+            if (a[i]) {
+                cnt++;
+            }
+        }
+        return cnt;
+    }
+};
+```
+
+> Accepted
+> 20/20 cases passed (48 ms)
+> Your runtime beats 78.68 % of cpp submissions
+> Your memory usage beats 46.15 % of cpp submissions (19.3 MB)
+
+
+# 2.0 进制转换
+
+## 2.1 七进制
+
+[Leetcode-504](https://leetcode-cn.com/problems/base-7/)
+
+* 首先考虑 0 直接返回 0 即可。
+* 考虑负数，按照正数处理，设一个临时变量进行遍历不应影响原来的变量。
+* 判断正负，将符号加上。
+
+```cpp
+class Solution {
+public:
+    string convertToBase7(int num) {
+        if(num == 0)
+            return "0";
+        string a;
+        int i = 0;
+        int temp = num;
+        temp = abs(temp);
+        while (temp) {
+            a += to_string(temp % 7);
+            temp /= 7;
+        }
+        if (num < 0) {
+            a += '-';
+        }
+        reverse(a.begin(), a.end());
+        return a;
+    }
+};
+```
+
+## 2.2 十六进制
+
+[Leetcode-405](https://leetcode-cn.com/problems/convert-a-number-to-hexadecimal/)
+
+```cpp
+class Solution {
+public:
+    string toHex(int num) {
+        if (num == 0)
+            return "0";
+        string hex = "0123456789abcdef", ans = "";
+        while (num && ans.size() < 8) {
+            ans = hex[num & 0xf] + ans;
+            num >>= 4;
+        }
+        return ans;
+    }
+};
+```
+
+## 2.3 二十六进制
+
+```cpp
+public:
+    string convertToTitle(int n) {
+        if (n == 0)
+            return "";
+        string s;
+		while(n > 0) {
+			n--;
+			s = char(n % 26 + 'A') + s;
+			n /= 26;
+		}
+        return s;
+    }
+};
+```
+
+可以写成递归的方式！
+
+```cpp
+class Solution {
+public:
+    string convertToTitle(int n) {
+        if (n == 0)
+            return "";
+        n--;
+        return convertToTitle(n / 26) + char(n % 26 + 'A');
+    }
+};
+```
+
+# 3.0 阶乘和幂
+
+## 3.1 求零的个数
+
+[Leetcode-172](https://leetcode-cn.com/problems/factorial-trailing-zeroes/)
+
+末尾零的个数来源于 10 ，而所有的 10 都可以拆解称 2 × 5 ，我们求 2 × 5 的组合即可，而所有的偶数都可以拆解出来一个 2 ，所以 2 × 5 的个数取决去 5 的个数，所以只需要统计 5 的个数即可！
+
+```cpp
+class Solution {
+public:
+    int trailingZeroes(int n) {
+        int cnt = 0;
+        while (n) {
+            cnt += n / 5;
+            n /= 5;
+        }
+        return cnt;
+    }
+};
+```
+## 3.2 幂次
+[Leeicode-326](https://leetcode-cn.com/problems/power-of-three/)
+1162261467 是 3 的 19 次方， int 范围内的最大值。所以只要是可以整除说明一定是 3 的倍数！
+```cpp
+class Solution {
+public:
+    bool isPowerOfThree(int n) {
+        return n > 0 && 1162261467 % n == 0;
+    }
+};
+```
 
 ## 2004: p次方求和
-
-时间限制: 1 Sec  内存限制: 64 MB
-提交: 151  解决: 61
-您该题的状态：已完成
-[提交][状态][讨论版]
 
  **题目描述**
 
@@ -645,6 +824,78 @@ int main(){
 其次 N^N  = a * 10^(k-1) ,两边同取对数，求得 a 的结果；
 a就是我们要求的结果，取整即可。
 
+# 4.0 思考
+
+## 4.1 最多的元素
+[Leetcode-169](https://leetcode-cn.com/problems/majority-element/description/)
+
+出现次数大于 n/2 说明排完序后 n/2 的位置的元素一定是最多的元素。
+```cpp
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        return nums[nums.size() / 2];
+    }
+};
+```
+## 4.2 平方数
+
+这道题有好几种解法，可以用二分查找，也可以找规律，也可以用牛顶迭代法，下面提供几种思路。
+
+* 观察平方数可以得到一个规律， 1 4 9 16 25 之间的差值 3 5 7 9 为一个等差数列，差值为 2 ，根据这个性质来迭代即可。
+
+```cpp
+class Solution {
+public:
+    bool isPerfectSquare(int num) {
+        if (num == 0)
+            return false;
+        int i = 1;
+        while (num > 0) {
+            num -= i;
+            i += 2;
+        }
+        return num == 0 ? true : false; 
+    }
+};
+```
+
+* 牛顿迭代法，先看代码，` x = ( x + num / x) / 2;` 这一步是根据求导的来的。 
+
+```cpp
+class Solution {
+public:
+    bool isPerfectSquare(int num) {
+        if (num < 2) return true;
+        long x = num / 2;
+        while (x * x > num) {
+            x = ( x + num / x) / 2;
+        }
+        return x*x == num;
+    }
+};
+```
+
+## 4.3 最大值
+可以直接排序也可以一次扫描记录最值。
+
+而求三个数中的最大值可以分为以下两种情况：
+
+* 如果全是正数，求最大的三个值即可。
+* 如果出现负数，负号需要两个负数的存在才可以消掉，所以需要两个负数，而负数整体越小乘积越大，所以最大值为最小的两个值和最大的值相乘。
+* 以上两种情况比较大小，求最值即可！
+
+
+```cpp
+class Solution {
+public:
+    int maximumProduct(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        return max(nums[nums.size()-1] * nums[nums.size()-2] * nums[nums.size()-3],nums[0] * nums[1] * nums[nums.size() - 1]);
+    }
+};
+```
 # 8.10
 
 ## 1447: 阶乘的和

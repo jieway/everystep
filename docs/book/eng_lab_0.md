@@ -1,3 +1,5 @@
+ 
+
 * be going to + v 
 
 一.be going to+动词原形的概念：表示将要发生的动作、安排、计划、决定或者打算的事情。常与表示将来的时间tomorrow,next year等时间状语或者when引导的时间状语连用。其各种句式变化借助be动词完成。
@@ -35,10 +37,6 @@
 例如：The bus is coming.公共汽车就要来了。
 
 
----
-title: 英语-语法
-date: 2020-03-09
----
 # 简单句的核心
 
 ## 简单句核心构成
@@ -63,7 +61,9 @@ e.g. dance/swim/like
 所以有时也用来反向通过判断动词是否可以接人和物来得出是否能够接双宾语。
 
 除此之外，如果宾语没有描述清楚，还需要加上宾补来补充，也就是主谓宾宾补。
+
 #### 主谓
+
 例句：
 - He cries.
 - Waiting lists increase all the time...
@@ -97,6 +97,7 @@ e.g. dance/swim/like
 - Furthermore, these losses *make* us mature...
 
 ### 无实义动词
+
 有时候句子不需要动词意思就已经完整了，但是动词作为句子的核心，所以需要没有实际意思的动词出来承担句子的核心。
 所以无实义动词出现了。无实义动词的类型有哪些？
 无实义动词。谓语并没有消失，只是系动词充当了谓语。
@@ -119,7 +120,7 @@ be 动词无实义恰好可以充当这个成分。
 
 #### 系动词类型
 - be 单独出现
-- get/become/turn/go/grow 表示“变得”的意思时是动词
+- get/become/turnw's/go/grow 表示“变得”的意思时是动词
 - look/sound/smell/taste/fell 表示 “看起来” / “听起来”/“闻起来”/“尝起来”/“感觉起来” 时是系动词
 - keep/remain/seem/appear 
 
