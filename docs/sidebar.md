@@ -11,11 +11,14 @@
 
 ## 🧐 算法&题目
 * [概述](book/alg_lab_0.md)
+* [题单](book/alg_lab_22.md)
 * [基础知识](book/alg_lab_1.md)
 * [数据结构](book/alg_lab_19.md)
 * [双指针](book/alg_lab_3.md)
 * [链表](book/alg_lab_4.md)
 * [图论](book/alg_lab_5.md)
+  * [搜索](book/os_lab_20.md)
+  * [最小生成树](book/alg_lab_21.md)
 * [二分搜索](book/alg_lab_6.md)
 * [二叉树](book/alg_lab_7.md)
 * [排序](book/alg_lab_8.md)
