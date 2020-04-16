@@ -1,52 +1,25 @@
-# 1.0 
-## 1.1 
-
-[Leetcode-646](https://leetcode-cn.com/problems/maximum-length-of-pair-chain/)
-
-这道题的标签是动态规划，动态规划的[写法](alg_lab_16.md#)，可以直接用贪心来写，下面是贪心写法。
-
-```cpp
-class Solution {
-public:
-    static bool cmp(vector<int> &a, vector<int> &b) {return a[1]<b[1];}
-    int findLongestChain(vector<vector<int>>& pairs) {
-        sort(pairs.begin(),pairs.end(), cmp);
-        int len = pairs.size();
-        int t =  pairs[0][1];
-        int k = 1;
-        for(int i = 1; i < len ;i ++) {
-            if (pairs[i][0] > t) {
-                k++;
-                t = pairs[i][1];
-            }
-        }
-        return k;
-    }
-};
-```
-
-> 2020/1/17 更新
 # 贪心
 贪心主要有两点：贪心选择，最优子结构。
 贪心选择：贪心策略，局部最优，全局最优，无后效应。
 首先要选择合适的贪心策略，每一步都是当前的最优解，步步逼近并且上一步对下一步没有影响从而达到全局最优。
 
 # 题型
-贪心的题型主要分为以下几种。
 
-## 装载问题
+贪心的题型主要分为以下几种。 装载问题，活动安排问题，最短路，最小生成树，哈夫曼编码。
+
+## 1.0 装载问题
+
 此处的装载问题为物品可分，若不可分则是0/1背包，而贪心针对0/1背包问题只能达到局部最优得到近似解，无法得到最优解。
 
-### 贪心策略
-- 按照重量升序
+按照重量升序，重量升序之后逐个判断装入。
+**题目：**
 
-### 思路
-重量升序之后逐个判断装入。
+1. [VJ-HDU-1009](#1.1-模板) 简单的模板题。
 
-## 活动安排问题
+## 2.0 活动安排问题
 一般是一段时间内有很多不同的时间段的会议，一段会议是不可以中断的。求在这一整段时间内可以安排最多数量的会议。
 
-### 贪心策略
+**贪心策略**
 - 按照会议开始时间排序。
 - 按照会议总时间排序，时间短的优先。
 - 按照会议结束的时间排序。
@@ -55,25 +28,78 @@ public:
 若按照会议总时间短的排序，假如这个虽然总时长很短，但是开始时间较迟，如果先安排这个会议，前面的时间显然都浪费了，这样也不合适。
 若按照会议的结束时间作为贪心策略，会议结束快的显然开始也快，而时长也是较短的，显然结合了上述两者的优势。
 
-### 思路
+**思路**
 
 按照会议结束时间来排序，如果结束时间相同，开始时间晚的优先。排序后再来判断每一个活动参与的情况。
 
-## 最短路问题
+**题目：**
+1. [VJ-HDU-2037](#2.1-模板！) 模板题，看懂题就能做。
+
+
+## 3.0 最短路问题
 最短路是图论的一部分，单也应用了贪心的思想，每一步的长度都是最短，全局自然最短。
 
-## 最小生成树
+## 4.0 最小生成树
 按照权值最小，将全部的点都覆盖也蕴含有贪心思想。
 
-## 哈夫曼编码
+## 5.0 哈夫曼编码
 带权路径最小的哈夫曼树也应用了贪心思想。
 
+# 例题
 
-## 杂题
+## 1.1 模板
 
-# 装载问题题目
+[VJ-HDU-1009](https://vjudge.net/problem/HDU-1009)
 
-### HDU_2111_Saving HDU
+```c++
+/**
+ * 题目：HDU_1009_FatMouse' Trade
+ * 来源：http://acm.hdu.edu.cn/showproblem.php?pid=1009
+ * 思路：贪心策略为性价比最高的优先，然后依次贪心。
+ * 结果：32196913	2020-01-18 18:39:12	Accepted	1009	561MS	1520K	794 B	G++	weijiew
+*/
+#include <iostream>
+#include <algorithm>
+# define MAXSIZE 1010
+using namespace std;
+struct room{
+    double j , f , h;
+}a[MAXSIZE];
+
+int cmp(room a , room b){
+    return a.h > b.h;
+}
+
+int main() {
+    int m, n;
+    while (cin >> m >> n) {
+        if (m == -1 || n == -1){
+            break;
+        }
+        for (int i = 0; i < n; i++){
+            cin >> a[i].j >> a[i].f;
+            a[i].h = a[i].j / a[i].f;
+        }
+        sort(a , a + n,cmp);
+        double sum = 0 ;
+        for (int i = 0; i < n; i++){
+            if(a[i].f <= m){
+                sum += a[i].j;
+                m -= a[i].f;
+            }else{
+                sum += a[i].h * m;
+                break;
+            }
+        }
+        printf("%.3lf\n",sum);
+    }
+    return 0;
+}
+```
+
+## 1.2 练习！
+
+[VJ-HDU-2111](https://vjudge.net/problem/HDU-2111)
 
 ```c++
 /**
@@ -128,140 +154,11 @@ int main(){
 }
 ```
 
-# 简单背包问题
 
-### HDU_1009_FatMouse' Trade
 
-```c++
-/**
- * 题目：HDU_1009_FatMouse' Trade
- * 来源：http://acm.hdu.edu.cn/showproblem.php?pid=1009
- * 思路：贪心策略为性价比最高的优先，然后依次贪心。
- * 结果：32196913	2020-01-18 18:39:12	Accepted	1009	561MS	1520K	794 B	G++	weijiew
-*/
-#include <iostream>
-#include <algorithm>
-# define MAXSIZE 1010
+## 2.1 模板！
 
-using namespace std;
-struct room{
-    double j , f , h;
-}a[MAXSIZE];
-
-int cmp(room a , room b){
-    return a.h > b.h;
-}
-
-int main() {
-    int m, n;
-    while (cin >> m >> n) {
-        if (m == -1 || n == -1){
-            break;
-        }
-        for (int i = 0; i < n; i++){
-            cin >> a[i].j >> a[i].f;
-            a[i].h = a[i].j / a[i].f;
-        }
-        sort(a , a + n,cmp);
-        double sum = 0 ;
-        for (int i = 0; i < n; i++){
-            if(a[i].f <= m){
-                sum += a[i].j;
-                m -= a[i].f;
-            }else{
-                sum += a[i].h * m;
-                break;
-            }
-        }
-        printf("%.3lf\n",sum);
-    }
-    return 0;
-}
-```
-
-### [HDU_1052_Tian Ji -- The Horse Racing](http://acm.hdu.edu.cn/showproblem.php?pid=1052)
-
-这道题有点复杂，分情况讨论，有点难。
-```c++
-/**
- * 题目：HDU_1052_Tian Ji -- The Horse Racing
- * 来源：http://acm.hdu.edu.cn/showproblem.php?pid=1052
- * 思路：注释
- * 结果：32201226	2020-01-19 00:23:44	Accepted	1052	93MS	1420K	1607 B	G++	weijiew
-**/
-# include <iostream>
-# include <algorithm>
-# define MAXSIZE 1010
-using namespace std;
-int a[MAXSIZE] , b[MAXSIZE];
-int cmp(int a, int b){
-    return a > b ;
-}
-int main(){
-    int n;
-    while ( cin >> n && n){
-        for ( int i = 0; i < n; i++){
-            cin >> a[i];
-        }
-        for (int i = 0; i < n; i++){
-            cin >> b[i];
-        }
-        sort(a , a + n, cmp);
-        sort(b , b + n, cmp);
-        // 设置头尾两个标记
-        int ai = 0 , aj = n - 1;
-        int bi = 0 , bj = n - 1;
-        int sum = 0 ;
-        while(ai <= aj && bi <= bj){
-            // 田忌的最快的🐎比齐王最快的🐎还要快。
-            if (a[ai] > b[bi]){
-                sum += 200;
-                ai ++;
-                bi ++;
-            }
-            // 田忌的最快的马速度低于齐王最快的马，采用田忌最慢的马拖齐王最快的马下水
-            else if (a[ai] < b[bi]){
-                sum -= 200;
-                aj --;
-                bi ++;
-            } 
-            /** 田忌的和齐王两只速度最快的马速度相等时比较两者最慢的马
-             *平一场不如一胜一负，一胜一负，负的那一场会将齐王最快的马拖下水，
-             * 可能会使田忌最快的马再赢一场。田忌的马平均水平低于齐王，一胜一负便于尽早结束比赛。
-             */
-            else {
-               if (a[aj] > b[bj]){
-                  sum += 200;
-                  aj --;
-                  bj --;
-              }
-              else if(a[aj] < b[bj]){
-                  sum -= 200;
-                  bi ++;
-                  aj --;
-              }
-              else {
-                /**
-                 * 速度最慢的马低于速度最快的马时要扣钱
-                 * 而速度最慢的马高于速度最快的马的情况已经提过了。
-                */
-                  if (a[aj] < b[bi]){
-                      sum -= 200;
-                  }
-                      aj --;
-                      bi ++;
-              }
-           }
-        }
-        cout << sum << endl;
-    }
-    return 0;
-}
-```
-
-# 会议安排问题
-
-## [HDU_2037_今年暑假不AC](http://acm.hdu.edu.cn/showproblem.php?pid=2037)
+[VJ-HDU-2037](https://vjudge.net/problem/HDU-2037)
 
 ```c++
 /**
@@ -339,7 +236,8 @@ int main() {
 }
 ```
 
-## [HDU_1234_开门人和关门人](http://acm.hdu.edu.cn/showproblem.php?pid=1234)
+## VJ-HDU-1234
+[VJ-HDU-1234](https://vjudge.net/problem/HDU-1234)
 
 ```cpp
 /**
@@ -1464,6 +1362,112 @@ int main()
     }
 }
 ```
+
+### [HDU_1052_Tian Ji -- The Horse Racing](http://acm.hdu.edu.cn/showproblem.php?pid=1052)
+
+这道题有点复杂，分情况讨论，有点难。
+```c++
+/**
+ * 题目：HDU_1052_Tian Ji -- The Horse Racing
+ * 来源：http://acm.hdu.edu.cn/showproblem.php?pid=1052
+ * 思路：注释
+ * 结果：32201226	2020-01-19 00:23:44	Accepted	1052	93MS	1420K	1607 B	G++	weijiew
+**/
+# include <iostream>
+# include <algorithm>
+# define MAXSIZE 1010
+using namespace std;
+int a[MAXSIZE] , b[MAXSIZE];
+int cmp(int a, int b){
+    return a > b ;
+}
+int main(){
+    int n;
+    while ( cin >> n && n){
+        for ( int i = 0; i < n; i++){
+            cin >> a[i];
+        }
+        for (int i = 0; i < n; i++){
+            cin >> b[i];
+        }
+        sort(a , a + n, cmp);
+        sort(b , b + n, cmp);
+        // 设置头尾两个标记
+        int ai = 0 , aj = n - 1;
+        int bi = 0 , bj = n - 1;
+        int sum = 0 ;
+        while(ai <= aj && bi <= bj){
+            // 田忌的最快的🐎比齐王最快的🐎还要快。
+            if (a[ai] > b[bi]){
+                sum += 200;
+                ai ++;
+                bi ++;
+            }
+            // 田忌的最快的马速度低于齐王最快的马，采用田忌最慢的马拖齐王最快的马下水
+            else if (a[ai] < b[bi]){
+                sum -= 200;
+                aj --;
+                bi ++;
+            } 
+            /** 田忌的和齐王两只速度最快的马速度相等时比较两者最慢的马
+             *平一场不如一胜一负，一胜一负，负的那一场会将齐王最快的马拖下水，
+             * 可能会使田忌最快的马再赢一场。田忌的马平均水平低于齐王，一胜一负便于尽早结束比赛。
+             */
+            else {
+               if (a[aj] > b[bj]){
+                  sum += 200;
+                  aj --;
+                  bj --;
+              }
+              else if(a[aj] < b[bj]){
+                  sum -= 200;
+                  bi ++;
+                  aj --;
+              }
+              else {
+                /**
+                 * 速度最慢的马低于速度最快的马时要扣钱
+                 * 而速度最慢的马高于速度最快的马的情况已经提过了。
+                */
+                  if (a[aj] < b[bi]){
+                      sum -= 200;
+                  }
+                      aj --;
+                      bi ++;
+              }
+           }
+        }
+        cout << sum << endl;
+    }
+    return 0;
+}
+```
+## 1.1 
+
+[Leetcode-646](https://leetcode-cn.com/problems/maximum-length-of-pair-chain/)
+
+这道题的标签是动态规划，动态规划的[写法](alg_lab_16.md#)，可以直接用贪心来写，下面是贪心写法。
+
+```cpp
+class Solution {
+public:
+    static bool cmp(vector<int> &a, vector<int> &b) {return a[1]<b[1];}
+    int findLongestChain(vector<vector<int>>& pairs) {
+        sort(pairs.begin(),pairs.end(), cmp);
+        int len = pairs.size();
+        int t =  pairs[0][1];
+        int k = 1;
+        for(int i = 1; i < len ;i ++) {
+            if (pairs[i][0] > t) {
+                k++;
+                t = pairs[i][1];
+            }
+        }
+        return k;
+    }
+};
+```
+
 
 # 参考
 1. 《趣学算法》
