@@ -12,6 +12,7 @@
 此处的装载问题为物品可分，若不可分则是0/1背包，而贪心针对0/1背包问题只能达到局部最优得到近似解，无法得到最优解。
 
 按照重量升序，重量升序之后逐个判断装入。
+
 **题目：**
 
 1. [VJ-HDU-1009](#1.1-模板) 简单的模板题。
@@ -45,59 +46,11 @@
 ## 5.0 哈夫曼编码
 带权路径最小的哈夫曼树也应用了贪心思想。
 
+## 6.0 旅行商问题(TSP)
+
 # 例题
 
 ## 1.1 模板
-
-[VJ-HDU-1009](https://vjudge.net/problem/HDU-1009)
-
-```c++
-/**
- * 题目：HDU_1009_FatMouse' Trade
- * 来源：http://acm.hdu.edu.cn/showproblem.php?pid=1009
- * 思路：贪心策略为性价比最高的优先，然后依次贪心。
- * 结果：32196913	2020-01-18 18:39:12	Accepted	1009	561MS	1520K	794 B	G++	weijiew
-*/
-#include <iostream>
-#include <algorithm>
-# define MAXSIZE 1010
-using namespace std;
-struct room{
-    double j , f , h;
-}a[MAXSIZE];
-
-int cmp(room a , room b){
-    return a.h > b.h;
-}
-
-int main() {
-    int m, n;
-    while (cin >> m >> n) {
-        if (m == -1 || n == -1){
-            break;
-        }
-        for (int i = 0; i < n; i++){
-            cin >> a[i].j >> a[i].f;
-            a[i].h = a[i].j / a[i].f;
-        }
-        sort(a , a + n,cmp);
-        double sum = 0 ;
-        for (int i = 0; i < n; i++){
-            if(a[i].f <= m){
-                sum += a[i].j;
-                m -= a[i].f;
-            }else{
-                sum += a[i].h * m;
-                break;
-            }
-        }
-        printf("%.3lf\n",sum);
-    }
-    return 0;
-}
-```
-
-## 1.2 练习！
 
 [VJ-HDU-2111](https://vjudge.net/problem/HDU-2111)
 
@@ -154,7 +107,57 @@ int main(){
 }
 ```
 
+## 1.2 练习！
 
+[VJ-HDU-1009](https://vjudge.net/problem/HDU-1009)
+
+* 题意大致是一个老鼠想要猫看守的厂库中的吃的，猫看管了 n 个仓库，不同厂库的性价比不同，但是老鼠需要拿猫喜欢的食物来换，不同仓库需要给猫的食物也不同，老鼠如何才能拿到最多的自己喜欢的食物。
+
+```c++
+/**
+ * 题目：HDU_1009_FatMouse' Trade
+ * 来源：http://acm.hdu.edu.cn/showproblem.php?pid=1009
+ * 思路：贪心策略为性价比最高的优先，然后依次贪心。
+ * 结果：32196913	2020-01-18 18:39:12	Accepted	1009	561MS	1520K	794 B	G++	weijiew
+*/
+#include <iostream>
+#include <algorithm>
+# define MAXSIZE 1010
+using namespace std;
+struct room{
+    double j , f , h;
+}a[MAXSIZE];
+
+int cmp(room a , room b){
+    return a.h > b.h;
+}
+
+int main() {
+    int m, n;
+    while (cin >> m >> n) {
+        if (m == -1 || n == -1){
+            break;
+        }
+        for (int i = 0; i < n; i++){
+            cin >> a[i].j >> a[i].f;
+            a[i].h = a[i].j / a[i].f;
+        }
+        sort(a , a + n,cmp);
+        double sum = 0 ;
+        for (int i = 0; i < n; i++){
+            if(a[i].f <= m){
+                sum += a[i].j;
+                m -= a[i].f;
+            }else{
+                sum += a[i].h * m;
+                break;
+            }
+        }
+        printf("%.3lf\n",sum);
+    }
+    return 0;
+}
+```
 
 ## 2.1 模板！
 

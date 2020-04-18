@@ -35,7 +35,8 @@
 * [贪心](book/alg_lab_18.md)
 
 ## 🐷数据库
-* [题目](book/sql_lab_1.md)
+* [SQLZOO-题解](book/sql_lab_2.md)
+* [Leetcode-题目](book/sql_lab_1.md)
 * [概述](book/sql_lab_0.md)
 
 ## 👓汇编语言
@@ -57,6 +58,7 @@
 ## 🍭前端
 * [CSS3](book/web_lab_0.md)
 * [React](book/web_lab_1.md)
+* [Head First HTML与CSS、XHTML(中文版)](book/web_lab_2.md)
 
 ## 🎉DeepLearbook
 * [概述](book/dl_lab_0.md)
@@ -67,10 +69,12 @@
 ## 🍳政治
 * [概述](book/pol_lab_0.md)
 * [思修](book/pol_lab_1.md)
-* [马克思](book/pol_lab_2.md)
+* [马克思主义基本原理概述](book/pol_lab_2.md)
 
 ## 🎆英语
 * [英语语法记录](book/eng_lab_0.md)
+* [How_Many_Teeth](book/eng_lab_1.md)
+
 
 ## 🎊爬虫
 * [0.0 概述](book/spi_lab_0.md)
