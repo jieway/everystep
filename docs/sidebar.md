@@ -8,6 +8,7 @@
 * [1.5 传输层](book/net_lab_4.md)
 * [1.6 应用层](book/net_lab_5.md)
 * [1.7 网络安全](book/net_lab_6.md)
+* [1.8 图解HTTP](book/net_lab_7.md)
 
 ## 🧐 算法&题目
 * [概述](book/alg_lab_0.md)
