@@ -265,3 +265,123 @@ SELECT name
 FROM world
 WHERE name LIKE '%a%' AND name LIKE '%e%' AND name LIKE '%i%' AND name LIKE '%o%' AND name LIKE '%u%' AND name NOT LIKE '% %';
 ```
+
+# 3.0 Nobel 表
+
+## 3.1 查询
+* 查询 1950 年诺贝尔将得者。
+```sql
+SELECT yr, subject, winner
+FROM nobel
+WHERE yr = 1950;
+```
+
+## 3.2 AND 
+
+* 查询 1962 年的文学奖得者。
+
+```sql
+SELECT winner
+FROM nobel
+WHERE yr = 1962 AND subject = 'Literature'
+```
+
+## 3.3 Albert Einstein
+* 查询爱因斯坦得奖的年份和科目。
+```sql
+SELECT yr,subject
+FROM nobel
+WHERE winner = 'Albert Einstein'
+```
+
+## 3.4 Peace
+* 查询 2000 以后的诺贝尔和平奖得者。
+```sql
+SELECT winner
+FROM nobel
+WHERE subject = 'Peace' AND yr >= 2000
+```
+
+## 3.5 Literatur
+* 查询 [1980,1989] 年之间的诺贝尔文学奖得者。 
+```sql
+SELECT yr,subject,winner
+FROM nobel
+WHERE subject  = 'Literature' AND yr >= 1980 AND yr <= 1989
+```
+
+## 3.6 President
+* 查询几个总统获得诺贝尔文学奖的详细信息
+```sql
+SELECT * 
+FROM nobel
+WHERE winner IN ('Woodrow Wilson',
+                  'Theodore Roosevelt',
+                  'Jimmy Carter','Barack Obama')
+```
+## 3.7 LIKE
+* LIKE 用于 WHERE 子句中，一般用于模糊查询。
+* 搜索 John 开头的得奖者。
+
+```sql
+SELECT winner
+FROM nobel
+WHERE winner Like 'John%'
+```
+
+## 3.8 ＡＮＤ／ＯＲ
+```sql
+SELECT yr, subject,winner
+FROM nobel
+WHERE subject = 'Physics' AND yr = 1980 OR subject = 'Chemistry' AND yr = 1984;
+```
+
+## 3.9 NOT IN
+
+```sql
+SELECT yr, subject, winner
+FROM nobel
+WHERE subject NOT IN ('Chemistry', 'Medicine') AND yr = 1980;
+```
+
+## 3.10 AND OR
+
+```sql
+SELECT yr,subject, winner
+FROM nobel
+WHERE (subject = 'Medicine' AND yr < 1910) OR (subject = 'Literature' AND yr >= 2004); 
+```
+
+## 3.11 PETER GRÜNBERG
+
+```sql
+SELECT *
+FROM nobel
+WHERE winner = 'PETER GRÜNBERG'
+```
+
+## 3.12 转义字符
+* \ 的处理使得 ' 不被当作结束符号处理。
+```sql
+SELECT *
+FROM nobel
+WHERE winner = 'EUGENE O\'NEILL'
+```
+## 3.13 Sir 开头
+
+```sql
+SELECT winner, yr, subject
+FROM nobel
+WHERE winner LIKE ('Sir%');
+```
+
+## 3.14 OREDER BY
+
+* ORDER BY 对结果集进行排序。
+
+```sql
+SELECT winner, subject
+FROM nobel
+WHERE yr=1984
+ORDER BY subject IN ('Physics','Chemistry'), subject, winner
+```
