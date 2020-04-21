@@ -345,7 +345,7 @@
   <script>
     window.$docsify = {
       name: 'klog',
-      repo: 'https://github.com/weijiew/klog',
+      repo: 'https://github.com/weijiew/codestep',
 	//   loadSidebar: true,
 	  subMaxLevel: 3,
 	   search: {
@@ -390,7 +390,7 @@
       // 编辑
       function(hook, vm) {
         hook.beforeEach(function (html) {
-          var url = 'https://github.com/weijiew/klog/blob/master/docs/' + vm.route.file
+          var url = 'https://github.com/weijiew/codestep/blob/master/docs/' + vm.route.file
           var editHtml = '[📝 EDIT DOCUMENT](' + url + ')\n'
 
           return editHtml
@@ -433,7 +433,7 @@
       const gitalk = new Gitalk({
         clientID: '95a353220012cf99aabf',
         clientSecret: '05fcdc0d96677264caad3b8b6142d502f80a2761',
-        repo: 'klog',
+        repo: 'codestep',
         owner: 'weijiew',
         admin: ['weijiew'],
         title: location.hash.match(/#(.*?)([?]|$)/)[1],
