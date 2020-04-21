@@ -377,6 +377,7 @@ WHERE winner LIKE ('Sir%');
 
 ## 3.14 OREDER BY
 
+
 * ORDER BY 对结果集进行排序。
 
 ```sql
@@ -384,4 +385,93 @@ SELECT winner, subject
 FROM nobel
 WHERE yr=1984
 ORDER BY subject IN ('Physics','Chemistry'), subject, winner
+```
+
+# 4.0 子查询
+
+## 4.1 嵌套
+* 修改一下国家名称即可。
+```sql
+SELECT name 
+FROM world
+WHERE population >
+     (SELECT population FROM world
+      WHERE name='Russia')
+```
+## 4.2 嵌套 + 范围
+* 首先看要查什么，查名字，其次看条件两个条件分别是人居GDP和欧洲。这样一步步分解就写出来了。
+```sql
+SELECT name
+FROM world
+WHERE gdp/population > (
+  SELECT gdp/population
+  FROM world
+  WHERE name = 'United Kingdom'
+  ) 
+AND  continent = 'Europe';
+```
+
+## 4.3 ORDER BY
+
+```sql
+SELECT name, continent 
+FROM world 
+WHERE continent IN (
+    SELECT continent 
+    FROM world 
+    WHERE name IN ('Argentina', 'Australia') 
+    ) 
+ORDER BY name;
+```
+
+## 4.4 嵌套
+* 找出两个国家的人口，然后比对即可。
+```sql
+SELECT name,population
+FROM world
+WHERE 
+population > (SELECT population FROM world WHERE name = 'Canada') 
+AND
+population < (SELECT population FROM world WHERE name = 'Poland');
+```
+
+## 4.5 百分比
+* concat 维护一个字段，这里是百分比
+```sql
+SELECT name, CONCAT(ROUND(population/(SELECT population FROM world WHERE name = 'Germany')*100), '%') 
+FROM world 
+WHERE continent = 'Europe';
+```
+
+## 4.6 ALL
+
+* ALL 是全部满足才成立， any 是满足一个即成立
+```sql
+SELECT name
+FROM world
+WHERE gdp > ALL(SELECT gdp FROM world WHERE gdp > 0 AND continent = 'Europe');
+```
+
+## 4.7
+
+```sql
+SELECT continent, name, area 
+FROM world x
+WHERE area >= ALL(SELECT area FROM world y WHERE x.continent = y.continent AND y.area>0);
+```
+
+## 4.8 
+
+```sql
+SELECT continent, name 
+FROM world x 
+WHERE name <= ALL(SELECT name FROM world y WHERE x.continent = y.continent);
+```
+
+## 4.9
+
+```sql
+SELECT name, continent, population 
+FROM world 
+WHERE continent IN (SELECT continent FROM world  x WHERE 25000000 >= (SELECT MAX(population) FROM world y WHERE x.continent = y.continent));
 ```
