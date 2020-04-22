@@ -475,3 +475,79 @@ SELECT name, continent, population
 FROM world 
 WHERE continent IN (SELECT continent FROM world  x WHERE 25000000 >= (SELECT MAX(population) FROM world y WHERE x.continent = y.continent));
 ```
+
+# 5.0 聚合函数
+一些聚合函数的使用。
+## 5.1 SUM
+
+```sql
+SELECT SUM(population)
+FROM world;
+```
+## 5.2 DISTINCT
+
+```sql
+SELECT DISTINCT(continent)
+FROM world;
+```
+
+## 5.3 SUM+1
+
+```sql
+SELECT SUM(gdp)
+FROM world
+WHERE continent = 'Africa';
+```
+
+## 5.4 COUNT
+
+```sql
+SELECT COUNT(name)
+FROM world
+WHERE area > 1000000;
+```
+
+## 5.5 IN
+
+```sql
+SELECT SUM(population)
+FROM world
+WHERE name IN ('Estonia', 'Latvia', 'Lithuania')
+```
+## 5.6 GROUP BY
+* GROUP BY 针对 continent 进行分组，结合 COUNT 来使用。
+```sql
+SELECT continent,COUNT(name)
+FROM world
+GROUP BY continent;
+```
+
+## 5.7 GROUP BY ++
+
+```sql
+SELECT continent,COUNT(name)
+FROM world
+WHERE population  >= 10000000
+GROUP BY continent;
+```
+
+## 5.8 HAVING
+
+* HAVING 用于控制聚合函数的条件筛选，WHERE 功能不够用了。
+```sql
+SELECT continent
+FROM world
+GROUP BY continent
+HAVING SUM(population) >= 100000000;
+```
+
+# 6.0 
+
+## 6.1 连接查询
+```sql
+SELECT matchid,player
+FROM goal 
+WHERE teamid LIKE 'GER'
+```
+
+## 6.2 
