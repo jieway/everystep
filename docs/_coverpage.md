@@ -1,6 +1,6 @@
 ![logo](favicon.ico)
 
-# Klog
+# CodeStep
 
 > 记录一些知识。
 
