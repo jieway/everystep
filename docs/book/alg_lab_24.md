@@ -197,3 +197,91 @@ int main() {
     return 0;
 }
 ```
+
+
+## 4.0 练习！
+
+[Leetcode-684](https://leetcode-cn.com/problems/redundant-connection/)
+
+这道题把题意搞清楚就行了，给你一个图，输入的过程中不断的判断输入的两个节点是否已经连通，如果已经连通那么就直接返回这条边即可，因为这条边冗余了。如果存在多条冗余边，就返回最后出现的那个边即可
+
+```cpp
+class Solution {
+private:
+    int f[1001];
+    void init() {
+        for(int i = 0 ; i < 1001; i ++) {
+            f[i] = i;
+        }
+    }
+    int find(int n) {
+        if (f[n] == n) return n;
+        return f[n] = find(f[n]);
+    }
+    bool unite(int x, int y) {
+        x = find(x);
+        y = find(y);
+        if (x == y) return false;
+        f[x] = y;
+        return true;
+    }
+public:
+    vector<int> findRedundantConnection(vector<vector<int>>& edges) {
+        init();
+        for(auto edge : edges) {
+            if (unite(edge[0], edge[1]) == false) {
+                return edge;
+            }
+        }
+        return {};
+    }
+};
+```
+
+## 5.0 练习！
+
+[Leetcode-547](https://leetcode-cn.com/problems/friend-circles/)
+
+将自己的所有朋友都指向自己，最后查有几个这样的自己指向自己的人的个数就可以了，其实就是几堆这样的人，而一堆里面一定有一个老大，因为路径压缩了，所以查有几个这样的老大即可。第一次一遍过，开心！
+
+```cpp
+class Solution {
+private:
+    int f[210];
+    void init() {
+        for (int i = 0; i < 210; i++) {
+            f[i] = i;
+        }
+    }
+    int find(int x) {
+        if (x == f[x])
+            return x;
+        return f[x] = find(f[x]);
+    }
+    void merge(int x, int y) {
+        x = find(x);
+        y = find(y);
+        if (x != y) {
+            f[x] = y;
+        }
+    }
+public:
+    int findCircleNum(vector<vector<int>>& M) {
+        init();
+        for (int i = 0; i < M.size(); i++) {
+            for (int j = i + 1; j < M[0].size(); j++) {
+                if (M[i][j]) {
+                    merge(i , j);
+                }
+            }
+        }
+        int total = 0;
+        for (int i = 0; i < M.size(); i++) {
+            if (f[i] == i ) {
+                total++;
+            }
+        }
+        return total;
+    }
+};
+```
