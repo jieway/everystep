@@ -63,11 +63,12 @@
 * [React](book/web_lab_1.md)
 * [Head First HTML与CSS、XHTML(中文版)](book/web_lab_2.md)
 
-## 🎉DeepLearbook
+## 🎉DeepLearning
 * [概述](book/dl_lab_0.md)
 * [手写数字识别](book/dl_lab_1.md)
 * [电影评论分类](book/dl_lab_2.md)
 * [新闻分类](book/dl_lab_3.md)
+* [房价预测](book/dl_lab_4.md)
 
 ## 🍳政治
 * [概述](book/pol_lab_0.md)
