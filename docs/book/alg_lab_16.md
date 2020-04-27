@@ -718,8 +718,29 @@ public:
     }
 };
 ```
-## 5.2 
+## 5.2 练习！
+[Leetcode-62](https://leetcode-cn.com/problems/unique-paths/)
+
+里面有滚动数组的思想，外层循环的状态保存了下来直接拿过来，这一题没有判断，在 0/1 背包里面存在。
+
+```cpp
+class Solution {
+public:
+    int uniquePaths(int m, int n) {
+        vector<int> dp(m,1);
+        for (int i = 1; i < n ; i++) {
+            for (int j = 1; j < m; j++) {
+                dp[j] += dp[j-1];
+            }
+        }
+        return dp[m-1];
+    }
+};
+```
+
 # 01背包
+背包问题存在很多种类型，
+
 
 ## 推荐资料
 
