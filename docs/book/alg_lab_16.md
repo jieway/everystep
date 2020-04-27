@@ -536,6 +536,189 @@ class Solution {
 }
 ```
 
+# 3.0 斐波那契数列
+
+## 3.1 爬楼梯
+
+[Leetcode-70](https://leetcode-cn.com/problems/climbing-stairs/)
+
+通过观察可以发现如下规律！
+
+![](../images/alg_dl1.png)
+
+以上是最基本的情况，当台阶为 0 之时显然存在 (0) 一步走上去即可。
+![](../images/alg_dl2.png)
+
+当台阶为 2 时，存在 (1 + 1) (2) 两种情况， 
+
+当台阶数位 3 时，存在 (1 + 1 + 1) (1 + 2) (2 + 1) 3 种组合。
+
+将台阶为 6 的情况枚举出来后发现 13(6) = 8 (5) + 5 (4) 发现了这个规律。也就是 f(n) = f(n-1) + f(n-2) 斐波那契数列。
+
+
+
+```cpp
+class Solution {
+public:
+    int climbStairs(int n) {
+        if (n < 2) {
+            return n;
+        }
+        int m = 1 , k = 2;
+        for (int i = 2; i < n; i++) {
+            int pre = m + k;
+            m = k;
+            k = pre;
+        }
+        return k;
+    }
+};
+```
+
+## 3.2 练习!
+[Leetcode-198](https://leetcode-cn.com/problems/house-robber)
+
+和爬楼梯类似，但又有了变换，dp[i] = max(dp[i-2]+nums[i], dp[i-1])
+
+当考虑当前房子是否抢当前房子时，需要考虑抢当前房子和前面的前面房子价值和高还是抢前一个房子价值高。
+
+```cpp
+class Solution {
+public:
+    int rob(vector<int>& nums) {
+        int m = 0 , n = 0;
+        for(int i = 0 ; i < size(nums) ;i++) {
+            int t = max(m+nums[i] , n);
+            m = n;
+            n = t;
+        }
+        return n;
+    }
+};
+```
+## 3.3 练习!
+[Leetcode-213](https://leetcode-cn.com/problems/house-robber-ii/)
+
+上一题的变形，因为首位相接，如果按照原来的思路会导致首尾相接的情况出现，导致警报出现。
+
+修改为两个范围 [0,n-2] [1,n-1] 的情况即可。也就是拆分成了两种情况使得不会出现收尾相接的情况。
+```cpp
+class Solution {
+public:
+    int rob(vector<int>& nums) {
+        if (size(nums) == 0) return 0;
+        if (size(nums) == 1) return nums[0];
+        return max(def(nums,0,size(nums) - 2) , def(nums,1,size(nums) - 1));
+    }
+    int def(vector<int>& nums, int a, int b) {
+        int m = 0 , n = 0;
+        for(int i = a ; i <= b ;i++) {
+            int t = max(m+nums[i] , n);
+            m = n;
+            n = t;
+        }
+        return n;
+    }
+};
+```
+
+# 4.0 数组区间
+
+## 4.1 区间和
+[Leetcode-303](https://leetcode-cn.com/problems/range-sum-query-immutable/)
+关于区间和存在很多做法，这个专题是动态规划，动态规划的写法如下。只不过是将前缀和记录下来直接查询。
+
+sums[n] 代表前 n-1 个数的前缀和。
+
+对于样例遍历过程如下：
+
+* sums[1] = sums[0] + nums[0] = 0 + (-2) = -2;
+* sums[2] = sums[1] + nums[1] = (-2) + (0) = -2;
+* sums[3] = sums[2] + nums[2] = (-2) + (3) = 1;
+* sums[4] = sums[3] + nums[3] = (1) + (-5) = -4;
+* sums[5] = sums[4] + nums[4] = (-4) + (2) = -2;
+* sums[6] = sums[5] + nums[5] = (-2) + (-1) = (-3);
+* sums[7] = sums[6] + nums[6] = (-3) + (-1) = (-4);
+
+```cpp
+class NumArray {
+private: 
+    vector<int> sums;
+public:
+    NumArray(vector<int>& nums) {
+        sums.resize(nums.size() + 1);
+        for (int i = 0; i < size(nums); i++) {
+            sums[i+1] = sums[i] + nums[i];
+        }
+    }
+    
+    int sumRange(int i, int j) {
+        return sums[j+1] - sums[i];
+    }
+};
+```
+
+## 4.2 等差数列
+[Leetcode-413](https://leetcode-cn.com/problems/arithmetic-slices)
+dp 代表以当前数字结尾的等差数列个数，记住是当前数字结尾的等差数列。
+
+
+```cpp
+class Solution {
+public:
+    int numberOfArithmeticSlices(vector<int>& A) {
+        if (size(A) == 0) {
+            return 0;
+        }
+        int n = size(A);
+        int dp = 0;
+        int sum = 0;
+        for (int i = 2; i < n; i++) {
+            if (A[i] - A[i-1] == A[i-1] - A[i-2]) {
+                dp++;
+                sum +=dp;
+            }else{
+                dp = 0;
+            }
+        }
+        return sum;
+    }
+};
+```
+# 5.0 矩阵路径和
+
+## 5.1 练习！
+[Leetcode-64](https://leetcode-cn.com/problems/minimum-path-sum)
+
+注意处理好边界情况，除此之外就是考虑从上边下来还是从左边过来的情况了，将结果保存起来然后判断。
+
+```cpp
+class Solution {
+public:
+    int minPathSum(vector<vector<int>>& grid) {
+        int m = grid.size();
+        int n = grid[0].size();
+        if (m == 0 || n == 0) {
+            return 0;
+        }
+        for(int i = 0; i < m ; i++) {
+            for(int j = 0; j < n; j++) {
+                if (i ==0 && j != 0) {
+                    grid[i][j] += grid[i][j-1];
+                }
+                if (i != 0 && j == 0) {
+                    grid[i][j] += grid[i-1][j];
+                }
+                if (i != 0 && j != 0) {
+                    grid[i][j] += min(grid[i-1][j] , grid[i][j-1]);
+                }
+            }
+        }
+    return grid[m-1][n-1];
+    }
+};
+```
+## 5.2 
 # 01背包
 
 ## 推荐资料
