@@ -738,16 +738,169 @@ public:
 };
 ```
 
-# 01背包
+# 6.0 整数拆分
+## 6.1 练习！💚💚💚
+[Leetcode-343](https://leetcode-cn.com/problems/integer-break/)
+这道题的思考过程分为三步：暴力递归 -> 记忆化递归 -> 动规
+首先思考以下递归树，自顶向下。
+```cpp
+class Solution {
+public:
+    int integerBreak(int n) {
+        int dp[n+1];
+        for(int i = 0; i <= n; i ++) {
+            dp[i] = 1;
+        }
+        for (int i = 3; i <= n; i++) {
+            for(int j = 1; j < i; j++) {
+                dp[i] = max(dp[i] , max(j * (i-j) ,j * dp[i - j]));
+            }
+        }
+        return dp[n];
+    }
+};
+```
+## 6.2 练习！💚💚💚
+[Leetcode-279](https://leetcode-cn.com/problems/perfect-squares/)
+
+```cpp
+class Solution {
+public:
+    int numSquares(int n) {
+        vector<int> dp(n + 1, 0x7FFFFFFF);
+        dp[0] = 0;
+        for (int i = 1; i <= n; i++) {
+            dp[i] = i;
+            for (int j = 1; i - j*j >= 0; j++) {
+                dp[i] = min(dp[i], dp[i - j*j] + 1);
+            }
+        }
+        return dp[n];
+    }
+};
+```
+
+# 7.0 背包问题
 
 背包问题存在很多种类型，
 
 根据物品是否可以细分分为 0/1 背包和普通背包，根据物品数量是否优先可以分为完全背包和多重背包。
 
+## 1.0 练习！
+[Leetcode-416](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
 
-# 完全背包
+```cpp
+class Solution {
+public:
+    bool canPartition(vector<int>& nums) {
+        int sum = 0, n = nums.size();
+        
+        for (int i = 0; i < n; i++) {
+            sum += nums[i];
+        }
+        
+        if (sum%2 != 0 || n == 1) {
+            return false;
+        }
+
+        int t = sum / 2;
+        vector<vector<bool>> dp(n + 1, vector<bool>(sum + 1, false));
+        for (int i = 0; i <= n; i++) {
+            dp[i][0] = true;
+        }
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= t; j++) {
+                if (j - nums[i - 1] < 0) {
+                    dp[i][j] = dp[i - 1][j];
+                }else {
+                    dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - nums[i - 1]]);
+                }
+            }
+        }
+        return dp[n][t];
+    }
+};
+```
+
+## 2.0 练习！
+[Leetcode-322](https://leetcode-cn.com/problems/coin-change/description/)
+```cpp
+class Solution {
+public:
+    int coinChange(vector<int>& coins, int amount) {
+        int Max = amount + 1;
+        vector<int> dp(amount + 1, Max);
+        dp[0] = 0;
+        for (int i = 1; i <= amount; ++i) {
+            for (int j = 0; j < (int)coins.size(); ++j) {
+                if (coins[j] <= i) {
+                    dp[i] = min(dp[i], dp[i - coins[j]] + 1);
+                }
+            }
+        }
+        return dp[amount] > amount ? -1 : dp[amount];
+    }
+};
+```
+
+## 3.0 练习！
+[Leetcode-518](https://leetcode-cn.com/problems/coin-change-2/)
+
+完全背包
+
+```cpp
+class Solution {
+public:
+    int change(int amount, vector<int>& coins) {
+
+        int dp[amount + 1];
+        memset(dp , 0, sizeof(dp));
+        dp[0] = 1; 
+        for (int coin : coins) {
+            for (int j = 1; j <= amount; j++) {
+                if (j < coin) {
+                    continue;
+                }
+                dp[j] += dp[j - coin];
+            }
+        }
+        return dp[amount];
+    }
+};
+```
+
+## 4.0 练习！
+
+```cpp
+```
+
+# 8.0 编辑距离
+
+## 8.1 练习！
+[Leetcode-583](https://leetcode-cn.com/problems/delete-operation-for-two-strings/)
+
+## 8.2 练习！
+[Leetcode-72](https://leetcode-cn.com/problems/edit-distance/description/)
+
+## 8.3 练习！
+[Leetcode-650](https://leetcode-cn.com/problems/2-keys-keyboard/description/)
+
+##
 
 
+# 9.0 股票交易
+309\. Best Time to Buy and Sell Stock with Cooldown(Medium)
+
+[Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) / [力扣](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/)
+714\. Best Time to Buy and Sell Stock with Transaction Fee (Medium)
+
+[Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/) / [力扣](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/)
+123\. Best Time to Buy and Sell Stock III (Hard)
+
+[Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/) / [力扣](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/description/)
+188\. Best Time to Buy and Sell Stock IV (Hard)
+
+[Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/description/) / [力扣](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/description/)
 
 # 推荐资料
 
