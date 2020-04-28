@@ -10,4 +10,6 @@
 - [P5709 【深基2.习6】Apples Prologue](https://www.luogu.com.cn/problem/P5709)
 - [P5708 【深基2.习2】三角形面积](https://www.luogu.com.cn/problem/P5708)
 
-## 
+## 2.0 贪心
+
+## 3.0 
