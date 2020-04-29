@@ -15,6 +15,7 @@
 * [题单](book/alg_lab_22.md)
 * [基础知识](book/alg_lab_1.md)
   * [输入输出](book/alg_lab_32.md)
+* [贪心](book/alg_gre_0.md)
 * [数据结构](book/alg_lab_19.md)
   * [链表](book/alg_lab_4.md)
   * [哈希表](book/alg_lab_26.md)
@@ -41,7 +42,7 @@
 * [PAT甲级](book/alg_lab_15.md)
 * [动态规划](book/alg_lab_16.md)
 * [并查集](book/alg_lab_17.md)
-* [贪心](book/alg_lab_18.md)
+
 
 ## 🐷数据库
 * [SQLZOO-题解](book/sql_lab_2.md)
