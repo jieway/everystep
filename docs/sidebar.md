@@ -92,6 +92,7 @@
 * [0.0 概述](book/spi_lab_0.md)
 * [1.0 爬取小说](book/spi_lab_1.md)
 * [2.0 爬取豆瓣](book/spi_lab_2.md)
+* [3.0 正则表达式](book/spi_3.md)
 
 ## 🎁MatLab
 * [0.0 概述](book/mat_lan_0.md)
