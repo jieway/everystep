@@ -101,5 +101,4 @@
 ## 👒Java
 * [0.0 概述]()
 * [1.0 笔记](book/java_lab_1.md)
-* [2.0 类与对象]
 * [2.0 Hibernate](book/java_lab_2.md)
