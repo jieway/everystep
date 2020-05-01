@@ -84,7 +84,9 @@
 ## 🍳政治
 * [概述](book/pol_lab_0.md)
 * [思修](book/pol_lab_1.md)
-* [马克思主义基本原理概述](book/pol_lab_2.md)
+* [马原](book/pol_lab_2.md)
+* [毛中特](book/pol_lab_3.md)
+* [中国近代史纲要](book/pol_lab_4.md)
 
 ## 🎆英语
 * [英语语法记录](book/eng_lab_0.md)
