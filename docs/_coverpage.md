@@ -12,7 +12,7 @@
 </span>
 
 [GitHub](https://github.com/weijiew/klog/)
-[Get Started](sidebar.md)
+[Get Started](_sidebar.md)
 
 
 
