@@ -172,12 +172,6 @@ for (int i = 0; i < n; i++){
 
 贪心是一个比较简单算法思想，每一步都是最优解然后实现全局最优，但是现实中有很多问题往往会陷入局部最优。就像人生，每一步都选择最好的但最好结果却并不一定达到本应该达到的境界。
 
-> 本文收录在 [codestep](https://github.com/weijiew/codestep) 项目中，如果有兴趣请移步 GitHub 更多内容尽在其中，欢迎 star！
-
-> 项目地址：https://github.com/weijiew/codestep
-
-> 开了一个公众号 **codestep** 里面会更新一些学习上的心得，欢迎关注！
-
 ## 参考
 
 1. [算法导论]
