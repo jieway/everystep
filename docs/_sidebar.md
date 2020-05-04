@@ -44,7 +44,6 @@
 * [动态规划](book/alg_lab_16.md)
 * [并查集](book/alg_lab_17.md)
 
-
 ## 🐷数据库
 * [SQLZOO-题解](book/sql_lab_2.md)
 * [Leetcode-题目](book/sql_lab_1.md)

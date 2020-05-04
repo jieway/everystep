@@ -1,14 +1,8 @@
-# 1.1 ❤🧡💛
+## 1.1 ❤🧡💛
 
 [VJ-HDU-2037](https://vjudge.net/problem/HDU-2037)
 
 ```c++
-/**
- * 题目：HDU_2037_今年暑假不AC
- * 思路：按照结束的时间排序，越早结束看的节目越多
- * 来源：http://acm.hdu.edu.cn/showproblem.php?pid=2037
- * 结果：32219623	2020-01-20 18:53:49	Accepted	2037	0MS	1400K	656B	G++	weijiew
-*/
 #include <iostream>
 #include <algorithm>
 using namespace std;
@@ -43,3 +37,56 @@ int main(){
     return 0;
 }
 ``` 
+## 1.2 ❤🧡💛
+[Leetcode-435](https://leetcode-cn.com/problems/non-overlapping-intervals/)
+
+和活动安排问题类似，将集合想象成活动，左右边界想象成起始时间，统计除最多能安排不冲突的集合，总集合个数减去最多的就说最少的需要去除的集合。
+
+```cpp
+class Solution {
+public:
+    // sort 中的 cmp 必须是静态的成员函数
+    static bool cmp(vector<int> a , vector<int> b) {
+        return a[1] < b[1];
+    }
+    int eraseOverlapIntervals(vector<vector<int>>& intervals) {
+        if (intervals.empty()) return 0;
+        sort(intervals.begin(), intervals.end(), cmp);
+        int s = intervals[0][1];
+        int k = 1;
+        for (int i = 1; i < intervals.size(); i++) {
+            if (intervals[i][0] >= s) {
+                k++;
+                s = intervals[i][1];
+            }
+        }
+        return intervals.size() - k;
+    }
+};
+```
+
+## 1.3 ❤🧡💛
+[Leetcode-452](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/)
+和上一题类似，但是找到不相交的区间个数，这些不相交的区间必定要射出一支箭。
+
+```cpp
+class Solution {
+public:
+    static bool cmp(vector<int> a , vector<int> b) {
+        return a[1] < b[1];
+    }
+    int findMinArrowShots(vector<vector<int>>& points) {
+        sort(points.begin(), points.end(), cmp);
+        if (points.size() == 0) return 0;
+        int end = points[0][1];
+        int sum = 1;
+        for (int i = 1; i < points.size(); i++) {
+            if (points[i][0] > end) {
+                sum++;
+                end = points[i][1];
+            }
+        }
+        return sum;
+    }
+};
+```
