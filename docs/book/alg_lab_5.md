@@ -354,6 +354,7 @@ class Solution {
 ```
 
 ## 3. 模板Ⅲ
+
 [103. 二叉树的锯齿形层次遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/)
 
 ### 思考
@@ -418,6 +419,7 @@ class Solution {
 ```
 
 ## 5. 求树的层数
+
 [559. N叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/)
 ### 思考
 上面题目的变形，修改细节即可实现。
@@ -445,6 +447,7 @@ class Solution {
 ```
 
 ## 6. 模板题变形
+
 [429. N叉树的层序遍历](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/)
 
 ### 思考
@@ -475,25 +478,6 @@ class Solution {
     }
 }
 ```
-
-
-
----
-title: 图论
-date: 2019-08-27 18:08:44
-tags: 
-- C++
-- 图论
-
-top_img: https://image.135editor.com/files/users/531/5317107/201907/Ec98WQ4W_hAwF.jpg
-
-
-categories: 
-- ACM
----
-
-
-
 
 ## 1.0  
  HDU1102Constructing Roads（kruskal/prim）
@@ -549,7 +533,9 @@ int main(){
 	}
 } 
 ```
+
 **prim**
+
 ```c++
 #include<iostream>
 #include<cstring>
@@ -1178,62 +1164,6 @@ int main(){
 	cout<<ans<<endl;
 	return 0;
 }
-```
-# 最短路径
-# 最短路径例题
-## HDU2544最短路（dijkstral）
-
-
-```c++
-#include<iostream>
-#include<cstring>
-#define max_size 110//数组不要开太大，第一次没仔细看开了10010，然后内存超限 
-#define inf 0x3f3f3f3f 
-using namespace std; 
-int map[max_size][max_size];
-int dijkstral(int start,int end,int n){
-	int dis[max_size],min,next;
-	bool flag[max_size];
-	memset(dis,0x3f,sizeof(dis));
-	memset(flag,false,sizeof(flag));
-	dis [start] = 0;
-	for(int index = start; index != -1 ; index = next){
-		flag [index] = true;
-		min = inf;
-		next = -1;
-		for(int i = 1;i <= n;i++){
-			if(dis[i] > map[index][i] + dis[index]){
-				dis[i] = map[index][i] + dis [index];
-			}
-			if(!flag[i] && dis[i] < min){
-				min  = dis[i];
-				next = i;
-			}
-		}
-		}
-		if(dis[end] == inf){
-			return -1;
-		}
-		return dis[end];
-	}
-	int main(){
-		int N,M,a,b,c;
-		while(cin>> N >> M && N!=0 && M!=0){
-			memset(map,0x3f,sizeof(map));
-			for ( int i= 1 ; i <= M ; i++){
-				cin >> a >> b >> c ;
-				if(a==b){ 
-				map [a][b] = 0;
-				}
-				else {
-				map [a][b] = min(map[a][b],c);
-				map [b][a] = min(map[b][a],c);				
-				}
-			}
-			cout<<dijkstral(1,N,N)<<endl;
-		}
-		return 0;
-	} 
 ```
 
 # 参考
