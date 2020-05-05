@@ -26,7 +26,8 @@
   * [栈和队列](book/alg_lab_30.md)
   * [字符串](book/alg_lab_31.md)
 * [双指针](book/alg_lab_3.md)
-* [图论](book/alg_lab_5.md)
+* [并查集](book/alg_lab_17.md)
+n* [图论](book/alg_lab_5.md)
   * [搜索](book/os_lab_20.md)
   * [最小生成树](book/alg_lab_21.md)
   * [最短路](book/alg_lab_23.md)
@@ -42,7 +43,7 @@
 * [PAT乙级](book/alg_lab_14.md)
 * [PAT甲级](book/alg_lab_15.md)
 * [动态规划](book/alg_lab_16.md)
-* [并查集](book/alg_lab_17.md)
+
 
 ## 🐷数据库
 * [SQLZOO-题解](book/sql_lab_2.md)
@@ -104,3 +105,7 @@
 * [0.0 概述]()
 * [1.0 笔记](book/java_lab_1.md)
 * [2.0 Hibernate](book/java_lab_2.md)
+
+## 🏆CTF
+* [web](book/ctf_web.md)
+* [misc](book/ctf_misc.md)
