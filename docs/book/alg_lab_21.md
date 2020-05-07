@@ -27,9 +27,59 @@
 * 权重可以为零或负数，只要保证总权重最小则代表最小生成树。
 * 如果存在权重相同的边，那么可能存在多棵最小生成树。
 
-# Prim 
-【实现】
+## 1.0  ❤🧡💛💙
+[VJ_HDU_1233](https://vjudge.net/problem/HDU-1233)
 
-# kruskal
-【实现】
+【Prim】
+
+```cpp
+#include <iostream>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+const int N = 110, INF = 0x3f3f3f3f;
+int maps[N][N];
+int visit[N];
+int d[N];
+int n;
+int prim()
+{
+	int ans = 0;
+	for (int i = 2; i <= n; i++)
+		d[i] = maps[1][i];
+	d[1] = 0;
+	for (int i = 2; i <= n; i++)
+	{
+		int t = -1;
+		for (int j = 2; j <= n; j++)
+		{
+			if (!visit[j])
+				if (d[j] < d[t] || t == -1)
+					t = j;
+		}
+		visit[t] = 1;
+		ans += d[t];
+		for (int j = 2; j <= n; j++)
+			if (!visit[j])
+				d[j] = min(d[j], maps[t][j]);
+	}
+	return ans;
+}
+int main() {
+    while (cin >> n && n != 0) {
+        memset(maps, 0x3f, sizeof(maps));
+        memset(visit, 0, sizeof(visit));
+        for (int i = 0; i < (n * (n - 1)) / 2; i++) {
+            int a, b, c;
+            cin >> a >> b >> c;
+            maps[a][b] = c;
+            maps[b][a] = c;
+        }
+        cout << prim()<< endl;
+    }
+    return 0;
+}
+```
+
+
 
