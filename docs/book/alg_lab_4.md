@@ -1,5 +1,3 @@
-
-
 # 160. 相交链表
 
 [传送门](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)

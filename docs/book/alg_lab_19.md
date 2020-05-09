@@ -1,5 +1,10 @@
-
-
+  * [链表](book/alg_lab_4.md)
+  * [哈希表](book/alg_lab_26.md)
+  * [树](book/alg_lab_27.md)
+  * [数组与矩阵](book/alg_lab_28.md)
+  * [位运算](book/alg_lab_29.md)
+  * [栈和队列](book/alg_lab_30.md)
+  * [字符串](book/alg_lab_31.md)
 # 堆栈 
 ## 递归
 **根据斐波那契公式：**

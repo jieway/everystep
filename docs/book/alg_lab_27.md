@@ -1,12 +1,32 @@
-# 递归
+# 二叉树的遍历
 
+## 1.0 非递归实现二叉树的前序遍历
+[Leetcode-144](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) / [力扣-144](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/description/)
+
+## 2.0 非递归实现二叉树的后序遍历
+[Leetcode-145](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) / [力扣-145](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/description/)
+
+## 3.0 非递归实现二叉树的中序遍历
+[Leetcode-94](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) / [力扣-94](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/description/)
+
+# 层次遍历
+
+## 1.0 一棵树每层节点的平均数
+[Leetcode](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/) / [力扣](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/description/)
+
+## 2.0 得到左下角的节点
+[Leetcode](https://leetcode.com/problems/find-bottom-left-tree-value/description/) / [力扣](https://leetcode-cn.com/problems/find-bottom-left-tree-value/description/)
+
+# 递归
 ## 1.0 ❤🧡
 
 [Leetcode-104](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) / [力扣-104](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/description/)
 递归练习。
 
 * 先思考递归结束的条件，即节点为空的情况，返回 0 因为这个节点为空，上一个节点是子节点，而子节点的下一个节点是高度 0， 回溯的时候加一，叶子节点就变成了 1 ，在回溯再加一，最后回溯到顶点，得到树高。
+
 * 因为是二叉树，存在两条路的选择，所以两个高度需要比较，高的那个分支即为最值。
+
 ```cpp
 class Solution {
 public:
@@ -17,9 +37,10 @@ public:
         return max(m ,n);
     }
 };
-
 ```
-* 简化一下
+
+简化一下
+
 ```cpp
 class Solution {
 public:
@@ -30,255 +51,296 @@ public:
 };
 ```
 
-## 2. 平衡树
+## 2.0 ❤🧡💛
 [Leetcode-100](https://leetcode.com/problems/balanced-binary-tree/description/) / [力扣-100](https://leetcode-cn.com/problems/balanced-binary-tree/description/)
 
+* 每一个节点都需要满足平衡二叉树的定义，所以需要遍历每一个节点！可以采用先序遍历来遍历全部子节点，先序遍历如下。
 
-## 3. 两节点的最长路径
+```cpp
+void preOrder(TreeNode root) {
+    visit(root);
+    preOrder(root.left);
+    preOrder(root.right);
+}
+```
 
-543\. Diameter of Binary Tree (Easy)
+* 还需要一个计算高度的函数，用于计算左右子树的高度。
 
-[Leetcode](https://leetcode.com/problems/diameter-of-binary-tree/description/) / [力扣](https://leetcode-cn.com/problems/diameter-of-binary-tree/description/)
+```cpp
+    int maxDepth(TreeNode* root) {
+        if (root == NULL) return 0;
+        int m = maxDepth(root->left) + 1;
+        int n = maxDepth(root->right) + 1;
+        return max(m ,n);
+    }
+```
+
+* 在遍历的过程中需要判断左右子树高度差，一旦发现高度差大于 1 就返回 false 并且需要遍历全部节点，如果所有节点都满足左右子树差小于 1 ，那么才能返回 true
+
+```cpp
+        if (root == NULL)
+            return true;
+        int l = high(root->left);
+        int r = high(root->right);
+```
+
+* 遍历左右子树，计算高度差，先序遍历的思想遍历全部子树！
+
+```cpp
+        if (abs(l - r) > 1 || !isBalanced(root->left) || !isBalanced(root->right)) {
+            return false;
+        }
+        return true;
+```
+
+* 综上
+
+```cpp
+class Solution {
+public:
+    bool isBalanced(TreeNode* root) {
+        if (root == NULL)
+            return true;
+        int l = high(root->left);
+        int r = high(root->right);
+        if (abs(l - r) > 1 || !isBalanced(root->left) || !isBalanced(root->right)) {
+            return false;
+        }
+        return true;
+    }
+    int high(TreeNode* root) {
+        if (root == NULL) return 0;
+        return max(high(root->left),high(root->right)) + 1;
+    }
+};
+```
+
+## 3.0 ❤🧡💛
+
+[Leetcode-543](https://leetcode.com/problems/diameter-of-binary-tree/description/) / [力扣-543](https://leetcode-cn.com/problems/diameter-of-binary-tree/description/)
+
+最长路径等于左数高加上右树高，也就是如下代码。
+
+```cpp
+    int diameterOfBinaryTree(TreeNode* root) {
+        int sum = high(root->left) + high(root->right);
+        return sum;
+    }
+    int high(TreeNode* root) {
+        if (root == NULL) return 0;
+        return max(high(root->left), high(root->right)) + 1;
+    }
+```
+测试数据过了。
+
+<img src="https://gitee.com/weijiew/pic/raw/master/img/20200508173523.png"/>
+
+但是 submit 的时候这个例子过不去。
+
+<img src="https://gitee.com/weijiew/pic/raw/master/img/20200508173619.png"/>
 
 
-## 4. 翻转树
+于是加上这个这个例子的情况。
 
-226\. Invert Binary Tree (Easy)
+```cpp
+    int diameterOfBinaryTree(TreeNode* root) {
+        if (root == NULL) return 0;
+        int sum = high(root->left) + high(root->right);
+        return sum;
+    }
+    int high(TreeNode* root) {
+        if (root == NULL) return 0;
+        return max(high(root->left), high(root->right)) + 1;
+    }
+```
 
-[Leetcode](https://leetcode.com/problems/invert-binary-tree/description/) / [力扣](https://leetcode-cn.com/problems/invert-binary-tree/description/)
+过了 102 个例子，根据这个例子可以发现其实不过根节点也存在最长的路径。题目也确实明确给出了不一定过根节点。
 
-## 5. 归并两棵树
+<img src="https://gitee.com/weijiew/pic/raw/master/img/20200508173823.png"/>
 
-617\. Merge Two Binary Trees (Easy)
+那么就需要遍历所有节点下的路径和来拿到最大值了。问题就转化为了求树高的最值，但是在求得过程中需要将左右子树和记录下来。遍历了所有的节点同时也拿到了最值。
 
-[Leetcode](https://leetcode.com/problems/merge-two-binary-trees/description/) / [力扣](https://leetcode-cn.com/problems/merge-two-binary-trees/description/)
+```cpp
+class Solution {
+    int ans;
+    int high(TreeNode* root) {
+        if (root == NULL) return 0;
+        int l = high(root->left);
+        int r = high(root->right);
+        ans = max(ans, l + r + 1);
+        return max(l , r) + 1;
+    }
+public:
+    int diameterOfBinaryTree(TreeNode* root) {
+        ans = 1;
+        high(root);
+        return ans - 1;
+    }
+};
+```
 
-## 6. 判断路径和是否等于一个数
+## 4.0 ❤🧡💛
 
-Leetcdoe : 112. Path Sum (Easy)
+[Leetcode-226](https://leetcode.com/problems/invert-binary-tree/description/) / [力扣-226](https://leetcode-cn.com/problems/invert-binary-tree/description/)
 
-[Leetcode](https://leetcode.com/problems/path-sum/description/) / [力扣](https://leetcode-cn.com/problems/path-sum/description/)
+先序和后续遍历都可以在回溯的时候将左右节点交换。中序不可以，回溯前后都会交换实际上有些节点交换了两次。
 
+```cpp
+class Solution {
+public:
+    TreeNode* invertTree(TreeNode* root) {
+        dfs(root);
+        return root;
+    }
+    void dfs(TreeNode* root){
+        if (root == NULL) return;
+        dfs(root->left);
+        dfs(root->right);
+        swap(root->left, root->right);
+    }
+};
+```
 
-## 7. 统计路径和等于一个数的路径数量
+也可以用 BFS 的思想，先建一个队列，左右节点值交换放入队列中。
 
-437\. Path Sum III (Easy)
+```cpp
+class Solution {
+public:
+    TreeNode* invertTree(TreeNode* root) {
+        if (root == NULL) return NULL;
+        queue<TreeNode*> q;
+        q.push(root);
+        while (!q.empty()) {
+            TreeNode* temp = q.front();
+            q.pop();
+            if (temp) {
+                swap(temp->left, temp->right);
+                q.push(temp->left);
+                q.push(temp->right);
+            }
+        }
+        return root;
+    }
+};
+```
 
-[Leetcode](https://leetcode.com/problems/path-sum-iii/description/) / [力扣](https://leetcode-cn.com/problems/path-sum-iii/description/)
+## 5.0 ❤🧡💛💙
 
-## 8. 子树
+[Leetcode-617](https://leetcode.com/problems/merge-two-binary-trees/description/) / [力扣-617](https://leetcode-cn.com/problems/merge-two-binary-trees/description/)
 
-572\. Subtree of Another Tree (Easy)
+```cpp
+class Solution {
+public:
+    TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2) {
+        if (t1 == NULL) return t2;
+        if (t2 == NULL) return t1;
+        t1->val += t2->val;
+        t1->left = mergeTrees(t1->left, t2->left);
+        t1->right = mergeTrees(t1->right, t2->right);
+        return t1;
+    }
+};
+```
 
-[Leetcode](https://leetcode.com/problems/subtree-of-another-tree/description/) / [力扣](https://leetcode-cn.com/problems/subtree-of-another-tree/description/)
+## 6.0 ❤🧡💛💙
 
+[Leetcode-112](https://leetcode.com/problems/path-sum/description/) / [力扣-112](https://leetcode-cn.com/problems/path-sum/description/)
+还是一个递归问题，先将出口写好，然后开启递归。
 
-## 9. 树的对称
+* 当节点为 null 之时，直接返回一个 false，因为这种情况只有树为空时才存在。显然不存在路径和等于目标和。
+* 然后判断到达叶子节点之时目标和是否减为零。
+* 然后就是一个先序遍历了，遍历的时候将目标和减下去。
 
-101\. Symmetric Tree (Easy)
+```cpp
+class Solution {
+public:
+    bool hasPathSum(TreeNode* root, int sum) {
+        if (root == NULL) return false;
+        if (root->left == NULL && root->right == NULL) return sum - root->val == 0;
+        return hasPathSum(root->left, sum - root->val) || hasPathSum(root->right, sum - root->val);
+    }
+};
+```
 
-[Leetcode](https://leetcode.com/problems/symmetric-tree/description/) / [力扣](https://leetcode-cn.com/problems/symmetric-tree/description/)
+## 7.0 ❤🧡💛💙💚
+
+[Leetcode-437](https://leetcode.com/problems/path-sum-iii/description/) / [力扣-437](https://leetcode-cn.com/problems/path-sum-iii/description/)
+
+上一道题套一层皮而已。
+
+```cpp
+class Solution {
+public:
+    int psum;
+    int pathSum(TreeNode* root, int sum) {
+        if (root == NULL) return 0; 
+        Sum(root, sum);
+        pathSum(root->left, sum);
+        pathSum(root->right, sum);
+        return psum;
+    }
+    void Sum(TreeNode* root, int sum) {
+        if (root == NULL) return;
+        sum -= root->val;
+        if (sum == 0) psum++;
+        Sum(root->left, sum);
+        Sum(root->right, sum);
+    }
+};
+```
+
+## 8.0 ❤🧡💛💙
+[Leetcode-437](https://leetcode.com/problems/subtree-of-another-tree/description/) / [力扣-437](https://leetcode-cn.com/problems/subtree-of-another-tree/description/)
+
+## 9.0 ❤🧡💛💙
+[Leetcode-101](https://leetcode.com/problems/symmetric-tree/description/) / [力扣-101](https://leetcode-cn.com/problems/symmetric-tree/description/)
+```cpp
+class Solution {
+public:
+    bool isSymmetric(TreeNode* root) {
+        return isMirror(root, root);
+    }
+    bool isMirror(TreeNode* t1, TreeNode* t2) {
+        if (t1 == NULL && t2 == NULL) return true;
+        if (t1 == NULL || t2 == NULL) return false;
+        return (t1->val == t2->val) && isMirror(t1->left, t2->right) && isMirror(t1->right, t2->left);
+    }
+};
+```
 
 ## 10. 最小路径
-
-111\. Minimum Depth of Binary Tree (Easy)
-
-[Leetcode](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/) / [力扣](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/description/)
-
+[Leetcode-111](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/) / [力扣-111](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/description/)
 
 ## 11. 统计左叶子节点的和
+[Leetcode-404](https://leetcode.com/problems/sum-of-left-leaves/description/) / [力扣-404](https://leetcode-cn.com/problems/sum-of-left-leaves/description/)
+需要一个遍历，遍历过程中发现左叶子节点就累加到变量上。
 
-404\. Sum of Left Leaves (Easy)
-
-[Leetcode](https://leetcode.com/problems/sum-of-left-leaves/description/) / [力扣](https://leetcode-cn.com/problems/sum-of-left-leaves/description/)
-
+```cpp
+class Solution {
+public:
+    int sum = 0;
+    int sumOfLeftLeaves(TreeNode* root) {
+        leftSum(root);
+        return sum;
+    }
+    void leftSum(TreeNode *root) {
+        if (root == NULL) return ;
+        if (root->left != NULL && (root->left->left == NULL && root->left->right == NULL))
+        sum += root->left->val;
+        sumOfLeftLeaves(root->left);
+        sumOfLeftLeaves(root->right);
+    }
+};
+```
 
 ## 12. 相同节点值的最大路径长度
-
-687\. Longest Univalue Path (Easy)
-
-[Leetcode](https://leetcode.com/problems/longest-univalue-path/) / [力扣](https://leetcode-cn.com/problems/longest-univalue-path/)
-
+[Leetcode-687](https://leetcode.com/problems/longest-univalue-path/) / [力扣-687](https://leetcode-cn.com/problems/longest-univalue-path/)
 
 ## 13. 间隔遍历
-
-337\. House Robber III (Medium)
-
 [Leetcode](https://leetcode.com/problems/house-robber-iii/description/) / [力扣](https://leetcode-cn.com/problems/house-robber-iii/description/)
 
 ## 14. 找出二叉树中第二小的节点
-
-671\. Second Minimum Node In a Binary Tree (Easy)
-
 [Leetcode](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/description/) / [力扣](https://leetcode-cn.com/problems/second-minimum-node-in-a-binary-tree/description/)
-
-
-# 层次遍历
-
-使用 BFS 进行层次遍历。不需要使用两个队列来分别存储当前层的节点和下一层的节点，因为在开始遍历一层的节点时，当前队列中的节点数就是当前层的节点数，只要控制遍历这么多节点数，就能保证这次遍历的都是当前层的节点。
-
-## 1. 一棵树每层节点的平均数
-
-637\. Average of Levels in Binary Tree (Easy)
-
-[Leetcode](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/) / [力扣](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/description/)
-
-```java
-public List<Double> averageOfLevels(TreeNode root) {
-    List<Double> ret = new ArrayList<>();
-    if (root == null) return ret;
-    Queue<TreeNode> queue = new LinkedList<>();
-    queue.add(root);
-    while (!queue.isEmpty()) {
-        int cnt = queue.size();
-        double sum = 0;
-        for (int i = 0; i < cnt; i++) {
-            TreeNode node = queue.poll();
-            sum += node.val;
-            if (node.left != null) queue.add(node.left);
-            if (node.right != null) queue.add(node.right);
-        }
-        ret.add(sum / cnt);
-    }
-    return ret;
-}
-```
-
-## 2. 得到左下角的节点
-
-513\. Find Bottom Left Tree Value (Easy)
-
-[Leetcode](https://leetcode.com/problems/find-bottom-left-tree-value/description/) / [力扣](https://leetcode-cn.com/problems/find-bottom-left-tree-value/description/)
-
-```html
-Input:
-
-        1
-       / \
-      2   3
-     /   / \
-    4   5   6
-       /
-      7
-
-Output:
-7
-```
-
-```java
-public int findBottomLeftValue(TreeNode root) {
-    Queue<TreeNode> queue = new LinkedList<>();
-    queue.add(root);
-    while (!queue.isEmpty()) {
-        root = queue.poll();
-        if (root.right != null) queue.add(root.right);
-        if (root.left != null) queue.add(root.left);
-    }
-    return root.val;
-}
-```
-
-# 前中后序遍历
-
-```html
-    1
-   / \
-  2   3
- / \   \
-4   5   6
-```
-
-- 层次遍历顺序：[1 2 3 4 5 6]
-- 前序遍历顺序：[1 2 4 5 3 6]
-- 中序遍历顺序：[4 2 5 1 3 6]
-- 后序遍历顺序：[4 5 2 6 3 1]
-
-层次遍历使用 BFS 实现，利用的就是 BFS 一层一层遍历的特性；而前序、中序、后序遍历利用了 DFS 实现。
-
-前序、中序、后序遍只是在对节点访问的顺序有一点不同，其它都相同。
-
-① 前序
-
-```java
-void dfs(TreeNode root) {
-    visit(root);
-    dfs(root.left);
-    dfs(root.right);
-}
-```
-
-② 中序
-
-```java
-void dfs(TreeNode root) {
-    dfs(root.left);
-    visit(root);
-    dfs(root.right);
-}
-```
-
-③ 后序
-
-```java
-void dfs(TreeNode root) {
-    dfs(root.left);
-    dfs(root.right);
-    visit(root);
-}
-```
-
-## 1. 非递归实现二叉树的前序遍历
-
-144\. Binary Tree Preorder Traversal (Medium)
-
-[Leetcode](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) / [力扣](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/description/)
-
-```java
-public List<Integer> preorderTraversal(TreeNode root) {
-    List<Integer> ret = new ArrayList<>();
-    Stack<TreeNode> stack = new Stack<>();
-    stack.push(root);
-    while (!stack.isEmpty()) {
-        TreeNode node = stack.pop();
-        if (node == null) continue;
-        ret.add(node.val);
-        stack.push(node.right);  // 先右后左，保证左子树先遍历
-        stack.push(node.left);
-    }
-    return ret;
-}
-```
-
-## 2. 非递归实现二叉树的后序遍历
-
-145\. Binary Tree Postorder Traversal (Medium)
-
-[Leetcode](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) / [力扣](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/description/)
-
-前序遍历为 root -> left -> right，后序遍历为 left -> right -> root。可以修改前序遍历成为 root -> right -> left，那么这个顺序就和后序遍历正好相反。
-
-```java
-public List<Integer> postorderTraversal(TreeNode root) {
-    List<Integer> ret = new ArrayList<>();
-    Stack<TreeNode> stack = new Stack<>();
-    stack.push(root);
-    while (!stack.isEmpty()) {
-        TreeNode node = stack.pop();
-        if (node == null) continue;
-        ret.add(node.val);
-        stack.push(node.left);
-        stack.push(node.right);
-    }
-    Collections.reverse(ret);
-    return ret;
-}
-```
-
-## 3. 非递归实现二叉树的中序遍历
-
-94\. Binary Tree Inorder Traversal (Medium)
-
-[Leetcode](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) / [力扣](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/description/)
 
 
 # BST
@@ -288,9 +350,6 @@ public List<Integer> postorderTraversal(TreeNode root) {
 二叉查找树中序遍历有序。
 
 ## 1. 修剪二叉查找树
-
-669\. Trim a Binary Search Tree (Easy)
-
 [Leetcode](https://leetcode.com/problems/trim-a-binary-search-tree/description/) / [力扣](https://leetcode-cn.com/problems/trim-a-binary-search-tree/description/)
 
 ## 2. 寻找二叉查找树的第 k 个元素
@@ -355,137 +414,8 @@ Convert BST to Greater Tree (Easy)
 
 # Trie
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/5c638d59-d4ae-4ba4-ad44-80bdc30f38dd.jpg"/> </div><br>
-
-Trie，又称前缀树或字典树，用于判断字符串是否存在或者是否具有某种字符串前缀。
-
-## 1. 实现一个 Trie
-
-208\. Implement Trie (Prefix Tree) (Medium)
-
+## 1.0 实现一个 Trie
 [Leetcode](https://leetcode.com/problems/implement-trie-prefix-tree/description/) / [力扣](https://leetcode-cn.com/problems/implement-trie-prefix-tree/description/)
 
-```java
-class Trie {
-
-    private class Node {
-        Node[] childs = new Node[26];
-        boolean isLeaf;
-    }
-
-    private Node root = new Node();
-
-    public Trie() {
-    }
-
-    public void insert(String word) {
-        insert(word, root);
-    }
-
-    private void insert(String word, Node node) {
-        if (node == null) return;
-        if (word.length() == 0) {
-            node.isLeaf = true;
-            return;
-        }
-        int index = indexForChar(word.charAt(0));
-        if (node.childs[index] == null) {
-            node.childs[index] = new Node();
-        }
-        insert(word.substring(1), node.childs[index]);
-    }
-
-    public boolean search(String word) {
-        return search(word, root);
-    }
-
-    private boolean search(String word, Node node) {
-        if (node == null) return false;
-        if (word.length() == 0) return node.isLeaf;
-        int index = indexForChar(word.charAt(0));
-        return search(word.substring(1), node.childs[index]);
-    }
-
-    public boolean startsWith(String prefix) {
-        return startWith(prefix, root);
-    }
-
-    private boolean startWith(String prefix, Node node) {
-        if (node == null) return false;
-        if (prefix.length() == 0) return true;
-        int index = indexForChar(prefix.charAt(0));
-        return startWith(prefix.substring(1), node.childs[index]);
-    }
-
-    private int indexForChar(char c) {
-        return c - 'a';
-    }
-}
-```
-
-## 2. 实现一个 Trie，用来求前缀和
-
-677\. Map Sum Pairs (Medium)
-
+## 2.0 实现一个 Trie，用来求前缀和
 [Leetcode](https://leetcode.com/problems/map-sum-pairs/description/) / [力扣](https://leetcode-cn.com/problems/map-sum-pairs/description/)
-
-```html
-Input: insert("apple", 3), Output: Null
-Input: sum("ap"), Output: 3
-Input: insert("app", 2), Output: Null
-Input: sum("ap"), Output: 5
-```
-
-```java
-class MapSum {
-
-    private class Node {
-        Node[] child = new Node[26];
-        int value;
-    }
-
-    private Node root = new Node();
-
-    public MapSum() {
-
-    }
-
-    public void insert(String key, int val) {
-        insert(key, root, val);
-    }
-
-    private void insert(String key, Node node, int val) {
-        if (node == null) return;
-        if (key.length() == 0) {
-            node.value = val;
-            return;
-        }
-        int index = indexForChar(key.charAt(0));
-        if (node.child[index] == null) {
-            node.child[index] = new Node();
-        }
-        insert(key.substring(1), node.child[index], val);
-    }
-
-    public int sum(String prefix) {
-        return sum(prefix, root);
-    }
-
-    private int sum(String prefix, Node node) {
-        if (node == null) return 0;
-        if (prefix.length() != 0) {
-            int index = indexForChar(prefix.charAt(0));
-            return sum(prefix.substring(1), node.child[index]);
-        }
-        int sum = node.value;
-        for (Node child : node.child) {
-            sum += sum(prefix, child);
-        }
-        return sum;
-    }
-
-    private int indexForChar(char c) {
-        return c - 'a';
-    }
-}
-```

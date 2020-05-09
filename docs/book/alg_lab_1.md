@@ -1,4 +1,4 @@
-## 1.0 ✅
+## 1.0 ❤
 
 [leetcode-01](https://leetcode-cn.com/problems/two-sum/)
 
@@ -24,7 +24,7 @@ public:
 ```
 
 
-## 1.0 
+## 2.0 ❤
 
 [LUOGU-P1980](https://www.luogu.com.cn/problem/P1980)
 
@@ -57,9 +57,8 @@ int main()
 }
 ```
 
-## P1567 统计天数
-
-[戳我](https://www.luogu.com.cn/problem/P1567)
+## 3.0
+[Luogu-P1567](https://www.luogu.com.cn/problem/P1567)
 
 ### 题意
 连续的最长上升序列。
