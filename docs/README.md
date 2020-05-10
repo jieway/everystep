@@ -1,5 +1,5 @@
 # codestep
-![](https://img.shields.io/github/stars/weijiew/codestep?color=%238e44ad&label=github&logoColor=%236c5ce7&style=social)
+[![](https://img.shields.io/github/stars/weijiew/codestep?color=%238e44ad&label=github&logoColor=%236c5ce7&style=social)](https://github.com/weijiew/codestep)
 
 个人知识库，在校学生，记录所学，尽量采用最通俗的语言来描述学到的知识。如有错误还请指正。
 
