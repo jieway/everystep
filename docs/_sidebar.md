@@ -1,3 +1,14 @@
+## 💫数据结构（《趣学数据结构》笔记）
+* [1.0 概述](book/ds.md)
+* [2.0 线性表](book/ds_list.md)
+* [3.0 栈和队列](book/ds_qs.md)
+* [4.0 字符串](book/ds_char.md)
+* [5.0 数组和广义表](book/ds_vec.md)
+* [6.0 树](book/ds_tree.md)
+* [7.0 图](book/ds_graph.md)
+* [8.0 查找](book/ds_search.md)
+* [9.0 排序](book/ds_sort.md)
+
 ## 🧐 算法&题目
 * [概述](book/alg_lab_0.md)
 * [题单](book/alg_lab_22.md)
@@ -16,17 +27,6 @@
 * [动态规划](book/alg_lab_16.md)
 * [PAT乙级](book/alg_lab_14.md)
 * [PAT甲级](book/alg_lab_15.md)
-
-## 💫数据结构
-* [1.0 概述](book/ds.md)
-* [2.0 线性表](book/ds_list.md)
-* [3.0 栈和队列](book/ds_qs.md)
-* [4.0 字符串](book/ds_char.md)
-* [5.0 数组和广义表](book/ds_vec.md)
-* [6.0 树](book/ds_tree.md)
-* [7.0 图](book/ds_graph.md)
-* [8.0 查找](book/ds_search.md)
-* [9.0 排序](book/ds_sort.md)
 
 ## 🚗计算机网络
 * [1.1 概述](book/net_lab_0.md)

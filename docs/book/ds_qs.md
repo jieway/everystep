@@ -1,7 +1,7 @@
 # 概述
-栈是先进后出，First in last out 简称 FILO
+栈是先进后出，Last In First Out 简称 LIFO
 
-队列是先进先出，First in first out 简称 FIFO 
+队列是先进先出，First In First Out 简称 FIFO 
 
 # 顺序栈
 
