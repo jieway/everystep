@@ -1,20 +1,21 @@
-  * [链表](book/alg_lab_4.md)
-  * [哈希表](book/alg_lab_26.md)
-  * [树](book/alg_lab_27.md)
-  * [数组与矩阵](book/alg_lab_28.md)
-  * [位运算](book/alg_lab_29.md)
-  * [栈和队列](book/alg_lab_30.md)
-  * [字符串](book/alg_lab_31.md)
+  * [树](alg_ds_tree.md)
+  * [链表](alg_lab_4.md)
+  * [哈希表](alg_lab_26.md)
+  * [数组与矩阵](alg_lab_28.md)
+  * [位运算](alg_lab_29.md)
+  * [栈和队列](alg_lab_30.md)
+  * [字符串](alg_lab_31.md)
+
 # 堆栈 
+
 ## 递归
-**根据斐波那契公式：**
+
 ```c++
 int fib(int x){
 	if(x<=1)return x;
 	return fib(x-1)+fib(x-2);
 }
 ```
-**这个算法会重复计算，于是优化：**
 
 ```c++
 #define max[n+1]
