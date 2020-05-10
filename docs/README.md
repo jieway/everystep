@@ -10,4 +10,6 @@
 
 之前也写过博客，但是感觉太零碎不成系统并且是线性的，这个项目就作为系统性的网状输出。
 
-开了一个公众号: codestep  记录一些总结性的东西，类似 blog 线性输出。
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
