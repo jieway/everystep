@@ -1,15 +1,15 @@
 # codestep
 
-> 2020/4/1
 个人知识库，在校学生，记录所学，尽量采用最通俗的语言来描述学到的知识。如有错误还请指正。
+
+[![](https://gitee.com/weijiew/pic/raw/master/img/star.svg)]()
 
 本项目同步至 [gitee](https://weijiew.gitee.io/codestep/#/) 国内的访问速度更快一些！
 
-> 2020/4/30
 这个项目很多模块都没有完善，目前重点侧重于算法部分。
 
-之前也写过博客，但是感觉太零碎不成系统并且是线性的，这个项目就作为系统性的网状输出。
+## 进度
+正在更新数据结构和算法。
 
 ## License
-
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>

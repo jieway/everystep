@@ -13,9 +13,9 @@
 * [字符串](book/alg_lab_10.md)
 * [数学](book/alg_lab_11.md)
 * [搜索](book/alg_lab_12.md)
+* [动态规划](book/alg_lab_16.md)
 * [PAT乙级](book/alg_lab_14.md)
 * [PAT甲级](book/alg_lab_15.md)
-* [动态规划](book/alg_lab_16.md)
 
 ## 💫数据结构
 * [1.0 概述](book/ds.md)

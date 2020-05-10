@@ -11,7 +11,7 @@
 静态分配：提前为定长的数组申请一块空间，数组的长度固定，但是如果后续的操作导致数组的空间不够用了，那就采用动态分配的方式。
 
 ```cpp
-typedef ElemType int; // typedef 相当于取一个小名，使得 ElemType 等价于 int 
+typedef int ElemType; // typedef 相当于取一个小名，使得 ElemType 等价于 int 
 #define Maxsize 100 // 预先分配的空间
 typedef struct { 
     ElemType data[Maxsize]; // ElemType 是
@@ -22,6 +22,7 @@ typedef struct {
 
 ```cpp
 #define Maxsize 100 
+typedef int ElemType; 
 typedef struct {
     ElemTyep *elem; // * 表示取地址中存放的内容
     int length; // 长度
@@ -30,12 +31,43 @@ typedef struct {
 
 # 顺序表的基本操作
 
-1. 初始化
-2. 创建
-3. 取值
-4. 查找
-5. 插入
-6. 删除
+## 初始化
+思路：首先需要为数组申请空间，一旦申请失败就返回 false 反之 true ，申请成功后还需要将当前长度设置为 0 因为此时列表中还没有元素。
+
+```cpp
+bool InitList(SqList &L) {
+    L.elem = new int[Maxsize];
+    if (L.elem == NULL) return false;
+    L.length = 0;
+    return true;   
+}
+```
+
+## 创建
+
+思路：目的是为了将数据存入列表中，那么什么时候是输入结束？如果提前知道输入数据的个数的话就直接一个 for 循环即可，反之需要设置一个特殊值，这里设置的是 -1 一旦输出 -1 那么就是循环结束的标志，输出 true 即可，反之需要不断的输出。
+在输入的同时还需要防止数组不能够越界，也就是每输入进去一个数据之前要判断数组空间是否还有剩余，如果空间以满就输出 false 反之 true 最终将数据输入其中，即可构建顺序表。
+
+```cpp
+bool CreateList(SqList &L) {
+    int x, i = 0;
+    cin >> x;
+    while (x != -1) {
+        if (L.length == Maxsize) {
+            return false;
+        }
+        cin >> x;
+        L.elem[i++] = x;
+        L.length++;
+        cin >> x;
+    }
+    return true;
+}
+```
+## 取值
+2. 查找
+3. 插入
+4. 删除
 
 # 单链表
 
