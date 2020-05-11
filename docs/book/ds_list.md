@@ -206,14 +206,73 @@ void CreateList_R(Linklist &L) {
 
 
 ### 取值
-注意头指非常重要，上面提过，丢失后就相当于整个链表都找不到了。所以不可所以改动最好提前备份。
-
-
-
+注意头指非常重要，上面提过，丢失后就相当于整个链表都找不到了。所以不可改动最好提前备份。
+思路：为了去某个位置的值，所以需要从头节点开始遍历。直到遍历到目标位置结束输出。注意遍历的过程中需要时刻判断链表遍历完全，如果遍历完了还没有到位置说明这个位置越界。
+```cpp
+bool GetElem_L(Linklist L,int i, int &e) {
+    Linklist p = L->next;
+    int j = 1;
+    while (j < i && p == NULL) {
+        p = p->next;
+        j++;
+    }
+    if (j > i || p == NULL) return false;
+    e = p->data;
+    return true;
+}
+```
 
 ### 查找
-
+遍历一遍即可。
+```cpp
+bool LocateElem_L(Linklist L,int e) {
+    Linklist p = L->next;
+    while (p != NULL) {
+        if (p->data == e) return true;
+        p = p->next;
+    }
+    return false;
+}
+```
 ### 插入
+思路：遍历到位置后插入即可，注意指针的顺序。
+```cpp
+bool ListInsert_L(Linklist& L,int i ,int e) {
+    int j = 1;
+    Linklist p = L, s;
+    while(p != NULL && j < i) {
+        p = p->next;
+        j++;
+    }
+    if (p == NULL || j > i) return false;
+    s = new LNode;
+    s->data = e;
+    s->next = p->next;
+    p->next = s;
+    return true;
+}
+```
+
+### 删除
+注意顺序
+```cpp
+bool ListDelete_L(Linklist &L, int i) {
+    Linklist p, q;
+    p = L;
+    int j = 0;
+    while (j < i-1 && p->next != NULL) {
+        p = p->next;
+        j++;
+    }
+    if (j > i - 1  || p->next == NULL) return false;
+    q = p->next;
+    p-> next = q->next;
+    delete q;
+    return true;
+}
+```
+
+
 
 # 双向链表
 单链表只有两个域，数据域和指针域，而双向链表在此基础上又增加了一个指针域，但是这个指针指向的是前一个节点的地址。
@@ -243,18 +302,87 @@ bool InitList_L(DuLinklist &L) {
 
 ### 创建
 双线链表依旧有头插法和尾插法两种创建方式。
-
 #### 头插法
 注意头插法创建后的顺序依旧是逆序。
 
 取值和查找同单链表类似。
-
+```cpp
+void CreateDuList_H(DuLinkList &L)
+{
+	int n;
+	DuLinkList s;
+	L=new DuLNode;
+	L->prior=L->next=NULL; 
+	cout << "请输入元素个数n：" << endl;
+	cin >> n;
+	cout << "请依次输入n个元素：" << endl;
+	cout << "前插法创建单链表..." << endl;
+	while(n--)
+    {
+		s=new DuLNode;
+		cin>> s->data;
+		if(L->next)
+            L->next->prior=s;
+        s->next=L->next;
+        s->prior=L;
+        L->next=s; 
+	}
+}
+```
 ### 插入
 
+```cpp
+bool ListInsert_L(DuLinkList &L,int i,int &e)//双向链表的插入
+{
+	//在带头结点的单链表L中第i个位置之前插入值为e的新结点
+	int j;
+	DuLinkList p, s;
+	p=L;
+	j=0;
+	while(p&&j<i) //查找第i个结点，p指向该结点
+    {
+		p=p->next;
+		j++;
+	}
+	if(!p||j>i)//i＞n+1或者i＜1
+		return false;
+	s=new DuLNode;     //生成新结点
+	s->data=e;       //将新结点的数据域置为e
+	p->prior->next=s;
+	s->prior=p->prior;
+	s->next=p;
+	p->prior=s;
+	return true;
+}
+```
 ### 删除
-
+```cpp
+bool ListDelete_L(DuLinkList &L,int i) 
+{
+	DuLinkList p;
+	int j;
+	p=L;
+	j=0;
+	while(p&&(j<i)) 
+	{
+		p=p->next;
+		j++;
+	}
+	if(!p||(j>i))
+		return false;
+    if(p->next) 
+        p->next->prior=p->prior;
+	p->prior->next=p->next;
+	delete p;   
+	return true;
+}
+```
 # 循环链表
-## 循环链表的基本操作
+循环链表是首尾相接，最后一个节点的指针指向头节点，这样从任何一个节点出发都可以遍历全部节点。
+
+因为最后一个节点的指针指向头节点，所以当单链表为空的时候，头节点的指针域指向其本身。
+
+而双向链表的头指针要指向前一个节点，同样当表为空的时候双向链表的头指针指向本身。即 `L->next = L->prior = L`
 
 # 线性表的应用
 ## 合并有序顺序表
@@ -266,5 +394,8 @@ bool InitList_L(DuLinklist &L) {
 ## 查找链表的中间节点
 
 ## 删除链表的重复元素
+
 # 顺序表和单链表的比较
+* 空间方面，顺序表是提前分配，多了会浪费少了会溢出。而单链表则是动态分配有多少用多少。
+* 时间方面，顺序表是随机存取，时间复杂度 $O(1)$ ，但是插入删除为$O(n)$ 单链表的时间复杂度 $O(n)$，但是插入删除为 $O(n)$
 
