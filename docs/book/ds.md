@@ -14,7 +14,7 @@
 * 抽象数据类型 ADT ： 描述数据对象，数据对象之间的关系和操作的表达方式。
 
 # 算法
-算法是对特定问题求解步骤的一种描述。
+算法是解决问题的计算步骤。
 
 算法具备以下特点：有穷性，确定性，可行性，输入和输出。
 
@@ -32,3 +32,8 @@
 # 导图
 
 <img src="https://gitee.com/weijiew/pic/raw/master/img/ds_01.png"/>
+
+# 参考 
+1. [《算法-4》](https://book.douban.com/subject/19952400/)
+2. [《趣学数据结构》](https://book.douban.com/subject/34785269/)
+3. [《我的第一本算法书》](https://book.douban.com/subject/30357170/)
