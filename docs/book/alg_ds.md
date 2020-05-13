@@ -6,6 +6,7 @@
   * [栈和队列](alg_lab_30.md)
   * [字符串](alg_lab_31.md)
   * [❎排序](alg_lab_8.md)
+
 # 堆栈 
 
 ## 递归
@@ -25,37 +26,6 @@ int fib(int x){
 	return max[x]=fib(x-1)+fib(x-2);// 
 }
 ```
-## 栈
-**特性：先入后出**
-**pop/push**
-
-```c++
-	stack<int> a;
-	a.push(1);
-	a.push(2);
-	a.push(3);
-	cout<<a.top()<<endl;
-	a.pop();
-	cout<<a.top()<<endl;
-	a.pop();
-	cout<<a.top()<<endl;
-```
-弹出结果为3/2/1
-
-## 队列
-**先入先出：**
-```c++
-	queue<int> q;
-	for(int i=1;i<4;i++){
-		q.push(i);
-	}
-	while(q.size()!=0){
-	cout<<q.front()<<endl;
-	q.pop();
-	}
-```
-弹出结果为1/2/3
-
 
 ## 1792: 括号配对问题
 

@@ -1,14 +1,22 @@
 # 搜索
 简而言之，不管是 BFS 还是 DFS 都是将网状的模型转换为线性的遍历。如何转换？通过回溯实现。
+1.POJ 1312 棋盘问题
+2.POJ 2251 Dungeon Master
+3.POJ 3278 Catch That Cow
+4.POJ 3279 Fliptile
+5.POJ 1426 Find The Multiple
+6.POJ 3126 Prime Path
+7.POJ 3087 Shuffle’m Up
+8.POJ 3414 Pots
+9.FZU 2150 Fire Game
+10.UVA 11624 Fire!
+11.POJ 3984 迷宫问题
+12.HDU 1241 Oil Deposits
+13.HDU 1495 非常可乐
+14.HDU 2612 Find a way
 # 例题
-
-## DFS
-
-
 ### 1.0 练习！
-
 [VJ-POJ-1321](https://vjudge.net/problem/POJ-1321)
-
 ```cpp
 #include <iostream> 
 #define MAX_SIZE 10
@@ -267,7 +275,6 @@ int main() {
  11. 继续回溯得 2 / 3 / 1
  12. 继续回溯得 3 / 1 / 2
  13. 继续回溯得 3 / 2 / 1
- 
  
 ```c++
 #include<iostream>

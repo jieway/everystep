@@ -1,17 +1,17 @@
 ## 💫数据结构
 * [1.0 概述](book/ds.md)
 * [2.0 线性表](book/ds_list.md)
-* [❎3.0 栈和队列](book/ds_qs.md)
-* [❎4.0 字符串](book/ds_char.md)
-* [❎5.0 数组和广义表](book/ds_vec.md)
-* [❎6.0 树](book/ds_tree.md)
-* [❎7.0 图](book/ds_graph.md)
-* [❎8.0 查找](book/ds_search.md)
-* [❎9.0 排序](book/ds_sort.md)
+* [3.0 栈和队列](book/ds_qs.md)
+* [4.0 字符串](book/ds_char.md)
+* [5.0 数组和广义表](book/ds_vec.md)
+* [6.0 树](book/ds_tree.md)
+* [7.0 图](book/ds_graph.md)
+* [8.0 查找](book/ds_search.md)
+* [9.0 排序](book/ds_sort.md)
 
 ## 🧐 算法&题目
 * [概述](book/alg_lab_0.md)
-* [题单](book/alg_lab_22.md)
+* [题单](book/alg_problem_list.md)
 * [基础知识](book/alg_lab_1.md)
 * [贪心](book/alg_gre_0.md)
 * [双指针](book/alg_lab_3.md)
@@ -99,4 +99,4 @@
 
 ## 🏆CTF
 * [web](book/ctf_web.md)
-* [misc](book/ctf_misc.md)
+* [misc](book/ctf_misc.md) 
