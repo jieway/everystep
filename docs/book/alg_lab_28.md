@@ -1,155 +1,48 @@
-## 2. 字符串加法
+## 数组
+## 1.0 
+[Leetcode-66](https://leetcode.com/problems/plus-one) / [力扣-66](https://leetcode-cn.com/problems/plus-one)
+- 题意为提供一个数组，将这个数组中存的每一个数字看作是一个整数的每一位，也就是这个数组逆序分别是这个数字的个位，十位，百位等等。不存在零开头的数字数组。然后将这个“整数”加一。求变化后的数组。
 
-415\. Add Strings (Easy)
-
-[Leetcode](https://leetcode.com/problems/add-strings/description/) / [力扣](https://leetcode-cn.com/problems/add-strings/description/)
-
-字符串的值为非负整数。
-
-```java
-public String addStrings(String num1, String num2) {
-    StringBuilder str = new StringBuilder();
-    int carry = 0, i = num1.length() - 1, j = num2.length() - 1;
-    while (carry == 1 || i >= 0 || j >= 0) {
-        int x = i < 0 ? 0 : num1.charAt(i--) - '0';
-        int y = j < 0 ? 0 : num2.charAt(j--) - '0';
-        str.append((x + y + carry) % 10);
-        carry = (x + y + carry) / 10;
-    }
-    return str.reverse().toString();
-}
-```
-
-# 相遇问题
-
-## 1. 改变数组元素使所有的数组元素都相等
-
-462\. Minimum Moves to Equal Array Elements II (Medium)
-
-[Leetcode](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/description/) / [力扣](https://leetcode-cn.com/problems/minimum-moves-to-equal-array-elements-ii/description/)
-
-```html
-Input:
-[1,2,3]
-
-Output:
-2
-
-Explanation:
-Only two moves are needed (remember each move increments or decrements one element):
-
-[1,2,3]  =>  [2,2,3]  =>  [2,2,2]
-```
-
-每次可以对一个数组元素加一或者减一，求最小的改变次数。
-
-这是个典型的相遇问题，移动距离最小的方式是所有元素都移动到中位数。理由如下：
-
-设 m 为中位数。a 和 b 是 m 两边的两个元素，且 b > a。要使 a 和 b 相等，它们总共移动的次数为 b - a，这个值等于 (b - m) + (m - a)，也就是把这两个数移动到中位数的移动次数。
-
-设数组长度为 N，则可以找到 N/2 对 a 和 b 的组合，使它们都移动到 m 的位置。
-
-**解法 1**  
-
-先排序，时间复杂度：O(NlogN)
-
-```java
-public int minMoves2(int[] nums) {
-    Arrays.sort(nums);
-    int move = 0;
-    int l = 0, h = nums.length - 1;
-    while (l <= h) {
-        move += nums[h] - nums[l];
-        l++;
-        h--;
-    }
-    return move;
-}
-```
-
-**解法 2**  
-
-使用快速选择找到中位数，时间复杂度 O(N)
-
-```java
-public int minMoves2(int[] nums) {
-    int move = 0;
-    int median = findKthSmallest(nums, nums.length / 2);
-    for (int num : nums) {
-        move += Math.abs(num - median);
-    }
-    return move;
-}
-
-private int findKthSmallest(int[] nums, int k) {
-    int l = 0, h = nums.length - 1;
-    while (l < h) {
-        int j = partition(nums, l, h);
-        if (j == k) {
-            break;
+- 首先很容易想到将数组转换成整数加一后再转化成数组，但是数组长度超过整型范围怎么办，会溢出。
+- 不能通过整型来加一，那么只能在数组中实现了，特殊情况无非是结尾出现 9 加一后变成了 0 ，所以逆序遍历。一旦结尾不是 9 那么直接加一 return 即可。
+- 特殊情况在于结尾的9，出现 9 就将这一位赋值成 0 ，因为进位了，而 999 这种情况进位后就变成了 1000 长度多了一位，所以需要全是 9 的情况单独拎出来。这样就写出来了。
+```cpp
+public:
+    vector<int> plusOne(vector<int>& digits) {
+        for (int i = digits.size() - 1; i >= 0; i--) {
+            if (digits[i] != 9) {
+                digits[i]++;
+                return digits;
+            }
+            digits[i] = 0;
         }
-        if (j < k) {
-            l = j + 1;
-        } else {
-            h = j - 1;
-        }
+        vector<int> result(digits.size() + 1);
+        result[0] = 1;
+        return result;
     }
-    return nums[k];
-}
-
-private int partition(int[] nums, int l, int h) {
-    int i = l, j = h + 1;
-    while (true) {
-        while (nums[++i] < nums[l] && i < h) ;
-        while (nums[--j] > nums[l] && j > l) ;
-        if (i >= j) {
-            break;
-        }
-        swap(nums, i, j);
-    }
-    swap(nums, l, j);
-    return j;
-}
-
-private void swap(int[] nums, int i, int j) {
-    int tmp = nums[i];
-    nums[i] = nums[j];
-    nums[j] = tmp;
-}
+};
 ```
+- Accepted
+- 109/109 cases passed (0 ms)
+- Your runtime beats 100 % of cpp submissions
+- Your memory usage beats 100 % of cpp submissions (6.7 MB)
 
+## 2.0 
+[Leetcode-867](https://leetcode.com/problems/transpose-matrix/) / [力扣-867](https://leetcode-cn.com/problems/transpose-matrix/)
 
-# 其它
+题意：矩阵转置，也就是二维数组沿对角线变换。
 
-## 3. 乘积数组
-
-238\. Product of Array Except Self (Medium)
-
-[Leetcode](https://leetcode.com/problems/product-of-array-except-self/description/) / [力扣](https://leetcode-cn.com/problems/product-of-array-except-self/description/)
-
-```html
-For example, given [1,2,3,4], return [24,12,8,6].
-```
-
-给定一个数组，创建一个新数组，新数组的每个元素为原始数组中除了该位置上的元素之外所有元素的乘积。
-
-要求时间复杂度为 O(N)，并且不能使用除法。
-
-```java
-public int[] productExceptSelf(int[] nums) {
-    int n = nums.length;
-    int[] products = new int[n];
-    Arrays.fill(products, 1);
-    int left = 1;
-    for (int i = 1; i < n; i++) {
-        left *= nums[i - 1];
-        products[i] *= left;
+```cpp
+class Solution {
+public:
+    vector<vector<int>> transpose(vector<vector<int>>& A) {
+        vector<vector<int> > a(A[0].size());
+        for (int i = 0; i < A[0].size(); i++) {
+            for (int j = 0; j < A.size(); j++) {
+                a[i].push_back(A[j][i]);
+            }
+        }
+        return a;
     }
-    int right = 1;
-    for (int i = n - 2; i >= 0; i--) {
-        right *= nums[i + 1];
-        products[i] *= right;
-    }
-    return products;
-}
+};
 ```

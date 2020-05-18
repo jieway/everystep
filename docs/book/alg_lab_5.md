@@ -1177,17 +1177,6 @@ int main(){
 
 - [1]《算法-4》
 
-
-
-<!-- GFM-TOC -->
-* [二分图](#二分图)
-    * [1. 判断是否为二分图](#1-判断是否为二分图)
-* [拓扑排序](#拓扑排序)
-    * [1. 课程安排的合法性](#1-课程安排的合法性)
-    * [2. 课程安排的顺序](#2-课程安排的顺序)
-<!-- GFM-TOC -->
-
-
 # 二分图
 
 如果可以用两种颜色对图中的节点进行着色，并且保证相邻的节点颜色不同，那么这个图就是二分图。
@@ -1203,6 +1192,8 @@ int main(){
 
 [Leetcode](https://leetcode.com/problems/course-schedule/description/) / [力扣](https://leetcode-cn.com/problems/course-schedule/description/)
 ## 2. 课程安排的顺序
+
+
 
 210\. Course Schedule II (Medium)
 

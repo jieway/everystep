@@ -26,9 +26,9 @@ React 都以 JS 来实现组简。
 webpack 基于 node 构建，语法也是 node 的项目。是一个工具，用于管理项目，打包项目。
 约定 > 配置，为了减少配置的体积。
 * 创建一个文件夹，不要命名为 webpack 与这个webpack 的工具名重复，后面会无法加载包。 
+* `npm init -y ` y 是 yes 的缩写，意思为快速初始化项目。
 * 创建一个 `src` 文件和 `dist` 文件，前者存放源代码，后者存放打包好的文件。
-* `npm init -y ` 快速初始化项目。
-* 在 src 目录下床架 index.html main.js
+* 在 src 目录下创建 index.html main.js 其中 main.js 是入口文件，打包的时候从 main 开始打包。
 * `npm install webpack -g` 下载这个包，如果终端提示找不到命令就全局安装。
 * `npm i webpack-cli -D` 脚手架，自动打包，工具。
 * index.js 默认的入口， dist 目录下的 main.js 是默认的输出。
@@ -37,4 +37,4 @@ webpack 基于 node 构建，语法也是 node 的项目。是一个工具，用
 
 
 # 参考
-* [1] [bilibili](https://www.bilibili.com/video/BV11t411S7iG) 
+* [1] [bilibili](https://www.bilibili.com/video/BV11t411S7iG)  
