@@ -9,7 +9,7 @@
 ## 3.0 非递归实现二叉树的中序遍历
 [Leetcode-94](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) / [力扣-94](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/description/)
 
-# 层次遍历
+## 层次遍历
 
 ## 1.0 一棵树每层节点的平均数
 [Leetcode](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/) / [力扣](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/description/)
@@ -18,6 +18,7 @@
 [Leetcode](https://leetcode.com/problems/find-bottom-left-tree-value/description/) / [力扣](https://leetcode-cn.com/problems/find-bottom-left-tree-value/description/)
 
 # 递归
+
 ## 1.0 ❤🧡
 
 [Leetcode-104](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) / [力扣-104](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/description/)
@@ -52,7 +53,7 @@ public:
 ```
 
 ## 2.0 ❤🧡💛
-[Leetcode-100](https://leetcode.com/problems/balanced-binary-tree/description/) / [力扣-100](https://leetcode-cn.com/problems/balanced-binary-tree/description/)
+[Leetcode-110](https://leetcode.com/problems/balanced-binary-tree/description/) / [力扣-110](https://leetcode-cn.com/problems/balanced-binary-tree/description/)
 
 * 每一个节点都需要满足平衡二叉树的定义，所以需要遍历每一个节点！可以采用先序遍历来遍历全部子节点，先序遍历如下。
 
@@ -424,31 +425,24 @@ Convert BST to Greater Tree (Easy)
 
 # 遍历
 
-- 前序遍历的代码在进入某一个节点之前的那个时间点执行，后序遍历代码在离开某个节点之后的那个时间点执行。
-
-
-## 1.0 对比二叉树
-
-[Leetcode：100](https://leetcode-cn.com/problems/same-tree/)
+## 1.0 ❤🧡💛
+[Leetcode-100](https://leetcode.com/problems/same-tree/) / [力扣-100](https://leetcode-cn.com/problems/same-tree/)
 
 题意是判断两颗树是否相等，首先肯定需要遍历每一个节点，然后比较每一个值，null 和 值是否相等要区分开来判断。之后其实就是一个先序遍历了！
 
-### code
-```java
+```cpp
 class Solution {
-    public boolean isSameTree(TreeNode p, TreeNode q) {
-        if (p == null && q == null) return true;
-        if (p == null || q == null) return false;
-        if (p.val != q.val) return false;
-        return isSameTree(p.left , q.left) && isSameTree(p.right,q.right);
-     }
-}
+public:
+    bool isSameTree(TreeNode* p, TreeNode* q) {
+        if (p == NULL && q == NULL) return true;
+        if (p == NULL || q == NULL) return false;
+        if (p->val != q->val) return false;
+        return isSameTree(p->left, q->left) && isSameTree(p->right,q->right);
+    }
+};
 ```
-
-
-## 2.0 判断对称树
-
-[Leetcode](https://leetcode-cn.com/problems/symmetric-tree/)
+## 2.0 ❤🧡💛💙
+[Leetcode-101](https://leetcode.com/problems/symmetric-tree/) / [力扣-101](https://leetcode-cn.com/problems/symmetric-tree/)
 
 题目是让判断树是否对称。其实也是遍历，只不过是交叉的遍历。
 
@@ -458,25 +452,25 @@ class Solution {
 * 此时再判断左树的右树，右树的左树，同上继续压栈，知道为空停止，然后回溯！
 * 开始回溯时会出现两种情况，左树右树其中一个为空或全部为空，前者必定不会对称，后者必定会对称！
 
-```java
+```cpp
 class Solution {
-    public boolean isSymmetric(TreeNode root) {
-        if (root == null) return true;
-        return isMirrored(root.left , root.right);
+public:
+    bool isSymmetric(TreeNode* root) {
+        if (root == NULL) return true;
+        return isMirro(root->left , root->right);
     }
-    public boolean isMirrored(TreeNode left , TreeNode right) {
-        if (left == null && right == null) return true;
-        if (left == null || right == null) return false;
-        return (left.val == right.val)  && isMirrored(left.left,right.right) && isMirrored(left.right,right.left);
+    bool isMirro(TreeNode* left, TreeNode* right) {
+        if (left == NULL && right == NULL) return true;
+        if (left == NULL || right == NULL) return false;
+        return (left->val == right->val) && isMirro(left->left,right->right) && isMirro(left->right,right->left);
     }
-}
+};
 ```
 
 
 
 ## 543. Diameter of Binary Tree
-[Leetcode](https://leetcode-cn.com/problems/diameter-of-binary-tree/descript
-ion/)
+[Leetcode](https://leetcode-cn.com/problems/diameter-of-binary-tree/description/)
 
 ### 思考
 递归计算二叉树的深度。在此基础上递归计算左右两颗子树的深度，计算的过程中将最大值保留下来。
