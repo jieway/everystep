@@ -1,9 +1,3 @@
----
-title: MATLAB基础知识
-date: 2020-03-15
----
-
-
 # MATLAB基础知识
 
 实验目的：学习MATLAB简介、向量与矩阵运算、MATLAB程序设计、MATLAB符号计算。所需设备以及所需软件：
