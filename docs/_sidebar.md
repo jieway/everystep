@@ -1,5 +1,6 @@
 ## 🐷C/C++
 * [C Prime Plus](book/c_01.md)
+* [Pythonic](book/py_0.md)
 * 
 ## 💫数据结构
 * [1.0 概述](book/ds.md)
