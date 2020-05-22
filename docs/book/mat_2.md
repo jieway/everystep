@@ -319,5 +319,119 @@ $x=2cost$ $y=2sint$ $z=3t$ $t\in[0,10\pi]$
 <img src="https://gitee.com/weijiew/pic/raw/master/img/20200522010820.png"/>
 
 
-使用双纵坐标绘制曲线y=sinx与y=3x。
+使用双纵坐标绘制曲线 $y=sinx$ 与 $y=3^x$ 。
 
+```bash
+>> x = 0:pi/20:2*pi;
+>> y = sin(x);
+>> z = 2.^x;
+>> plotyy(x,y,x,z,'plot','semilogy');
+```
+
+<img src="https://gitee.com/weijiew/pic/raw/master/img/20200522231332.png"/>
+
+极坐标图:
+
+(1) $y=2(1-cos\theta)$  (2) $y=3cos4\theta$
+
+```bash
+>> subplot(1,2,1);
+>> th = 0:pi/20:2*pi; 
+>> rh = 2*(1-cos(th));
+>> polar(th,rh,'k')
+>> title('r=2*(1-cos\theta)')
+>> subplot(1,2,2);
+>> th = 0:pi/50:2*pi;
+>> rh = 3*cos(4*th);
+>> polar(th,rh,'k')
+>> grid off
+>> axis off
+>> title('r = 3cos(4\theta)');
+```
+
+等高线图：
+
+(1)peaks函数曲面图；
+   
+(2)peaks二维等高线图n=15；
+
+(3)peaks三维等高线图n=15；
+
+(4)对peaks二维等高线图n=15进行数值标注。
+
+```bash
+>> [X,Y,Z]=peaks(30);%peaks为MATLAB自定义函数
+>> subplot(2,2,1);
+>> surf(X,Y,Z);
+>> title('peaks(30)');
+>> subplot(2,2,2);
+>> contour(Z,15);
+>> title('contour of peaks');
+>> subplot(2,2,3);
+>> contour3(Z,15);
+>> title('contour3 of peaks');
+>> subplot(2,2,4);
+>> C=contour(X,Y,Z,5);
+>> clabel(C);
+>> title('clabel of peaks');
+```
+
+散点图：
+
+```bash
+>> x = rand(1,30)*10;
+>> b = rand(1,30);
+>> y = x+b;
+>> scatter(x,y,20,'*')
+>> title('scatter');
+
+>> t = 0:pi/10:10*pi;
+>> x = 5*t.*cos(t);
+>> y = 5*t.*sin(t);
+>> z = 2*t;
+>> scatter3(x,y,z,20,'o');
+>> title('scatter3');
+```
+
+5.其他特殊函数图
+   a.使用MATLAB生成二维与三维数据点，并绘制以下图形：
+(1)条形图；     
+
+(2)箭号图；       (3)统计直方图；
+(4)饼图；         (5)火柴杆图；     (6)矢量图；
+(7)多边形填充图； (8)区域填充图。
+
+```bash
+>> subplot(4,2,1)
+>> x = 1:10;
+>> y = round(10*rand(1,10));
+>> bar(x,y);
+>> title('bar');
+>> axis tight
+>> subplot(4,2,2);
+>> x=0:pi/10:2*pi;y=x.*sin(x);
+>> feather(x,y);title('feather');
+>> subplot(4,2,3)
+>> x=-2.9:0.1:2.9;y=randn(10000,1);
+>> hist(y,x);title('hist');
+>> subplot(4,2,4);
+>> pie([2 4 3 5],[1 1 0 0],{'North','South','East','West'});title('pie');
+>> subplot(4,2,5)
+>> x=0:pi/20:2*pi;y=exp(-x/8).*sin(x);
+>>  stem(x,y);title('stem');
+>> subplot(4,2,6);
+>> [x,y]=meshgrid(-2:.2:2,-1:.15:1);
+>> z=x.*exp(-x.^2-y.^2);[px,py]=gradient(z,.2,.15);
+>> contour(x,y,z),hold on
+>>  quiver(x,y,px,py),hold off,title('quiver');
+>> subplot(4,2,7);
+>>  x=1:10;
+>>  y=[0,1,-1,1,1,0,-1,-1,1,0];
+>>  fill(x,y,'b');title('fill');
+>>  subplot(4,2,8);
+>>  t=linspace(0,2*pi,12);
+>>  x=sin(2*t);y=cos(2*t);
+>> area(x,y,'facecolor','b');title('area');
+```
+
+<img src="https://gitee.com/weijiew/pic/raw/master/img/20200522234055.png"/>
