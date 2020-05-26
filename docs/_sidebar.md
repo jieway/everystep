@@ -102,7 +102,3 @@
 * [0.0 概述]()
 * [1.0 笔记](book/java_lab_1.md)
 * [2.0 Hibernate](book/java_lab_2.md)
-
-## 🏆CTF
-* [web](book/ctf_web.md)
-* [misc](book/ctf_misc.md) 
