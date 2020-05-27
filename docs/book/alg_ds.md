@@ -8,259 +8,16 @@
   * [❎排序](alg_lab_8.md)
 
 # 栈
+
 ## 💗
+
 括号配对问题
 
 [Leetcode-20](https://leetcode.com/problems/valid-parentheses/) / [力扣-20](https://leetcode-cn.com/problems/valid-parentheses)
 
 [Leet](https://leetcode-cn.com/problems/hanota-lcci/)
-## 1863: 汉诺塔（三）
 
-**题目描述**
-在印度，有这么一个古老的传说：在世界中心贝拿勒斯（在印度北部）的圣庙里，一块黄铜板上插着三根宝石针。印度教的主神梵天在创造世界的时候，在其中一根针上从下到上地穿好了由大到小的64片金片，这就是所谓的汉诺塔。不论白天黑夜，总有一个僧侣在按照下面的法则移动这些金片：一次只移动一片，不管在哪根针上，小片必须在大片上面。僧侣们预言，当所有的金片都从梵天穿好的那根针上移到另外一根针上时，世界就将在一声霹雳中消灭，而梵塔、庙宇和众生也都将同归于尽。
-
-
-
-现在我们把三根针编号为1，2，3。
-
-所有的金片在初始时都在1号针上，现在给你的任务是判断一系列的指令过程中，是否会出现非法的指令。
-
-而非法指令有以下两种情况：
-
-1、某个针上已经没有金片了，但是指令依然要求从该处移动金片到其它针上。
-
-2、把一个大的金片移动到了小的金片上。
-
-**输入**
-第一行输入一个整数N表示测试数据的组数(N<10)
-每组测试数据的第一行有两个整数P,Q(1<P<64,1<Q<100)，分别表示汉诺塔的层数与随后指令的条数
-随后的Q行，每行都输入两个整数a,b，(1<=a,b<=3)表示一条指令。
-指令1 2表示把1号针最上面的金片移动到2号针最上面。
-数据保证a,b不会相同。
-**输出**
-如果存在非法指令，请输出illegal 不存在非法指令则输出legal
-**样例输入**
- 3
-2 1
-1 2
-3 3
-1 2
-1 3
-3 2
-2 1
-2 1
-**样例输出**
-legal
-illegal
-illegal
-**思路：**
-
- 1. 利用堆先进后出的特性
- 2. 设置一个数组，将金片降序输入，得到从下到上的升序。
- 3. 输入指令判读，输入一次判断一次。
- 4. 先判断此针是否为空，若空跳出循环。反之继续。
- 5. 其次判断此要移动到的针是否为空，若为空不进行判断金片大小。
- 6. 若不为空，判断大小，若移动前小于移动到的那根针则正确，反之错误，跳出循环。
- 7. 若正确继续循环。循环完毕推出legale。
-
-```c++
-#include<iostream>
-#include<stack>
-using namespace std;
-int main(){
-	int n,p,q,a,b;
-	cin>>n;
-	while(n--){
-		int f=1;//一真零假 
-		stack<int> s[3];
-		cin>>p>>q;
-		for(int i=p-1;i>=0;i--){
-			s[0].push(i);//将金片降序压入针中 
-		}
-		for(int i=0;i<q;i++){
-			cin>>a>>b;
-			a = a-1;
-			b = b-1;
-			if(s[a].empty()){
-				f=0;break;
-			}
-			if(s[b].empty()){
-				s[b].push(s[a].top());
-				s[a].pop();
-			}else{
-				if(s[a].top()>s[b].top()){
-					f=0;
-					break;
-				}else{
-					s[b].push(s[a].top());
-					s[a].pop();
-				}
-			}
-		}
-		if(f){
-			cout<<"legal"<<endl;
-		} else{
-			cout<<"illegal"<<endl;
-		}
-	}
-	return 0;
-}
-```
-
-
-## 1785: 表达式求值
-
-**题目描述**
-实现输入一个表达式求出它的值的计算器，比如输入：“1+2/4=”，程序就输出1.50（结果保留两位小数）
-
-**输入**
-第一行输入一个整数n，共有n组测试数据（n<10)。 每组测试数据只有一行，是一个长度不超过1000的字符串，表示这个运算式，每个运算式都是以“=”结束。这个表达式里只包含+-*/与小括号这几种符号。其中小括号可以嵌套使用。数据保证输入的操作数中不会出现负数。 数据保证除数不会为0
-**输出**
-每组都输出该组运算式的运算结果，输出结果保留两位小数。
-**样例输入**
- 2
-1.000+2/4=
-((1+2)*5+1)/4=
-**样例输出**
-1.50
-4.00
-```c++
-#include<iostream>
-#include<cstring>
-#include<cmath> 
-#include<stack>
-using namespace std;
-//实现加减乘除的运算 
-double sum(double a,char op,double b){
-	switch(op){
-		case '+':return a+b;break;
-		case '-':return a-b;break;
-		case '*':return a*b;break;
-		case '/':return a/b;break; 
-	}
-}
-//判断符号的优先级 
-char percede(char a,char z){
-	if(a=='+'||a=='-'){//加减小于乘除 
-		if(z=='*'||z=='/'||z=='(')return '<';
-		else return '>';
-	}if(a=='*'||a=='/'){ //乘除小于左括号，右括号出现后已经进行过乘除了 
-		if(z=='(')return '<';
-		else return '>';
-	}if(a=='('||a=='='){//括号匹配，左右括号和等号的优先级相同且同时出现，否则小于 
-		if((a=='('&&z==')')||(a=='='&&z=='='))return '=';
-		else return '<';
-	}
-} 
-int main(){
-	int n;
-	double x,y;
-	char a[1005],t[1005],z;
-	scanf("%d",&n);
-	while(n--){
-		scanf("%s",&a);
-		stack<double> s;//操作数栈 
-		stack<char> op;//运算符栈 
-		op.push('=');//栈底为"=" 
-		int i,k=0;
-		bool flag=false;
-		for(i=0;a[i];){
-			if(a[i]>='0'&&a[i]<='9'||a[i]=='.'){//将操作数与运算符分离 
-			flag = true;
-			t[k++] = a[i++];
-			continue;
-			}
-			if(flag){
-			t[k]='\0';
-			s.push(atof(t));//将字符转换为double类型的数据 
-			k=0,flag = false; 
-			}
-			switch(percede(op.top(),a[i])){//比较字符的优先级 
-				case '<': op.push(a[i]);i++;break;//若小于，将此字符压入栈中 
-				case '=': op.pop();i++;break;//优先级相同说明存在相同的字符 需要弹出一个 
-				case '>'://若大于，进行计算。 
-					x = s.top();s.pop();
-					y = s.top();s.pop();
-					z = op.top();op.pop();
-				s.push(sum(y,z,x));
-			}
-		}
-		printf("%.2lf\n",s.top());
-	}
-	return 0;
-} 
-```
-
-## 2389: 堆栈的使用
-**题目描述**
-堆栈是一种基本的数据结构。堆栈具有两种基本操作方式，push 和 pop。Push一个值会将其压入栈顶，而 pop 则会将栈顶的值弹出。现在我们就来验证一下堆栈的使用。
-
-**输入**
-对于每组测试数据，第一行是一个正整数 n，0<n<=10000(n=0 结束)。而后的 n 行，每行的第一个字符可能是'P’或者'O’或者'A’；如果是'P’，后面还会跟着一个整数，表示把这个数据压入堆栈；如果是'O’，表示将栈顶的值 pop 出来，如果堆栈中没有元素时，忽略本次操作；如果是'A’，表示询问当前栈顶的值，如果当时栈为空，则输出'E'。堆栈开始为空。
-
-**输出**
- 对于每组测试数据，根据其中的命令字符来处理堆栈；并对所有的'A’操作，输出当时栈顶的值，每个占据一行，如果当时栈为空，则输出'E’。当每组测试数据完成后，输出一个空行。
-
-**样例输入**
- 5
-P 75
-O
-O
-P 60
-A
-7
-A
-O
-P 73
-P 49
-A
-O
-P 3
-0
-**样例输出**
-60
-
-E
-49
-**注意换行！**
-```c++
-#include<iostream>
-#include<stack>
-using namespace std;
-int main(){
-	int n,b;
-	char a;
-	stack<int> s;
-	while(cin>>n){
-		while(n--){
-		cin>>a;
-		if(a=='P'){
-			cin>>b;
-			s.push(b);	
-		}
-		if(a=='O'){
-			if(s.size()==0){
-				continue;
-			}else{
-				s.pop();
-			}
-		}
-		if(a=='A'){
-			if(s.size()==0){
-				cout<<"E"<<endl;
-			}else{
-				cout<<s.top()<<endl;
-			}
-		}	
-		}
-		cout<<endl;
-		while(s.size()!=0){
-			s.pop();
-		}
-	}
-	return 0;
-}
-```
+[Leetcode-150](https://leetcode.com/problems/evaluate-reverse-polish-notation/) / [力扣-150](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
 # STL 
 
@@ -318,6 +75,7 @@ int main(){
 	return 0;
 } 
 ```
+
 ## 1793: Binary String Matching
 
 时间限制: 3 Sec  内存限制: 64 MB
@@ -2076,58 +1834,6 @@ int main()
 
 # 测试 
 
-## A - Climbing Worm HDU - 1049
-
-Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 65536/32768 K (Java/Others)
-Total Submission(s): 24984    Accepted Submission(s): 17063
-
-
-**Problem Description**
-An inch worm is at the bottom of a well n inches deep. It has enough energy to climb u inches every minute, but then has to rest a minute before climbing again. During the rest, it slips down d inches. The process of climbing and resting then repeats. How long before the worm climbs out of the well? We'll always count a portion of a minute as a whole minute and if the worm just reaches the top of the well at the end of its climbing, we'll assume the worm makes it out.
- 
-
-**Input**
-There will be multiple problem instances. Each line will contain 3 positive integers n, u and d. These give the values mentioned in the paragraph above. Furthermore, you may assume d < u and n < 100. A value of n = 0 indicates end of output.
- 
-
-**Output**
-Each input instance should generate a single integer on a line, indicating the number of minutes it takes for the worm to climb out of the well.
- 
-
-**Sample Input**
-10 2 1
-20 3 1
-0 0 0
- 
-
-**Sample Output**
-17
-19
- 
-**总结： 直接模拟就好，和之前写的蜗牛爬金字塔类似，不过那个用找规律取余做的。**
-```c++
-#include<iostream>
-using namespace std;
-int main(){
-	int n,u,d;
-	while(cin>>n>>u>>d&&n!=0&&u!=0&&d!=0){
-		int sum=0;
-		int k=0;
-		while(1){
-			sum+=u;
-			k++;
-			if(sum>=n){
-				break;
-			}else{
-				sum-=d;
-				k++;
-			}
-		}
-		cout<<k<<endl;
-	}
-	return 0;
-} 
-```
 ## B - {A} + {B} HDU - 1412 
 
 
@@ -2191,7 +1897,7 @@ int main()
 ```
 
 
-##C - u Calculate e HDU - 1012
+## C - u Calculate e HDU - 1012
 
 Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 65536/32768 K (Java/Others)
 Total Submission(s): 59314    Accepted Submission(s): 27196
@@ -2482,7 +2188,7 @@ int main(){
 }
 ```
 
-##H - 愚人节的礼物 HDU - 1870
+## H - 愚人节的礼物 HDU - 1870
 
 Time Limit: 5000/1000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)
 Total Submission(s): 16148    Accepted Submission(s): 9498
@@ -2537,7 +2243,7 @@ int main(){
 	return 0;
 }
 ```
-##I - 看病要排队 HDU - 1873
+## I - 看病要排队 HDU - 1873
 
 Time Limit: 3000/1000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Others)
 Total Submission(s): 17253    Accepted Submission(s): 7312
@@ -2635,7 +2341,7 @@ int main() {
 	return 0;
 }
 ```
-##J - map容器写 HDU - 1004
+## J - map容器写 HDU - 1004
 
 Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 65536/32768 K (Java/Others)
 Total Submission(s): 166374    Accepted Submission(s): 66291
