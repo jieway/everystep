@@ -1,7 +1,7 @@
 ## 🐷C/C++
 * [C Prime Plus](book/c_01.md)
 * [Pythonic](book/py_0.md)
-* 
+
 ## 💫数据结构
 * [1.0 概述](book/ds.md)
 * [2.0 线性表](book/ds_list.md)
@@ -43,6 +43,7 @@
 * [SQLZOO-题解](book/sql_lab_2.md)
 * [Leetcode-题目](book/sql_lab_1.md)
 * [概述](book/sql_lab_0.md)
+* [高性能MySQL](book/sql_0.md)
 
 ## 👓汇编语言
 * [第一章：基础知识](book/asm_lab_0.md)
