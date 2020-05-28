@@ -1,5 +1,6 @@
-## 🎵程序人生
+## ⚓程序人生
 * [IT-书单](book/read_0.md)
+* [《黑客与画家》](book/read_1.md)
 
 ## 🐷C/C++
 * [C Prime Plus 笔记](book/c_01.md)
@@ -31,6 +32,7 @@
 * [❎动态规划](book/alg_lab_16.md)
 * [❎PAT乙级](book/alg_lab_14.md)
 * [❎PAT甲级](book/alg_lab_15.md)
+* [❎剑指Offer](book/alg_offer.md)
 
 ## 🚗计算机网络
 * [1.1 概述](book/net_lab_0.md)
