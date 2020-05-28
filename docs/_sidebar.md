@@ -1,5 +1,8 @@
+## 🎵程序人生
+* [IT-书单](book/read_0.md)
+
 ## 🐷C/C++
-* [C Prime Plus](book/c_01.md)
+* [C Prime Plus 笔记](book/c_01.md)
 * [Pythonic](book/py_0.md)
 
 ## 💫数据结构
