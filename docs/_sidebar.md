@@ -30,8 +30,7 @@
 * [❎数学](book/alg_lab_11.md)
 * [❎搜索](book/alg_lab_12.md)
 * [❎动态规划](book/alg_lab_16.md)
-* [❎PAT乙级](book/alg_lab_14.md)
-* [❎PAT甲级](book/alg_lab_15.md)
+* [❎PAT-模拟](book/alg_pat_0.md)
 * [❎剑指Offer](book/alg_offer.md)
 
 ## 🚗计算机网络
@@ -58,6 +57,7 @@
 
 ## ☠操作系统
 * [概述](book/os_lab_0.md)
+* [操作系统导论](book/os_0.md)
 * [实验一：](book/os_lab_1.md)
 * [实验二：](book/os_lab_2.md)
 * [实验三：](book/os_lab_3.md)
