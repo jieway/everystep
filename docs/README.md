@@ -7,8 +7,5 @@
 
 这个项目很多模块都没有完善，目前重点侧重于算法部分。
 
-## 进度
-正在更新数据结构和算法。
-
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
