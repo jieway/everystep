@@ -18,7 +18,7 @@
 * [9.0 排序](book/ds_sort.md)
 
 ## 🧐 算法&题目
-* [概述](book/alg_lab_0.md)
+* [概述&指导](book/alg_lab_0.md)
 * [题单](book/alg_problem_list.md)
 * [基础知识](book/alg_lab_1.md)
 * [贪心](book/alg_gre_0.md)
@@ -48,6 +48,7 @@
 * [Leetcode-题目](book/sql_lab_1.md)
 * [概述](book/sql_lab_0.md)
 * [高性能MySQL](book/sql_0.md)
+* [数据库系统及其应用教程--SQL Serve2008](book/sql_1.md)
 
 ## 👓汇编语言
 * [第一章：基础知识](book/asm_lab_0.md)
