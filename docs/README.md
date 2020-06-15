@@ -95,8 +95,8 @@
 ## 🍳政治
 * [概述](book/pol_lab_0.md)
 * [思修](book/pol_lab_1.md)
-* [马原](book/pol_lab_2.md)
-* [毛中特](book/pol_lab_3.md)
+* [马原](book/pol_2.md)
+* [毛泽东中国特色社会主义理论体系](book/pol_3.md)
 * [中国近代史纲要](book/pol_lab_4.md)
 
 ## 🎆英语
@@ -120,6 +120,9 @@
 * [1.0 笔记](book/java_lab_1.md)
 * [2.0 Hibernate](book/java_lab_2.md)
 
+
+## 🌼Spring
+* [0.0 HelloWorld!](book/spr_0.md)
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
