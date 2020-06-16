@@ -17,6 +17,7 @@
 * [Pythonic](book/py_0.md)
 
 ## 💫数据结构
+
 * [1.0 概述](book/ds.md)
 * [2.0 线性表](book/ds_list.md)
 * [3.0 栈和队列](book/ds_qs.md)
@@ -29,7 +30,6 @@
 
 ## 🧐 算法&题目
 * [概述&指导](book/alg_lab_0.md)
-* [题单](book/alg_problem_list.md)
 * [基础知识](book/alg_lab_1.md)
 * [贪心](book/alg_gre_0.md)
 * [双指针](book/alg_lab_3.md)

@@ -1,30 +1,7 @@
 # 入门
 
-## 1.0 ❤
-
-[leetcode-01](https://leetcode-cn.com/problems/two-sum/)
-
-先暴力写后面优化！
-
-```cpp
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int> a;
-        for (int i = 0; i < nums.size() - 1; i++) {
-            for (int j = i + 1; j < nums.size(); j++) {
-                if (nums[i] + nums[j] == target) {
-                    a.push_back(i);
-                    a.push_back(j);
-                    break;
-                }
-            }
-        }
-        return a;
-    }
-};
-```
-
+* [Leetcode-01](alg/Leetcode-01.md)
+* [LG-]
 
 ## 2.0 ❤
 
@@ -64,6 +41,7 @@ int main()
 
 ### 题意
 连续的最长上升序列。
+
 ### AC
 这道题的分类是数组，可以不用数组，输入直接模拟即可。
 ```cpp
@@ -100,9 +78,12 @@ int main()
 ## P1047 校门外的树
 
 [戳我](https://www.luogu.com.cn/problem/P1047)
+
 ### 题意
 题目有点长，注意细节，两头都是闭区间，直接模拟即可。种树的区域标记，没有种树的区间剔除，最后在判断。
+
 ### AC
+
 ```cpp
 #include <iostream>
 #define MAX_SIZE 10010
@@ -138,11 +119,15 @@ int main()
 ```
 
 ## P1427 小鱼的数字游戏
+
 [戳我](https://www.luogu.com.cn/problem/P1427)
 
 ### 题意
+
 反转数组即可，没有表明数组长度，以零结尾，注意下标范围即可。
+
 ### AC
+
 ```cpp
 #include <iostream>
 #define MAX_SIZE 110
@@ -338,9 +323,8 @@ int main()
  floor(1.499)=1;有余数就抹掉，不大于这个数的整数。
  round(1.499)=1;四舍五入
 
-
-
 # 参考
+
 [1]《算法竞赛入门到进阶》
 
 
