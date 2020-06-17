@@ -1,4 +1,5 @@
 # 概述
+
 很喜欢这个小说，用爬虫练练手，记得初中的时候用手机看，流量太费，就手动的将电脑上的每一章复制下来，贴到记事本上。但是手动模拟太麻烦。爬虫就是将这个过程自动化。
 
 我采用的是 BeatuifulSoup 这个库来爬取的，需要先看 [BeatuifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/) 文档，先看一遍留个印象，具体用法用到的时候在琢磨。
@@ -15,8 +16,9 @@
 ```python
 import requests
 import codecs
-from bs4 import BeautifulSoup
 ```
+
+from bs4 import BeautifulSoup
 
 - 第一个是用于模拟浏览器来访问所爬取的网站。
 - 第二个是用于操作文件的。

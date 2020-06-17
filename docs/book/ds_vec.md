@@ -20,8 +20,7 @@
 
 |                题目                 | 难度  |
 | :---------------------------------: | :---: |
-| [❌Leetcode-206](alg/Leetcode-206.md) |   💗   |
-| [Leetcode-867](alg/Leetcode-867.md) |   💗   |
+| [Leetcode-867](book/alg/Leetcode-867.md) |   💗   |
 | [Leetcode-283](alg/Leetcode-283.md) |   💗   |
 | [Leetcode-167](alg/Leetcode-167.md) |  💗🧡   |
 |  [Leetcode-01](alg/Leetcode-01.md)  |  💗🧡💛  |

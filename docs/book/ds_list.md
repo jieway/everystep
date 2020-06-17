@@ -399,3 +399,9 @@ bool ListDelete_L(DuLinkList &L,int i)
 * 空间方面，顺序表是提前分配，多了会浪费少了会溢出。而单链表则是动态分配有多少用多少。
 * 时间方面，顺序表是随机存取，时间复杂度 $O(1)$ ，但是插入删除为$O(n)$ 单链表的时间复杂度 $O(n)$，但是插入删除为 $O(n)$
 
+# 题目
+
+|                题目                 | 难度  |      语言       |
+| :---------------------------------: | :---: | :-------------: |
+| [Leetcode-206](alg/Leetcode-206.md) |   💗   | cpp Java Python |
+|  [Leetcode-24](alg/Leetcode-24.md)  |  💗💗   | cpp Java Python |
