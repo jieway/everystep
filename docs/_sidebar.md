@@ -10,6 +10,7 @@
 ## 💫数据结构
 
 * [1.0 概述](book/ds.md)
+* [数据结构](book/alg_ds.md)
 * [2.0 线性表](book/ds_list.md)
 * [3.0 栈和队列](book/ds_qs.md)
 * [4.0 字符串](book/ds_char.md)
@@ -19,20 +20,19 @@
 * [8.0 查找](book/ds_search.md)
 * [9.0 排序](book/ds_sort.md)
 
-## 🧐 算法&题目
+## 🚀算法&题目
 * [概述&指导](book/alg_lab_0.md)
 * [基础知识](book/alg_lab_1.md)
 * [贪心](book/alg_gre_0.md)
 * [双指针](book/alg_lab_3.md)
-* [❎数据结构](book/alg_ds.md)
-* [❎图论](book/alg_lab_5.md)
-* [❎二分搜索](book/alg_lab_6.md)
-* [❎STL](book/alg_lab_9.md)
-* [❎数学](book/alg_lab_11.md)
-* [❎搜索](book/alg_lab_12.md)
-* [❎动态规划](book/alg_lab_16.md)
-* [❎PAT-模拟](book/alg_pat_0.md)
-* [❎剑指Offer](book/alg_offer.md)
+* [图论](book/alg_lab_5.md)
+* [二分搜索](book/alg_lab_6.md)
+* [STL](book/alg_lab_9.md)
+* [数学](book/alg_lab_11.md)
+* [搜索](book/alg_lab_12.md)
+* [动态规划](book/alg_lab_16.md)
+* [PAT-模拟](book/alg_pat_0.md)
+* [剑指Offer](book/alg_offer.md)
 
 
 ## 🚗计算机网络
@@ -49,8 +49,8 @@
 * [SQLZOO-题解](book/sql_lab_2.md)
 * [Leetcode-题目](book/sql_lab_1.md)
 * [概述](book/sql_lab_0.md)
-* [高性能MySQL](book/sql_0.md)
 * [数据库系统及其应用教程--SQL Serve2008](book/sql_1.md)
+* [概述](book/sql_0.md)
 
 ## 👓汇编语言
 * [第一章：基础知识](book/asm_lab_0.md)

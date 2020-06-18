@@ -401,7 +401,16 @@ bool ListDelete_L(DuLinkList &L,int i)
 
 # 题目
 
-|                题目                 | 难度  |      语言       |
-| :---------------------------------: | :---: | :-------------: |
-| [Leetcode-206](alg/Leetcode-206.md) |   💗   | cpp Java Python |
-|  [Leetcode-24](alg/Leetcode-24.md)  |  💗💗   | cpp Java Python |
+|                 题目                 | 难度  |      语言       |
+| :----------------------------------: | :---: | :-------------: |
+| [Leetcode-206](alg/Leetcode-206.md)  |   💗   | cpp Java Python |
+|  [Leetcode-24](alg/Leetcode-24.md)   |  💗💗   | cpp Java Python |
+| [Leetcode-160](alg/Leetcode-160.md)  |  💗💗   |    cpp Java     |
+|  [Leetcode-21](alg/Leetcode-21.md)   |  💗💗   |    cpp Java     |
+|  [Leetcode-83](alg/Leetcode-83.md)   |  💗💗   |       cpp       |
+|  [❌Leetcode-19](alg/Leetcode-19.md)  |  💗💗   |       cpp       |
+| [❌Leetcode-234](alg/Leetcode-234.md) |  💗💗   |       cpp       |
+|   [❌Leetcode-2](alg/Leetcode-2.md)   |  💗💗   |       cpp       |
+|   [❌Leetcode-7](alg/Leetcode-7.md)   |  💗💗   |       cpp       |
+|   [❌Leetcode-9](alg/Leetcode-9.md)   |  💗💗   |       cpp       |
+|  [❌Leetcode-10](alg/Leetcode-10.md)  |  💗💗   |       cpp       |
