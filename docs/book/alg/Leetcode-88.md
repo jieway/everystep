@@ -1,10 +1,32 @@
+## 88. Merge Sorted Array (Easy)
 
-## 5.0 💗🧡💛
+[Leetcode-88](https://leetcode.com/problems/merge-sorted-array/) / [力扣-88](https://leetcode-cn.com/problems/merge-sorted-array/)
 
-[88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)
-
-### 思考
 如果从头部开始合并势必会导致 nums1 中的值被覆盖，从尾部开始
+
+## cpp
+
+```cpp
+class Solution {
+public:
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+        int i = m - 1 , j = n - 1 , l = m + n - 1;
+        while (i >=0 && j >= 0) {
+            if (nums1[i] > nums2[j]) {
+                nums1[l--] = nums1[i--];
+            }else {
+                nums1[l--] = nums2[j--];
+            }
+        }
+        while (j >= 0) {
+            nums1[l--] = nums2[j--];
+        }
+
+    }
+};
+```
+
+## Java
 
 ```java
 class Solution {

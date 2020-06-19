@@ -1,4 +1,3 @@
-
 ## ⚓程序人生
 * [IT-书单](book/read_0.md)
 * [《黑客与画家》](book/read_1.md)
@@ -25,6 +24,8 @@
 * [基础知识](book/alg_lab_1.md)
 * [贪心](book/alg_gre_0.md)
 * [双指针](book/alg_lab_3.md)
+* [树](book/alg_tree.md)
+* [递归](book/alg_rec.md)
 * [图论](book/alg_lab_5.md)
 * [二分搜索](book/alg_lab_6.md)
 * [STL](book/alg_lab_9.md)
@@ -95,7 +96,8 @@
 * [How_Many_Teeth](book/eng_lab_1.md)
 
 ## 🎊爬虫
-* [0.0 概述](book/spi_lab_0.md)
+* [0.0 概述](book/spi_0.md)
+* [1.0 提取数据](book/spi_3.md)
 * [1.0 爬取小说](book/spi_lab_1.md)
 * [2.0 爬取豆瓣](book/spi_lab_2.md)
 * [3.0 正则表达式](book/spi_3.md)

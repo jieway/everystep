@@ -1,4 +1,8 @@
 
+# 题单
+
+
+
 # 二叉树的遍历
 
 ## 1.0 非递归实现二叉树的前序遍历
@@ -23,6 +27,7 @@
 ## 1.0 ❤🧡
 
 [Leetcode-104](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) / [力扣-104](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/description/)
+
 递归练习。
 
 * 先思考递归结束的条件，即节点为空的情况，返回 0 因为这个节点为空，上一个节点是子节点，而子节点的下一个节点是高度 0， 回溯的时候加一，叶子节点就变成了 1 ，在回溯再加一，最后回溯到顶点，得到树高。
