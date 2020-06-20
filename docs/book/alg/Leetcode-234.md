@@ -1,10 +1,35 @@
-
 # 234. 回文链表
 
-[传送门](https://leetcode-cn.com/problems/palindrome-linked-list/)
+[Leetcode-234](https://leetcode.com/problems/palindrome-linked-list/) / [力扣-234](https://leetcode-cn.com/problems/palindrome-linked-list/)
 
-## 思路
-- 将链表转存到数组中进行判断。
+* 将链表转存到容器中，例如栈或者队列中都行。根据栈先入后出的特点，逐个比对。
+
+## cpp
+
+```cpp
+class Solution {
+public:
+    bool isPalindrome(ListNode* head) {
+        stack<int> s;
+        ListNode * a = head;
+        while (a != NULL) {
+            s.push(a->val);
+            a = a->next;
+        }
+        ListNode * b = head;
+        while (b != NULL) {
+            if (b->val != s.top()) {
+                return false;
+            }
+            b = b->next;
+            s.pop();
+        }
+        return true;
+    }
+};
+```
+## Java
+
 ```java
 class Solution {
     public boolean isPalindrome(ListNode head) {

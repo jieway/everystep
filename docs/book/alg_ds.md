@@ -1,9 +1,6 @@
-  * [树](alg_ds_tree.md)
+
   * [哈希表](alg_lab_26.md)
   * [位运算](alg_lab_29.md)
-  * [栈和队列](alg_lab_30.md)
-  * [字符串](alg_lab_31.md)
-  * [排序](alg_lab_8.md)
 
 # 栈
 

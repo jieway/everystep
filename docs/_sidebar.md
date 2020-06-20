@@ -7,14 +7,13 @@
 * [Pythonic](book/py_0.md)
 
 ## 💫数据结构
-
 * [1.0 概述](book/ds.md)
 * [数据结构](book/alg_ds.md)
-* [2.0 线性表](book/ds_list.md)
-* [3.0 栈和队列](book/ds_qs.md)
+* [❎2.0 线性表](book/ds_list.md)
+* [❎3.0 栈和队列](book/ds_qs.md)
 * [4.0 字符串](book/ds_char.md)
 * [5.0 数组和广义表](book/ds_vec.md)
-* [6.0 树](book/ds_tree.md)
+* [❎6.0 树](book/ds_tree.md)
 * [7.0 图](book/ds_graph.md)
 * [8.0 查找](book/ds_search.md)
 * [9.0 排序](book/ds_sort.md)
@@ -24,7 +23,6 @@
 * [基础知识](book/alg_lab_1.md)
 * [贪心](book/alg_gre_0.md)
 * [双指针](book/alg_lab_3.md)
-* [树](book/alg_tree.md)
 * [递归](book/alg_rec.md)
 * [图论](book/alg_lab_5.md)
 * [二分搜索](book/alg_lab_6.md)
@@ -33,6 +31,9 @@
 * [搜索](book/alg_lab_12.md)
 * [动态规划](book/alg_lab_16.md)
 * [PAT-模拟](book/alg_pat_0.md)
+* [二进制](book/alg_binary.md)
+* [滑动窗口](book/alg_win.md)
+* [回溯法](book/alg_back.md)
 * [剑指Offer](book/alg_offer.md)
 
 
