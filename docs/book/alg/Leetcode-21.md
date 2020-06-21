@@ -1,4 +1,3 @@
-
 # 21. Merge Two Sorted Lists (Easy)
 
 [Leetcode-21](https://leetcode.com/problems/merge-two-sorted-lists/) / [力扣-21](https://leetcode-cn.com/problems/merge-two-sorted-lists/)

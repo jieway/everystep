@@ -1,4 +1,3 @@
-
 #  9. 分隔链表
 
 725\. Split Linked List in Parts(Medium)

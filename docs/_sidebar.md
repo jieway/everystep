@@ -18,7 +18,7 @@
 * [8.0 查找](book/ds_search.md)
 * [9.0 排序](book/ds_sort.md)
 
-## 🚀算法&题目
+## 🚀算法
 * [概述&指导](book/alg_lab_0.md)
 * [基础知识](book/alg_lab_1.md)
 * [贪心](book/alg_gre_0.md)

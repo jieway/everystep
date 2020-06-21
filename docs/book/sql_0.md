@@ -24,3 +24,7 @@ SQL：结构化查询语言的缩写，是一种通用语言不是专利语言�
 
 
 
+创建名为 book 的数据库：`CREATE DATABASE booksales;`
+
+
+
