@@ -1,6 +1,6 @@
 # 160. Intersection of Two Linked Lists (Easy)
 
-[Leetcode-160](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/) / [力扣-160](https://leetcode.com/problems/intersection-of-two-linked-lists/)
+[Leetcode-160](https://leetcode.com/problems/intersection-of-two-linked-lists/) / [力扣-160](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
 
 * 暴力，两层循环，两条链重复的元素就是相交部分。
 

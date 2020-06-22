@@ -20,6 +20,7 @@
 
 ## 🚀算法
 * [概述&指导](book/alg_lab_0.md)
+* [算法-4](book/alg_algs4.md)
 * [基础知识](book/alg_lab_1.md)
 * [贪心](book/alg_gre_0.md)
 * [双指针](book/alg_lab_3.md)
