@@ -1,8 +1,9 @@
-# 2. 两数相加
+# 2. Add Two Numbers
 
-[戳我](https://leetcode-cn.com/problems/add-two-numbers/)
+[Leetcode-2](https://leetcode.com/problems/add-two-numbers/) / [力扣-2](https://leetcode-cn.com/problems/add-two-numbers/)
 
 ## 思路
+
 链表中的每一位相加，注意进位的情况。
 一共三种情况：
 - 其中一条链表为空。
@@ -11,7 +12,9 @@
 
 还要注意两个链表都扫描到最后时还要进位的情况（两个数据相加最多进一位）。
 
-```cpp
+## java
+
+```java
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode pre = new ListNode(0);

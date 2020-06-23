@@ -23,6 +23,34 @@ public:
 };
 ```
 
+不断比对两个节点谁小取谁，比递归要快很多。
+
+```cpp
+class Solution {
+public:
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+        ListNode* a = new ListNode(0);
+        ListNode* t = a;
+        while (l1 != NULL && l2 != NULL) {
+            if (l1->val < l2->val) {
+                a->next = l1;
+                l1 = l1->next;
+            }else {
+                a->next = l2;
+                l2 = l2->next;
+            }
+            a = a->next;
+        }
+        if (l1 == NULL) {
+            a->next = l2;
+        }else {
+            a->next = l1;
+        }
+        return t->next;
+    }
+};
+```
+
 ## Java
 
 ```java
@@ -40,4 +68,3 @@ class Solution {
     }
 }
 ```
-

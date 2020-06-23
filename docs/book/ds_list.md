@@ -401,38 +401,24 @@ bool ListDelete_L(DuLinkList &L,int i)
 
 # 题目
 
-|                 题目                 | 难度  |      语言       |          总结          |
-| :----------------------------------: | :---: | :-------------: | :--------------------: |
-| [Leetcode-206](alg/Leetcode-206.md)  |   💗   | cpp Java Python |      原地反转链表      |
-|  [Leetcode-92](alg/Leetcode-92.md)   |   💗   | cpp Java Python | 在给定的范围内反转链表 |
-|  [Leetcode-24](alg/Leetcode-24.md)   |  💗💗   | cpp Java Python |        交换链表        |
-| [Leetcode-160](alg/Leetcode-160.md)  |  💗💗   |    cpp Java     | 求两条链表开始相交部分 |
-|  [Leetcode-21](alg/Leetcode-21.md)   |  💗💗   |    cpp Java     |
-|  [Leetcode-83](alg/Leetcode-83.md)   |  💗💗   |       cpp       |
-|  [Leetcode-82](alg/Leetcode-82.md)   |  💗💗   |       cpp       |
-|  [Leetcode-19](alg/Leetcode-19.md)   |  💗💗   |   cpp   Java    |
-|   [❌Leetcode-2](alg/Leetcode-2.md)   |  💗💗   |       cpp       |
-|   [Leetcode-7](alg/Leetcode-7.md)    |  💗💗   |       cpp       |
-|   [❌Leetcode-9](alg/Leetcode-9.md)   |  💗💗   |       cpp       |
-|  [❌Leetcode-10](alg/Leetcode-10.md)  |  💗💗   |       cpp       |
-|  [❌Leetcode-86](alg/Leetcode-86.md)  |  💗💗   |       cpp       |
-| [❌Leetcode-148](alg/Leetcode-148.md) |  💗💗   |       cpp       |
-| [❌Leetcode-143](alg/Leetcode-143.md) |  💗💗   |       cpp       |
-| [❌Leetcode-141](alg/Leetcode-141.md) |  💗💗   |       cpp       |
-| [❌Leetcode-142](alg/Leetcode-142.md) |  💗💗   |       cpp       |
-| [❌Leetcode-234](alg/Leetcode-234.md) |  💗💗   |       cpp       |
-| [❌Leetcode-138](alg/Leetcode-138.md) |  💗💗   |       cpp       |
-
-
-## 基本技能
-
-链表相关的核心点
-
-- null/nil 异常处理
-- dummy node 哑巴节点
-- 快慢指针
-- 插入一个节点到排序链表
-- 从一个链表中移除一个节点
-- 翻转链表
-- 合并两个链表
-- 找到链表的中间节点
+|                 题目                 | 难度  |      语言       |           总结           |
+| :----------------------------------: | :---: | :-------------: | :----------------------: |
+| [Leetcode-206](alg/Leetcode-206.md)  |   💗   | cpp Java Python |       原地反转链表       |
+|  [Leetcode-92](alg/Leetcode-92.md)   |   💗   | cpp Java Python |  在给定的范围内反转链表  |
+|  [Leetcode-24](alg/Leetcode-24.md)   |  💗💗   | cpp Java Python |         交换链表         |
+| [Leetcode-160](alg/Leetcode-160.md)  |  💗💗   |    cpp Java     |  求两条链表开始相交部分  |
+|  [Leetcode-21](alg/Leetcode-21.md)   |  💗💗   |    cpp Java     |     合并两个有序链表     |
+|  [Leetcode-83](alg/Leetcode-83.md)   |  💗💗   |       cpp       | 删除排序链表中的重复元素 |
+|  [Leetcode-82](alg/Leetcode-82.md)   |  💗💗   |       cpp       |                          |
+|  [Leetcode-19](alg/Leetcode-19.md)   |  💗💗   |   cpp   Java    |                          |
+|   [Leetcode-2](alg/Leetcode-2.md)   |  💗💗   |       cpp       |                          |
+|   [Leetcode-7](alg/Leetcode-7.md)    |  💗💗   |       cpp       |                          |
+|   [❌Leetcode-9](alg/Leetcode-9.md)   |  💗💗   |       cpp       |                          |
+|  [❌Leetcode-10](alg/Leetcode-10.md)  |  💗💗   |       cpp       |                          |
+|  [❌Leetcode-86](alg/Leetcode-86.md)  |  💗💗   |       cpp       |                          |
+| [❌Leetcode-148](alg/Leetcode-148.md) |  💗💗   |       cpp       |                          |
+| [❌Leetcode-143](alg/Leetcode-143.md) |  💗💗   |       cpp       |                          |
+| [❌Leetcode-141](alg/Leetcode-141.md) |  💗💗   |       cpp       |                          |
+| [❌Leetcode-142](alg/Leetcode-142.md) |  💗💗   |       cpp       |                          |
+| [❌Leetcode-234](alg/Leetcode-234.md) |  💗💗   |       cpp       |                          |
+| [❌Leetcode-138](alg/Leetcode-138.md) |  💗💗   |       cpp       |                          |

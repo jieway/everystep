@@ -1,16 +1,6 @@
-#  9. 分隔链表
-
-725\. Split Linked List in Parts(Medium)
+#  725 Split Linked List in Parts (Medium)
 
 [Leetcode](https://leetcode.com/problems/split-linked-list-in-parts/description/) / [力扣](https://leetcode-cn.com/problems/split-linked-list-in-parts/description/)
-
-```html
-Input:
-root = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], k = 3
-Output: [[1, 2, 3, 4], [5, 6, 7], [8, 9, 10]]
-Explanation:
-The input has been split into consecutive parts with size difference at most 1, and earlier parts are a larger size than the later parts.
-```
 
 题目描述：把链表分隔成 k 部分，每部分的长度都应该尽可能相同，排在前面的长度应该大于等于后面的。
 
