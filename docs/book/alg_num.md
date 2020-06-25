@@ -1,11 +1,22 @@
-# 题单
+
+# 链表
+
+|                题目                 | 难度  | 语言  |
+| :---------------------------------: | :---: | :---: |
+|  [Leetcode-20](alg/Leetcode-20.md)  |   💗   |  cpp  |
+| [Leetcode-155](alg/Leetcode-155.md) |   💗   |  cpp  |
+
+
+# 递归
 
 |                题目                 | 难度  |
 | :---------------------------------: | :---: |
 | [Leetcode-104](alg/Leetcode-104.md) |   💗   |
+| [Leetcode-110](alg/Leetcode-110.md) |   💗   |
 
 
 ## 2.0 ❤🧡💛
+
 [Leetcode-110](https://leetcode.com/problems/balanced-binary-tree/description/) / [力扣-110](https://leetcode-cn.com/problems/balanced-binary-tree/description/)
 
 * 每一个节点都需要满足平衡二叉树的定义，所以需要遍历每一个节点！可以采用先序遍历来遍历全部子节点，先序遍历如下。

@@ -283,6 +283,7 @@ class Solution {
 
 
 ## 2.2 LIS 熟悉！
+
 [Leetcode-646](https://leetcode-cn.com/problems/maximum-length-of-pair-chain/)
 
 * 这道题和[Leetcode-300](https://leetcode-cn.com/problems/longest-increasing-subsequence/)几乎类似，用贪心也可以动态规划反而复杂鉴于目前正在练动态规划，下面是动态规划的写法，贪心写法在贪心的那一节里面。注意 vector 的一些用法。
@@ -343,7 +344,9 @@ public:
 
 
 ## 198. 打家劫舍
+
 [戳我](https://leetcode-cn.com/problems/house-robber/description/)
+
 ### 思考
 转移方程
 $$
@@ -367,6 +370,7 @@ class Solution {
 ```
 
 ## 213. 打家劫舍 II
+
 [戳我](https://leetcode-cn.com/problems/house-robber-ii/)
 
 ### 思考
@@ -396,6 +400,7 @@ class Solution {
 }
 ```
 ## 64. 最小路径和
+
 [戳我](https://leetcode-cn.com/problems/minimum-path-sum/)
 
 ### 思考
@@ -424,8 +429,11 @@ class Solution {
 ```
 
 ## 62. 不同路径
+
 [戳我](https://leetcode-cn.com/problems/unique-paths/)
+
 ### 思考
+
 和上一题类似，填充边界，注意排列组合的话要防止溢出。
 
 ### code

@@ -146,10 +146,6 @@ int GetTop(LinkStack &s) {
 
 
 
-|               题目                | 难度  |      语言       |
-| :-------------------------------: | :---: | :-------------: |
-| [Leetcode-20](alg/Leetcode-20.md) |   💗   | cpp Java Python |
-
 # 1. 用栈实现队列
 
 232\. Implement Queue using Stacks (Easy)

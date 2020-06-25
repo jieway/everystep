@@ -9,7 +9,7 @@
 ## 💫数据结构
 * [1.0 概述](book/ds.md)
 * [数据结构](book/alg_ds.md)
-* [❎2.0 线性表](book/ds_list.md)2
+* [❎2.0 线性表](book/ds_list.md)
 * [❎3.0 栈和队列](book/ds_qs.md)
 * [4.0 字符串](book/ds_char.md)
 * [5.0 数组和广义表](book/ds_vec.md)
@@ -22,6 +22,7 @@
 * [概述&指导](book/alg_lab_0.md)
 * [算法4th](book/alg_algs4.md)
 * [基础知识](book/alg_lab_1.md)
+* [题单](book/alg_num.md)
 * [贪心](book/alg_gre_0.md)
 * [双指针](book/alg_lab_3.md)
 * [递归](book/alg_rec.md)
@@ -36,7 +37,6 @@
 * [滑动窗口](book/alg_win.md)
 * [回溯法](book/alg_back.md)
 * [剑指Offer](book/alg_offer.md)
-
 
 ## 🚗计算机网络
 * [1.1 概述](book/net_lab_0.md)
@@ -64,6 +64,7 @@
 ## ☠操作系统
 * [概述](book/os_lab_0.md)
 * [操作系统导论](book/os_0.md)
+* [现代操作系统](book/os_now.md)
 * [实验一：](book/os_lab_1.md)
 * [实验二：](book/os_lab_2.md)
 * [实验三：](book/os_lab_3.md)
