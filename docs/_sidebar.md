@@ -66,14 +66,6 @@
 * [操作系统导论](book/os_0.md)
 * [现代操作系统](book/os_now.md)
 * [期末总结](book/os_sum.md)
-* [实验一：](book/os_lab_1.md)
-* [实验二：](book/os_lab_2.md)
-* [实验三：](book/os_lab_3.md)
-* [实验四：](book/os_lab_4.md)
-* [实验五：](book/os_lab_5.md)
-* [实验六：](book/os_lab_6.md)
-* [实验七：](book/os_lab_7.md)
-* [实验八：](book/os_lab_8.md)
 
 ## 🍭前端
 * [CSS3](book/web_lab_0.md)
