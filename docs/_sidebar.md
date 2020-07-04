@@ -53,7 +53,6 @@
 * [Leetcode-题目](book/sql_lab_1.md)
 * [概述](book/sql_lab_0.md)
 * [数据库系统及其应用教程--SQL Serve2008](book/sql_1.md)
-* [概述](book/sql_0.md)
 
 ## 👓汇编语言
 * [第一章：基础知识](book/asm_lab_0.md)
@@ -65,13 +64,9 @@
 * [概述](book/os_lab_0.md)
 * [操作系统导论](book/os_0.md)
 * [现代操作系统](book/os_now.md)
-* [期末总结](book/os_sum.md)
 
 ## 🍭前端
-* [CSS3](book/web_lab_0.md)
 * [React](book/web_lab_1.md)
-* [Head First HTML与CSS、XHTML(中文版)](book/web_lab_2.md)
-
 
 ## 🎉DeepLearning
 * [概述](book/dl_lab_0.md)
@@ -84,31 +79,22 @@
 * [概述](book/pol_lab_0.md)
 * [思修](book/pol_lab_1.md)
 * [马原](book/pol_2.md)
-* [毛泽东中国特色社会主义理论体系](book/pol_3.md)
+* [毛中特](book/pol_3.md)
 * [中国近代史纲要](book/pol_lab_4.md)
 
 ## 🎆英语
 * [英语语法记录](book/eng_lab_0.md)
-* [How_Many_Teeth](book/eng_lab_1.md)
 
-## 🎊爬虫
+## 🎊爬虫笔记
 * [0.0 概述](book/spi_0.md)
 * [1.0 提取数据](book/spi_3.md)
 * [1.0 爬取小说](book/spi_lab_1.md)
 * [2.0 爬取豆瓣](book/spi_lab_2.md)
 * [3.0 正则表达式](book/spi_3.md)
 
-## 🎁MatLab
-* [0.0 概述](book/mat_0.md)
-* [1.0 实验一](book/mat_1.md)
-* [2.0 实验二：数据可视化技术](book/mat_2.md)
-* [3.0 实验三：方程求根实验](book/mat_3.md)
-
 ## 👒Java
-* [0.0 概述]()
 * [1.0 笔记](book/java_lab_1.md)
-* [2.0 Hibernate](book/java_lab_2.md)
-
 
 ## 🌼Spring
 * [0.0 HelloWorld!](book/spr_0.md)
+

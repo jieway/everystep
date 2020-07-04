@@ -92,21 +92,7 @@ Scanner in = new Scanner(System.in);
                 bigDecimal2+" "+bigDecimal3+" "+bigDecimal4+" ");
 ```
 
----
 
-
-title: JAVA(类与对象)
-
-date: 2019-04-07 10:50:14
-
-tags: 
-- JAVASE
-
-top_img: https://image.135editor.com/files/users/531/5317107/201907/Ec98WQ4W_hAwF.jpg
-
-categories: 
-- JAVA
----
 
 
 ##  类与对象

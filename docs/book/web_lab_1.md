@@ -34,7 +34,3 @@ webpack 基于 node 构建，语法也是 node 的项目。是一个工具，用
 * index.js 默认的入口， dist 目录下的 main.js 是默认的输出。
 * `npm i webpack-dev-server -D` 实时打包编译功能，也就是热重载。
 * `npm i html-webpack-plugin -D`
-
-
-# 参考
-* [1] [bilibili](https://www.bilibili.com/video/BV11t411S7iG)  
