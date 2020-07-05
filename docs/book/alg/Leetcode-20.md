@@ -1,9 +1,7 @@
-
 ## 20. Valid Parentheses (Easy)
 
 [Leetcode-20](https://leetcode.com/problems/valid-parentheses/description/) / [力扣-20](https://leetcode-cn.com/problems/valid-parentheses/description/)
 
-???????????????????????????????????????????????????????????????????????????????
 
 ```cpp
 class Solution {
@@ -11,15 +9,17 @@ public:
     bool isValid(string s) {
         if (s.empty()) return true;
         stack<char> a;
-        for (int i = 0; i < s.size(); i++) {
+        for(int i = 0; i < s.size();i++) {
             if (a.empty()) {
                 a.push(s[i]);
-            }else if ((a.top() == '(' && s[i] ==')')||
-            (a.top() == '[' && s[i] == ']')||
-            (a.top() == '{' && s[i] == '}')) {
-                a.pop();
             }else {
-                a.push(s[i]);
+                if ((a.top() == '(' && s[i] == ')')
+                ||(a.top() == '[' && s[i] == ']')
+                ||(a.top() == '{' && s[i] == '}')) {
+                    a.pop();
+                }else {
+                    a.push(s[i]);
+                }
             }
         }
         return a.empty();
