@@ -81,13 +81,13 @@ public static boolean isSorted(Comparable[] a) {
 
 队列 a **始终保持有序**，初始为空。
 
-而另一个队列 b 有这 n 个元素。每次都扫描**全部**，找到最小值对应的下标，然后插入到队列 a 的队尾中。
+而另一个队列 b 有这 n 个元素。每次都扫描 b 中**全部**元素，找到最小值对应的下标，然后插入到队列 a 的队尾中。
 
 这样不断循环，直到队列 b 中元素为空，队列 a 中元素为 n 。
 
 如图：
 
-![](../../images/select.gif)
+<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/select.gif"/></div>
 
 
 ### 特点
@@ -209,88 +209,118 @@ public static void sort(Comparable[] a) {
 
 # 归并排序
 
+归并排序的优点是任意长度为 N 的数组排序所需的时间和 $Nlog(N)$ 成正比。
 
-##
+缺点则是所需的额外的空间也和 N 成正比。
+
+归并排序就是分治法的具体体现：
+
+## 解释
+
 归并的基础就是使得两个数组合并后的序列有序。
 
-merge 方法中的四个循环分别是： 先假设 A , B 两个数组 
-
-* A 数组数字用完了，说明 B 数组中的数字都比 A 中数字大，所以直接挂在数组尾部就行。
-* 同上，只不过是 B 数组用完了。
-* A B 数组中当前数字A小，填入数组中。
-* 同上，B 小，填入数组中。
+注意需要先将当前数组复制到另一个数组中备份，直接在原来数组上修改会抹掉原来的数组中的信息。
 
 ```java
-    public static void merge(Comparable[] a , int lo, int mid, int hi) {
-
-        int i = lo , j = mid + 1 ;
-
-        for (int k = lo; k <= hi; k++) {
-            aux[k] = a[k];
-        }
-
-        for (int k = lo ; k <= hi ; k ++) {
-            if (i > mid) {
-                a[k] = aux[j++];
-            }else if (j > hi) {
-                a[k] = aux[i++];
-            }else if (less(aux[i], a[j])) {
-                a[k] = aux[i++];
-            }else {
-                a[k] = aux[j++];
-            }
-        }
+public static void merge(Comparable[] a , int lo, int mid, int hi) {
+    int i = lo , j = mid + 1;
+    for (int k = lo; k <= hi; k++) {
+        aux[k] = a[k];
     }
+    // coding
+}
 ```
 
-自顶向下的归并：
+<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/merge-sort-2.png"/></div>
+
+
+接下来出现了一个循环，循环备份中的所有元素，按照规则将其放回原数组中。
+
+可以将备份的数组从中间切开， mid 在中间，i 和 j 分别在首尾。i 和 j 下标对应的元素再分别进行比对。
+
+例如倒叙的话 a[i] > a[j] 那么将 j 挑出，j++ ， 反之 i++ 。
+
+首先看第一个判断 i > mid 说明 i 已经将前半部分遍历完毕，那么就不需要在进行后续比较了，直接将下标 j 指向的元素逐个填入原来数组中。
+
+j > hi 说明 j 已经遍历完毕，将 i 中后续元素逐个添加在尾部。
+
 
 ```java
-
-    public static void sort(String[] a) {
-        aux = new Comparable[a.length]; // 一次性分配空间
-        sort(a,0 , a.length - 1);
+public static void merge(Comparable[] a , int lo, int mid, int hi) {
+    int i = lo , j = mid + 1;
+    for (int k = lo; k <= hi; k++) {
+        aux[k] = a[k];
     }
 
-    public static void sort(String[] a, int lo , int hi) {
-        if (hi <= lo) { // 递归的出口
-            return ;
+    for (int k = lo ; k <= hi ; k ++) {
+        if (i > mid) {  // 左为空
+            a[k] = aux[j++];
+        }else if (j > hi) { // 右为空
+            a[k] = aux[i++];
+        }else if (less(aux[i], a[j])) { // 左小于右
+            a[k] = aux[i++];
+        }else {
+            a[k] = aux[j++]; // 左大于右
         }
-        int mid = lo + (hi - lo) / 2; // 防止溢出的一个技巧
-        sort(a,lo , mid);
-        sort(a,mid + 1 , hi);
-        merge(a, lo , mid, hi);
     }
-
+}
 ```
 
-自底向上的归并
+自顶向下的归并（递归版）：
+
+
+<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/merge-sort-1.png"/></div>
+
 
 ```java
+public static void sort(String[] a) {
+    aux = new Comparable[a.length]; // 一次性分配空间
+    sort(a,0 , a.length - 1);
+}
 
-    // 自底向上的归并
-    public static void sort(String[] a) {
-        int N = a.length;
-        aux = new Comparable[N];
-        // sz 代表子数组的大小， 2 4 8 16 递增
-        for (int sz = 1; sz < N; sz += sz) {
-            // lo 代表子数组的左边界，而又边界就是 lo + sz -1 + sz
-            for (int lo = 0 ; lo < N - sz ; lo += sz + sz) {
-                merge(a , lo , lo + sz - 1 , Math.min(lo + sz - 1 + sz , N - 1));
-            }
+public static void sort(String[] a, int lo , int hi) {
+    if (hi <= lo) { // 递归的出口
+        return ;
+    }
+    int mid = lo + (hi - lo) / 2; // 防止溢出的一个技巧
+    sort(a,lo , mid);
+    sort(a,mid + 1 , hi);
+    merge(a, lo , mid, hi);
+}
+```
+
+自底向上的归并，先两个两个归并，然后四个四个归并直到叠加的全部规模。
+
+```java
+// 自底向上的归并
+public static void sort(String[] a) {
+    int N = a.length;
+    aux = new Comparable[N];
+    // sz 代表子数组的大小， 2 4 8 16 递增
+    for (int sz = 1; sz < N; sz += sz) {
+        // lo 代表子数组的左边界，而又边界就是 lo + sz -1 + sz
+        for (int lo = 0 ; lo < N - sz ; lo += sz + sz) {
+            merge(a , lo , lo + sz - 1 , Math.min(lo + sz - 1 + sz , N - 1));
         }
     }
+}
 ```
+
+两种归并访问数组的次数和比较次数相同，只不过顺序不同。
+
+归并排序适合用链表组织数据，只修改链表的链接顺序就能将链表原地排序。
 
 # 快速排序
 
-
 快速排序需要看分割点，分割的越好，速度越快。
+
+快排是最快的排序算法，虽然和有些排序算法的时间复杂度相同，但是快排的常数小。
 
 ## code
 
 ```java
 public static void sort(String[] a) {
+    StdRandom.shuffle(a); // 打乱顺序，消除对输入的依赖
     sort(a , 0 , a.length - 1);
 }
 
@@ -329,7 +359,39 @@ public static int partition(String[] a, int lo, int hi) {
 
 # 优先队列
 
+优先队列指能**删除最大元素**和**插入最大元素**的数据结构。
 
+如何**高效的实现**是研究该问题的重点。用**数组**来保存数据，基于**二叉堆**来实现能够将时间复杂度压缩到**对数级别**。
+
+如果优先队列每次都删除**最值**，也可以实现排序算法。**堆排序**就是基于堆的**优先队列**实现的。
+
+## 初级实现
+
+可以**直接**采用数组来是实现，分为**有序**和**无序**。
+
+如果有序那么插入特定位置的元素需要移动后续元素。而删除最值元素，只需要修改边界元素即可。
+
+对于无序数组正好相反，可以选择**遍历全部找到最值**和边界元素交换位置。而**插入**直接添加到边界即可。
+
+也可以采用链表来实现，同样也分为**有序**和**无序**。
+
+对于有序则要时刻维护有序的状态，反之对于无序则需要真正查找时遍历全部。
+
+## 堆实现
+
+在数组之上建立的二叉堆中，首先要明白**二叉堆**的定义：
+
+> 堆有序：一颗二叉树的每个结点都大于等于它的两个子结点时。
+
+> 根节点是对有序的二叉树中的最大结点。
+
+> 二叉堆：一组能够用**堆有序**的**完全二叉树**排序的元素，并在数组中按照层级储存。（不使用数组的第一个位置）
+
+简单而言二叉堆就是在完全二叉树的基础上添加了堆有序这条性质。
+
+从上可知，在数组中位置为 k 的元素。其**父节点**的位置为 $[k/2]$，其两个子节点的位置分别为 $[2k]$ 和 $[2k+1]$
+
+因为要始终保持根节点为最大值，那么当新加入或删除新元素时，堆中元素的优先级发生了变化
 
 # 应用
 
