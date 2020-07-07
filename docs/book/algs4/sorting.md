@@ -31,7 +31,7 @@ private static boolean less(Comparable v , Comparable w) {
 }
 ```
 
-对于 compareTo 这个 API ， v < w 会返回 -1 ，v == w 则返回 0 ，v > w 则返回 1 。
+对于 v.compareTo(w) 这个 API ， v < w 会返回 -1 ，v == w 则返回 0 ，v > w 则返回 1 。
 
 <div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200705211041.png"/></div>
 
@@ -77,28 +77,24 @@ public static boolean isSorted(Comparable[] a) {
 
 #### 解释
 
-可以想象成两个队列 a/b ，假设共有 n 个元素。
+可以想象成两个队列 a，b ，假设共有 n 个元素。
 
 队列 a **始终保持有序**，初始为空。
 
-而另一个队列 b 有这 n 个元素。每次都扫描 b 中**全部**元素，找到最小值对应的下标，然后插入到队列 a 的队尾中。
+而另一个队列 b 有这 n 个元素。每次都扫描 b 中**全部**元素，找到**最小值**对应的下标，然后插入到队列 a 的队尾中。
 
-这样不断循环，直到队列 b 中元素为空，队列 a 中元素为 n 。
+这样不断循环，直到队列 b 中元素为空，队列 a 中元素为 n 个。
 
 如图：
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/select.gif"/></div>
+<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/Sorting_shaker_sort_anim.gif"/></div>
 
 
 ### 特点
 
-* 运行时间和输入无关。
+* 运行时间和输入无关。不论输入是否有序都会扫描相同的次数，也就是每一次扫描后不能利用上一次扫描的结果来预判下一扫描。
 
-不论输入是否有序都会扫描相同的次数，也就是每一次扫描后不能利用上一次扫描的结果来预判下一扫描。
-
-* 数据移动少
-
-我们可以看到交换的函数在外层循环中，交换的次数相对于其他排序算法是比较少的，和数据 n 的规模呈线性关系，而其他算法一般呈线性对数或平方级别。
+* 数据移动少。我们可以看到交换的函数在外层循环中，交换的次数相对于其他排序算法是比较少的，和数据 n 的规模呈线性关系，而其他算法一般呈线性对数或平方级别。
 
 ```java
 public static void sort(Comparable[] a) {
@@ -115,12 +111,11 @@ public static void sort(Comparable[] a) {
 }
 ```
 
-
 ## 插入排序
 
 ### 解释
 
-想象一下打牌时，每次拿到一张牌从左向右看该插到哪里，所以左边的牌总是有序的。而插入排序就是模拟这个过程。
+想象一下打牌时，每次拿到一张牌会下意识的从左向右看该插到哪里，这个过程始终保持左边的牌有序。而插入排序就是模拟这个过程。
 
 例如这组例子（其中黄色部分代表有序）：
 
@@ -140,9 +135,7 @@ public static void sort(Comparable[] a) {
 
 ### 特点
 
-* 取决于初始元素的顺序
-
-例如一个极端情况，假如每次拿到的牌都是最大值，那么就不用插入了，直接按顺序摆就可以了，所以如果序列全部有序或部分有序的话速度会非常快。
+* 取决于初始元素的顺序。例如一个极端情况，假如每次拿到的牌都是最大值，那么就不用插入了，直接按顺序摆就可以了，所以如果序列全部有序或部分有序的话速度会非常快。
 
 * 典型的部分有序数组（适合插入排序的情景）
   * 数组中的每一个元素都离它最终的位置不远。
@@ -160,8 +153,6 @@ public static void sort(Comparable[] a) {
     }
 }
 ```
-
-
 
 ## 希尔排序
 
@@ -268,9 +259,7 @@ public static void merge(Comparable[] a , int lo, int mid, int hi) {
 
 自顶向下的归并（递归版）：
 
-
 <div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/merge-sort-1.png"/></div>
-
 
 ```java
 public static void sort(String[] a) {
@@ -316,7 +305,7 @@ public static void sort(String[] a) {
 
 快排是最快的排序算法，虽然和有些排序算法的时间复杂度相同，但是快排的常数小。
 
-## code
+<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/Sorting_quicksort_anim.gif"/></div>
 
 ```java
 public static void sort(String[] a) {
@@ -379,19 +368,176 @@ public static int partition(String[] a, int lo, int hi) {
 
 ## 堆实现
 
-在数组之上建立的二叉堆中，首先要明白**二叉堆**的定义：
+在**数组之上**建立的二叉堆中，首先要明白**二叉堆**的定义：
 
-> 堆有序：一颗二叉树的每个结点都大于等于它的两个子结点时。
+> 堆有序：二叉树的每个结点都**大于等于**它的两个子结点。
 
-> 根节点是对有序的二叉树中的最大结点。
+> 根节点是堆有序的二叉树中的最大结点。
 
 > 二叉堆：一组能够用**堆有序**的**完全二叉树**排序的元素，并在数组中按照层级储存。（不使用数组的第一个位置）
 
-简单而言二叉堆就是在完全二叉树的基础上添加了堆有序这条性质。
+简单而言二叉堆就是在完全二叉树的基础上添加了堆有序这条性质。本质上对数组增加了一层新的索引。如下图：
 
-从上可知，在数组中位置为 k 的元素。其**父节点**的位置为 $[k/2]$，其两个子节点的位置分别为 $[2k]$ 和 $[2k+1]$
+<div aligen="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200707010352.png"/></div>
 
-因为要始终保持根节点为最大值，那么当新加入或删除新元素时，堆中元素的优先级发生了变化
+从上可知，在数组中位置为 k 的元素。其**父节点**的位置为 $[k/2]$，其两个子节点的位置分别为 $[2k]$ 和 $[2k+1]$ 。
+
+当新加入或删除新元素时，堆中元素的优先级发生了变化。
+
+为了保证堆中根节点的值是最大值，相关节点需要**上浮**和**下沉**，这叫做堆的有序化。
+
+例如在堆地加入新元素，需要由下之上上浮相关结点来保证堆的顺序。
+
+例如将堆顶的元素替换为较小的元素，需要由上至下的下沉相关节点从而恢复堆的顺序。
+
+所以重点实现堆的上浮和下沉操作是重点，实现时需要用到一些辅助函数。
+
+### 辅助函数
+
+其中 pq 是用来存储数据的数组。
+
+* 用于比较两个值的大小。
+
+```java
+private boolean less(int i, int j) {
+    return pq[i].compareTo(pq[j]) < 0;
+}
+```
+
+* 用于交换两个位置的数据。
+
+```java
+private void exch(int i, int j) {
+    Key t = pq[i] ; pq[i] = pq[j] ; pq[j] = t;
+}
+```
+
+### 上浮
+
+首先判断 k 是否为根节点，注意数组的索引是从 1 开始。
+
+不是根节点的话在判断是否大于父节点，如果大于则需要**上浮**，也就是和父节点交换值。
+
+<div aligen="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200707010553.png"/></div>
+
+交换后索引变为父节点，但是该节点仍然可能还比父节点大，所以继续之前的操作。直到保证该节点小于父节点或者到达根节点。
+
+```java
+private void main(int k) {
+    while (k > 1 && less(k/2 , k)) {
+        exch(k/2 , k);
+        k = k/2;
+    }
+}
+```
+
+### 下沉
+
+从当前位置出发，代表当前根节点，首先判断左右结点大小，选中大的一个。
+
+然后再比对较大的一个和自身根节点的值，如果比根节点大就交换下沉，反之 break 停止后续操作。
+
+<div aligen="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200707010913.png"/></div>
+
+注意其中 N 代表数组长度。
+
+```java
+private void swim(int k) {
+    while (2*k <= N) {
+        int j = 2*k; // 子节点
+        // 判断左右节点谁大谁小， j++ 代表选右节点
+        if (j < N && less(j,j+1)) j++; 
+        // 判断父节点和选择的子节点大小，如果父节点大就不需要下沉了
+        if (!less(k,j)) break; 
+        exch(k , j);
+        k = j;
+    }
+}
+```
+
+## 基于堆的优先队列
+
+当需要插入元素时，将 N 加一并在队尾添加新元素，然后执行上浮操作。
+
+<div aligen="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200707010703.png"/></div>
+
+```java
+public void insert(Key x) {
+    pq[++N] = x;
+    swim(N);
+}
+```
+
+当需要取出最大值 pq[1] 时，先将 pq[N] 移动到 pq[1] 上，将 N 减一并执行下沉操作。然后将不再使用的 pq[N+1] 设置为 null 执行垃圾回收操作。
+
+<div aligen="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200707011006.png"/></div>
+
+```java
+public Key delMax() {
+    Key max = pq[1];
+    exch(1,N--);
+    sink(1);
+    pq[N+1] = null;
+    return max;
+}
+```
+
+### 分析
+
+* 有序数组的插入操作复杂度为 N ，因为要遍历数组，而删除操作复杂度为 1 ，因为只需修改边缘即可。
+
+* 无序数组的插入操作复杂度为 1 ，因为随便无序随便插，而删除操作的复杂度为 N ，因为需要遍历数组。
+
+* 对于堆二叉树，插入操作复杂度为 $logN$ ，而删除操作复杂度为 $logN$ 。因为上沉和下浮只需要遍历树即可，而树高为 $logN$ 。
+
+所以当涉及当大量的插入和删除操作时，堆二叉树是最合适的。
+
+## 堆排序
+
+根据堆的性质完全可以实现排序功能。
+
+例如一个数组中存在很多混乱的元素，首先建堆。
+
+然后不断的取根结点的元素，然后调整堆，直到将堆中元素取完。
+
+因为每次取得都是堆中的最大值，所以最后的结果就是一个降序的列表。
+
+### 建堆
+
+直接看代码，for 循环就是建堆的过程，为什么从 **N/2** 开始执行，因为堆二叉树本质上是一颗完全二叉树。
+
+对于完全二叉树而言 **N/2** 就是最后一个**父节点**，大于 N/2 的结点都是叶子结点。执行 N/2 次**下沉（sink）**操作后就建堆成功了。
+
+看完图就明白了：
+
+<div aligen="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200707011234.png"/></div>
+
+注意此处的 sink() 的形参修改的了，第三个参数始终是数组的长度 N 。
+
+```java
+public static void sort(Comparable[] a) {
+    int N = a.length;
+    for (int k = N/2; k >= 1; k--) {
+        sink(a, k, N);
+    }
+    while (N > 1) {
+        exch(a , 1 , N--);
+        sink(a , 1 , N);
+    }
+}
+```
+
+然后每次从堆中取出一个元素放入数组的尾部，然后执行一次下沉操作即可。最终得到一个升序的数组。
+
+对于下沉排序看完此图应该就明白了：
+
+<div aliegn="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200707011353.png"/></div>
+
+执行下沉排序时和插入排序很类似，但是比较次数却少于插入排序。
+
+堆排序是唯一能够同时最优的利用时间和空间的方法，最坏情况下也能保证 $2NlogN$ 次比较恒定的额外空间。而且代表短。sink() 可重复用于其他函数。
+
+但是缺点是无法利用缓存，缓存未命中的次数远远高于其他排序。
 
 # 应用
 
