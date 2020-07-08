@@ -58,9 +58,6 @@
 * [操作系统导论](book/os_0.md)
 * [现代操作系统](book/os_now.md)
 
-## 🍭前端
-* [React](book/web_lab_1.md)
-
 ## 🎉DeepLearning
 * [概述](book/dl_lab_0.md)
 * [手写数字识别](book/dl_lab_1.md)
