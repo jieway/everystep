@@ -3,9 +3,9 @@
 |                题目                 | 难度  |
 | :---------------------------------: | :---: |
 | [Leetcode-867](alg/Leetcode-867.md) |   1   |
-| [Leetcode-283](alg/Leetcode-283.md) |   💗   |
-| [Leetcode-167](alg/Leetcode-167.md) |  💗🧡   |
-|  [Leetcode-01](alg/Leetcode-01.md)  |  💗🧡💛  |
+| [Leetcode-283](alg/Leetcode-283.md) |   1   |
+| [Leetcode-167](alg/Leetcode-167.md) |   1   |
+|  [Leetcode-01](alg/Leetcode-1.md)   |  💗🧡💛  |
 |  [Leetcode-66](alg/Leetcode-66.md)  |  💗🧡💛  |
 | [Leetcode-633](alg/Leetcode-633.md) |  💗🧡💛  |
 | [Leetcode-345](alg/Leetcode-345.md) |  💗🧡💛  |
@@ -8599,10 +8599,10 @@ int main() {
 
 |                 题目                 | 难度  | 语言  |
 | :----------------------------------: | :---: | :---: |
-| [Leetcode-104](alg/Leetcode-104.md) |   💗   |  cpp  |
-| [Leetcode-110](alg/Leetcode-110.md) |   💗   |  cpp  |
-| [Leetcode-543](alg/Leetcode-543.md) |   💗   |  cpp  |
-| [Leetcode-226](alg/Leetcode-226.md) |   💗   |  cpp  |
+| [Leetcode-104](alg/Leetcode-104.md)  |   💗   |  cpp  |
+| [Leetcode-110](alg/Leetcode-110.md)  |   💗   |  cpp  |
+| [Leetcode-543](alg/Leetcode-543.md)  |   💗   |  cpp  |
+| [Leetcode-226](alg/Leetcode-226.md)  |   💗   |  cpp  |
 | [❎Leetcode-617](alg/Leetcode-617.md) |   💗   |  cpp  |
 | [❎Leetcode-112](alg/Leetcode-112.md) |   💗   |  cpp  |
 | [❎Leetcode-437](alg/Leetcode-437.md) |   💗   |  cpp  |

@@ -344,6 +344,7 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
+      basePath: '/book/',
       name: 'CodeStep',
       repo: 'https://github.com/weijiew/codestep',
       loadSidebar: true,
@@ -425,30 +426,6 @@
   <!-- 字数统计 -->
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 
-    <!-- 评论插件 -->
-    <!-- <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
-    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-   -->
-    <!-- <script>
-      const gitalk = new Gitalk({
-        clientID: '95a353220012cf99aabf',
-        clientSecret: '05fcdc0d96677264caad3b8b6142d502f80a2761',
-        repo: 'codestep',
-        owner: 'weijiew',
-        admin: ['weijiew'],
-        title: location.hash.match(/#(.*?)([?]|$)/)[1],
-        id: location.hash.match(/#(.*?)([?]|$)/)[1],
-        // facebook-like distraction free mode
-        distractionFreeMode: false
-      })
-        // 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题。
-        window.onhashchange = function(event){
-        if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
-            location.reload()
-          }
-        }
-    </script> -->
     <!-- 离线模式 -->
     <script>
         if (typeof navigator.serviceWorker !== 'undefined') {

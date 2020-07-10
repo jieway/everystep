@@ -1,6 +1,6 @@
 ## 167. Two Sum II - Input array is sorted
 
-[leetcode-167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) / [力扣-167]([leetcode-167](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/))
+[leetcode-167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) / [力扣-167](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
 
 因为数组升序，如果值小，右边的下标就减减，反之左边的值就加加。
 
@@ -37,7 +37,7 @@ public:
             if (sum == target) {
                 a.push_back(i+1);
                 a.push_back(j+1);
-                return a;
+                return a; // 如果不加这行代码会导致超时！
             }else if (sum > target) {
                 j--;
             }else if (sum < target) {
