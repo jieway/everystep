@@ -1,4 +1,4 @@
-## 167. Two Sum II - Input array is sorted
+## 167. 两数之和 II - 输入有序数组
 
 [leetcode-167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) / [力扣-167](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
 
