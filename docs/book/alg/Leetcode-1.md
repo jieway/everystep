@@ -1,5 +1,4 @@
-
-# 1. 数组中两个数的和为给定值
+# 1. 两数之和
 
 [Leetcode-1](https://leetcode.com/problems/two-sum/submissions/) / [力扣-1](https://leetcode-cn.com/problems/two-sum/submissions/)
 

@@ -5,7 +5,7 @@
 | [Leetcode-867](alg/Leetcode-867.md) |   1   |
 | [Leetcode-283](alg/Leetcode-283.md) |   1   |
 | [Leetcode-167](alg/Leetcode-167.md) |   1   |
-|  [Leetcode-01](alg/Leetcode-1.md)   |  💗🧡💛  |
+|  [Leetcode-1](alg/Leetcode-1.md)   |  2  |
 |  [Leetcode-66](alg/Leetcode-66.md)  |  💗🧡💛  |
 | [Leetcode-633](alg/Leetcode-633.md) |  💗🧡💛  |
 | [Leetcode-345](alg/Leetcode-345.md) |  💗🧡💛  |
