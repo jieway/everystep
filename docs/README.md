@@ -4,26 +4,14 @@
        
 个人知识库，在校学生，记录所学，尽量采用最通俗的语言来描述学到的知识。如有错误还请指正。
 
-本项目同步至 [gitee](https://weijiew.gitee.io/codestep/#/) 国内的访问速度更快一些！
-
 这个项目很多模块都没有完善。
-
-## ⚓程序人生
-* [IT-书单](book/read_0.md)
-* [《黑客与画家》](book/read_1.md)
-
-## 🐷C/C++
-* [C Prime Plus 笔记](book/c_01.md)
-* [Pythonic](book/py_0.md)
-
 ## 💫数据结构
 * [1.0 概述](book/ds.md)
-* [数据结构](book/alg_ds.md)
-* [❎2.0 线性表](book/ds_list.md)
-* [❎3.0 栈和队列](book/ds_qs.md)
+* [2.0 线性表](book/ds_list.md)
+* [3.0 栈和队列](book/ds_qs.md)
 * [4.0 字符串](book/ds_char.md)
 * [5.0 数组和广义表](book/ds_vec.md)
-* [❎6.0 树](book/ds_tree.md)
+* [6.0 树](book/ds_tree.md)
 * [7.0 图](book/ds_graph.md)
 * [8.0 查找](book/ds_search.md)
 * [9.0 排序](book/ds_sort.md)
@@ -32,12 +20,10 @@
 * [概述&指导](book/alg_lab_0.md)
 * [算法4th](book/alg_algs4.md)
 * [基础知识](book/alg_lab_1.md)
-* [题单](book/alg_num.md)
+* [题单](book/alg_num_toc.md)
 * [贪心](book/alg_gre_0.md)
 * [图论](book/alg_lab_5.md)
-* [数学](book/alg_lab_11.md)
 * [搜索](book/alg_lab_12.md)
-* [动态规划](book/alg_lab_16.md)
 * [PAT-模拟](book/alg_pat_0.md)
 * [二进制](book/alg_binary.md)
 * [滑动窗口](book/alg_win.md)
@@ -53,6 +39,9 @@
 * [1.6 应用层](book/net_lab_5.md)
 * [1.7 网络安全](book/net_lab_6.md)
 * [1.8 图解HTTP](book/net_lab_7.md)
+
+## 🔥CSAPP
+* [第一章：计算机系统漫游](book/csapp_ch1.md)
 
 ## 🐷数据库
 * [SQLZOO-题解](book/sql_lab_2.md)
@@ -70,9 +59,6 @@
 * [概述](book/os_lab_0.md)
 * [操作系统导论](book/os_0.md)
 * [现代操作系统](book/os_now.md)
-
-## 🍭前端
-* [React](book/web_lab_1.md)
 
 ## 🎉DeepLearning
 * [概述](book/dl_lab_0.md)
@@ -103,7 +89,6 @@
 
 ## 🌼Spring
 * [0.0 HelloWorld!](book/spr_0.md)
-
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>

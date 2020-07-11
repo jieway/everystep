@@ -24,14 +24,14 @@
 * [剑指Offer](book/alg_offer.md)
 
 ## 🚗计算机网络
-* [1.1 概述](book/net_lab_0.md)
-* [1.2 物理层](book/net_lab_1.md)
-* [1.3 数据链路层](book/net_lab_2.md)
-* [1.4 网络层](book/net_lab_3.md)
-* [1.5 运输层](book/net_lab_4.md)
-* [1.6 应用层](book/net_lab_5.md)
-* [1.7 网络安全](book/net_lab_6.md)
-* [1.8 图解HTTP](book/net_lab_7.md)
+* [概述](book/net_lab_0.md)
+* [物理层](book/net_lab_1.md)
+* [数据链路层](book/net_lab_2.md)
+* [网络层](book/net_lab_3.md)
+* [运输层](book/net_lab_4.md)
+* [应用层](book/net_lab_5.md)
+* [网络安全](book/net_lab_6.md)
+* [图解HTTP](book/net_lab_7.md)
 
 ## 🔥CSAPP
 * [第一章：计算机系统漫游](book/csapp_ch1.md)

@@ -2,7 +2,7 @@
 
 [Leetcode-141](https://leetcode.com/problems/linked-list-cycle/) / [力扣-141](https://leetcode-cn.com/problems/linked-list-cycle/)
 
-简而言之，就像跑步，一个跑的快，一个跑的慢，二者之间存在速度差，如果存在环二者必定会相遇。
+类似于跑步，一个跑的快，一个跑的慢，二者之间存在速度差，如果存在环二者必定会相遇。
 
 ## CPP
 
