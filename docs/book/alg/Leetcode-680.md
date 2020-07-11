@@ -1,5 +1,4 @@
-
-# 680. Valid Palindrome II
+# 680. 验证回文字符串 Ⅱ
 
 [Leetcode-680](https://leetcode.com/problems/valid-palindrome-ii/) / [力扣-680](https://leetcode-cn.com/problems/valid-palindrome-ii/)
 

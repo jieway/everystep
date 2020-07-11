@@ -1,4 +1,4 @@
-## 867. Transpose Matrix
+## 867. 转置矩阵
 
 [Leetcode-867](https://leetcode.com/problems/transpose-matrix/) / [力扣-867](https://leetcode-cn.com/problems/transpose-matrix/)
 

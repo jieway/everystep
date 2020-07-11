@@ -5,37 +5,37 @@
 | [Leetcode-867](alg/Leetcode-867.md) |   1   |
 | [Leetcode-283](alg/Leetcode-283.md) |   1   |
 | [Leetcode-167](alg/Leetcode-167.md) |   1   |
-|  [Leetcode-1](alg/Leetcode-1.md)   |  2  |
-|  [Leetcode-66](alg/Leetcode-66.md)  |  💗🧡💛  |
-| [Leetcode-633](alg/Leetcode-633.md) |  💗🧡💛  |
-| [Leetcode-345](alg/Leetcode-345.md) |  💗🧡💛  |
-| [Leetcode-680](alg/Leetcode-680.md) |  💗🧡💛  |
-|  [Leetcode-88](alg/Leetcode-88.md)  |  💗🧡💛  |
-| [Leetcode-141](alg/Leetcode-141.md) |  💗🧡💛  |
+|   [Leetcode-1](alg/Leetcode-1.md)   |   2   |
+|  [Leetcode-66](alg/Leetcode-66.md)  |   2   |
+| [Leetcode-633](alg/Leetcode-633.md) |   2   |
+| [Leetcode-345](alg/Leetcode-345.md) |   2   |
+|  [Leetcode-88](alg/Leetcode-88.md)  |   2   |
+| [Leetcode-680](alg/Leetcode-680.md) |   3   |
 
 # 链表
 
-|                 题目                 | 难度  |      语言       |           总结           |
-| :----------------------------------: | :---: | :-------------: | :----------------------: |
-| [Leetcode-206](alg/Leetcode-206.md)  |   💗   | cpp Java Python |       原地反转链表       |
-|  [Leetcode-92](alg/Leetcode-92.md)   |   💗   | cpp Java Python |  在给定的范围内反转链表  |
-|  [Leetcode-24](alg/Leetcode-24.md)   |  💗💗   | cpp Java Python |         交换链表         |
-| [Leetcode-160](alg/Leetcode-160.md)  |  💗💗   |    cpp Java     |  求两条链表开始相交部分  |
-|  [Leetcode-21](alg/Leetcode-21.md)   |  💗💗   |    cpp Java     |     合并两个有序链表     |
-|  [Leetcode-83](alg/Leetcode-83.md)   |  💗💗   |       cpp       | 删除排序链表中的重复元素 |
-|  [Leetcode-82](alg/Leetcode-82.md)   |  💗💗   |       cpp       |                          |
-|  [Leetcode-19](alg/Leetcode-19.md)   |  💗💗   |   cpp   Java    |                          |
-|   [Leetcode-2](alg/Leetcode-2.md)    |  💗💗   |       cpp       |                          |
-|   [Leetcode-7](alg/Leetcode-7.md)    |  💗💗   |       cpp       |                          |
-|   [❌Leetcode-9](alg/Leetcode-9.md)   |  💗💗   |       cpp       |                          |
-|  [❌Leetcode-10](alg/Leetcode-10.md)  |  💗💗   |       cpp       |                          |
-|  [❌Leetcode-86](alg/Leetcode-86.md)  |  💗💗   |       cpp       |                          |
-| [❌Leetcode-148](alg/Leetcode-148.md) |  💗💗   |       cpp       |                          |
-| [❌Leetcode-143](alg/Leetcode-143.md) |  💗💗   |       cpp       |                          |
-| [❌Leetcode-141](alg/Leetcode-141.md) |  💗💗   |       cpp       |                          |
-| [❌Leetcode-142](alg/Leetcode-142.md) |  💗💗   |       cpp       |                          |
-| [❌Leetcode-234](alg/Leetcode-234.md) |  💗💗   |       cpp       |                          |
-| [❌Leetcode-138](alg/Leetcode-138.md) |  💗💗   |       cpp       |                          |
+|                 题目                 | 难度  |
+| :----------------------------------: | :---: |
+| [Leetcode-141](alg/Leetcode-141.md)  |   1   |
+| [Leetcode-206](alg/Leetcode-206.md)  |   💗   |
+|  [Leetcode-92](alg/Leetcode-92.md)   |   💗   |
+|  [Leetcode-24](alg/Leetcode-24.md)   |  💗💗   |
+| [Leetcode-160](alg/Leetcode-160.md)  |  💗💗   |
+|  [Leetcode-21](alg/Leetcode-21.md)   |  💗💗   |
+|  [Leetcode-83](alg/Leetcode-83.md)   |  💗💗   |
+|  [Leetcode-82](alg/Leetcode-82.md)   |  💗💗   |
+|  [Leetcode-19](alg/Leetcode-19.md)   |  💗💗   |
+|   [Leetcode-2](alg/Leetcode-2.md)    |  💗💗   |
+|   [Leetcode-7](alg/Leetcode-7.md)    |  💗💗   |
+|   [❌Leetcode-9](alg/Leetcode-9.md)   |  💗💗   |
+|  [❌Leetcode-10](alg/Leetcode-10.md)  |  💗💗   |
+|  [❌Leetcode-86](alg/Leetcode-86.md)  |  💗💗   |
+| [❌Leetcode-148](alg/Leetcode-148.md) |  💗💗   |
+| [❌Leetcode-143](alg/Leetcode-143.md) |  💗💗   |
+| [❌Leetcode-141](alg/Leetcode-141.md) |  💗💗   |
+| [❌Leetcode-142](alg/Leetcode-142.md) |  💗💗   |
+| [❌Leetcode-234](alg/Leetcode-234.md) |  💗💗   |
+| [❌Leetcode-138](alg/Leetcode-138.md) |  💗💗   |
 
 # 栈
 

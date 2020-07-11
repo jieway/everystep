@@ -1,4 +1,4 @@
-﻿## 283. move-zeroes
+﻿## 283. 移动零
 
 [Leetcode-283](https://leetcode.com/problems/move-zeroes/) / [力扣-283](https://leetcode-cn.com/problems/move-zeroes/)
 

@@ -1,27 +1,52 @@
-## 66. Plus One
+## 66. 加一
 
 [Leetcode-66](https://leetcode.com/problems/plus-one) / [力扣-66](https://leetcode-cn.com/problems/plus-one)
 
-- 题意为提供一个数组，将这个数组中存的每一个数字看作是一个整数的每一位，也就是这个数组逆序分别是这个数字的个位，十位，百位等等。不存在零开头的数字数组。然后将这个“整数”加一。求变化后的数组。
+分三种情况讨论。
 
-- 首先很容易想到将数组转换成整数加一后再转化成数组，但是数组长度超过整型范围怎么办，会溢出。
-- 不能通过整型来加一，那么只能在数组中实现了，特殊情况无非是结尾出现 9 加一后变成了 0 ，所以逆序遍历。一旦结尾不是 9 那么直接加一 return 即可。
-- 特殊情况在于结尾的9，出现 9 就将这一位赋值成 0 ，因为进位了，而 999 这种情况进位后就变成了 1000 长度多了一位，所以需要全是 9 的情况单独拎出来。这样就写出来了。
+1. 没有 9 ，例如 123， 输出为 124 .
+2. 个位是 9 ，例如 129， 输出 130 .
+3. 全是 9 ， 例如 999 ， 输出 1000.
+
+规律就是识别到 9 就将其变为 0 反之自增 return 。
+
+如果将循环遍历完了就说明全是 9 ，那么创建一个新 vector 将其首位置为 1 。
 
 ```cpp
 class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
-        for (int i = digits.size()-1; i >= 0; i--) {
+        int t = 0;
+        for(int i = digits.size()-1; i >= 0; i--) {
             if (digits[i] != 9) {
                 digits[i]++;
                 return digits;
             }
             digits[i] = 0;
         }
-        vector<int> r(digits.size()+1);
-        r[0] = 1;
-        return r;
+        vector<int> a(digits.size()+1);
+        a[0] = 1;
+        return a;
+    }
+};
+```
+
+另一种思路：
+
+```cpp
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& digits) {
+        for(int i = digits.size()-1; i >= 0; i--) {
+            digits[i]++;
+            digits[i] = digits[i]%10;
+            if (digits[i] != 0) {
+                return digits;
+            }
+        }
+        vector<int> a(digits.size()+1);
+        a[0] = 1;
+        return a;
     }
 };
 ```

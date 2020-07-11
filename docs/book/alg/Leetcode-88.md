@@ -1,8 +1,10 @@
-## 88. Merge Sorted Array (Easy)
+## 88. 合并两个有序数组
 
 [Leetcode-88](https://leetcode.com/problems/merge-sorted-array/) / [力扣-88](https://leetcode-cn.com/problems/merge-sorted-array/)
 
-如果从头部开始合并势必会导致 nums1 中的值被覆盖，从尾部开始
+如果从头部开始合并势必会导致 nums1 中的值被覆盖，需要创建一个新的数组来存数据。
+
+如果从尾部开始可以直接在原数组上操作，不存在数组中的值被覆盖的情况。
 
 ## cpp
 
@@ -52,7 +54,7 @@ class Solution {
 ```java
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-   int tail=m+n-1,tail1=m-1,tail2=n-1;
+    int tail=m+n-1,tail1=m-1,tail2=n-1;
         while(tail!=tail1)
         {
             if(tail1>=0 && nums1[tail1]>nums2[tail2]) nums1[tail--]=nums1[tail1--];
