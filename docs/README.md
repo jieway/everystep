@@ -1,20 +1,10 @@
 # codestep
 
-[![](https://img.shields.io/github/stars/weijiew/codestep?color=%238e44ad&label=github&logoColor=%236c5ce7&style=social)](https://github.com/weijiew/codestep)
-       
-个人知识库，在校学生，记录所学，尽量采用最通俗的语言来描述学到的知识。如有错误还请指正。
+在线版： [![codestep-weijiew-orange.svg](https://pic.leetcode-cn.com/f332a1f0879765fb7758b0a86f391514b290e0eba7248a3bcd885040a4c7b040-codestep-weijiew-orange.svg)](https://weijiew.com/codestep/)       
 
-这个项目很多模块都没有完善。
-## 💫数据结构
-* [1.0 概述](book/ds.md)
-* [2.0 线性表](book/ds_list.md)
-* [3.0 栈和队列](book/ds_qs.md)
-* [4.0 字符串](book/ds_char.md)
-* [5.0 数组和广义表](book/ds_vec.md)
-* [6.0 树](book/ds_tree.md)
-* [7.0 图](book/ds_graph.md)
-* [8.0 查找](book/ds_search.md)
-* [9.0 排序](book/ds_sort.md)
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+
+个人知识库，在校学生，记录所学，尽量采用最通俗的语言来描述学到的知识。如有错误还请指正。
 
 ## 🚀算法
 * [概述&指导](book/alg_lab_0.md)
@@ -30,15 +20,26 @@
 * [回溯法](book/alg_back.md)
 * [剑指Offer](book/alg_offer.md)
 
+## 💫数据结构
+* [1.0 概述](book/ds.md)
+* [2.0 线性表](book/ds_list.md)
+* [3.0 栈和队列](book/ds_qs.md)
+* [4.0 字符串](book/ds_char.md)
+* [5.0 数组和广义表](book/ds_vec.md)
+* [6.0 树](book/ds_tree.md)
+* [7.0 图](book/ds_graph.md)
+* [8.0 查找](book/ds_search.md)
+* [9.0 排序](book/ds_sort.md)
+
 ## 🚗计算机网络
-* [1.1 概述](book/net_lab_0.md)
-* [1.2 物理层](book/net_lab_1.md)
-* [1.3 数据链路层](book/net_lab_2.md)
-* [1.4 网络层](book/net_lab_3.md)
-* [1.5 运输层](book/net_lab_4.md)
-* [1.6 应用层](book/net_lab_5.md)
-* [1.7 网络安全](book/net_lab_6.md)
-* [1.8 图解HTTP](book/net_lab_7.md)
+* [概述](book/net_lab_0.md)
+* [物理层](book/net_lab_1.md)
+* [数据链路层](book/net_lab_2.md)
+* [网络层](book/net_lab_3.md)
+* [运输层](book/net_lab_4.md)
+* [应用层](book/net_lab_5.md)
+* [网络安全](book/net_lab_6.md)
+* [图解HTTP](book/net_lab_7.md)
 
 ## 🔥CSAPP
 * [第一章：计算机系统漫游](book/csapp_ch1.md)
@@ -89,6 +90,3 @@
 
 ## 🌼Spring
 * [0.0 HelloWorld!](book/spr_0.md)
-
-## License
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>

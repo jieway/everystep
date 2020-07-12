@@ -1,41 +1,27 @@
-# 数组
-
-|                题目                 | 难度  |                         总结                         |
-| :---------------------------------: | :---: | :--------------------------------------------------: |
-| [Leetcode-867](alg/Leetcode-867.md) |   1   |               矩阵转置，注意行列关系。               |
-| [Leetcode-283](alg/Leetcode-283.md) |   1   |               将数组中的零移动到末尾。               |
-| [Leetcode-167](alg/Leetcode-167.md) |   1   |          因为数组有序，双指针头尾索引即可。          |
-|   [Leetcode-1](alg/Leetcode-1.md)   |   2   |     与上一题不同的是数组无序，并且索引从零开始。     |
-|  [Leetcode-66](alg/Leetcode-66.md)  |   2   | 这道题需要好好思考，想明白就很简单了，注意分类讨论。 |
-| [Leetcode-633](alg/Leetcode-633.md) |   2   |                     双指针遍历。                     |
-| [Leetcode-345](alg/Leetcode-345.md) |   2   |      待条件的反转字符串，可以用函数来设置条件。      |
-|  [Leetcode-88](alg/Leetcode-88.md)  |   2   |           归并排序的味道，注意归并的方式。           |
-| [Leetcode-680](alg/Leetcode-680.md) |   3   |         待条件的判断回文字符，需要仔细思考。         |
-
 # 链表
 
-|                 题目                 | 难度  |
-| :----------------------------------: | :---: |
-| [Leetcode-141](alg/Leetcode-141.md)  |   1   |
-| [Leetcode-206](alg/Leetcode-206.md)  |   💗   |
-|  [Leetcode-92](alg/Leetcode-92.md)   |   💗   |
-|  [Leetcode-24](alg/Leetcode-24.md)   |  💗💗   |
-| [Leetcode-160](alg/Leetcode-160.md)  |  💗💗   |
-|  [Leetcode-21](alg/Leetcode-21.md)   |  💗💗   |
-|  [Leetcode-83](alg/Leetcode-83.md)   |  💗💗   |
-|  [Leetcode-82](alg/Leetcode-82.md)   |  💗💗   |
-|  [Leetcode-19](alg/Leetcode-19.md)   |  💗💗   |
-|   [Leetcode-2](alg/Leetcode-2.md)    |  💗💗   |
-|   [Leetcode-7](alg/Leetcode-7.md)    |  💗💗   |
-|   [❌Leetcode-9](alg/Leetcode-9.md)   |  💗💗   |
-|  [❌Leetcode-10](alg/Leetcode-10.md)  |  💗💗   |
-|  [❌Leetcode-86](alg/Leetcode-86.md)  |  💗💗   |
-| [❌Leetcode-148](alg/Leetcode-148.md) |  💗💗   |
-| [❌Leetcode-143](alg/Leetcode-143.md) |  💗💗   |
-| [❌Leetcode-141](alg/Leetcode-141.md) |  💗💗   |
-| [❌Leetcode-142](alg/Leetcode-142.md) |  💗💗   |
-| [❌Leetcode-234](alg/Leetcode-234.md) |  💗💗   |
-| [❌Leetcode-138](alg/Leetcode-138.md) |  💗💗   |
+|                题目                 | 难度  |             总结             |
+| :---------------------------------: | :---: | :--------------------------: |
+| [Leetcode-141](alg/Leetcode-141.md) |   1   |     快慢指针，注意细节！     |
+| [Leetcode-206](alg/Leetcode-206.md) |   2   | 迭代和递归，仔细思考递归实现 |
+|  [Leetcode-92](alg/Leetcode-92.md)  |   💗   |
+|  [Leetcode-24](alg/Leetcode-24.md)  |  💗💗   |
+| [Leetcode-160](alg/Leetcode-160.md) |  💗💗   |
+|  [Leetcode-21](alg/Leetcode-21.md)  |  💗💗   |
+|  [Leetcode-83](alg/Leetcode-83.md)  |  💗💗   |
+|  [Leetcode-82](alg/Leetcode-82.md)  |  💗💗   |
+|  [Leetcode-19](alg/Leetcode-19.md)  |  💗💗   |
+|   [Leetcode-2](alg/Leetcode-2.md)   |  💗💗   |
+|   [Leetcode-7](alg/Leetcode-7.md)   |  💗💗   |
+|   [Leetcode-9](alg/Leetcode-9.md)   |  💗💗   |
+|  [Leetcode-10](alg/Leetcode-10.md)  |  💗💗   |
+|  [Leetcode-86](alg/Leetcode-86.md)  |  💗💗   |
+| [Leetcode-148](alg/Leetcode-148.md) |  💗💗   |
+| [Leetcode-143](alg/Leetcode-143.md) |  💗💗   |
+| [Leetcode-141](alg/Leetcode-141.md) |  💗💗   |
+| [Leetcode-142](alg/Leetcode-142.md) |  💗💗   |
+| [Leetcode-234](alg/Leetcode-234.md) |  💗💗   |
+| [Leetcode-138](alg/Leetcode-138.md) |  💗💗   |
 
 # 栈
 
@@ -2511,7 +2497,6 @@ int main(){
 | [Leetcode-1](alg/Leetcode-1.md) |   💗   |
 
 <!-- GFM-TOC -->
-- [数组](#数组)
 - [链表](#链表)
 - [栈](#栈)
   - [💗](#)
@@ -2759,7 +2744,7 @@ int main(){
   - [1.0 模板题](#10-模板题)
     - [思考](#思考-9)
   - [2.0](#20)
-- [数组](#数组-1)
+- [数组](#数组)
 - [题单](#题单)
   - [遍历](#遍历)
 - [递归](#递归-1)
