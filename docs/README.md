@@ -1,7 +1,9 @@
 # codestep
 <p align="center">
 
-国内速度快： [![](https://img.shields.io/badge/Gitee%20Pages-CodeStep-blue)](https://weijiew.gitee.io/codestep/) [![codestep-weijiew-orange.svg](https://pic.leetcode-cn.com/f332a1f0879765fb7758b0a86f391514b290e0eba7248a3bcd885040a4c7b040-codestep-weijiew-orange.svg)](https://weijiew.com/codestep/) <a href="https://weijiew.com"><img src="https://img.shields.io/badge/blog-weijiew-blue.svg"></a>
+国内可以访问 gitee pages 加快访问速度： [![](https://img.shields.io/badge/Gitee%20Pages-CodeStep-blue)](https://weijiew.gitee.io/codestep/) 
+
+[![codestep-weijiew-orange.svg](https://pic.leetcode-cn.com/f332a1f0879765fb7758b0a86f391514b290e0eba7248a3bcd885040a4c7b040-codestep-weijiew-orange.svg)](https://weijiew.com/codestep/) <a href="https://weijiew.com"><img src="https://img.shields.io/badge/blog-weijiew-blue.svg"></a>
 [![](https://img.shields.io/badge/Github%20Pages-CodeStep-brightgreen)](https://weijiew.com/codestep/#/) 
 <a href="https://github.com/weijiew/codestep"><img src="https://img.shields.io/github/stars/weijiew/codestep?color=%238e44ad&label=github&logoColor=%236c5ce7&style=social"></a>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
