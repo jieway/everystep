@@ -3,6 +3,7 @@
 
 
 ## JAVA优于C++之处
+
  1. Java清除了C++中不常用到的东西，更为纯净。 Java单继承，而C++多重继承。
  2. Java更为健壮，与C++相比，其指针模型消除重写内存和损坏数据的可能性。Java编译器可以检测到其他语言在运行时才能检测到到的问题。
  3. Java数据类型的大小是固定的，如int型在任何编译器中都是32位，而C++中int型的大小取决于操作系统，有可能是16位，有可能是32位，约束在于不能超过longint型， 不能小于 short int型。
@@ -12,11 +13,14 @@ XML是一种描述数据的方式，任何语言都可以处理XML数据，而Ja
 早期的Java并不开源，当Oracle收购sun之后，Java逐渐开源。
 Java区分大小写。
 Java中Boolean 不能将 0 定义位false ，1 定义为真，而c++ 可以混用。
+
 ## JDK和JRE 的区别
+
 **JDK： Java Development Kit**
 **JRE： Java Running Environment**
 JRE是Java运行时的开发环境，而JDK则是Java 的开发工具包，JDK包含JRE。
 如果只是运行java程序，装JRE即可，如果编写Java程序，装JDK。
+
 ## 关键字
 **public ：** 访问修饰符，控制程序其他部分对这段代码的访问。
 **class ：**  Java程序的全部内容都包含在类中。类作为加载程序的容器，而程序逻辑则定义了应用程序的行为。

@@ -1,4 +1,3 @@
-
 # 算法 4th
 
 * [idea 运行算法4](algs4/algs4_0.md)

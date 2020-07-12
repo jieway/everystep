@@ -1,6 +1,6 @@
 ## 🚀算法
 * [概述&指导](book/alg_lab_0.md)
-* [算法4th](book/alg_algs4.md)
+* [《算法4th》读书笔记](book/alg_algs4_toc.md)
 * [基础知识](book/alg_lab_1.md)
 * [题单](book/alg_num_toc.md)
 * [贪心](book/alg_gre_0.md)
@@ -82,4 +82,3 @@
 
 ## 🌼Spring
 * [0.0 HelloWorld!](book/spr_0.md)
-

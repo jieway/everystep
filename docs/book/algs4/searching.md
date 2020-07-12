@@ -426,35 +426,207 @@ private Node min(Node x) {
 
 ### 向上取整和向下取整
 
+根据二叉搜索树的性质可知，左子树的键小于根节点的键小于右子树的键。
+
+如果给定的 Key 小于二叉查找树的根节点的键，那么小于等于 Key 的最大键一定在根节点的左子树中。
+
+如果给定的 Key 大于二叉查找树的根节点的键，如果在根节点的右子树中找不到小于 Key 的键，根节点就是小于等于 Key 的最大键，反之小于等于 Key 的最大键就在右子树中。
+
+如下是一个向下取整的递归代码：
 
 ```java
 public Key floor(Key key) {
   Node x = floor(root, key);
 }
 private Node floor(Node x, Key key) {
-  if (x == null) return null;
+  if (x == null) return null; 
   int cmp = key.compareTo(x.key);
-  if (cmp == 0) return x;
-  if (cmp < 0) return floor(x.left, key);
-  Node t = floor(x.right, key);
-  if (t != null) return t;
-  else return x;
+  if (cmp == 0) return x; // 等于的结点
+  if (cmp < 0) return floor(x.left, key); // 从左子树里面查
+  Node t = floor(x.right, key); // 从右子树里面查
+  if (t != null) return t; // 从右子树里面找到了结点
+  else return x; // 没有找到就返回根节点
+}
+```
+
+### 选择操作
+
+首先回顾一下 N 的含义，N 表示以该结点为根的子树的**结点总数**
+
+根据 `size()` 方法可以拿到以该节点为根节点的子树的结点总数。
+
+```java
+public size() {
+  return size(root);
+}
+private int size(Node x) {
+  if (x == null) return 0;
+  else           return x.N;
+}
+```
+
+select() 方法可以根据排名找到对应的键，例如 select(3) 表示找到排名为 3 的键。
+
+首先写出递归结束的条件，然后判断当前结点的左节点的结点总数 t，这个数字表示小于根节点的结点数。
+
+如果 t 大于要找的排名 k ，那么说明排名为 k 的键就在左子树里面。
+
+反之 t 小于要找的排名 k ，那么说明要找的排名为 k 的键在右子树里面。
+
+此时以根节点 $t+1$ 为基准， $k - t - 1$ 实际上是  $k-(t+1)$ ，此后继续以右子树为根节点递归查找。
+
+```java
+public Key select(int key) {
+  return select(root, k).key;
+}
+private Node select(Node x, int k) {
+  if (x == null) return null;
+  int t = size(x.left);
+  if      (t > k) return select(x.left, k);
+  else if (t < k) return select(x.right, k - t - 1);
+  else            return x;
 }
 ```
 
 ### 排名
 
+rank() 方法是 select() 的逆方法，根据给定的键返回排名。
+
+如果给定的键小于等于根节点的键就返回左子树中节点给总数。
+
+如果给定的键大于根结点的键就返回根节点左子树上键的总数加一（t+1）再加上它在右子树中的排名。
+
+```java
+public Key rank(Key key) {
+  return rank(key, root);
+}
+private int rank(Key key, Node x) {
+  if (x == null) return 0;
+  int cmp = key.compareTo(x.key);
+  if      (cmp < 0) return root(key, x.left);
+  else if (cmp > 0) return 1 + size(x.left) + rank(key, x.right);
+  else              return size(x.left);
+}
+```
+
 ### 删除最大键和删除最小键
+
+根据二叉搜索树的定义递归的去找左子树直到遇到空链接前将结点的右链接返回即可。
+
+对于最大键删除右子树即可。
+
+<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200712212558.png"/></div>
+
+```java
+public void deleteMin() {
+  root = deleteMin(root);
+}
+private Node deleteMin(Node x) {
+  if (x.left == null) return x.right;
+  x.left = deleteMin(x.left);
+  x.N = size(x.left) + size(x.right) + 1;
+  return x;
+}
+```
 
 ### 删除操作
 
+删除最大最小值是比较简单的，因为只有零个或一个子结点。
+
+如何删除拥有左右两个子结点的结点呢？被删除结点的父节点只有一条链接，指向哪个结点？
+
+也就是当前节点被选中删除了，并且拥有两个子节点，如何重新组织节点之间的关系。
+
+如果用**后继结点**来填补**删除结点**的位置的话，**后继结点**位于删除结点右子节点的最小节点。
+
+```java
+public void delete(Key key) {
+  root = delete(root, key);
+}
+private Node delete(Node x, Key key) {
+  if (x == null) return null;
+  int cmp = key.compareTo(x.key);
+  if      (cmp < 0) x.left = delete(x.left, key);
+  else if (cmp > 0) x.right = delete(x.right, key);
+  else {
+    if (x.right == null) return x.left;
+    if (x.left == null) return x.right;
+    Node t = x; // 保存删除节点的链接
+    x = min(t.right);  // 去右子树里面寻找替代的结点
+    x.right = deleteMin(t.right);
+    x.left = t.left;
+  }
+  x.N = size(x.left) + size(x.right) + 1;
+  return x;
+}
+```
+
+这种方法虽然能够正确的删除一个结点。
+
+但是如果仅仅删除后继节点的话，对于整颗树而言是不平衡的，仅仅考虑了后继部分，没有考虑到树的对称性。
+
 ### 范围查找
+
+根据中序遍历二叉查找树可以得到一个升序的顺序。
+
+```java
+private void print(Node x) {
+  if ( x == null ) return;
+  print(x.left);
+  StdOut.println(x.key);
+  print(x.right);
+}
+```
+
+如果想要根据范围找到范围内的键完全可以利用中序遍历，将符合条件的键保存下来即可。
+
+如果当前节点的键大于要找的键，就去左子树里面继续搜寻，直到搜寻到下界。
+
+然后判断条件加入队列，再判断右子树确定上界。
+```java
+public Iterable<Key> keys() {
+  return keys(min(), max());
+}
+public Iterable<Key> keys(Key lo, Key hi) {
+  Queue<Key> queue = new Queue<Key>();
+  keys(root, queue, lo, hi);
+  return queue;
+}
+private void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
+  if (x == null) return;
+  int cmplo = lo.compareTo(x.key);
+  int cmphi = hi.compareTo(x.key);
+  if (cmplo < 0) keys(x.left, queue, lo, hi);
+  if (cmplo <= 0 && cmphi >= 0 ) queue.enqueue(x.key);
+  if (cmphi > 0) keys(x.right, queue, lo, hi);
+}
+```
 
 ### 性能分析
 
+二叉查找树所有操作的最坏情况下所需的时间都和树的高度成正比。
+
+因为这些操作都是沿着树的一条或两条路径进行。而路径的长度不可能大于树的高度。
+
+对于二叉查找树而言最坏的情况是不能接受的。
+
+对于快速排序可以提前将数组打乱，控制最坏的情况出现。
+
+但是对于二叉查找树而言依赖于输入顺序，这个顺序往往无法控制。
+
+所以需要寻找更好的算法和数据结构。
+
+<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200712233843.png"/></div>
+
 # 平衡查找树
 
+为了消除二叉查找树最坏情况而发明的新数据结构。
+
+创造一种无论如何构造运行时间都在对数级别。
+
 ## 2-3 查找树
+
+
 
 ## 红黑二叉查找树
 
