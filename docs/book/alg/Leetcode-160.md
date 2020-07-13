@@ -55,5 +55,3 @@ public class Solution {
     }
 }
 ```
-
-[![codestep-weijiew-orange.svg](https://pic.leetcode-cn.com/f332a1f0879765fb7758b0a86f391514b290e0eba7248a3bcd885040a4c7b040-codestep-weijiew-orange.svg)](https://weijiew.com/codestep/) 

@@ -2,7 +2,7 @@
 
 [Leetcode-21](https://leetcode.com/problems/merge-two-sorted-lists/) / [力扣-21](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
 
-- 归并排序的思想。
+* 归并排序的思想。
 
 ## CPP
 
@@ -39,6 +39,7 @@ public:
                 a->next = l2;
                 l2 = l2->next;
             }
+            // 第二次写的时候将此句漏掉了！
             a = a->next;
         }
         if (l1 == NULL) {

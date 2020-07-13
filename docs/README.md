@@ -11,12 +11,11 @@
 </p>
 
 个人知识库，在校学生，记录所学，尽量采用最通俗的语言来描述学到的知识。如有错误还请指正。
-
 ## 🚀算法
 * [概述&指导](book/alg_lab_0.md)
-* [算法4th](book/alg_algs4.md)
 * [基础知识](book/alg_lab_1.md)
-* [题单](book/alg_num_toc.md)
+* [✅数组](book/alg_array.md)
+* [链表](book/alg_list.md)
 * [贪心](book/alg_gre_0.md)
 * [图论](book/alg_lab_5.md)
 * [搜索](book/alg_lab_12.md)
@@ -25,6 +24,8 @@
 * [滑动窗口](book/alg_win.md)
 * [回溯法](book/alg_back.md)
 * [剑指Offer](book/alg_offer.md)
+* [《算法4th》读书笔记](book/alg_algs4_toc.md)
+* [题单](book/alg_num.md)
 
 ## 💫数据结构
 * [1.0 概述](book/ds.md)
