@@ -1,10 +1,10 @@
-# 160. Intersection of Two Linked Lists (Easy)
+# 160. 相交链表 (Easy)
 
 [Leetcode-160](https://leetcode.com/problems/intersection-of-two-linked-lists/) / [力扣-160](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
 
-* 暴力，两层循环，两条链重复的元素就是相交部分。
-
-* a 链到尽头后跳到 b 链上，同理 b 链走完后再跳到 a 链上。二者走的路程相同，如果存在相交部分 `a == b` 反之，`a == NULL` `b == NULL` 所以最后返回 a/b 即可。
+* 暴力，两层循环，两条链重复的地址就是相交部分。
+* a 链到尽头后跳到 b 链上，同理 b 链走完后再跳到 a 链上。二者走的路程相同，如果存在相交部分 `a == b` ，最终返回 a b 都行。
+* 反之如果不存在相交部分最终 `a == NULL` `b == NULL` 所以最后返回 a 或 b 都行。
 
 ## CPP
 
@@ -56,3 +56,4 @@ public class Solution {
 }
 ```
 
+[![codestep-weijiew-orange.svg](https://pic.leetcode-cn.com/f332a1f0879765fb7758b0a86f391514b290e0eba7248a3bcd885040a4c7b040-codestep-weijiew-orange.svg)](https://weijiew.com/codestep/) 

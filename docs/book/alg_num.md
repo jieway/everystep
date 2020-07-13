@@ -1,27 +1,4 @@
-# 链表
 
-|                题目                 | 难度  |             总结             |
-| :---------------------------------: | :---: | :--------------------------: |
-| [Leetcode-141](alg/Leetcode-141.md) |   1   |     快慢指针，注意细节！     |
-| [Leetcode-206](alg/Leetcode-206.md) |   2   | 迭代和递归，仔细思考递归实现 |
-|  [Leetcode-92](alg/Leetcode-92.md)  |   💗   |
-|  [Leetcode-24](alg/Leetcode-24.md)  |  💗💗   |
-| [Leetcode-160](alg/Leetcode-160.md) |  💗💗   |
-|  [Leetcode-21](alg/Leetcode-21.md)  |  💗💗   |
-|  [Leetcode-83](alg/Leetcode-83.md)  |  💗💗   |
-|  [Leetcode-82](alg/Leetcode-82.md)  |  💗💗   |
-|  [Leetcode-19](alg/Leetcode-19.md)  |  💗💗   |
-|   [Leetcode-2](alg/Leetcode-2.md)   |  💗💗   |
-|   [Leetcode-7](alg/Leetcode-7.md)   |  💗💗   |
-|   [Leetcode-9](alg/Leetcode-9.md)   |  💗💗   |
-|  [Leetcode-10](alg/Leetcode-10.md)  |  💗💗   |
-|  [Leetcode-86](alg/Leetcode-86.md)  |  💗💗   |
-| [Leetcode-148](alg/Leetcode-148.md) |  💗💗   |
-| [Leetcode-143](alg/Leetcode-143.md) |  💗💗   |
-| [Leetcode-141](alg/Leetcode-141.md) |  💗💗   |
-| [Leetcode-142](alg/Leetcode-142.md) |  💗💗   |
-| [Leetcode-234](alg/Leetcode-234.md) |  💗💗   |
-| [Leetcode-138](alg/Leetcode-138.md) |  💗💗   |
 
 # 栈
 
@@ -1069,7 +1046,6 @@ int main(){
 | [Leetcode-1](alg/Leetcode-1.md) |   💗   |
 
 <!-- GFM-TOC -->
-- [链表](#链表)
 - [栈](#栈)
 - [优先队列](#优先队列)
   - [1830: 懒省事的小明](#1830-懒省事的小明)
