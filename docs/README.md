@@ -3,13 +3,16 @@
 
 国内可以访问 gitee pages 加快访问速度： [![](https://img.shields.io/badge/Gitee%20Pages-CodeStep-blue)](https://weijiew.gitee.io/codestep/) 
 [![](https://img.shields.io/badge/Github%20Pages-CodeStep-brightgreen)](https://weijiew.com/codestep/#/) 
-<a href="https://github.com/weijiew/codestep"><img src="https://img.shields.io/github/stars/weijiew/codestep?color=%238e44ad&label=github&logoColor=%236c5ce7&style=social"></a>
-<a href="https://weijiew.com"><img src="https://img.shields.io/badge/blog-weijiew-blue.svg"></a>
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+
+给个星星😍：<a href="https://github.com/weijiew/codestep"><img src="https://img.shields.io/github/stars/weijiew/codestep?color=%238e44ad&label=github&logoColor=%236c5ce7&style=social"></a>
+
+我的 blog <a href="https://weijiew.com"><img src="https://img.shields.io/badge/blog-weijiew-blue.svg"></a>
+
+协议：<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+
 </p>
+
 个人知识库，在校学生，记录所学，尽量采用最通俗的语言来描述学到的知识。如有错误还请指正。
-
-
 
 ## 🚀算法
 * [概述&指导](book/alg_lab_0.md)
