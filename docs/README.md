@@ -4,7 +4,7 @@
 国内可以访问 gitee pages 加快访问速度： [![](https://img.shields.io/badge/Gitee%20Pages-CodeStep-blue)](https://weijiew.gitee.io/codestep/) 
 [![](https://img.shields.io/badge/Github%20Pages-CodeStep-brightgreen)](https://weijiew.com/codestep/#/) 
 
-给个星星😍：<a href="https://github.com/weijiew/codestep"><img src="https://img.shields.io/github/stars/weijiew/codestep?color=%238e44ad&label=github&logoColor=%236c5ce7&style=social"></a>
+星星😍：   <a href="https://github.com/weijiew/codestep"><img src="https://gitee.com/weijiew/pic/raw/master/img/star.svg"></a>
 
 我的 blog <a href="https://weijiew.com"><img src="https://img.shields.io/badge/blog-weijiew-blue.svg"></a>
 
