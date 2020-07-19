@@ -42,6 +42,7 @@
 * [Leetcode-题目](book/sql_lab_1.md)
 * [概述](book/sql_lab_0.md)
 * [数据库系统及其应用教程--SQL Serve2008](book/sql_1.md)
+* [《高性能 MySQL》第一章：MySQL 架构与历史](book/sql_ch1.md)
 
 ## 👓汇编语言
 * [第一章：基础知识](book/asm_lab_0.md)
