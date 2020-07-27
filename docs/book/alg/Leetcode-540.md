@@ -1,4 +1,3 @@
-
 # 540. 有序数组中的单一元素
 
 [Leetcode-540](https://leetcode.com/problems/single-element-in-a-sorted-array/) / [力扣-540]([Leetcode-540](https://leetcode-cn.com/problems/single-element-in-a-sorted-array/))
