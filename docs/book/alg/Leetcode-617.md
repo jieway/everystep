@@ -1,13 +1,17 @@
 
-## 617. Merge Two Binary Trees (Easy)
+## 617. 合并二叉树 (Easy)
 
 [Leetcode-617](https://leetcode.com/problems/merge-two-binary-trees/description/) / [力扣-617](https://leetcode-cn.com/problems/merge-two-binary-trees/description/)
 
+四种情况，注意返回值。
+
 ## cpp
+
 ```cpp
 class Solution {
 public:
     TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2) {
+        if (t1 == NULL && t2 == NULL) return NULL;
         if (t1 == NULL) return t2;
         if (t2 == NULL) return t1;
         t1->val += t2->val;
@@ -15,8 +19,7 @@ public:
         t1->right = mergeTrees(t1->right, t2->right);
         return t1;
     }
-};
-```
+};```
 
 ## Java
 

@@ -1,5 +1,4 @@
-
-## 110. Balanced Binary Tree (Easy)
+## 110. 平衡二叉树 (Easy)
 
 [Leetcode-110](https://leetcode.com/problems/balanced-binary-tree/description/) / [力扣-110](https://leetcode-cn.com/problems/balanced-binary-tree/description/)
 

@@ -1,5 +1,5 @@
 
-## 104. Maximum Depth of Binary Tree (Easy)
+## 104. 二叉树的最大深度
 
 [Leetcode-104](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) / [力扣-104](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/description/) / [力扣-104](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) / [力扣-104](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/description/)
 
@@ -33,3 +33,43 @@ public:
 };
 ```
 
+三目运算符 ? ，一条语句解决。
+
+```cpp
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        return root == NULL ? 0 : max(maxDepth(root->left),maxDepth(root->right)) + 1;
+    }
+};
+```
+
+BFS：
+
+```cpp
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        queue<TreeNode*> que;
+        int l = 0;
+        if (root != NULL) {
+            que.push(root);
+        }
+        while (!que.empty()) {
+            int s = que.size();
+            l++;
+            while (s--) {
+                TreeNode* t = que.front();
+                que.pop();
+                if (t->left != NULL) {
+                    que.push(t->left);
+                }
+                if (t->right != NULL) {
+                    que.push(t->right);
+                }
+            }
+        }
+        return l;
+    }
+};
+```

@@ -1,10 +1,27 @@
-## 226. Invert Binary Tree
+## 226. 翻转二叉树
 
 [Leetcode-226](https://leetcode.com/problems/invert-binary-tree/description/) / [力扣-226](https://leetcode-cn.com/problems/invert-binary-tree/description/)
 
 先序和后续遍历都可以在回溯的时候将左右节点交换。中序不可以，回溯前后都会交换实际上有些节点交换了两次。
 
 ## cpp
+
+遍历的时候直接交换即可。
+
+```cpp
+class Solution {
+public:
+    TreeNode* invertTree(TreeNode* root) {
+        if (root == NULL) return NULL;
+
+        swap(root->left, root->right);
+
+        invertTree(root->left);
+        invertTree(root->right);
+        return root;
+    }
+};
+```
 
 ```cpp
 class Solution {

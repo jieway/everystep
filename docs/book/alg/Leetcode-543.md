@@ -1,6 +1,8 @@
-## 543. Diameter of Binary Tree (Easy)
+## 543. 二叉树的直径 (Easy)
 
 [Leetcode-543](https://leetcode.com/problems/diameter-of-binary-tree/description/) / [力扣-543](https://leetcode-cn.com/problems/diameter-of-binary-tree/description/)
+
+这道题还是在高度上做文章，遍历每个节点的时候将该节点左右子树的高度和都算一遍，去最值即可。
 
 最长路径等于左数高加上右树高，也就是如下代码。
 
@@ -45,19 +47,19 @@
 
 ```cpp
 class Solution {
-    int ans;
-    int high(TreeNode* root) {
-        if (root == NULL) return 0;
-        int l = high(root->left);
-        int r = high(root->right);
-        ans = max(ans, l + r + 1);
-        return max(l , r) + 1;
-    }
 public:
+    int ans = 0;
+    int maxDiameter(TreeNode* root) {
+        if (root == NULL) return 0;
+        int m = maxDiameter(root->left);
+        int n = maxDiameter(root->right);
+        ans = max(ans,m + n);
+        return max(m,n) + 1;
+    }
     int diameterOfBinaryTree(TreeNode* root) {
-        ans = 1;
-        high(root);
-        return ans - 1;
+        maxDiameter(root);
+        return ans;
     }
 };
 ```
+
