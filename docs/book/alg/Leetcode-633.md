@@ -8,6 +8,8 @@
 
 cpp 采用 int 存中间值会溢出，改成 long long 搞定。
 
+注意 `pow(i,2)` 比直接相乘 `i*i` 有一定程度的优化。
+
 ```cpp
 class Solution {
 public:
