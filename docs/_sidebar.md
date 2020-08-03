@@ -36,6 +36,7 @@
 
 ## 🔥CSAPP
 * [第一章：计算机系统漫游](book/csapp_ch1.md)
+* [第二章：信息的表示和处理](book/csapp_ch2.md)
 
 ## 🐷数据库
 * [SQLZOO-题解](book/sql_lab_2.md)
@@ -87,7 +88,7 @@
 * [第一章：预备知识](book/cpp_1.md)
 * [第二章：开始学习C++](book/cpp_2.md)
 * [第三章：处理数据](book/cpp_3.md)
-* [第四章：复合类型](book/cpp_4..md)
+* [第四章：复合类型](book/cpp_4.md)
 
 ## ✨R&绘图
 * [1.0 R-基础语法](book/r_1.md)

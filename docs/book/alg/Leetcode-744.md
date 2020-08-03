@@ -1,6 +1,4 @@
-
-# 2. 大于给定元素的最小元素
-
-744\. Find Smallest Letter Greater Than Target (Easy)
+# 744. 寻找比目标字母大的最小字母
 
 [Leetcode](https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/) / [力扣](https://leetcode-cn.com/problems/find-smallest-letter-greater-than-target/description/) -->
+

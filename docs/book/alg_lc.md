@@ -67,28 +67,26 @@
 | :---------------------------------------: | :---: | :------------------------------------------------: |
 | [Leetcode-167](book/alg/Leetcode-167.md)  |   1   |         双指针思路起步，注意这个数组有序。         |
 | [Leetcode-633](book/alg/Leetcode-633.md)  |   2   |          注意细节，考虑数据范围防止溢出。          |
+| [Leetcode-283](book/alg/Leetcode-283.md)  |   3   |                      简答题。                      |  |
 | [Leetcode-345](book/alg/Leetcode-345.md)  |   3   |                 回文有条件的筛选。                 |
 | [Leetcode-680](book/alg/Leetcode-680.md)  |   4   |                   带条件的回文。                   |
 |  [😝Leetcode-88](book/alg/Leetcode-88.md)  |   4   | 归并思想，要多练几遍！写第四遍的时候还存在盲区！！ |
 | [😥Leetcode-141](book/alg/Leetcode-141.md) |   4   |       要注意细节鸭，第四次写的时候又卡住啦。       |
-|    [Leetcode-283](alg/Leetcode-283.md)    |   💗   |                                                    |
-|     [Leetcode-01](alg/Leetcode-01.md)     |  💗🧡💛  |                                                    |
-|    [Leetcode-344](alg/Leetcode-344.md)    |       |                                                    |
-|    [Leetcode-202](alg/Leetcode-202.md)    |       |                                                    |
+|   [🍿Leetcode-1](book/alg/Leetcode-1.md)   |   4   |    采用 map 来做的话注意要考虑键值之间的关系。     |
 
 
 # 二分法
 
-|                题目                 | 难度  |
-| :---------------------------------: | :---: |
-| [Leetcode-540](alg/Leetcode-540.md) |   💗   |
-|  [Leetcode-69](alg/Leetcode-69.md)  |   💗   |
-| [Leetcode-744](alg/Leetcode-744.md) |   💗   |
-| [Leetcode-540](alg/Leetcode-540.md) |   💗   |
-| [Leetcode-278](alg/Leetcode-278.md) |   💗   |
-| [Leetcode-153](alg/Leetcode-153.md) |   💗   |
-|  [Leetcode-34](alg/Leetcode-34.md)  |   💗   |
-| [Leetcode-704](alg/Leetcode-704.md) |   💗   |
+|                   题目                    | 难度  |                总结                |
+| :---------------------------------------: | :---: | :--------------------------------: |
+|  [Leetcode-69](book/alg/Leetcode-69.md)   |   2   |     注意整数相乘会导致数据溢出     |  |
+| [😡Leetcode-540](book/alg/Leetcode-540.md) |   3   | 第三次写的时候依旧存在问题，注意！ |
+|    [Leetcode-744](alg/Leetcode-744.md)    |   💗   |                                    |
+|    [Leetcode-540](alg/Leetcode-540.md)    |   💗   |                                    |
+|    [Leetcode-278](alg/Leetcode-278.md)    |   💗   |                                    |
+|    [Leetcode-153](alg/Leetcode-153.md)    |   💗   |                                    |
+|     [Leetcode-34](alg/Leetcode-34.md)     |   💗   |                                    |
+|    [Leetcode-704](alg/Leetcode-704.md)    |   💗   |                                    |
 
 
 # 哈希表
@@ -106,10 +104,6 @@
 |              题目               | 难度  |
 | :-----------------------------: | :---: |
 | [Leetcode-1](alg/Leetcode-1.md) |   💗   |
-
-
-
-# 题单
 
 # 遍历
 
@@ -130,8 +124,6 @@
 | [❎Leetcode-513](alg/Leetcode-513.md) |   💗   |  cpp  |
 | [❎Leetcode-617](alg/Leetcode-617.md) |   💗   |  cpp  |
 | [❎Leetcode-617](alg/Leetcode-617.md) |   💗   |  cpp  |
-
-
 
 # 递归
 
@@ -170,7 +162,6 @@
 | [❎Leetcode-530](alg/Leetcode-530.md) |   💗   |  cpp  |
 | [❎Leetcode-501](alg/Leetcode-501.md) |   💗   |  cpp  |
 | [❎Leetcode-669](alg/Leetcode-669.md) |   💗   |  cpp  |
-
 
 # Trie
 

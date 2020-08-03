@@ -19,25 +19,25 @@ public:
 };
 ```
 
-- 针对偶数位进行二分搜索，如果不在偶数位上就后退一位保证处于偶数位上。
+* 针对偶数位进行二分搜索，如果不在偶数位上就后退一位保证处于偶数位上。
 
 ```java
 class Solution {
-    public int singleNonDuplicate(int[] nums) {
-        int lo = 0;
-        int hi = nums.length - 2;
-        while (lo < hi) {
-            int mid = lo + (hi - lo) / 2;
-                mid--;
-            if (mid % 2 == 1) {
+public:
+    int singleNonDuplicate(vector<int>& nums) {
+        int i = 0 , j = nums.size() - 1 ;
+        while ( i < j ) {
+            int mid = i + (j - i)/2;
+            if (mid % 2 != 0) {
+                mid -= 1;
             }
-            if (nums[mid] == nums[mid + 1] ) {
-                hi = mid;
+            if (nums[mid] == nums[mid + 1]) {
+                i = mid + 2;
             }else {
-                lo = mid + 2;
+                j = mid;
             }
         }
-        return nums[lo];
+        return nums[i];
     }
-}
+};
 ```
