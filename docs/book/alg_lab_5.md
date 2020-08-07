@@ -1,11 +1,3 @@
-  * [搜索](book/os_lab_20.md)
-  * [广搜](book/alg_bfs.md)
-  * [深搜](book/alg_dfs.md)
-  * [并查集](alg_lab_17.md)
-  * [最小生成树](book/alg_lab_21.md)
-  * [最短路](book/alg_lab_23.md)
-  * [拓扑排序](book/alg_lab_25.md)
-
 # 283. 移动零
 
 [传送门](https://leetcode-cn.com/problems/move-zeroes/)
@@ -50,6 +42,14 @@ class Solution {
     }
 }
 ```
+  * [搜索](book/os_lab_20.md)
+  * [广搜](book/alg_bfs.md)
+  * [深搜](book/alg_dfs.md)
+  * [并查集](alg_lab_17.md)
+  * [最小生成树](book/alg_lab_21.md)
+  * [最短路](book/alg_lab_23.md)
+  * [拓扑排序](book/alg_lab_25.md)
+
 
 # 566. 重塑矩阵
 
