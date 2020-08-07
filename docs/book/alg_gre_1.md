@@ -2,7 +2,7 @@
 
 [VJ-HDU-2037](https://vjudge.net/problem/HDU-2037)
 
-```c++
+```cpp
 #include <iostream>
 #include <algorithm>
 using namespace std;

@@ -97,7 +97,7 @@ public:
 
 题意大致是有 n 堆纸牌，纸牌总数是 n 的倍数，也就是一定可以分成 n 堆。但任意移动向相邻的纸牌堆转移纸牌，求最小操作次数，使得 n 堆纸牌数一样多。
 
-```c++
+```cpp
 #include<iostream>
 using namespace std;
 int main(){
@@ -124,7 +124,7 @@ int main(){
 
 排队打水问题。n 个人 m 个水龙头，每个人的水桶盛满水得时间分别为 t1, t2 , ……, tn为整数且各不相同，应如何安排他们的打水顺序才能使他们花费的总时间最少?
 
-```c++
+```cpp
 	cin>>n>>m;
 	for(i=0;i<n;i++){
 		cin>>a[i];
@@ -147,7 +147,7 @@ int main(){
 [HDU_1052_Tian Ji -- The Horse Racing](http://acm.hdu.edu.cn/showproblem.php?pid=1052)
 
 这道题有点复杂，分情况讨论，有点难。
-```c++
+```cpp
 # include <iostream>
 # include <algorithm>
 # define MAXSIZE 1010

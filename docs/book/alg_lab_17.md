@@ -57,7 +57,7 @@ void unite(int a, int b) {
 
 这是一道模板题，熟悉一下模板，注意如果不加路径合并会超时！
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 int f[10010];

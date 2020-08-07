@@ -95,7 +95,6 @@ plt.ylabel('Loss')
 plt.legend()
 plt.show()
 ```
-<img src="../imgs/LBD-DL/Figure_1.png">
 
 ## 查看训练精度和验证精度
 

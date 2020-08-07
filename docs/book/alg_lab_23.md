@@ -18,7 +18,7 @@
 ## HDU2544最短路（dijkstral）
 
 
-```c++
+```cpp
 #include<iostream>
 #include<cstring>
 #define max_size 110//数组不要开太大，第一次没仔细看开了10010，然后内存超限 

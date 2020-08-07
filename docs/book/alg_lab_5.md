@@ -433,7 +433,7 @@ class Solution {
 ## 1.0  
  HDU1102Constructing Roads（kruskal/prim）
 **kruskal**
-```c++
+```cpp
 #include<iostream>
 #include<algorithm> 
 using namespace std;
@@ -487,7 +487,7 @@ int main(){
 
 **prim**
 
-```c++
+```cpp
 #include<iostream>
 #include<cstring>
 #define max_size 100
@@ -550,7 +550,7 @@ int main(){
 
 ## HDU1863畅通工程（Kruskal）
 
-```c++
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -602,7 +602,7 @@ int main(){
 
 ## XYNU1384: 畅通工程2（Kruskal）
 
-```c++
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -653,7 +653,7 @@ int main(){
 ## XYNU1381还是畅通工程（Kruskal/prim）
 
 
-```c++
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -692,7 +692,7 @@ int main(){
 } 
 ```
 **prim 差点超时！**
-```c++
+```cpp
 Accepted	1233	982MS	1464K	1455 B	G++
 #include<iostream>
 #include<cstring>
@@ -755,7 +755,7 @@ int main(){
 ## XYNU1383: 继续畅通工程（Kruskal/prim）
 
 
-```c++
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -799,7 +799,7 @@ int main(){
 } 
 ```
 **prim**
-```c++
+```cpp
 #include<iostream>
 #include<cstring>
 #define inf 0x3f3f3f3f
@@ -847,7 +847,7 @@ int main(){
 ```
 ## HDU1162Eddy's picture（Prim）
 
-```c++
+```cpp
 //1162 
 #include<iostream>
 #include<cstring>
@@ -903,7 +903,7 @@ int main(){
 }
 ```
 
-```c++
+```cpp
 #include<iostream>
 #include<cstring>
 #include<cmath>
@@ -965,7 +965,7 @@ int main(){
 }
 ```
 ## XYNU2177: 爱旅游的小明（dijkstra）
-```c++
+```cpp
 #include<iostream>
 using namespace std;
 int N,M,T,S,a,b,c,ans;
@@ -1027,7 +1027,7 @@ int main(){
 ```
 ## XYNU1392: 最优布线问题（prim）
 
-```c++
+```cpp
 #include<iostream>
 #include<cstring>
 #define max_size 100
@@ -1073,7 +1073,7 @@ int main(){
 ## XYNU1393: 最短网络Agri-Net（prim）
 
 
-```c++
+```cpp
 #include<iostream>
 #include<cstring>
 #define max_size 100

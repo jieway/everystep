@@ -151,7 +151,7 @@ int main() {
 
 * 一共三种选择，构成了一个三叉树，最先到达的那就是最快的。技巧在于用数组存储步数的同时又剪枝。
 
-* 而且这题用 G++ 过不去 WA. 但是 C++ 却 AC. 郁闷ing.
+* 而且这题用 G++ 过不去 WA. 但是 cpp 却 AC. 郁闷ing.
 ```cpp
 #include <iostream>
 #include <queue>
@@ -197,7 +197,7 @@ int main() {
 
 unsigned long long 最大长度为 19 ，这题数据比较弱，如果数据再大就需要用大数来处理了。
 
-最后 C++ 会 TLE ，G++ 可以 AC 疑惑ing 。
+最后 cpp 会 TLE ，G++ 可以 AC 疑惑ing 。
 ```cpp
 #include <iostream> 
 #include <queue>
@@ -276,7 +276,7 @@ int main() {
  12. 继续回溯得 3 / 1 / 2
  13. 继续回溯得 3 / 2 / 1
  
-```c++
+```cpp
 #include<iostream>
 using namespace std;
 int n,a[11],b[11];//a存储本身，b来标记状态 
@@ -346,7 +346,7 @@ int main(){
  2. 累加后判断是否为素数，若为加一，反之不变。
  3. 数据回溯时注意将数据减去。
 
-```c++
+```cpp
 #include<iostream>
 #include<cstring>
 using namespace std;
@@ -412,7 +412,7 @@ int main(){
 1 3 4
 ……（太多，此处省略）
 **总结：** 超时。。。
-```c++
+```cpp
 #include<iostream>
 using namespace std;
 int n,r,a[22],b[22]={0};
@@ -467,7 +467,7 @@ int main(){
 3 1 4 2
 
 
-```c++
+```cpp
 #include<iostream>
 #include<algorithm> 
 using namespace std;
@@ -538,7 +538,7 @@ int main(){
 2
 1
 
-```c++
+```cpp
 #include<iostream>
 #include<cstring>
 using namespace std;
@@ -602,7 +602,7 @@ int main(){
 421
 321
 **总结：** 注意剪枝
-```c++
+```cpp
 #include<iostream>
 using namespace std;
 int n,r,sum,a[15],b[15]={0},c[15];
@@ -674,7 +674,7 @@ int main(){
 11
 
 **先用DFS做了一下，思路好想，有个bug没看到，改了二十分钟。细节太重要了**
-```c++
+```cpp
 #include<iostream>
 #define max 10000
 using namespace std;
@@ -725,7 +725,7 @@ int main(){
 }
 ```
 **BFS**
-```c++
+```cpp
 #include<iostream>
 #include<cstring>
 #include<queue>
@@ -817,7 +817,7 @@ BFS是每一步的所有可能都捕捉到，最终得到最优解。
 **样例输出**
 2
 **注意变量定义的位置，在这卡住了**
-```c++
+```cpp
 #include<iostream>
 using namespace std;
 int b[16][16]={0};
@@ -888,7 +888,7 @@ int main(){
 2
 3
 
-```c++
+```cpp
 #include<iostream>
 using namespace std;
 int s[101][101],a,b;
@@ -979,7 +979,7 @@ For each grid, output the number of distinct oil deposits. Two different pockets
 
 
 **DFS**
-```c++
+```cpp
 /* 
 Status Accepted
 Time 31ms
@@ -1030,7 +1030,7 @@ int main(){
 **BFS**
  
 
-```c++
+```cpp
 /*
 Status Accepted
 Time 31ms

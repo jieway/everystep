@@ -2,7 +2,7 @@
 
 [VJ-HDU-2111](https://vjudge.net/problem/HDU-2111)
 
-```c++
+```cpp
 /**
  * 题目：HDU_2111_Saving HDU
  * 来源：http://acm.hdu.edu.cn/showproblem.php?pid=2111
