@@ -2,7 +2,7 @@
 
 [牛客](https://www.nowcoder.com/ta/coding-interviews?page=1) / [Leetcode](https://leetcode-cn.com/problemset/lcof/)
 
-上面是两个总的地址，注意 Leetcode 需要会员。
+上面是两个总的地址。
 
 # 第一章
 

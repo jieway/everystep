@@ -12,7 +12,6 @@
 * [回溯法](book/alg_back.md)
 * [剑指Offer](book/alg_offer.md)
 
-
 ## 💫数据结构
 * [1.0 概述](book/ds.md)
 * [2.0 线性表](book/ds_list.md)
@@ -51,7 +50,7 @@
 * [第三章：寄存器（内存访问）](book/asm_lab_2.md)
 * [第一个程序](book/asm_lab_3.md)
 
-## ☠操作系统
+## 👑操作系统
 * [概述](book/os_lab_0.md)
 * [操作系统导论](book/os_0.md)
 * [现代操作系统](book/os_now.md)
@@ -77,12 +76,9 @@
 ## 🎊爬虫笔记
 * [0.0 概述](book/spi_0.md)
 * [1.0 提取数据](book/spi_3.md)
-* [1.0 爬取小说](book/spi_lab_1.md)
-* [2.0 爬取豆瓣](book/spi_lab_2.md)
-* [3.0 正则表达式](book/spi_3.md)
-
-## 👒Java
-* [1.0 笔记](book/java_lab_1.md)
+* [2.0 爬取小说](book/spi_lab_1.md)
+* [3.0 爬取豆瓣](book/spi_lab_2.md)
+* [4.0 正则表达式](book/spi_3.md)
 
 ## 🌼C++
 * [第一章：预备知识](book/cpp_1.md)
@@ -93,6 +89,7 @@
 * [第六章：分支语句和逻辑运算符](book/cpp_6.md)
 * [第七章：函数--C++的编程模块](book/cpp_7.md)
 * [第八章：函数探幽](book/cpp_8.md)
+* [第九章：内存模型和名称空间](book/cpp_9.md)
 
 ## ✨R&绘图
 * [1.0 R-基础语法](book/r_1.md)
