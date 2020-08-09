@@ -2,70 +2,130 @@ module.exports = [
   {
     title: '🚀算法',
     children: [
-      'alg_lab_0',
-      'alg_lab_1',
-      'alg_lc',
-      'alg_algs4_toc',
-      'alg_gre_0',
-      'alg_lab_5',
-      'alg_lab_12',
-      'alg_pat_0',
-      'alg_binary',
-      'alg_win',
-      'alg_back',
-      'alg_offer'
+      'alg/ch0',
+      'alg/ch1',
+      'alg/ch2',
+      'alg/ch3',
+      'alg/ch4',
+      'alg/lc',
+      'alg/algs4',
+      'alg/pat',
+      'alg/offer'
     ]
   },
   {
     title: '💫数据结构',
     children: [
-      'ds',
-      'ds_list',
-      'ds_qs',
-      'ds_qs',
-      'ds_vec',
-      'ds_tree',
-      'ds_graph',
-      'ds_search'
+      'ds/ch0',
+      'ds/ch1',
+      'ds/ch2',
+      'ds/ch3',
+      'ds/ch4',
+      'ds/ch5',
+      'ds/ch7',
+      'ds/ch8',
+      'ds/ch9'
     ]
   },
   {
     title: '🚗计算机网络',
     children: [
-      'net_lab_0',
-      'net_lab_1',
-      'net_lab_2',
-      'net_lab_3',
-      'net_lab_4',
-      'net_lab_5',
-      'net_lab_6',
-      'net_lab_7'
+      'net/ch0',
+      'net/ch1',
+      'net/ch2',
+      'net/ch3',
+      'net/ch4',
+      'net/ch5',
+      'net/ch7'
     ]
   },
   {
     title: '🔥CSAPP',
     children: [
-      'csapp_ch1',
-      'csapp_ch2'
+      'csapp/ch1',
+      'csapp/ch2'
     ]
   },
   {
     title: '🐷数据库',
     children: [
-      'sql_lab_2',
-      'sql_lab_1',
-      'sql_lab_0',
-      'sql_1',
-      'sql_ch1'
+      'sql/ch2',
+      'sql/ch1',
+      'sql/ch0',
+      'sql/ch3',
+      'sql/ch4',
+      'sql/sql_1_0',
+      'sql/sql_1_1',
+      'sql/sql_1_2'
     ]
   },
   {
     title: '👓汇编语言',
     children: [
-      'asm_lab_0',
-      'asm_lab_1',
-      'asm_lab_2',
-      'asm_lab_3'
+      'asm/ch0',
+      'asm/ch1',
+      'asm/ch2',
+      'asm/ch3'
+    ]
+  },
+  {
+    title: '👑操作系统',
+    children: [
+      'os/ch0',
+      'os/now',
+      'os/rcore-0',
+      'os/rcore-1'
+    ]
+  },
+  {
+    title: '🎉深度学习',
+    children: [
+      'dl/ch0',
+      'dl/ch1',
+      'dl/ch2',
+      'dl/ch3'
+    ]
+  },
+  {
+    title: '🍳政治',
+    children: [
+      'pol/ch0',
+      'pol/ch1',
+      'pol/ch2',
+      'pol/ch3',
+      'pol/ch4'
+    ]
+  },
+  {
+    title: '🎊爬虫笔记',
+    children: [
+      'spi/ch1',
+      'spi/ch2',
+      'spi/ch3',
+      'spi/ch4'
+    ]
+  },
+  {
+    title: '✨R&绘图',
+    children: [
+      'r/ch1',
+      'r/ch2'
+    ]
+  },
+  {
+    title: '⚓C++ Prime Plus',
+    children: [
+      'cpp/ch1.md',
+      'cpp/ch2.md',
+      'cpp/ch3.md',
+      'cpp/ch4.md',
+      'cpp/ch5.md',
+      'cpp/ch6.md',
+      'cpp/ch7.md',
+      'cpp/ch8.md',
+      'cpp/ch9.md',
+      'cpp/ch10.md',
+      'cpp/ch11.md'
     ]
   }
 ]

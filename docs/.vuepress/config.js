@@ -1,8 +1,9 @@
 const versioning = require('./lib/versioning.js')
 
 module.exports = {
+  base: '/codestep/',
   title: 'codestep',
-  description: '🌼记一些笔记',
+  description: '记一些笔记🌼',
   markdown: {
     lineNumbers: true
   },
@@ -15,7 +16,7 @@ module.exports = {
   theme: 'default-prefers-color-scheme',
   themeConfig: {
     repo: 'weijiew/codestep',
-    repoLabel: '查看源码',
+    repoLabel: 'Github',
     editLinks: true,
     editLinkText: '帮助我们改善此页面！',
     docsDir: 'docs/',
@@ -43,7 +44,7 @@ module.exports = {
     sidebar: versioning.sidebars,
     lastUpdated: 'Last Updated',
     logo: '/favicon.ico',
-    sidebarDepth: 0,
+    sidebarDepth: 1,
     smoothScroll: true
   },
   plugins: [
@@ -58,6 +59,7 @@ module.exports = {
       after: `</code></pre>`
     }],
     ['@vuepress/nprogress'],
+    ['vuepress-plugin-mathjax'],
     ['@vuepress/back-to-top'],
     [
       '@vuepress/google-analytics',
