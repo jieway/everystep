@@ -5,7 +5,7 @@ set -e
 
 git add .
 git commit -m "👦update"
-git push origin master
+git push -f git@github.com:weijiew/codestep.git master
 
 # 生成静态文件
 npm run docs:build
