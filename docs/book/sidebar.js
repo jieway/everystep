@@ -125,7 +125,8 @@ module.exports = [
       'cpp/ch8.md',
       'cpp/ch9.md',
       'cpp/ch10.md',
-      'cpp/ch11.md'
+      'cpp/ch11.md',
+      'cpp/ch12.md'
     ]
   }
 ]
