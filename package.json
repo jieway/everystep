@@ -4,7 +4,8 @@
   "description": "Take some notes",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy": "sh deploy.sh"
   },
   "repository": "https://github.com/spencerwooo/dowww",
   "author": "weijiew <jiewei1999@foxmail.com>",

@@ -36,7 +36,8 @@ module.exports = [
       'net/ch3',
       'net/ch4',
       'net/ch5',
-      'net/ch7'
+      'net/ch7',
+      'net/ch8'
     ]
   },
   {
