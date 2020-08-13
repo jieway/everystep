@@ -139,4 +139,3 @@ fn main(){
     println!("The result of adding from 1 to 100 is : {}",num);
 }
 ```
-
