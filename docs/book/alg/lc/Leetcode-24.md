@@ -1,26 +1,8 @@
-# 24. Swap Nodes in Pairs (Medium)
+# 24. 两两交换链表中的节点
 
 [Leetcode-24](https://leetcode.com/problems/swap-nodes-in-pairs/) / [力扣-24](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
 
 ## 递归
-
-```cpp
-class Solution {
-public:
-    ListNode* swapPairs(ListNode* head) {
-        if (head == NULL || head->next == NULL) {
-            return head;
-        }
-        ListNode* a = head;
-        ListNode* b = head->next;
-        a->next = swapPairs(b->next);
-        b->next = a;
-        return b;
-    }
-};
-```
-
-简化版：
 
 ```cpp
 class Solution {
