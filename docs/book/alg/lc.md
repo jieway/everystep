@@ -57,91 +57,75 @@
 | [Leetcode-101](lc/Leetcode-101.md) |   5   |                           **模拟题**，这道题要好好思考。                           |
 | [Leetcode-111](lc/Leetcode-111.md) |   3   |                    **模拟题**，比最长路径复杂，要考虑所有情况。                    |
 | [Leetcode-404](lc/Leetcode-404.md) |   4   |                  依旧是在遍历上做文章，左叶子节点的特定就是条件。                  |
-| [Leetcode-687](lc/Leetcode-687.md) |   4   |                        ⚡  **递归思想**，这道题要多写几遍。                         |
+| [Leetcode-687](lc/Leetcode-687.md) |   4   |                          **递归思想**，这道题要多写几遍。                          |
+
 
 # 双指针
 
 双指针可以理解为两个下标，快慢指针的索引。
 
-|                题目                 | 难度  |                        总结                        |
-| :---------------------------------: | :---: | :------------------------------------------------: |
-| [Leetcode-167](lc/Leetcode-167.md)  |   1   |         双指针思路起步，注意这个数组有序。         |
-| [Leetcode-633](lc/Leetcode-633.md)  |   2   |          注意细节，考虑数据范围防止溢出。          |
-| [Leetcode-283](lc/Leetcode-283.md)  |   3   |                      简答题。                      |  |
-| [Leetcode-345](lc/Leetcode-345.md)  |   3   |                 回文有条件的筛选。                 |
-| [Leetcode-680](lc/Leetcode-680.md)  |   4   |                   带条件的回文。                   |
-|  [😝Leetcode-88](lc/Leetcode-88.md)  |   4   | 归并思想，要多练几遍！写第四遍的时候还存在盲区！！ |
-| [😥Leetcode-141](lc/Leetcode-141.md) |   4   |       要注意细节鸭，第四次写的时候又卡住啦。       |
-|   [🍿Leetcode-1](lc/Leetcode-1.md)   |   4   |    采用 map 来做的话注意要考虑键值之间的关系。     |
+|                题目                | 难度  |                        总结                        |
+| :--------------------------------: | :---: | :------------------------------------------------: |
+| [Leetcode-167](lc/Leetcode-167.md) |   1   |         双指针思路起步，注意这个数组有序。         |
+| [Leetcode-633](lc/Leetcode-633.md) |   2   |          注意细节，考虑数据范围防止溢出。          |
+| [Leetcode-283](lc/Leetcode-283.md) |   3   |                      简答题。                      |  |
+| [Leetcode-345](lc/Leetcode-345.md) |   3   |                 回文有条件的筛选。                 |
+| [Leetcode-680](lc/Leetcode-680.md) |   4   |                   带条件的回文。                   |
+|  [Leetcode-88](lc/Leetcode-88.md)  |   4   | 归并思想，要多练几遍！写第四遍的时候还存在盲区！！ |
+| [Leetcode-141](lc/Leetcode-141.md) |   4   |       要注意细节鸭，第四次写的时候又卡住啦。       |
+|   [Leetcode-1](lc/Leetcode-1.md)   |   4   |    采用 map 来做的话注意要考虑键值之间的关系。     |
 
 
 # 二分法
 
-|                题目                 | 难度  |                总结                |
-| :---------------------------------: | :---: | :--------------------------------: |
-|  [Leetcode-69](lc/Leetcode-69.md)   |   2   |     注意整数相乘会导致数据溢出     |  |
-| [😡Leetcode-540](lc/Leetcode-540.md) |   3   | 第三次写的时候依旧存在问题，注意！ |
-| [Leetcode-744](alg/Leetcode-744.md) |   💗   |                                    |
-| [Leetcode-540](alg/Leetcode-540.md) |   💗   |                                    |
-| [Leetcode-278](alg/Leetcode-278.md) |   💗   |                                    |
-| [Leetcode-153](alg/Leetcode-153.md) |   💗   |                                    |
-|  [Leetcode-34](alg/Leetcode-34.md)  |   💗   |                                    |
-| [Leetcode-704](alg/Leetcode-704.md) |   💗   |                                    |
+|                题目                | 难度  |                总结                |
+| :--------------------------------: | :---: | :--------------------------------: |
+|  [Leetcode-69](lc/Leetcode-69.md)  |   2   |     注意整数相乘会导致数据溢出     |  |
+| [Leetcode-540](lc/Leetcode-540.md) |   3   | 第三次写的时候依旧存在问题，注意！ |
+| [Leetcode-744](lc/Leetcode-744.md) |   💗   |                                    |
+| [Leetcode-540](lc/Leetcode-540.md) |   💗   |                                    |
+| [Leetcode-278](lc/Leetcode-278.md) |   💗   |                                    |
+| [Leetcode-153](lc/Leetcode-153.md) |   💗   |                                    |
+|  [Leetcode-34](lc/Leetcode-34.md)  |   💗   |                                    |
+| [Leetcode-704](lc/Leetcode-704.md) |   💗   |                                    |
 
 
 # 哈希表
 
-|                题目                 | 难度  |
-| :---------------------------------: | :---: |
-|   [Leetcode-1](alg/Leetcode-1.md)   |   💗   |
-| [Leetcode-217](alg/Leetcode-217.md) |   💗   |
-| [Leetcode-594](alg/Leetcode-594.md) |   💗   |
-| [Leetcode-128](alg/Leetcode-128.md) |   💗   |
+|                题目                | 难度  |
+| :--------------------------------: | :---: |
+|   [Leetcode-1](lc/Leetcode-1.md)   |   💗   |
+| [Leetcode-217](lc/Leetcode-217.md) |   💗   |
+| [Leetcode-594](lc/Leetcode-594.md) |   💗   |
+| [Leetcode-128](lc/Leetcode-128.md) |   💗   |
 
 
 # 位运算
 
-|              题目               | 难度  |
-| :-----------------------------: | :---: |
-| [Leetcode-1](alg/Leetcode-1.md) |   💗   |
+|              题目              | 难度  |
+| :----------------------------: | :---: |
+| [Leetcode-1](lc/Leetcode-1.md) |   💗   |
 
 # 遍历
 
-|                 题目                 | 难度  | 语言  |
-| :----------------------------------: | :---: | :---: |
-| [❎Leetcode-144](alg/Leetcode-144.md) |   💗   |  cpp  |
-| [❎Leetcode-145](alg/Leetcode-145.md) |   💗   |  cpp  |
-|  [❎Leetcode-94](alg/Leetcode-94.md)  |   💗   |  cpp  |
-| [❎Leetcode-637](alg/Leetcode-637.md) |   💗   |  cpp  |
-| [❎Leetcode-513](alg/Leetcode-513.md) |   💗   |  cpp  |
-| [❎Leetcode-100](alg/Leetcode-100.md) |   💗   |  cpp  |
-| [❎Leetcode-101](alg/Leetcode-101.md) |   💗   |  cpp  |
-| [❎Leetcode-543](alg/Leetcode-543.md) |   💗   |  cpp  |
-| [❎Leetcode-226](alg/Leetcode-226.md) |   💗   |  cpp  |
-| [❎Leetcode-617](alg/Leetcode-617.md) |   💗   |  cpp  |
-| [❎Leetcode-112](alg/Leetcode-112.md) |   💗   |  cpp  |
-| [❎Leetcode-637](alg/Leetcode-637.md) |   💗   |  cpp  |
-| [❎Leetcode-513](alg/Leetcode-513.md) |   💗   |  cpp  |
-| [❎Leetcode-617](alg/Leetcode-617.md) |   💗   |  cpp  |
-| [❎Leetcode-617](alg/Leetcode-617.md) |   💗   |  cpp  |
+|                题目                | 难度  | 语言  |
+| :--------------------------------: | :---: | :---: |
+| [Leetcode-144](lc/Leetcode-144.md) |   💗   |  cpp  |
+| [Leetcode-145](lc/Leetcode-145.md) |   💗   |  cpp  |
+|  [Leetcode-94](lc/Leetcode-94.md)  |   💗   |  cpp  |
+| [Leetcode-637](lc/Leetcode-637.md) |   💗   |  cpp  |
+| [Leetcode-513](lc/Leetcode-513.md) |   💗   |  cpp  |
+| [Leetcode-100](lc/Leetcode-100.md) |   💗   |  cpp  |
+| [Leetcode-101](lc/Leetcode-101.md) |   💗   |  cpp  |
+| [Leetcode-543](lc/Leetcode-543.md) |   💗   |  cpp  |
+| [Leetcode-226](lc/Leetcode-226.md) |   💗   |  cpp  |
+| [Leetcode-617](lc/Leetcode-617.md) |   💗   |  cpp  |
+| [Leetcode-112](lc/Leetcode-112.md) |   💗   |  cpp  |
+| [Leetcode-637](lc/Leetcode-637.md) |   💗   |  cpp  |
+| [Leetcode-513](lc/Leetcode-513.md) |   💗   |  cpp  |
+| [Leetcode-617](lc/Leetcode-617.md) |   💗   |  cpp  |
+| [Leetcode-617](lc/Leetcode-617.md) |   💗   |  cpp  |
 
-# 递归
-
-|                 题目                 | 难度  | 语言  |
-| :----------------------------------: | :---: | :---: |
-| [Leetcode-104](alg/Leetcode-104.md)  |   💗   |  cpp  |
-| [Leetcode-110](alg/Leetcode-110.md)  |   💗   |  cpp  |
-| [Leetcode-543](alg/Leetcode-543.md)  |   💗   |  cpp  |
-| [Leetcode-226](alg/Leetcode-226.md)  |   💗   |  cpp  |
-| [❎Leetcode-617](alg/Leetcode-617.md) |   💗   |  cpp  |
-| [❎Leetcode-112](alg/Leetcode-112.md) |   💗   |  cpp  |
-| [❎Leetcode-437](alg/Leetcode-437.md) |   💗   |  cpp  |
-| [❎Leetcode-101](alg/Leetcode-101.md) |   💗   |  cpp  |
-| [❎Leetcode-111](alg/Leetcode-111.md) |   💗   |  cpp  |
-| [❎Leetcode-404](alg/Leetcode-404.md) |   💗   |  cpp  |
-| [❎Leetcode-687](alg/Leetcode-687.md) |   💗   |  cpp  |
-| [❎Leetcode-337](alg/Leetcode-337.md) |   💗   |  cpp  |
-| [❎Leetcode-671](alg/Leetcode-671.md) |   💗   |  cpp  |
 
 # BST
 
@@ -149,23 +133,23 @@
 
 二叉查找树中序遍历有序。
 
-|                 题目                 | 难度  | 语言  |
-| :----------------------------------: | :---: | :---: |
-| [❎Leetcode-667](alg/Leetcode-669.md) |   💗   |  cpp  |
-| [❎Leetcode-230](alg/Leetcode-230.md) |   💗   |  cpp  |
-| [❎Leetcode-538](alg/Leetcode-538.md) |   💗   |  cpp  |
-| [❎Leetcode-235](alg/Leetcode-235.md) |   💗   |  cpp  |
-| [❎Leetcode-236](alg/Leetcode-236.md) |   💗   |  cpp  |
-| [❎Leetcode-108](alg/Leetcode-108.md) |   💗   |  cpp  |
-| [❎Leetcode-109](alg/Leetcode-109.md) |   💗   |  cpp  |
-| [❎Leetcode-653](alg/Leetcode-653.md) |   💗   |  cpp  |
-| [❎Leetcode-530](alg/Leetcode-530.md) |   💗   |  cpp  |
-| [❎Leetcode-501](alg/Leetcode-501.md) |   💗   |  cpp  |
-| [❎Leetcode-669](alg/Leetcode-669.md) |   💗   |  cpp  |
+|                题目                | 难度  | 语言  |
+| :--------------------------------: | :---: | :---: |
+| [Leetcode-667](lc/Leetcode-669.md) |   💗   |  cpp  |
+| [Leetcode-230](lc/Leetcode-230.md) |   💗   |  cpp  |
+| [Leetcode-538](lc/Leetcode-538.md) |   💗   |  cpp  |
+| [Leetcode-235](lc/Leetcode-235.md) |   💗   |  cpp  |
+| [Leetcode-236](lc/Leetcode-236.md) |   💗   |  cpp  |
+| [Leetcode-108](lc/Leetcode-108.md) |   💗   |  cpp  |
+| [Leetcode-109](lc/Leetcode-109.md) |   💗   |  cpp  |
+| [Leetcode-653](lc/Leetcode-653.md) |   💗   |  cpp  |
+| [Leetcode-530](lc/Leetcode-530.md) |   💗   |  cpp  |
+| [Leetcode-501](lc/Leetcode-501.md) |   💗   |  cpp  |
+| [Leetcode-669](lc/Leetcode-669.md) |   💗   |  cpp  |
 
 # Trie
 
-|                 题目                 | 难度  | 语言  |
-| :----------------------------------: | :---: | :---: |
-| [❎Leetcode-208](alg/Leetcode-208.md) |   💗   |  cpp  |
-| [❎Leetcode-677](alg/Leetcode-677.md) |   💗   |  cpp  |
+|                题目                | 难度  | 语言  |
+| :--------------------------------: | :---: | :---: |
+| [Leetcode-208](lc/Leetcode-208.md) |   💗   |  cpp  |
+| [Leetcode-677](lc/Leetcode-677.md) |   💗   |  cpp  |

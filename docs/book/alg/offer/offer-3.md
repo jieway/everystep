@@ -2,8 +2,6 @@
 
 [剑指 Offer 03](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)
 
-
-
 ```cpp
 class Solution {
 public:

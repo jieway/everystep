@@ -35,6 +35,8 @@ public:
 
 然后如果 map 中不含有差值部分，那么就将将当前数字存入 map 中，注意起始时 map 为空。
 
+注意 map 的键就是 nums 中的值，而 map 的值则是 nums 对应的索引。
+
 ```cpp
 class Solution {
 public:

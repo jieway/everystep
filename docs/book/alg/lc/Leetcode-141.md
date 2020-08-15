@@ -20,7 +20,7 @@ public:
         if (head == NULL || head->next == NULL) return false; 
         // 设置快慢指针
         ListNode *a = head , *b = head->next;
-        // 
+        // 如果不存在环，b 一定会出现 NULL 的情况，反之 b 不存在
         while (b != NULL && b->next != NULL) {
             if (a == b) return true;
             a = a->next;
