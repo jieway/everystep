@@ -123,7 +123,7 @@ public class FrequencyCounter {
 
 仔细看这张图，每次添加新的键会创建新结点挂在头部，而画圈部分则根据已有的键去更新值。
 
-<div aligen="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200707180127.png"/></div>
+![]("https://gitee.com/weijiew/pic/raw/master/img/20200707180127.pn)>
 
 `get()` 方法遍历全部，用 `equals()` 来比较值是否一致，一致就取出值反之继续遍历，如果没有就返回空。
 
@@ -161,7 +161,7 @@ public void put(Key key,Value val) {
 
 例如查找第一个需要比较一次，第二个比较两次，以此类推 $(1+2+3+ .... + N)/N=\frac{(N+1)N}{2}$
 
-<div aligen="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200707180213.png"/></div>
+![]("https://gitee.com/weijiew/pic/raw/master/img/20200707180213.pn)>
 
 ## 有序数组中的二分查找
 
@@ -254,7 +254,7 @@ N 个键的有序数组中进行二分查找最多需要进行 $log(N)+1$ 次比
 
 对于线性查找和二分查找的分析如下：
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200711205930.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200711205930.png)
 
 二分查找的缺点在于无法实现**高效的插入**操作，但是链表的优点则是**高效的插入**而缺点则是需要**遍历全部来索引**。
 
@@ -264,7 +264,7 @@ N 个键的有序数组中进行二分查找最多需要进行 $log(N)+1$ 次比
 
 这一章有六种符号表的实现，以下是简单的对比以及适用的场景。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200711210759.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200711210759.png)
 
 # 二叉查找树
 
@@ -296,13 +296,13 @@ N 个键的有序数组中进行二分查找最多需要进行 $log(N)+1$ 次比
 
 左链接指向一颗**小于该结点的所有键**所组成的二叉树，右链接则指向一颗**大于该结点的所有键**所组成的二叉树。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200711224301.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200711224301.png)
 
 简而言之左结点小于其父结点，右结点大于其父结点，并且这条规则对所有结点都成立。
 
 如果将一颗二叉查找树所有键投影到一条直线上，保证每一个结点左子树的键出现在它的右边，那么我们可以得到一条有序的键列。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200711230515.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200711230515.png)
 
 结点计数器用变量 N 来实现，表示以该结点为根的子树的**结点总数**。
 
@@ -320,7 +320,7 @@ private class Node {
 
 对于这段代码，树由 Node 对象组成，每个对象都含有一堆键值，两条链接和一个结点计数器 N 。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200711224147.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200711224147.png)
 
 一颗二叉查找树代表了一组键值的集合。二叉查找树本质上是由多颗二叉查找树组成。
 
@@ -353,7 +353,7 @@ private Value get(Node x, Key key) {
 
 而递归结束代表要么找到了相等的键要么没有找到返回一个空链接。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200711230603.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200711230603.png)
 
 ### 插入
 
@@ -379,13 +379,13 @@ private Node put(Node x, Key key, Value val) {
 }
 ```
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200711232323.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200711232323.png)
 
 根据插入操作是可以从空树开始构建一颗二叉查找树的。
 
 例如可以在一颗空树上不断的插入，最终得到一颗二叉查找树。具体建树过程如图。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200711232539.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200711232539.png)
 
 
 ## 分析
@@ -398,7 +398,7 @@ private Node put(Node x, Key key, Value val) {
 
 以下是最好，一般，最坏的三种情况。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200712000450.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200712000450.png)
 
 > 由 $N$ 个随机键构成的二叉查找树中，查找命中，未命中和插入操作平均所需的比较次数为 $2lnN$ 。
 
@@ -515,7 +515,7 @@ private int rank(Key key, Node x) {
 
 对于最大键删除右子树即可。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200712212558.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200712212558.png)
 
 ```java
 public void deleteMin() {
@@ -616,7 +616,7 @@ private void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
 
 所以需要寻找更好的算法和数据结构。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200712233843.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200712233843.png)
 
 # 平衡查找树
 
@@ -634,7 +634,7 @@ private void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
 
 如图，左边的是 3- 结点，右边是 2- 结点。可以根据当前结点存在**几条链接**来判断哪个是 2-3 结点。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715002928.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715002928.png)
 
 注意 2- 结点和 3- 结点每条链接都分别对应着其中保存的键所分割产生的一个区间。
 
@@ -648,13 +648,13 @@ private void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
 
 之上是常规的 2- 结点的处理方式，对于 3- 结点需要和当前结点内的两个键比较。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715010622.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715010622.png)
 
 如果要查找的键小于当前结点内的两个键那么就去该结点的左子树里面查找，反之要查找的键均大于结点内的两个键，那么就去右子树里面查找。
 
 因为有三条链接，所以当要查找的键大于其中一个结点且小于另外一个结点时就去中间的链接指向的子树里面查找。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715010554.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715010554.png)
 
 ### 向 2- 结点插入新键
 
@@ -672,7 +672,7 @@ private void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
 
 也就是将 4- 拆分为两个 3- 结点 和一个 2- 结点。看完图就明白了：
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715142649.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715142649.png)
 
 变化后，这个树就是一颗平衡的 2-3 查找树了。这种变化说明了 2-3 查找树的生长过程。
 
@@ -686,7 +686,7 @@ private void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
 
 如图，注意仔细查看中键 b 和 c 的提升。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715143547.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715143547.png)
 
 因为中键提升到了父结点上，4- 结点变成了两个 2- 结点。
 
@@ -713,7 +713,7 @@ private void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
 
 如图所示，对应的 6 种情况：
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715144740.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715144740.png)
 
 每次变换都只改变相关的链接，并且变更链接的数量均小于一个很小的常数。当重构链接中树的指向时不会涉及树的其他部分。
 
@@ -725,7 +725,7 @@ private void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
 
 如图，这是一个 3- 结点中键向上提升的过程，但是变化前后，根结点到每一个叶子结点的路径长度没有发生改变。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715145409.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715145409.png)
 
 只有根结点从 4- 结点变为三个 2- 结点时路径长度才会发生改变。从根结点到所有叶子结点的路径长度均加一。
 
@@ -741,7 +741,7 @@ private void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
 
 例如在 10 亿个结点的一颗 2-3 树的高度仅在 19 - 30 之间，这是非常恐怖的。并且完美平和的 2-3 树非常平整的。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715150321.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715150321.png)
 
 当然它的缺点也很明显，例如需要维护两种不同类型的结点，需要处理的情况比较多，数据类型之间的变换等。
 
@@ -759,13 +759,13 @@ private void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
 
 如图，左边是一个 3- 结点，因为红黑树中没有 3- 结点，所以放在红黑树中就变化成了右边的结果，3- 结点的两个键采用红链接来连接到一起。黑链接就是普通链接，不表示特殊含义。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715161415.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715161415.png)
 
 红链接在 3- 结点内部，将一个 3- 结点拆分成了两个 2- 结点。
 
 扩展到更为一般的情况，一颗 2-3 树用红黑树来表示如图：
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715161551.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715161551.png)
 
 以上就是红黑树。
 
@@ -783,13 +783,13 @@ private void keys(Node x, Queue<Key> queue, Key lo, Key hi) {
 
 如果将红黑树中的所有红链接都画平，根结点到所有的叶子结点的距离都是相等的。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715162801.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715162801.png)
 
 如果将红黑树中所有红链接合并，那么合并后就是一颗 2-3 树。
 
 本质上，红黑树都既是**二叉查找树**，也是 **2-3 树**。那么就可以结合二叉查找树**简洁的算法**的优点和 2-3 树**高效的平衡插入算法**的优点。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715163011.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715163011.png)
 
 ### 颜色表示
 
@@ -838,7 +838,7 @@ private boolean isRed(Node x) {
 
 注意需要将指向 h 结点的链接改为指向 x 的链接，而 x 结点的左子树也要挂在 h 结点的右子树上，然后修改指向 h 链接的颜色为红色。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/v2-591b2b8b5dece5da4936d823a07a3f39_b.gif"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/v2-591b2b8b5dece5d)a07a3f39_b.gif"/></div>
 
 
 下面是代码，这个操作比较简单，交换一下顺序就好了。
@@ -859,7 +859,7 @@ Node rotateLeft(Node h) {
 
 再看右旋左链接，和左旋就是镜像的关系。后续会使用到右旋操作。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/2020021921514350.gif"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/2020021921514350.g)v>
 
 代码如下：
 
@@ -883,11 +883,11 @@ Node rotateRight(Node h) {
 
 如果新键大于根结点的键，那么直接插在左子树上，左连接变红。变成了 3- 结点。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715183725.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715183725.png)
 
 反之如果插入的新键大于根结点的键，那么插在右子树上，将右链接设置为红色，然后左旋。成为了 3- 结点。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715183846.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715183846.png)
 
 综上可以不论左插还是右插，最终结果相同，树高也相同。最终都是 3- 结点。
 
@@ -895,7 +895,7 @@ Node rotateRight(Node h) {
 
 利用二叉查找树相同的方式向红黑树的底部新增一个结点的情况如下，右边则是将其抽象为 2-3 树的情况。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715184903.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715184903.png)
 
 ### 向一棵双键树（即 3- 结点）中插入新键
 
@@ -906,7 +906,7 @@ Node rotateRight(Node h) {
 
 变化情况如图，仔细看完就明白了，其中涉及到了右旋操作。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715185657.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715185657.png)
 
 ### 颜色转化
 
@@ -922,7 +922,7 @@ void flipColors(Node h) {
 }
 ```
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715192218.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715192218.png)
 
 ### 根结点总是黑色
 
@@ -936,13 +936,13 @@ void flipColors(Node h) {
 
 具体流程如图：
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715192922.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715192922.png)
 
 ### 将红链接在树中向上传递
 
 当向一个结点上插入新的结点时存在三种图示的插入情况：
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715231317.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715231317.png)
 
 插入完毕后需要修改通过左旋转，右旋转和颜色变换等操作来修改红黑树使之符合定义。
 
@@ -950,17 +950,17 @@ void flipColors(Node h) {
 
 * 右子结点是红色而左子结点是黑色，此时要进行左旋。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715232210.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715232210.png)
 
 * 左子结点是红色且左子结点的左子结点也是红色，此时进行右旋。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715232429.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715232429.png)
 
 * 如果左右子树均为红色，那么进行颜色转换。
 
 总而言之，就是如下是三种情况，最终都能够将红链接向上传递。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715231317.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715231317.png)
 
 ## 实现
 
@@ -970,7 +970,7 @@ void flipColors(Node h) {
 
 那么实现起来就很清晰了。在二叉查找树插入操作的基础上进行改进。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715233753.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715233753.png)
 
 首先根据自顶向下找到要插入结点的位置，然后回溯之时自底向上不断将红链接向上传递使其符合红黑树的定义。
 
@@ -978,7 +978,7 @@ void flipColors(Node h) {
 
 左边是构造一颗红黑树的过程，而右边则是相同的键但是改变了插入的顺序，以升序的方式插入，也就是二叉查找树最坏的插入方式，红黑树可以与之形成鲜明的对比。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200715234337.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200715234337.png)
 
 ## 删除操作
 
@@ -1007,7 +1007,7 @@ void flipColors(Node h) {
 
 几种符号表的性能总结：
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200716002712.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200716002712.png)
 
 # 散列表
 

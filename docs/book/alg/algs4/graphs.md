@@ -1,4 +1,6 @@
 
+# 第四章：图
+
 # 概述
 
 图可以根据是否**有向**和**带权**分成以下四种：
@@ -18,7 +20,7 @@
 
 平行边：同一对顶点上有多条边相连。例如就像家和学校两个点之间存在很多条路可以选择，而路与路之间称为平行边。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200718191038.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200718191038.png)
 
 ### 术语
 
@@ -58,7 +60,7 @@
 
 3. 邻接表数组，以顶点为索引，其中的元素都是与该顶点相邻的结点。如图：
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200718192742.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200718192742.png)
 
 ### 邻接表的数据结构
 
@@ -70,7 +72,7 @@
 
 搜索的本质是遍历全部节点，深搜就是一种遍历方式，如图：
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200718194701.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200718194701.png)
 
 特点是每次都遍历到**尽头**，也就是走不下去的时候回头再遍历相关节点。
 
@@ -78,7 +80,7 @@
 
 广搜和深搜相反，优先遍历相关节点，相关节点都遍历完成后再去遍历下一层的节点指导走到尽头。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200802184626.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200802184626.png)
 
 ## 有向图
 
@@ -113,11 +115,11 @@
 * 用一条边连接树中任意两个顶点都会产生一个新的环。
 * 从树中删去一条边将会得到两颗独立的树。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200802185732.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200802185732.png)
 
 切分定理：指将图中**所有顶点**分为**两个非空且不重叠**的两个集合，**横切边**是一条连接两个属于不同集合的顶点的边。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200802190023.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200802190023.png)
 
 从横切边中找权重最小的边，这条边一定属于最小生成树中。依次不断寻找权重最小的横切边即可。
 
@@ -129,15 +131,15 @@ N 个顶点的图中，需要添加 N-1 条边才能构成最小生成树。
 
 prim 算法也分为即使实现和延时实现，前者表示一条边的两个顶点都存在于树中的话将会立即删除，反之则不删除等待后续检查边的有效性。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200802193314.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200802193314.png)
 
 延时实现的遍历顺序为：
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200802193352.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200802193352.png)
 
 即时实现的遍历顺序为：
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200802193541.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200802193541.png)
 
 二者的区别在于即使实现会将某些边从优先队列中删去，这些边是新加入树中顶点与其他已经在书中顶点的所有边。
 
@@ -145,7 +147,7 @@ prim 算法也分为即使实现和延时实现，前者表示一条边的两个
 
 这个算法比较简单，将所有的边按照权重排序，依次放入图中即可，注意要将不满足条件的边剔除，例如闭环。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/20200802193642.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/20200802193642.png)
 
 ## 最短路径
 

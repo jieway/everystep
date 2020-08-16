@@ -18,7 +18,7 @@
 
 经过我的不断尝试，我发现这个方法是最便捷的，例如安装 urllib 这个包如下，安装其他包的话可以直接将 urllib 名字修改成包名即可。
 
-```
+```python
 pip install urllib http://pypi.douban.com/simple --trusted-host pypi.douban.com
 ```
 

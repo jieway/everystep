@@ -5,8 +5,6 @@ module.exports = [
       'alg/ch0',
       'alg/ch1',
       'alg/ch2',
-      'alg/ch3',
-      'alg/ch4',
       'alg/lc',
       'alg/algs4',
       'alg/pat',
