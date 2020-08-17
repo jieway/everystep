@@ -64,8 +64,3 @@ for (int i = 0; i < 10; i++) {
 
 [1]. [acm-cheat-sheet](https://github.com/soulmachine/acm-cheat-sheet)
 [2]. [《算法竞赛入门到进阶》](https://book.douban.com/subject/34465629/)
-
-
-
-
-
