@@ -139,3 +139,21 @@ fn main(){
     println!("The result of adding from 1 to 100 is : {}",num);
 }
 ```
+
+# 所有权
+
+# 切片
+
+左闭右开: $x..y$ 代表 $[x,y)$ 。
+
+```rust
+fn main(){
+    let s = String::from("Hello");
+    let a = &s[0..2];
+    let b = &s[2..4];
+    println!("{}+{}={}",a,b,s);
+}
+```
+
+> 被切片引用的字符串禁止更改其值。
+

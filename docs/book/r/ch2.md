@@ -1,22 +1,31 @@
 # 小提琴图
 
-> Violin plot allows to visualize the distribution of a numeric variable for one or several groups.
-
 小提琴图允许可视化一个或多个数字变量的分布。
-
-> Each ‘violin’ represents a group or a variable. 
 
 每一个小提琴图代表一个或一组变量。
 
-> The shape represents the density estimate of the variable: the more data points in a specific range, the larger the violin is for that range. 
-
 形状代表变量的密度估计：特定范围内的点越多代表该范围内的音域大。
-
-> It is really close to a boxplot, but allows a deeper understanding of the distribution.
 
 它和箱线图很像，但是更能深入的理解分布。
 
-> Here is an example showing how people perceive probability.
+## 模板代码
+
+```r
+library(ggplot2)
+
+data <- data.frame(
+  name=c( rep("A",500), rep("B",500), rep("B",500), rep("C",20), rep('D', 100)  ),
+  value=c( rnorm(500, 10, 5), rnorm(500, 13, 1), rnorm(500, 18, 1), rnorm(20, 25, 4), rnorm(100, 12, 1) )
+)
+
+p <- ggplot(data, aes(x=name, y=value, fill=name)) + geom_violin()
+
+p
+```
+
+大致思路是：首先加载 ggplot2 这个包。然后创建数据表格。最后采用 ggplot2 对数据表格进行绑定。
+
+
 
 # 箱线图
 
@@ -24,7 +33,7 @@
 
 箱线图可以显示一组数据的**最大值**，**最小值**，**中位数**以及**上下四分位数**。
 
-<div align="center"><img src="https://gitee.com/weijiew/pic/raw/master/img/1435.png"/></div>
+![](https://gitee.com/weijiew/pic/raw/master/img/1435.png)
 
 * 将方框分成两部分的线是中位数，中位数意味着左右两边的数据个数相等。
 * 盒子的首尾分别代表上四分位数（Q3）和下四分位数（Q1），也就是整体数据的 75% 和 25% 。

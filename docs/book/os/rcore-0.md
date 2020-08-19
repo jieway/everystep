@@ -85,6 +85,15 @@ fn main() {
 
 注意不能使用 code run 编译文件，一定要先使用 `cargo build`，不然变量会被优化，显示 Variable is optimized away and not available.
 
+# cargo 
+
+cargo 是 rust 的构建系统和包管理工具。
+
+* `cargo new {ProjectName}` 创建工程，名字自定义。
+* `cargo build` 编译项目。
+* `cargo run` 运行项目。
+
+注意，在 vscode 中不要使用 coderun 来编译运行项目，应当使用 cargo 。
 
 # 参考
 

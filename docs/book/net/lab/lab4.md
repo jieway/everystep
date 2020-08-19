@@ -158,7 +158,7 @@ tcpSerSock.close()
 
 修改浏览器的访问设置，也就是通过本地代理来访问网站。
 
-![20200817180749](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/20200817180749.png)
+![](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/20200817180749.png)
 
 运行代理文件 WebProxy.py 
 
@@ -166,9 +166,9 @@ tcpSerSock.close()
 
 第一次访问因为没有缓存会通过代理访问远程服务器，然后产生将得到的结果发送个访问者代理还会将文件缓存下来：
 
-![20200817181053](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/20200817181053.png)
+![](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/20200817181053.png)
 
 第二次访问就可以直接去缓存里面取了：
 
-![20200817175820](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/20200817175820.png)
+![](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/20200817175820.png)
 
