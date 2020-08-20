@@ -41,9 +41,11 @@ module.exports = [
   {
     title: '💥计算机组成原理',
     children: [
-      'co/ch0'
+      'co/ch0',
+      'co/ch1',
+      'co/ch2'
     ]
-  }
+  },
   {
     title: '🔥CSAPP',
     children: [
