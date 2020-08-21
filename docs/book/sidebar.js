@@ -43,7 +43,9 @@ module.exports = [
     children: [
       'co/ch0',
       'co/ch1',
-      'co/ch2'
+      'co/ch2',
+      'co/ch3',
+      'co/ch4'
     ]
   },
   {
