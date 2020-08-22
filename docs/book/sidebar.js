@@ -45,7 +45,8 @@ module.exports = [
       'co/ch1',
       'co/ch2',
       'co/ch3',
-      'co/ch4'
+      'co/ch4',
+      'co/ch5'
     ]
   },
   {
@@ -53,6 +54,13 @@ module.exports = [
     children: [
       'csapp/ch1',
       'csapp/ch2'
+    ]
+  },
+  {
+    title: 'MIT 6.NULL',
+    children: [
+      'missing/ch0',
+      'missing/ch1'
     ]
   },
   {

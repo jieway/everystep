@@ -10,3 +10,10 @@
 
 个人知识库，记录所学，如有错误还请指正。
 
+待完成：
+
+- [ ] [CSAPP-lab](http://csapp.cs.cmu.edu/3e/labs.html) 十一个实验和阅读笔记。
+- [ ] [计算机组成原理](https://www.bilibili.com/video/av51650260) 哈工大李志军。
+- [ ] [MIT 6.NULL]()
+
+# CSAPP
