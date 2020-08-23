@@ -35,7 +35,9 @@ module.exports = [
       'net/ch4',
       'net/ch5',
       'net/ch7',
-      'net/ch8'
+      'net/ch8',
+      'net/cs144.md',
+      'net/cs144/lab0.md'
     ]
   },
   {
@@ -144,6 +146,12 @@ module.exports = [
       'cpp/ch10.md',
       'cpp/ch11.md',
       'cpp/ch12.md'
+    ]
+  },
+  {
+    title: '🤡 CS61A(SICP)',
+    children: [
+      'cs61a/ch0.md'
     ]
   }
 ]

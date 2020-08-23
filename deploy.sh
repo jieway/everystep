@@ -4,7 +4,7 @@
 set -e
 
 git add .
-git commit -m "👦 update"
+git commit -m "计组-第五章更新"
 git push -f git@github.com:weijiew/codestep.git master
 
 # 生成静态文件
