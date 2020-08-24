@@ -59,7 +59,7 @@ module.exports = [
     ]
   },
   {
-    title: 'MIT 6.NULL',
+    title: '⛽MIT 6.NULL',
     children: [
       'missing/ch0',
       'missing/ch1'
