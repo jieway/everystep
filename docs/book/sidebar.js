@@ -62,7 +62,17 @@ module.exports = [
     title: '⛽MIT 6.NULL',
     children: [
       'missing/ch0',
-      'missing/ch1'
+      'missing/ch1',
+      'missing/ch2',
+      'missing/ch3',
+      'missing/ch4',
+      'missing/ch5',
+      'missing/ch6',
+      'missing/ch7',
+      'missing/ch8',
+      'missing/ch9',
+      'missing/ch10',
+      'missing/ch11'
     ]
   },
   {
