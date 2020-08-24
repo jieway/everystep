@@ -58,13 +58,13 @@ module.exports = [
       'csapp/ch2'
     ]
   },
-  // {
-  //   title: 'MIT 6.NULL',
-  //   children: [
-  //     'missing/ch0',
-  //     'missing/ch1'
-  //   ]
-  // },
+  {
+    title: 'MIT 6.NULL',
+    children: [
+      'missing/ch0',
+      'missing/ch1'
+    ]
+  },
   {
     title: '🐷数据库',
     children: [
