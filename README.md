@@ -12,13 +12,10 @@
 
 目前在做：
 
-- [ ] [MIT 6.NULL](https://weijiew.com/codestep/book/missing/ch1.html)
+- [ ] [⛽MIT 6.NULL](https://weijiew.com/codestep/book/missing/ch1.html)
 
 待完成：
 
-- [ ] [CSAPP-lab](http://csapp.cs.cmu.edu/3e/labs.html) 十一个实验和阅读笔记。
+- [ ] [CSAPP-lab](https://weijiew.com/codestep/book/csapp/ch1.html) 十一个实验和阅读笔记。
 - [ ] CS144
-- [ ] [计算机组成原理](https://www.bilibili.com/video/av51650260) 哈工大李志军。
-
-
-# CSAPP
+- [ ] [计算机组成原理](https://weijiew.com/codestep/book/co/ch0.html) 哈工大李志军。
