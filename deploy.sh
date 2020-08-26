@@ -4,7 +4,7 @@
 set -e
 
 git add .
-git commit -m "6.NULL 更新"
+git commit -m "6.NULL 完结"
 git push -f git@github.com:weijiew/codestep.git master
 
 # 生成静态文件

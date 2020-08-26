@@ -4,8 +4,6 @@
 
 修改日志的颜色，安装错误的级别进行分类。红，黄，白，级别逐渐降低可以迅速定位问题出现的位置。
 
-https://www.bilibili.com/video/BV1x7411H7wa?p=7
-
 建议自己尝试一遍 debug 。
 
 ubuntu 自带 python 2.7 ，这个不能卸载，因为 Ubuntu 系统依赖 python 2.7 环境。建议另外安装 python3 环境。
