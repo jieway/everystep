@@ -1,7 +1,7 @@
 # 第零章：课程概览
 
 * 原版网页和仓库地址：[missing-semester](https://missing.csail.mit.edu/) / [repo](https://github.com/missing-semester/missing-semester) 。
-* 中文版网页和仓库地址：[missing-semester-cn](https://github.com/missing-semester-cn/missing-semester-cn.github.io) / [repo](https://missing-semester-cn.github.io/)
+* 中文版网页和仓库地址：[missing-semester-cn](https://missing-semester-cn.github.io) / [repo](https://github.com/missing-semester-cn/missing-semester-cn.github.io)
 * B 站有一个机翻版的视频 ：[bilibili](https://www.bilibili.com/video/av86911412)
 
 > 我这里无法访问网页，不知道是不是被墙了。我采取的措施是将仓库下载下来，直接查看文件内容。没有通过网页阅读。不过殊途同归。
