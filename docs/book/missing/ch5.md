@@ -23,10 +23,10 @@ zsh 是 bash 的超集，添加了很多方便的功能。
 
 ## zsh 资源推荐
 
-1. [安装](https://www.cnblogs.com/dhcn/p/11666845.html)，以篇文字为主。
-2. [zsh优点](https://blog.csdn.net/rapheler/article/details/51505003)了解zsh特点，这篇文章为辅。
-3. [repo](https://github.com/ohmyzsh/ohmyzsh) 仓库地址。 
-4. [命令行美化主题](https://github.com/ohmyzsh/ohmyzsh/wiki/themes)我采用的主题是 ys
+1. [安装](https://www.cnblogs.com/dhcn/p/11666845.html)，以这篇文章为主。可以配置完整配置好。
+2. [zsh优点](https://blog.csdn.net/rapheler/article/details/51505003) 了解zsh特点，这篇文章为辅。
+3. [repo](https://github.com/ohmyzsh/ohmyzsh) oh my zsh 仓库地址。 
+4. [命令行美化主题](https://github.com/ohmyzsh/ohmyzsh/wiki/themes) 我采用的主题是 ys
 5. [主题参考-知乎](https://www.zhihu.com/question/33277508)
 
 ![ys-主题](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/20200825191554.png)
@@ -42,6 +42,3 @@ zsh 是 bash 的超集，添加了很多方便的功能。
 可以参考别人的 dotfiles 配置方式进行学习。
 
 SSH 如果是连接服务器的话需要打开 22 端口，否则无法连接。
-
-
-
