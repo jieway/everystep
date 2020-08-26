@@ -6,7 +6,6 @@ set -e
 git add .
 git commit -m "6.NULL 完结"
 git push -f git@github.com:weijiew/codestep.git master
-git push -f git@gitee.com:weijiew/codestep.git master
 
 # 生成静态文件
 npm run docs:build
@@ -20,5 +19,5 @@ git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:weijiew/codestep.git master:gh-pages
-git push -f git@gitee.com:weijiew/codestep.git master:gh-pages
+
 cd -
