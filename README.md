@@ -10,12 +10,19 @@
 
 个人知识库，记录所学，如有错误还请指正。
 
-目前在做：
+## 已完成
 
-- [ ] [⛽MIT 6.NULL](https://weijiew.com/codestep/book/missing/ch1.html)
+- [x] [⛽MIT 6.NULL](https://weijiew.com/codestep/book/missing/ch0.html)
 
-待完成：
+
+## 目前在做：
 
 - [ ] [CSAPP-lab](https://weijiew.com/codestep/book/csapp/ch1.html) 十一个实验和阅读笔记。
 - [ ] CS144
 - [ ] [计算机组成原理](https://weijiew.com/codestep/book/co/ch0.html) 哈工大李志军。
+
+## 待完成：
+
+- [ ] [CS61A]()
+- [ ] [CS61B]()
+- [ ] [CS61C]()

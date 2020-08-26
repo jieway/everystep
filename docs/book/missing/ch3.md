@@ -11,6 +11,8 @@ Vim 学习步骤。
 
 多模态编辑器，插入文字和操纵文字处于不同的模式下。避免使用鼠标。
 
+几乎所有的 IDE 都支持 vim 插件，加上他！不断磨合最终掌握。
+
 ## 编辑模式
 
 * 正常模式：在文件中四处移动光标进行修改
@@ -110,45 +112,3 @@ s 替换字符 （等同于 xi）
 * ci( 改变当前括号内的内容
 * ci[ 改变当前方括号内的内容
 * da' 删除一个单引号字符窗， 包括周围的单引号
-
-
-
-# 课后练习
-
-1. 完成 `vimtutor`。 备注： 它在一个
-   [80x24](https://en.wikipedia.org/wiki/VT100) （80 列， 24 行）
-   终端窗口看起来最好。
-
-Vim 安装自带的教程，直接在命令行中输入 vimtutor 即可查看。
-
-![Vimtutor](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/20200824214223.png)
-
-2. 下载我们的 [基本 vimrc](/2020/files/vimrc)， 然后把它保存到 `~/.vimrc`。 通读这个注释详细的文件
-   （用 Vim!）， 然后观察 Vim 在这个新的设置下看起来和使用起来有哪些细微的区别。
-
-
-3. 安装和配置一个插件：
-   [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim).
-   1. 用 `mkdir -p ~/.vim/pack/vendor/start` 创建插件文件夹
-   2. 下载这个插件： `cd ~/.vim/pack/vendor/start; git clone
-      https://github.com/ctrlpvim/ctrlp.vim`
-   3. 读这个插件的
-      [文档](https://github.com/ctrlpvim/ctrlp.vim/blob/master/readme.md)。
-       尝试用 CtrlP 来在一个工程文件夹里定位一个文件， 打开 Vim, 然后用 Vim 命令控制行开始
-      `:CtrlP`.
-    4. 自定义 CtrlP： 添加
-       [configuration](https://github.com/ctrlpvim/ctrlp.vim/blob/master/readme.md#basic-options)
-       到你的 `~/.vimrc` 来用按 Ctrl-P 打开 CtrlP
-
-4. 练习使用 Vim, 在你自己的机器上重做 [演示](#demo)。
-
-5. 下个月用 Vim 做你 _所有_ 文件编辑。 每当不够高效的时候, 或者你感觉 “一定有一个更好的方式”，
-   尝试求助搜索引擎， 很有可能有一个更好的方式。 如果你遇到难题， 来我们的答疑时间或者给我们发邮件。
-
-6. 在你的其他工具中设置 Vim 快捷键 （见上面的操作指南）。
-
-7. 进一步自定义你的 `~/.vimrc` 和安装更多插件。
-
-8. （高阶） 用 Vim 宏将 XML 转换到 JSON ([例子文件](/2020/files/example-data.xml))。
-   尝试着先完全自己做， 但是在你卡住的时候可以查看上面
-   [宏](#macros) 章节
