@@ -1,4 +1,4 @@
-# 第零章：课程概览
+# 主题零：课程概览
 
 * 原版网页和仓库地址：[missing-semester](https://missing.csail.mit.edu/) / [repo](https://github.com/missing-semester/missing-semester) 。
 * 中文版网页和仓库地址：[missing-semester-cn](https://missing-semester-cn.github.io) / [repo](https://github.com/missing-semester-cn/missing-semester-cn.github.io)
