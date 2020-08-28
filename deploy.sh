@@ -4,7 +4,7 @@
 set -e
 
 git add .
-git commit -m "🔥 计算机组成原理"
+git commit -m "🔥 README add 下载到本地"
 
 git push -f git@github.com:weijiew/codestep.git master
 
