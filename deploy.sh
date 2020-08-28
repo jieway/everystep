@@ -4,7 +4,7 @@
 set -e
 
 git add .
-git commit -m "🔥 修改细节错误。"
+git commit -m "🔥 计算机组成原理"
 
 git push -f git@github.com:weijiew/codestep.git master
 
