@@ -4,7 +4,7 @@
 set -e
 
 git add .
-git commit -m "🔥 README add 下载到本地"
+git commit -m "🔥 CSAPP"
 
 git push -f git@github.com:weijiew/codestep.git master
 

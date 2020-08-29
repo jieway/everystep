@@ -17,6 +17,14 @@ module.exports = [
     ]
   },
   {
+    title: '🤡 CS61A(SICP)',
+    children: [
+      'cs61a/ch0.md',
+      'cs61a/lab0.md',
+      'cs61a/lab1.md'
+    ]
+  },
+  {
     title: '🚀算法',
     children: [
       'alg/ch0',
@@ -156,12 +164,6 @@ module.exports = [
       'cpp/ch10.md',
       'cpp/ch11.md',
       'cpp/ch12.md'
-    ]
-  },
-  {
-    title: '🤡 CS61A(SICP)',
-    children: [
-      'cs61a/ch0.md'
     ]
   }
 ]
