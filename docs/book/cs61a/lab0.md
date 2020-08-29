@@ -1,14 +1,16 @@
 # Lab 00: Getting Started
 
+[页面地址](https://inst.eecs.berkeley.edu/~cs61a/sp20/lab/lab00/) 。
+
 这个实验主要是环境搭建和 Python 的基本语法学习。
 
-地址：https://inst.eecs.berkeley.edu/~cs61a/sp20/lab/lab00/
+如果没有学过 Python 的语法直接做会有些吃力。
 
 我的环境是 win10，编辑器采用是 vscode 。
 
-## Test
+## 题目
 
-### 语法测试
+### 语法
 
 下面的几道测试题，用于判断自己 python 语法掌握如何。
 
