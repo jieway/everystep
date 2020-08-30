@@ -4,7 +4,7 @@
 set -e
 
 git add .
-git commit -m "🔥 CS61A lab0 lab1 hw1 done"
+git commit -m "🔥 CS61A hw2 doing"
 
 git push -f git@github.com:weijiew/codestep.git master
 
