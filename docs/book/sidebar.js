@@ -19,9 +19,11 @@ module.exports = [
   {
     title: '🤡 CS61A(SICP)',
     children: [
-      'cs61a/ch0.md',
-      'cs61a/lab0.md',
-      'cs61a/lab1.md'
+      'cs61a/ch0',
+      'cs61a/lab0',
+      'cs61a/hw1',
+      'cs61a/lab1',
+      'cs61a/hw2'
     ]
   },
   {
