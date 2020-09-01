@@ -167,5 +167,11 @@ module.exports = [
       'cpp/ch11.md',
       'cpp/ch12.md'
     ]
+  },
+  {
+    title: '🍗数据分析',
+    children: [
+      'data-analysics/ch0'
+    ]
   }
 ]
