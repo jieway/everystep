@@ -461,23 +461,6 @@ def both_positive(a, b):
     return (a > 0) and (b > 0) # You can replace this line!
 ```
 
-测试通过：
-
-```python
-$ python3 ok -q both_positive
-=====================================================================
-Assignment: Lab 1
-OK, version v1.18.1
-=====================================================================
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Running tests
-
----------------------------------------------------------------------
-Test summary
-    1 test cases passed! No cases failed.
-```
-
 ## Q5: Sum Digits
 
 ```python
@@ -502,24 +485,6 @@ def sum_digits(x):
         x /= int(10)
     return sum
 ```
-
-测试结果：
-
-```python
-$ python3 ok -q sum_digits
-=====================================================================
-Assignment: Lab 1
-OK, version v1.18.1
-=====================================================================
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Running tests
-
----------------------------------------------------------------------
-Test summary
-    1 test cases passed! No cases failed.
-```
-
 # What Would Python Display? (Part 2)
 
 ## Q6: WWPD: What If?
@@ -588,7 +553,6 @@ OK! All cases for What If? unlocked.
 
 ## Q7: Falling Factorial
 
-
 ```python
 def falling(n, k):
     """Compute the falling factorial of n to depth k.
@@ -609,24 +573,6 @@ def falling(n, k):
         n -= 1
         k -= 1
     return sum
-```
-
-测试结果：
-
-
-```python
-$ python3 ok -q falling
-=====================================================================
-Assignment: Lab 1
-OK, version v1.18.1
-=====================================================================
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Running tests
-
----------------------------------------------------------------------
-Test summary
-    1 test cases passed! No cases failed.
 ```
 
 ## Q8: Double Eights
@@ -650,21 +596,3 @@ def double_eights(n):
     "*** YOUR CODE HERE ***"
     return '88' in str(n)
 ```
-
-测试结果：
-
-```python
-$ python3 ok -q double_eights
-=====================================================================
-Assignment: Lab 1
-OK, version v1.18.1
-=====================================================================
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Running tests
-
----------------------------------------------------------------------
-Test summary
-    1 test cases passed! No cases failed.
-```
-

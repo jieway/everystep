@@ -284,7 +284,6 @@ def lambda_curry2(func):
     "*** YOUR CODE HERE ***"
     return lambda x: lambda y: func(x, y)
 ```
-
 测试结果：
 
 ```python
@@ -345,23 +344,6 @@ def count_cond(condition):
     return count
 ```
 
-测试结果：
-
-```python
-$ python3 ok -q count_cond
-=====================================================================
-Assignment: Lab 2
-OK, version v1.15.0
-=====================================================================
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Running tests
-
----------------------------------------------------------------------
-Test summary
-    1 test cases passed! No cases failed.
-```
-
 ## Q5: Both Paths
 
 ```python
@@ -385,21 +367,6 @@ def both_paths(sofar="S"):
     return left,right
 ```
 
-```python
-$ python3 ok -q both_paths
-=====================================================================
-Assignment: Lab 2
-OK, version v1.15.0
-=====================================================================
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Running tests
-
----------------------------------------------------------------------
-Test summary
-    1 test cases passed! No cases failed.
-```
-
 ## Q8: Composite Identity Function
 
 ```python
@@ -419,21 +386,6 @@ def composite_identity(f, g):
     """
     "*** YOUR CODE HERE ***"
     return lambda x : f(g(x)) == g(f(x))
-```
-
-```python
-$ python3 ok -q composite_identity
-=====================================================================
-Assignment: Lab 2
-OK, version v1.15.0
-=====================================================================
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Running tests
-
----------------------------------------------------------------------
-Test summary
-    1 test cases passed! No cases failed.
 ```
 
 ## Q9: I Heard You Liked Functions...
@@ -481,19 +433,3 @@ def cycle(f1, f2, f3):
         return a
     return ret_fn 
 ```
-
-```python
-$ python3 ok -q cycle
-=====================================================================
-Assignment: Lab 2
-OK, version v1.15.0
-=====================================================================
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Running tests
-
----------------------------------------------------------------------
-Test summary
-    1 test cases passed! No cases failed.
-```
-
