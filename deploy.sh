@@ -4,7 +4,7 @@
 set -e
 
 git add .
-git commit -m "🔥 update"
+git commit -m "🔥 add Leetcode 1566"
 
 git push -f git@github.com:weijiew/codestep.git master
 

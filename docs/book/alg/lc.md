@@ -15,6 +15,8 @@
 |  [Leetcode-345](lc/Leetcode-345.md)  |   2   |      待条件的反转字符串，可以用函数来设置条件。      |
 |   [Leetcode-88](lc/Leetcode-88.md)   |   2   |           归并排序的味道，注意归并的方式。           |
 |  [Leetcode-680](lc/Leetcode-680.md)  |   3   |         待条件的判断回文字符，需要仔细思考。         |
+|  [Leetcode-1566](lc/Leetcode-1566.md)  |   3   |        🙅         |
+
 
 
 # 链表
