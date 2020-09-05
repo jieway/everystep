@@ -31,7 +31,7 @@ module.exports = [
     children: [
       'cs61b/lab1'
     ]
-  }
+  },
   {
     title: '🚀算法',
     children: [
