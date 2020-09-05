@@ -21,9 +21,7 @@ module.exports = [
     children: [
       'cs61a/ch0',
       'cs61a/lab0',
-      'cs61a/lab1',
-      'cs61a/hw1',
-      'cs61a/hw2'
+      'cs61a/lab1'
     ]
   },
   {
