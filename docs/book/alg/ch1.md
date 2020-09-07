@@ -60,6 +60,26 @@ for (int i = 0; i < 10; i++) {
 * 判断整数是否为奇数时 用 `x%2 != 0` 因为 `x%2 == 1` x 可能是负数，负数无奇偶之分。
 * char 的范围可能为负，统计频次时注意负数，
 
+# 二分
+
+```cpp
+int binarySearch(vector<int>& nums, int target){
+  if(nums.size() == 0)
+    return -1;
+
+  int left = 0, right = nums.size() - 1; 
+  while(left <= right){ // 不加等号 [5] 5 这种类型得数据无法通过！！！
+      // 防止数据溢出
+    int mid = left + (right - left) / 2;
+    if(nums[mid] == target){ return mid; }
+    else if(nums[mid] < target) { left = mid + 1; }
+    else { right = mid - 1; }
+  }
+
+  // End Condition: left > right
+  return -1;
+}
+```
 # 参考
 
 [1]. [acm-cheat-sheet](https://github.com/soulmachine/acm-cheat-sheet)

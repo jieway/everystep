@@ -1,6 +1,6 @@
 # 1566. 重复至少 K 次且长度为 M 的模式
 
-[Leetcode-1566](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/****) / [力扣-1566](https://leetcode-cn.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/)
+[Leetcode-1566](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/) / [力扣-1566](https://leetcode-cn.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/)
 
 ```cpp
 class Solution {

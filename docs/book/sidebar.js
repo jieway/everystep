@@ -21,7 +21,11 @@ module.exports = [
     children: [
       'cs61a/ch0',
       'cs61a/lab0',
-      'cs61a/lab1'
+      'cs61a/lab1',
+      'cs61a/lab2',
+      'cs61a/hw01',
+      'cs61a/hw02',
+      'cs61a/hw03'
     ]
   },
   {
@@ -31,7 +35,7 @@ module.exports = [
     ]
   },
   {
-    title: '🚀算法',
+    title: '🚀 算法',
     children: [
       'alg/ch0',
       'alg/ch1',
@@ -43,7 +47,7 @@ module.exports = [
     ]
   },
   {
-    title: '💫数据结构',
+    title: '💫 数据结构',
     children: [
       'ds/ch0',
       'ds/ch1',
@@ -57,7 +61,7 @@ module.exports = [
     ]
   },
   {
-    title: '🚗计算机网络',
+    title: '🚗 计算机网络',
     children: [
       'net/ch0',
       'net/ch1',
@@ -72,7 +76,7 @@ module.exports = [
     ]
   },
   {
-    title: '💥计算机组成原理',
+    title: '💥 计算机组成原理',
     children: [
       'co/ch0',
       'co/ch1',
@@ -83,14 +87,14 @@ module.exports = [
     ]
   },
   {
-    title: '🔥CSAPP',
+    title: '🔥 CSAPP',
     children: [
       'csapp/ch1',
       'csapp/ch2'
     ]
   },
   {
-    title: '🐷数据库',
+    title: '🐷 数据库',
     children: [
       'sql/ch2',
       'sql/ch1',
@@ -103,7 +107,7 @@ module.exports = [
     ]
   },
   {
-    title: '👓汇编语言',
+    title: '👓 汇编语言',
     children: [
       'asm/ch0',
       'asm/ch1',
@@ -112,7 +116,7 @@ module.exports = [
     ]
   },
   {
-    title: '👑操作系统',
+    title: '👑 操作系统',
     children: [
       'os/ch0',
       'os/now',
@@ -121,7 +125,7 @@ module.exports = [
     ]
   },
   {
-    title: '🎉深度学习',
+    title: '🎉 深度学习',
     children: [
       'dl/ch0',
       'dl/ch1',
@@ -130,7 +134,7 @@ module.exports = [
     ]
   },
   {
-    title: '🍳政治',
+    title: '🍳 政治',
     children: [
       'pol/ch0',
       'pol/ch1',
@@ -140,7 +144,7 @@ module.exports = [
     ]
   },
   {
-    title: '🎊爬虫笔记',
+    title: '🎊 爬虫笔记',
     children: [
       'spi/ch1',
       'spi/ch2',
@@ -149,14 +153,14 @@ module.exports = [
     ]
   },
   {
-    title: '✨R&绘图',
+    title: '✨ R&绘图',
     children: [
       'r/ch1',
       'r/ch2'
     ]
   },
   {
-    title: '⚓C++ Prime Plus',
+    title: '⚓ C++ Prime Plus',
     children: [
       'cpp/ch1.md',
       'cpp/ch2.md',
@@ -173,7 +177,7 @@ module.exports = [
     ]
   },
   {
-    title: '🍗数据分析',
+    title: '🍗 数据分析',
     children: [
       'data-analysics/ch0'
     ]
