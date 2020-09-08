@@ -93,6 +93,3 @@ ggplot(mtcars,aes(x=drat)) +
 ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
   geom_point(size=6)
 ```
-
-# 主题
-
