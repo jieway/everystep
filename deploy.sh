@@ -4,7 +4,7 @@
 set -e
 
 git add .
-git commit -m "🔥 add R 绘图"
+git commit -m "🔥 update"
 
 git push -f git@github.com:weijiew/codestep.git master
 
