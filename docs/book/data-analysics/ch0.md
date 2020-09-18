@@ -6,6 +6,15 @@
 
 Pandas 的数据类型主要有以下几种，它们分别是：Series（一维数组），DataFrame（二维数组），Panel（三维数组），Panel4D（四维数组），PanelND（更多维数组）。其中 Series 和 DataFrame 应用的最为广泛，几乎占据了使用频率 90% 以上。
 
+首先需要导入相关包
+
+```python
+import numpy as np
+import pandas as pd
+import warnings
+warnings.filterwarnings('ignore')
+```
+
 ## Series
 
 基本结构：
@@ -185,7 +194,6 @@ df_interpolate
 1.  如果你的数据增长速率越来越快，可以选择 `method='quadratic'`二次插值。
 2.  如果数据集呈现出累计分布的样子，推荐选择 `method='pchip'`。
 3.  如果需要填补缺省值，以平滑绘图为目标，推荐选择 `method='akima'`。
-
 
 # 参考
 
