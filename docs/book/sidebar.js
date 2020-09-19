@@ -153,13 +153,6 @@ module.exports = [
     ]
   },
   {
-    title: '✨ R&绘图',
-    children: [
-      'r/ch1',
-      'r/ch2'
-    ]
-  },
-  {
     title: '⚓ C++ Prime Plus',
     children: [
       'cpp/ch1.md',
