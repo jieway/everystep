@@ -174,5 +174,11 @@ module.exports = [
     children: [
       'data-analysics/ch0'
     ]
+  },
+  {
+    title: '💊 编译原理',
+    children: [
+      'compile/ch0'
+    ]
   }
 ]
