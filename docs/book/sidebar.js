@@ -46,6 +46,12 @@ module.exports = [
       'alg/offer'
     ]
   },
+  // {
+  //   title: '🍧 PAT',
+  //   children: [
+  //     'pat/offer'
+  //   ]
+  // },
   {
     title: '💫 数据结构',
     children: [
@@ -176,9 +182,9 @@ module.exports = [
     ]
   },
   {
-    title: '💊 编译原理',
+    title: '🐉 CS 143 编译器',
     children: [
-      'compile/ch0'
+      'cs143/ch0'
     ]
   }
 ]
