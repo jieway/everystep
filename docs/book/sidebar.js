@@ -46,12 +46,12 @@ module.exports = [
       'alg/offer'
     ]
   },
-  // {
-  //   title: '🍧 PAT',
-  //   children: [
-  //     'pat/offer'
-  //   ]
-  // },
+  {
+    title: '🍧 大数据',
+    children: [
+      'bigdata/ch0'
+    ]
+  },
   {
     title: '💫 数据结构',
     children: [
