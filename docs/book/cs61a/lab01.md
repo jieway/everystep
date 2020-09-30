@@ -1,13 +1,13 @@
-# Lab 01: Variables & Functions, Control 1
+# Lab 01
 
-地址：https://inst.eecs.berkeley.edu/~cs61a/sp20/lab/lab01/
+[地址：](https://inst.eecs.berkeley.edu/~cs61a/sp20/lab/lab01/)
 
 # What Would Python Display? (Part 1)
 
 ## Q1: WWPD: Control
 
 ```python
-$ python3 ok -q control -u
+$ python ok -q control -u
 =====================================================================
 Assignment: Lab 1
 OK, version v1.15.0
@@ -133,13 +133,12 @@ interpreter!
 
 ---------------------------------------------------------------------
 OK! All cases for Control unlocked.
-
 ```
 
 ## Q2: WWPD: Veritasiness
 
 ```python
-$ python3 ok -q short-circuit -u
+$ python ok -q short-circuit -u
 =====================================================================
 Assignment: Lab 1
 OK, version v1.15.0
@@ -237,7 +236,7 @@ OK! All cases for Veritasiness unlocked.
 debugg 方面的知识，一共 12 道题！
 
 ```python
-$ python3 ok -q debugging-quiz -u
+$ python ok -q debugging-quiz -u
 =====================================================================
 Assignment: Lab 1
 OK, version v1.18.1

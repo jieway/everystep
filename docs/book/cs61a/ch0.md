@@ -3,13 +3,18 @@
 
 ## 概述
 
-伯克利计算机入门课程。
+伯克利计算机入门课程。虽然是入门，但是涵盖东西很多，难度不小。
 
 [sp20,课程网页地址](https://inst.eecs.berkeley.edu/~cs61a/sp20/)
 
 这门课采用的是 python ，教材是《SICP》。
 
-实验：[cs61a](https://github.com/weijiew/cs61a) 。
+代码：[cs61a](https://github.com/weijiew/cs61a) 。
+
+环境：win10 python3.6 vscode 
+
+终端：git bash
+
 
 ## 参考
 

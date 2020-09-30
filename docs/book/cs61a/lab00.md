@@ -1,18 +1,16 @@
-# Lab 00: Getting Started
+# Lab 00
 
-[页面地址](https://inst.eecs.berkeley.edu/~cs61a/sp20/lab/lab00/) 。
+[lab00 地址](https://inst.eecs.berkeley.edu/~cs61a/sp20/lab/lab00/) 。
 
 这个实验主要是环境搭建和 Python 的基本语法学习。
 
 如果没有学过 Python 的语法直接做会有些吃力。
 
-我的环境是 win10，编辑器采用是 vscode 。
-
-## 题目
+我的环境是 win10，编辑器采用是 vscode ，终端采用是 git bash 。具体的安装方法
 
 ### 语法
 
-下面的几道测试题，用于判断自己 python 语法掌握如何。
+下面的几道测试题，用于判断文中提到的 python 语法。
 
 在下载好的 lab00 文件的工作目录中执行命令。
 
@@ -23,7 +21,7 @@ wije@LAPTOP-PJ3DJQFQ MINGW64 /f/cs61a/lab/lab00 (master)
 $ python ok -q python-basics -u
 ```
 
-开始测试：
+交互式输入答案。
 
 ```python
 =====================================================================
@@ -91,8 +89,18 @@ interpreter!
 OK! All cases for Python Basics unlocked.
 ```
 
+最后会出现以下信息，提示你输入邮箱，在命令中加入 --local 则可避免。
+
+```python
+OK! All cases for Python Basics unlocked.
+
+Performing authentication
+Please enter your school email (.edu):
+```
 
 ### coding
+
+通过给定的操作符，最终结果等于 2020 即可。
 
 ```python
 def twenty_twenty():
@@ -105,14 +113,14 @@ def twenty_twenty():
     return 2019+1
 ```
 
-测试（在 [wsl](https://weijiew.com/22/) 中测试）：
+通过键入命令来对代码进行测试。
 
 ```shell
-# weijiew @ LAPTOP-PJ3DJQFQ in /mnt/f/cs61a/lab/lab00 on git:master x [17:03:18]
-$ python3 ok
+wije@LAPTOP-PJ3DJQFQ MINGW64 /f/cs61a/lab/lab00 (master)
+$ python ok --local
 =====================================================================
 Assignment: Lab 0
-OK, version v1.18.1
+OK, version v1.15.0
 =====================================================================
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -120,4 +128,10 @@ Running tests
 
 
 There are still locked tests! Use the -u option to unlock them
+---------------------------------------------------------------------
+Test summary
+    Locked: 1
+    1 test cases passed! No cases failed.
+
+Cannot backup when running ok with --local.
 ```

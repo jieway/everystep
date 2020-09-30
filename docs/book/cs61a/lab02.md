@@ -1,4 +1,4 @@
-# Lab 2: Higher Order Functions
+# Lab 02
 
 ## Q1: WWPD: Lambda the Free
 

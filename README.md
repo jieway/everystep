@@ -14,13 +14,13 @@
 
 ## 目前在做：
 
-- [ ] [CSAPP-lab](https://weijiew.com/codestep/book/csapp/ch1.html) 十一个实验和阅读笔记。
-- [ ] CS144
-- [ ] [计算机组成原理](https://weijiew.com/codestep/book/co/ch0.html) 哈工大李志军。
+- [ ] [CS61A]()
 
 ## 待完成：
 
-- [ ] [CS61A]()
+- [ ] [CSAPP-lab](https://weijiew.com/codestep/book/csapp/ch1.html) 十一个实验和阅读笔记。
+- [ ] CS144
+- [ ] [计算机组成原理](https://weijiew.com/codestep/book/co/ch0.html) 哈工大李志军。
 - [ ] [CS61B]()
 - [ ] [CS61C]()
 
