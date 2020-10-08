@@ -15,6 +15,11 @@
 
 终端：git bash
 
+## 建议
+
+1. 建议先看每一节的 [reading](http://composingprograms.com/) 部分作为预习再看视频，最后一定要做实验和作业。
+
+
 
 ## 参考
 
