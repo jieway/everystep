@@ -58,15 +58,3 @@ OK! All cases for Question 0 unlocked.
 
 ## Problem 1
 
-
-
-clear
-clc
-data = xlsread("..\data\iris.csv");
-
-% 一维数据是下标舍弃
-data = data(:,2:5);
-[new_data,T] = my_pca(data,0.9999);
-
-% 内置 PCA 进行验证
-[COEFF]= pca(data);
