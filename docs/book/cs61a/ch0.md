@@ -11,15 +11,13 @@
 
 代码：[cs61a](https://github.com/weijiew/cs61a) 。
 
-环境：win10 python3.6 vscode 
+环境：win10 python3.6 vscode (推荐在 Linux 平台上做实验，因为很多命令 win10 上会出错，虽然解决的也很快) 
 
-终端：git bash
+终端：git bash ，wsl 相结合。
 
 ## 建议
 
 1. 建议先看每一节的 [reading](http://composingprograms.com/) 部分作为预习再看视频，最后一定要做实验和作业。
-
-
 
 ## 参考
 

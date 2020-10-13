@@ -32,3 +32,5 @@ RAID 的进化过程分为多代。
    2. 缺点是重建数据时 RAID5 的性能受影响大。
 
 # 环境搭建
+
+https://www.bilibili.com/video/BV1JT4y1g7nM?p=7
