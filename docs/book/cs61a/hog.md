@@ -1,4 +1,4 @@
-# Project 1
+# Hog
 
 两个人在玩掷骰子的游戏，每次可以选多个骰子但是不能超过 10 。
 每轮投掷的分数为骰子的点数累加和，但是如果其中任何一枚骰子出现 1 点，那么该轮的分数就为 1 。
@@ -167,20 +167,7 @@ roll_dice 函数就是来统计分数，的特例就是遇到 1 要直接返回 
         num += dice()
     return num
 ```
-
-
-```python
-    num , f = 0 , 0
-    for i in range(0, num_rolls):
-        t = dice()
-        if t == 1:
-            f = 1
-        num += t
-    return 1 if f else num 
-```
-
 下面这个例子过不去！
-
 ```python
 >>> roll_dice(2, make_test_dice(4, 6, 1))
 ? 10
