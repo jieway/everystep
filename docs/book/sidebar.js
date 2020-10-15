@@ -36,6 +36,12 @@ module.exports = [
     ]
   },
   {
+    title: '👻 CS143',
+    children: [
+      'compile/ch0'
+    ]
+  },
+  {
     title: '🚀 算法',
     children: [
       'alg/ch0',

@@ -24,3 +24,4 @@
 * [Bilibili](https://www.bilibili.com/video/BV1nJ41157p6)
 * [中文版教材](https://github.com/wizardforcel/sicp-py-zh)
 * [cs61afall19](https://github.com/Tangjacson/cs61)
+* [SICP 学习指南](https://zhuanlan.zhihu.com/p/102408596)
