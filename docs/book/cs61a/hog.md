@@ -1,8 +1,12 @@
 # Hog
 
+> 12:02 10/15 2020 已经花了大约 7 个小时
+
 两个人在玩掷骰子的游戏，每次可以选多个骰子但是不能超过 10 。
 每轮投掷的分数为骰子的点数累加和，但是如果其中任何一枚骰子出现 1 点，那么该轮的分数就为 1 。
 所以骰子选太多虽然能拿很多的分数，但是出现 1 的概率也会非常大。
+
+# Phase 1: Simulator
 
 ## Problem 0
 
@@ -555,14 +559,334 @@ Question 5a > Suite 3 > Case 1
 -- OK! --
 ```
 
-```python
+测试 `python3 ok -q 05a` 通过。
 
+```python
+    who = 0  # Who is about to take a turn, 0 (first) or 1 (second)
+    # BEGIN PROBLEM 5
+    while (score0 < goal) and (score1 < goal):
+        if who == 0:
+            dice_num = strategy0(score0, score1)
+            curr_score = take_turn(dice_num, score1, dice)
+            score0 += curr_score
+
+        if who == 1:
+            dice_num = strategy1(score1, score0)
+            curr_score = take_turn(dice_num, score0, dice)
+            score1 += curr_score
+
+        if is_swap(score0, score1):
+            score0, score1 = score1, score0
+        who = other(who)
+
+    # END PROBLEM 5
+```
 
 ## Problem 5b
 
+在上一题的基础上需要添加几条规则。
+
+```python
+$ python ok -q 05b -u
+=====================================================================
+Assignment: Project 1: Hog
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Question 5b > Suite 1 > Case 1
+(cases remaining: 103)
+
+>>> import hog
+>>> always_one = hog.make_test_dice(1)
+>>> always_two = hog.make_test_dice(2)
+>>> always_three = hog.make_test_dice(3)
+>>> always = hog.always_roll
+>>> # example 1
+>>> def strat0(s0, s1):
+...     if s0 == 0: return 3
+...     if s0 == 7: return 5
+...     return 8
+>>> def strat1(s0, s1):
+...     if s0 == 0: return 1
+...     if s0 == 4: return 2
+...     return 6
+>>> s0, s1 = hog.play(
+...   strat0, strat1, score0=0, score1=0, goal=21,
+...   dice=hog.make_test_dice(2, 2, 3, 4, 2, 2, 2, 2, 2, 3, 5, 2, 2, 2, 2, 2, 2, 2, 6, 1))
+>>> s0
+? 43
+-- OK! --
+
+>>> s1
+? 15
+-- OK! --
+
+---------------------------------------------------------------------
+Question 5b > Suite 1 > Case 2
+(cases remaining: 102)
+
+>>> import hog
+>>> always_one = hog.make_test_dice(1)
+>>> always_two = hog.make_test_dice(2)
+>>> always_three = hog.make_test_dice(3)
+>>> always = hog.always_roll
+>>> # example 2
+>>> s0, s1 = hog.play(always(2), always(1), score0=0, score1=0, goal=5, dice=hog.make_test_dice(2, 2))
+>>> s0
+? 7
+-- OK! --
+
+>>> s1
+? 0
+-- OK! --
+
+---------------------------------------------------------------------
+Question 5b > Suite 1 > Case 3
+(cases remaining: 101)
+
+>>> import hog
+>>> always_one = hog.make_test_dice(1)
+>>> always_two = hog.make_test_dice(2)
+>>> always_three = hog.make_test_dice(3)
+>>> always = hog.always_roll
+>>> # swap after feral hogs
+>>> s0, s1 = hog.play(always(2), always(1), score0=17, score1=6, goal=21, dice=hog.make_test_dice(1, 2))
+>>> s0
+? 6
+-- OK! --
+
+>>> s1
+? 21
+-- OK! --
+```
+
+`python ok -q 05b` 和 `python3 ok -q 05a` 都可以通过。
+
+```python
+def play(strategy0, strategy1, score0=0, score1=0, dice=six_sided,
+         goal=GOAL_SCORE, say=silence, feral_hogs=True):
+    """Simulate a game and return the final scores of both players, with Player
+    0's score first, and Player 1's score second.
+
+    A strategy is a function that takes two total scores as arguments (the
+    current player's score, and the opponent's score), and returns a number of
+    dice that the current player will roll this turn.
+
+    strategy0:  The strategy function for Player 0, who plays first.
+    strategy1:  The strategy function for Player 1, who plays second.
+    score0:     Starting score for Player 0
+    score1:     Starting score for Player 1
+    dice:       A function of zero arguments that simulates a dice roll.
+    goal:       The game ends and someone wins when this score is reached.
+    say:        The commentary function to call at the end of the first turn.
+    feral_hogs: A boolean indicating whether the feral hogs rule should be active.
+    """
+    who = 0  # Who is about to take a turn, 0 (first) or 1 (second)
+    # BEGIN PROBLEM 5
+    before_score0, before_score1 = 0, 0
+
+    while (score0 < goal) and (score1 < goal):
+        if who == 0:
+            dice_num = strategy0(score0, score1)
+            curr_score = take_turn(dice_num, score1, dice)
+            score0 += curr_score
+            if feral_hogs:
+                if checkNum(dice_num,before_score0):
+                    score0 +=3
+                before_score0 = curr_score
+
+        if who == 1:
+            dice_num = strategy1(score1, score0)
+            curr_score = take_turn(dice_num, score0, dice)
+            score1 += curr_score
+            if feral_hogs:
+                if checkNum(dice_num,before_score1):
+                    score1 +=3
+                before_score1 = curr_score
+
+        if is_swap(score0, score1):
+            score0, score1 = score1, score0
+        who = other(who)
+
+    # END PROBLEM 5
+    # (note that the indentation for the problem 6 prompt (***YOUR CODE HERE***) might be misleading)
+    # BEGIN PROBLEM 6
+
+    # END PROBLEM 6
+    return score0, score1
+
+def checkNum(dice_num, before_num):
+    return (abs(dice_num - before_num) == 2)
+
+```
+
+# Phase 2: Commentary
+
 ## Problem 6 
+添加输出，提高交互性。
+
+```python
+$ python ok -q 06 -u
+=====================================================================
+Assignment: Project 1: Hog
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Question 6 > Suite 1 > Case 1
+(cases remaining: 7)
+
+Q: What does a commentary function return?
+Choose the number of the correct choice:
+0) An integer representing the score.
+1) None.
+2) Another commentary function.
+      ? 0
+-- Not quite. Try again! --
+
+Choose the number of the correct choice:
+0) An integer representing the score.
+1) None.
+2) Another commentary function.
+? 2
+-- OK! --
+
+---------------------------------------------------------------------
+Question 6 > Suite 2 > Case 1
+(cases remaining: 6)
+
+>>> from hog import play, always_roll
+>>> from dice import make_test_dice
+>>> #
+>>> def echo(s0, s1):
+...     print(s0, s1)
+...     return echo
+>>> s0, s1 = play(always_roll(1), always_roll(1), dice=make_test_dice(3), goal=5, say=echo)
+(line 1)? 3 0
+(line 2)? 3 3
+(line 3)? 9 3
+-- OK! --
+
+---------------------------------------------------------------------
+Question 6 > Suite 2 > Case 2
+(cases remaining: 5)
+
+>>> from hog import play, always_roll
+>>> from dice import make_test_dice
+>>> #
+>>> def count(n):
+...     def say(s0, s1):
+...         print(n)
+...         return count(n + 1)
+...     return say
+>>> s0, s1 = play(always_roll(1), always_roll(1), dice=make_test_dice(3), goal=10, say=count(1))
+(line 1)? 1
+(line 2)? 2
+(line 3)? 3
+(line 4)? 4
+(line 5)? 5
+-- OK! --
+
+---------------------------------------------------------------------
+Question 6 > Suite 2 > Case 3
+(cases remaining: 4)
+
+>>> from hog import play, always_roll
+>>> from dice import make_test_dice
+>>> #
+>>> def echo(s0, s1):
+...     print(s0, s1)
+...     return echo
+>>> strat0 = lambda score, opponent: 1 - opponent // 10
+>>> strat1 = always_roll(3)
+>>> s0, s1 = play(strat0, strat1, dice=make_test_dice(4, 2, 6), goal=15, say=echo)
+(line 1)? 4 0
+(line 2)? 4 12
+(line 3)? 17 12
+-- OK! --
+
+---------------------------------------------------------------------
+Question 6 > Suite 2 > Case 4
+(cases remaining: 3)
+
+>>> from hog import play, always_roll
+>>> from dice import make_test_dice
+>>> #
+>>> # Ensure that say is properly updated within the body of play.
+>>> def total(s0, s1):
+...     print(s0 + s1)
+...     return echo
+>>> def echo(s0, s1):
+...     print(s0, s1)
+...     return total
+>>> s0, s1 = play(always_roll(1), always_roll(1), dice=make_test_dice(2, 3), goal=15, say=echo)
+(line 1)? 0 2
+(line 2)? 5
+(line 3)? 2 5
+(line 4)?  13
+(line 5)? 4 11
+(line 6)? 21
+-- OK! --
+
+---------------------------------------------------------------------
+Question 6 > Suite 3 > Case 1
+(cases remaining: 2)
+
+>>> from hog import play, always_roll, both, announce_lead_changes, say_scores
+>>> from dice import make_test_dice
+>>> #
+>>> def echo_0(s0, s1):
+...     print('*', s0)
+...     return echo_0
+>>> def echo_1(s0, s1):
+...     print('**', s1)
+...     return echo_1
+>>> s0, s1 = play(always_roll(1), always_roll(1), dice=make_test_dice(2), goal=3, say=both(echo_0, echo_1))
+(line 1)? * 0
+(line 2)? ** 2
+(line 3)? * 0
+(line 4)? ** 4
+-- OK! --
+
+---------------------------------------------------------------------
+Question 6 > Suite 3 > Case 2
+(cases remaining: 1)
+
+-- Already unlocked --
+```
+
+```python
+def silence(score0, score1):
+    """Announce nothing (see Phase 2)."""
+    print("Player 0 now has", score0, "and Player 1 now has", score1)
+    return silence
+```
+
+注意缩进！
+
+```python
+    # BEGIN PROBLEM 6
+        say = say(score0, score1)
+    # END PROBLEM 6
+```
+
 
 ## Problem 7
+
+
 
 ## Problem 8
 
