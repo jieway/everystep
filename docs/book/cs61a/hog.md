@@ -1,6 +1,6 @@
 # Hog
 
-> 12:02 10/15 2020 已经花了大约 7 个小时
+> 已经花了大约 8 个小时
 
 两个人在玩掷骰子的游戏，每次可以选多个骰子但是不能超过 10 。
 每轮投掷的分数为骰子的点数累加和，但是如果其中任何一枚骰子出现 1 点，那么该轮的分数就为 1 。
@@ -886,14 +886,292 @@ def silence(score0, score1):
 
 ## Problem 7
 
+```python
+$ python ok -q 07 -u
+=====================================================================
+Assignment: Project 1: Hog
+OK, version v1.18.1
+=====================================================================
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Question 7 > Suite 1 > Case 1
+(cases remaining: 5)
+
+Q: What does announce_highest return?
+Choose the number of the correct choice:
+0) A string containing the largest point increase for the
+   current player.
+1) The current largest point increase between both
+   players.
+2) A commentary function that prints information about the
+   biggest point increase for the current player.
+? 0
+-- Not quite. Try again! --
+
+Choose the number of the correct choice:
+0) A string containing the largest point increase for the
+   current player.
+1) The current largest point increase between both
+   players.
+2) A commentary function that prints information about the
+   biggest point increase for the current player.
+? 1
+-- Not quite. Try again! --
+
+Choose the number of the correct choice:
+0) A string containing the largest point increase for the
+   current player.
+1) The current largest point increase between both
+   players.
+2) A commentary function that prints information about the
+   biggest point increase for the current player.
+? 2
+-- OK! --
+
+---------------------------------------------------------------------
+Question 7 > Suite 1 > Case 2
+(cases remaining: 4)
+
+Q: When does the commentary function returned by announce_highest
+print something out?
+Choose the number of the correct choice:
+0) After each turn.
+1) When the current player, given by the parameter `who`,
+   earns the biggest point increase yet between both
+   players in the game.
+2) When the current player, given by the parameter `who`,
+   earns their biggest point increase yet in the game.
+? 2
+-- OK! --
+
+---------------------------------------------------------------------
+Question 7 > Suite 1 > Case 3
+(cases remaining: 3)
+
+Q: What does the parameter previous_score represent?
+Choose the number of the correct choice:
+0) The current player's score before this turn.
+1) The opponent's score before this turn.
+2) The previous highest gain for the current player.
+? 2
+-- Not quite. Try again! --
+
+Choose the number of the correct choice:
+0) The current player's score before this turn.
+1) The opponent's score before this turn.
+2) The previous highest gain for the current player.
+? 1
+-- Not quite. Try again! --
+
+Choose the number of the correct choice:
+0) The current player's score before this turn.
+1) The opponent's score before this turn.
+2) The previous highest gain for the current player.
+? 0
+-- OK! --
+```
+
+`python ok -q 07` 
+
+```python
+    # BEGIN PROBLEM 7
+    def say(score0, score1):
+        if who:
+            curr_point = score1 - prev_score
+            if curr_point > prev_high:
+                print(str(curr_point)+" point(s)! That's the biggest gain yet for Player "+str(who))
+                return announce_highest(who,curr_point, score1)
+            else:
+                return announce_highest(who,prev_high, score1)
+
+        else :
+            curr_point = score0 - prev_score
+            if curr_point > prev_high:
+                print(str(curr_point)+" point(s)! That's the biggest gain yet for Player "+str(who))
+                return announce_highest(who,curr_point, score0)
+            else:
+                return announce_highest(who,prev_high, score0)
+    return say
+    # END PROBLEM 7
+```
 
 ## Problem 8
 
+```python
+$ python ok -q 08 -u
+=====================================================================
+Assignment: Project 1: Hog
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Question 8 > Suite 1 > Case 1
+(cases remaining: 7)
+
+Q: What makes make_averaged a higher order function?
+Choose the number of the correct choice:
+0) It uses the *args keyword
+1) It returns a function
+2) It takes in a function as an argument
+3) It both takes in a function as an argument and returns a function
+? 3
+-- OK! --
+
+---------------------------------------------------------------------
+Question 8 > Suite 1 > Case 2
+(cases remaining: 6)
+
+Q: How many arguments does the function passed into make_averaged take?
+Choose the number of the correct choice:
+0) An arbitrary amount, which is why we need to use *args to call it
+1) Two
+2) None
+? 0
+-- OK! --
+
+---------------------------------------------------------------------
+Question 8 > Suite 2 > Case 1
+(cases remaining: 5)
+
+>>> from hog import *
+>>> dice = make_test_dice(3, 1, 5, 6)
+>>> averaged_dice = make_averaged(dice, 1000)
+>>> # Average of calling dice 1000 times
+>>> averaged_dice()
+? 3.75
+-- OK! --
+
+---------------------------------------------------------------------
+Question 8 > Suite 2 > Case 2
+(cases remaining: 4)
+
+>>> from hog import *
+>>> dice = make_test_dice(3, 1, 5, 6)
+? 6.0
+-- OK! --
+```
+
+`python ok -q 08` 结果
+
+```python
+    # BEGIN PROBLEM 8
+    def avg(*args):
+        i , sum = 0 , 0
+        while i < num_samples:
+            sum += g(*args)
+            i += 1
+        return sum/num_samples
+    return avg
+    # END PROBLEM 8
+```
+
 ## Problem 9
 
+```python
+$ python ok -q 09 -u
+=====================================================================
+Assignment: Project 1: Hog
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Question 9 > Suite 1 > Case 1
+(cases remaining: 8)
+
+Q: If multiple num_rolls are tied for the highest scoring
+average, which should you return?
+Choose the number of the correct choice:
+0) The highest num_rolls
+1) A random num_rolls
+2) The lowest num_rolls
+? 2
+-- OK! --
+
+---------------------------------------------------------------------
+Question 9 > Suite 2 > Case 1
+(cases remaining: 7)
+
+>>> from hog import *
+>>> dice = make_test_dice(3)   # dice always returns 3
+>>> max_scoring_num_rolls(dice, num_samples=1000)
+? 10
+-- OK! --
+
+---------------------------------------------------------------------
+Question 9 > Suite 2 > Case 2
+(cases remaining: 6)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Question 9 > Suite 2 > Case 3
+(cases remaining: 5)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Question 9 > Suite 3 > Case 1
+(cases remaining: 4)
+
+>>> from hog import *
+>>> dice = make_test_dice(2)     # dice always rolls 2
+>>> max_scoring_num_rolls(dice, num_samples=1000)
+? 10
+-- OK! --
+
+---------------------------------------------------------------------
+Question 9 > Suite 3 > Case 2
+(cases remaining: 3)
+
+>>> from hog import *
+>>> dice = make_test_dice(1, 2)  # dice alternates 1 and 2
+>>> max_scoring_num_rolls(dice, num_samples=1000)
+? 1
+-- OK! --
+
+---------------------------------------------------------------------
+OK! All cases for Question 9 unlocked.
+```
+
+```python
+    # BEGIN PROBLEM 9
+    i = 1
+    max = float("-inf")
+    max_index = 1
+    while i <= 10:
+        averaged_roll_dice = make_averaged(roll_dice, num_samples)
+        curr_value = averaged_roll_dice(i, dice)
+        if curr_value > max:
+            max_index = i
+            max = curr_value
+        i += 1
+    return max_index
+    # END PROBLEM 9
+```
+
 ## Problem 10
+
+
 
 ## Problem 11
 
 ## Problem 12
+
