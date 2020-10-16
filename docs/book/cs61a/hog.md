@@ -1169,8 +1169,6 @@ OK! All cases for Question 9 unlocked.
 
 ## Problem 10
 
-
-
 ## Problem 11
 
 ## Problem 12

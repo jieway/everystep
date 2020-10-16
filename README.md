@@ -14,7 +14,7 @@
 
 ## 目前在做：
 
-- [ ] [CS61A]()
+- [ ] [CS61A](https://inst.eecs.berkeley.edu/~cs61a/sp20/)
 
 ## 待完成：
 
