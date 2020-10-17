@@ -23,6 +23,7 @@ module.exports = [
       'cs61a/lab00',
       'cs61a/lab01',
       'cs61a/lab02',
+      'cs61a/lab04',
       'cs61a/hw01',
       'cs61a/hw02',
       'cs61a/hw03',
