@@ -14,7 +14,7 @@
 
 ## 目前在做：
 
-- [ ] [CS61A](https://inst.eecs.berkeley.edu/~cs61a/sp20/)
+- [ ] [CS61A](https://weijiew.com/codestep/book/cs61a/ch0.html)
 
 ## 待完成：
 
