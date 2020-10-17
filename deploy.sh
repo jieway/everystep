@@ -10,10 +10,12 @@ git commit -m "💥 cs61a lab04 end"
 # * 💥 大更新：大更新代表完成某个 lab 或者昨晚一部分作业等。
 # * 🔥 小更新：小更新代表添加部分内容，修改某些细节等。
 
+# 错误处理 
+# This is probably not a problem with npm. There is likely additional logging output above.
 # rm -rf node_modules
 # rm package-lock.json
 # npm cache clear --force
-# npm install
+# npm install (yarn install)
 
 git push -f git@github.com:weijiew/codestep.git master
 
