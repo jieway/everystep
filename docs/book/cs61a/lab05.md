@@ -87,12 +87,27 @@ OK! All cases for List Indexing unlocked.
 
 ## Q5: Don't violate the abstraction barrier!
 
-
+修复之前的代码。
 
 # Trees
 
 ## Q6: Nut Finder
 
+注意，需要借助 ADT。
+
+```python
+    if label(t) == 'nut':
+        return True
+    for node in branches(t):
+        if nut_finder(node):
+            return True
+    return False
+```
+
 ## Q7: Sprout leaves
 
-## 
+```python
+    if is_leaf(t):
+        return tree(label(t),[tree(v) for v in values])
+    return tree(label(t),[sprout_leaves(b, values) for b in branches(t)])
+```
