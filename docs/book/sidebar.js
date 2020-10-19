@@ -28,6 +28,7 @@ module.exports = [
       'cs61a/hw01',
       'cs61a/hw02',
       'cs61a/hw03',
+      'cs61a/hw04',
       'cs61a/hog'
     ]
   },
