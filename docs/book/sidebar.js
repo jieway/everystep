@@ -192,6 +192,12 @@ module.exports = [
     ]
   },
   {
+    title: '✍ my-ml',
+    children: [
+      'ml/ch0'
+    ]
+  },
+  {
     title: '🐉 CS 143 编译器',
     children: [
       'cs143/ch0'
