@@ -59,7 +59,8 @@ module.exports = [
   {
     title: '🍧 大数据',
     children: [
-      'bigdata/ch0'
+      'bd/ch0',
+      'bd/redis',
     ]
   },
   {
@@ -103,7 +104,7 @@ module.exports = [
     ]
   },
   {
-    title: '🔥 CSAPP',
+    title: '🍻 CSAPP',
     children: [
       'csapp/ch1',
       'csapp/ch2'
@@ -189,7 +190,7 @@ module.exports = [
   {
     title: '🍗 数据分析',
     children: [
-      'data-analysics/ch0'
+      'da/ch0'
     ]
   },
   {

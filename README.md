@@ -11,16 +11,15 @@
 
 - [x] [⛽MIT 6.NULL](https://weijiew.com/codestep/book/missing/ch0.html)
 
-
 ## 目前在做：
 
-- [ ] [CS61A](https://weijiew.com/codestep/book/cs61a/ch0.html)
+- [ ] [CS61A](https://weijiew.com/codestep/book/cs61a/ch0.html) 大约 11.15 日前做完！
+- [ ] [CSAPP-lab](https://weijiew.com/codestep/book/csapp/ch1.html) 十一个实验和阅读笔记。
+- [ ] [计算机组成原理](https://weijiew.com/codestep/book/co/ch0.html) 哈工大李志军。
+- [ ] [数据结构]()
 
 ## 待完成：
 
-- [ ] [CSAPP-lab](https://weijiew.com/codestep/book/csapp/ch1.html) 十一个实验和阅读笔记。
-- [ ] CS144
-- [ ] [计算机组成原理](https://weijiew.com/codestep/book/co/ch0.html) 哈工大李志军。
 - [ ] [CS61B]()
 - [ ] [CS61C]()
 
