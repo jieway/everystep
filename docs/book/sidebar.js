@@ -123,9 +123,7 @@ module.exports = [
     children: [
       'asm/ch0',
       'asm/ch1',
-      'asm/ch2',
-      'asm/ch3',
-      'asm/ch4'
+      'asm/ch2'
     ]
   },
   {
