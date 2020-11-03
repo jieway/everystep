@@ -113,14 +113,9 @@ module.exports = [
   {
     title: '🐷 数据库',
     children: [
-      'sql/ch2',
-      'sql/ch1',
-      'sql/ch0',
-      'sql/ch3',
-      'sql/ch4',
-      'sql/sql_1_0',
-      'sql/sql_1_1',
-      'sql/sql_1_2'
+      'sql/mysql',
+      'sql/sql',
+      'sql/problem'
     ]
   },
   {
