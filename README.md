@@ -13,16 +13,17 @@
 
 ## 目前在做：
 
-- [ ] [CS61A](https://weijiew.com/codestep/book/cs61a/ch0.html) 大约 11.15 日前做完！
-- [ ] [CSAPP-lab](https://weijiew.com/codestep/book/csapp/ch1.html) 十一个实验和阅读笔记。
-- [ ] [计算机组成原理](https://weijiew.com/codestep/book/co/ch0.html) 哈工大李志军。
-- [ ] [数据结构]()
+- [ ] 数字图像处理
 
 ## 待完成：
 
-- [ ] [CS61B]()
-- [ ] [CS61C]()
+- [ ] [CS61A](https://weijiew.com/codestep/book/cs61a/ch0.html) 大约 11.15 日前做完！
+- [ ] [CS61B](https://weijiew.com/codestep/book/cs61b/ch0.html) 大约 11.20 完成。
 
+- [ ] [CS61C]()
+- [ ] [CSAPP-lab](https://weijiew.com/codestep/book/csapp/ch1.html) 十一个实验和阅读笔记。
+- [ ] [计算机组成原理](https://weijiew.com/codestep/book/co/ch0.html) 哈工大李志军。
+- [ ] [数据结构]()
 ## 提交标志含义
 
 * 🚀 完结：整节课做完。
