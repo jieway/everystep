@@ -59,3 +59,4 @@
 ![](https://gitee.com/weijiew/pic/raw/master/img/a2.png)
 
 由上图可知低光环境是杆状细胞在感应（圆圈部分），而在高光环境中是锥状细胞在感应。
+
