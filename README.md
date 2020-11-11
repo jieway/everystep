@@ -13,9 +13,8 @@
 
 ## 目前在做：
 
-- [ ] 数字图像处理
-- [ ] [编译原理](https://weijiew.com/codestep/book/compile/ch0.html) 。
-
+- [ ] [数字图像处理](https://weijiew.com/codestep/book/img/ch0.html)
+- [ ] [编译原理](https://weijiew.com/codestep/book/compile/ch0.html)
 
 ## 待完成：
 
