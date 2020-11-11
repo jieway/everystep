@@ -4,7 +4,7 @@
 set -e
 
 git add .
-git commit -m "🔥 sql 部分整理"
+git commit -m "💥 编译原理更新"
 
 # * 🚀 完结：整节课做完。
 # * 💥 大更新：大更新代表完成某个 lab 或者昨晚一部分作业等。

@@ -14,6 +14,8 @@
 ## 目前在做：
 
 - [ ] 数字图像处理
+- [ ] [编译原理](https://weijiew.com/codestep/book/compile/ch0.html) 。
+
 
 ## 待完成：
 
@@ -23,6 +25,7 @@
 - [ ] [CS61C]()
 - [ ] [CSAPP-lab](https://weijiew.com/codestep/book/csapp/ch1.html) 十一个实验和阅读笔记。
 - [ ] [计算机组成原理](https://weijiew.com/codestep/book/co/ch0.html) 哈工大李志军。
+
 - [ ] [数据结构]()
 ## 提交标志含义
 

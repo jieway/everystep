@@ -39,9 +39,10 @@ module.exports = [
     ]
   },
   {
-    title: '👻 CS143',
+    title: '🌊 编译原理',
     children: [
-      'compile/ch0'
+      'compile/ch0',
+      'compile/ch1'
     ]
   },
   {
