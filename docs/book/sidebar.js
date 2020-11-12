@@ -206,5 +206,11 @@ module.exports = [
     children: [
       'cs143/ch0'
     ]
+  },
+  {
+    title: '🌻 Spring Boot',
+    children: [
+      'spr/ch0'
+    ]
   }
 ]

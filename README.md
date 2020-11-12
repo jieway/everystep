@@ -15,11 +15,15 @@
 
 - [ ] [数字图像处理](https://weijiew.com/codestep/book/img/ch0.html)
 - [ ] [编译原理](https://weijiew.com/codestep/book/compile/ch0.html)
+- [ ] [Spring-boot](https://weijiew.com/codestep/book/spr/ch0.html) 
+
+> 为完成数据库的大作业而临时学习的，中途加进来的内容太多，计划打乱了不少
+> 该内容为实验性质，后续做出来后会剥离，作为文档的一部分。
 
 ## 待完成：
 
-- [ ] [CS61A](https://weijiew.com/codestep/book/cs61a/ch0.html) 大约 11.15 日前做完！
-- [ ] [CS61B](https://weijiew.com/codestep/book/cs61b/ch0.html) 大约 11.20 完成。
+- [ ] [CS61A](https://weijiew.com/codestep/book/cs61a/ch0.html) 
+- [ ] [CS61B](https://weijiew.com/codestep/book/cs61b/ch0.html) 
 
 - [ ] [CS61C]()
 - [ ] [CSAPP-lab](https://weijiew.com/codestep/book/csapp/ch1.html) 十一个实验和阅读笔记。
