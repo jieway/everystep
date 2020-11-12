@@ -4,7 +4,7 @@
 set -e
 
 git add .
-git commit -m "🔥 编译原理第二章完成， 第三章部分完成。"
+git commit -m "🚀 Spring Boot 开发笔记"
 
 # * 🚀 完结：整节课做完。
 # * 💥 大更新：大2                                                                                                                                                                                                  `更新代表完成某个 lab 或者昨晚一部分作业等。
