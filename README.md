@@ -45,4 +45,4 @@ yarn install
 vuepress dev docs
 ```
 
-查看：http://localhost:8080/codestep/
+查看：http://localhost:8080/codestep/ （端口可能不是 8080 ，注意修改！）

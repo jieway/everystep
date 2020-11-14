@@ -210,7 +210,9 @@ module.exports = [
   {
     title: '🌻 Spring Boot',
     children: [
-      'spr/ch0'
+      'spr/ch0',
+      'spr/ch1',
+      'spr/ch2'
     ]
   }
 ]
