@@ -211,7 +211,7 @@ weijiew@LAPTOP-PJ3DJQFQ:~$ ls -l / | tail -n1
 drwxr-xr-x  1 root root   4096 Apr 23 14:43 var
 ```
 
-也可以讲信息如果输出流 (>) 写入文本中。
+也可以将信息输出流 (>) 写入文本中。
 
 ```sh
 weijiew@LAPTOP-PJ3DJQFQ:~$ ls -l / | tail -n1 > ls.txt
