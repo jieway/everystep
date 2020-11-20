@@ -107,8 +107,6 @@ public class HelloController {
 访问 `http://localhost:8080/hello` 也能看到 hello 字样，证明打包成功。
 
 运行这个包会单独占一个进程，项目比较大的话会比较吃内存。
-
 ## 1.5 总结
 
 完成了一次完整的流程，从创建项目到最后打包。
-
