@@ -1,62 +1,79 @@
-# 数字图像处理
+# 2.0 图像压缩（Image and Video Processing: From Mars to Hollywood with a Stop at the Hospital）
 
-* [【coursera】Image and Video Processing: From Mars to Hollywood with a Stop at the Hospital](https://www.coursera.org/learn/image-processing/home/welcome) / [【B站搬运】数字图像处理](https://www.bilibili.com/video/BV1j7411i78H)
+## 2.1 为什么图像需要压缩？
 
-这个搬运的只有 360P，coursera 有 720P 的。
+* 数据量大
 
-图像和视频修复技术是如何实现的？
-如何移除图片中的人物？
-图像如果不经过压缩体积会非常大，需要进行压缩处理，压缩是如何实现的？
-一共九周，每周内容相互独立。
-• 第一周：了解图像为什么占用了如此庞大的信息。
-• 第二周：学习如何进行压缩。
-• 第五周：图像分割，背景变换。
-什么是数字图像处理？
+以一张**低分辨率**的图片为例。假如像素是 $1000\times1000$ 的图片（可以将该图片理解为 $1000\times1000$ 个格子）。
 
-# 1 - What is image and video processing (part 1)
+当表示颜色之时，一种颜色用 $8 bit$ 来表示，而 RGB 三个通道，需要 $24 bit$ 来表示，那么当前的数据量为：$1000\times1000\times24 bit$。
 
-图像和视频修复技术是如何实现的？
+以上只是一张图片而已，对于普通视频而言一秒钟是 $30$ 帧，也就是一秒钟的视频种含有 30 张图片。那么此时的数据量为：$1000\times1000\times24\times30 bit$。
 
-如何移除图片中的人物？
+正常的电影是 120 分钟，一分钟是 60 秒，综上一部电影的数据量为 $1000\times1000\times24\times30\times60\times120 bit$ 。
 
-图像如果不经过压缩体积会非常大，需要进行压缩处理，压缩是如何实现的？
+如果不压缩的话，这个数据量是非常大的。图像和视频压缩是至关重要的。
 
-一共九周，每周内容相互独立。
+* 数据冗余
 
-- 第一周：了解图像为什么占用了如此庞大的信息。
-- 第二周：学习如何进行压缩。
-- 第五周：图像分割，背景变换。
+图像中存在冗余数据，例如出现在不同位置的相似图像，没有必要全部显示。
 
-什么是数字图像处理？
+JPEG 是一种成熟的压缩标准，无损压缩。
 
+MPEG 也是一种常规的压缩标准。
 
-人眼能够识别的图像所对应的频谱中只是很小的一片区域。而图像的频谱范围是非常大的。
+## 2.2 图像压缩的流程
 
-![](https://gitee.com/weijiew/pic/raw/master/img/image.png)
+对于一般的图像压缩技术，都会经历下面的流程。
 
-眼睛主要构成：晶状体，角膜，视网膜。
+![](https://gitee.com/weijiew/pic/raw/master/img/20201127215651.png)
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/842912/1604544175181-34cf3a96-7377-470a-9324-b46e4b6c787e.png#align=left&display=inline&height=326&margin=%5Bobject%20Object%5D&name=image.png&originHeight=651&originWidth=719&size=355748&status=done&style=none&width=359.5)
+### 2.2.1 映射
 
-现实世界的图像被投影到视网膜上，而视网膜上又布满了传感器，图像经过传感器最终进入大脑。
+对于像素为 $1000\times1000$ 的图片而言，此时图像可以理解为 $1000\times1000$ 的数组。
 
-传感器分为**锥形传感器**（实线）和**杆状传感器**（虚线）。下图是二者在视网膜之上的密度分布。
+图像为了便于压缩首先需要进行映射变换，映射方法有傅里叶变换。
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/842912/1604544492396-eae23b2b-c58a-4ae2-b208-75e80e5e35bc.png#align=left&display=inline&height=215&margin=%5Bobject%20Object%5D&name=image.png&originHeight=429&originWidth=953&size=194000&status=done&style=none&width=476.5)
+### 2.2.2 量化
 
-**锥形传感器**在中间（小窝fovca）的时候密度达到了顶峰！而在此处看的也是最清晰的位置。在亮光之下看的最清晰，当看不清楚物体时人们移动眼睛的目的也是将投影尽可能的投射在小窝（Fovca）之中。从而达到了看清物体的目的！
+经过映射后，在量化阶段会导致图像数据出现误差。
 
+例如对于 17 而言，假设存储类型为 int 那么 $\frac{17}{2} \times2$ 经过取整后会变成 $16$ 。 
 
-**杆状传感器**侧重于**全局轮廓**而非细节，分布较为均匀。同锥形传感器互补。
+### 2.2.3 编码
 
+对图像进行符号编码，（例如哈夫曼编码）目的是便于传输和存储。
 
-**盲点：**此处区域没有传感器，成为盲点。
+### 2.2.4 解码
 
-![](https://gitee.com/weijiew/pic/raw/master/img/a1.png)****
+对图像进行解码便于显示。
 
-不同光照强度下锥状细胞和杆状细胞二者的分布：
+### 2.2.5 逆映射
 
-![](https://gitee.com/weijiew/pic/raw/master/img/a2.png)
+是映射的逆过程，最终得到一张新的图片。
 
-由上图可知低光环境是杆状细胞在感应（圆圈部分），而在高光环境中是锥状细胞在感应。
+无损压缩指最终得到的图片和原始图片没有区别或者没有肉眼可见的区别。
 
+## 2.3 后端
+
+量化会在一定程度上进行压缩，编码是对量化后的数据进行进一步的压缩。
+
+哈夫曼编码。这是图像压缩的后端部分。
+
+## 2.4 前端
+
+图像压缩的前端，以 JPEG 为例，首先会对图像进行分割，将图像分为 $8\times8$ 的独立小块，块与块之间不重叠。
+
+JPEG 本质上是色盲，无法对颜色进行处理，对于 RGB 三个通道进行的操作都是相同的。（事实上三个通道存在一定的相关性）
+
+JPEG 不是以 RGB 来理解，而是以 Y，Cb，Cr 三个通道来理解。其中 Y 是亮度通道，而后两个则是颜色通道。
+
+![Y，Cb，Cr 和 RGB 之间的转换](https://gitee.com/weijiew/pic/raw/master/img/20201127224033.png)
+
+通过这个 $3\times3$ 的矩阵实现了 RGB 到 Y，Cb，Cr 的转换。
+
+一般采用均方误差（MSE）来度量图像压缩过程的误差？
+
+均方误差是什么？
+
+https://www.coursera.org/learn/image-processing/lecture/N6T4l/4-the-discrete-cosine-transform-dct-duration-25-32-optional-break-at-12-13

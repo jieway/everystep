@@ -1,3 +1,21 @@
+# 概述
+
+* [cs144.github.io](https://github.com/CS144/cs144.github.io) Github 仓库地址。
+* [cs144.github.io](https://weijiew.gitee.io/cs144.github.io/) 我这里无法访问课程的在线页面，似乎被墙了。于是做了一个备份，部署到了 Gitee 上面，国内访问的话速度会比较快！
+* [CS144 计算机网络介绍](https://www.bilibili.com/video/av96841516) B站一个机翻版的完结视频，2019 秋季，比较新。
+* [TCP-Lab](https://github.com/huangrt01/TCP-Lab) 参考记录。
+* [gcidart/cs144](https://github.com/gcidart/cs144) 一位印度大哥的通关实验。
+
+# 实验
+
+* Lab 0: networking warmup
+* Lab 1: stitching substrings into a byte stream
+* Lab 2: the TCP receiver
+* Lab 3: the TCP sender
+* Lab 4: the TCP connection
+* Lab 5: the network interface
+* Lab 6: the IP router 
+
 # 因特网
 
 什么是因特网？

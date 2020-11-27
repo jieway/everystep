@@ -4,7 +4,7 @@
 
 学校发的教材是[林子雨](http://dblab.xmu.edu.cn/post/linziyu/)老师编写的教材，写的也可以。我认为黑马的更偏向实战和应用。
 
-[视频](https://www.bilibili.com/video/BV1JT4y1g7nM) / [讲义](https://pan.baidu.com/s/1rFA8lyxiCIz2EONItZp_bQ) 提取码：tiua
+[视频](https://www.bilibili.com/video/BV1df4y1U79z) / [讲义](https://pan.baidu.com/s/1rFA8lyxiCIz2EONItZp_bQ) 提取码：tiua
 
 # 磁盘
 
@@ -30,7 +30,3 @@ RAID 的进化过程分为多代。
 6. 第五代是将校验数据分散在了阵列中的所有磁盘上，没有采用专门的校验磁盘。可以认为是 RAID0 和 RAID1 的折中。
    1. 优点是避免了一个校验盘性能瓶颈的问题。
    2. 缺点是重建数据时 RAID5 的性能受影响大。
-
-# 环境搭建
-
-https://www.bilibili.com/video/BV1JT4y1g7nM?p=7

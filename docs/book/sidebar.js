@@ -48,18 +48,6 @@ module.exports = [
     ]
   },
   {
-    title: '🚀 算法',
-    children: [
-      'alg/ch0',
-      'alg/ch1',
-      'alg/ch2',
-      'alg/lc',
-      'alg/algs4',
-      'alg/pat',
-      'alg/offer'
-    ]
-  },
-  {
     title: '🍧 大数据',
     children: [
       'bd/ch0',
@@ -131,8 +119,7 @@ module.exports = [
     title: '👓 汇编语言',
     children: [
       'asm/ch0',
-      'asm/ch1',
-      'asm/ch2'
+      'asm/ch1'
     ]
   },
   {
@@ -193,12 +180,6 @@ module.exports = [
     title: '🍗 数据分析',
     children: [
       'da/ch0'
-    ]
-  },
-  {
-    title: '✍ my-ml',
-    children: [
-      'ml/ch0'
     ]
   },
   {
