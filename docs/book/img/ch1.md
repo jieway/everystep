@@ -1,4 +1,4 @@
-# 2.0 图像压缩（Image and Video Processing: From Mars to Hollywood with a Stop at the Hospital）
+# 2.0 图像压缩
 
 ## 2.1 为什么图像需要压缩？
 
