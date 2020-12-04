@@ -4,7 +4,7 @@
 set -e
 
 git add .
-git commit -m "🔥 数字图像处理更新"
+git commit -m "🔥 目录改动以及一些内容的更新"
 
 # * 🚀 完结：整节课做完。
 # * 💥 大更新

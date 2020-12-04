@@ -72,8 +72,13 @@ JPEG 不是以 RGB 来理解，而是以 Y，Cb，Cr 三个通道来理解。其
 
 通过这个 $3\times3$ 的矩阵实现了 RGB 到 Y，Cb，Cr 的转换。
 
-一般采用均方误差（MSE）来度量图像压缩过程的误差？
+一般采用均方误差（MSE）来度量图像压缩过程的误差。
 
-均方误差是什么？
+KLT 变换。
 
-https://www.coursera.org/learn/image-processing/lecture/N6T4l/4-the-discrete-cosine-transform-dct-duration-25-32-optional-break-at-12-13
+傅里叶变化。
+
+DCT 变换。
+
+MPEG 动态图像压缩。
+

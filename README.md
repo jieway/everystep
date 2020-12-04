@@ -7,22 +7,10 @@
 
 个人知识库，记录所学，如有错误还请指正。
 
-## 完成
-
 - [x] [⛽ MIT 6.NULL](https://weijiew.com/codestep/book/missing/ch0.html)
 - [x] [🚀 算法笔记](https://github.com/weijiew/my-alg)
-
-## 在做
-
-- [ ] [Spring-boot](https://weijiew.com/codestep/book/spr/ch0.html) 
 - [ ] [数字图像处理](https://weijiew.com/codestep/book/img/ch0.html)
 - [ ] [编译原理](https://weijiew.com/codestep/book/compile/ch0.html)
-
-> 为完成数据库的大作业而临时学习的，中途加进来的内容太多，计划打乱了不少
-> 该内容为实验性质，后续做出来后会剥离，作为文档的一部分。
-
-## 待完成
-
 - [ ] [CS61A](https://weijiew.com/codestep/book/cs61a/ch0.html) 
 - [ ] [CS61B](https://weijiew.com/codestep/book/cs61b/ch0.html) 
 - [ ] [CS61C]()

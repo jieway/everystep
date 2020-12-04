@@ -1,21 +1,80 @@
 # Pandas 学习
 
+> 本文内容参考自 https://www.kaggle.com/residentmario/creating-reading-and-writing 学习
+
 > Pandas 是开源数据处理库。基于 Numpy ，Pandas 纳入了大量库和一些标准的数据模型，提供了高效地操作大型数据集所需的函数和方法。
 
 > Pandas 的数据类型主要有以下几种，它们分别是：Series（一维数组），DataFrame（二维数组），Panel（三维数组），Panel4D（四维数组），PanelND（更多维数组）。其中 Series 和 DataFrame 应用的最为广泛，几乎占据了使用频率 90% 以上。
 
-Pandas 的数据类型主要有以下几种，它们分别是：Series（一维数组），DataFrame（二维数组），Panel（三维数组），Panel4D（四维数组），PanelND（更多维数组）。其中 Series 和 DataFrame 应用的最为广泛，几乎占据了使用频率 90% 以上。
+## 1.0 DataFrame
 
-首先需要导入相关包
+可以将其简单的理解为一张二维表格。
+
+基本结构:
 
 ```python
-import numpy as np
-import pandas as pd
-import warnings
-warnings.filterwarnings('ignore')
+pandas.DataFrame(data=None, index=None, columns=None)
 ```
 
-## Series
+### 1.1 导入包
+
+```python
+import pandas as pd
+```
+
+### 1.2 创建 DataFrame
+
+pandas 的 DataFrame 是一个二维数组。也就是一张表格。
+
+可以将其看成字典的形式，键是列名。值是一个列表，可以看成是该列对应的值。
+
+```python
+import pandas as pd
+c = pd.DataFrame({'a': [1, 2], 'b': [3, 4]})
+print(c)
+
+# 输出
+   a  b
+0  1  3
+1  2  4
+```
+
+相同的例子：
+
+```python
+import pandas as pd
+
+c = pd.DataFrame({'Bob': ['I liked it.', 'It was awful.'], 'Sue': ['Pretty good.', 'Bland.']})
+
+print(c)
+```
+
+### 1.3 行名
+
+一张表格不仅仅存在列名，每一行也存在名字，行名是索引(index)，根据行和列可以定位表格中的数据。
+
+```python
+import pandas as pd
+
+c = pd.DataFrame({'Bob': ['I liked it.', 'It was awful.'],
+                'Sue': ['Pretty good.', 'Bland.']},
+                index=['a','b'])
+
+print(c)
+
+# 输出：
+             Bob           Sue
+a    I liked it.  Pretty good.
+b  It was awful.        Bland.
+```
+
+实际上也就是第二个参数设定了索引。
+
+pd.DataFrame(a,b) 中 a 设定了数据源及其行名，b 设定了索引！
+
+## 2.0 Series
+
+Series 的中文意思是连续，串联的意思。本质上 Series 就是一维数组。
 
 基本结构：
 
@@ -24,6 +83,45 @@ pandas.Series(data=None, index=None)
 ```
 
 data 是字典或 numpy 中的 ndarray 对象。 index 是数据索引。
+
+### 2.1 使用 Series
+
+> 仅使用了 Series 的第一个参数！
+
+```python
+import pandas as pd
+
+a = pd.Series([1, 2, 3, 4, 5])
+print(a)
+
+# 输出
+0    1
+1    2
+2    3
+3    4
+4    5
+dtype: int64
+```
+
+其中第一列是对应索引（索引从零开始），第二列是该索引对应的值。
+
+### 2.2 设置索引
+
+可以设置索引类型，不再是默认的 0,1 ...
+
+```python
+import pandas as pd
+
+a = pd.Series([1, 2, 3, 4], index=["a1", "a2", "a3", "a4"])
+print(a)
+
+# 输出
+a1    1
+a2    2
+a3    3
+a4    4
+dtype: int64
+```
 
 ```python
 import pandas as pd
@@ -48,15 +146,6 @@ s = pd.Series(np.random.randn(5))
 s
 ```
 
-## DataFrame 
-
-DataFrame 就是一张表，二维数组。和 Series 的区别在于不但具备列索引还具备行索引。
-
-基本结构:
-
-```python
-pandas.DataFrame(data=None, index=None, columns=None)
-```
 
 创建一张二维表。
 
@@ -114,9 +203,13 @@ df.colums # 查看列名
 df.shape # 查看行列数
 ```
 
-## 索引
 
-### iloc
+
+
+
+## 3.0 索引
+
+### 3.1 iloc
 
 可接受的参数：
 
@@ -139,7 +232,7 @@ df.iloc[] 的 [[行]，[列]] 里面可以同时接受行和列的位置，
 df.iloc[[1,3,5],[1]] # 选中了 1 3 5 行的第 1 列数据。
 ```
 
-### loc
+### 3.2 loc
 
 可接受类型：
 1.  单个标签。例如：`2` 或 `'a'`，这里的 `2` 指的是标签而不是索引位置。
@@ -154,7 +247,7 @@ df.iloc[[1,3,5],[1]] # 选中了 1 3 5 行的第 1 列数据。
 df.loc[:, 'Total Population':'Total Males']
 ```
 
-## 数据删减
+## 4.0 数据删减
 
 ```python
 df.drop(labels=['Median Age', 'Total Males'], axis=1) # 删除对应列，axis = 0 表示删除对应的行
@@ -162,7 +255,7 @@ df.drop_duplicates() # 去重，根据 axis 参数来设定按列或按行去重
 df.dropna() # 删除缺失值。
 ```
 
-## 数据填充
+## 5.0 数据填充
 
 ```python
 df = pd.DataFrame(np.random.rand(9, 5), columns=list('ABCDE'))

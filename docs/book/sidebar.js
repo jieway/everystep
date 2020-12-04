@@ -57,7 +57,9 @@ module.exports = [
   {
     title: '🎯 数字图像处理',
     children: [
-      'img/ch0'
+      'img/ch0',
+      'img/ch1',
+      'img/ch2'
     ]
   },
   {
@@ -195,5 +197,12 @@ module.exports = [
       'spr/ch1',
       'spr/ch2'
     ]
+  },
+  {
+    title: '🍕 设计模式',
+    children: [
+      'pattern/ch0'
+    ]
+
   }
 ]
