@@ -15,10 +15,8 @@
 - [ ] [编译原理](https://weijiew.com/codestep/book/compile/ch0.html)
 - [ ] [CS61A](https://weijiew.com/codestep/book/cs61a/ch0.html) 
 - [ ] [CS61B](https://weijiew.com/codestep/book/cs61b/ch0.html) 
-- [ ] [CS61C]()
-- [ ] [CSAPP-lab](https://weijiew.com/codestep/book/csapp/ch1.html) 十一个实验和阅读笔记。
+- [ ] [CSAPP-lab](https://weijiew.com/codestep/book/csapp/ch1.html) 
 - [ ] [计算机组成原理](https://weijiew.com/codestep/book/co/ch0.html) 哈工大李志军。
-- [ ] [数据结构]()
 ## 提交标志含义
 
 * 🚀 完结：整节课做完。
