@@ -171,12 +171,6 @@ module.exports = [
     ]
   },
   {
-    title: '🍗 数据分析',
-    children: [
-      'da/ch0'
-    ]
-  },
-  {
     title: '🐉 CS 143 编译器',
     children: [
       'cs143/ch0'
@@ -195,6 +189,5 @@ module.exports = [
     children: [
       'pattern/ch0'
     ]
-
   }
 ]
