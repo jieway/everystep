@@ -55,14 +55,6 @@ module.exports = [
     ]
   },
   {
-    title: '🎯 数字图像处理',
-    children: [
-      'img/ch0',
-      'img/ch1',
-      'img/ch2'
-    ]
-  },
-  {
     title: '💫 数据结构',
     children: [
       'ds/ch0',

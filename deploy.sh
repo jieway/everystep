@@ -4,7 +4,7 @@
 set -e
 
 git add .
-git commit -m "🔥 目录改动以及一些内容的更新"
+git commit -m "🚀 剥离数字图像模块"
 
 # * 🚀 完结：整节课做完。
 # * 💥 大更新
