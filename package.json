@@ -8,7 +8,7 @@
     "deploy": "sh deploy.sh"
   },
   "repository": "https://github.com/weijiew/codestep",
-  "author": "weijiew <jiewei1999@foxmail.com>",
+  "author": "weijiew <jiewei314@gmail.com>",
   "license": "CC-BY-NC-SA-4.0",
   "dependencies": {
     "@markspec/vuepress-plugin-footnote": "^1.1.1",

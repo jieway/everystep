@@ -1,7 +1,7 @@
 const versioning = require('./lib/versioning.js')
 
 module.exports = {
-  base: '/codestep/',
+  base: '/',
   title: 'codestep',
   description: '记一些笔记🌼',
   markdown: {
