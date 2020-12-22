@@ -1,102 +1,64 @@
 # Lab 00
 
-[lab00 地址](https://inst.eecs.berkeley.edu/~cs61a/sp20/lab/lab00/) 。
+[lab00 实验地址](https://inst.eecs.berkeley.edu/~cs61a/sp20/lab/lab00/) 。
 
 这个实验主要是环境搭建和 Python 的基本语法学习。
 
-如果没有学过 Python 的语法直接做会有些吃力。
+如果没有学过 Python 略微有些吃力。其实没什么问题，需要的前置知识并不多。 Just do it！
 
-### 语法
+安装提示首先下载 lab00.zip 文件，然后解压，开始做实验！
+
+解压 lab00.zip 后，其中文件内容如下:
+
+    .
+    ├── lab00.ok
+    ├── lab00.py
+    ├── ok
+    └── tests
+        ├── __init__.py
+        └── python-basics.py
+
+实验内容目前来看分为两种类型，一种是在命令行中根据题目交互式写答案，另一种则是写代码然后在命令行中输入命令进行测试。
+
+对于此例而言，前者是通过调用 `test/python-basics.py` 来实现，后者则是在 `lab00.py` 文件中编写代码来实现。
+
+而其中 ok 程序则是用来判断程序正确与否的文件，其本质是已经编译好的二进制文件。
+
+例如第一个作业：
+
+![image-1](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.1jy3hrqj6jmo.png)
+
+对于前者而言，如果答对，文件会解锁，也就是通过验证后如下内容会显示正确的答案，而非目前所见的乱码。其实目前所见的就是正确答案的加密字符。
+
+![image-2](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.5sit9pwx0i80.png)
+
+做完之后会提示输入邮箱，不用理会，ctrl + c 中断即可。
+
+![image-3](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.4opv6uv6r560.png)
+
+如果嫌提示输入邮箱烦人，可以在命令后加上 `--local` 参数，表示本地测试。建议加上 `--local` 。
+
+通过测试后，文件解锁，加密内容变为正确答案，注意如果不加 `--local` 参数，即使全部答对题目，但因为 ctrl + c 没有正常结束程序，所以加密内容不会还原。
+
+![image-4](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.5s0lhznb7m40.png)
+
+我是从 Doing the assignment 开始的，之前的内容为环境配置以及一些 Linux 命令学习。
+
+## Doing the assignment
 
 下面的几道测试题，用于判断文中提到的 python 语法。
 
 在下载好的 lab00 文件的工作目录中执行命令。
 
-例如我的工作目录如下，注意网页中写的是 python3 ，我的环境略有差异，采用的是 python 执行的，差别不大。
+直接在当前的工作空间中输入命令即可：`python3 ok -q python-basics -u`
 
-```python
-wije@LAPTOP-PJ3DJQFQ MINGW64 /f/cs61a/lab/lab00 (master)
-$ python ok -q python-basics -u
-```
+![image-5](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.5d8hx2d9wc40.png)
 
-交互式输入答案。
+交互式输入答案即可。
 
-```python
-=====================================================================
-Assignment: Lab 0
-OK, version v1.15.0
-=====================================================================
+我已经通过了这个文件，为避免篇幅过长，具体可查看此处: [weijiew/cs61a](https://github.com/weijiew/cs61a/blob/master/lab/lab00/tests/python-basics.py) 。
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Unlocking tests
-
-At each "? ", type what you would expect the output to be.
-Type exit() to quit
-
----------------------------------------------------------------------
-Python Basics > Suite 1 > Case 1
-(cases remaining: 2)
-
-What would Python display? If you get stuck, try it out in the Python
-interpreter!
-
->>> 10 + 2
-? 12
--- OK! --
-
->>> 7 / 2
-? 3.5
--- OK! --
-
->>> 7 // 2
-? 3
--- OK! --
-
->>> 7 % 2                       # 7 modulo 2, equivalent to the remainder of 7 // 2
-? 1
--- OK! --
-
----------------------------------------------------------------------
-Python Basics > Suite 2 > Case 1
-(cases remaining: 1)
-
-What would Python display? If you get stuck, try it out in the Python
-interpreter!
-
->>> x = 20
->>> x + 2
-? 22
--- OK! --
-
->>> x
-? 20
--- OK! --
-
->>> y = 5
->>> y += 3                      # Equivalent to y = y + 3
->>> y * 2
-? 16
--- OK! --
-
->>> y //= 4                     # Equivalent to y = y // 4
->>> y + x
-? 22
--- OK! --
-
----------------------------------------------------------------------
-OK! All cases for Python Basics unlocked.
-```
-
-最后会出现以下信息，提示你输入邮箱，在命令中加入 --local 则可避免。
-
-```python
-OK! All cases for Python Basics unlocked.
-
-Performing authentication
-Please enter your school email (.edu):
-```
-
-### coding
+## coding
 
 通过给定的操作符，最终结果等于 2020 即可。
 
@@ -111,25 +73,6 @@ def twenty_twenty():
     return 2019+1
 ```
 
-通过键入命令来对代码进行测试。
+通过键入命令 `python3 ok --local` 来对代码进行测试，测试结果如下。没有失败的测试用例则表示通过。
 
-```shell
-wije@LAPTOP-PJ3DJQFQ MINGW64 /f/cs61a/lab/lab00 (master)
-$ python ok --local
-=====================================================================
-Assignment: Lab 0
-OK, version v1.15.0
-=====================================================================
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Running tests
-
-
-There are still locked tests! Use the -u option to unlock them
----------------------------------------------------------------------
-Test summary
-    Locked: 1
-    1 test cases passed! No cases failed.
-
-Cannot backup when running ok with --local.
-```
+![image-6](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.6rndwletqjk0.png)

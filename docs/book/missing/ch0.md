@@ -26,12 +26,11 @@
 
 # 环境
 
-如果是 windows 平台的话建议使用 WSL 来体验 Linux 。
-不建议使用虚拟机，仅安装配置就需要很久，我之前花了好几天才配好。
-WSL 下载安装的话几分钟就好了。
+如果是 windows 平台的话建议使用 WSL 来体验 Linux ，虚拟机安装耗时略久， WSL 下载安装的话几分钟就好了。
 
-我之前写过一篇 WSL 的配置指南，在我的博客里面，可以参考使用。
-文章地址：https://weijiew.com/22/
+WSL 即 Windows Subsystem Linux ，通俗的理解则是在 windows 系统中内嵌了一个 Linux 子系统。
+
+我之前写过一篇 WSL 的配置指南，可参考使用。文章地址：https://blog.weijiew.com/2020/08/7-wsl-0/ 。
 
 # 课堂上学不到的东西
 
