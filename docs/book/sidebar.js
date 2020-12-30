@@ -44,7 +44,8 @@ module.exports = [
       'compile/ch0',
       'compile/ch1',
       'compile/ch2',
-      'compile/ch3'
+      'compile/ch3',
+      'compile/ch4'
     ]
   },
   {
@@ -135,6 +136,13 @@ module.exports = [
     ]
   },
   {
+    title: '🤖 CS 231N',
+    children: [
+      'cs231N/ch0'
+    ]
+  },
+
+  {
     title: '🍳 政治',
     children: [
       'pol/ch0',
@@ -174,14 +182,6 @@ module.exports = [
     title: '🐉 CS 143 编译器',
     children: [
       'cs143/ch0'
-    ]
-  },
-  {
-    title: '🌻 Spring Boot',
-    children: [
-      'spr/ch0',
-      'spr/ch1',
-      'spr/ch2'
     ]
   },
   {

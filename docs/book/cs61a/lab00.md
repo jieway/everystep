@@ -70,9 +70,13 @@ def twenty_twenty():
     >>> twenty_twenty()
     2020
     """
-    return 2019+1
+    return 2019 + 1
 ```
 
 通过键入命令 `python3 ok --local` 来对代码进行测试，测试结果如下。没有失败的测试用例则表示通过。
 
 ![image-6](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.6rndwletqjk0.png)
+
+## 总结
+
+该实验主要是熟悉环境以及如何测试，python 的一些简单语法。
