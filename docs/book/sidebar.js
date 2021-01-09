@@ -126,21 +126,21 @@ module.exports = [
       'os/rcore-1'
     ]
   },
-  {
-    title: '🎉 深度学习',
-    children: [
-      'dl/ch0',
-      'dl/ch1',
-      'dl/ch2',
-      'dl/ch3'
-    ]
-  },
-  {
-    title: '🤖 CS 231N',
-    children: [
-      'cs231N/ch0'
-    ]
-  },
+  // {
+  //   title: '🎉 深度学习',
+  //   children: [
+  //     'dl/ch0',
+  //     'dl/ch1',
+  //     'dl/ch2',
+  //     'dl/ch3'
+  //   ]
+  // },
+  // {
+  //   title: '🤖 CS 231N',
+  //   children: [
+  //     'cs231N/ch0'
+  //   ]
+  // },
 
   {
     title: '🍳 政治',
