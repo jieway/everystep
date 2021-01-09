@@ -1,5 +1,5 @@
 git add .
-git commit -m "💥 cs61a hw01 refactor"
+git commit -m "💥 cs61a lab01 refactor"
 
 # * 🚀 完结：整节课做完。
 # * 💥 大更新
