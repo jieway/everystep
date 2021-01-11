@@ -4,53 +4,9 @@
 
 简单的数组索引，如果越界直接填 `error` 即可。
 
-```python
-$ python ok -q list-indexing -u
-=====================================================================
-Assignment: Lab 5
-OK, version v1.15.0
-=====================================================================
+`python3 ok -q list-indexing -u --local`
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Unlocking tests
-
-At each "? ", type what you would expect the output to be.
-Type exit() to quit
-
----------------------------------------------------------------------
-List Indexing > Suite 1 > Case 1
-(cases remaining: 2)
-
-What would Python display? If you get stuck, try it out in the Python
-interpreter!
-
->>> x = [1, 3, [5, 7], 9] # Write the expression that indexes into x to output the 7
-? x[2][1]
--- OK! --
-
->>> x = [[3, [5, 7], 9]] # Write the expression that indexes into x to output the 7
-? x[0][1][1]
--- OK! --
-
----------------------------------------------------------------------
-List Indexing > Suite 2 > Case 1
-(cases remaining: 1)
-
-What would Python display? If you get stuck, try it out in the Python
-interpreter!
-
->>> lst = [3, 2, 7, [84, 83, 82]]
->>> lst[4]
-? error
--- OK! --
-
->>> lst[3][0]
-? 84
--- OK! --
-
----------------------------------------------------------------------
-OK! All cases for List Indexing unlocked.
-```
+答案：[list-indexing.py](https://github.com/weijiew/cs61a/blob/master/lab/lab05/tests/list-indexing.py)
 
 ## Q2: Couple
 

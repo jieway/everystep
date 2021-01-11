@@ -4,8 +4,6 @@
 * 中文版网页和仓库地址：[missing-semester-cn](https://missing-semester-cn.github.io) / [repo](https://github.com/missing-semester-cn/missing-semester-cn.github.io)
 * B 站有一个机翻版的视频 ：[bilibili](https://www.bilibili.com/video/av86911412)
 
-> 我这里无法访问网页，不知道是不是被墙了。我采取的措施是将仓库下载下来，直接查看文件内容。没有通过网页阅读。不过殊途同归。
-
 # 概述
 这个课程的名称是缺失的课程，也就课堂上学不到的知识，是讲如何使用工具的。
 
