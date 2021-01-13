@@ -30,7 +30,9 @@ module.exports = [
       'cs61a/lab05',
       'cs61a/lab04',
       'cs61a/hw04',
-      'cs61a/lab06'
+      'cs61a/lab06',
+      'cs61a/lab07',
+      'cs61a/lab08'
     ]
   },
   {
