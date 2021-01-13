@@ -24,6 +24,10 @@
 - [🥞 CSAPP-lab](https://weijiew.com/book/csapp/ch1.html) 
 - [🌌 计算机组成原理](https://weijiew.com/xbook/co/ch0.html) 
 
+## 408 王道
+
+- [🚧 数据结构](https://cs.weijiew.com/book/ds/ch0.html)
+
 ## 提交标志含义
 
 * 🚀 完结：整节课做完。

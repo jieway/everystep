@@ -1,5 +1,5 @@
 git add .
-git commit -m "💥 cs61a lab05 done"
+git commit -m "💥 cs61a lab07 done lab08 add"
 
 # * 🚀 完结：整节课做完。
 # * 💥 大更新
