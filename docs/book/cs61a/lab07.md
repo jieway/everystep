@@ -1,4 +1,4 @@
-# Lab 7
+# Lab 07
 
 ## Q1: WWPD: Linked Lists
 
