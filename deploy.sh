@@ -1,5 +1,5 @@
 git add .
-git commit -m "🚀 cs61a stop"
+git commit -m "🔥 update 数据结构"
 
 # * 🚀 完结：整节课做完。
 # * 💥 大更新
