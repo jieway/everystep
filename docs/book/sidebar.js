@@ -73,6 +73,13 @@ module.exports = [
     ]
   },
   {
+    title: '🍋 CS144',
+    children: [
+      'cs144/ch0',
+      'cs144/lab0'
+    ]    
+  },
+  {
     title: '🚗 计算机网络',
     children: [
       'net/ch0',
@@ -82,9 +89,7 @@ module.exports = [
       'net/ch4',
       'net/ch5',
       'net/ch7',
-      'net/ch8',
-      'net/cs144.md',
-      'net/cs144/lab0.md'
+      'net/ch8'
     ]
   },
   {

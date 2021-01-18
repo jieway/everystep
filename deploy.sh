@@ -1,5 +1,5 @@
 git add .
-git commit -m "🔥 update 计组"
+git commit -m "🚀 add cs144"
 
 # * 🚀 完结：整节课做完。
 # * 💥 大更新
