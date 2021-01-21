@@ -1,5 +1,5 @@
 git add .
-git commit -m "🔥 update cs144 lab0"
+git commit -m "🔥 fix bug"
 
 # * 🚀 完结：整节课做完。
 # * 💥 大更新

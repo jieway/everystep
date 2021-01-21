@@ -1,4 +1,4 @@
-## lab0： 网络热身
+## Lab 0：网络热身
 
 简介：使用 C++ 写一个获取网页的程序，这个程序可以实现网络关键的抽象（内存中），大概消耗 2 - 6 小时。后续的实验要在前置 lab 的基础上。
 
@@ -17,7 +17,26 @@ CS144 的作业需要在 GNU/Linux 系统之上进行并且要有 C++ 2017 版�
 
 安装 Linux 系统，官方提供的三种安装方式，分别是安装官方提供的镜像，其次是自己安装 Ubuntu 18.04 LTS 版本然后运行网站中所提供的工具安装脚本，最后是自己摸索。
 
-我选择的是第一种，也就是下载官方所提供的镜像。也就是按照这一页的内容来：https://stanford.edu/class/cs144/vm_howto/vm-howto-image.html
+### 1.1 WSL
+
+> 我最初采用的是安装官方镜像，后来装 IDE 的时候出现了一些问题，于是改为了 WSL 。如果你的系统是 WIN10 采用 WSL 来做耗时相对耗时较少。以下是配置步骤。其实就是[第二种安装](https://stanford.edu/class/cs144/vm_howto/vm-howto-iso.html)方式。只不过把前面的系统安装替换为了 WSL 。
+
+1. 打开微软商店，搜索 WSL ，安装 Ubuntu 20.04 LTS ，虽然官方的环境是 18.04 LTS 经过我的测试 20.04 也是可用的。wsl 下载很快，但是配置的时候有点慢，需要等十几分钟。
+2. 如果没有 Windows Terminal 的话建议安装 Windows Terminal。同样是在微软商店。
+3. 然后下载安装脚本： `wget https://web.stanford.edu/class/cs144/vm_howto/setup_dev_env.sh `
+4. 记得换源，不然后续执行会非常慢！
+5. 执行脚本：`bash ./setup_dev_env.sh` （即使换源这个花费时间也比较长，大约 10-20 分钟。不换的话可想而知！）
+6. IDE 采用 vscode 。vscode 需要安装 remote wsl 插件。
+7. 在 WSL 中输入 code 。（表示在 WSL 中安装 vscode）
+8. 切换到后续下载代码的位置，输入命令 `code .` 即可打开。（表示在当前文件夹中打开 vscode）
+
+与 WSL 相关的更多内容可参考 [dowww](https://github.com/spencerwooo/dowww) 。上诉方法是目前为止我认为耗时最少的。
+
+### 1.2 镜像安装
+
+> 以下是第一种环境配置的摸索，此方法耗时部分在于镜像下载。
+
+我最初选择的是第一种，也就是下载官方所提供的镜像。也就是按照这一页的内容来：https://stanford.edu/class/cs144/vm_howto/vm-howto-image.html
 
 注意：Windows 系统的话需要先下载虚拟机（VirtualBox），页面中有写到，按照步骤来就可以了。
 
@@ -41,7 +60,7 @@ CS144 的作业需要在 GNU/Linux 系统之上进行并且要有 C++ 2017 版�
 
 ![image-2](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.41e5ycv81yy0.png)
 
-记得换源！
+最后记得换源！
 
 ## 2.0 手动联网
 
@@ -81,4 +100,52 @@ CS144 的作业需要在 GNU/Linux 系统之上进行并且要有 C++ 2017 版�
 服务端和客户端都可实现交互，注意是在一个虚拟机中。
 
 ## 3.0 使用系统套接字编写程序
+
+通过数据交付之时产生的一系列问题介绍了 TCP 产生的原因。本次实验比较简单，简单使用系统内置的 TCP 。后续的实验就需要自己的实现 TCP 啦！
+
+git clone https://github.com/cs144/sponge
+
+### 3.1 构建起步代码
+
+1. `git clone https://github.com/cs144/sponge` 下载
+2. 不允许公开！
+3. `cd sponge` 进入该文件夹中。
+4. `mkdir build` 创建 build 文件夹，用于存放编译后的文件。
+5. `cd build` 进入 build 文件中。
+6. `cmake ..` 构建编译方式。
+7. `make` 编译代码
+8. 需要提交实验报告 `sponge/writeups/lab0.md` 是要提交实验报告的位置，这个可以略过！
+
+### 3.2 现代 C++
+
+这个实验作业用到了 C++ 2011 中的新特性。相关信息可以从 https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines 中参考。
+
+使用 git 的时候尽量做小范围的改动并提供描述清晰的 commit 。理想状况是每次提交都能通过更多的测试数据。这种提交方式方便 debugging 。
+
+git 学习参考资料：https://guides.github.com/introduction/git-handbook/
+
+### 3.3 阅读 Sponge 文档
+
+1. 阅读：https://cs144.github.io/doc/lab0/
+
+阅读
+
+### 3.4 编写 webget 程序
+
+文件位于 `../apps/webget.cc`
+
+阅读代码：
+
+1. 第 24 行代码：`int main(int argc, char *argv[])` 。其中 argc 表示命令行中输入参数的个数，而 argv 则是一个字符数组，其中 argv[0] 存的是文件名，后续存的则是参数。
+2. 第 27 行代码：`abort()` 函数属于 stdlib.h 头文件中的函数，表示终止当前进程，直接从调用的地方跳出。argc 表示无参数，此时程序终止。
+3. `const string &host` 采用 const 修饰形参是为了避免新参值被修改，& 则表示取地址，也就是传值。
+
+
+## 参考
+
+1. [C语言中 int main(int argc,char *argv[])的两个参数详解](https://blog.csdn.net/weixin_40539125/article/details/82585792)
+
+
+
+
 
