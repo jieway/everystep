@@ -17,7 +17,7 @@
 本仓库所记内容不仅仅为知识的复述，更多的为学习过程中的思考与总结。
 
 - [⛽ MIT 6.NULL](https://cs.weijiew.com/book/missing/ch0.html)
-- [🍋 CS144 计算机网络](https://cs.weijiew.com/book/co/ch0.html) 
+- [🍋 CS144 计算机网络](https://cs.weijiew.com/book/cs144/ch0.html) 
 - [🤡 CS143 编译原理](https://weijiew.com/book/compile/ch0.html)
 - [💥 CS61A](https://weijiew.com/book/cs61a/ch0.html) 
 - [💫 CS61B](https://weijiew.com/book/cs61b/ch0.html) 
