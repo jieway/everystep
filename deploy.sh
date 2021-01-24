@@ -1,5 +1,5 @@
 git add .
-git commit -m "🔥 update 数据结构 408 "
+git commit -m "🔥 update CS 144 "
 
 # * 🚀 完结：整节课做完。
 # * 💥 大更新
