@@ -1,5 +1,5 @@
 git add .
-git commit -m "🔥 update 数据结构-队列 "
+git commit -m "🔥 update cs144 lab0"
 
 # * 🚀 完结：整节课做完。
 # * 💥 大更新

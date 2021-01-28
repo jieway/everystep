@@ -1,4 +1,4 @@
-## Lab 0：网络热身
+# Lab 0：网络热身
 
 简介：使用 C++ 写一个获取网页的程序，这个程序可以实现网络关键的抽象（内存中），大概消耗 2 - 6 小时。后续的实验要在前置 lab 的基础上。
 
@@ -119,11 +119,11 @@ git clone https://github.com/cs144/sponge
 
 ### 3.2 现代 C++
 
-这个实验作业用到了 C++ 2011 中的新特性。相关信息可以从 https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines 中参考。
+介绍了一些使用 C++ 一些要避免以及要注意的地方！
 
-使用 git 的时候尽量做小范围的改动并提供描述清晰的 commit 。理想状况是每次提交都能通过更多的测试数据。这种提交方式方便 debugging 。
+使用 const 传参可以避免变量中所存储的值被修改。如果是传值的话需要拷贝副本消耗空间，而传址可能会导致变量被修改所以加上 const 来保护。
 
-git 学习参考资料：https://guides.github.com/introduction/git-handbook/
+为了方便 debug ，git 提交时尽可能频繁 commit ，并注明每次 commit 的信息。
 
 ### 3.3 阅读 Sponge 文档
 
@@ -132,14 +132,37 @@ git 学习参考资料：https://guides.github.com/introduction/git-handbook/
 
 ### 3.4 编写 webget 程序
 
-文件位于 `../apps/webget.cc`
-
-阅读代码：
+文件位于 `../apps/webget.cc` 。首先阅读代码，建议先看 main 函数。
 
 1. 第 24 行代码：`int main(int argc, char *argv[])` 。其中 argc 表示命令行中输入参数的个数，而 argv 则是一个字符数组，其中 argv[0] 存的是文件名，后续存的则是参数。
 2. 第 27 行代码：`abort()` 函数属于 stdlib.h 头文件中的函数，表示终止当前进程，直接从调用的地方跳出。argc 表示无参数，此时程序终止。
 3. `const string &host` 采用 const 修饰形参是为了避免新参值被修改，& 则表示取地址，也就是传值。
 
-## 参考
+其实就是输入 host 和 path 两个参数，然后调用 get_URL 这个函数。
+
+```cpp
+    TCPSocket sock;
+    sock.connect(Address(host,"http"));
+    // 这串内容是仿照着 2.1 的内容而写，也就是将手动输入的拼接成字符串
+    // 在 Http 协议中 \r\n 表示换行！
+    sock.write("GET " + path + " HTTP/1.1\r\nHost: " + host + "\r\n\r\n");
+    sock.shutdown(SHUT_WR);
+    while(!sock.eof()){
+        cout << sock.read();
+    }
+    sock.close();
+    return;
+```
+
+* 首先在 build 目录下执行 make 命令对代码进行重新编译，因为修改代码了。
+* 然后判断程序是否能够正确运行 `./apps/webget cs144.keithw.org /hello` 
+* 最后采用测试用例判断 `make check_webget`
+
+## 4. 基于内存的可靠字节流
+
+* [byte_stream.hh](https://github.com/weijiew/TCP/blob/main/libsponge/byte_stream.hh)
+* [byte_stream.cc](https://github.com/weijiew/TCP/blob/main/libsponge/byte_stream.cc)
+
+## 5. 参考
 
 1. [C语言中 int main(int argc,char *argv[])的两个参数详解](https://blog.csdn.net/weixin_40539125/article/details/82585792)
