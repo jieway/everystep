@@ -10,9 +10,9 @@
 
 * [Github 课程主页](https://github.com/CS144/cs144.github.io) / [cs144.github.io (Gitee)](https://weijiew.gitee.io/cs144.github.io/)
 
-* [sponge 代码](https://github.com/CS144/sponge) / [Sponge (Gitee)](https://gitee.com/weijiew/sponge) 备份。
+* [sponge 代码](https://github.com/CS144/sponge) / [Sponge (Gitee)](https://gitee.com/weijiew/sponge)
 
-* [CS144 视频](https://www.bilibili.com/video/av96841516) B站机翻完结视频，2019 秋季。
+* [B 站视频](https://www.bilibili.com/video/av96841516) 机翻完结视频，2019 秋季。
 
 * [TCP-Lab](https://github.com/huangrt01/TCP-Lab) 参考记录。
 

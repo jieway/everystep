@@ -9,3 +9,15 @@ Application,Transport,Network,Link.
 
 Transport:提供了可信赖的数据交付功能，保证数据被接收。TCP 协议就在这一层。与之相应的是 UDP 协议，该协议不保证数据被可靠交付。
 
+早期的网络是四层：
+
+![figure-1](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.3xgo7qbrela0.png)
+
+链路层（Link）由链接和路由组成，数据包包含了要传递的数据以及目的地。
+
+IP 处于网络层（Network），将主机连接在了一起。
+
+ IP 协议不能保证可信赖的数据交付功能，此功能在 IP 层之上由其他协议实现！
+
+传输层中主要有 TCP 协议。
+
