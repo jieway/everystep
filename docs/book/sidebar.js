@@ -76,7 +76,8 @@ module.exports = [
     title: '🍋 CS144',
     children: [
       'cs144/ch0',
-      'cs144/lab0'
+      'cs144/lab0',
+      'cs144/lab1'
     ]    
   },
   {
