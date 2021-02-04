@@ -4,7 +4,7 @@ This directory contains the files that you will need to run the CS:APP
 Data Lab, which helps develops the student's understanding of bit
 representations, two's complement arithmetic, and IEEE floating point.
 
-这个目录中包含了一些你在运行 CS:APP 时需要的文件，这些文件可以帮助学生理解位表示法，补码运算和 IEEE 浮点数。
+> 这个目录中包含了一些你在运行 CS:APP 时需要的文件，这些文件可以帮助学生理解位表示法，补码运算和 IEEE 浮点数。
 
 For fun, we've also provided a new user-level HTTP-based "Beat the
 Prof" contest that replaces the old email-based version. The new
@@ -12,14 +12,12 @@ contest is completely self-contained and does not require root
 password.  The only requirement is that you have a user account on a
 Linux machine with an IP address.
 
-为了更有趣，我们还提供了一个基于 HTTP 用户级的“Beat the Prof”比赛，这个比赛取代了旧的基于邮件的版本。
-这个比赛完全自足并且不需要 root 密码。
-唯一需要的是你在带 IP 地址的 Linux 机器上有一个用户账户。
+> 为了更有趣，我们还提供了一个基于 HTTP 用户级的“Beat the Prof”比赛，这个比赛取代了旧的基于邮件的版本。这个比赛完全自足并且不需要 root 密码。唯一需要的是你在带 IP 地址的 Linux 机器上有一个用户账户。
 
 System requirements: Uses bison and flex to build dlc.
 
 ************
-1. Overview
+1. 概述
 ************
 
 In this lab, students work on a C file, called bits.c, that consists
@@ -31,10 +29,12 @@ restricted set of C arithmetic and logical operators. For the
 floating-point puzzles they can use conditionals and arbitrary
 operators.
 
-在这个实验中，学生
+> 在这个实验中，学生在编写一个被叫做 bits.c 的文件，其中包含了一系列的编程 “puzzles”（题） 。每一个题是一个空函数体，需要被实现一个指定的数学函数，例如绝对值函数。学生必须只使用直线的C代码和一组受限制的C算术和逻辑运算符来解决非浮点难题。对于浮点题，他们可以使用条件和任意运算符。
 
 Students use the following three tools to check their work.
 Instructors use the same tools to assign grades.
+
+> 学生利用以下三种工具检查自己的作业。教员使用相同的工具来分配成绩。
 
 1. dlc: A "data lab compiler" that checks each function in bits.c for
 compliance with the coding guidelines, checking that the students use
@@ -42,20 +42,28 @@ less than the maximum number of operators, that they use only
 straight-line code, and that they use only legal operators. The
 sources and a Linux binary are included with the lab.
 
+> dlc: 一个 data lab 的编译器，用于检查 bits.c 的每一个函数功能是否符合编码规则，检查学生所使用的操作符号小于最大值，只使用 straight-line code 并且只是用合法的操作符。源码和 linux 二进制版本的都在实验中。
+
 2. btest: A test harness that checks the functions in bits.c for
 correctness. This tool has been significantly improved, now checking
 wide swaths around the edge cases for integers and floating point
 representations such as 0, Tmin, denorm-norm boundary, and inf.
 
+> btest: 用于检查 bits.c 中的函数是否正确。该工具目前已经有了很大的改进，现在可以检查整数和浮点数的边缘测试用例。例如 0 ，Tmin，正态边界和无穷。
+
 3. driver.pl: A autograding driver program that uses dlc and btest to
 check each test function in bits.c for correctness and adherence to
 the coding guidelines
+
+> driver.pl: 一个自动评分的程序，使用 dlc 和 btest 来检查每一个 bits.c 每一个函数的正确性和是否符合编码规范。
 
 The default version of the lab consists of 15 puzzles, in
 ./src/selections.c, chosen from a set of 73 standard puzzles defined
 in the directory ./src/puzzles/. You can customize the lab from term
 to term by choosing a different set of puzzles from the standard set
 of puzzles.
+
+> 
 
 You can also define new puzzles of your own and add them to the
 standard set. See ./src/README for instructions on how to add new
@@ -66,14 +74,14 @@ O'Hallaron, droh@cs.cmu.edu) so that I can add them to the standard
 set of puzzles in the data lab distribution.
 
 ********
-2. Files
+2. 文件
 ********
 
 All CS:APP labs have the same simple top-level directory structure:
 
-Makefile	   Builds the entire lab.
-README		   This file.
-src/		   Contains all source files for the lab.
+Makefile	   构建实验。
+README		   实验介绍。
+src/		   包含实验室的所有源文件。
 datalab-handout/   Handout directory that goes to the students. Generated
 		   by the Makefile from files in ./src. Never modify anything
 		   in this directory. 
@@ -83,7 +91,7 @@ writeup/	   Sample Latex lab writeup.
 contest/           Everything needed for the optional "Beat the Prof" contest.
 
 ********************
-3. Building the Lab
+1. 构建实验
 *******************
 
 Step 0. If you decide to run the "Beat the Prof" contest (section 5),
@@ -91,6 +99,7 @@ then edit the ./contest/Contest.pm file so that the driver knows where
 to send the results. See ./contest/README for the simple
 instructions. If you decide *not* to offer the contest, then do
 nothing in this step.
+
 
 Step 1. Select the puzzles you want to include by editing the file
 ./src/selections.c.
