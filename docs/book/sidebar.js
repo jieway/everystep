@@ -187,12 +187,12 @@ module.exports = [
       'cpp/ch12.md'
     ]
   },
-  {
-    title: '🐉 CS 143 编译器',
-    children: [
-      'cs143/ch0'
-    ]
-  },
+  // {
+  //   title: '🐉 CS 143 编译器',
+  //   children: [
+  //     'cs143/ch0'
+  //   ]
+  // },
   {
     title: '🍕 设计模式',
     children: [

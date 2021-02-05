@@ -18,11 +18,10 @@
 
 - [⛽ MIT 6.NULL](https://cs.weijiew.com/book/missing/ch0.html)
 - [🍋 CS144 计算机网络](https://cs.weijiew.com/book/cs144/ch0.html) 
-- [🤡 CS143 编译原理](https://cs.weijiew.com/book/compile/ch0.html)
 - [💥 CS61A](https://cs.weijiew.com/book/cs61a/ch0.html) 
 - [💫 CS61B](https://cs.weijiew.com/book/cs61b/ch0.html) 
 - [🚀 算法笔记](https://github.com/weijiew/my-alg)
-- [🥞 CSAPP-lab](https://cs.weijiew.com/book/csapp/ch1.html) 
+- [🥞 CS:APP-lab](https://cs.weijiew.com/book/csapp/ch1.html) 
 - [🌌 计算机组成原理](https://cs.weijiew.com/book/co/ch0.html) 
 
 ## 408 王道
