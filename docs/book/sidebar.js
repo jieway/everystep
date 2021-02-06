@@ -35,12 +35,12 @@ module.exports = [
       'cs61a/lab08'
     ]
   },
-  {
-    title: '🌌 CS61B',
-    children: [
-      'cs61b/lab1'
-    ]
-  },
+  // {
+  //   title: '🌌 CS61B',
+  //   children: [
+  //     'cs61b/lab1'
+  //   ]
+  // },
   {
     title: '🌊 编译原理',
     children: [
@@ -170,33 +170,33 @@ module.exports = [
       'spi/ch4'
     ]
   },
-  {
-    title: '⚓ C++ Prime Plus',
-    children: [
-      'cpp/ch1.md',
-      'cpp/ch2.md',
-      'cpp/ch3.md',
-      'cpp/ch4.md',
-      'cpp/ch5.md',
-      'cpp/ch6.md',
-      'cpp/ch7.md',
-      'cpp/ch8.md',
-      'cpp/ch9.md',
-      'cpp/ch10.md',
-      'cpp/ch11.md',
-      'cpp/ch12.md'
-    ]
-  },
+  // {
+  //   title: '⚓ C++ Prime Plus',
+  //   children: [
+  //     'cpp/ch1.md',
+  //     'cpp/ch2.md',
+  //     'cpp/ch3.md',
+  //     'cpp/ch4.md',
+  //     'cpp/ch5.md',
+  //     'cpp/ch6.md',
+  //     'cpp/ch7.md',
+  //     'cpp/ch8.md',
+  //     'cpp/ch9.md',
+  //     'cpp/ch10.md',
+  //     'cpp/ch11.md',
+  //     'cpp/ch12.md'
+  //   ]
+  // },
   // {
   //   title: '🐉 CS 143 编译器',
   //   children: [
   //     'cs143/ch0'
   //   ]
   // },
-  {
-    title: '🍕 设计模式',
-    children: [
-      'pattern/ch0'
-    ]
-  }
+  // {
+  //   title: '🍕 设计模式',
+  //   children: [
+  //     'pattern/ch0'
+  //   ]
+  // }
 ]
