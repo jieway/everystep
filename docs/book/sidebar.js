@@ -151,16 +151,16 @@ module.exports = [
   //   ]
   // },
 
-  {
-    title: '🍳 政治',
-    children: [
-      'pol/ch0',
-      'pol/ch1',
-      'pol/ch2',
-      'pol/ch3',
-      'pol/ch4'
-    ]
-  },
+  // {
+  //   title: '🍳 政治',
+  //   children: [
+  //     'pol/ch0',
+  //     'pol/ch1',
+  //     'pol/ch2',
+  //     'pol/ch3',
+  //     'pol/ch4'
+  //   ]
+  // },
   {
     title: '🎊 爬虫笔记',
     children: [
