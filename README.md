@@ -17,8 +17,10 @@
 本仓库所记内容不仅仅为知识的复述，更多的为学习过程中的思考与总结。
 
 - [⛽ MIT 6.NULL](https://cs.weijiew.com/book/missing/ch0.html)
-- [🍋 CS144 计算机网络](https://cs.weijiew.com/book/cs144/ch0.html) 
 - [💥 CS61A](https://cs.weijiew.com/book/cs61a/ch0.html) 
+<!-- - [💻 Nand2Tetris](https://cs.weijiew.com/book/nand2tetris/ch0.html)  -->
+- [🍋 CS144 计算机网络](https://cs.weijiew.com/book/cs144/ch0.html) 
+
 - [🚀 算法笔记](https://github.com/weijiew/my-alg)
 - [🥞 CS:APP-lab](https://cs.weijiew.com/book/csapp/ch1.html) 
 
