@@ -19,21 +19,14 @@
 - [⛽ MIT 6.NULL](https://cs.weijiew.com/book/missing/ch0.html)
 - [🍋 CS144 计算机网络](https://cs.weijiew.com/book/cs144/ch0.html) 
 - [💥 CS61A](https://cs.weijiew.com/book/cs61a/ch0.html) 
-- [💫 CS61B](https://cs.weijiew.com/book/cs61b/ch0.html) 
 - [🚀 算法笔记](https://github.com/weijiew/my-alg)
 - [🥞 CS:APP-lab](https://cs.weijiew.com/book/csapp/ch1.html) 
-- [🌌 计算机组成原理](https://cs.weijiew.com/book/co/ch0.html) 
 
 ## 408 王道
 
 - [🚧 数据结构](https://cs.weijiew.com/book/ds/ch0.html)
 - [🧿 操作系统](https://cs.weijiew.com/book/os/ch0.html)
-
-## 提交标志含义
-
-* 🚀 完结：整节课做完。
-* 💥 大更新：大更新代表完成某个 lab 或者做完的一部分作业等。
-* 🔥 小更新：小更新代表添加部分内容，修改某些细节等。
+- [🌌 计算机组成原理](https://cs.weijiew.com/book/co/ch0.html) 
 
 ## 下载
 
