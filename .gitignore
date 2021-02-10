@@ -147,3 +147,9 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+*.css linguist-language=html
+*.less linguist-language=html
+*.js linguist-language=html
+*.html linguist-language=html
+*.md linguist-language=html
