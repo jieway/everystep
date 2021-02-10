@@ -169,30 +169,21 @@ module.exports = [
       'spi/ch3',
       'spi/ch4'
     ]
-  },
+    }
+    // ,
   // {
-  //   title: '⚓ C++ Prime Plus',
+  //   title: '🥳 lsbasi',
   //   children: [
-  //     'cpp/ch1.md',
-  //     'cpp/ch2.md',
-  //     'cpp/ch3.md',
-  //     'cpp/ch4.md',
-  //     'cpp/ch5.md',
-  //     'cpp/ch6.md',
-  //     'cpp/ch7.md',
-  //     'cpp/ch8.md',
-  //     'cpp/ch9.md',
-  //     'cpp/ch10.md',
-  //     'cpp/ch11.md',
-  //     'cpp/ch12.md'
+  //     'lsbasi/ch0',
+  //     'lsbasi/ch1',
+  //     'lsbasi/ch2',
+  //     'lsbasi/ch3',
+  //     'lsbasi/ch4',
+  //     'lsbasi/ch5',
+  //     'lsbasi/ch6',
+  //     'lsbasi/ch7'
   //   ]
-  // },
-  // {
-  //   title: '🐉 CS 143 编译器',
-  //   children: [
-  //     'cs143/ch0'
-  //   ]
-  // },
+  // }
   // {
   //   title: '🍕 设计模式',
   //   children: [
