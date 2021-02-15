@@ -42,7 +42,7 @@ module.exports = [
   //   ]
   // },
   {
-    title: '🌊 编译原理',
+    title: '🐉 编译原理',
     children: [
       'compile/ch0',
       'compile/ch1',
