@@ -53,3 +53,4 @@ DFA 的每个状态是由 NFA 的状态构成的集合，DFA 是 NFA 状态集�
 ## 3.7 识别单词的 DFA 
 
 
+https://www.bilibili.com/video/BV1yk4y197nS?p=7
