@@ -51,13 +51,13 @@ module.exports = [
       'compile/ch4'
     ]
   },
-  // {
-  //   title: '🍧 大数据',
-  //   children: [
-  //     'bd/ch0',
-  //     'bd/redis',
-  //   ]
-  // },
+  {
+    title: '🐘 大数据技术',
+    children: [
+      'bd/ch0',
+      'bd/ch1',
+    ]
+  },
   {
     title: '💫 数据结构',
     children: [

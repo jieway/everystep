@@ -21,7 +21,8 @@
 - [🥞 CS:APP-lab](https://cs.weijiew.com/book/csapp/ch1.html) 
 - [🍋 CS144 计算机网络](https://cs.weijiew.com/book/cs144/ch0.html) 
 - [🐉 编译原理](https://cs.weijiew.com/book/compile/ch0.html) 
-- [🚀 算法笔记](https://github.com/weijiew/my-alg)
+- [🚀 算法](https://github.com/weijiew/my-alg)
+- [🐘 大数据技术](https://cs.weijiew.com/book/bd/ch0.html)
 
 <!-- - [💻 Nand2Tetris](https://cs.weijiew.com/book/nand2tetris/ch0.html)  -->
 
