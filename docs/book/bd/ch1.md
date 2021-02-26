@@ -1,15 +1,55 @@
-# 数据仓库
+# 0. 概述
 
-## 架构
+大数据技术要从 Hadoop 讲起。Hadoop 是 Apache 基金会开发的分布式系统基础架构。
+
+这个框架解决了海量数据的存储和分析计算问题。广义的说，Hadoop 是一个生态圈，里面包容了很多技术栈。
+
+# 1. 历史
+
+Hadoop 是创始人 Doug Cutting 在 Lucene 框架的基础上优化升级而来。
+
+当时此人参考的 Google 发布的三篇论文，虽然 Google 发布了论文但是没有将技术开源出来。所以也可以说 Goole 是 Hadoop 的思想之源。
+
+后来 Google 开源是部分 GFS 和 MapReduce 的思想细节，于是 Doug Cutting 将其实现为 DFS 和 Mapreduce 。这些东西后来都被纳入 Hadoop 项目中。
 
 大数据部门的组织架构：
 
 ![](https://gitee.com/weijiew/pic/raw/master/img/20201128232049.png)
 
-项目组成：
+# 2. 版本
 
-![](https://gitee.com/weijiew/pic/raw/master/img/20201128232250.png)
+Hadoop 共有三个版本 Apache，Cloudera，Hortonworks。
 
+Apache 版本，开源，原始基础版本。2006
+
+Cloudera 内部集成的大数据框架，产品是 CDH 。2008 。 Hadoop 的创始人加入了该公司。
+
+Hortonworks 文档写的很好，产品是 HDP 。目前已被 Cloudera 收购了，新品牌是 CDP 。2011。该公司贡献了 80% 的 Hadoop 代码。
+
+# 3. Hadoop 优势
+
+1. 高可靠性：存储出现故障不会导致数据丢失。
+2. 高扩展性：节点不够用可以随时扩展。
+3. 高效性：因为 MapReduce 的缘故，并且是并行处理，速度很快。
+4. 高容错性：任务失败后可重新分配。
+
+# 4. Hadoop 不同版本的组成
+
+Hadoop 1.x 由 Common（辅助工具），HDFS （数据存储），MapReduce （计算+调度） 三部分组成。
+
+Hadoop 2.x 将 MapReduce 的计算和调度分离，Yarn 单独负责调度任务，MapReduce 单独负责计算任务。
+
+Hadoop 3.x 和 Hadoop 2.x 在结构上保持一致。
+
+## 4.1 HDFS 架构
+
+Hadoop Distribute File System 简称 HDFS ，分布式文件系统。
+
+HDFS 分为 NameNode 节点，DataNode 节点和 Secondary NameNode 。
+
+NameNode 存储元数据，DataNode 存储文件数据和块数据的校验和，Secondary NameNode 用于元数据备份。
+
+## 4.2 MapReduce 架构
 
 # 磁盘
 
@@ -47,7 +87,6 @@ RAID 的进化过程分为多代。
 
 ![](https://gitee.com/weijiew/pic/raw/master/img/20201128233233.png)
 
-# 需求分析
 
 ## 项目需求
 
@@ -88,18 +127,4 @@ RAID 的进化过程分为多代。
 
 
 
-
-# 1. Hadoop 是什么
-
-Hadoop 是 Apache 基金会开发的分布式系统基础架构。
-
-解决了海量数据的存储和分析计算问题。
-
-# 2. Hadoop 1.x 和 2.x 的区别
-
-Hadoop 1.x 由 Common（辅助工具），HDFS （数据存储），MapReduce （计算+调度） 三部分组成。
-
-Hadoop 2.x 将 MapReduce 的计算和调度分离，Yarn 单独负责调度任务，MapReduce 单独负责计算任务。
-
-Hadoop 3.x 和 Hadoop 2.x 在结构上保持一致。
 

@@ -48,7 +48,8 @@ module.exports = [
       'compile/ch1',
       'compile/ch2',
       'compile/ch3',
-      'compile/ch4'
+      'compile/ch4',
+      'compile/ch5'
     ]
   },
   {
