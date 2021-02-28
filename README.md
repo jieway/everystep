@@ -26,11 +26,11 @@
 
 <!-- - [💻 Nand2Tetris](https://cs.weijiew.com/book/nand2tetris/ch0.html)  -->
 
-## 408 王道
+<!-- ## 408 王道
 
 - [🚧 数据结构](https://cs.weijiew.com/book/ds/ch0.html)
 - [🧿 操作系统](https://cs.weijiew.com/book/os/ch0.html)
-- [🌌 计算机组成原理](https://cs.weijiew.com/book/co/ch0.html) 
+- [🌌 计算机组成原理](https://cs.weijiew.com/book/co/ch0.html)  -->
 
 ## 下载
 

@@ -60,20 +60,6 @@ module.exports = [
     ]
   },
   {
-    title: '💫 数据结构',
-    children: [
-      'ds/ch0',
-      'ds/ch1',
-      'ds/ch2',
-      'ds/ch3',
-      'ds/ch4',
-      'ds/ch5',
-      'ds/ch7',
-      'ds/ch8',
-      'ds/ch9'
-    ]
-  },
-  {
     title: '🍋 CS144',
     children: [
       'cs144/ch0',
@@ -81,30 +67,53 @@ module.exports = [
       'cs144/lab1'
     ]    
   },
-  {
-    title: '🚗 计算机网络',
-    children: [
-      'net/ch0',
-      'net/ch1',
-      'net/ch2',
-      'net/ch3',
-      'net/ch4',
-      'net/ch5',
-      'net/ch7',
-      'net/ch8'
-    ]
-  },
-  {
-    title: '💥 计算机组成原理',
-    children: [
-      'co/ch0',
-      'co/ch1',
-      'co/ch2',
-      'co/ch3',
-      'co/ch4',
-      'co/ch5'
-    ]
-  },
+  // {
+  //   title: '💫 数据结构',
+  //   children: [
+  //     'ds/ch0',
+  //     'ds/ch1',
+  //     'ds/ch2',
+  //     'ds/ch3',
+  //     'ds/ch4',
+  //     'ds/ch5',
+  //     'ds/ch7',
+  //     'ds/ch8',
+  //     'ds/ch9'
+  //   ]
+  // },
+  // {
+  //   title: '🚗 计算机网络',
+  //   children: [
+  //     'net/ch0',
+  //     'net/ch1',
+  //     'net/ch2',
+  //     'net/ch3',
+  //     'net/ch4',
+  //     'net/ch5',
+  //     'net/ch7',
+  //     'net/ch8'
+  //   ]
+  // },
+  // {
+  //   title: '💥 计算机组成原理',
+  //   children: [
+  //     'co/ch0',
+  //     'co/ch1',
+  //     'co/ch2',
+  //     'co/ch3',
+  //     'co/ch4',
+  //     'co/ch5'
+  //   ]
+  // },
+  // {
+  //   title: '👑 操作系统',
+  //   children: [
+  //     'os/ch0',
+  //     'os/now',
+  //     'os/rcore-0',
+  //     'os/rcore-1'
+  //   ]
+  // },
   {
     title: '🍻 CSAPP',
     children: [
@@ -125,15 +134,6 @@ module.exports = [
     children: [
       'asm/ch0',
       'asm/ch1'
-    ]
-  },
-  {
-    title: '👑 操作系统',
-    children: [
-      'os/ch0',
-      'os/now',
-      'os/rcore-0',
-      'os/rcore-1'
     ]
   },
   // {
