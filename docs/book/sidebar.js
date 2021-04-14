@@ -117,8 +117,8 @@ module.exports = [
   {
     title: '🍻 CSAPP',
     children: [
-      'csapp/ch1',
-      'csapp/ch2'
+      'csapp/lab0',
+      'csapp/lab1'
     ]
   },
   {
