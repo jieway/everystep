@@ -1,4 +1,4 @@
-# LAB-0:实验环境
+# LAB-0: 实验环境
 
 > 预计花费三个小时。
 
@@ -23,7 +23,23 @@
 
 docker 安装完毕后打开 CMD 输入如下命令。
 
-> 这一步其实完全可以拉取别人已经做好的镜像。那么后续的换源下载软件等操作都不用做了。如果我有时间的话会做一个镜像。
+下面这个镜像是我已经打包好的镜像，你可以直接拉取。或者选择跳过这一步选择自己制作镜像。 
+
+```sh
+docker pull weijiew/csapp_datalab
+```
+
+启动镜像:
+
+```
+docker container run -it --name=csapp_datalab weijiew/csapp_datalab /bin/bash
+```
+
+实验文件都在 `/csapp/data_lab` 中。
+
+如果你不想在终端中敲代码，可以使用 vscode attach 这个容器就可以开始写代码了。（注意安装 docker 插件）
+
+## 2. 自己搭建实验环境
 
 1.  拉取一个 ubuntu:18.04 的镜像。
 
@@ -47,7 +63,7 @@ bin  boot  csapp  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  
 root@ec3dec38c3a9:/# cd csapp/
 ```
 
-## 2. 配置容器
+## 3. 配置容器
 
 1. 更新
 
@@ -102,13 +118,13 @@ sudo apt-get install build-essential
 sudo apt-get install gcc-multilib
 ```
 
-## 3. 退出并启动容器
+## 4. 退出并启动容器
 
 * `exit` 退出容器。
 * `docker ps -a` 找到 csapp_env 的容器 ID 。
 * `docker start 容器id` 启动容器。
 * `docker exec -it 容器id /bin/bash` 进入容器。
 
-# 参考
+# 5. 参考
 
 [windows](https://zhuanlan.zhihu.com/p/340283308) 下环境配置。
