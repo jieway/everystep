@@ -29,10 +29,16 @@ docker 安装完毕后打开 CMD 输入如下命令。
 docker pull weijiew/csapp_datalab
 ```
 
-启动镜像:
+根据镜像构建容器（csapp_datalab）:
 
 ```
 docker container run -it --name=csapp_datalab weijiew/csapp_datalab /bin/bash
+```
+
+或者和共享本地的文件夹，我的代码在路径 `E:/Repo/CSAPP-Labs` 下。
+
+```
+docker run -it -v E:/Repo/CSAPP-Labs:/csapp --name=csapp_env weijiew/csapp_datalab /bin/bash
 ```
 
 实验文件都在 `/csapp/data_lab` 中。
