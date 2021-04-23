@@ -29,7 +29,6 @@ btest.c:332:23: warning: 'arg_test_range[1]' may be used uninitialized in this f
 
 ## 3. coding
 
-
 ## 3.1. bitXor
 
 题意为通过按位与(&)和取反操作(~)实现异或运算(^)。
@@ -196,6 +195,8 @@ int logicalNeg(int x) {
 ```
 
 ## 3.10 howManyBits
+
+判断输入的数字在二进制下占几位。
 
 
 
