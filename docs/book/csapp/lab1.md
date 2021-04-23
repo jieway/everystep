@@ -123,7 +123,88 @@ int allOddBits(int x) {
 
 OXAA 中 A 是十六进制，十进制下是 10 而二进制表示则为 1010 .所以前两行的目的在于构造 32 位的 奇数全是 1 的二进制数。
 
+## 3.5 negate
+
+返回输入值的负数。
+
+```c
+int negate(int x) {
+  return ~x + 1;
+}
+```
+
+按位取反再加一即可。
+
+## 3.6 isAsciiDigit
+
+判断输入的 x 是否是 Ascii 码中 0-9 的值。
+
+其实就是判断一个数字是否在范围 [0x30, 0x39] 内。0x30 的二进制是 48 ，而 0x39 则是 58 .
+
+其实就是和最大值最小值做差，然后判断符号位即可。
+
+```c
+int isAsciiDigit(int x) {
+  return (!((x+(~48+1))>>31))&!!((x+(~58+1))>>31);
+}
+```
+
+## 3.7 conditional
+
+用位运算来实现 `x ? y : z` 操作。
+
+```c
+int conditional(int x, int y, int z) {
+  x = !!x; // 将输入的数字转换位 0、1 
+  x = ~x + 1; // 取负数
+  return (x&y)|(~x&z);
+}
+```
+
+如果输入的 x 是 0 那么 !!x 依旧是 0 ，反之非零数字均转换为 1 .目的在于区分 x 是否为 0 .
+
+之后拿到 x 的负数，因为如果 x 是 0 其负数依旧是 0 ，反之 1 的负数是 -1 也就是，在补码下 32 全是 1 .得到的结果 x 要么 32 全是 0 .要么 32 全是 1 .
+
+上一步的目的是为了将 x 构造出来全是 0 或全是 1 的二进制，在提取 y 和 z 即可，如果 x 全是 1 那么结果就是 y 反之则是 z .
+
+## 3.8 isLessOrEqual
+
+题意：通过位运算实现 <= 操作。
+
+```c
+int isLessOrEqual(int x, int y) {
+    int i = !((y + (~x + 1)) >> 31); //  计算 y - x 如果 y < x 则 i = 0 反之 i = 1 
+    int xsign = x >> 31; // 拿到 x 的符号位 
+    int ysign = y >> 31; // 拿到 y 的符号位
+    int xbool = !xsign; // 取反，若 x 是负数，则 xbool = 0 反之 xbool = 1
+    int ybool = !ysign; // 取反，若 y 是负数，则 ybool = 0 反之 ybool = 1
+    int result = (!(xbool ^ ybool)) & i; // 判断两个符号位是否相同，若相同则证明输出 i 即可，反之 i 为 0
+    return result | (ybool & !xbool); // 当符号位不同的时候， i 为 0 ，接下来判断 x 的符号位即可。
+}
+```
+
+根据 x，y是否异号可以分为两种情况，同号的话直接输出结果即可。异号输出 x 的符号位即可，因为异号要么 x < 0 要么 y < 0 .符号位就已经代表了 x y 大小。
+
+[bitwise-less-than-or-equal-to](https://stackoverflow.com/questions/41948852/bitwise-less-than-or-equal-to)
+
+## 3.9 logicalNeg
+
+```c
+int logicalNeg(int x) {
+  return ((x|(~x+1))>>31)+1;
+}
+```
+
+## 3.10 howManyBits
+
+
+
+## 3.11 floatScale2
+
+## 3.12 floatFloat2Int
+
+## 3.13 floatPower2
+
 # 参考
 
 1. [CSAPP 之 DataLab详解，没有比这更详细的了](https://zhuanlan.zhihu.com/p/59534845)
-
