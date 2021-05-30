@@ -6,7 +6,7 @@
 
 There you have it. Think about it. It doesn’t really matter whether you’re a newbie or a seasoned software developer: if you don’t know how compilers and interpreters work, then you don’t know how computers work. It’s that simple.
 
-你明白后这个道理后，仔细思考。无论你是个新手或者是个老练的软件开发者者都是不重要的：如果你不知道编译器和解释器是如何工作的，那么你就不知道计算机是如何工作的。就是这么简单。
+你明白这个道理后，仔细思考。无论你是个新手或者是个老练的软件开发者者都是不重要的：如果你不知道编译器和解释器是如何工作的，那么你就不知道计算机是如何工作的。就是这么简单。
 
 So, do you know how compilers and interpreters work? And I mean, are you 100% sure that you know how they work? If you don’t.
 
