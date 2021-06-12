@@ -10,7 +10,7 @@
 
 此时就已经知晓整个实验的流程，以及文件中一些工具的使用。
 
-## 2. 阅读总结
+## 2. 内容总结
 
 总结：
 
@@ -27,7 +27,7 @@ btest.c:332:23: warning: 'arg_test_range[1]' may be used uninitialized in this f
       |         ~~~~~~~~~~~~~~^~~
 ```
 
-## 3. coding
+## 3. 问题
 
 ## 3.1. bitXor
 
