@@ -6,13 +6,13 @@
 2. WSL 
 3. 虚拟机
 
+三种方式我都尝试过，win10 下 WSL 最快，docker 次之，而虚拟机虽然搭建略微费事，但限制最少。
+
 建议安装 docker 。除此之外 win10 可以选择使用 WSL ，这也完全可行，虚拟机次之。
 
-我最初采用的是 docker ，所以下面记录了当时的内容。但是后来笔记本出了一些问题最后还是用虚拟机了。
+我最初采用的是 docker ，所以下面记录了当时的内容。但是后来笔记本出了一些问题最后还是用虚拟机了。其实影响不大，只是入口存在差异，本质上都是安装了一个 Ubuntu 系统。
 
-其实影响不大，只是入口存在差异，本质上都是安装了一个 Ubuntu 系统。
-
-# 1. 在 docker 中做实验
+## 1. 在 docker 中做实验
 
 为什么使用 docker ？
 
@@ -20,16 +20,14 @@
 
 所以不论你是什么系统，安装好 docker 后，后续步骤都相同。
 
-具体的环境搭建：https://cs.weijiew.com/book/csapp/lab0.html
-
-## 0. 安装 docker 
+### 1.0 安装 docker 
 
 建议先安装 docker
 
 * [Windows Docker 安装](https://www.runoob.com/docker/windows-docker-install.html)
 * [Mac下安装docker的三种方法](https://zhuanlan.zhihu.com/p/91116621)
 
-## 1. 使用 docker 并拉去配置好的镜像
+### 1.1 使用 docker 并拉去配置好的镜像
 
 docker 安装完毕后打开 CMD 输入如下命令。
 
@@ -55,7 +53,7 @@ docker run -it -v E:/Repo/CSAPP-Labs:/csapp --name=csapp_env weijiew/csapp_datal
 
 如果你不想在终端中敲代码，可以使用 vscode attach 这个容器就可以开始写代码了。（注意安装 docker 插件）
 
-## 2. 自己搭建实验环境
+### 1.2 自己搭建实验环境
 
 1.  拉取一个 ubuntu:18.04 的镜像。
 
@@ -79,7 +77,7 @@ bin  boot  csapp  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  
 root@ec3dec38c3a9:/# cd csapp/
 ```
 
-## 3. 配置容器
+### 1.3 配置容器
 
 1. 更新
 
@@ -134,17 +132,19 @@ sudo apt-get install build-essential
 sudo apt-get install gcc-multilib
 ```
 
-## 4. 退出并启动容器
+### 1.4 退出并启动容器
 
 * `exit` 退出容器。
 * `docker ps -a` 找到 csapp_env 的容器 ID 。
 * `docker start 容器id` 启动容器。
 * `docker exec -it 容器id /bin/bash` 进入容器。
 
-# 2. WSL
+# 2.0 WSL
 
 1. 换源。
 2. 安装编译环境。
+
+与 WSL 相关的内容可以参考这篇[文档](https://dowww.spencerwoo.com/)讲的很详细。
 
 # 3. 虚拟机
 
@@ -159,11 +159,12 @@ sudo apt-get install build-essential
 sudo apt-get install gcc-multilib
 ```
 
+可以设置一个共享文件夹，这样就能够在宿主机中编辑，在虚拟机中编译。仅仅把虚拟机当作一个编译器来用，不需要再另外搭建一套 IDE 。
+
 设置[共享文件夹](https://zhuanlan.zhihu.com/p/42203768)，这样可以在 windows 下编辑，然后在虚拟机中编译。
 
 可以[参考这篇文章](https://blog.csdn.net/hhhuua/article/details/80003620)设置 ssh 在本地访问虚拟机。
 
-
 # 5. 参考
 
-[windows](https://zhuanlan.zhihu.com/p/340283308) 下环境配置。
+1. [windows](https://zhuanlan.zhihu.com/p/340283308) 下环境配置。

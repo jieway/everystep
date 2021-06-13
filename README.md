@@ -2,6 +2,8 @@
 
 最初是自建的 vuepree 页面，但是域名被墙。最近正在思考换一个展示方式，暂时无法访问。所有内容都在 `docs/book/` 路径下。
 
+我决定将内容存放到微信公众号【思考的灰烬】中。自建网站总有各种各样的问题，本仓库存放 md 源码，以及目录索引。
+
 <center>
 
 <a href="https://cs.weijiew.com/"><img src="https://img.shields.io/badge/Github%20Pages-CodeStep-brightgreen" alt="copyright"/></a>
@@ -17,15 +19,19 @@
 
 本仓库所记内容不仅仅为知识的复述，更多的为学习过程中的思考与总结。
 
-- [⛽ MIT 6.NULL](https://cs.weijiew.com/book/missing/ch0.html)
-- [💥 CS61A](https://cs.weijiew.com/book/cs61a/ch0.html) 
-- [🥞 CS:APP-lab](https://www.yuque.com/weijiew/csapp) 
+- [🥞 CS:APP-lab]() 
+  - [LAB-0: 搭建实验环境](https://mp.weixin.qq.com/s/SvythEVZfKQ8jo2CLwFcfA)
+  - LAB-1: Data Lab
+  - 
+* ⛽ MIT 6.NULL
+  * 
 
+- [💥 CS61A](https://cs.weijiew.com/book/cs61a/ch0.html) 
 - [💻 6.S081]() 
-- [🍋 CS144 计算机网络](https://cs.weijiew.com/book/cs144/ch0.html) 
-- [🐉 编译原理](https://cs.weijiew.com/book/compile/ch0.html) 
-- [🚀 算法](https://github.com/weijiew/my-alg)
-- [🐘 大数据技术](https://cs.weijiew.com/book/bd/ch0.html)
+- [🍋 CS144 计算机网络]() 
+- [🐉 编译原理]() 
+- [🚀 算法]()
+- [🐘 大数据技术]()
 
 <!-- - [💻 Nand2Tetris](https://cs.weijiew.com/book/nand2tetris/ch0.html)  -->
 
@@ -34,14 +40,3 @@
 - [🚧 数据结构](https://cs.weijiew.com/book/ds/ch0.html)
 - [🧿 操作系统](https://cs.weijiew.com/book/os/ch0.html)
 - [🌌 计算机组成原理](https://cs.weijiew.com/book/co/ch0.html)  -->
-
-## 下载
-
-```bash
-git clone https://github.com/weijiew/codestep.git
-cd codestep
-yarn install
-vuepress dev docs
-```
-
-查看：http://localhost:8080/ （端口可能不是 8080 ，注意查看终端输出！）
