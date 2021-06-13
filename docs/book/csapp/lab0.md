@@ -161,6 +161,9 @@ sudo apt-get install gcc-multilib
 
 设置[共享文件夹](https://zhuanlan.zhihu.com/p/42203768)，这样可以在 windows 下编辑，然后在虚拟机中编译。
 
+可以[参考这篇文章](https://blog.csdn.net/hhhuua/article/details/80003620)设置 ssh 在本地访问虚拟机。
+
+
 # 5. 参考
 
 [windows](https://zhuanlan.zhihu.com/p/340283308) 下环境配置。

@@ -1,5 +1,7 @@
 # codestep
 
+最初是自建的 vuepree 页面，但是域名被墙。最近正在思考换一个展示方式，暂时无法访问。所有内容都在 `docs/book/` 路径下。
+
 <center>
 
 <a href="https://cs.weijiew.com/"><img src="https://img.shields.io/badge/Github%20Pages-CodeStep-brightgreen" alt="copyright"/></a>
@@ -9,7 +11,6 @@
 
 <a href="https://weijiew.com"><img src="https://img.shields.io/badge/blog-weijiew.com-blueviolet?style=for-the-badge&logo=vercel&color=6c5ce7" alt="copyright"/></a>
 
-
 </center>
 
 个人知识库，记录所学，如有错误还请指正。
@@ -18,7 +19,8 @@
 
 - [⛽ MIT 6.NULL](https://cs.weijiew.com/book/missing/ch0.html)
 - [💥 CS61A](https://cs.weijiew.com/book/cs61a/ch0.html) 
-- [🥞 CS:APP-lab](https://cs.weijiew.com/book/csapp/ch1.html) 
+- [🥞 CS:APP-lab](https://www.yuque.com/weijiew/csapp) 
+
 - [💻 6.S081]() 
 - [🍋 CS144 计算机网络](https://cs.weijiew.com/book/cs144/ch0.html) 
 - [🐉 编译原理](https://cs.weijiew.com/book/compile/ch0.html) 
