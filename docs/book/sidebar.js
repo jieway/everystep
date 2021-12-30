@@ -170,25 +170,25 @@ module.exports = [
       'spi/ch3',
       'spi/ch4'
     ]
-    }
-    ,
+  },
+  // {
+  //   title: '🥳 lsbasi',
+  //   children: [
+  //     'lsbasi/ch0',
+  //     'lsbasi/ch1',
+  //     'lsbasi/ch2',
+  //     'lsbasi/ch3',
+  //     'lsbasi/ch4',
+  //     'lsbasi/ch5',
+  //     'lsbasi/ch6',
+  //     'lsbasi/ch7'
+  //   ]
+  // },
   {
-    title: '🥳 lsbasi',
+    title: '🍕 算法模板',
     children: [
-      'lsbasi/ch0',
-      'lsbasi/ch1',
-      'lsbasi/ch2',
-      'lsbasi/ch3',
-      'lsbasi/ch4',
-      'lsbasi/ch5',
-      'lsbasi/ch6',
-      'lsbasi/ch7'
+      'alg/1-summary',
+      'alg/2-quicksort'
     ]
   }
-  // {
-  //   title: '🍕 设计模式',
-  //   children: [
-  //     'pattern/ch0'
-  //   ]
-  // }
 ]
