@@ -12,7 +12,7 @@
 
 我的代码：[cs61a](https://github.com/weijiew/cs61a) 。
 
-环境：wsl (Ubuntu 20.04 LTS), python3.8 。
+环境：wsl (Ubuntu 20.04 LTS), python 3.8 。
 
 Windows 下完全可以，只不过部分命令需要改动，虽然有些问题，但很快就能解决。我最初也是用 Windows 写 lab ，但是发现用 wsl 更便捷。
 
@@ -23,9 +23,12 @@ Windows 下完全可以，只不过部分命令需要改动，虽然有些问题
 ## 注意
 
 1. 建议先看每一节的 [reading](http://composingprograms.com/) 部分作为预习再看视频，最后一定要做实验和作业。
-2. 为保证篇幅只记录作业的关键代码，注释部分略过。
+2. 只记录思考内容以及一些总结。
 
 ## 进度
+
+> 最初写于 2020/8/29
+> 重新整理回顾 2021/12/29 
 
 1. LAB 00 Workflow and Python Basics
 

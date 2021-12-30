@@ -61,8 +61,6 @@ roll_dice 函数就是来统计分数，只要骰子中含有 1 分数就是 1 �
     return 1 if f else sum
 ```
 
-> python3 ok -q 01 --local
-
 ## Problem 2
 
 这个函数就是实现一个整数三次方后各个位数交错加减再加一。也就是体重所述的 Free Bacon 功能。
@@ -88,7 +86,6 @@ roll_dice 函数就是来统计分数，只要骰子中含有 1 分数就是 1 �
     return finall
 ```
 
-`python3 ok -q 02 --local`
 ## Problem 3
 
 这个函数是用来控制 free bacon 规则的触发条件的，也就是选择骰子数为 0 的话则触发，反之不行。
@@ -106,13 +103,9 @@ roll_dice 函数就是来统计分数，只要骰子中含有 1 分数就是 1 �
         return roll_dice(num_rolls,dice)
 ```
 
-测试：`python3 ok -q 03 --local` 
-
 ## Problem 4
 
 这道题是 Swine Swap 规则的实现方式。
-
-先解锁 `python3 ok -q 04 -u --local`
 
 答案：[04.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/04.py)
 
@@ -130,8 +123,6 @@ roll_dice 函数就是来统计分数，只要骰子中含有 1 分数就是 1 �
 不过这个逻辑也很简单，log10 之前没有想到，有点启发。
 
 ## Problem 5a
-
-`python3 ok -q 05a -u --local`
 
 答案：[05a.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/05a.py)
 
@@ -156,13 +147,9 @@ roll_dice 函数就是来统计分数，只要骰子中含有 1 分数就是 1 �
     # END PROBLEM 5
 ```
 
-测试 `python3 ok -q 05a --local` 通过。
-
 ## Problem 5b
 
 在上一题的基础上需要添加几条规则。
-
-`python3 ok -q 05b -u --local`
 
 答案：[05b.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/05b.py)
 
@@ -172,8 +159,6 @@ roll_dice 函数就是来统计分数，只要骰子中含有 1 分数就是 1 �
 ## Problem 6 
 
 添加输出，提高交互性。
-
-`python3 ok -q 06 -u --local`
 
 答案：[06.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/06.py)
 
@@ -192,10 +177,7 @@ def silence(score0, score1):
     # END PROBLEM 6
 ```
 
-
 ## Problem 7
-
-`python3 ok -q 07 -u --local`
 
 答案：[07.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/07.py)
 
@@ -221,14 +203,11 @@ def silence(score0, score1):
     # END PROBLEM 7
 ```
 
-`python3 ok -q 07 --local` 
 ## Problem 8
 
-`python3 ok -q 08 -u --local`
 
 答案：[08.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/08.py)
 
-`python ok -q 08 --local` 结果
 
 ```python
     # BEGIN PROBLEM 8
@@ -260,5 +239,3 @@ def silence(score0, score1):
     return max_index
     # END PROBLEM 9
 ```
-
-`python ok -q 09 -u --local`
