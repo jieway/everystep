@@ -10,7 +10,7 @@ int q[100010];
 int t[100010];
 
 void merge(int q[], int l, int r) {
-    if (l >= r) return;
+    if (l >= r) return; // 漏写
     int mid = l + r >> 1;
     merge(q, l, mid);
     merge(q, mid + 1, r);
@@ -38,5 +38,4 @@ int main() {
 }
 ```
 
-* 2022/1/1 20:57
-* 
+* 2022/1/1 20:57 
