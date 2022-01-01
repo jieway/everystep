@@ -17,22 +17,24 @@ module.exports = [
     ]
   },
   {
-    title: '🤡 CS61A(SICP)',
+    title: '🤡 CS61A',
     children: [
-      'cs61a/ch0',
-      'cs61a/lab00',
-      'cs61a/hw01',
-      'cs61a/lab01',
-      'cs61a/hog',
-      'cs61a/hw02',
-      'cs61a/lab02',
-      'cs61a/hw03',
-      'cs61a/lab05',
-      'cs61a/lab04',
-      'cs61a/hw04',
-      'cs61a/lab06',
-      'cs61a/lab07',
-      'cs61a/lab08'
+      'cs61a/0-summary',
+      'cs61a/1-lab00',
+      'cs61a/2-hw01',
+      'cs61a/3-lab01',
+      'cs61a/4-hog',
+      'cs61a/5-hw02',
+      'cs61a/6-lab02',
+      'cs61a/7-hw03',
+      'cs61a/8-lab04',
+      'cs61a/9-lab05',
+      'cs61a/10-hw04',
+      'cs61a/11-lab06',
+      'cs61a/12-hw05',
+      'cs61a/13-lab07',
+      'cs61a/14-lab08',
+      'cs61a/15-hw06'
     ]
   },
   // {
@@ -41,6 +43,14 @@ module.exports = [
   //     'cs61b/lab1'
   //   ]
   // },
+  {
+    title: '🍋 CS144',
+    children: [
+      'cs144/1-summary.md',
+      'cs144/2-lab0',
+      'cs144/3-lab1'
+    ]    
+  },
   {
     title: '🐉 编译原理',
     children: [
@@ -58,14 +68,6 @@ module.exports = [
       'bd/ch0',
       'bd/ch1',
     ]
-  },
-  {
-    title: '🍋 CS144',
-    children: [
-      'cs144/ch0',
-      'cs144/lab0',
-      'cs144/lab1'
-    ]    
   },
   // {
   //   title: '💫 数据结构',

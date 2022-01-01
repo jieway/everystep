@@ -25,12 +25,8 @@ Windows 下完全可以，只不过部分命令需要改动，虽然有些问题
 1. 建议先看每一节的 [reading](http://composingprograms.com/) 部分作为预习再看视频，最后一定要做实验和作业。
 2. 只记录思考内容以及一些总结。
 
-## 进度
-
 > 最初写于 2020/8/29
 > 重新整理回顾 2021/12/29 
-
-1. LAB 00 Workflow and Python Basics
 
 ## 参考
 

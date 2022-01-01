@@ -1,5 +1,7 @@
 # 快排
 
+* [Acwing 785. 快速排序](https://www.acwing.com/problem/content/description/787/)
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -38,4 +40,4 @@ int main() {
 }
 ```
 
-* [Acwing 785. 快速排序](https://www.acwing.com/problem/content/description/787/)
+* 2022/1/1 20:41

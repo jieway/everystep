@@ -1,26 +1,8 @@
 # Lab 0：网络热身
 
-简介：使用 C++ 写一个获取网页的程序，这个程序可以实现网络关键的抽象（内存中），大概消耗 2 - 6 小时。后续的实验要在前置 lab 的基础上。
+## 1.0 安装
 
-* 先浏览整个实验。
-* 实验与实验直接是存在联系的，不建议跳，跳的话可能写不下去。
-* lab 不是完美的，可能存在问题。
-
-## 0. 协作政策
-
-* 除了课程提供的部分辅助代码外，其他代码必须是自己完成的，不允许 copy 。如果你参考了网上的代码，提交代码之时需要将链接作为注释写在源代码上。
-* 自己不能看别人的代码，自己的代码也不能展示给别人，不允许看往届的答案。可以和同学讨论作业，但是不能 copy 任何人的代码。如果和同学讨论了，在提交代码之时需要将同谁讨论作业的同学名字作为注释写在相关的代码部分。handout 中有更多的细节。
-
-## 1. 系统安装 
-
-CS144 的作业需要在 GNU/Linux 系统之上进行并且要有 C++ 2017 版本的编译器。
-
-安装 Linux 系统，官方提供的三种安装方式，分别是安装官方提供的镜像，其次是自己安装 Ubuntu 18.04 LTS 版本然后运行网站中所提供的工具安装脚本，最后是自己摸索。
-
-> 我最初采用的是安装官方镜像，后来装 IDE 的时候出现了一些问题，于是改为了 WSL 。如果你的系统是 WIN10 采用 WSL 来做耗时相对耗时较少。以下是配置步骤。其实就是[第二种安装](https://stanford.edu/class/cs144/vm_howto/vm-howto-iso.html)方式。只不过把前面的系统安装替换为了 WSL 。
-
-### 1.1 WSL
-
+我采用的是安装官方镜像，后来装 IDE 的时候出现了一些问题，于是改为了 WSL 。总之都是在 Linux 环境下进行。以下是配置步骤。
 
 1. 打开微软商店，搜索 WSL ，安装 Ubuntu 20.04 LTS ，虽然官方的环境是 18.04 LTS 经过我的测试 20.04 也是可用的。wsl 下载很快，但是配置的时候有点慢，需要等十几分钟。
 2. 如果没有 Windows Terminal 的话建议安装 Windows Terminal。同样是在微软商店。
@@ -31,39 +13,7 @@ CS144 的作业需要在 GNU/Linux 系统之上进行并且要有 C++ 2017 版�
 7. 在 WSL 中输入 code 。（表示在 WSL 中安装 vscode）
 8. 切换到后续下载代码的位置，输入命令 `code .` 即可打开。（表示在当前文件夹中打开 vscode）
 
-与 WSL 相关的更多内容可参考 [dowww](https://github.com/spencerwooo/dowww) 。上诉方法是目前为止我认为耗时最少的。
-
-### 1.2 镜像安装
-
-> 以下是第一种环境配置的摸索，此方法耗时部分在于镜像下载。
-
-我最初选择的是第一种，也就是下载官方所提供的镜像。也就是按照这一页的内容来：https://stanford.edu/class/cs144/vm_howto/vm-howto-image.html
-
-注意：Windows 系统的话需要先下载虚拟机（VirtualBox），页面中有写到，按照步骤来就可以了。
-
-可以直接默认，也可以根据你的电脑配置来修改。
-
-我将内存（RAM）改为了 4G 。CPU 核心数改为了 2 。
-
-![image-1](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.6dmk7hpxcmo0.png)
-
-首次登陆会强制修改密码，用户名和密码均为 **cs144** 。
-
-登陆进去后默认是文本中断，如果想要图形界面需要以下命令：
-
-安装图形界面：`sudo apt-get install --reinstall lightdm`
-
-启动图形界面：`sudo systemctl start lightdm`
-
-终端访问：我的系统本身是 win10 ，采用的终端是 WSL ，访问命令：`ssh -p 2222 cs144@localhost` 。（这一步可以不选，我觉得用 WSL 访问比较便捷，windows 下你可以采用 XShell 或 Putty 等终端）
-
-该系统其实就是 Ubuntu 18.04 LTS
-
-![image-2](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.41e5ycv81yy0.png)
-
-最后记得换源！
-
-## 2. 手动联网
+## 2.0 手动联网
 
 有两个任务，像浏览器一样读取网页，其次像邮件客户端一样发送一个邮件消息。
 
@@ -75,22 +25,11 @@ CS144 的作业需要在 GNU/Linux 系统之上进行并且要有 C++ 2017 版�
 
 首先在浏览器中查看 http://cs144.keithw.org/hello 可以看到 `Hello, CS144!` 。
 
-
 2. 那么在终端中，按照文中所给步骤也是可以看到该内容的。
-
-![image-3](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.5070rpwtdig0.png)
-
 
 3. 修改 GET 请求的路径即可，改成自己的 ID 能拿到属于自己的 X-Your-Code-Is 。
 
-![image-4](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.70o0sngyzc40.png)
-
-
-### 2.2 给自己发邮件
-
-这个需要处于 stanford 的网络才能做，跳过了。
-
-### 2.3 监听和连接
+### 2.2 监听和连接
 
 要分别开两个终端，分别代表服务端和客户端。
 
