@@ -22,10 +22,10 @@
 
 ## 实验&进度
 
-* Lab 0: networking warmup  （网络热身） 
-* Lab 1: stitching substrings into a byte stream （拼接字符串并将其变成字节流）
-* Lab 2: the TCP receiver       （TCP 接受者）
-* Lab 3: the TCP sender         （TCP 发送者）
-* Lab 4: the TCP connection     （TCP 连接）
-* Lab 5: the network interface  （TCP 接口）
-* Lab 6: the IP router          （TCP 路由）
+* Lab 0: networking warmup
+* Lab 1: stitching substrings into a byte stream 
+* Lab 2: the TCP receiver
+* Lab 3: the TCP sender  
+* Lab 4: the TCP connection
+* Lab 5: the network interface
+* Lab 6: the IP router

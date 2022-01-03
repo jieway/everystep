@@ -29,6 +29,14 @@
 
 3. 修改 GET 请求的路径即可，改成自己的 ID 能拿到属于自己的 X-Your-Code-Is 。
 
+手动访问网页：`telnet cs144.keithw.org http`
+
+    GET /hello HTTP/1.1
+    Host: cs144.keithw.org
+    Connection: close
+
+![image](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.2drgbpb6jqtc.webp)
+
 ### 2.2 监听和连接
 
 要分别开两个终端，分别代表服务端和客户端。
@@ -64,11 +72,6 @@ git clone https://github.com/cs144/sponge
 
 为了方便 debug ，git 提交时尽可能频繁 commit ，并注明每次 commit 的信息。
 
-### 3.3 阅读 Sponge 文档
-
-1. 阅读：https://cs144.github.io/doc/lab0/
-
-
 ### 3.4 编写 webget 程序
 
 文件位于 `../apps/webget.cc` 。首先阅读代码，建议先看 main 函数。
@@ -97,11 +100,21 @@ git clone https://github.com/cs144/sponge
 * 然后判断程序是否能够正确运行 `./apps/webget cs144.keithw.org /hello` 
 * 最后采用测试用例判断 `make check_webget`
 
-## 4. 基于内存的可靠字节流
+![image](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.5itgo5udzro0.webp)
 
-* [byte_stream.hh](https://github.com/weijiew/TCP/blob/main/libsponge/byte_stream.hh)
-* [byte_stream.cc](https://github.com/weijiew/TCP/blob/main/libsponge/byte_stream.cc)
+## 4. lab0 基于内存的可靠字节流
 
-## 5. 参考
+首先需要考虑的是数据结构该怎么设计。根据接口来设计数据结构。
 
-1. [C语言中 int main(int argc,char *argv[])的两个参数详解](https://blog.csdn.net/weixin_40539125/article/details/82585792)
+* 用队列来存数据。
+* 空间上限。
+* 已经写入的数据长度。 
+* 已经读取的数据长度。
+* 是否读到末尾。
+
+![image](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.5wkmzkwnri00.webp)
+
+最后一个测试死活过不去，翻看 `doctests/socket_dt.cc` 后我认为和网络有关，注释掉之后过去了。
+
+![image](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.7f62tszac400.webp)
+
