@@ -1,3 +1,7 @@
+# 15-213 
+
+* [课程主页](https://www.cs.cmu.edu/~213/index.html)
+* [上课安排](https://www.cs.cmu.edu/~213/schedule.html)
 
 L0 (C programming Lab): Test/refresh your C programming abilities
 L1 (datalab): Manipulating bits

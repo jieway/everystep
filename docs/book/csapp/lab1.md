@@ -2,13 +2,19 @@
 
 建议先阅读 CS:APP 第二章。
 
-## 1. 阅读
+## 1. 目的
 
-如果你是教师的话，先阅读这个 [README-datalab.txt](https://github.com/weijiew/CSAPP-Labs/blob/main/lab1/README-datalab.txt)，里面包含了整个 lab 是怎么制作的一些信息。
+阅读 REAMDE ：
 
-如果你是学生并且想直接做实验，阅读教师的指导会浪费时间，建议直接阅读这个内容：[datalab-handout/README](https://github.com/weijiew/CSAPP-Labs/blob/main/lab1/datalab-handout/README) 。
+修改 `bits.c` 并使用 `btest` 验证是否正确，通过所有测试！
 
-此时就已经知晓整个实验的流程，以及文件中一些工具的使用。
+dlc 用来判断是否符号编码规则。
+
+  unix> ./dlc bits.c
+
+查看每个函数所用的操作数：
+
+  unix> ./dlc -e bits.c  
 
 ## 2. 内容总结
 
