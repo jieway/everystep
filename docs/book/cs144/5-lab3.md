@@ -11,3 +11,7 @@
 
 超时重传：为每个报文设置计时器，超过 RTO 就重传。RTO 随着网络环境变化。如果收到确认，则终止计时器。
 
+只能使用 tick 来记录时间。
+
+
+![image](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.45sle6u3jcu0.webp)
