@@ -1,6 +1,6 @@
 module.exports = [
     {
-    title: '⛽MIT 6.NULL',
+    title: '⛽ MIT 6.NULL',
     children: [
       'missing/ch0',
       'missing/ch1',
@@ -37,12 +37,13 @@ module.exports = [
       'cs61a/15-hw06'
     ]
   },
-  // {
-  //   title: '🌌 CS61B',
-  //   children: [
-  //     'cs61b/lab1'
-  //   ]
-  // },
+  {
+    title: '🤖 CS61c',
+    children: [
+      'cs61c/1-summary.md',
+      'cs61c/2-lab0'
+    ]
+  },
   {
     title: '🍋 CS144',
     children: [
@@ -69,53 +70,6 @@ module.exports = [
       'bd/ch1',
     ]
   },
-  // {
-  //   title: '💫 数据结构',
-  //   children: [
-  //     'ds/ch0',
-  //     'ds/ch1',
-  //     'ds/ch2',
-  //     'ds/ch3',
-  //     'ds/ch4',
-  //     'ds/ch5',
-  //     'ds/ch7',
-  //     'ds/ch8',
-  //     'ds/ch9'
-  //   ]
-  // },
-  // {
-  //   title: '🚗 计算机网络',
-  //   children: [
-  //     'net/ch0',
-  //     'net/ch1',
-  //     'net/ch2',
-  //     'net/ch3',
-  //     'net/ch4',
-  //     'net/ch5',
-  //     'net/ch7',
-  //     'net/ch8'
-  //   ]
-  // },
-  // {
-  //   title: '💥 计算机组成原理',
-  //   children: [
-  //     'co/ch0',
-  //     'co/ch1',
-  //     'co/ch2',
-  //     'co/ch3',
-  //     'co/ch4',
-  //     'co/ch5'
-  //   ]
-  // },
-  // {
-  //   title: '👑 操作系统',
-  //   children: [
-  //     'os/ch0',
-  //     'os/now',
-  //     'os/rcore-0',
-  //     'os/rcore-1'
-  //   ]
-  // },
   {
     title: '🍻 CSAPP',
     children: [
@@ -138,32 +92,6 @@ module.exports = [
       'asm/ch1'
     ]
   },
-  // {
-  //   title: '🎉 深度学习',
-  //   children: [
-  //     'dl/ch0',
-  //     'dl/ch1',
-  //     'dl/ch2',
-  //     'dl/ch3'
-  //   ]
-  // },
-  // {
-  //   title: '🤖 CS 231N',
-  //   children: [
-  //     'cs231N/ch0'
-  //   ]
-  // },
-
-  // {
-  //   title: '🍳 政治',
-  //   children: [
-  //     'pol/ch0',
-  //     'pol/ch1',
-  //     'pol/ch2',
-  //     'pol/ch3',
-  //     'pol/ch4'
-  //   ]
-  // },
   {
     title: '🎊 爬虫笔记',
     children: [
@@ -171,26 +99,6 @@ module.exports = [
       'spi/ch2',
       'spi/ch3',
       'spi/ch4'
-    ]
-  },
-  // {
-  //   title: '🥳 lsbasi',
-  //   children: [
-  //     'lsbasi/ch0',
-  //     'lsbasi/ch1',
-  //     'lsbasi/ch2',
-  //     'lsbasi/ch3',
-  //     'lsbasi/ch4',
-  //     'lsbasi/ch5',
-  //     'lsbasi/ch6',
-  //     'lsbasi/ch7'
-  //   ]
-  // },
-  {
-    title: '🍕 算法模板',
-    children: [
-      'alg/1-summary',
-      'alg/2-quicksort'
     ]
   }
 ]
