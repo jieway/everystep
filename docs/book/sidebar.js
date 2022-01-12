@@ -45,14 +45,6 @@ module.exports = [
     ]
   },
   {
-    title: '🍋 CS144',
-    children: [
-      'cs144/1-summary.md',
-      'cs144/2-lab0',
-      'cs144/3-lab1'
-    ]    
-  },
-  {
     title: '🐉 编译原理',
     children: [
       'compile/ch0',
