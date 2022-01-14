@@ -65,8 +65,15 @@ module.exports = [
   {
     title: '🍻 CSAPP',
     children: [
-      'csapp/lab0',
-      'csapp/lab1'
+      'csapp/1-summary',
+      'csapp/2-lab1'
+    ]
+  },
+  {
+    title: '😍 论文翻译',
+    children: [
+      'read/0-summary',
+      'read/1-mapreduce'
     ]
   },
   {

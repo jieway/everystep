@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Take some notes",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
     "deploy": "sh deploy.sh"
   },
   "repository": "https://github.com/weijiew/codestep",
