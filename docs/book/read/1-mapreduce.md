@@ -679,7 +679,7 @@ This ordering guarantee makes it easy to generate a sorted output file per parti
 
 这种排序保证使得每个分区很容易生成一个排序的输出文件，这在输出文件格式需要支持有效的按键随机访问查找，或者输出的用户觉得数据排序很方便的情况下很有用。
 
-## 4.3 Combiner Function 组合器功能
+## 4.3 Combiner Function combiner 功能
 
 In some cases, there is significant repetition in the intermediate keys produced by each map task, and the userspecified Reduce function is commutative and associative. 
 
@@ -695,11 +695,11 @@ All of these counts will be sent over the network to a single reduce task and th
 
 We allow the user to specify an optional Combiner function that does partial merging of this data before it is sent over the network. 
 
-我们允许用户指定一个可选的组合器函数，在网络上发送之前对这些数据进行部分合并。
+我们允许用户指定一个可选的 Combiner 函数，在网络上发送之前对这些数据进行部分合并。
 
 The Combiner function is executed on each machine that performs a map task. Typically the same code is used to implement both the combiner and the reduce functions. 
 
-Combiner 函数在每台执行 map 任务的机器上执行。通常情况下，同样的代码被用来实现梳理器和还原函数。
+Combiner 函数在每台执行 map 任务的机器上执行。通常情况下，同样的代码被用来实现梳理器和 reduce 函数。
 
 The only difference between a reduce function and a combiner function is how the MapReduce library handles the output of the function. 
 
@@ -711,11 +711,11 @@ reduce 函数的输出被写入最终输出文件。
 
 The output of a combiner function is written to an intermediate file that will be sent to a reduce task. 
 
-组合器函数的输出被写入一个中间文件，该文件将被发送到一个减少任务。
+combiner 函数的输出被写入一个中间文件，该文件将被发送到一个 reduce 任务。
 
 Partial combining significantly speeds up certain classes of MapReduce operations. Appendix A contains an example that uses a combiner.
 
-部分组合器大大加快了某些类别的 MapReduce 操作。附录 A 包含一个使用组合器的例子。
+部分combiner 大大加快了某些类别的 MapReduce 操作。附录 A 包含一个使用combiner 的例子。
 
 ## 4.4 Input and Output Types 输入和输出类型
 
@@ -755,7 +755,7 @@ In a similar fashion, we support a set of output types for producing data in dif
 
 In some cases, users of MapReduce have found it convenient to produce auxiliary files as additional outputs from their map and/or reduce operators. 
 
-在某些情况下，MapReduce 的用户发现产生辅助文件作为其 map 和/或 reduce 操作者的额外输出是很方便的。
+在某些情况下，MapReduce 的用户发现产生辅助文件作为其 map 或 reduce 操作者的额外输出是很方便的。
 
 We rely on the application writer to make such side-effects atomic and idempotent. 
 
@@ -857,7 +857,7 @@ These pages can also be used to figure out when the computation is much slower t
 
 In addition, the top-level status page shows which workers have failed, and which map and reduce tasks they were processing when they failed. 
 
-此外，顶层状态页面显示哪些工作者失败了，以及他们失败时正在处理哪些映射和还原任务。
+此外，顶层状态页面显示哪些工作者失败了，以及他们失败时正在处理哪些 map 和 reduce 任务。
 
 This information is useful when attempting to diagnose bugs in the user code.
 
@@ -875,7 +875,7 @@ For example, user code may want to count total number of words processed or the 
 
 To use this facility, user code creates a named counter object and then increments the counter appropriately in the Map and/or Reduce function. For example:
 
-为了使用这一设施，用户代码创建一个命名的计数器对象，然后在 Map 和/或 Reduce 函数中适当地增加该计数器。比如说。
+为了使用这一设施，用户代码创建一个命名的计数器对象，然后在 Map 或 Reduce 函数中适当地增加该计数器。比如说。
 
     Counter* uppercase;
     uppercase = GetCounter("uppercase");
@@ -892,7 +892,7 @@ The counter values from individual worker machines are periodically propagated t
 
 The master aggregates the counter values from successful map and reduce tasks and returns them to the user code when the MapReduce operation is completed. 
 
-master 汇总来自成功的映射和还原任务的计数器值，并在MapReduce操作完成后将其返回给用户代码。
+master 汇总来自成功的 map 和 reduce 任务的计数器值，并在 MapReduce 操作完成后将其返回给用户代码。
 
 The current counter values are also displayed on the master status page so that a human can watch the progress of the live computation. 
 
