@@ -1,12 +1,18 @@
-# 开始
+# Lab 1: MapReduce
 
-> 做实验之前一定要读一遍《MapReduce》论文。
+> 前置信息：
+> 1. 读一遍《MapReduce》论文。
+> 2. 看完 lec1 和 lec2 视频 （B站有中文翻译）
+> 3. 过一遍 https://go.dev/tour/welcome/1
+> 4. 阅读 lab1 
 
-[Setup Go](https://pdos.csail.mit.edu/6.824/labs/go.html)
+## 1. 环境配置
 
-命令行下载不下来，于是直接访问网页通过浏览器下载。
+因为实验需要在 linux 平台进行，最终我选择了 Vmware ，CentOS 7.5，GoLang 这一套搭配。
 
-[virtual Box 设置共享文件夹](https://jingyan.baidu.com/article/d2b1d102cf998b5c7f37d442.html) 将文件传到虚拟机中。
+虚拟机，静态 IP 配置，本地 ssh 连接虚拟机可以参考 [p18-p21](https://www.bilibili.com/video/BV1Qp4y1n7EN?p=18) 这四节的内容。
+
+接下来是配置 GO ，由于命令行无响应所以直接访问网页通过浏览器下载。然后通过 Xftp 将安装包上传到 Centos 7.5 中。
 
 手动安装 `sudo tar -C /usr/local -xzf go1.15.8.linux-amd64.tar.gz`
 
@@ -24,14 +30,6 @@ $ go version
 go version go1.15.8 linux/amd64
 ```
 
-如果在国内安装 GO 插件之前先换源。GO 换源 `go env -w GOPROXY="https://goproxy.cn"` 不然打开 vscode 后一堆库无法加载。
-
-安装 vscode 的 GO 插件。将 GOPATH 路径设置为项目路径 `go env -w GOPATH="/mnt/e/Repo/6.824lab"` 我的路径是这个，你需要改成自己的路径！
-
-GOPATH 直接设置为全局其实是不合适的，但是因为只有一个 GO 项目，索性就直接设置了。如果有两个项目 GOPATH 又分为局部和全局两种。局部只对当前项目有效，全局则是对所有项目。
-
-可以通过 `$ go env` 查看参数设置。
-
 下载项目
 
 ```
@@ -41,6 +39,16 @@ $ ls
 Makefile src
 $
 ```
+
+然后是设置 GoLang 远程开发，写好相应内容即可。建议安装前先阅读此[页面](https://www.jetbrains.com/help/idea/2021.3/remote-development-a.html#)。（安装需要等待很长时间）
+
+![image](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.7i4tacsnor40.webp)
+
+特别注意此处，因为是 GoLang ，不要选择默认的 IDEA 。
+
+![image](https://cdn.jsdelivr.net/gh/weijiew/pic@master/images/image.3xgh4wgdi720.webp)
+
+## 2. 内容
 
 `src/main/mrsequential.go` 是一个单进程 MR 的顺序实现，在一个单进程中产生一个 Map 并
 
@@ -78,7 +86,7 @@ ACT 8
 
 开始工作前提供了一些代码，coordinator 和 worker 代码在 `main/mrcoordinator.go`， `main/mrworker.go` 中。
 
-`mr/coordinator` `go mr/worker.go` `mr/rpc.go` 三个是要实现的文件。
+`mr/coordinator.go` `mr/worker.go` `mr/rpc.go` 三个是要实现的文件。
 
 重新构建 word-count MapReduce 应用程序：
 

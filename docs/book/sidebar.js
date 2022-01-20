@@ -45,6 +45,13 @@ module.exports = [
     ]
   },
   {
+    title: '🦄 6.S081',
+    children: [
+      '6.S081/1-summary.md',
+      'cs61c/2-utils'
+    ]
+  },
+  {
     title: '🐉 编译原理',
     children: [
       'compile/ch0',

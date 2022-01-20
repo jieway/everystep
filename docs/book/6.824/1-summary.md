@@ -2,7 +2,6 @@
 
 课程安排：[schedule](https://pdos.csail.mit.edu/6.824/schedule.html)
 
-
 # lab
 
 * 第一次实验是一个简单的 MapReduce 实验。你们要根据你们在论文中读到的来实现你们版本的 MapReduce 。
@@ -12,6 +11,5 @@
 
 # 资源
 
-[视频内容文字版中文翻译](https://mit-public-courses-cn-translatio.gitbook.io/)
-
-
+* [视频内容文字版中文翻译](https://mit-public-courses-cn-translatio.gitbook.io/mit6-824/)
+* [6.824 视频公开翻译文档链接](https://shimo.im/docs/xwqvh3kGppJKvHvX/read)
