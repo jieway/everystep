@@ -47,8 +47,9 @@ module.exports = [
   {
     title: '🦄 6.S081',
     children: [
-      '6.S081/1-lab1',
-      '6.S081/2-lab2'
+      '6.S081/1-lab0',
+      '6.S081/2-lab1',
+      '6.S081/3-lab2'
     ]
   },
   {

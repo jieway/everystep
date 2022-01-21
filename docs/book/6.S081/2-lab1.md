@@ -251,3 +251,18 @@ main(int argc, char *argv[]) {
 }
 ```
 
+```
+$ ./grade-lab-util
+make: 'kernel/kernel' is up to date.
+== Test sleep, no arguments == sleep, no arguments: OK (2.8s)
+== Test sleep, returns == sleep, returns: OK (0.8s)
+== Test sleep, makes syscall == sleep, makes syscall: OK (0.8s)
+== Test pingpong == pingpong: OK (1.1s)
+== Test primes == primes: OK (0.9s)
+== Test find, in current directory == find, in current directory: OK (1.0s)
+== Test find, recursive == find, recursive: OK (1.1s)
+== Test xargs == xargs: OK (1.1s)
+== Test time ==
+time: OK
+Score: 100/100
+```
