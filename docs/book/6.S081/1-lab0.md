@@ -4,7 +4,7 @@
 
 首先安装 Ubuntu20.04 ，注意一定不能安装别的版本，这个版本省事。
 
-接下来就说配置环境，我参照的信息均来源于此页面： https://pdos.csail.mit.edu/6.828/2020/tools.html 。
+接下来就说配置环境，参照信息均来源于此页面： https://pdos.csail.mit.edu/6.828/2020/tools.html 。
 
 ## 1. 安装包
 

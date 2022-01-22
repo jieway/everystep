@@ -64,13 +64,6 @@ module.exports = [
     ]
   },
   {
-    title: '🐘 大数据技术',
-    children: [
-      'bd/ch0',
-      'bd/ch1',
-    ]
-  },
-  {
     title: '🍻 CSAPP',
     children: [
       'csapp/1-summary',
@@ -90,13 +83,6 @@ module.exports = [
       'sql/mysql',
       'sql/sql',
       'sql/problem'
-    ]
-  },
-  {
-    title: '👓 汇编语言',
-    children: [
-      'asm/ch0',
-      'asm/ch1'
     ]
   },
   {
