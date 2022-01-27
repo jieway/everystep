@@ -172,24 +172,17 @@ syscall(void)
 
 ## Sysinfo (moderate)
 
-实现一个系统调用函数 sysinfo ，用来收集运行中的系统的信息。该系统调用需要一个参数：一个指向sysinfo结构的指针（见kernel/sysinfo.h）。
+任务是添加一个系统调用函数 sysinfo ，先把用户态下的执行流程设置好。
 
-
-执行 sysinfotest 如果它打印出 "sysinfotest: OK" 则完成该作业。
-
-Some hints:
-
-将 `$U/_sysinfotest` 添加到 Makefile 的 UPROGS 中
-
-执行 make qemu 后发现报错：
+将 `$U/_sysinfotest` 添加到 Makefile 的 UPROGS 中。接下来执行 make qemu 后发现报错：
 
 ![](image/3-lab2/1642769782429.png)
 
 添加系统调用sysinfo，步骤与 trace 相同。（如果这里卡住就回头仔细搞明白 trace 的执行流程再往下研究）。
 
-此时再编译依旧失败，接下来是在内核中实现 sysinfotest 。
+跳转到内核后，接下来是在内核中实现 sysinfotest 。
 
-sysinfo 需要将 struct sysinfo 拷贝回用户空间；参见 sys_fstat() (kernel/sysfile.c)和filestat() (kernel/file.c)，了解如何使用copyout()进行拷贝。
+sysinfo 需要将 struct sysinfo 拷贝回用户空间；参见 sys_fstat() (kernel/sysfile.c)和 filestat() (kernel/file.c)，了解如何使用copyout()进行拷贝。
 
 To collect the amount of free memory, add a function to kernel/kalloc.c
 
