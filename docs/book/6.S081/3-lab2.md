@@ -186,8 +186,8 @@ sysinfo 需要将 struct sysinfo 拷贝回用户空间；参见 sys_fstat() (ker
 
 To collect the amount of free memory, add a function to kernel/kalloc.c
 
-为了收集自由内存的数量，在kernel/kalloc.c 中添加一个函数
+在 kernel/kalloc.c 中添加一个函数，统计自由内存的数量。
 
-为了收集进程的数量，在kernel/proc.c中加入一个函数
+在 kernel/proc.c中加入一个函数，统计进程的数量。
 
 ![](image/3-lab2/1642775311557.png)

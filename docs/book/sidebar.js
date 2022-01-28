@@ -49,7 +49,8 @@ module.exports = [
     children: [
       '6.S081/1-lab0',
       '6.S081/2-lab1',
-      '6.S081/3-lab2'
+      '6.S081/3-lab2',
+      '6.S081/4-lab3'
     ]
   },
   {

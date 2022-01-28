@@ -1,31 +1,17 @@
 # Lab: page tables
 
-In this lab you will explore page tables and modify them to simplify the functions that copy data from user space to kernel space.
-
 在这个实验室中，你将探索页表，并修改它们以简化从用户空间复制数据到内核空间的功能。
 
-Before you start coding, read Chapter 3 of the xv6 book, and related files:
+需要提前阅读 xv6书 第三章
 
-在你开始编码之前，请阅读xv6书的第3章，以及相关文件。
+`kern/memlayout.h` ，它捕捉了内存的布局。
 
-kern/memlayout.h, which captures the layout of memory.
+`kern/vm.c` 它包含了大部分虚拟内存（VM）代码。
 
-kern/memlayout.h，它捕捉了内存的布局。
+`kernel/kalloc.c` 它包含分配和释放物理内存的代码。
 
-kern/vm.c, which contains most virtual memory (VM) code.
+切换到 pgtbl 分支
 
-kern/vm.c，它包含了大部分虚拟内存（VM）代码。
-
-kernel/kalloc.c, which contains code for allocating and freeing physical memory.
-
-kernel/kalloc.c，它包含分配和释放物理内存的代码。
-
-To start the lab, switch to the pgtbl branch:
-
-要开始实验，请切换到pgtbl分支。
-
-
-  $ git fetch
   $ git checkout pgtbl
   $ make clean
   
