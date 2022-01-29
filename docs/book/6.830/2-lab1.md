@@ -489,19 +489,19 @@ Notice that `BufferPool` asks you to implement a `flush_all_pages()` method.  Th
 
 Access methods provide a way to read or write data from disk that is arranged in a specific way. Common access methods include heap files (unsorted files of tuples) and B-trees; for this assignment, you will only implement a heap file access method, and we have written some of the code for you.
 
-访问方法提供了一种从磁盘读取或写入以特定方式排列的数据的方法。常见的访问方法包括堆文件（未经排序的图元文件）和 B 树；对于这项作业，你将只实现一个堆文件访问方法，我们已经为你写了一些代码。
+访问方法提供了一种从磁盘读取或写入以特定方式排列的数据的方法。常见的访问方法包括堆文件（未经排序的 tuple 文件）和 B 树；对于这项作业，你将只实现一个堆文件访问方法，我们已经为你写了一些代码。
 
 <p>
 
 A `HeapFile` object is arranged into a set of pages, each of which consists of a fixed number of bytes for storing tuples, (defined by the constant `BufferPool.DEFAULT_PAGE_SIZE`), including a header. In SimpleDB, there is one `HeapFile` object for each table in the database. Each page in a `HeapFile` is arranged as a set of slots, each of which can hold one tuple (tuples for a given table in SimpleDB are all of the same size). In addition to these slots, each page has a header that consists of a bitmap with one bit per tuple slot. If the bit corresponding to a particular tuple is 1, it indicates that the tuple is valid; if it is 0, the tuple is invalid (e.g., has been deleted or was never initialized.)  Pages of `HeapFile` objects are of type `HeapPage` which implements the `Page` interface. Pages are stored in the buffer pool but are read and written by the `HeapFile` class.
 
-一个`HeapFile`对象被安排成一组页面，每个页面由固定数量的字节组成，用于存储图元，（由常数`BufferPool.DEFAULT_PAGE_SIZE`定义），包括一个头。在SimpleDB中，数据库中每个表都有一个`HeapFile`对象。`HeapFile`中的每个页面被安排为一组槽，每个槽可以容纳一个元组（SimpleDB中一个给定的表的元组都是相同大小的）。除了这些槽之外，每个页面都有一个头，由一个位图组成，每个元组槽有一个位。如果某个元组对应的位是1，表示该元组是有效的；如果是0，表示该元组是无效的（例如，已经被删除或者从未被初始化）。 `HeapFile`对象的页是`HeapPage`类型，实现了`Page`接口。页被存储在缓冲池中，但由`HeapFile`类来读写。
+一个`HeapFile`对象被安排成一组页面，每个页面由固定数量的字节组成，用于存储 tuple ，（由常数`BufferPool.DEFAULT_PAGE_SIZE`定义），包括一个头。在SimpleDB中，数据库中每个表都有一个`HeapFile`对象。`HeapFile`中的每个页面被安排为一组槽，每个槽可以容纳一个元组（SimpleDB中一个给定的表的元组都是相同大小的）。除了这些槽之外，每个页面都有一个头，由一个位图组成，每个元组槽有一个位。如果某个元组对应的位是1，表示该元组是有效的；如果是0，表示该元组是无效的（例如，已经被删除或者从未被初始化）。 `HeapFile`对象的页是`HeapPage`类型，实现了`Page`接口。页被存储在缓冲池中，但由`HeapFile`类来读写。
 
 <p>
 
 SimpleDB stores heap files on disk in more or less the same format they are stored in memory. Each file consists of page data arranged consecutively on disk. Each page consists of one or more bytes representing the header, followed by the _ page size_ bytes of actual page content. Each tuple requires _tuple size_ * 8 bits for its content and 1 bit for the header. Thus, the number of tuples that can fit in a single page is:
 
-SimpleDB在磁盘上存储堆文件的格式或多或少与它们在内存中的存储格式相同。每个文件由磁盘上连续排列的页面数据组成。每个页面由一个或多个代表头的字节组成，然后是实际页面内容的_页面大小_字节。每个元组的内容需要_元组大小_*8位，页眉需要1位。因此，一个页面中可以容纳的图元数量是。
+SimpleDB在磁盘上存储堆文件的格式或多或少与它们在内存中的存储格式相同。每个文件由磁盘上连续排列的页面数据组成。每个页面由一个或多个代表头的字节组成，然后是实际页面内容的_页面大小_字节。每个元组的内容需要_元组大小_*8位，页眉需要1位。因此，一个页面中可以容纳的 tuple 数量是。
 
 <p>
 
@@ -513,14 +513,14 @@ _tuples per page_ = floor((_page size_ * 8) / (_tuple size_ * 8 + 1))
 
 Where _tuple size_ is the size of a tuple in the page in bytes. The idea here is that each tuple requires one additional bit of storage in the header. We compute the number of bits in a page (by mulitplying page size by 8), and divide this quantity by the number of bits in a tuple (including this extra header bit) to get the number of tuples per page. The floor operation rounds down to the nearest integer number of tuples (we don't want to store partial tuples on a page!)
 
-其中_tuple size_是页面中一个元组的大小，单位是字节。这里的想法是，每个元组需要在头中增加一个比特的存储。我们计算一个页面中的比特数（通过将页面大小乘以8），然后用这个数量除以元组中的比特数（包括这个额外的头部比特），得到每页的元组数。下限操作将四舍五入到最接近的图元数（我们不想在一个页面上存储部分图元！）。
+其中_tuple size_是页面中一个元组的大小，单位是字节。这里的想法是，每个元组需要在头中增加一个比特的存储。我们计算一个页面中的比特数（通过将页面大小乘以8），然后用这个数量除以元组中的比特数（包括这个额外的头部比特），得到每页的元组数。下限操作将四舍五入到最接近的 tuple 数（我们不想在一个页面上存储部分 tuple ！）。
 
 
 <p>
 
 Once we know the number of tuples per page, the number of bytes required to store the header is simply:
 
-一旦我们知道了每页的图元数，存储页眉所需的字节数就简单了。
+一旦我们知道了每页的 tuple 数，存储页眉所需的字节数就简单了。
 
 <p>
 
@@ -559,7 +559,7 @@ Although you will not use them directly in Lab 1, we ask you to implement `getNu
 
 You will also need to implement an Iterator over the tuples in the page, which may involve an auxiliary class or data structure.
 
-你还需要在页面中的图元上实现一个迭代器，这可能涉及一个辅助类或数据结构。
+你还需要在页面中的 tuple 上实现一个迭代器，这可能涉及一个辅助类或数据结构。
 
 At this point, your code should pass the unit tests in HeapPageIdTest, RecordIDTest, and HeapPageReadTest.
 
@@ -569,7 +569,7 @@ At this point, your code should pass the unit tests in HeapPageIdTest, RecordIDT
 
 After you have implemented `HeapPage`, you will write methods for `HeapFile` in this lab to calculate the number of pages in a file and to read a page from the file. You will then be able to fetch tuples from a file stored on disk.
 
-在你实现了 "HeapPage "之后，你将在本实验中为 "HeapFile "编写方法，以计算文件中的页数，并从文件中读取一个页。然后你将能够从存储在磁盘上的文件中获取图元。
+在你实现了 "HeapPage "之后，你将在本实验中为 "HeapFile "编写方法，以计算文件中的页数，并从文件中读取一个页。然后你将能够从存储在磁盘上的文件中获取 tuple 。
 
 ### Exercise 5
 
@@ -593,7 +593,7 @@ Hint: you will need random access to the file in order to read and write pages a
 
 You will also need to implement the `HeapFile.iterator()` method, which should iterate through through the tuples of each page in the HeapFile. The iterator must use the `BufferPool.getPage()` method to access pages in the `HeapFile`. This method loads the page into the buffer pool and will eventually be used (in a later lab) to implement locking-based concurrency control and recovery.  Do not load the entire table into memory on the open() call -- this will cause an out of memory error for very large tables.
 
-你还需要实现`HeapFile.iterator()`方法，它应该遍历HeapFile中每个页面的图元。迭代器必须使用`BufferPool.getPage()`方法来访问`HeapFile`中的页面。这个方法将页面加载到缓冲池中，最终将被用于（在后面的实验室中）实现基于锁的并发控制和恢复。 不要在open()调用时将整个表加载到内存中 -- 这将导致非常大的表出现内存不足的错误。
+你还需要实现`HeapFile.iterator()`方法，它应该遍历HeapFile中每个页面的 tuple 。迭代器必须使用`BufferPool.getPage()`方法来访问`HeapFile`中的页面。这个方法将页面加载到缓冲池中，最终将被用于（在后面的实验室中）实现基于锁的并发控制和恢复。 不要在open()调用时将整个表加载到内存中 -- 这将导致非常大的表出现内存不足的错误。
 
 <p>
 
@@ -617,7 +617,7 @@ Operators are connected together into a plan by passing lower-level operators in
 
 At the top of the plan, the program interacting with SimpleDB simply calls `getNext` on the root operator; this operator then calls `getNext` on its children, and so on, until these leaf operators are called. They fetch tuples from disk and pass them up the tree (as return arguments to `getNext`); tuples propagate up the plan in this way until they are output at the root or combined or rejected by another operator in the plan.
 
-在计划的顶部，与SimpleDB交互的程序只需在根操作符上调用`getNext`；这个操作符接着在其子操作符上调用`getNext`，以此类推，直到这些叶操作符被调用。他们从磁盘中获取图元，并将其传递到树上（作为`getNext`的返回参数）；图元以这种方式在计划中传播，直到它们在根部输出或被计划中的另一个运算符合并或拒绝。
+在计划的顶部，与SimpleDB交互的程序只需在根操作符上调用`getNext`；这个操作符接着在其子操作符上调用`getNext`，以此类推，直到这些叶操作符被调用。他们从磁盘中获取 tuple ，并将其传递到树上（作为`getNext`的返回参数）； tuple 以这种方式在计划中传播，直到它们在根部输出或被计划中的另一个运算符合并或拒绝。
 
 <p>
 
@@ -625,7 +625,7 @@ At the top of the plan, the program interacting with SimpleDB simply calls `getN
 
 For plans that implement `INSERT` and `DELETE` queries, the top-most operator is a special `Insert` or `Delete` operator that modifies the pages on disk.  These operators return a tuple containing the count of the number of affected tuples to the user-level program.
 
-对于实现`INSERT'和`DELETE'查询的计划，最上面的运算符是一个特殊的`Insert'或`Delete'运算符，它修改了磁盘上的页面。 这些操作符向用户级程序返回一个包含受影响图元数量的计数。
+对于实现`INSERT'和`DELETE'查询的计划，最上面的运算符是一个特殊的`Insert'或`Delete'运算符，它修改了磁盘上的页面。 这些操作符向用户级程序返回一个包含受影响 tuple 数量的计数。
 
 <p>
 -->
@@ -646,7 +646,7 @@ For this lab, you will only need to implement one SimpleDB operator.
 
 This operator sequentially scans all of the tuples from the pages of the table specified by the `tableid` in the constructor. This operator should access tuples through the `DbFile.iterator()` method.
 
-这个操作者从构造函数中的`tableid`指定的表中的页面中顺序扫描所有图元。这个操作符应该通过`DbFile.iterator()`方法访问图元。
+这个操作者从构造函数中的`tableid`指定的表中的页面中顺序扫描所有 tuple 。这个操作符应该通过`DbFile.iterator()`方法访问 tuple 。
 
 At this point, you should be able to complete the ScanTest system test. Good work!
 
@@ -735,7 +735,7 @@ The table we create has three integer fields. To express this, we create a `Tupl
 
 Once we have finished initializing the database system, we create a query plan. Our plan consists only of the `SeqScan` operator that scans the tuples from disk. In general, these operators are instantiated with references to the appropriate table (in the case of `SeqScan`) or child operator (in the case of e.g. Filter). The test program then repeatedly calls `hasNext` and `next` on the `SeqScan` operator. As tuples are output from the `SeqScan`, they are printed out on the command line.
 
-一旦我们完成了数据库系统的初始化，我们就创建一个查询计划。我们的计划只由`SeqScan`操作符组成，它从磁盘上扫描图元。一般来说，这些操作符的实例化需要引用相应的表（在`SeqScan`的情况下）或子操作符（在例如Filter的情况下）。然后测试程序在`SeqScan`运算符上反复调用`hasNext`和`next`。当图元从`SeqScan`中输出时，它们会在命令行中打印出来。
+一旦我们完成了数据库系统的初始化，我们就创建一个查询计划。我们的计划只由`SeqScan`操作符组成，它从磁盘上扫描 tuple 。一般来说，这些操作符的实例化需要引用相应的表（在`SeqScan`的情况下）或子操作符（在例如Filter的情况下）。然后测试程序在`SeqScan`运算符上反复调用`hasNext`和`next`。当 tuple 从`SeqScan`中输出时，它们会在命令行中打印出来。
 
 We **strongly recommend** you try this out as a fun end-to-end test that will help you get experience writing your own test programs for simpledb. You should create the file "test.java" in the src/java/simpledb directory with the code above,  and you should add some "import" statement above the code,  and place the `some_data_file.dat` file in the top level directory. Then run:
 
