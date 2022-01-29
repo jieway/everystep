@@ -54,6 +54,13 @@ module.exports = [
     ]
   },
   {
+    title: '🥰 6.830',
+    children: [
+      '6.830/1-lab0',
+      '6.830/2-lab1'
+    ]
+  },
+  {
     title: '🐉 编译原理',
     children: [
       'compile/ch0',

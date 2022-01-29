@@ -1,4 +1,4 @@
-# 6.830/6.814 Lab 1: SimpleDB
+# Lab 1: SimpleDB
 
 **Assigned: Wed, Feb 24**
 
