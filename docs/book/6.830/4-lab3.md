@@ -406,3 +406,79 @@ Bushy plans. Improve the provided orderJoins() and other helper methods to gener
 You have now completed this lab. Good work!
 
 你现在已经完成了这个实验。干得好!
+
+## 3. Logistics
+You must submit your code (see below) as well as a short (2 pages, maximum) writeup describing your approach. This writeup should:
+
+你必须提交你的代码（见下文）以及描述你的方法的简短（2页，最多）的文章。这篇报告应该
+
+Describe any design decisions you made, including methods for selectivity estimation, join ordering, as well as any of the bonus exercises you chose to implement and how you implemented them (for each bonus exercise you may submit up to 1 additional page).
+Discuss and justify any changes you made to the API.
+Describe any missing or incomplete elements of your code.
+Describe how long you spent on the lab, and whether there was anything you found particularly difficult or confusing.
+Description of any extra credit implementation you have done.
+
+描述你所做的任何设计决定，包括选择性估计的方法，连接排序，以及你选择实现的任何奖励练习和你如何实现它们（对于每个奖励练习，你可以提交多达1页的额外内容）。
+讨论并证明你对API所作的任何修改。
+描述你的代码中任何缺失或不完整的元素。
+描述你花了多长时间做这个实验，以及是否有任何你认为特别困难或困惑的地方。
+描述你所做的任何额外功劳的实现。
+
+## 3.1. Collaboration
+This lab should be manageable for a single person, but if you prefer to work with a partner, this is also OK. Larger groups are not allowed. Please indicate clearly who you worked with, if anyone, on your writeup.
+
+这个实验室对一个人来说应该是可以应付的，但如果你喜欢和一个伙伴一起工作，这也是可以的。不允许有较大的团体。如果有的话，请在你的报告中明确指出你和谁一起工作。
+
+
+## 3.2. Submitting your assignment
+We will be using gradescope to autograde all programming assignments. You should have all been invited to the class instance; if not, please let us know and we can help you set up. You may submit your code multiple times before the deadline; we will use the latest version as determined by gradescope. Place the write-up in a file called lab3-writeup.txt with your submission. You also need to explicitly add any other files you create, such as new *.java files.
+
+我们将使用gradescope对所有编程作业进行自动评分。你们应该都被邀请到班级实例中；如果没有，请告诉我们，我们可以帮助你们设置。你可以在截止日期前多次提交你的代码；我们将使用由gradescope确定的最新版本。把写好的东西放在一个叫lab3-writeup.txt的文件里，和你的提交一起。你还需要明确地添加你创建的任何其他文件，如新的*.java文件。
+
+The easiest way to submit to gradescope is with .zip files containing your code. On Linux/MacOS, you can do so by running the following command:
+
+向 gradescope 提交的最简单方法是使用包含你的代码的 .zip 文件。在Linux/MacOS上，你可以通过运行以下命令来实现。
+
+    $ zip -r submission.zip src/ lab3-writeup.txt
+
+## 3.3. Submitting a bug
+SimpleDB is a relatively complex piece of code. It is very possible you are going to find bugs, inconsistencies, and bad, outdated, or incorrect documentation, etc.
+
+SimpleDB是一个相对复杂的代码。你很可能会发现错误、不一致，以及糟糕的、过时的或不正确的文档等等。
+
+We ask you, therefore, to do this lab with an adventurous mindset. Don't get mad if something is not clear, or even wrong; rather, try to figure it out yourself or send us a friendly email.
+
+因此，我们要求你以一种冒险的心态来做这个实验室。如果有不清楚的地方，甚至是错误的地方，不要生气；而是要自己尝试去弄清楚，或者给我们发一封友好的电子邮件。
+
+Please submit (friendly!) bug reports to 6.830-staff@mit.edu. When you do, please try to include:
+
+请提交（友好的！）错误报告到6.830-staff@mit.edu。当你这样做时，请尽量包括。
+
+A description of the bug.
+A .java file we can drop in the test/simpledb directory, compile, and run.
+A .txt file with the data that reproduces the bug. We should be able to convert it to a .dat file using HeapFileEncoder.
+You can also post on the class page on Piazza if you feel you have run into a bug.
+
+一个关于该错误的描述。
+一个.java文件，我们可以把它放到test/simpledb目录中，编译并运行。
+一个包含再现该错误的数据的.txt文件。我们应该能够用HeapFileEncoder将其转换为.dat文件。
+如果你觉得你遇到了一个bug，你也可以在Piazza的类页面上发帖。
+
+
+## 3.4 Grading
+
+75% of your grade will be based on whether or not your code passes the system test suite we will run over it. These tests will be a superset of the tests we have provided. Before handing in your code, you should make sure it produces no errors (passes all of the tests) from both ant test and ant systemtest.
+
+你的成绩的75%将基于你的代码是否通过我们将对其进行的系统测试套件。这些测试将是我们提供的测试的一个超集。在交出你的代码之前，你应该确保它在ant test和ant systemtest中没有产生错误（通过所有的测试）。
+
+Important: before testing, gradescope will replace your build.xml, HeapFileEncoder.java and the entire contents of the test directory with our version of these files. This means you cannot change the format of .dat files! You should also be careful changing our APIs. You should test that your code compiles the unmodified tests.
+
+重要的是：在测试之前，gradescope 会用我们的版本替换你的 build.xml、HeapFileEncoder.java 以及测试目录中的全部内容。这意味着你不能改变.dat文件的格式! 你也应该小心改变我们的API。你应该测试你的代码是否编译了未修改的测试。
+
+You should get immediate feedback and error outputs for failed tests (if any) from gradescope after submission. The score given will be your grade for the autograded portion of the assignment. An additional 25% of your grade will be based on the quality of your writeup and our subjective evaluation of your code. This part will also be published on gradescope after we finish grading your assignment.
+
+在提交后，你应该从 gradescope 得到即时反馈和失败测试的错误输出（如果有的话）。给出的分数将是你在作业的自动评分部分的成绩。另外25%的分数将基于你的写作质量和我们对你代码的主观评价。在我们给你的作业评分后，这部分也将在 gradescope 上公布。
+
+We had a lot of fun designing this assignment, and we hope you enjoy hacking on it!
+
+我们在设计这项作业时非常有趣，我们希望你能享受到黑客的乐趣!
