@@ -9,7 +9,7 @@ features:
   details: 工欲善其事，必先利其器！
 - title: 🤡  CS61A 
   details: Structure and Interpretation of Computer Programs (SICP)
-- title: 🤖 CS61c
+- title: 🤖 CS61C
   details:  写一个 CPU
 - title: 🦄 6.S081
   details:  Operation System
