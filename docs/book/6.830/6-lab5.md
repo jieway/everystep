@@ -1,4 +1,4 @@
-# 6.830 Lab 5: B+ Tree Index
+# Lab 5: B+ Tree Index
 Assigned: Wednesday, April 21, 2021
 Due: Tuesday, May 4, 2021 11:59 PM EDT
 

@@ -1,4 +1,4 @@
-# 6.830 Lab 2: SimpleDB Operators
+# Lab 2: SimpleDB Operators
 
 **Assigned: Tue, Mar 9, 2021**<br>
 **Due: Fri, Mar 19, 2021 11:59 PM EDT**

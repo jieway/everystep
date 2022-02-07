@@ -1,4 +1,4 @@
-# 6.830 Lab 4: SimpleDB Transactions
+# Lab 4: SimpleDB Transactions
 
 Assigned: Monday, Apr 5, 2021
 Due: Thursday, Apr 22, 2021 11:59 PM ET

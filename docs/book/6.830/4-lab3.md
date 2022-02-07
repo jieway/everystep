@@ -1,4 +1,4 @@
-# 6.830 Lab 3: Query Optimization
+# Lab 3: Query Optimization
 
 Assigned: Wednesday, Mar 17, 2021
 Due: Tuesday, Apr 6, 2021
@@ -48,7 +48,7 @@ Implement the methods in the TableStats class that allow it to estimate selectiv
 
 Implement the methods in the JoinOptimizer class that allow it to estimate the cost and selectivities of joins.
 
-实现JoinOptimizer类中的方法，使其能够估计连接的成本和选择性。
+实现JoinOptimizer类中的方法，使其能够估计 join 的成本和选择性。
 
 Write the orderJoins method in JoinOptimizer. This method must produce an optimal ordering for a series of joins (likely using the Selinger algorithm), given statistics computed in the previous two steps.
 
@@ -58,11 +58,11 @@ Write the orderJoins method in JoinOptimizer. This method must produce an optima
 
 Recall that the main idea of a cost-based optimizer is to:
 
-回顾一下，基于成本的优化器的主要思想是：。
+回顾一下，基于成本的优化器的主要思想是：
 
 Use statistics about tables to estimate "costs" of different query plans. Typically, the cost of a plan is related to the cardinalities of (number of tuples produced by) intermediate joins and selections, as well as the selectivity of filter and join predicates.
 
-使用关于表的统计数据来估计不同查询计划的 "成本"。通常情况下，一个计划的成本与中间连接和选择的cardinalities（产生的图元数量），以及过滤器和连接谓词的选择性有关。
+使用关于表的统计数据来估计不同查询计划的 "成本"。通常情况下，一个计划的成本与中间连接和选择的cardinalities（产生的 tuple 数量），以及过滤器和连接谓词的选择性有关。
 
 Use these statistics to order joins and selections in an optimal way, and to select the best implementation for join algorithms from amongst several alternatives.
 In this lab, you will implement code to perform both of these functions.
@@ -86,6 +86,7 @@ Before getting started with the implementation, you need to understand the overa
 
 在开始实施之前，你需要了解SimpleDB优化器的整体结构。分析器和优化器的SimpleDB模块的整体控制流程如图1所示。
 
+![](image/4-lab3/1644226360588.png)
 Figure 1: Diagram illustrating classes, methods, and objects used in the parser
 
 图1：说明解析器中使用的类、方法和对象的图示
@@ -148,7 +149,7 @@ When using nested loops joins, recall that the cost of a join between two tables
 
 Here, ntups(t1) is the number of tuples in table t1.
 
-这里，ntups(t1)是表t1中图元的数量。
+这里，ntups(t1)是表t1中 tuples 的数量。
 
 ## 2.2.3 Filter Selectivity
 
@@ -166,19 +167,21 @@ ntups可以通过扫描一个基表直接计算出来。对于一个有一个或
 
 * Scan the table again, selecting out all of fields of all of the tuples and using them to populate the counts of the buckets in each histogram.
 
-再次扫描该表，选择出所有图元的所有字段，用它们来填充每个直方图中的桶的计数。
+再次扫描该表，选择出所有 tuples 的所有字段，用它们来填充每个直方图中的桶的计数。
 
 * To estimate the selectivity of an equality expression, f=const, compute the bucket that contains value const. Suppose the width (range of values) of the bucket is w, the height (number of tuples) is h, and the number of tuples in the table is ntups. Then, assuming values are uniformly distributed throughout the bucket, the selectivity of the expression is roughly (h / w) / ntups, since (h/w) represents the expected number of tuples in the bin with value const.
 
-为了估计一个平等表达式f=const的选择性，计算包含值const的桶。假设桶的宽度（值的范围）是w，高度（图元的数量）是h，而表中图元的数量是ntups。那么，假设值在整个桶中是均匀分布的，表达式的选择性大致为(h/w)/ntups，因为(h/w)代表的是桶中含有值常数的图元的预期数量。
+为了估计一个平等表达式f=const的选择性，计算包含值const的桶。假设桶的宽度（值的范围）是w，高度（ tuples 的数量）是h，而表中 tuples 的数量是ntups。那么，假设值在整个桶中是均匀分布的，表达式的选择性大致为(h/w)/ntups，因为(h/w)代表的是桶中含有值常数的 tuples 的预期数量。
 
 * To estimate the selectivity of a range expression f>const, compute the bucket b that const is in, with width w_b and height h_b. Then, b contains a fraction b_f = h_b / ntups of the total tuples. Assuming tuples are uniformly distributed throughout b, the fraction b_part of b that is > const is (b_right - const) / w_b, where b_right is the right endpoint of b's bucket. Thus, bucket b contributes (b_f x b_part) selectivity to the predicate. In addition, buckets b+1...NumB-1 contribute all of their selectivity (which can be computed using a formula similar to b_f above). Summing the selectivity contributions of all the buckets will yield the overall selectivity of the expression. Figure 2 illustrates this process.
 
-为了估计一个范围表达式f>const的选择性，计算const所在的桶b，其宽度为w_b，高度为h_b。那么，b包含了全部图元中的一部分b_f = h_b / ntups。假设图元均匀地分布在整个b中，b中大于const的部分b_part是（b_right - const）/ w_b，其中b_right是b的桶的右端点。因此，b桶对谓词贡献了（b_f x b_part）的选择性。此外，b+1...NumB-1桶贡献了它们所有的选择性（可以用类似于上面b_f的公式来计算）。将所有桶的选择性贡献相加，将产生表达式的整体选择性。图2说明了这个过程。
+为了估计一个范围表达式f>const的选择性，计算const所在的桶b，其宽度为w_b，高度为h_b。那么，b包含了全部 tuples 中的一部分b_f = h_b / ntups。假设 tuples 均匀地分布在整个b中，b中大于const的部分b_part是（b_right - const）/ w_b，其中b_right是b的桶的右端点。因此，b桶对谓词贡献了（b_f x b_part）的选择性。此外，b+1...NumB-1桶贡献了它们所有的选择性（可以用类似于上面b_f的公式来计算）。将所有桶的选择性贡献相加，将产生表达式的整体选择性。图2说明了这个过程。
 
 * Selectivity of expressions involving less than can be performed similar to the greater than case, looking at buckets down to 0.
 
 涉及小于的表达式的选择性可以类似于大于的情况下进行，看下到0的桶。
+
+![](/6.830/4-lab3/1644227082669.png)
 
 In the next two exercises, you will code to perform selectivity estimation of joins and filters.
 
@@ -202,7 +205,7 @@ After completing this exercise, you should be able to pass the IntHistogramTest 
 
 The class TableStats contains methods that compute the number of tuples and pages in a table and that estimate the selectivity of predicates over the fields of that table. The query parser we have created creates one instance of TableStats per table, and passes these structures into your query optimizer (which you will need in later exercises).
 
-TableStats类包含了计算一个表中图元和页数的方法，以及估计该表字段上的谓词的选择性的方法。我们创建的查询分析器为每个表创建一个TableStats的实例，并将这些结构传递给你的查询优化器（在后面的练习中你会需要它）。
+TableStats类包含了计算一个表中 tuples 和页数的方法，以及估计该表字段上的谓词的选择性的方法。我们创建的查询分析器为每个表创建一个TableStats的实例，并将这些结构传递给你的查询优化器（在后面的练习中你会需要它）。
 
 You should fill in the following methods and classes in TableStats:
 
@@ -222,7 +225,7 @@ Implement estimateScanCost(): This method estimates the cost of sequentially sca
 
 Implement estimateTableCardinality(double selectivityFactor): This method returns the number of tuples in the relation, given that a predicate with selectivity selectivityFactor is applied. This method may use costs or sizes you computed in the constructor.
 
-实现 estimateTableCardinality(double selectivityFactor)。该方法返回关系中图元的数量，考虑到应用了具有选择性的selectivityFactor的谓词。这个方法可以使用你在构造函数中计算的成本或大小。
+实现 estimateTableCardinality(double selectivityFactor)。该方法返回关系中 tuples 的数量，考虑到应用了具有选择性的selectivityFactor的谓词。这个方法可以使用你在构造函数中计算的成本或大小。
 
 You may wish to modify the constructor of TableStats.java to, for example, compute histograms over the fields as described above for purposes of selectivity estimation.
 
@@ -244,11 +247,11 @@ While implementing your simple solution, you should keep in mind the following:
 
 For equality joins, when one of the attributes is a primary key, the number of tuples produced by the join cannot be larger than the cardinality of the non-primary key attribute.
 
-对于等价连接，当其中一个属性是主键时，由连接产生的图元的数量不能大于非主键属性的cardinality。
+对于等价连接，当其中一个属性是主键时，由连接产生的 tuples 的数量不能大于非主键属性的cardinality。
 
 For equality joins when there is no primary key, it's hard to say much about what the size of the output is -- it could be the size of the product of the cardinalities of the tables (if both tables have the same value for all tuples) -- or it could be 0. It's fine to make up a simple heuristic (say, the size of the larger of the two tables).
 
-对于没有主键的等价连接，很难说输出的大小是什么--它可能是表的cardinalities的乘积的大小（如果两个表的所有图元都有相同的值）--或者它可能是0。
+对于没有主键的等价连接，很难说输出的大小是什么--它可能是表的cardinalities的乘积的大小（如果两个表的所有 tuples 都有相同的值）--或者它可能是0。
 
 For range scans, it is similarly hard to say anything accurate about sizes. The size of the output should be proportional to the sizes of the inputs. It is fine to assume that a fixed fraction of the cross-product is emitted by range scans (say, 30%). In general, the cost of a range join should be larger than the cost of a non-primary key equality join of two tables of the same size.
 
@@ -266,7 +269,7 @@ Implement estimateJoinCost(LogicalJoinNode j, int card1, int card2, double cost1
 
 Implement estimateJoinCardinality(LogicalJoinNode j, int card1, int card2, boolean t1pkey, boolean t2pkey): This method estimates the number of tuples output by join j, given that the left input is size card1, the right input is size card2, and the flags t1pkey and t2pkey that indicate whether the left and right (respectively) field is unique (a primary key).
 
-实现 estimateJoinCardinality(LogicalJoinNode j, int card1, int card2, boolean t1pkey, boolean t2pkey) 。这个方法估计了j连接输出的图元数，给定左边的输入是大小为card1，右边的输入是大小为card2，以及指示左边和右边（分别）字段是否唯一（主键）的标志t1pkey和t2pkey。
+实现 estimateJoinCardinality(LogicalJoinNode j, int card1, int card2, boolean t1pkey, boolean t2pkey) 。这个方法估计了j连接输出的 tuples 数，给定左边的输入是大小为card1，右边的输入是大小为card2，以及指示左边和右边（分别）字段是否唯一（主键）的标志t1pkey和t2pkey。
 
 After implementing these methods, you should be able to pass the unit tests estimateJoinCostTest and estimateJoinCardinality in JoinOptimizerTest.java.
 
