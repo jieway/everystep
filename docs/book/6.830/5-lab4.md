@@ -52,15 +52,15 @@ To help you understand how transaction management works in SimpleDB, we briefly 
 
 Atomicity: Strict two-phase locking and careful buffer management ensure atomicity.
 
-原生性。严格的两阶段锁定和谨慎的缓冲区管理确保了原子性。
+原子性：严格的两阶段锁定和谨慎的缓冲区管理确保了原子性。
 
 Consistency: The database is transaction consistent by virtue of atomicity. Other consistency issues (e.g., key constraints) are not addressed in SimpleDB.
 
-一致性。由于原子性，数据库是事务一致的。其他的一致性问题（例如，键约束）在SimpleDB中没有被解决。
+一致性：由于原子性，数据库是事务一致的。其他的一致性问题（例如，键约束）在SimpleDB中没有被解决。
 
 Isolation: Strict two-phase locking provides isolation.
 
-隔离。严格的两相锁定提供隔离。
+隔离：严格的两相锁定提供隔离。
 
 Durability: A FORCE buffer management policy ensures durability (see Section 2.3 below).
 
@@ -129,7 +129,7 @@ If transaction t is the only transaction holding a shared lock on an object o, t
 
 If a transaction requests a lock that cannot be immediately granted, your code should block, waiting for that lock to become available (i.e., be released by another transaction running in a different thread). Be careful about race conditions in your lock implementation --- think about how concurrent invocations to your lock may affect the behavior. (you way wish to read about Synchronization in Java).
 
-如果一个事务请求一个不能立即授予的锁，你的代码应该阻塞，等待该锁变得可用（即，被另一个在不同线程中运行的事务释放）。在你的锁的实现中要小心竞赛条件------考虑对你的锁的并发调用会如何影响你的行为。(你可以阅读关于Java中的同步的文章）。
+如果一个事务请求一个不能立即授予的锁，你的代码应该阻塞，等待该锁变得可用（即，被另一个在不同线程中运行的事务释放）。在你的锁的实现中要小心竞争条件------考虑对你的锁的并发调用会如何影响你的行为。(你可以阅读关于Java中的同步的文章）。
 
 ## Exercise 1.
 

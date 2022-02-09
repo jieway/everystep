@@ -271,7 +271,7 @@ IntelliJ是一个更现代的Java集成开发环境，在一些人看来，它�
 
 Before beginning to write code, we **strongly encourage** you to read through this entire document to get a feel for the high-level design of SimpleDB.
 
-在开始写代码之前，我们***强烈建议你阅读整个文档，以了解SimpleDB的高层设计。
+在开始写代码之前，我们***强烈建议你阅读整个文档，以了解SimpleDB的顶层设计。
 
 <p>
 
@@ -842,4 +842,4 @@ You should get immediate feedback and error outputs for failed tests (if any) fr
 
 We had a lot of fun designing this assignment, and we hope you enjoy hacking on it!
 
-我们在设计这项任务时有很多乐趣，我们希望你喜欢在这上面黑客。
+我们在设计这项任务时有很多乐趣，我们希望你喜欢在这上面 hacking。

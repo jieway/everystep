@@ -261,7 +261,7 @@ For range scans, it is similarly hard to say anything accurate about sizes. The 
 
 The class JoinOptimizer.java includes all of the methods for ordering and computing costs of joins. In this exercise, you will write the methods for estimating the selectivity and cost of a join, specifically:
 
-JoinOptimizer.java类包括所有用于排序和计算连接成本的方法。在这个练习中，你将写出用于估计连接的选择性和成本的方法，特别是。
+JoinOptimizer.java类包括所有用于排序和计算连接成本的方法。在这个练习中，你将写出用于估计 join 的 selectivity 和 cost 的方法，特别是：
 
 Implement estimateJoinCost(LogicalJoinNode j, int card1, int card2, double cost1, double cost2): This method estimates the cost of join j, given that the left input is of cardinality card1, the right input of cardinality card2, that the cost to scan the left input is cost1, and that the cost to access the right input is card2. You can assume the join is an NL join, and apply the formula mentioned earlier.
 
