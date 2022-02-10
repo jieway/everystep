@@ -5,7 +5,7 @@ Due: Thursday, Apr 22, 2021 11:59 PM ET
 
 In this lab, you will implement a simple locking-based transaction system in SimpleDB. You will need to add lock and unlock calls at the appropriate places in your code, as well as code to track the locks held by each transaction and grant locks to transactions as they are needed.
 
-在这个实验室中，你将在SimpleDB中实现一个简单的基于锁的事务系统。你将需要在代码中的适当位置添加锁和解锁调用，以及跟踪每个事务所持有的锁的代码，并在需要时授予事务锁。
+在这个实验中，你将在SimpleDB中实现一个简单的基于锁的事务系统。你将需要在代码中的适当位置添加锁和解锁调用，以及跟踪每个事务所持有的锁的代码，并在需要时授予事务锁。
 
 The remainder of this document describes what is involved in adding transaction support and provides a basic outline of how you might add this support to your database.
 
@@ -13,13 +13,13 @@ The remainder of this document describes what is involved in adding transaction 
 
 As with the previous lab, we recommend that you start as early as possible. Locking and transactions can be quite tricky to debug!
 
-和前面的实验室一样，我们建议你尽可能早地开始。锁定和事务可能是相当棘手的调试工作!
+和前面的实验一样，我们建议你尽可能早地开始。锁定和事务可能是相当棘手的调试工作!
 
 ## 1. Getting started
 
 You should begin with the code you submitted for Lab 3 (if you did not submit code for Lab 3, or your solution didn't work properly, contact us to discuss options). Additionally, we are providing extra test cases for this lab that are not in the original code distribution you received. We reiterate that the unit tests we provide are to help guide your implementation along, but they are not intended to be comprehensive or to establish correctness.
 
-你应该从你为实验室3提交的代码开始（如果你没有为实验室3提交代码，或者你的解决方案没有正常工作，请与我们联系，讨论各种方案）。此外，我们还为这个实验室提供了额外的测试案例，这些案例不在你收到的原始代码分发中。我们重申，我们提供的单元测试是为了帮助指导你的实施，但它们并不打算是全面的或建立正确性。
+你应该从你为实验3提交的代码开始（如果你没有为实验3提交代码，或者你的解决方案没有正常工作，请与我们联系，讨论各种方案）。此外，我们还为这个实验提供了额外的测试案例，这些案例不在你收到的原始代码分发中。我们重申，我们提供的单元测试是为了帮助指导你的实施，但它们并不打算是全面的或建立正确性。
 
 You will need to add these new files to your release. The easiest way to do this is to change to your project directory (probably called simple-db-hw) and pull from the master GitHub repository:
 
@@ -86,7 +86,7 @@ On transaction commit, you should force dirty pages to disk (e.g., write the pag
 
 To further simplify your life, you may assume that SimpleDB will not crash while processing a transactionComplete command. Note that these three points mean that you do not need to implement log-based recovery in this lab, since you will never need to undo any work (you never evict dirty pages) and you will never need to redo any work (you force updates on commit and will not crash during commit processing).
 
-为了进一步简化你的生活，你可以假设SimpleDB在处理transactionComplete命令时不会崩溃。请注意，这三点意味着你不需要在这个实验室中实现基于日志的恢复，因为你永远不需要撤销任何工作（你永远不会驱逐脏页），也不需要重做任何工作（你在提交时强制更新，不会在提交处理期间崩溃）。
+为了进一步简化你的生活，你可以假设SimpleDB在处理transactionComplete命令时不会崩溃。请注意，这三点意味着你不需要在这个实验中实现基于日志的恢复，因为你永远不需要撤销任何工作（你永远不会驱逐脏页），也不需要重做任何工作（你在提交时强制更新，不会在提交处理期间崩溃）。
 
 
 ## 2.4. Granting Locks
@@ -182,7 +182,7 @@ Ensure that you acquire and release locks throughout SimpleDB. Some (but not nec
 
 Reading tuples off of pages during a SeqScan (if you implemented locking in BufferPool.getPage(), this should work correctly as long as your HeapFile.iterator() uses BufferPool.getPage().)
 
-在SeqScan过程中从页面上读取图元（如果你在BufferPool.getPage()中实现了锁定，只要你的HeapFile.iterator()使用BufferPool.getPage()，这应该可以正确工作。）
+在SeqScan过程中从页面上读取 tuple（如果你在BufferPool.getPage()中实现了锁定，只要你的HeapFile.iterator()使用BufferPool.getPage()，这应该可以正确工作。）
 
 Inserting and deleting tuples through BufferPool and HeapFile methods (if you implemented locking in BufferPool.getPage(), this should work correctly as long as HeapFile.insertTuple() and HeapFile.deleteTuple() use BufferPool.getPage().)
 You will also want to think especially hard about acquiring and releasing locks in the following situations:
@@ -295,7 +295,7 @@ At this point, you should have a recoverable database, in the sense that if the 
 
 During the course of this lab, we have identified some substantial design choices that you have to make:
 
-在这个实验室的过程中，我们已经确定了一些你必须做出的实质性设计选择。
+在这个实验的过程中，我们已经确定了一些你必须做出的实质性设计选择。
 
 Locking granularity: page-level versus tuple-level
 Deadlock handling: detection vs. prevention, aborting yourself vs. others.

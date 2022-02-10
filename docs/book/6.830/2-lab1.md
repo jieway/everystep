@@ -13,7 +13,7 @@ to get the latest version/ patches for the lab code.
 
 In the lab assignments in 6.830 you will write a basic database management system called SimpleDB. For this lab, you will focus on implementing the core modules required to access stored data on disk; in future labs, you will add support for various query processing operators, as well as transactions, locking, and concurrent queries.
 
-在6.830的实验作业中，你将编写一个名为SimpleDB的基本数据库管理系统。在这个实验室中，你将专注于实现访问磁盘上存储的数据所需的核心模块；在未来的实验室中，你将增加对各种查询处理操作符以及事务、锁定和并发查询的支持。
+在6.830的实验作业中，你将编写一个名为SimpleDB的基本数据库管理系统。在这个实验中，你将专注于实现访问磁盘上存储的数据所需的核心模块；在未来的实验中，你将增加对各种查询处理操作符以及事务、锁定和并发查询的支持。
 
 SimpleDB is written in Java. We have provided you with a set of mostly unimplemented classes and interfaces. You will need to write the code for these classes. We will grade your code by running a set of system tests written using [JUnit](http://junit.sourceforge.net/). We have also provided a number of unit tests, which we will not use for grading but that you may find useful in verifying that your code works. We also encourage you to develop your own test suite in addition to our tests.
 
@@ -21,7 +21,7 @@ SimpleDB是用Java编写的。我们已经为你提供了一组大部分未实�
 
 The remainder of this document describes the basic architecture of SimpleDB, gives some suggestions about how to start coding, and discusses how to hand in your lab.
 
-本文件的其余部分描述了SimpleDB的基本架构，给出了一些关于如何开始编码的建议，并讨论了如何在实验室中交接。
+本文件的其余部分描述了SimpleDB的基本架构，给出了一些关于如何开始编码的建议，并讨论了如何在实验中交接。
 
 We **strongly recommend** that you start as early as possible on this lab. It requires you to write a fair amount of code!
 
@@ -98,7 +98,7 @@ test:
 
 The output above indicates that two errors occurred during compilation; this is because the code we have given you doesn't yet work. As you complete parts of the lab, you will work towards passing additional unit tests.
 
-上面的输出表明，在编译过程中发生了两个错误；这是因为我们给你的代码还不能工作。当你完成实验室的部分内容时，你将努力通过额外的单元测试。
+上面的输出表明，在编译过程中发生了两个错误；这是因为我们给你的代码还不能工作。当你完成实验的部分内容时，你将努力通过额外的单元测试。
 
 If you wish to write new unit tests as you code, they should be added to the <tt>test simpledb</tt> directory.
 
@@ -106,7 +106,7 @@ If you wish to write new unit tests as you code, they should be added to the <tt
 
 <p>For more details about how to use Ant, see the [manual](http://ant.apache.org/manual/). The [Running Ant](http://ant.apache.org/manual/running.html) section provides details about using the `ant` command. However, the quick reference table below should be sufficient for working on the labs.
 
-<p>关于如何使用Ant的更多细节，请参阅[手册](http://ant.apache.org/manual/)。运行Ant](http://ant.apache.org/manual/running.html)部分提供了关于使用`ant`命令的细节。然而，下面的快速参考表应该足以用于实验室的工作。
+<p>关于如何使用Ant的更多细节，请参阅[手册](http://ant.apache.org/manual/)。运行Ant](http://ant.apache.org/manual/running.html)部分提供了关于使用`ant`命令的细节。然而，下面的快速参考表应该足以用于实验的工作。
 
 Command | Description
 --- | ---
@@ -244,7 +244,7 @@ ant eclipse
 
 **Note:** that this class assumes that you are using the official Oracle release of Java. This is the default on MacOS X, and for most Windows Eclipse installs; but many Linux distributions default to alternate Java runtimes (like OpenJDK). Please download the latest Java8 updates from [Oracle Website](http://www.oracle.com/technetwork/java/javase/downloads/index.html), and use that Java version. If you don't switch, you may see spurious test failures in some of the performance tests in later labs.
 
-**注意：**该类假定你使用的是Oracle官方发布的Java。这在 MacOS X 上是默认的，对于大多数 Windows Eclipse 安装来说也是如此；但许多 Linux 发行版默认使用其他 Java 运行时（如 OpenJDK）。请从 [Oracle 网站] (http://www.oracle.com/technetwork/java/javase/downloads/index.html) 下载最新的 Java8 更新，并使用该 Java 版本。如果你不切换，你可能会在后面的实验室的一些性能测试中看到虚假的测试失败。
+**注意：**该类假定你使用的是Oracle官方发布的Java。这在 MacOS X 上是默认的，对于大多数 Windows Eclipse 安装来说也是如此；但许多 Linux 发行版默认使用其他 Java 运行时（如 OpenJDK）。请从 [Oracle 网站] (http://www.oracle.com/technetwork/java/javase/downloads/index.html) 下载最新的 Java8 更新，并使用该 Java 版本。如果你不切换，你可能会在后面的实验的一些性能测试中看到虚假的测试失败。
 
 **Running Individual Unit and System Tests**
 
@@ -338,7 +338,7 @@ We suggest exercises along this document to guide your implementation, but you m
 * 实现访问方法，HeapPage和HeapFile以及相关的ID类。这些文件的很大一部分已经
   已经为你写好了。
 * 实现操作符SeqScan。
-* 在这一点上，你应该能够通过ScanTest系统测试，这是本实验室的目标。
+* 在这一点上，你应该能够通过ScanTest系统测试，这是本实验的目标。
 
 
 Section 2 below walks you through these implementation steps and the unit tests corresponding to each one in more detail.
@@ -349,7 +349,7 @@ Section 2 below walks you through these implementation steps and the unit tests 
 
 As you look through the interfaces we have provided you, you will see a number of references to locking, transactions, and recovery. You do not need to support these features in this lab, but you should keep these parameters in the interfaces of your code because you will be implementing transactions and locking in a future lab. The test code we have provided you with generates a fake transaction ID that is passed into the operators of the query it runs; you should pass this transaction ID into other operators and the buffer pool.
 
-当你浏览我们提供给你的接口时，你会看到许多对锁、事务和恢复的引用。你不需要在这个实验室中支持这些功能，但是你应该在你的代码的接口中保留这些参数，因为你将在未来的实验室中实现事务和锁定。我们为你提供的测试代码会生成一个假的事务ID，并将其传递给它所运行的查询的操作者；你应该将这个事务ID传递给其他操作者和缓冲池。
+当你浏览我们提供给你的接口时，你会看到许多对锁、事务和恢复的引用。你不需要在这个实验中支持这些功能，但是你应该在你的代码的接口中保留这些参数，因为你将在未来的实验中实现事务和锁定。我们为你提供的测试代码会生成一个假的事务ID，并将其传递给它所运行的查询的操作者；你应该将这个事务ID传递给其他操作者和缓冲池。
 
 ## 2. SimpleDB Architecture and Implementation Guide
 
@@ -448,7 +448,7 @@ At this point, your code should pass the unit tests in CatalogTest.
 
 The buffer pool (class `BufferPool` in SimpleDB) is responsible for caching pages in memory that have been recently read from disk. All operators read and write pages from various files on disk through the buffer pool. It consists of a fixed number of pages, defined by the `numPages` parameter to the `BufferPool` constructor. In later labs, you will implement an eviction policy. For this lab, you only need to implement the constructor and the `BufferPool.getPage()` method used by the SeqScan operator. The BufferPool should store up to `numPages` pages. For this lab, if more than `numPages` requests are made for different pages, then instead of implementing an eviction policy, you may throw a DbException. In future labs you will be required to implement an eviction policy.
 
-缓冲池（SimpleDB中的`BufferPool`类）负责在内存中缓存最近从磁盘读取的页面。所有的操作者通过缓冲池从磁盘上的各种文件读写页面。它由固定数量的页面组成，由`BufferPool`构造函数的`numPages`参数定义。在后面的实验中，你将实现一个驱逐策略。对于这个实验，你只需要实现构造函数和SeqScan操作者使用的`BufferPool.getPage()`方法。BufferPool应该最多存储`numPages`页。对于这个实验室，如果对不同页面的请求超过`numPages`，那么你可以抛出一个DbException，而不是实施驱逐策略。在未来的实验中，你将被要求实现一个驱逐策略。
+缓冲池（SimpleDB中的`BufferPool`类）负责在内存中缓存最近从磁盘读取的页面。所有的操作者通过缓冲池从磁盘上的各种文件读写页面。它由固定数量的页面组成，由`BufferPool`构造函数的`numPages`参数定义。在后面的实验中，你将实现一个驱逐策略。对于这个实验，你只需要实现构造函数和SeqScan操作者使用的`BufferPool.getPage()`方法。BufferPool应该最多存储`numPages`页。对于这个实验，如果对不同页面的请求超过`numPages`，那么你可以抛出一个DbException，而不是实施驱逐策略。在未来的实验中，你将被要求实现一个驱逐策略。
 
 The `Database` class provides a static method, `Database.getBufferPool()`, that returns a reference to the single BufferPool instance for the entire SimpleDB process.
 
@@ -593,7 +593,7 @@ Hint: you will need random access to the file in order to read and write pages a
 
 You will also need to implement the `HeapFile.iterator()` method, which should iterate through through the tuples of each page in the HeapFile. The iterator must use the `BufferPool.getPage()` method to access pages in the `HeapFile`. This method loads the page into the buffer pool and will eventually be used (in a later lab) to implement locking-based concurrency control and recovery.  Do not load the entire table into memory on the open() call -- this will cause an out of memory error for very large tables.
 
-你还需要实现`HeapFile.iterator()`方法，它应该遍历HeapFile中每个页面的 tuple 。迭代器必须使用`BufferPool.getPage()`方法来访问`HeapFile`中的页面。这个方法将页面加载到缓冲池中，最终将被用于（在后面的实验室中）实现基于锁的并发控制和恢复。 不要在open()调用时将整个表加载到内存中 -- 这将导致非常大的表出现内存不足的错误。
+你还需要实现`HeapFile.iterator()`方法，它应该遍历HeapFile中每个页面的 tuple 。迭代器必须使用`BufferPool.getPage()`方法来访问`HeapFile`中的页面。这个方法将页面加载到缓冲池中，最终将被用于（在后面的实验中）实现基于锁的并发控制和恢复。 不要在open()调用时将整个表加载到内存中 -- 这将导致非常大的表出现内存不足的错误。
 
 <p>
 
@@ -632,7 +632,7 @@ For plans that implement `INSERT` and `DELETE` queries, the top-most operator is
 
 For this lab, you will only need to implement one SimpleDB operator.
 
-对于这个实验室，你只需要实现一个SimpleDB操作符。
+对于这个实验，你只需要实现一个SimpleDB操作符。
 
 ### Exercise 6.
 
@@ -761,7 +761,7 @@ You must submit your code (see below) as well as a short (2 pages, maximum) writ
 * Describe any missing or incomplete elements of your code.
 * Describe how long you spent on the lab, and whether there was anything you found particularly difficult or confusing.
 
-* 描述你做出的任何设计决定。这些可能是实验室1的最低限度。
+* 描述你做出的任何设计决定。这些可能是实验1的最低限度。
 * 讨论并论证你对API所做的任何修改。
 * 描述你的代码中任何缺失或不完整的元素。
 * 描述你花了多长时间做这个实验，以及是否有任何你认为特别困难或困惑的事情。
@@ -770,7 +770,7 @@ You must submit your code (see below) as well as a short (2 pages, maximum) writ
 
 This lab should be manageable for a single person, but if you prefer to work with a partner, this is also OK. Larger groups are not allowed. Please indicate clearly who you worked with, if anyone, on your individual writeup.
 
-这个实验室对一个人来说应该是可以应付的，但如果你喜欢和一个伙伴一起工作，这也是可以的。不允许有较大的团体。如果有的话，请在你的个人报告中明确指出你和谁一起工作。
+这个实验对一个人来说应该是可以应付的，但如果你喜欢和一个伙伴一起工作，这也是可以的。不允许有较大的团体。如果有的话，请在你的个人报告中明确指出你和谁一起工作。
 
 ### 3.2. Submitting your assignment
 

@@ -17,15 +17,15 @@ In this lab assignment, you will write a set of operators for SimpleDB to implem
 
 Additionally, we ignored the issue of buffer pool management in Lab 1: we have not dealt with the problem that arises when we reference more pages than we can fit in memory over the lifetime of the database. In Lab 2, you will design an eviction policy to flush stale pages from the buffer pool.
 
-此外，我们在实验室1中忽略了缓冲池管理的问题：我们没有处理当我们引用的页面超过了数据库生命周期内所能容纳的内存时出现的问题。在实验室2中，你将设计一个驱逐策略，从缓冲池中冲走陈旧的页面。
+此外，我们在实验1中忽略了缓冲池管理的问题：我们没有处理当我们引用的页面超过了数据库生命周期内所能容纳的内存时出现的问题。在实验2中，你将设计一个驱逐策略，从缓冲池中冲走陈旧的页面。
 
 You do not need to implement transactions or locking in this lab.
 
-你不需要在这个实验室中实现事务或锁定。
+你不需要在这个实验中实现事务或锁定。
 
 The remainder of this document gives some suggestions about how to start coding, describes a set of exercises to help you work through the lab, and discusses how to hand in your code. This lab requires you to write a fair amount of code, so we encourage you to **start early**!
 
-本文件的其余部分给出了一些关于如何开始编码的建议，描述了一组练习，以帮助你完成实验室的工作，并讨论了如何交出你的代码。这个实验室需要你写相当数量的代码，所以我们鼓励你**早开始**!
+本文件的其余部分给出了一些关于如何开始编码的建议，描述了一组练习，以帮助你完成实验的工作，并讨论了如何交出你的代码。这个实验需要你写相当数量的代码，所以我们鼓励你**早开始**!
 
 <a name="starting"></a>
 
@@ -33,7 +33,7 @@ The remainder of this document gives some suggestions about how to start coding,
 
 You should begin with the code you submitted for Lab 1 (if you did not submit code for Lab 1, or your solution didn't work properly, contact us to discuss options).  Additionally, we are providing extra source and test files for this lab that are not in the original code distribution you received.
 
-你应该从你为实验室 1 提交的代码开始（如果你没有为实验室1提交代码，或者你的解决方案没有正常工作，请与我们联系，讨论各种选择）。 此外，我们还为这个实验室提供了额外的源文件和测试文件，这些文件不在你收到的原始代码分发中。
+你应该从你为实验 1 提交的代码开始（如果你没有为实验1提交代码，或者你的解决方案没有正常工作，请与我们联系，讨论各种选择）。 此外，我们还为这个实验提供了额外的源文件和测试文件，这些文件不在你收到的原始代码分发中。
 
 ### 1.1. Getting Lab 2
 
@@ -70,7 +70,7 @@ As before, we **strongly encourage** you to read through this entire document to
 
 We suggest exercises along this document to guide your implementation, but you may find that a different order makes more sense for you. As before, we will grade your assignment by looking at your code and verifying that you have passed the test for the ant targets `test` and `systemtest`. Note the code only needs to pass the tests we indicate in this lab, not all of unit and system tests. See Section 3.4 for a complete discussion of grading and list of the tests you will need to pass.
 
-我们建议沿着这份文件进行练习，以指导你的实施，但你可能会发现不同的顺序对你更有意义。和以前一样，我们将通过查看你的代码并验证你是否通过了 ant 目标`test`和`systemtest`的测试来给你的作业评分。请注意，代码只需要通过我们在这个实验室中指出的测试，而不是所有的单元和系统测试。关于分级的完整讨论和你需要通过的测试列表，见第3.4节。
+我们建议沿着这份文件进行练习，以指导你的实施，但你可能会发现不同的顺序对你更有意义。和以前一样，我们将通过查看你的代码并验证你是否通过了 ant 目标`test`和`systemtest`的测试来给你的作业评分。请注意，代码只需要通过我们在这个实验中指出的测试，而不是所有的单元和系统测试。关于分级的完整讨论和你需要通过的测试列表，见第3.4节。
 
 Here's a rough outline of one way you might proceed with your SimpleDB implementation; more details on the steps in this outline, including exercises, are given in Section 2 below.
 
@@ -110,7 +110,7 @@ You'll also be able to use the provided SQL parser to run SQL queries against yo
 
 Finally, you might notice that the iterators in this lab extend the `Operator` class instead of implementing the OpIterator interface. Because the implementation of `next` `hasNext` is often repetitive, annoying, and error-prone, `Operator` implements this logic generically, and only requires that you implement a simpler `readNext`. Feel free to use this style of implementation, or just implement the `OpIterator` interface if you prefer. To implement the OpIterator interface, remove `extends Operator` from iterator classes, and in its place put `implements OpIterator`.
 
-最后，你可能注意到本实验室的迭代器扩展了`Operator`类，而不是实现OpIterator接口。因为`next``hasNext`的实现往往是重复的、烦人的和容易出错的，`Operator`通用地实现了这个逻辑，只要求你实现一个更简单的`readNext`。请随意使用这种实现方式，如果你愿意，也可以直接实现`OpIterator`接口。要实现OpIterator接口，请从迭代器类中删除`extends Operator`，并在其位置上加上`implements OpIterator`。
+最后，你可能注意到本实验的迭代器扩展了`Operator`类，而不是实现OpIterator接口。因为`next``hasNext`的实现往往是重复的、烦人的和容易出错的，`Operator`通用地实现了这个逻辑，只要求你实现一个更简单的`readNext`。请随意使用这种实现方式，如果你愿意，也可以直接实现`OpIterator`接口。要实现OpIterator接口，请从迭代器类中删除`extends Operator`，并在其位置上加上`implements OpIterator`。
 
 ## 2. SimpleDB Architecture and Implementation Guide
 
@@ -209,7 +209,7 @@ To implement HeapPage, you will need to modify the header bitmap for methods suc
 
 Note that it is important that the `HeapFile.insertTuple()` and `HeapFile.deleteTuple()` methods access pages using the `BufferPool.getPage()` method; otherwise, your implementation of transactions in the next lab will not work properly.
 
-注意，重要的是，`HeapFile.insertTuple()`和`HeapFile.deleteTuple()`方法要使用`BufferPool.getPage()`方法访问页面；否则，你在下一个实验室的事务实现将不能正常工作。
+注意，重要的是，`HeapFile.insertTuple()`和`HeapFile.deleteTuple()`方法要使用`BufferPool.getPage()`方法访问页面；否则，你在下一个实验的事务实现将不能正常工作。
 
 Implement the following skeleton methods in <tt>src/simpledb/BufferPool.java</tt>:
 
@@ -409,7 +409,7 @@ Once we have finished initializing the database system, we create a query plan. 
 
 We've provided you with a query parser for SimpleDB that you can use to write and run SQL queries against your database once you have completed the exercises in this lab.
 
-我们已经为你提供了SimpleDB的查询分析器，一旦你完成了本实验室的练习，你可以用它来编写和运行针对你的数据库的SQL查询。
+我们已经为你提供了SimpleDB的查询分析器，一旦你完成了本实验的练习，你可以用它来编写和运行针对你的数据库的SQL查询。
 
 The first step is to create some data tables and a catalog. Suppose you have a file `data.txt` with the following contents:
 

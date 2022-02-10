@@ -5,7 +5,7 @@ Due: Wednesday, May 19, 2021 11:59 PM EST
 ## 0. Introduction
 In this lab you will implement log-based rollback for aborts and log-based crash recovery. We supply you with the code that defines the log format and appends records to a log file at appropriate times during transactions. You will implement rollback and recovery using the contents of the log file.
 
-在这个实验室中，你将实现基于日志的中止回滚和基于日志的崩溃恢复。我们为你提供了定义日志格式的代码，并在交易过程中的适当时候将记录附加到日志文件中。你将使用日志文件的内容实现回滚和恢复。
+在这个实验中，你将实现基于日志的中止回滚和基于日志的崩溃恢复。我们为你提供了定义日志格式的代码，并在交易过程中的适当时候将记录附加到日志文件中。你将使用日志文件的内容实现回滚和恢复。
 
 The logging code we provide generates records intended for physical whole-page undo and redo. When a page is first read in, our code remembers the original content of the page as a before-image. When a transaction updates a page, the corresponding log record contains that remembered before-image as well as the content of the page after modification as an after-image. You'll use the before-image to roll back during aborts and to undo loser transactions during recovery, and the after-image to redo winners during recovery.
 
@@ -22,7 +22,7 @@ Your BufferPool already implements abort by deleting dirty pages, and pretends t
 ## 1. Getting started
 You should begin with the code you submitted for Lab 5 (if you did not submit code for Lab 5, or your solution didn't work properly, contact us to discuss options.)
 
-你应该从你为实验室5提交的代码开始（如果你没有为实验室5提交代码，或者你的解决方案没有正常工作，请与我们联系，讨论各种方案）。
+你应该从你为实验5提交的代码开始（如果你没有为实验5提交代码，或者你的解决方案没有正常工作，请与我们联系，讨论各种方案）。
 
 You'll need to modify some of your existing source and add a few new files. Here's what to do:
 
@@ -165,7 +165,7 @@ Discuss and justify any changes you made outside of LogFile.java.
 
 This lab should be manageable for a single person, but if you prefer to work with a partner, this is also OK. Larger groups are not allowed. Please indicate clearly who you worked with, if anyone, on your writeup.
 
-这个实验室对一个人来说应该是可以应付的，但如果你喜欢和一个伙伴一起工作，这也是可以的。不允许有较大的团体。如果有的话，请在你的报告中明确指出你和谁一起工作。
+这个实验对一个人来说应该是可以应付的，但如果你喜欢和一个伙伴一起工作，这也是可以的。不允许有较大的团体。如果有的话，请在你的报告中明确指出你和谁一起工作。
 
 ## 4.2. Submitting your assignment
 
@@ -187,7 +187,7 @@ SimpleDB是一个相对复杂的代码。你很可能会发现错误、不一致
 
 We ask you, therefore, to do this lab with an adventurous mindset. Don't get mad if something is not clear, or even wrong; rather, try to figure it out yourself or send us a friendly email. Please submit (friendly!) bug reports to 6.830-staff@mit.edu. When you do, please try to include:
 
-因此，我们要求你以一种冒险的心态来做这个实验室。如果有不清楚的地方，甚至是错误的地方，不要生气；相反，可以自己试着去解决，或者给我们发一封友好的电子邮件。请提交（友好的！）错误报告到6.830-staff@mit.edu。当你这样做时，请尽量包括。
+因此，我们要求你以一种冒险的心态来做这个实验。如果有不清楚的地方，甚至是错误的地方，不要生气；相反，可以自己试着去解决，或者给我们发一封友好的电子邮件。请提交（友好的！）错误报告到6.830-staff@mit.edu。当你这样做时，请尽量包括。
 
 A description of the bug.
 

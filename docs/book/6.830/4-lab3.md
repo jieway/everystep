@@ -5,7 +5,7 @@ Due: Tuesday, Apr 6, 2021
 
 In this lab, you will implement a query optimizer on top of SimpleDB. The main tasks include implementing a selectivity estimation framework and a cost-based optimizer. You have freedom as to exactly what you implement, but we recommend using something similar to the Selinger cost-based optimizer discussed in class (Lecture 9).
 
-在这个实验室中，你将在SimpleDB之上实现一个查询优化器。主要任务包括实现一个选择性估计框架和一个基于成本的优化器。你可以自由选择具体的实现方式，但我们建议使用类似于课堂上讨论的Selinger基于成本的优化器（第9讲）。
+在这个实室中，你将在SimpleDB之上实现一个查询优化器。主要任务包括实现一个选择性估计框架和一个基于成本的优化器。你可以自由选择具体的实现方式，但我们建议使用类似于课堂上讨论的Selinger基于成本的优化器（第9讲）。
 
 The remainder of this document describes what is involved in adding optimizer support and provides a basic outline of how you do so.
 
@@ -13,17 +13,17 @@ The remainder of this document describes what is involved in adding optimizer su
 
 As with the previous lab, we recommend that you start as early as possible.
 
-与前一个实验室一样，我们建议你尽可能早地开始。
+与前一个实室一样，我们建议你尽可能早地开始。
 
 # 1. Getting started
 
 You should begin with the code you submitted for Lab 2. (If you did not submit code for Lab 2, or your solution didn't work properly, contact us to discuss options.)
 
-你应该从你为实验室2提交的代码开始。（如果你没有为实验室2提交代码，或者你的解决方案没有正常工作，请与我们联系，讨论各种方案。）
+你应该从你为实室2提交的代码开始。（如果你没有为实室2提交代码，或者你的解决方案没有正常工作，请与我们联系，讨论各种方案。）
 
 We have provided you with extra test cases as well as source code files for this lab that are not in the original code distribution you received. We again encourage you to develop your own test suite in addition to the ones we have provided.
 
-我们为这个实验室提供了额外的测试案例以及源代码文件，这些文件不在你收到的原始代码分发中。我们再次鼓励你在我们提供的测试案例之外，开发你自己的测试套件。
+我们为这个实室提供了额外的测试案例以及源代码文件，这些文件不在你收到的原始代码分发中。我们再次鼓励你在我们提供的测试案例之外，开发你自己的测试套件。
 
 You will need to add these new files to your release. The easiest way to do this is to change to your project directory (probably called simple-db-hw) and pull from the master GitHub repository:
 
@@ -68,7 +68,7 @@ Use these statistics to order joins and selections in an optimal way, and to sel
 In this lab, you will implement code to perform both of these functions.
 
 利用这些统计数据，以最佳方式排列连接和选择，并从几个备选方案中选择连接算法的最佳实现。
-在本实验室中，你将实现代码以执行这两项功能。
+在本实室中，你将实现代码以执行这两项功能。
 
 The optimizer will be invoked from simpledb/Parser.java. You may wish to review the lab 2 parser exercise before starting this lab. Briefly, if you have a catalog file catalog.txt describing your tables, you can run the parser by typing:
 
@@ -111,7 +111,7 @@ In the exercises to come, you will implement the methods that help physicalPlan 
 
 Accurately estimating plan cost is quite tricky. In this lab, we will focus only on the cost of sequences of joins and base table accesses. We won't worry about access method selection (since we only have one access method, table scans) or the costs of additional operators (like aggregates).
 
-准确地估计计划成本是相当棘手的。在这个实验室中，我们将只关注连接序列和基本表访问的成本。我们不会担心访问方法的选择（因为我们只有一种访问方法，即表扫描），也不会担心额外运算符（如聚合）的成本。
+准确地估计计划成本是相当棘手的。在这个实室中，我们将只关注连接序列和基本表访问的成本。我们不会担心访问方法的选择（因为我们只有一种访问方法，即表扫描），也不会担心额外运算符（如聚合）的成本。
 
 You are only required to consider left-deep plans for this lab. See Section 2.3 for a description of additional "bonus" optimizer features you might implement, including an approach for handling bushy plans.
 
@@ -239,7 +239,7 @@ After completing these tasks you should be able to pass the unit tests in TableS
 
 Finally, observe that the cost for the join plan p above includes expressions of the form joincost((t1 join t2) join t3). To evaluate this expression, you need some way to estimate the size (ntups) of t1 join t2. This join cardinality estimation problem is harder than the filter selectivity estimation problem. In this lab, you aren't required to do anything fancy for this, though one of the optional excercises in Section 2.4 includes a histogram-based method for join selectivity estimation.
 
-最后，观察一下，上面的连接计划p的成本包括形式为joincost((t1 join t2) join t3)的表达。为了评估这个表达式，你需要一些方法来估计t1 join t2的大小（ntups）。这个连接cardinality估计问题比过滤器的选择性估计问题更难。在这个实验室中，你不需要为此做任何花哨的事情，尽管第2.4节中的一个可选的练习包括一个基于直方图的连接选择性估计的方法。
+最后，观察一下，上面的连接计划p的成本包括形式为joincost((t1 join t2) join t3)的表达。为了评估这个表达式，你需要一些方法来估计t1 join t2的大小（ntups）。这个连接cardinality估计问题比过滤器的选择性估计问题更难。在这个实验中，你不需要为此做任何花哨的事情，尽管第2.4节中的一个可选的练习包括一个基于直方图的连接选择性估计的方法。
 
 While implementing your simple solution, you should keep in mind the following:
 
@@ -430,7 +430,7 @@ Description of any extra credit implementation you have done.
 ## 3.1. Collaboration
 This lab should be manageable for a single person, but if you prefer to work with a partner, this is also OK. Larger groups are not allowed. Please indicate clearly who you worked with, if anyone, on your writeup.
 
-这个实验室对一个人来说应该是可以应付的，但如果你喜欢和一个伙伴一起工作，这也是可以的。不允许有较大的团体。如果有的话，请在你的报告中明确指出你和谁一起工作。
+这个实室对一个人来说应该是可以应付的，但如果你喜欢和一个伙伴一起工作，这也是可以的。不允许有较大的团体。如果有的话，请在你的报告中明确指出你和谁一起工作。
 
 
 ## 3.2. Submitting your assignment
@@ -451,7 +451,7 @@ SimpleDB是一个相对复杂的代码。你很可能会发现错误、不一致
 
 We ask you, therefore, to do this lab with an adventurous mindset. Don't get mad if something is not clear, or even wrong; rather, try to figure it out yourself or send us a friendly email.
 
-因此，我们要求你以一种冒险的心态来做这个实验室。如果有不清楚的地方，甚至是错误的地方，不要生气；而是要自己尝试去弄清楚，或者给我们发一封友好的电子邮件。
+因此，我们要求你以一种冒险的心态来做这个实室。如果有不清楚的地方，甚至是错误的地方，不要生气；而是要自己尝试去弄清楚，或者给我们发一封友好的电子邮件。
 
 Please submit (friendly!) bug reports to 6.830-staff@mit.edu. When you do, please try to include:
 

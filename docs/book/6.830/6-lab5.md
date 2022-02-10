@@ -5,7 +5,7 @@ Due: Tuesday, May 4, 2021 11:59 PM EDT
 ## 0. Introduction
 In this lab you will implement a B+ tree index for efficient lookups and range scans. We supply you with all of the low-level code you will need to implement the tree structure. You will implement searching, splitting pages, redistributing tuples between pages, and merging pages.
 
-在这个实验室中，你将实现一个B+树形索引，用于高效的查找和范围扫描。我们为你提供了实现树形结构所需的所有底层代码。你将实现搜索、拆分页面、在页面之间重新分配图元以及合并页面。
+在这个实验中，你将实现一个B+树形索引，用于高效的查找和范围扫描。我们为你提供了实现树形结构所需的所有底层代码。你将实现搜索、拆分页面、在页面之间重新分配 tuple 以及合并页面。
 
 You may find it helpful to review sections 10.3--10.7 in the textbook, which provide detailed information about the structure of B+ trees as well as pseudocode for searches, inserts and deletes.
 
@@ -19,7 +19,7 @@ As described by the textbook and discussed in class, the internal nodes in B+ tr
 
 You should begin with the code you submitted for Lab 4 (if you did not submit code for Lab 4, or your solution didn't work properly, contact us to discuss options). Additionally, we are providing extra source and test files for this lab that are not in the original code distribution you received.
 
-你应该从你为实验室4提交的代码开始（如果你没有为实验室4提交代码，或者你的解决方案没有正常工作，请与我们联系，讨论各种方案）。此外，我们还为这个实验室提供了额外的源文件和测试文件，这些文件不在你收到的原始代码分发中。
+你应该从你为实验4提交的代码开始（如果你没有为实验4提交代码，或者你的解决方案没有正常工作，请与我们联系，讨论各种方案）。此外，我们还为这个实验提供了额外的源文件和测试文件，这些文件不在你收到的原始代码分发中。
 
 You will need to add these new files to your release and set up your lab4 branch. The easiest way to do this is to change to your project directory (probably called simple-db-hw), set up the branch, and pull from the master GitHub repository:
 
@@ -31,7 +31,7 @@ You will need to add these new files to your release and set up your lab4 branch
 
 Take a look at index/ and BTreeFile.java. This is the core file for the implementation of the B+Tree and where you will write all your code for this lab. Unlike the HeapFile, the BTreeFile consists of four different kinds of pages. As you would expect, there are two different kinds of pages for the nodes of the tree: internal pages and leaf pages. Internal pages are implemented in BTreeInternalPage.java, and leaf pages are implemented in BTreeLeafPage.java. For convenience, we have created an abstract class in BTreePage.java which contains code that is common to both leaf and internal pages. In addition, header pages are implemented in BTreeHeaderPage.java and keep track of which pages in the file are in use. Lastly, there is one page at the beginning of every BTreeFile which points to the root page of the tree and the first header page. This singleton page is implemented in BTreeRootPtrPage.java. Familiarize yourself with the interfaces of these classes, especially BTreePage, BTreeInternalPage and BTreeLeafPage. You will need to use these classes in your implementation of the B+Tree.
 
-看一下index/和BTreeFile.java。这是实现B+Tree的核心文件，你将在这里编写本实验的所有代码。与HeapFile不同，BTreeFile由四种不同的页面组成。正如你所期望的，树的节点有两种不同的页：内部页和叶子页。内部页在BTreeInternalPage.java中实现，而叶子页在BTreeLeafPage.java中实现。为了方便起见，我们在BTreePage.java中创建了一个抽象类，其中包含了叶子页和内部页的共同代码。此外，标题页在BTreeHeaderPage.java中实现，并跟踪文件中哪些页正在使用。最后，在每个BTreeFile的开头都有一个页面，它指向树的根页和第一个标题页。这个单子页在BTreeRootPtrPage.java中实现。熟悉这些类的接口，特别是BTreePage、BTreeInternalPage和BTreeLeafPage。你将需要在你的B+Tree的实现中使用这些类。
+看一下 index/ 和 BTreeFile.java 。这是实现B+Tree的核心文件，你将在这里编写本实验的所有代码。与HeapFile不同，BTreeFile由四种不同的页面组成。正如你所期望的，树的节点有两种不同的页：内部页和叶子页。内部页在BTreeInternalPage.java中实现，而叶子页在BTreeLeafPage.java中实现。为了方便起见，我们在BTreePage.java中创建了一个抽象类，其中包含了叶子页和内部页的共同代码。此外，标题页在BTreeHeaderPage.java中实现，并跟踪文件中哪些页正在使用。最后，在每个BTreeFile的开头都有一个页面，它指向树的根页和第一个标题页。这个单子页在BTreeRootPtrPage.java中实现。熟悉这些类的接口，特别是BTreePage、BTreeInternalPage和BTreeLeafPage。你将需要在你的B+Tree的实现中使用这些类。
 
 Your first job is to implement the findLeafPage() function in BTreeFile.java. This function is used to find the appropriate leaf page given a particular key value, and is used for both searches and inserts. For example, suppose we have a B+Tree with two leaf pages (See Figure 1). The root node is an internal page with one entry containing one key (6, in this case) and two child pointers. Given a value of 1, this function should return the first leaf page. Likewise, given a value of 8, this function should return the second page. The less obvious case is if we are given a key value of 6. There may be duplicate keys, so there could be 6's on both leaf pages. In this case, the function should return the first (left) leaf page.
 
@@ -55,9 +55,9 @@ Instead of directly calling BufferPool.getPage() to get each internal page and l
 
 Every internal (non-leaf) page your findLeafPage() implementation visits should be fetched with READ_ONLY permission, except the returned leaf page, which should be fetched with the permission provided as an argument to the function. These permission levels will not matter for this lab, but they will be important for the code to function correctly in future labs.
 
-你的findLeafPage()实现访问的每一个内部（非叶子）页面都应该以READ_ONLY权限获取，除了返回的叶子页面，它应该以作为函数参数提供的权限获取。这些权限级别对本实验室来说并不重要，但它们对代码在未来实验室中的正常运行非常重要。
+你的findLeafPage()实现访问的每一个内部（非叶子）页面都应该以READ_ONLY权限获取，除了返回的叶子页面，它应该以作为函数参数提供的权限获取。这些权限级别对本实验来说并不重要，但它们对代码在未来实验中的正常运行非常重要。
 
-Exercise 1: BTreeFile.findLeafPage()
+## Exercise 1: BTreeFile.findLeafPage()
 
 Implement BTreeFile.findLeafPage().
 
@@ -69,16 +69,16 @@ After completing this exercise, you should be able to pass all the unit tests in
 
 In order to keep the tuples of the B+Tree in sorted order and maintain the integrity of the tree, we must insert tuples into the leaf page with the enclosing key range. As was mentioned above, findLeafPage() can be used to find the correct leaf page into which we should insert the tuple. However, each page has a limited number of slots and we need to be able to insert tuples even if the corresponding leaf page is full.
 
-为了使B+Tree的图元保持排序，并保持树的完整性，我们必须将图元插入到具有包围键范围的叶页中。如上所述，findLeafPage()可以用来找到我们应该插入图元的正确叶子页。然而，每个页面都有有限的槽位，我们需要能够插入图元，即使相应的叶子页面已经满了。
+为了使B+Tree的 tuple 保持排序，并保持树的完整性，我们必须将 tuple 插入到具有包围键范围的叶页中。如上所述，findLeafPage()可以用来找到我们应该插入 tuple 的正确叶子页。然而，每个页面都有有限的槽位，我们需要能够插入 tuple ，即使相应的叶子页面已经满了。
 
 As described in the textbook, attempting to insert a tuple into a full leaf page should cause that page to split so that the tuples are evenly distributed between the two new pages. Each time a leaf page splits, a new entry corresponding to the first tuple in the second page will need to be added to the parent node. Occasionally, the internal node may also be full and unable to accept new entries. In that case, the parent should split and add a new entry to its parent. This may cause recursive splits and ultimately the creation of a new root node.
 
-正如教科书中所描述的，试图在一个完整的叶子页中插入一个元组应该导致该页分裂，以便元组均匀地分布在两个新页中。每次叶子页分裂时，需要向父节点添加一个与第二页中第一个元组对应的新条目。偶尔，内部节点也可能是满的，无法接受新条目。在这种情况下，父节点应该拆分并向其父节点添加一个新条目。这可能会导致递归分裂，最终创建一个新的根节点。
+正如教科书中所描述的，试图在一个完整的叶子页中插入一个tuple应该导致该页分裂，以便tuple均匀地分布在两个新页中。每次叶子页分裂时，需要向父节点添加一个与第二页中第一个tuple对应的新条目。偶尔，内部节点也可能是满的，无法接受新条目。在这种情况下，父节点应该拆分并向其父节点添加一个新条目。这可能会导致递归分裂，最终创建一个新的根节点。
 
 In this exercise you will implement splitLeafPage() and splitInternalPage() in BTreeFile.java. If the page being split is the root page, you will need to create a new internal node to become the new root page, and update the BTreeRootPtrPage. Otherwise, you will need to fetch the parent page with READ_WRITE permissions, recursively split it if necessary, and add a new entry. You will find the function getParentWithEmptySlots() extremely useful for handling these different cases. In splitLeafPage() you should "copy" the key up to the parent page, while in splitInternalPage() you should "push" the key up to the parent page. See Figure 2 and review section 10.5 in the text book if this is confusing. Remember to update the parent pointers of the new pages as needed (for simplicity, we do not show parent pointers in the figures). When an internal node is split, you will need to update the parent pointers of all the children that were moved. You may find the function updateParentPointers() useful for this task. Additionally, remember to update the sibling pointers of any leaf pages that were split. Finally, return the page into which the new tuple or entry should be inserted, as indicated by the provided key field. (Hint: You do not need to worry about the fact that the provided key may actually fall in the exact center of the tuples/entries to be split. You should ignore the key during the split, and only use it to determine which of the two pages to return.)
 
 
-在这个练习中，你将在 BTreeFile.java 中实现 splitLeafPage() 和 splitInternalPage() 。如果被分割的页面是根页面，你将需要创建一个新的内部节点来成为新的根页面，并更新BTreeRootPtrPage。否则，你将需要以READ_WRITE权限获取父页，必要时递归分割，并添加一个新条目。你会发现函数getParentWithEmptySlots()对于处理这些不同的情况非常有用。在splitLeafPage()中，你应该将键 "复制 "到父页上，而在splitInternalPage()中，你应该将键 "推 "到父页上。如果这一点令人困惑，请参见图2，并回顾教科书中的10.5节。记住要根据需要更新新页面的父指针（为了简单起见，我们不在图中显示父指针）。当一个内部节点被分割时，你将需要更新所有被移动的子节点的父指针。你可能会发现函数updateParentPointers()对这项任务很有用。此外，记得要更新任何被拆分的叶子页面的兄弟姐妹指针。最后，返回新的元组或条目应该被插入的页面，如所提供的键字段所示。(提示：你不需要担心所提供的键实际上可能正好落在要分割的元组/条目的中心。在分割过程中，你应该忽略这个键，而只是用它来决定返回两个页面中的哪一个）。
+在这个练习中，你将在 BTreeFile.java 中实现 splitLeafPage() 和 splitInternalPage() 。如果被分割的页面是根页面，你将需要创建一个新的内部节点来成为新的根页面，并更新BTreeRootPtrPage。否则，你将需要以READ_WRITE权限获取父页，必要时递归分割，并添加一个新条目。你会发现函数getParentWithEmptySlots()对于处理这些不同的情况非常有用。在splitLeafPage()中，你应该将键 "复制 "到父页上，而在splitInternalPage()中，你应该将键 "推 "到父页上。如果这一点令人困惑，请参见图2，并回顾教科书中的10.5节。记住要根据需要更新新页面的父指针（为了简单起见，我们不在图中显示父指针）。当一个内部节点被分割时，你将需要更新所有被移动的子节点的父指针。你可能会发现函数updateParentPointers()对这项任务很有用。此外，记得要更新任何被拆分的叶子页面的兄弟姐妹指针。最后，返回新的tuple或条目应该被插入的页面，如所提供的键字段所示。(提示：你不需要担心所提供的键实际上可能正好落在要分割的tuple/条目的中心。在分割过程中，你应该忽略这个键，而只是用它来决定返回两个页面中的哪一个）。
 
 Figure 2: Splitting pages
 
@@ -88,7 +88,7 @@ Whenever you create a new page, either because of splitting a page or creating a
 
 We expect that you will interact with leaf and internal pages using BTreeLeafPage.iterator() and BTreeInternalPage.iterator() to iterate through the tuples/entries in each page. For convenience, we have also provided reverse iterators for both types of pages: BTreeLeafPage.reverseIterator() and BTreeInternalPage.reverseIterator(). These reverse iterators will be especially useful for moving a subset of tuples/entries from a page to its right sibling.
 
-我们希望你能使用BTreeLeafPage.iterator()和BTreeInternalPage.iterator()与叶子页和内部页进行交互，以迭代每个页面中的图元/条目。为了方便，我们还为这两种类型的页面提供了反向迭代器。BTreeLeafPage.reverseIterator（）和BTreeInternalPage.reverseIterator（）。这些反向迭代器对于将一个页面中的图元/条目子集移动到其右边的同级页面中特别有用。
+我们希望你能使用BTreeLeafPage.iterator()和BTreeInternalPage.iterator()与叶子页和内部页进行交互，以迭代每个页面中的 tuple /条目。为了方便，我们还为这两种类型的页面提供了反向迭代器。BTreeLeafPage.reverseIterator（）和BTreeInternalPage.reverseIterator（）。这些反向迭代器对于将一个页面中的 tuple /条目子集移动到其右边的同级页面中特别有用。
 
 
 As mentioned above, the internal page iterators use the interface defined in BTreeEntry.java, which has one key and two child pointers. It also has a recordId, which identifies the location of the key and child pointers on the underlying page. We think working with one entry at a time is a natural way to interact with internal pages, but it is important to keep in mind that the underlying page does not actually store a list of entries, but stores ordered lists of m keys and m+1 child pointers. Since the BTreeEntry is just an interface and not an object actually stored on the page, updating the fields of BTreeEntry will not modify the underlying page. In order to change the data on the page, you need to call BTreeInternalPage.updateEntry(). Furthermore, deleting an entry actually deletes only a key and a single child pointer, so we provide the funtions BTreeInternalPage.deleteKeyAndLeftChild() and BTreeInternalPage.deleteKeyAndRightChild() to make this explicit. The entry's recordId is used to find the key and child pointer to be deleted. Inserting an entry also only inserts a key and single child pointer (unless it's the first entry), so BTreeInternalPage.insertEntry() checks that one of the child pointers in the provided entry overlaps an existing child pointer on the page, and that inserting the entry at that location will keep the keys in sorted order.
@@ -97,7 +97,7 @@ As mentioned above, the internal page iterators use the interface defined in BTr
 
 In both splitLeafPage() and splitInternalPage(), you will need to update the set of dirtypages with any newly created pages as well as any pages modified due to new pointers or new data. This is where BTreeFile.getPage() will come in handy. Each time you fetch a page, BTreeFile.getPage() will check to see if the page is already stored in the local cache (dirtypages), and if it can't find the requested page there, it fetches it from the buffer pool. BTreeFile.getPage() also adds pages to the dirtypages cache if they are fetched with read-write permission, since presumably they will soon be dirtied. One advantage of this approach is that it prevents loss of updates if the same pages are accessed multiple times during a single tuple insertion or deletion.
 
-在 splitLeafPage() 和 splitInternalPage() 中，你需要用任何新创建的页面以及由于新指针或新数据而修改的页面来更新 dirtypages 的集合。这就是BTreeFile.getPage()的用武之地。每次你获取一个页面时，BTreeFile.getPage()都会检查该页面是否已经存储在本地缓存（dirtypages）中，如果它在那里找不到所请求的页面，它就会从缓冲池中获取它。BTreeFile.getPage()还将页面添加到dirtypages缓存中，如果它们是以读写权限获取的，因为据推测它们很快就会被弄脏。这种方法的一个优点是，如果在一次元组插入或删除过程中多次访问相同的页面，它可以防止更新的损失。
+在 splitLeafPage() 和 splitInternalPage() 中，你需要用任何新创建的页面以及由于新指针或新数据而修改的页面来更新 dirtypages 的集合。这就是BTreeFile.getPage()的用武之地。每次你获取一个页面时，BTreeFile.getPage()都会检查该页面是否已经存储在本地缓存（dirtypages）中，如果它在那里找不到所请求的页面，它就会从缓冲池中获取它。BTreeFile.getPage()还将页面添加到dirtypages缓存中，如果它们是以读写权限获取的，因为据推测它们很快就会被弄脏。这种方法的一个优点是，如果在一次tuple插入或删除过程中多次访问相同的页面，它可以防止更新的损失。
 
 Note that in a major departure from HeapFile.insertTuple(), BTreeFile.insertTuple() could return a large set of dirty pages, especially if any internal pages are split. As you may remember from previous labs, the set of dirty pages is returned to prevent the buffer pool from evicting dirty pages before they have been flushed.
 
@@ -141,7 +141,7 @@ The checker method should always pass after initialization of the tree and befor
 
 A tree may be well formed (and therefore pass checkRep()) but still incorrect. For example, the empty tree will always pass checkRep(), but may not always be correct (if you just inserted a tuple, the tree should not be empty). ***
 
-一个树可能形成得很好（因此通过了checkRep()），但是仍然不正确。例如，空的树总是能通过checkRep()，但不一定总是正确的（如果你刚刚插入了一个元组，树不应该是空的）。***
+一个树可能形成得很好（因此通过了checkRep()），但是仍然不正确。例如，空的树总是能通过checkRep()，但不一定总是正确的（如果你刚刚插入了一个tuple，树不应该是空的）。***
 
 ## Exercise 2: Splitting Pages
 
@@ -149,12 +149,12 @@ Implement BTreeFile.splitLeafPage() and BTreeFile.splitInternalPage().
 
 After completing this exercise, you should be able to pass the unit tests in BTreeFileInsertTest.java. You should also be able to pass the system tests in systemtest/BTreeFileInsertTest.java. Some of the system test cases may take a few seconds to complete. These files will test that your code inserts tuples and splits pages correcty, and also handles duplicate tuples.
 
-完成这个练习后，你应该能够通过BTreeFileInsertTest.java中的单元测试。你也应该能够通过 systemtest/BTreeFileInsertTest.java 中的系统测试。一些系统测试案例可能需要几秒钟的时间来完成。这些文件将测试你的代码是否正确地插入图元和分割页面，并处理重复的图元。
+完成这个练习后，你应该能够通过BTreeFileInsertTest.java中的单元测试。你也应该能够通过 systemtest/BTreeFileInsertTest.java 中的系统测试。一些系统测试案例可能需要几秒钟的时间来完成。这些文件将测试你的代码是否正确地插入 tuple 和分割页面，并处理重复的 tuple 。
 
 ## 4. Delete
 In order to keep the tree balanced and not waste unnecessary space, deletions in a B+Tree may cause pages to redistribute tuples (Figure 3) or, eventually, to merge (see Figure 4). You may find it useful to review section 10.6 in the textbook.
 
-为了保持树的平衡，不浪费不必要的空间，B+树中的删除可能会导致页面重新分配图元（图3）或最终合并（见图4）。你可能会发现复习一下教科书中的第10.6节是很有用的。
+为了保持树的平衡，不浪费不必要的空间，B+树中的删除可能会导致页面重新分配 tuple （图3）或最终合并（见图4）。你可能会发现复习一下教科书中的第10.6节是很有用的。
 
 
 Figure 3: Redistributing pages
@@ -165,12 +165,12 @@ Figure 4: Merging pages
 
 As described in the textbook, attempting to delete a tuple from a leaf page that is less than half full should cause that page to either steal tuples from one of its siblings or merge with one of its siblings. If one of the page's siblings has tuples to spare, the tuples should be evenly distributed between the two pages, and the parent's entry should be updated accordingly (see Figure 3). However, if the sibling is also at minimum occupancy, then the two pages should merge and the entry deleted from the parent (Figure 4). In turn, deleting an entry from the parent may cause the parent to become less than half full. In this case, the parent should steal entries from its siblings or merge with a sibling. This may cause recursive merges or even deletion of the root node if the last entry is deleted from the root node.
 
-正如教科书中所描述的那样，如果试图从一个不满一半的叶子页中删除一个图元，应该会导致该页从它的一个兄弟姐妹那里偷取图元或与它的一个兄弟姐妹合并。如果该页的一个兄弟姐妹有多余的图元，这些图元应该在两个页面之间平均分配，并且父页的条目应该相应地被更新（见图3）。然而，如果兄弟姐妹也处于最小的占用率，那么这两个页面就应该合并，并从父页面删除条目（图4）。反过来，从父本中删除一个条目可能会导致父本的入住率低于一半。在这种情况下，父本应该从其兄弟姐妹那里偷取条目，或者与兄弟姐妹合并。这可能会导致递归合并，甚至是删除根节点，如果最后一个条目从根节点上被删除。
+正如教科书中所描述的那样，如果试图从一个不满一半的叶子页中删除一个 tuple ，应该会导致该页从它的一个兄弟姐妹那里偷取 tuple 或与它的一个兄弟姐妹合并。如果该页的一个兄弟姐妹有多余的 tuple ，这些 tuple 应该在两个页面之间平均分配，并且父页的条目应该相应地被更新（见图3）。然而，如果兄弟姐妹也处于最小的占用率，那么这两个页面就应该合并，并从父页面删除条目（图4）。反过来，从父本中删除一个条目可能会导致父本的入住率低于一半。在这种情况下，父本应该从其兄弟姐妹那里偷取条目，或者与兄弟姐妹合并。这可能会导致递归合并，甚至是删除根节点，如果最后一个条目从根节点上被删除。
 
 
 In this exercise you will implement stealFromLeafPage(), stealFromLeftInternalPage(), stealFromRightInternalPage(), mergeLeafPages() and mergeInternalPages() in BTreeFile.java. In the first three functions you will implement code to evenly redistribute tuples/entries if the siblings have tuples/entries to spare. Remember to update the corresponding key field in the parent (look carefully at how this is done in Figure 3 - keys are effectively "rotated" through the parent). In stealFromLeftInternalPage()/stealFromRightInternalPage(), you will also need to update the parent pointers of the children that were moved. You should be able to reuse the function updateParentPointers() for this purpose.
 
-在这个练习中，你将在BTreeFile.java中实现 stealFromLeafPage(), stealFromLeftInternalPage(), stealFromRightInternalPage(), mergeLeafPages() 和 mergeInternalPages() 。在前三个函数中，你将实现代码，在兄弟姐妹有图元/条目的情况下均匀地重新分配图元/条目。记住要更新父代中相应的键字段（仔细看看图3中是如何做到的--键字在父代中被有效地 "旋转 "了）。在stealFromLeftInternalPage()/stealFromRightInternalPage()中，你还需要更新被移动的子项的父项指针。你应该可以为这个目的重新使用函数 updateParentPointers()。
+在这个练习中，你将在BTreeFile.java中实现 stealFromLeafPage(), stealFromLeftInternalPage(), stealFromRightInternalPage(), mergeLeafPages() 和 mergeInternalPages() 。在前三个函数中，你将实现代码，在兄弟姐妹有 tuple /条目的情况下均匀地重新分配 tuple /条目。记住要更新父代中相应的键字段（仔细看看图3中是如何做到的--键字在父代中被有效地 "旋转 "了）。在stealFromLeftInternalPage()/stealFromRightInternalPage()中，你还需要更新被移动的子项的父项指针。你应该可以为这个目的重新使用函数 updateParentPointers()。
 
 In mergeLeafPages() and mergeInternalPages() you will implement code to merge pages, effectively performing the inverse of splitLeafPage() and splitInternalPage(). You will find the function deleteParentEntry() extremely useful for handling all the different recursive cases. Be sure to call setEmptyPage() on deleted pages to make them available for reuse. As with the previous exercises, we recommend using BTreeFile.getPage() to encapsulate the process of fetching pages and keeping the list of dirty pages up to date.
 
@@ -199,7 +199,7 @@ Now you should be able to pass all unit tests in BTreeFileDeleteTest.java and th
 
 You may remember that B+ trees can prevent phantom tuples from showing up between two consecutive range scans by using next-key locking. Since SimpleDB uses page-level, strict two-phase locking, protection against phantoms effectively comes for free if the B+ tree is implemented correctly. Thus, at this point you should also be able to pass BTreeNextKeyLockingTest.
 
-你可能还记得，B+树可以通过使用下一个键锁定来防止幻影图元在两个连续的范围扫描之间出现。由于SimpleDB使用了页级的、严格的两阶段锁定，如果B+树被正确实现，对幻影的保护实际上是免费的。因此，在这一点上，你也应该能够通过BTreeNextKeyLockingTest。
+你可能还记得，B+树可以通过使用下一个键锁定来防止幻影 tuple 在两个连续的范围扫描之间出现。由于SimpleDB使用了页级的、严格的两阶段锁定，如果B+树被正确实现，对幻影的保护实际上是免费的。因此，在这一点上，你也应该能够通过BTreeNextKeyLockingTest。
 
 Additionally, you should be able to pass the tests in test/simpledb/BTreeDeadlockTest.java if you have implemented locking correctly inside of your B+ tree code.
 
@@ -245,7 +245,7 @@ Optional: If you did the extra credit exercise, explain your implementation and 
 ## 7.1. Collaboration
 This lab should be manageable for a single person, but if you prefer to work with a partner, this is also OK. Larger groups are not allowed. Please indicate clearly who you worked with, if anyone, on your writeup.
 
-这个实验室对一个人来说应该是可以应付的，但如果你喜欢和一个伙伴一起工作，这也是可以的。不允许有较大的团体。如果有的话，请在你的报告中明确指出你和谁一起工作。
+这个实验对一个人来说应该是可以应付的，但如果你喜欢和一个伙伴一起工作，这也是可以的。不允许有较大的团体。如果有的话，请在你的报告中明确指出你和谁一起工作。
 
 ## 7.2. Submitting your assignment
 
@@ -267,7 +267,7 @@ SimpleDB是一个相对复杂的代码。你很可能会发现错误、不一致
 
 We ask you, therefore, to do this lab with an adventurous mindset. Don't get mad if something is not clear, or even wrong; rather, try to figure it out yourself or send us a friendly email.
 
-因此，我们要求你以一种冒险的心态来做这个实验室。如果有不清楚的地方，甚至是错误的地方，不要生气；而是要自己尝试去弄清楚，或者给我们发一封友好的电子邮件。
+因此，我们要求你以一种冒险的心态来做这个实验。如果有不清楚的地方，甚至是错误的地方，不要生气；而是要自己尝试去弄清楚，或者给我们发一封友好的电子邮件。
 
 Please submit (friendly!) bug reports to 6.830-staff@mit.edu. When you do, please try to include:
 
