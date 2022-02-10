@@ -37,9 +37,10 @@ Your first job is to implement the findLeafPage() function in BTreeFile.java. Th
 
 你的第一个工作是在BTreeFile.java中实现findLeafPage()函数。这个函数用于在给定一个特定的键值的情况下找到合适的叶子页，并且用于搜索和插入。例如，假设我们有一个有两个叶子页的B+Tree（见图1）。根节点是一个内部页面，有一个条目，包含一个键（本例中为6）和两个子指针。给定一个值为1，这个函数应该返回第一个叶子页。同样地，如果数值为8，这个函数应该返回第二个页面。不太明显的情况是，如果我们给定的键值是6，可能有重复的键，所以两个叶子页上可能都有6。在这种情况下，这个函数应该返回第一个（左边）叶子页。
 
+![](image/6-lab5/1644485061911.png)
 Figure 1: A simple B+ Tree with duplicate keys
 
-图1：一个简单的有重复钥匙的B+树
+图1：一个简单的有重复 key 的 B+ 树
 
 Your findLeafPage() function should recursively search through internal nodes until it reaches the leaf page corresponding to the provided key value. In order to find the appropriate child page at each step, you should iterate through the entries in the internal page and compare the entry value to the provided key value. BTreeInternalPage.iterator() provides access to the entries in the internal page using the interface defined in BTreeEntry.java. This iterator allows you to iterate through the key values in the internal page and access the left and right child page ids for each key. The base case of your recursion happens when the passed-in BTreePageId has pgcateg() equal to BTreePageId.LEAF, indicating that it is a leaf page. In this case, you should just fetch the page from the buffer pool and return it. You do not need to confirm that it actually contains the provided key value f.
 
