@@ -61,18 +61,15 @@ Your BufferPool.transactionComplete() calls flushPage() for each page that a com
 
 你的BufferPool.transactionComplete()为每一个被提交的事务搅乱的页面调用flushPage()。对于每一个这样的页面，在你刷新页面之后，添加一个对p.setBeforeImage()的调用。
 
-// use current page contents as the before-image
-// for the next transaction that modifies this page.
-p.setBeforeImage();
+    // use current page contents as the before-image
+    // for the next transaction that modifies this page.
+    p.setBeforeImage();
 
 After an update is committed, a page's before-image needs to be updated so that later transactions that abort rollback to this committed version of the page. (Note: We can't just call setBeforeImage() in flushPage(), since flushPage() might be called even if a transaction isn't committing. Our test case actually does that! If you implemented transactionComplete() by calling flushPages() instead, you may need to pass an additional argument to flushPages() to tell it whether the flush is being done for a committing transaction or not. However, we strongly suggest
 in this case you simply rewrite transactionComplete() to use flushPage().)
 After you have made these changes, do a clean build (ant clean; ant from the command line, or a "Clean" from the "Project" menu in Eclipse.)
 
-在一个更新被提交后，一个页面的before-image需要被更新，以便后来的事务中止时回滚到该页面的这个提交版本。(注意：我们不能在flushPage()中直接调用setBeforeImage()，因为即使事务没有提交，flushPage()也可能被调用。我们的测试案例实际上就是这样做的! 如果你通过调用flushPages()来实现transactionComplete()，你可能需要给flushPages()传递一个额外的参数，告诉它是否为一个正在提交的事务进行刷新。然而，我们强烈建议
-在这种情况下，我们强烈建议你简单地重写 transactionComplete() 以使用 flushPage()。
-在你做了这些修改之后，做一个干净的构建（ant clean; ant from the command line, or a "Clean" from the "Project" menu in Eclipse.）
-
+在一个更新被提交后，一个页面的before-image需要被更新，以便后来的事务中止时回滚到该页面的这个提交版本。(注意：我们不能在flushPage()中直接调用setBeforeImage()，因为即使事务没有提交，flushPage()也可能被调用。我们的测试案例实际上就是这样做的! 如果你通过调用flushPages()来实现transactionComplete()，你可能需要给flushPages()传递一个额外的参数，告诉它是否为一个正在提交的事务进行刷新。然而，我们强烈建议在这种情况下，我们强烈建议你简单地重写 transactionComplete() 以使用 flushPage()。 在你做了这些修改之后，做一个干净的构建（ant clean; ant from the command line, or a "Clean" from the "Project" menu in Eclipse.）
 
 At this point your code should pass the first three sub-tests of the LogTest systemtest, and fail the rest:
 
