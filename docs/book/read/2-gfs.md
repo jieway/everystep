@@ -53,10 +53,7 @@ Fault tolerance, scalability, data storage, clustered storage
 
 容错性、可扩展性、数据存储、集群存储
 
-∗The authors can be reached at the following addresses:
-{sanjay,hgobioff,shuntak}@google.com.
-Permission to make digital or hard copies of all or part of this work for
-personal or classroom use is granted without fee provided that copies are
+∗The authors can be reached at the following addresses: {sanjay,hgobioff,shuntak}@google.com. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are
 not made or distributed for profit or commercial advantage and that copies
 bear this notice and the full citation on the first page. To copy otherwise, to
 republish, to post on servers or to redistribute to lists, requires prior specific

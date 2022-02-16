@@ -1,5 +1,9 @@
 # Lab-0: 环境搭建
 
+schedule 页面：https://pdos.csail.mit.edu/6.828/2020/schedule.html
+
+[B 站视频中文翻译。](https://www.bilibili.com/video/BV19k4y1C7kA?from=search&seid=9725436882387679017&spm_id_from=333.337.0.0)
+
 我采用的是虚拟机，宿主机是 win10 ，虚拟机采用的是 VMware 。
 
 首先安装 Ubuntu20.04 ，注意一定不能安装别的版本，这个版本省事。

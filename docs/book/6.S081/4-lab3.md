@@ -1,8 +1,8 @@
 # Lab: page tables
 
-在这个实验室中，你将探索页表，并修改它们以简化从用户空间复制数据到内核空间的功能。
+https://pdos.csail.mit.edu/6.828/2020/labs/pgtbl.html
 
-需要提前阅读 xv6书 第三章
+探索页表，并修改它们以简化从用户空间复制数据到内核空间的功能。需要提前阅读 xv6 书第三章。
 
 `kern/memlayout.h` ，它捕捉了内存的布局。
 
@@ -17,17 +17,11 @@
   
 ## Print a page table (easy)
 
-To help you learn about RISC-V page tables, and perhaps to aid future debugging, your first task is to write a function that prints the contents of a page table.
-
-为了帮助你学习RISC-V页表，也许是为了帮助将来的调试，你的第一个任务是写一个函数，打印页表的内容。
-
-Define a function called vmprint(). It should take a pagetable_t argument, and print that pagetable in the format described below. 
-
-定义一个叫做vmprint()的函数。它应该接受一个pagetable_t参数，并以下面描述的格式打印该pagetable。
+实现一个打印页表内容的函数。定义一个叫做 vmprint() 的函数。它应该接受一个 pagetable_t 参数，并以下面描述的格式打印该 pagetable。
 
 Insert if(p->pid==1) vmprint(p->pagetable) in exec.c just before the return argc, to print the first process's page table. 
 
-在exec.c的返回argc之前插入if(p->pid==1) vmprint(p->pagetable)，以打印第一个进程的页表。
+在 exec.c 的返回 argc 之前插入if(p->pid==1) vmprint(p->pagetable)，以打印第一个进程的页表。
 
 You receive full credit for this assignment if you pass the pte printout test of make grade.
 
@@ -37,20 +31,18 @@ Now when you start xv6 it should print output like this, describing the page tab
 
 现在，当你启动xv6时，它应该打印这样的输出，描述第一个进程在刚刚完成exec()ing init时的页面表。
 
-page table 0x0000000087f6e000
-..0: pte 0x0000000021fda801 pa 0x0000000087f6a000
-.. ..0: pte 0x0000000021fda401 pa 0x0000000087f69000
-.. .. ..0: pte 0x0000000021fdac1f pa 0x0000000087f6b000
-.. .. ..1: pte 0x0000000021fda00f pa 0x0000000087f68000
-.. .. ..2: pte 0x0000000021fd9c1f pa 0x0000000087f67000
-..255: pte 0x0000000021fdb401 pa 0x0000000087f6d000
-.. ..511: pte 0x0000000021fdb001 pa 0x0000000087f6c000
-.. .. ..510: pte 0x0000000021fdd807 pa 0x0000000087f76000
-.. .. ..511: pte 0x0000000020001c0b pa 0x0000000080007000
+  page table 0x0000000087f6e000
+  ..0: pte 0x0000000021fda801 pa 0x0000000087f6a000
+  .. ..0: pte 0x0000000021fda401 pa 0x0000000087f69000
+  .. .. ..0: pte 0x0000000021fdac1f pa 0x0000000087f6b000
+  .. .. ..1: pte 0x0000000021fda00f pa 0x0000000087f68000
+  .. .. ..2: pte 0x0000000021fd9c1f pa 0x0000000087f67000
+  ..255: pte 0x0000000021fdb401 pa 0x0000000087f6d000
+  .. ..511: pte 0x0000000021fdb001 pa 0x0000000087f6c000
+  .. .. ..510: pte 0x0000000021fdd807 pa 0x0000000087f76000
+  .. .. ..511: pte 0x0000000020001c0b pa 0x0000000080007000
   
-The first line displays the argument to vmprint. 
-
-第一行显示vmprint的参数。
+第一行显示 vmprint 的参数。
 
 After that there is a line for each PTE, including PTEs that refer to page-table pages deeper in the tree. 
 
@@ -58,7 +50,7 @@ After that there is a line for each PTE, including PTEs that refer to page-table
 
 Each PTE line is indented by a number of " .." that indicates its depth in the tree. 
 
-每个PTE行的缩进都有一个"... "的数字，表示它在树中的深度。
+每个PTE行的缩进都有一个".. "的数字，表示它在树中的深度。
 
 Each PTE line shows the PTE index in its page-table page, the pte bits, and the physical address extracted from the PTE. 
 
@@ -92,11 +84,11 @@ The function freewalk may be inspirational.
 
 Define the prototype for vmprint in kernel/defs.h so that you can call it from exec.c.
 
-在kernel/defs.h中定义vmprint的原型，以便你可以从exec.c中调用它。
+在 kernel/defs.h中定义vmprint的原型，以便你可以从exec.c中调用它。
 
 Use %p in your printf calls to print out full 64-bit hex PTEs and addresses as shown in the example.
 
-在你的printf调用中使用%p来打印出完整的64位十六进制PTE和地址，如例子中所示。
+在你的 printf调用中使用%p来打印出完整的64位十六进制PTE和地址，如例子中所示。
 
 Explain the output of vmprint in terms of Fig 3-4 from the text. What does page 0 contain? 
 

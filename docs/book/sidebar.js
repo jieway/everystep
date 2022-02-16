@@ -91,14 +91,6 @@ module.exports = [
     ]
   },
   {
-    title: '🐷 数据库',
-    children: [
-      'sql/mysql',
-      'sql/sql',
-      'sql/problem'
-    ]
-  },
-  {
     title: '🎊 爬虫笔记',
     children: [
       'spi/ch1',
