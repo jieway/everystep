@@ -15,148 +15,64 @@ https://pdos.csail.mit.edu/6.828/2020/labs/pgtbl.html
   $ git checkout pgtbl
   $ make clean
   
+
 ## Print a page table (easy)
 
-实现一个打印页表内容的函数。定义一个叫做 vmprint() 的函数。它应该接受一个 pagetable_t 参数，并以下面描述的格式打印该 pagetable。
+源码被分成了多个文件，在 defs.h(kernel/defs.h) 中定义模块间的接口。
 
-Insert if(p->pid==1) vmprint(p->pagetable) in exec.c just before the return argc, to print the first process's page table. 
+跟着 hint 走，看明白 freewalk 函数稍微改动即可。
 
-在 exec.c 的返回 argc 之前插入if(p->pid==1) vmprint(p->pagetable)，以打印第一个进程的页表。
+`(pte & (PTE_R|PTE_W|PTE_X)) == 0` 表示非叶子节点。
 
-You receive full credit for this assignment if you pass the pte printout test of make grade.
+具体代码变动：[PASS Lab3 ex1](https://github.com/weijiew/6.S081-2020/commit/6632a87f01b651984a54bd04f20cc63a99ca1b3f)
 
-如果你通过了pte printout测试的make grade，你将获得这项作业的全部学分。
-
-Now when you start xv6 it should print output like this, describing the page table of the first process at the point when it has just finished exec()ing init:
-
-现在，当你启动xv6时，它应该打印这样的输出，描述第一个进程在刚刚完成exec()ing init时的页面表。
-
-  page table 0x0000000087f6e000
-  ..0: pte 0x0000000021fda801 pa 0x0000000087f6a000
-  .. ..0: pte 0x0000000021fda401 pa 0x0000000087f69000
-  .. .. ..0: pte 0x0000000021fdac1f pa 0x0000000087f6b000
-  .. .. ..1: pte 0x0000000021fda00f pa 0x0000000087f68000
-  .. .. ..2: pte 0x0000000021fd9c1f pa 0x0000000087f67000
-  ..255: pte 0x0000000021fdb401 pa 0x0000000087f6d000
-  .. ..511: pte 0x0000000021fdb001 pa 0x0000000087f6c000
-  .. .. ..510: pte 0x0000000021fdd807 pa 0x0000000087f76000
-  .. .. ..511: pte 0x0000000020001c0b pa 0x0000000080007000
-  
-第一行显示 vmprint 的参数。
-
-After that there is a line for each PTE, including PTEs that refer to page-table pages deeper in the tree. 
-
-之后，每个PTE都有一行，包括引用树中更深的页表页的PTE。
-
-Each PTE line is indented by a number of " .." that indicates its depth in the tree. 
-
-每个PTE行的缩进都有一个".. "的数字，表示它在树中的深度。
-
-Each PTE line shows the PTE index in its page-table page, the pte bits, and the physical address extracted from the PTE. 
-
-每个PTE行显示其页表页中的PTE索引、PTE位，以及从PTE中提取的物理地址。
-
-Don't print PTEs that are not valid. In the above example, the top-level page-table page has mappings for entries 0 and 255. 
-
-不要打印无效的PTE。在上面的例子中，顶层页-表页有条目0和255的映射。
-
-The next level down for entry 0 has only index 0 mapped, and the bottom-level for that index 0 has entries 0, 1, and 2 mapped.
-
-下一级的条目0只映射了索引0，而该索引0的下一级则映射了条目0、1和2。
-
-Your code might emit different physical addresses than those shown above. The number of entries and the virtual addresses should be the same.
-
-你的代码可能发出的物理地址与上面显示的不同。条目数和虚拟地址应该是一样的。
-
-Some hints:
-
-You can put vmprint() in kernel/vm.c.
-
-你可以把vmprint()放在kernel/vm.c中。
-
-Use the macros at the end of the file kernel/riscv.h.
-
-使用文件kernel/riscv.h末尾的宏。
-
-The function freewalk may be inspirational.
-
-职能部门的自由行走可能是鼓舞人心的。
-
-Define the prototype for vmprint in kernel/defs.h so that you can call it from exec.c.
-
-在 kernel/defs.h中定义vmprint的原型，以便你可以从exec.c中调用它。
-
-Use %p in your printf calls to print out full 64-bit hex PTEs and addresses as shown in the example.
-
-在你的 printf调用中使用%p来打印出完整的64位十六进制PTE和地址，如例子中所示。
-
-Explain the output of vmprint in terms of Fig 3-4 from the text. What does page 0 contain? 
-
-用文中的图3-4来解释vmprint的输出。第0页包含什么？
-
-What is in page 2? When running in user mode, could the process read/write the memory mapped by page 1?
-
-第2页里有什么？当以用户模式运行时，该进程能否读/写第1页所映射的内存？
+  $ make qemu-gdb
+  pte printout: OK (6.9s)
+      (Old xv6.out.pteprint failure log removed)
+  == Test answers-pgtbl.txt == answers-pgtbl.txt: FAIL
+      Cannot read answers-pgtbl.txt
+  == Test count copyin ==
 
 ## A kernel page table per process (hard)
 
-Xv6 has a single kernel page table that's used whenever it executes in the kernel. 
-
-Xv6有一个单一的内核页表，每当它在内核中执行时都会用到。
-
-The kernel page table is a direct mapping to physical addresses, so that kernel virtual address x maps to physical address x. 
+Xv6 有一个单一的内核页表，每当它在内核中执行时都会用到。
 
 内核页表是对物理地址的直接映射，因此，内核虚拟地址x映射到物理地址x。
 
-Xv6 also has a separate page table for each process's user address space, containing only mappings for that process's user memory, starting at virtual address zero. 
-
-Xv6也有一个单独的页表，用于每个进程的用户地址空间，只包含该进程用户内存的映射，从虚拟地址0开始。
-
-Because the kernel page table doesn't contain these mappings, user addresses are not valid in the kernel. 
+Xv6 也有一个单独的页表，用于每个进程的用户地址空间，只包含该进程用户内存的映射，从虚拟地址0开始。
 
 因为内核页表不包含这些映射，用户地址在内核中是无效的。
 
-Thus, when the kernel needs to use a user pointer passed in a system call (e.g., the buffer pointer passed to write()), the kernel must first translate the pointer to a physical address. 
-
-因此，当内核需要使用在系统调用中传递的用户指针（例如，传递给write()的缓冲区指针）时，内核必须首先将该指针转换为物理地址。
-
-The goal of this section and the next is to allow the kernel to directly dereference user pointers.
+因此，当内核需要使用在系统调用中传递的用户指针（例如，传递给 write() 的缓冲区指针）时，内核必须首先将该指针转换为物理地址。
 
 本节和下一节的目标是允许内核直接解除对用户指针的定义。
 
-Your first job is to modify the kernel so that every process uses its own copy of the kernel page table when executing in the kernel. 
-
 你的第一项工作是修改内核，使每个进程在内核中执行时使用自己的内核页表副本。
 
-Modify struct proc to maintain a kernel page table for each process, and modify the scheduler to switch kernel page tables when switching processes. 
+> 目前每个进程都有自己的用户页表，但是只有一个内核页表。接下来的任务是修改内核，使每个进程都有自己独立的内核页表。
 
-修改struct proc，为每个进程维护一个内核页表，并修改调度程序，在切换进程时切换内核页表。
-
-For this step, each per-process kernel page table should be identical to the existing global kernel page table. 
+修改 struct proc，为每个进程维护一个内核页表，并修改调度程序，在切换进程时切换内核页表。
 
 对于这一步，每个进程的内核页表应该与现有的全局内核页表相同。
 
-You pass this part of the lab if usertests runs correctly.
-
-如果usertests运行正常，你就能通过这部分的实验。
-
-Read the book chapter and code mentioned at the start of this assignment; it will be easier to modify the virtual memory code correctly with an understanding of how it works. 
+如果 usertests 运行正常，你就能通过这部分的实验。
 
 阅读本作业开始时提到的书中章节和代码；在了解了虚拟内存的工作原理后，正确修改虚拟内存代码会更容易。
-
-Bugs in page table setup can cause traps due to missing mappings, can cause loads and stores to affect unexpected pages of physical memory, and can cause execution of instructions from incorrect pages of memory.
 
 页表设置中的错误可能导致因映射缺失而产生陷阱，可能导致加载和存储影响物理内存的意外页面，并可能导致从不正确的内存页面执行指令。
 
 Some hints:
 
-Add a field to struct proc for the process's kernel page table.
+在 struct proc 中增加一个字段，用于进程的内核页表。
 
-在struct proc中增加一个字段，用于进程的内核页表。
+> proc 是一个结构体，其中包含了进程的所有状态信息。
 
 A reasonable way to produce a kernel page table for a new process is to implement a modified version of kvminit that makes a new page table instead of modifying kernel_pagetable. You'll want to call this function from allocproc.
 
-为一个新进程生成内核页表的合理方法是实现一个修改版的kvminit，它可以生成一个新的页表而不是修改kernel_pagetable。你想从 allocproc 中调用这个函数。
+为一个新进程生成内核页表的合理方法是实现一个修改版的 kvminit，它可以生成一个新的页表而不是修改 kernel_pagetable 。你想从 allocproc 中调用这个函数。
+
+> kvminit 这个调用发生在 xv6 在 RISC-V 启用分页之前，所以地址直接指向物理内存。Kvminit 首先分配一页物理内存来存放根页表页。然后调用 kvmmap 将内核所需要的硬件资源映射到物理地址。这些资源包括内核的指令和数据，KERNBASE 到 PHYSTOP（0x86400000）的物理内存，以及实际上是设备的内存范围。
+> kvmmap (kernel/vm.c:118) 调用 mappages (kernel/vm.c:149)，它将一个虚拟地址范围映射到一个物理地址范围。它将范围内地址分割成多页（忽略余数），每次映射一页的顶端地址。对于每个要映射的虚拟地址（页的顶端地址），mapages 调用 walk 找到该地址的最后一级 PTE 的地址。然后，它配置 PTE，使其持有相关的物理页号、所需的权限(PTE_W、PTE_X 和/或 PTE_R)，以及 PTE_V 来标记 PTE 为有效(kernel/vm.c:161)。
 
 Make sure that each process's kernel page table has a mapping for that process's kernel stack. 
 
