@@ -35,7 +35,7 @@ module.exports = {
         },
         {
           text: '关于作者', items: [
-            { text: '个人主页', link: 'https://weijiew.com' }
+            { text: '个人主页', link: 'https://weijiew.github.io' }
           ]
         }
       ]
