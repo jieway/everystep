@@ -1,8 +1,10 @@
 # Lab: page tables
 
-https://pdos.csail.mit.edu/6.828/2020/labs/pgtbl.html
+[实验手册](https://pdos.csail.mit.edu/6.828/2020/labs/pgtbl.html) / [中文版](https://github.com/duguosheng/6.S081-All-in-one/blob/main/labs/requirements/lab3.md)
 
-探索页表，并修改它们以简化从用户空间复制数据到内核空间的功能。需要提前阅读 xv6 书第三章。
+## 前置知识
+
+阅读 xv6 书第三章。
 
 `kern/memlayout.h` ，它捕捉了内存的布局。
 
@@ -23,7 +25,7 @@ https://pdos.csail.mit.edu/6.828/2020/labs/pgtbl.html
 
 `(pte & (PTE_R|PTE_W|PTE_X)) == 0` 表示非叶子节点。
 
-具体代码变动：[PASS Lab3 ex1](https://github.com/weijiew/6.S081-2020/commit/6632a87f01b651984a54bd04f20cc63a99ca1b3f)
+commit: [PASS Lab3 Print a page table](https://github.com/weijiew/6.S081-2020/commit/6632a87f01b651984a54bd04f20cc63a99ca1b3f).
 
   $ make qemu-gdb
   pte printout: OK (6.9s)
