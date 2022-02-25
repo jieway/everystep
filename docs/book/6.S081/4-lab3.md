@@ -34,159 +34,172 @@ https://pdos.csail.mit.edu/6.828/2020/labs/pgtbl.html
 
 ## 2. A kernel page table per process (hard)
 
-Xv6 的每个进程都有自己的用户页表，但是共享同一个内核页表，内核页表的地址是直接映射的。
+Xv6 的每个进程都有自己的用户页表，但是共享同一个内核页表，而内核页表的地址是直接映射的。接下来的任务是修改内核，使每个进程都有自己独立的内核页表。共享的内核页表 `pagetable_t kernel_pagetable;` 位于 vm.c 中。
 
-接下来的任务是修改内核，使每个进程都有自己独立的内核页表。
+* pagetable_t 是什么？
 
-在 proc 结构体中 (kernel/proc.h) 添加内核页表，表示进程独占的内核页表。
+pagetable_t 是一个指向 RISC-V 根页表页的指针。可以是内核页表，也可以是进程的页表。核心函数是 walk 和 mappages ，前者通过虚拟地址得到 PTE，后者将虚拟地址映射到物理地址。
 
-对于这一步，每个进程的内核页表应该与现有的全局内核页表相同。
+pagetable_t 其实就是一个数组。接下来先研究 mappages 再研究 walk 。因为 mappages 调用了 walk 。
 
-如果 usertests 运行正常，你就能通过这部分的实验。
+* mappages 函数的功能是将一个虚拟地址范围映射到物理地址范围。
 
-阅读本作业开始时提到的书中章节和代码；在了解了虚拟内存的工作原理后，正确修改虚拟内存代码会更容易。
+结合着代码看，第二个参数 va 是开始创建 PTE 的虚拟地址，va 映射到了第四个参数 pa 指向的物理地址。映射成功返回零，如果通过 walk() 无法分配到所需页的页表就返回一。size 表示待虚拟地址的范围。
 
-页表设置中的错误可能导致因映射缺失而产生陷阱，可能导致加载和存储影响物理内存的意外页面，并可能导致从不正确的内存页面执行指令。
+```cpp
+int
+mappages(pagetable_t pagetable, uint64 va, uint64 size, uint64 pa, int perm)
+{
+  uint64 a, last;
+  pte_t *pte;
+
+  a = PGROUNDDOWN(va); // 向下取整
+  last = PGROUNDDOWN(va + size - 1);
+  for(;;){
+    if((pte = walk(pagetable, a, 1)) == 0)
+      return -1;
+    if(*pte & PTE_V)
+      panic("remap");
+    *pte = PA2PTE(pa) | perm | PTE_V;
+    if(a == last)
+      break;
+    a += PGSIZE;
+    pa += PGSIZE;
+  }
+  return 0;
+}
+```
+
+通过 walk() 拿到 PTE ，根据 PTE 建立和物理地址 PA 的映射。 
+
+PTE 是页表(pagetable_t)的一行数据，也就是页表是由 PTE 组成。其中 PTE 由 44 位的 PPN 和 10 位的 标志位(Flags)组成。44 位的 PPN 和虚拟地址的后 12 位(offset)共同拼接组成了物理地址。
+
+![](image/4-lab3/1645774086071.png)
+
+PTE_V 存于 Flags 标志位中，表示 PTE 是否存在
+
+`#define PA2PTE(pa) ((((uint64)pa) >> 12) << 10)`
+
+其中 `PA2PTE` 表示将 PA 转化为 PTE ，右移 12 位表示剔除 offset (结合上图来看！上图也就是 xv6 Figure 3.1) 左移 10 位表示留出 Flags 位，后续通过按位或运算(|)将 Flags 拼接上来。
+
+a == last 表示范围内的映射完了。`a += PGSIZE;` 表示步长是 PGSIZE，也就是 4096 bytes .
+
+* 接下来研究 walk() 函数，结合图 Figure 3.2 来看，经过两次循环拿到最底层的页表，然后返回对应的 PTE 。最开始我不明白为啥用这么多页表，后来一想发现这其实就是一颗多叉树。顶层的页表步长最大，因为表里面套表。首先通过顶层的页表确定大致范围然后不断缩小范围，这样可以大大加快索引速度。
+
+```cpp
+pte_t *
+walk(pagetable_t pagetable, uint64 va, int alloc)
+{
+  if(va >= MAXVA) // va 是虚拟地址
+    panic("walk");
+
+  for(int level = 2; level > 0; level--) { // 三级页表
+    pte_t *pte = &pagetable[PX(level, va)];
+    if(*pte & PTE_V) { // PTE_V 表示页表合法
+      pagetable = (pagetable_t)PTE2PA(*pte);
+    } else {
+      if(!alloc || (pagetable = (pde_t*)kalloc()) == 0)
+        return 0;
+      memset(pagetable, 0, PGSIZE);
+      *pte = PA2PTE(pagetable) | PTE_V;
+    }
+  }
+  return &pagetable[PX(0, va)];
+}
+```
+
+通过实验的要求是所有 usertests 运行正常。注意此时还没有改动代码，usertests 是可以正常运行的，将共享的内核页表改为独享的内核页表之后 usertests 依旧能正常运行才算通过实验。注意这个测试跑的很慢。
 
 Some hints:
 
 1. 在 struct proc 中增加一个字段，用于进程的内核页表。
 
-> proc 是一个结构体，其中包含了进程的所有状态信息。
+> proc 是用于描述进程的结构体，其中包含了进程的所有状态信息。
+
+在 proc 结构体中 (kernel/proc.h) 添加内核页表，表示进程独占的内核页表。每个进程的内核页表应该与现有的全局内核页表相同。
+
+```cpp
+pagetable_t kernelpgtbl;     // Kernel page table
+```
 
 2. 为一个新进程生成内核页表的合理方法是实现一个修改版的 kvminit，它可以生成一个新的页表而不是修改 kernel_pagetable 。你想从 allocproc 中调用这个函数。
 
 > 阅读 kvminit，kvminit 是什么？ xv6 3.3 Code: creating an address space
 
-vm.c (kernel/vm.c:1) 操作地址空间和页表的代码。
-pagetable_t 是指向 RISC-V 根页表页的指针，可以是内核页表或者进程页表。
-walk 是核心函数，为虚拟地址寻找 PTE 和 mappages 。为
-以 kvm 开头的函数操作内核函数，以 uvm 开头的函数操作用户页表，其他函数两者都使用。
-copyout和copyin将数据复制到作为系统调用参数提供的用户虚拟地址，或从这些虚拟地址复制数据。
-这些都在 vm.c 中，都需要翻译到物理地址。
+修改 kvminit ，之前是内核页表写死，现在抽象出来提供单独的调用。
 
+3. 确保每个进程的内核页表都有对该进程的内核堆栈的映射。在未修改的xv6中，所有的内核栈都是在 procinit 中设置的。你需要把这些功能的一部分或全部转移到 allocproc。
 
-最开始启动的时候 main 调用 kvminit 创建内核页表。这个调用发生在 RISC-V 启动分页之前，所以地址直接指向物理内存。首先分配了一页物理内存来存放根页表。然后调用 kvmmap 将内核所需要的硬件资源映射到物理地址。(结合着 kvminit() 代码看)。这些资源包括内核的指令和数据，KERNBASE 到 PHYSTOP（0x86400000）的物理内存，以及实际上是设备的内存范围。
-
-kvmmap (kernel/vm.c:118) 调用 mappages (kernel/vm.c:149)，它将一个虚拟地址范围映射到一个物理地址范围。它将范围内地址分割成多页（忽略余数），每次映射一页的顶端地址。对于每个要映射的虚拟地址（页的顶端地址），mapages 调用 walk 找到该地址的最后一级 PTE 的地址。然后，它配置 PTE，使其持有相关的物理页号、所需的权限(PTE_W、PTE_X 和/或 PTE_R)，以及 PTE_V 来标记 PTE 为有效(kernel/vm.c:161)。
-
-
-> 阅读 kalloc.c
-
-
-Make sure that each process's kernel page table has a mapping for that process's kernel stack. 
-
-确保每个进程的内核页表都有对该进程的内核堆栈的映射。
-
-In unmodified xv6, all the kernel stacks are set up in procinit. You will need to move some or all of this functionality to allocproc.
-
-在未修改的xv6中，所有的内核栈都是在procinit中设置的。你需要把这些功能的一部分或全部转移到 allocproc。
-
-Modify scheduler() to load the process's kernel page table into the core's satp register (see kvminithart for inspiration). Don't forget to call sfence_vma() after calling w_satp().
-
-修改scheduler()，将进程的内核页表加载到内核的satp寄存器中（见kvminithart的启发）。不要忘记在调用w_satp()后调用sfence_vma()。
-
-scheduler() should use kernel_pagetable when no process is running. Free a process's kernel page table in freeproc.
-
-scheduler()应该在没有进程运行时使用kernel_pagetable。在 freeproc 中释放一个进程的内核页表。
-
-You'll need a way to free a page table without also freeing the leaf physical memory pages.
-
-你需要一种方法来释放一个页表，而不同时释放物理内存页。
-
-vmprint may come in handy to debug page tables. It's OK to modify xv6 functions or add new functions; you'll probably need to do this in at least kernel/vm.c and kernel/proc.c. (But, don't modify kernel/vmcopyin.c, kernel/stats.c, user/usertests.c, and user/stats.c.)
-
-vmprint在调试页表时可能会派上用场。修改xv6函数或添加新函数是可以的；你可能至少需要在kernel/vm.c和kernel/proc.c中这样做（但是，不要修改kernel/vmcopyin.c、kernel/stats.c、user/usertests.c和user/stats.c）。
-
-A missing page table mapping will likely cause the kernel to encounter a page fault. 
-
-一个缺失的页表映射将可能导致内核遇到一个页故障。
-
-It will print an error that includes sepc=0x00000000XXXXXXXX. You can find out where the fault occurred by searching for XXXXXXXX in kernel/kernel.asm.
-
-它将打印一个包括sepc=0x00000000XXXXXX的错误。你可以通过搜索kernel/kernel.asm中的XXXXXXX来找出故障发生的位置。
+删除初始化进程(procinit())时分配的共享内核栈。改为在 allocproc 中进行分配单独的内核栈。
 
 ## Simplify copyin/copyinstr (hard)
 
-The kernel's copyin function reads memory pointed to by user pointers. 
+copyin
 
-内核的copyin函数会读取用户指针指向的内存。
+从用户态复制到内核。
 
-It does this by translating them to physical addresses, which the kernel can directly dereference. 
+```cpp
+// 大致流程为找到虚拟地址对应的物理地址，读取物理地址中的内容并将数据存入 dst 中
+int
+copyin(pagetable_t pagetable, char *dst, uint64 srcva, uint64 len)
+{
+  uint64 n, va0, pa0;
 
-它是通过将它们翻译成物理地址来实现的，内核可以直接解读这些地址。
+  while(len > 0){ // 遍历 len 长度
+    va0 = PGROUNDDOWN(srcva); // 虚拟地址向下取整
+    pa0 = walkaddr(pagetable, va0); // 将虚拟地址转为物理地址
+    if(pa0 == 0) // 没有找到物理地址
+      return -1;
+    n = PGSIZE - (srcva - va0);
+    if(n > len) // 截断处理
+      n = len;
+    memmove(dst, (void *)(pa0 + (srcva - va0)), n);
 
-It performs this translation by walking the process page-table in software. 
+    len -= n;
+    dst += n;
+    srcva = va0 + PGSIZE;
+  }
+  return 0;
+}
+```
 
-它通过在软件中行走进程页表来执行这种翻译。
+```cpp
+int
+copyinstr(pagetable_t pagetable, char *dst, uint64 srcva, uint64 max)
+{
+  uint64 n, va0, pa0;
+  int got_null = 0;
 
-Your job in this part of the lab is to add user mappings to each process's kernel page table (created in the previous section) that allow copyin (and the related string function copyinstr) to directly dereference user pointers.
+  while(got_null == 0 && max > 0){
+    va0 = PGROUNDDOWN(srcva);
+    pa0 = walkaddr(pagetable, va0);
+    if(pa0 == 0)
+      return -1;
+    n = PGSIZE - (srcva - va0);
+    if(n > max)
+      n = max;
 
-你在这一部分的工作是在每个进程的内核页表中添加用户映射（在上一节中创建），允许copyin（以及相关的字符串函数copyinstr）直接解除对用户指针的引用。
+    char *p = (char *) (pa0 + (srcva - va0));
+    while(n > 0){
+      if(*p == '\0'){
+        *dst = '\0';
+        got_null = 1;
+        break;
+      } else {
+        *dst = *p;
+      }
+      --n;
+      --max;
+      p++;
+      dst++;
+    }
 
-Replace the body of copyin in kernel/vm.c with a call to copyin_new (defined in kernel/vmcopyin.c); do the same for copyinstr and copyinstr_new. 
-
-在kernel/vm.c中用调用copyin_new（定义在kernel/vmcopyin.c中）替换copyin的主体；对copyinstr和copyinstr_new也做同样的处理。
-
-Add mappings for user addresses to each process's kernel page table so that copyin_new and copyinstr_new work. 
-
-在每个进程的内核页表中添加用户地址的映射，以便copyin_new和copyinstr_new工作。
-
-You pass this assignment if usertests runs correctly and all the make grade tests pass.
-
-如果usertests正确运行，并且所有的使级测试都通过，你就通过了这项作业。
-
-This scheme relies on the user virtual address range not overlapping the range of virtual addresses that the kernel uses for its own instructions and data. 
-
-这个方案依赖于用户的虚拟地址范围不与内核用于其自身指令和数据的虚拟地址范围重叠。
-
-Xv6 uses virtual addresses that start at zero for user address spaces, and luckily the kernel's memory starts at higher addresses. 
-
-Xv6对用户地址空间使用从零开始的虚拟地址，幸运的是，内核的内存从更高的地址开始。
-
-However, this scheme does limit the maximum size of a user process to be less than the kernel's lowest virtual address. 
-
-然而，这个方案确实限制了用户进程的最大尺寸，使其小于内核的最低虚拟地址。
-
-After the kernel has booted, that address is 0xC000000 in xv6, the address of the PLIC registers; see kvminit() in kernel/vm.c, kernel/memlayout.h, and Figure 3-4 in the text. 
-
-内核启动后，该地址为xv6中的0xC000000，即PLIC寄存器的地址；参见kernel/vm.c中的kvminit()，kernel/memlayout.h，以及文中的图3-4。
-
-You'll need to modify xv6 to prevent user processes from growing larger than the PLIC address.
-
-你需要修改xv6以防止用户进程的规模超过PLIC地址。
-
-Some hints:
-
-Replace copyin() with a call to copyin_new first, and make it work, before moving on to copyinstr.
-
-首先用copyin_new的调用代替copyin()，并使其工作，然后再转到copyinstr。
-
-At each point where the kernel changes a process's user mappings, change the process's kernel page table in the same way. Such points include fork(), exec(), and sbrk().
-
-在内核改变进程的用户映射的每个点上，以同样的方式改变进程的内核页表。这些点包括fork(), exec(), 和sbrk().
-
-Don't forget that to include the first process's user page table in its kernel page table in userinit.
-
-不要忘了在userinit中把第一个进程的用户页表纳入它的内核页表。
-
-What permissions do the PTEs for user addresses need in a process's kernel page table? (A page with PTE_U set cannot be accessed in kernel mode.)
-
-在进程的内核页表中，用户地址的PTEs需要什么权限？(设置了PTE_U的页在内核模式下不能被访问)。
-
-Don't forget about the above-mentioned PLIC limit.
-
-不要忘记上面提到的PLIC限制。
-
-Linux uses a technique similar to what you have implemented. 
-
-Linux使用了一种与你所实现的类似的技术。
-
-Until a few years ago many kernels used the same per-process page table in both user and kernel space, with mappings for both user and kernel addresses, to avoid having to switch page tables when switching between user and kernel space. However, that setup allowed side-channel attacks such as Meltdown and Spectre.
-
-直到几年前，许多内核在用户和内核空间都使用相同的每进程页表，并对用户和内核地址进行映射，以避免在用户和内核空间之间切换时必须切换页表。然而，这种设置允许诸如Meltdown和Spectre这样的侧通道攻击。
-
-Explain why the third test srcva + len < srcva is necessary in copyin_new(): give values for srcva and len for which the first two test fail (i.e., they will not cause to return -1) but for which the third one is true (resulting in returning -1).
-
-
-解释为什么第三个测试srcva + len < srcva在copyin_new()中是必要的：给出srcva和len的值，前两个测试失败（即不会导致返回-1），但第三个测试为真（导致返回1）。
+    srcva = va0 + PGSIZE;
+  }
+  if(got_null){
+    return 0;
+  } else {
+    return -1;
+  }
+}
+```
