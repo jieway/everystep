@@ -2,15 +2,29 @@
 
 [实验手册](https://pdos.csail.mit.edu/6.828/2020/labs/pgtbl.html) / [中文版](https://github.com/duguosheng/6.S081-All-in-one/blob/main/labs/requirements/lab3.md)
 
-## 前置知识
+## 虚拟地址
 
-阅读 xv6 书第三章。
+https://hansimov.gitbook.io/csapp/part2/ch09-virtual-memory
 
-`kern/memlayout.h` ，它捕捉了内存的布局。
+页表为每个进程提供自己私有地址空间和内存的机制，决定了内存地址含义以及可以访问哪些范围的物理内存。
 
-`kern/vm.c` 它包含了大部分虚拟内存（VM）代码。
+页表是什么？有什么用？为什么要用多级页表？
 
-`kernel/kalloc.c` 它包含分配和释放物理内存的代码。
+页表是一个存储物理地址的表，也就是一个数组，里面存的是物理地址，索引是虚拟地址。根据虚拟地址查表得物理地址。
+
+每一个进程都有自己的页表，
+
+早期计算机没有虚拟内存存在三个问题。
+
+* 程序分配走一部分内存后，剩余内存不是从零开始，需要处理偏移值。
+* 内存分段后，内存的分配与回收会导致大量的内存碎片且无法高效的利用内存空间。
+* 程序可以访问其他程序的数据，安全性无法得到保证。
+
+虚拟内存是如何解决以上三个问题的？
+
+* 每一个进程都有自己的页表且地址从零开始，解决了手动维护偏移值的问题。
+* 虽然物理地址不连续，但是虚拟地址连续，不需要分配一整块的物理内存，页表同合适的物理内存建立映射即可。如果内存空间不够，内存使用置换算法同磁盘交换数据。
+* 进程的无法访问对方的页表使得安全性得以保障。
 
 切换到 pgtbl 分支
 
@@ -120,25 +134,35 @@ Some hints:
 
 在 proc 结构体中 (kernel/proc.h) 添加内核页表，表示进程独占的内核页表。每个进程的内核页表应该与现有的全局内核页表相同。
 
-```cpp
-pagetable_t kernelpgtbl;     // Kernel page table
-```
-
 2. 为一个新进程生成内核页表的合理方法是实现一个修改版的 kvminit，它可以生成一个新的页表而不是修改 kernel_pagetable 。你想从 allocproc 中调用这个函数。
 
 > 阅读 kvminit，kvminit 是什么？ xv6 3.3 Code: creating an address space
 
-修改 kvminit ，之前是内核页表写死，现在抽象出来提供单独的调用。
+修改 kvminit ，之前是内核页表写死，现在抽象出来提供单独的调用。创建一个单独的页表.
 
 3. 确保每个进程的内核页表都有对该进程的内核堆栈的映射。在未修改的xv6中，所有的内核栈都是在 procinit 中设置的。你需要把这些功能的一部分或全部转移到 allocproc。
 
-删除初始化进程(procinit())时分配的共享内核栈。改为在 allocproc 中进行分配单独的内核栈。
+删除初始化进程(procinit())时分配的共享内核栈。改为在 allocproc 中进行分配单独的内核栈。照着 procinit() 中删除部分改改就行,改为固定每一个进程的固定位置.
+
+4. 修改scheduler()来加载进程的内核页表到核心的satp寄存器(参阅kvminithart来获取启发)。不要忘记在调用完w_satp()后调用sfence_vma()
+
+scheduler() 函数是干什么的?
+
+6. 没有进程运行时scheduler()应当使用kernel_pagetable
+
+在 scheduler() 中，调度某个RUNNABLE的进程前，先切到它的内核页表，运行完毕后，再切回global kernel pagetable。
+
+7. 在freeproc中释放一个进程的内核页表
+
+8. 你需要一种方法来释放页表，而不必释放叶子物理内存页面。
+
+递归释放三级页表,循环也行,和打印页表的逻辑类似.
 
 ## Simplify copyin/copyinstr (hard)
 
-copyin
+在用户进程内核页表中添加用户页表映射的副本。用户态下查询物理地址需要查表,而内核态下查询可以直接通过 mmu 。
 
-从用户态复制到内核。
+copyin 从用户态复制到内核。 
 
 ```cpp
 // 大致流程为找到虚拟地址对应的物理地址，读取物理地址中的内容并将数据存入 dst 中
