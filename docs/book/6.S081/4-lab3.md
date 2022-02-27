@@ -88,7 +88,7 @@ mappages(pagetable_t pagetable, uint64 va, uint64 size, uint64 pa, int perm)
 
 通过 walk() 拿到 PTE ，根据 PTE 建立和物理地址 PA 的映射。 
 
-PTE 是页表(pagetable_t)的一行数据，也就是页表是由 PTE 组成。其中 PTE 由 44 位的 PPN 和 10 位的 标志位(Flags)组成。44 位的 PPN 和虚拟地址的后 12 位(offset)共同拼接组成了物理地址。
+PTE 是页表(pagetable_t)的一行数据，也就是页表是由 PTE 组成。其中 PTE 由 44 位的 PPN 和 10 位的 标志位(Flags)组成。44 位的 PPN 和虚拟地址的后 12 位(offset)共同拼接组成了物理地址。其中 index 用来查找 page ，offset 对应的是一个 page 中的哪个字节。
 
 ![](image/4-lab3/1645774086071.png)
 
@@ -160,12 +160,12 @@ scheduler() 函数是干什么的?
 
 ## Simplify copyin/copyinstr (hard)
 
-在用户进程内核页表中添加用户页表映射的副本。用户态下查询物理地址需要查表,而内核态下查询可以直接通过 mmu 。
+在用户进程内核页表中添加用户页表映射的副本。用户态下查询物理地址需要查表,而内核态下查询可以直接通过 mmu 查询加快速度。
 
-copyin 从用户态复制到内核。 
+阅读原 copyin 函数，大致流程为找到虚拟地址对应的物理地址，读取物理地址中的内容并将数据存入 dst 中。
 
 ```cpp
-// 大致流程为找到虚拟地址对应的物理地址，读取物理地址中的内容并将数据存入 dst 中
+// 
 int
 copyin(pagetable_t pagetable, char *dst, uint64 srcva, uint64 len)
 {
@@ -189,43 +189,24 @@ copyin(pagetable_t pagetable, char *dst, uint64 srcva, uint64 len)
 }
 ```
 
-```cpp
-int
-copyinstr(pagetable_t pagetable, char *dst, uint64 srcva, uint64 max)
-{
-  uint64 n, va0, pa0;
-  int got_null = 0;
+现在的问题是进程的内核态也要维护一个页表副本。所以需要将一个页表的映射关系拷贝到另外一个页表中。
 
-  while(got_null == 0 && max > 0){
-    va0 = PGROUNDDOWN(srcva);
-    pa0 = walkaddr(pagetable, va0);
-    if(pa0 == 0)
-      return -1;
-    n = PGSIZE - (srcva - va0);
-    if(n > max)
-      n = max;
+遍历用户页表拿到 PTE ，将其映射到内核页表中即可。注意拷贝的时候需要将页表设置为非用户页`& ~PTE_U`，因为 RISC-V 中内核无法直接访问用户页。
 
-    char *p = (char *) (pa0 + (srcva - va0));
-    while(n > 0){
-      if(*p == '\0'){
-        *dst = '\0';
-        got_null = 1;
-        break;
-      } else {
-        *dst = *p;
-      }
-      --n;
-      --max;
-      p++;
-      dst++;
-    }
+除此之外还需要实现一个复原页表的功能，也就是移除映射。
 
-    srcva = va0 + PGSIZE;
-  }
-  if(got_null){
-    return 0;
-  } else {
-    return -1;
-  }
-}
-```
+内核从 PLIC 开始向下增长，用户进程不能超过 PLIC 所以不能有 CLINT 的映射。修改 kvminit 单独给 CLINT 添加映射，用户进程的内核页表不能有 CLINT 的映射。
+
+用户进程地址空间的增长不能超过内核，而内核是从 PLIC 起步，所以用户进程的地址范围不能超过 PLIC 。
+
+修改 fork 函数，从父进程复制到子进程后，再将子进程的用户态页表复制到内核态下。
+
+exec() 清除内核页表中的旧映射，建立新映射。
+
+growproc() 增加或缩小 n 比特的内存。如果 n < 0 则删除对应内核页表的映射，反之则申请相应内存然后同步映射到页表中。
+
+userinit() 记得复制页表。
+
+
+ 
+
