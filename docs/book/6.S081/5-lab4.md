@@ -1,14 +1,32 @@
 # Lab4: traps
 
-https://www.bilibili.com/video/BV19k4y1C7kA?p=4
+* 实验手册：https://pdos.csail.mit.edu/6.S081/2020/labs/traps.html
+* 中文版：http://xv6.dgs.zone/labs/requirements/lab4.html
+* [lec6](https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/lec06-isolation-and-system-call-entry-exit-robert)
 
-https://www.bilibili.com/video/BV19k4y1C7kA?p=5
+* https://www.bilibili.com/video/BV19k4y1C7kA?p=4
 
-https://www.bilibili.com/video/BV1FT4y127WW/?spm_id_from=pageDriver
+*  https://www.bilibili.com/video/BV19k4y1C7kA?p=5
 
-下面是阅读 [lec6](https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/lec06-isolation-and-system-call-entry-exit-robert) 的总结。
+* 视频解析：https://www.bilibili.com/video/BV1FT4y127WW/?spm_id_from=pageDriver
 
-用户空间到内核空间的切换(trap)。什么情况下会切换？执行系统调用，出现 page fault ，除零错误，设备触发中断。
+## 总结
+
+指令在执行的时候是会暂停的，以下三种情况下会暂停普通指令的执行：
+
+1. 系统调用。例如系统执行 ecall 指令。
+2. 异常。例如除零或使用无效地址。
+3. 中断。例如设备发出读写请求。
+
+以上三种情况统称为 trap 。trap 是透明的，也就是被执行的代码感知不到 trap 的存在。
+
+trap 的大致流程如下：
+
+1. 控制权交给内核。
+2. 内核保存寄存器状态方便日后恢复。
+3. 内核执行相应代码。
+4. 内核恢复状态并从 trap 中返回。
+5. 代码回到原来的地方。
 
 在切换的过程中需要修改寄存器的状态，以下是一些重要寄存器的介绍。
 
@@ -66,8 +84,7 @@ supervisor mode 中的代码并不能读写任意物理地址。在supervisor mo
    2. sys_write 将要显示数据输出到console上，完成后会返回给 syscall 函数。
 6. usertrap 最终调用了 trap.c 中的 usertrapret() 函数，该函数实现了在C代码中实现的返回到用户空间的工作。
    1. 首先关闭中断，更新STVEC寄存器来指向用户空间的trap处理代码，将STVEC更新到指向用户空间的trap处理代码时。
-   2. 存储了kernel page table的指针。
-   3. 存储了当前用户进程的kernel stack。
+   2. 存储了内核页表，内核栈的指针。
    4. 存储了usertrap函数的指针，这样trampoline代码才能跳转到这个函数（注，详见6.5中 ld t0 (16)a0 指令）。
    5. 从tp寄存器中读取当前的CPU核编号，并存储在trapframe中，这样trampoline代码才能恢复这个数字，因为用户代码可能会修改这个数字。
 7. 此时又回到 trampoline.s 中，执行 userret 完成的了一些细节。调用机器指令返回到用户空间并恢复ECALL之后的用户程序的执行。
@@ -76,7 +93,6 @@ supervisor mode 中的代码并不能读写任意物理地址。在supervisor mo
 trampoline page 中包含了内核的trap处理代码。
 
 ecall尽量的简单可以提升软件设计的灵活性。
-
 
 ## 调试
 
@@ -178,6 +194,9 @@ A: "He110 World"; 0x726c6400; no, 57616 is 110 in hex regardless of endianness.
 	$ call
 	x=3 y=5221
 
+* [详细代码](https://github.com/weijiew/6.S081-2020/commit/a3894ff5e3b7e9a3e08a0a1ea1697ff3bac9bb87)
+
+
 ## Backtrace (moderate)
 
 建议阅读《程序员的自我修养》第十章。
@@ -214,11 +233,38 @@ fp 保存在寄存器 s0 中，每个函数调用栈
 
 通过循环，不断打印 ra ，通过 pre fp 拿到父函数的地址再打印 ra 即可。
 
+* [详细代码](https://github.com/weijiew/6.S081-2020/commit/102e77e9b3324df1062b8812b578f0d5b95d1a71)
+
 ## Alarm (hard)
 
+实现一个进程使用 CPU time 时周期性的发出警告的功能。例如周期性的检查中断/异常需要用到这个功能。
 
+增加一个系统调用 sigalarm(interval, handler)，其中 handler 一个函数，interval 一个整数表示经过的时间。sigalarm 的功能是经过 interval 个 CPU ticks ，调用 handler 函数。如果 sigalarm(0, 0) 内核将会停止周期性调用。
 
+proc 中需要保存 interval ，还需要一个字段表示当前时间 n ，每次调用 n-- 。当 n = 0 时执行函数并更新状态。
 
+如果有 handler 函数正在执行那么就不能执行别的 handler 函数，需要加一个字段判断一下。
 
-进程使用 CPU time 时周期性的发出警告。
+最后注意恢复。
 
+    == Test answers-traps.txt == answers-traps.txt: OK 
+    == Test backtrace test == 
+    $ make qemu-gdb
+    backtrace test: OK (12.1s) 
+    == Test running alarmtest == 
+    $ make qemu-gdb
+    (4.5s) 
+    == Test   alarmtest: test0 == 
+    alarmtest: test0: OK 
+    == Test   alarmtest: test1 == 
+    alarmtest: test1: OK 
+    == Test   alarmtest: test2 == 
+    alarmtest: test2: OK 
+    == Test usertests == 
+    $ make qemu-gdb
+    usertests: OK (116.5s) 
+    == Test time == 
+    time: OK 
+    Score: 85/85
+
+* [详细代码](https://github.com/weijiew/6.S081-2020/commit/bddcd70db9d2f61749c8bd58b8100f49217a122d)

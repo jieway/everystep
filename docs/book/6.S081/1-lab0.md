@@ -68,4 +68,3 @@
 [0. WSL 安装](https://blog.csdn.net/z2876563/article/details/117023126)
 [1. MIT 6.S081: Lab 0 搭建环境](https://zhuanlan.zhihu.com/p/343655412)
 [2. qemu 的退出方法](https://blog.csdn.net/zsj1126/article/details/104054913)
-[3. 课堂内容中文翻译](https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/)
