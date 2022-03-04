@@ -12,6 +12,8 @@
 
 ## 0. 总结
 
+在此之前申请内存的时候是用
+
 总的来说,当申请内存的时候是立即分配.这个实验要实现的是只有真正使用的时候才会立即分配内存.
 
 > 下面是阅读 [Lec8](https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/lec08-page-faults-frans) 的一些总结和 
