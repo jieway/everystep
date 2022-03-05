@@ -1,4 +1,4 @@
-# Lab5
+# Lab lazy
 
 首先阅读实验手册 [Lab: xv6 lazy page allocation](https://pdos.csail.mit.edu/6.S081/2020/labs/lazy.html) / [中文](http://xv6.dgs.zone/labs/requirements/lab5.html) 。
 

@@ -1,4 +1,4 @@
-# lab6
+# Lab cow
 
 * [实验手册](http://xv6.dgs.zone/labs/requirements/lab6.html)
 

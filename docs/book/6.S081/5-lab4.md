@@ -1,4 +1,4 @@
-# Lab4: traps
+# Lab trap
 
 * 实验手册：https://pdos.csail.mit.edu/6.S081/2020/labs/traps.html
 * 中文版：http://xv6.dgs.zone/labs/requirements/lab4.html

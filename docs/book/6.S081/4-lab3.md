@@ -1,4 +1,4 @@
-# Lab: page tables
+# Lab pgtbl
 
 [实验手册](https://pdos.csail.mit.edu/6.828/2020/labs/pgtbl.html) / [中文版](https://github.com/duguosheng/6.S081-All-in-one/blob/main/labs/requirements/lab3.md)
 

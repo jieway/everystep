@@ -1,4 +1,4 @@
-# Lab: Xv6 and Unix utilities
+# Lab util
 
 熟悉 xv6 及其系统调用。
 
@@ -21,6 +21,13 @@ main(int argc, char *argv[]) {
     exit(0);
 }
 ```
+
+    $ sleep 2 
+
+argc = 2
+argv[0] = sleep
+argv[1] = 2
+
 
 ## pingpong (easy)
 
