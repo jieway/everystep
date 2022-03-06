@@ -139,7 +139,6 @@ https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/lec11-thread-switc
 
 [没看懂，需要反复看！！！](https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/lec11-thread-switching-robert/11.4-xv6-thread-switching-2)
 
-
 ## xv6 book ch7
 
 三个问题：
@@ -149,7 +148,6 @@ https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/lec11-thread-switc
 3. 许多 CPU 可能会在进程间并发切换，需要设计一个锁来避免竞争。
 4. 第四，当进程退出时，必须释放进程的内存和其他资源，但它自己不能做到这一切，因为它不能释放自己的内核栈，同时又在使用内核栈。
 5. 第五，多核机器的每个内核必须记住它正在执行的进程，这样系统调用就会修改相应进程的内核状态。
-
 
 ## 1. Uthread: switching between threads (moderate)
 
