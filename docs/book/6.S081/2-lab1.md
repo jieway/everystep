@@ -4,18 +4,6 @@
 
 https://pdos.csail.mit.edu/6.828/2020/labs/util.html
 
-
-1. https://www.bilibili.com/video/BV19k4y1C7kA?p=1
-2. 
-
-## Lec1 总结
-
-对硬件的抽象，多路复用，隔离，共享，安全，性能。
-
-简单且强大的接口。
-
-
-
 ## sleep (easy)
 
 在 xv6 中实现 Unix 中的 sleep 命令。
@@ -213,7 +201,7 @@ main(int argc, char *argv[])
 
 ```
 $ echo hello | xargs echo aa aaa aaa
-hello
+aa aaa aaa hello
 
 argv[0]: xargs
 argv[1]: echo

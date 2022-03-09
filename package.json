@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "sh deploy.sh"
+    "deploy": "sh g.sh"
   },
   "repository": "https://github.com/weijiew/codestep",
   "author": "weijiew <jiewei314@gmail.com>",

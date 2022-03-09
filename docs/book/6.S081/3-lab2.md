@@ -55,7 +55,7 @@ $ grep hello README
 $
 ```
 
-这个例子中，程序没有被跟踪吗，所以没有输出。
+这个例子中，程序没有被跟踪，所以没有输出。
 
 ```sh
 $ trace 2 usertests forkforkfork
