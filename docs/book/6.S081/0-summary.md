@@ -2,9 +2,9 @@
 
 schedule 页面：https://pdos.csail.mit.edu/6.828/2020/schedule.html
 
-* [视频中文翻译。](https://www.bilibili.com/video/BV19k4y1C7kA)
+* [视频中文翻译](https://www.bilibili.com/video/BV19k4y1C7kA)
 * [视频中文文字版](https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/)
-* [lab 文档的中文翻译。](https://github.com/duguosheng/6.S081-All-in-one)
+* [lab 文档的中文翻译](https://github.com/duguosheng/6.S081-All-in-one)
 
 ## 一些技巧
 
@@ -12,7 +12,12 @@ schedule 页面：https://pdos.csail.mit.edu/6.828/2020/schedule.html
 
 ![](image/0-summary/1646449365296.png)
 
-* [报错解决：/usr/bin/env: ‘python\r’: No such file or directory](https://blog.csdn.net/qq_45779334/article/details/114040911)
+如果出现 make grade 时出现 `/usr/bin/env: ‘python3\r’: No such file or directory` 
+
+用 vim 打开测试文件输入如下内容：
+
+:set  ff=unix 
+:wq
 
 * 如果想从头再来，可以回退到上一个版本重新开始(`git reset --hard HEAD^`) 。
 
