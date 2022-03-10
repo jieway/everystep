@@ -239,7 +239,7 @@ fp 保存在寄存器 s0 中，每个函数调用栈
 
 实现一个进程使用 CPU time 时周期性的发出警告的功能。例如周期性的检查中断/异常需要用到这个功能。
 
-增加一个系统调用 sigalarm(interval, handler)，其中 handler 一个函数，interval 一个整数表示经过的时间。sigalarm 的功能是经过 interval 个 CPU ticks ，调用 handler 函数。如果 sigalarm(0, 0) 内核将会停止周期性调用。
+增加一个系统调用 sigalarm(interval, handler)，其中 handler 是一个函数，interval 是一个整数，表示经过的时间。sigalarm 的功能是经过 interval 个 CPU ticks ，调用 handler 函数。如果 sigalarm(0, 0) 内核将会停止周期性调用。
 
 proc 中需要保存 interval ，还需要一个字段表示当前时间 n ，每次调用 n-- 。当 n = 0 时执行函数并更新状态。
 
