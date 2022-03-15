@@ -1,4 +1,4 @@
-# Lab 3: Query Optimization
+# Lab 3 翻译
 
 Assigned: Wednesday, Mar 17, 2021
 Due: Tuesday, Apr 6, 2021

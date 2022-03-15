@@ -1,4 +1,5 @@
-# Lab 6: Rollback and Recovery
+# Lab 6 翻译
+
 Assigned: Monday, May 3, 2021
 Due: Wednesday, May 19, 2021 11:59 PM EST
 
