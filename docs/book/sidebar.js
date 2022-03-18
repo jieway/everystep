@@ -17,6 +17,24 @@ module.exports = [
     ]
   },
   {
+    title: '🎡 6.830',
+    children: [
+      '6.830/1-lab0',
+      '6.830/ans/2-lab1-ans',
+      '6.830/ans/3-lab2-ans',
+      '6.830/ans/4-lab3-ans',
+      '6.830/ans/5-lab4-ans',
+      '6.830/ans/6-lab5-ans',
+      '6.830/ans/7-lab6-ans',
+      '6.830/cn/2-lab1',
+      '6.830/cn/3-lab2',
+      '6.830/cn/4-lab3',
+      '6.830/cn/5-lab4',
+      '6.830/cn/6-lab5',
+      '6.830/cn/7-lab6'
+    ]
+  },
+  {
     title: '⛽ MIT 6.NULL',
     children: [
       'missing/ch0',
@@ -59,24 +77,6 @@ module.exports = [
     children: [
       'cs61c/1-summary.md',
       'cs61c/2-lab0'
-    ]
-  },
-  {
-    title: '🥰 6.830',
-    children: [
-      '6.830/1-lab0',
-      '6.830/ans/2-lab1-ans',
-      '6.830/ans/3-lab2-ans',
-      '6.830/ans/4-lab3-ans',
-      '6.830/ans/5-lab4-ans',
-      '6.830/ans/6-lab5-ans',
-      '6.830/ans/7-lab6-ans',
-      '6.830/cn/2-lab1',
-      '6.830/cn/3-lab2',
-      '6.830/cn/4-lab3',
-      '6.830/cn/5-lab4',
-      '6.830/cn/6-lab5',
-      '6.830/cn/7-lab6'
     ]
   },
   {

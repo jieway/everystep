@@ -67,8 +67,7 @@ eager allocation 可以明确的知道物理内存不够。lazy allocation 当�
 
 用户程序的地址空间分为text区域，data区域，同时还有一个BSS区域.
 
-![](image/6-lab5/1646297093490.png)
-
+![20220318135511](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318135511.png)
 Copy On Write Fork
 
 子进程和父进程的一些全局变量是共享的,而在此之前子进程复制了一份. 这些变量是只读的.
@@ -125,7 +124,7 @@ scause 寄存器中保存了报错原因,由报错可知 `scause 0x0000000000000
 
 这是因为 lazy 的缘故,消除映射的时候以为映射过了,其实有些地址没有建立映射但是进行了消除.此处简单的 cotinue 即可.
 
-![](image/6-lab5/1646362187129.png)
+![20220318135538](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318135538.png)
 
 接下来就可以正常输出了:
 
@@ -140,8 +139,7 @@ scause 寄存器中保存了报错原因,由报错可知 `scause 0x0000000000000
 
 处理 uvmcopy 函数,发现没有建立映射的内存 cotinue 即可.
 
-![](image/6-lab5/1646363032953.png)
-
+![20220318135555](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318135555.png)
 修改 fork() 函数,其中需要将父页的内容复制到子页中(uvmcopy),而复制的过程中因为 lazy 的缘故存在一些没有映射的页,所以当发现地址不存在时需要忽略.
 
 接下来是处理系统调用,当发生系统调用执行(exe.c)函数的时候的时候发现地址不存在(walkaddr),需要分配内存并建立相关映射,这块的逻辑和 usertrap 的处理类似了.

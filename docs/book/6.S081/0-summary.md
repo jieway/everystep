@@ -14,6 +14,8 @@ VSCode 全局搜索快捷键 ctrl + p 加上 `# 加内容`。
 
 ![](image/0-summary/1646449365296.png)
 
+![20220318135133](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318135133.png)
+
 * 如果出现 make grade 时出现 `/usr/bin/env: ‘python3\r’: No such file or directory` 
 
 用 vim 打开测试文件输入如下内容：

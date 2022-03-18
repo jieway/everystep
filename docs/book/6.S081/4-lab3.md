@@ -90,7 +90,7 @@ mappages(pagetable_t pagetable, uint64 va, uint64 size, uint64 pa, int perm)
 
 PTE 是页表(pagetable_t)的一行数据，也就是页表是由 PTE 组成。其中 PTE 由 44 位的 PPN 和 10 位的 标志位(Flags)组成。44 位的 PPN 和虚拟地址的后 12 位(offset)共同拼接组成了物理地址。其中 index 用来查找 page ，offset 对应的是一个 page 中的哪个字节。
 
-![](image/4-lab3/1645774086071.png)
+![20220318135402](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318135402.png)
 
 PTE_V 存于 Flags 标志位中，表示 PTE 是否存在
 

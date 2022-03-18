@@ -15,7 +15,7 @@ features:
   details:  Operation System
 - title: 🚀 CS144
   details:  写一个 TCP
-- title: 🥰 6.830
+- title: 🎡 6.830
   details:  实现一个关系型 DB
 footer: 2019 - 2022 ©weijiew. Released under the CC BY-NC-SA 4.0 International License.
 ---

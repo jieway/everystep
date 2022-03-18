@@ -176,7 +176,8 @@ syscall(void)
 
 将 `$U/_sysinfotest` 添加到 Makefile 的 UPROGS 中。接下来执行 make qemu 后发现报错：
 
-![](image/3-lab2/1642769782429.png)
+
+![20220318135234](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318135234.png)
 
 添加系统调用sysinfo，步骤与 trace 相同。（如果这里卡住就回头仔细搞明白 trace 的执行流程再往下研究）。
 
@@ -189,5 +190,3 @@ To collect the amount of free memory, add a function to kernel/kalloc.c
 在 kernel/kalloc.c 中添加一个函数，统计自由内存的数量。
 
 在 kernel/proc.c中加入一个函数，统计进程的数量。
-
-![](image/3-lab2/1642775311557.png)
