@@ -35,7 +35,14 @@ module.exports = [
     ]
   },
   {
-    title: '⛽ MIT 6.NULL',
+    title: '🎉 6.824',
+    children: [
+      '6.824/0-lab0',
+      '6.824/0-lab1'
+    ]
+  },
+  {
+    title: '⛽ 6.NULL',
     children: [
       'missing/ch0',
       'missing/ch1',
@@ -95,13 +102,6 @@ module.exports = [
     children: [
       'csapp/1-summary',
       'csapp/2-lab1'
-    ]
-  },
-  {
-    title: '😍 论文翻译',
-    children: [
-      'read/0-summary',
-      'read/1-mapreduce'
     ]
   },
   {

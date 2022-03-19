@@ -122,3 +122,22 @@ PlanCache 类，用来缓存 Selinger 实现中所考虑的连接子集的最佳
 `enumerateSubsets(joins, i);` 其中 i 表示子集中的子集的元素个数。例如 a,b,c 三张表，当 i=1 时，返回数据大致形态 set(set(ab) , set(ac), set(bc)) ， 注意 ab 是一个 LogicalJoinNode 所以尺寸是 1 。如果 i=2 ，那么返回的数据类似 set(set(ab, c) , set(ac, b), set(bc, a)) 。可以优化为回溯，避免创建大量对象。
 
 > 这块内容建议阅读帆船书《Database System Concepts》第七版的 16.4.1 Cost-Based Join-Order Selection 部分
+
+DP step:
+
+1. 首先枚举左深树的组合顺序。
+
+![20220318195217](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318195217.png)
+
+2. 枚举不同顺序下不同 Join 算法的开销。
+
+![20220318195401](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318195401.png)
+
+3. 枚举每一个表的读表方式的开销。
+
+![20220318195454](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318195454.png)
+
+4. 暴力计算。
+
+小于 12 个表用 DP ，否则开销巨大。
+
