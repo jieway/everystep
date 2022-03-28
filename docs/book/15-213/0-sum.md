@@ -1,18 +1,22 @@
-# 15-213 总览
+# 15-213 Sp22 总览
 
 15-213 是 CMU 的计算机基础课。CS:APP 最初是这门课的讲义，后来出版成书。
 
 * [课程主页](https://www.cs.cmu.edu/~213/index.html)
 
-L0 (C programming Lab): Test/refresh your C programming abilities
-L1 (datalab): Manipulating bits
-L2 (bomblab): Defusing a binary bomb
-L3 (attacklab): The basics of code injection attacks
-L4 (cachelab): Building a cache simulator and optimizing for locality.
-L5 (malloclab): Writing your own malloc package
-L7 (proxylab): Writing your own Web proxy
+一共 8 个实验：
 
-# LAB-0: 实验环境
+▪ L0 (C programming Lab): Test/refresh your C programming abilities
+▪ L1 (datalab): Manipulating bits
+▪ L2 (bomblab): Defusing a binary bomb
+▪ L3 (attacklab): The basics of code injection attacks
+▪ L4 (cachelab): Building a cache simulator and optimizing for locality.
+▪ L5 (malloclab): Writing your own malloc package
+▪ L6 (tshlab): Writing your own Unix shell.
+▪ L7 (proxylab): Writing your own Web proxy
+
+
+# 0. 实验环境搭建
 
 我是在 win10 系统上做实验的，而实验环境要求 linux 平台，所以有以下三种解决方案。
 
@@ -182,3 +186,6 @@ sudo apt-get install gcc-multilib
 # 4. 参考
 
 1. [windows](https://zhuanlan.zhihu.com/p/340283308) 下环境配置。
+
+
+

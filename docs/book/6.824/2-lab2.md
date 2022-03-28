@@ -46,3 +46,28 @@ Raft 必须使用 RPC 通信不能使用共享变量或文件来进行通信。
 
 填写 RequestVoteArgs 和 requestvoterreply 结构体。修改 Make() 来创建一个后台 goroutine，当它有一段时间没有收到其他peer的消息时，通过发送RequestVote rpc来定期启动leader选举。这样，同伴就会知道谁是领导者，如果已经有了领导者，或者自己成为领导者。实现RequestVote() RPC处理程序，这样服务器就可以互相投票。
 
+
+
+
+---
+title: '6.824 总结'
+date: '2022-03-17'
+---
+
+# 6.824 
+
+> 下面是伪码逐字稿，没有任何代码，可以放心看。
+
+## lab1
+
+分为两部分，由一个 Coordinate 和多个 Worker 组成。
+
+首先 Coordinate 启动，根据输入待处理的文件名构造 Map 任务队列和 Reduce 任务队列等待 Worker 来领取任务，初始状态为 Map 阶段。
+
+然后 Worker 启动，先申请一个 map 或 reduce 任务，拿到任务后去处理。如果是 map 任务就读取文件中的内容套入 map 函数中执行，再将中间结果以 json 格式写入文件中。如果是 reduce 任务，读取中间文件的内容用 reducef 处理，然后排序再输出。
+
+## lab2
+
+
+
+## 参考

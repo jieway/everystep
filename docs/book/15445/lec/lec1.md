@@ -30,7 +30,6 @@ date: '2022-03-17'
 数据写到一半数据库崩了怎么办？
 
 
-
 # Lecture #14: Query Planning & Optimization I
 
 
