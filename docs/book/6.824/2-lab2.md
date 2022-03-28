@@ -7,67 +7,10 @@ Part 2C Due: Mar 6 23:59
 
 阅读：https://pdos.csail.mit.edu/6.824/labs/lab-raft.html
 
-在 `raft/raft.go` 添加代码。
+在这个 lab 中将会实现 raft 协议，而下一个 lab 在此基础上将会实现一个 KV service 。
 
-    //创建一个新的Raft服务器实例:
-    rf := Make(peers, me, persister, applyCh)
+Raft 将客户端的请求组织成了一个序列，也就是日志进而确保所有的副本都拥有同样的日志。
 
-    //开始一个新的日志条目的协议:
-    rf.Start(command interface{}) (index, term, isleader)
-
-    //询问一个Raft的当前 term，以及它是否认为自己是leader
-    rf.GetState() (term, isLeader)
-
-    //每次提交一个新的记录到日志，每个Raft peer
-    //应该向服务(或测试器)发送一个ApplyMsg。
-    type ApplyMsg
-
-服务调用Make(peers,me，…)来创建一个Raft对等点。
-
-peers 参数是一个Raft对等体(包括这个)的网络标识符数组，用于RPC。参数me是该对等体在对等体数组中的索引。Start(命令)请求Raft启动处理，将该命令追加到复制的日志中。
-
-Start()应该立即返回，而不需要等待日志追加完成。服务希望实现为每个新提交的日志条目向applyCh通道参数发送一个ApplyMsg给Make()。
-
-raft.go 包含发送一个RPC (sendRequestVote())和处理传入RPC (RequestVote())的示例代码。
-
-Raft 必须使用 RPC 通信不能使用共享变量或文件来进行通信。
-
-## Part 2A: leader election (moderate)
-
-测试 lab 2a 的正确性：`go test -run 2A`
-
-实现 Raft leader 的选举和心跳(AppendEntries没有日志记录的rpc)。
-
-2A部分的目标是选出一个 leader，如果没有故障，leader 将保持 leader，如果旧 leader 故障或旧leader 的数据包丢失，则由新 leader 接管。运行 `go test -run 2A` 来测试你的2A代码。实现本身是难以运行的，必须通过测试器来测试。
-
-按照论文的图2。在这一点上，你关心的是发送和接收RequestVote rpc，与选举相关的服务器规则，以及与状态相关的领袖选举。
-
-在 Raft .go 中为 Raft 结构添加图2中领袖选举的状态。您还需要定义一个结构来保存关于每个日志条目的信息。
-
-填写 RequestVoteArgs 和 requestvoterreply 结构体。修改 Make() 来创建一个后台 goroutine，当它有一段时间没有收到其他peer的消息时，通过发送RequestVote rpc来定期启动leader选举。这样，同伴就会知道谁是领导者，如果已经有了领导者，或者自己成为领导者。实现RequestVote() RPC处理程序，这样服务器就可以互相投票。
+如果一个服务器发生故障但后来恢复了，Raft会负责将其日志更新。只要至少有大多数的服务器还活着，并且能够相互交谈，Raft就会继续运行。如果没有这样的多数，Raft将不会取得任何进展，但一旦多数服务器能够再次通信，Raft将重新开始工作。
 
 
-
-
----
-title: '6.824 总结'
-date: '2022-03-17'
----
-
-# 6.824 
-
-> 下面是伪码逐字稿，没有任何代码，可以放心看。
-
-## lab1
-
-分为两部分，由一个 Coordinate 和多个 Worker 组成。
-
-首先 Coordinate 启动，根据输入待处理的文件名构造 Map 任务队列和 Reduce 任务队列等待 Worker 来领取任务，初始状态为 Map 阶段。
-
-然后 Worker 启动，先申请一个 map 或 reduce 任务，拿到任务后去处理。如果是 map 任务就读取文件中的内容套入 map 函数中执行，再将中间结果以 json 格式写入文件中。如果是 reduce 任务，读取中间文件的内容用 reducef 处理，然后排序再输出。
-
-## lab2
-
-
-
-## 参考
