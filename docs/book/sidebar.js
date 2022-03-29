@@ -38,10 +38,10 @@ module.exports = [
     title: '🎉 6.824',
     children: [
       '6.824/0-lab0',
-      '6.824/0-lab1-cn',
-      '6.824/0-lab1',
-      '6.824/0-lab2-cn',
-      '6.824/0-lab2'
+      '6.824/1-lab1-cn',
+      '6.824/1-lab1',
+      '6.824/2-lab2-cn',
+      '6.824/2-lab2'
     ]
   },
   {
@@ -101,10 +101,10 @@ module.exports = [
     ]
   },
   {
-    title: '🍻 CSAPP',
+    title: '🍻 15-213 (CSAPP)',
     children: [
-      'csapp/1-summary',
-      'csapp/2-lab1'
+      '15-213/1-summary',
+      '15-213/2-lab1'
     ]
   },
   {
