@@ -1,15 +1,11 @@
+
 # 6.824 Lab 2: Raft
-
-Part 2A Due: Friday Feb 18 23:59
-Part 2B Due: Friday Feb 25 23:59
-Part 2C Due: Friday Mar 4 23:59
-Part 2D Due: Friday Mar 11 23:59
-
-Collaboration policy // Submit lab // Setup Go // Guidance // Piazza
 
 ## Introduction
 
-This is the first in a series of labs in which you'll build a fault-tolerant key/value storage system. In this lab you'll implement Raft, a replicated state machine protocol. In the next lab you'll build a key/value service on top of Raft. Then you will “shard” your service over multiple replicated state machines for higher performance.
+实现 Raft 协议并构建一个具备容错功能的 K/V 存储系统。
+
+In this lab you'll implement Raft, a replicated state machine protocol. In the next lab you'll build a key/value service on top of Raft. Then you will “shard” your service over multiple replicated state machines for higher performance.
 
 这是一系列实验室中的第一个，你将建立一个容错的键/值存储系统。在这个实验室中，你将实现Raft，一个复制的状态机协议。在下一个实验室中，你将在Raft的基础上建立一个键/值服务。然后你将在多个复制的状态机上 "分片 "你的服务，以获得更高的性能。
 
