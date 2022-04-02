@@ -1,4 +1,4 @@
-# 6.824 Lab 3: Fault-tolerant Key/Value Service
+# Lab 3: Fault-tolerant Key/Value Service
 
 Due Part A: Friday April 1 23:59
 Collaboration policy // Submit lab // Setup Go // Guidance // Piazza

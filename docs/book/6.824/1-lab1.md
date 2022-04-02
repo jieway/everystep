@@ -1,4 +1,4 @@
-# Lab 1: MapReduce
+# Lab 1: MapReduce 总结
 
 环境：WSL2 Ubuntu20.04 LTS 
 

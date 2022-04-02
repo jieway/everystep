@@ -1,5 +1,4 @@
-
-# 6.824 Lab 2: Raft
+# Lab 2: Raft 翻译
 
 ## Introduction
 

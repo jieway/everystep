@@ -1,4 +1,4 @@
-# 6.824 Lab 1: MapReduce
+# Lab 1: MapReduce 翻译
 
 Due: Friday Feb 11 23:59ET (MIT Time)
 Collaboration policy // Submit lab // Setup Go // Guidance // Piazza

@@ -1,9 +1,9 @@
-# 6.824 Lab 2: Raft
+# Lab 2: Raft 总结
 
 1. 阅读实验手册：https://pdos.csail.mit.edu/6.824/labs/lab-raft.html
-2. 阅读：[Raft一致性算法论文](https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md)
-3. [Lecture 06 - Raft1](https://mit-public-courses-cn-translatio.gitbook.io/mit6-824/lecture-06-raft1)
- 
+2. 阅读：[Lecture 06 - Raft1](https://mit-public-courses-cn-translatio.gitbook.io/mit6-824/lecture-06-raft1)
+3. 阅读：[Raft一致性算法论文](https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md)
+4. 
 
 ## 一些总结
 
