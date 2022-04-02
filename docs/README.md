@@ -3,7 +3,7 @@ home: true
 heroText: step
 heroImage: /hero.png
 actionText: start →
-actionLink: /book/missing/ch0.md
+actionLink: /book/6.S081/0-summary.md
 features:
 - title: ⛽  MIT 6.NULL
   details: 工欲善其事，必先利其器！

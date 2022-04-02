@@ -2,6 +2,7 @@ module.exports = [
   {
     title: '🦄 6.S081',
     children: [
+      '6.S081/0-summary',
       '6.S081/1-lab0',
       '6.S081/2-lab1',
       '6.S081/3-lab2',
@@ -37,6 +38,11 @@ module.exports = [
   {
     title: '🎉 6.824',
     children: [
+      '6.824/lec/lec01',
+      '6.824/lec/lec02',
+      // 'lec/lec03',
+      // 'lec/lec06',
+      // 'lec/lec07',
       '6.824/0-lab0',
       '6.824/1-lab1-cn',
       '6.824/1-lab1',
