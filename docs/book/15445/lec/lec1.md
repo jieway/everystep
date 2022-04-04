@@ -1,870 +1,1450 @@
-# 01-01 - Course Introduction & Relational…
-
-* Oracle 的贡献
-* 学习范围
-* 关系模型
-* 关系代数
-
-这门课不是教如何使用，部署和管理数据库管理系统，而是教怎么构建和设计一个更好的 DBMS。
-
-基本上，就是指我们假设数据库在磁盘上，然后将数据写到磁盘上，
-
-so 我们将要讨论的主题的⼤纲分解，并且系统地分了⼏个层⾯
-right so we'll talk at a high level what relational databases are
-
-我们会以上层的⻆度来讨论关系型数据库是什么
-and then we'll talk about how to store them ，how to execute query on them ,how to run
-transactions on them, how to recover them if there's a crash or we need to restart the
-system
-接着，我们会去讨论如何存储它们，如何在它们之上进⾏查询，如何在它们之上执⾏事务管
-理，以及如果遇上冲突或者我们需要重启系统时该如何去恢复它们
-6.04-6.11
-so up to that point up to recovery that's the core knowledge you need to have to
-understand how a database management system works
-直到恢复这块内容为⽌，这些都是你所必须理解的关于数据库管理系统是如何⼯作的核⼼知识
-6.11-6.15
-and then from there we can then build on that and start talking about more,
-接着，我们可以在此之上来讨论更多内容
-6.15-6.25
-you know more advanced topics like distributed databases ,or various other types of
-databases that are out there ,or extensions of relational databases
-就好⽐你所知道的那些⾼级主题，例如分布式数据库，或者⼀些其他类型的数据库以及关系型数
-据库的⼀些扩展
-6.25-6.30
-so again like the way to think about this is we'll go through every single layer of how to
-actually build the system
-我们可以通过每⼀层⾯的知识来告诉你如何构建这个系统
-6.30-6.37
-and we'll finish up for recovery and so at that point that's the basic you need to
-understand of how a database system works,
-直到恢复数据库这部分内容，这些是你所需要了解数据库系统是如何⼯作的基础知识
-6.37-6.45
-and then we'll talk about how to you know how to extend them to scale them up or
-scale now of running and running them ,and in the cloud environment
-然后，我们会去讨论如何对它们的规模进⾏扩展以及如何在云环境运⾏它们
-6.45-6.53 虚⽣花
-so the right now the course website is online along with the syllabus and the schedule
-现在，课程⽹站已经上线，上⾯有教学⼤纲以及课程表
-6.53-6.56 虚⽣花
-so the basic outline there's a lecture twice a week
-⼀般来说，我们⼀周两节课
-6.56-7.00 虚⽣花
-and then with each lecture there's a there's readings that go along with it ,
-然后每节课都会有相关阅读材料
-7.00-7.07 虚⽣花
-but better supplemental that extend the kind of things that that I'll be talking about as
-well also provide some mention on a second
-但⼀些更好的课后补充材料之后我也会提供
-7.07-7.16 虚⽣花
-so at all times please refer to the course webpage that should be up-to-date, you know
-it have been up most up-to-date information on what's going on
-因此，请访问课程主⻚，上⾯所放的内容始终都是关于课程的最新动态
-7.16-7.20 虚⽣花
-so unfortunately we always have to talk about academic honestly
-可惜，我们始终必须诚实地来谈论学术问题
-不幸的是，我们总是不得不去谈论学术诚信的问题
-7.30-7.23 虚⽣花
-I'll go a little bit more detail what I mean about this as we go along
-关于这个问题，我会对它进⾏详细说明
-7.23-7.29 虚⽣花
-but when you ever have a question and you don't understand
-但当你有不理解的地⽅
-7.29-7.30 虚⽣花
-please contact me
-请联系我
-7.30-7.34 虚⽣花
-so that we can discuss whether what you're doing could be considered
-so，我们来谈下关于学术诚信这⽅⾯的内容
-7.34-7.40 虚⽣花
-you know plagiarism or stealing somebody else's work right
-你知道抄袭和剽窃他⼈作业是⼀种很糟糕的⾏为
-7.40-7.42 虚⽣花
-So in general again ,this is an advanced course
-总体来说，这是⼀⻔⾼级课程
-7.42-7.47 虚⽣花
-so everyone should be aware that you don't copy coding fine don't randomly on the
-internet you don't copy from each other
-每个⼈都应该意识到你们不应该从⽹上随机抄袭或者抄其他⼈的
-7.47-7.50 虚⽣花
-but just you know be very careful because we will check for these things
-但你应该认真对待它们，因为我们会对这些进⾏检查
-7.50-8.00 虚⽣花
-and as I said , all the discussion and announcements for projects, lectures ,homeworks
-will be you on Piazza will do grading with great scope
-正如我所说，所有的讨论和关于项⽬，课程，课后作业的公告都会放在Piazza上，然后我们也会
-在上⾯进⾏打分
-8.00-8.02 虚⽣花
-your final grade will be posted on Canvas
-你的最终成绩会发布在Canvas上
-8.02-8.05
-because that's what see me once ,but the the detonated discussion will be on Piazza
-但⼀些热⻔讨论也会放在Piazza上⾯
-8.05-8.10
-and there's a link on the course web page now a little that'll take you to our page
-课程⽹站上有⼀个链接会把你带到我们的⻚⾯上
-8.10-8.15 虚⽣花
-there is a textbook assigned for this for this class Database Systems Concepts
-这⻔课中我们所使⽤的教材是Database Systems Concepts
-8.15-8.19 虚⽣花
-so this is actually a new edition that came out this year
-这实际上是今年出的最新版
-8.19-8.22 虚⽣花
-I've looked at pretty much every single database systems textbook fit that's out there
-我看了不少符合我想法的数据库系统相关的教科书
-8.22-8.26 虚⽣花
-in my opinion this one's actually the the best one
-实际上，这⼀本是我认为最好的⼀本
-8.26-8.30 虚⽣花
-it's it's it's the most up-to-date
-它的内容也是最新的
-8.30-8.36 虚⽣花
-and as I said， well we've above I've lecture notes for topics that aren't covered in the
-textbook
-正如我所说，我们也会提供⼀些这本书所没有涉及内容的课程笔记
-8.36-8.44 虚⽣花
-I have to MIT me I haven't looked in a detail of the seventh edition to understand how
-much it differs in the sixth edition
-我还没有仔细去看第七版和第六版之间有什么区别
-8.44-8.46 虚⽣花
-so if you want to get the sixth edition ,I'm fine with that
-如果你⽤的是第六版，我觉得也没什么问题
-8.46-8.48 虚⽣花
-I don't think there should be any major difference
-我不觉得这⾥⾯有什么太⼤差别
-8.48-8.58 虚⽣花(待修改)
-I just may not know exactly how to you could look at last semesters chap last
-semesters。oh sorry ,last year's course and see for the different topics with the chapter
-numbers
-你可以去浏览下去年的课程，并和这些章节进⾏对⽐来查看其中不同的主题
-8.58-8.59 虚⽣花
-because they have changed
-因为它们的内容不少已经变了
-8.59-9.02 虚⽣花
-and I'm actually not sure whether you can buy this book anymore
-实际上，我也不确定你还能不能买到这本书
-9.02-9.04 虚⽣花
-like you can't buy it as a bound book
-你买不到这本书的精装版
-9.04-9.10 虚⽣花
-they sent me you know a bunch of page loose loose pages or ,you know three threering hole punches in them
-你们也知道，他们送了我⼀本，但⾥⾯缺了不少⻚，甚⾄还有⼏个洞在书上
-9.10-9.13 虚⽣花
-so I don't know what the bookstore has ,I don't know whether to available online it,
-我不知道书店有没有，我也不知道⽹上能不能找到它
-9.13-9.22 虚⽣花
-in the sixth edition but it's probably good enough, right we won't do any homeworks or
-any problems out of the book directly
-对于我们来说，第六版就够⽤了。我们不会去做任何超出这本书范围的作业或者习题
-9.22-9.24 虚⽣花
-,right well we'll provide everything for you
-我们会为你们提供⼀切
-9.24-9.29 虚⽣花
-all right ,so the breakdown for your grade in the class will be the following
-好了，这⻔课的成绩是由以下⼏部分组成的
-9.29-9.35 虚⽣花
-so homeworks will be 15%, then it would be course projects which I'll discuss in a
-second that'll be 45%
-作业占了分数的15%，之后我所要谈的课程项⽬占了45%
-9.35-9.44 虚⽣花
-so for those of you that are CS undergrads ,because the project grade your final grade is
-comprised of 45 percent projects
-对于你们那些CS本科⽣来说，因为项⽬的分数已经占了你最终成绩的45%
-9.44-9.52 虚⽣花
-that's why this course counts for the system software elective for the CS undergrad
-curriculum
-这就是为什么这⻔课作为CS本科⽣阶段系统软件选修课程的原因了
-9.52-9.55 虚⽣花
-and then there'll be a midterm and final exam both at 20% ,
-接着，期中考试和期末考试的成绩都各占了20%
-9.55-9.58 虚⽣花
-and then there'll be an extra credit which I'll announce in a few weeks
-接着还有⼀个额外分数加成，关于这点我会在之后⼏周宣布
-9.58-10.03 虚⽣花
-when you can get an additional 10% bonus points and that's that's entirely optional
-你可以得到额外的10%的加分，但这取决于你要不要
-10.03-10.07 虚⽣花
-so there'll be five homeworks throughout the semester
-整个学期有5次家庭作业
-10.07-10.14 虚⽣花
-the first one will be a sequel assignment ，you will give you a SQL Lite database you
-have to write some queries for us
-第⼀次（作业）是数据集分配，会给你像数据库⼀样的数据集，你要为我们写⼀些查询语句
-第⼀个作业是⼀个SQL相关的作业，我会给你⼀个SQL Lite数据库，你需要写⼀些数据库查询
-语句
-10.14-10.18 虚⽣花
-but then everything after that will be pencil and paper ,
-但之后的作业都是你⽤纸和笔去完成的
-10.18-10.24 虚⽣花
-because it's a way to work through those sort of more theoretical side of some of the
-things that we're talking about
-因为这是⼀种去理解我们所讨论的理论知识的⽅法
-10.24-10.33 虚⽣花
-but it'll be like filling out multiple-choice ,and then you just take a picture of it and
-upload it to could grade scope and will provide grade that way
-但就像填写选择题那样，你只需把你的作业拍个照然后上传，接着我们就会对它打分
-就⽐如做选择题，你只要把你的答案拍个照然后上传，然后我们就会对它打分
-10.33-10.35 虚⽣花
-so again, the first assignment is SQL
-So再说⼀遍，第⼀次作业是SQL相关
-10.35-10.40 虚⽣花
-just because of you know we actually won't be writing SQL for the rest of the semester,
-就像你知道的，实际上在这个学期剩下的时间⾥，我们不会⼀直去写SQL
-10.40-10.42 虚⽣花
-because the course projects don't require it
-因为课程项⽬中并不需要它
-10.42-10.48
-and I think it's good for you to guys to touch it at least once at least my big band
-stuff we'll talk about it next semester
-我觉得对于你们来说⾄少玩⼀下也是好的，下学期我们会讨论它
-10.48-10.52 虚⽣花
-so again because is about saying all these homeworks should be done individually as
-well as the projects
-再说⼀遍，所有这些作业以及项⽬都必须独⽴完成
-10.52-10.57 虚⽣花
-but it's one emphasized this that like you're not allowed to work in groups and try to
-figure things out
-但有⼀点要强调，我不允许你们组队完成作业
-10.57-10.58 虚⽣花
-it's not like a Theory class yet
-它并不是⼀⻔理论课
-10.58-11.02 虚⽣花
-all these are assignments can be done and should be done individually
-所有的作业都应该独⽴完成
-11.02-11.07 虚⽣花
-All right ,for the projects, this is the one I'm pretty excited about
-好了，我最兴奋的事情就是项⽬了
-11.07-11.13 虚⽣花
-so throughout the course of the semester， you will build your own database storage
-manager from scratch
-在整个学期中，你需要从头开始构建你⾃⼰的数据库存储管理器
-11.13-11.20 虚⽣花
-So you'll start adding you know pieces one by one and start building out aids or a fullfeatured a database storage manager
-So你可以⼀点⼀点的来构建出⼀个功能完整的数据库管理器
-11.20-11.24 虚⽣花
-so the keyword there storage manager and not a database system
-注意，这⾥的关键字是存储管理器⽽不是数据库系统
-11.24-11.27 虚⽣花
-because you're not gonna be able to run SQL or have a query parser
-因为在这⾥⾯，你⽆法运⾏SQL语句，也没有查询解析器
-11.27-11.32 虚⽣花
-but you'll be able to run queries that are hand coded that will provide you
-但你能够通过提供给你的⼿写代码来执⾏查询
-11.32-11.36 虚⽣花
-So it's it's it's more complex than the sort of that simple key value store
-因此，这要远⽐简单的键值存储来的复杂得多
-11.36-11.38 虚⽣花
-but it's not like a full-fledged system
-但它并不是⼀个功能完善的系统
-11.38-11.46 虚⽣花
-So the key thing about this is that it's very important for you to keep up to date with the
-projects
-对你来说，实时更新你的项⽬⾮常重要，这也是最关键的事情
-11.46-11.49 虚⽣花
-because every project is gonna build after one after another
-因为每个项⽬都是基于另⼀个项⽬构建出来的
-11.49-11.55 虚⽣花
-so you sort of have to have the first project working correctly in order for the
-second project to work correctly and the third and so forth
-因此，你必须保证你第⼀个项⽬正确⼯作，这样你第⼆个项⽬才能正确⼯作，第三个项⽬也是
-如此，以此类推
-11.55-12.01 虚⽣花
-so this particular system that we're using this semester is written entirely in C++ 17
-我们这学期所使⽤的系统是完全⽤C++17所编写的
-12.01-12.05 虚⽣花
-it doesn't mean we're using all the advanced features of C++ 17
-这并不意味着我们会去使⽤C++17的所有⾼级特性
-12.05-12.14 虚⽣花
-it just means that it's you know it's not like you're you know C99, so traditional single
-plus you may have learned in other classes
-它和你所知的C99不同，你可能会在其他课上学到传统的C++
-12.14-12.19 虚⽣花
-so because this is Carnegie Mellon and I assume this is advanced class
-So因为这⾥是卡内基梅隆⼤学，我觉得这也是⼀⻔⾼级课程
-12.19-12.26
-I'm not ignore the TA are going to be teaching you or teaching how to write or debug
-C++
-我不确定助教们是不是要去教你们如何编写C++代码或者对代码进⾏debug
-12.26-12.28
-I sent up a self-exam on Piazza
-我在Piazza上设置了⼀次⾃我测验
-12.28-12.34
-if you feel like you're uncomfortable with ,you know those are the gnarly aspects of C++
-如果你对上⾯关于C++相关⽅⾯的知识不熟悉的话
-12.34-12.38
-and then you should try to figure out how we try to start learning this stuff now
-那么你就应该试着去弄懂我们开始要学的东⻄
-12.38-12.44
-right ,you can't come to us as the TA‘’S office hours and say, hey you know what is the
-stack trace mean
-你也不要来助教办公室问⼀些诸如stacktrace这种简单问题
-12.44-12.53
-you know the this time is really expect it to be discussing the serve them the more highlevel important database concepts that you're trying to implement in your code
-你知道我们希望这些时间可以⽤来和你们讨论那些你尝试⽤代码所想实现的数据库概念
-12.53-13.04
-so the ,all the projects this year will be implemented on this new academic system that
-we've been working on called BusTub
-今年所有的项⽬都会在我们所开发的新学术系统BusTub上进⾏实现
-13.04-1308 虚⽣花
-so all the source code will be released on Github
-所有的源码都在会Github上进⾏开源
-13.08-13.12 虚⽣花
-of course obviously it won't have the implementation of the piece that you chose to
-implement
-当然，很明显，它上⾯并没有你选择去实现的那部分功能
-13.12-13.14 虚⽣花
-but you sort of fill that in
-但你需要去实现它们
-13.14-13.21 虚⽣花
-so at a high level it's a disk based or disk oriented a data management system that'll
-support volcano-style query processing
-从上层的⻆度来讲，这是⼀个⾯向硬盘的数据管理系统，它⽀持Volcano式⻛格的查询处理
-13.21-13.26 虚⽣花
-Different parts of the system have a sort of a Pluggable API
-该系统中的部分内容还⽀持插拔式API
-13.26-13.34
-so that we can Pluggable in different you know replacement algorithms are given
-,different index data structures ,or different logging schemes or control schemes
-这样我们就可以替换系统中已经给出的算法，使⽤不同的索引数据结构或者不同的⽇志格式和控
-制⽅案
-13.34-13.40
-so it's designed to be that way so that every year will switch up the project's entirely
-该系统就是使⽤这种思路来实现的，因此每年都会将整个项⽬完全换掉
-13.40-13.46
-and have it be different form one year to the next ,So the slowly build out the system
-further and further with new features and functionality
-这样它就会每年都不⼀样，这样⼀步步通过添加新特性和功能去构建整个系统
-13.46-13.51
-so that you know after a couple years we'll have a full-fledged database management
-system
-这样你就知道，数年之后，我们就会有⼀个功能完善的数据库管理系统
-13.51-13.55 （⻜哥既视感）
-So you guys are sort of the first ones starting off with these first set of projects
-因此，你们这批⼈就是第⼀批开始做这期项⽬的⼈
-13.55-13.59
-and then next year what will modify them in it'll be different
-然后，在下⼀年我们会对它们进⾏修改，这样⼜让它们变得不⼀样了
-13.59-14.02
-All right, so this for this reason， we can make it open source
-基于这个原因，我们将它开源
-14.02-14.10
-because I'm not worried about people you know people next year finding your
-crappy projects implementations and copying their code
-因为我并不担⼼下⼀年的学⽣找到你那垃圾的项⽬实现并抄袭你的代码
-14.10-14.12
-because it's all the project of being entirely different
-因为整个项⽬都会变得完全不⼀样
-14.12-14.16
-so this is what I was saying before the last slide that you're good in basically
-storage manager
-So就是我上张幻灯⽚上所说的⼀样，它基本就是⼀个存储管理器
-14.16-14.21 虚⽣花
-,the database system doesn't support SQL at this point and nor will and this the semester
-这个数据库系统这学期并不⽀持SQL
-14.21-14.29 虚⽣花
-but you'll be able to write queries ,but you'll write them in sort of physical operator form
-rather than ,and you know in SQL and then translate them
-但你还是能去写查询语句的，但你会以物理运算符的形式去将SQL翻译并进⾏查询，⽽不是⽤你
-所知道的SQL语句去进⾏查询
-14.29-14.31 虚⽣花
-because it's not something we're doing just yet
-因为这不是我们正在做的事情
-14.31-14.33
-so the name of the system is BusTub
-因此，该系统的名字是BusTub
-14.33-14.36
-I will explain offline what that means
-我会在线下解释它的含义
-14.36-14.39
-but we had a nice logo logo made
-但我们给它做了⼀个⾮常好看的Logo
-14.39-14.45
-and again what announced onGithub, we'll post a link on Piazza in week two
-在第⼆周，我们会在Github上上传内容并在Piazza上发布链接
-14.45-14.47
-well right now it's the first project
-现在，它是第⼀个项⽬
-14.47-14.50
-so I'm pretty excited about having this the everyone work on this this semester
-So我对这学期为这个项⽬作出贡献的每个⼈⽽感到兴奋
-14.50-14.57
-all right for the late policy for the homework and projects ,every student is allowed four
-slip days,
-这⾥我来讲下关于作业和项⽬晚交的延期政策，每个学⽣允许有四天的宽限期（这段时间内交作
-业不扣分）
-14.57-15.07
-so basically for any homework or project you say I you know I found my daily you can
-decrement affront from your account
-⼀般来讲，对于任何作业或者项⽬，如果延期，我们会对你进⾏扣分
-15.07-15.17
-so the be on a on each homework and the project submission ,you just say how
-many late days you use how many ladies you left so sort of allow yourself to keep track
-of what ,you know have how many late days you have
-对于每个作业和项⽬来说，请在你的提交记录上标明你延期的天数以及你所剩下的延期天数
-15.17-15.28
-so after you run out of slip days, then it'll be you lose 25% for every on the and the sum
-of total points every time, it's it's it's for every 24 hours that it's late
-当你⽤完了宽限期，如果你作业没交，那么每24⼩时就会扣掉你项⽬或者作业的25%的分数
-15.28-15.32
-so again this wouldn't keep attracting us as we go along in the semester
-随着学期的进⾏，我们不会⼀直关注这个
-15.32-15.38
-obviously if there's medical munitions or other issues that come up please contact me
-and we can accommodate you
-如果⽣病或者其他问题，请与我联系，我们可以给你提供备选⽅案
-15.38-15.45
-So again as I said before now all these projects and the homework should be
-done individually
-这⾥再说⼀次，如我之前所说，所有的项⽬和作业必须独⽴完成
-15.45-15.47
-,they're not group assignments
-它们并不是团队作业
-15.47-15.51
-you're not allowed to work it out together and submit a single submission together
-我不允许你们组队完成它，然后⼀起单独交⼀份
-15.51-15.53
-you should be doing everything individually
-你应该独⽴完成每⼀件事
-15.53-16.01
-now some code for some projects may be still online from from wish or from previous
-years
-某些前⼏年项⽬的代码可能⽹上现在还存在
-16.01-16.06
-don't take that we're gonna run it through boss the players plagiarism checker,
-请不要抄袭，我们会对它们进⾏抄袭检查
-16.06-16.12
-if we catch you running their shitty code ,unfortunately you know we got to report me to
-Warner Hall
-如果我们抓到你抄袭他们的狗屎代码，那么很不幸，你懂的这件事会通报给我
-16.12-16.16
-so don't do that because this ,you know you know it's stupid it'll fuck your life
-所以请不要抄袭，因为这很愚蠢，这也会毁了你的⽣活
-16.16-16.20
-and it makes everything harder ,right just don't don't plagiarize
-它会让所有事情变得很艰难，所以请不要抄袭
-16.20-16.30
-okay and yeah, if you're unsure， check the academic policy or policy for academic
-integrity ,or contact me if you're unsure about what to do ,and this includes also for
-the extra credit
-如果你不确定，请查看下学术政策，如果你不确定该做什么，请联系我，当然这也包括额外加分
-的部分
-16.30-16.37
-and just because it's extra credit and it's optional doesn't mean that you can't also get
-caught for plagiarism
-因为它是额外加分并且是可选的，但这并不意味着你因为抄袭⽽不会陷⼊困境
-16.37-16.38
-so don't do that as well
-因此请不要这么做
-16.38-16.44
-and I'll remind you every single time we put a new project out every single time
-,you know we we tell why the extra credit okay
-每次我们放出⼀个新项⽬时，我就会告诉你们如何得到额外加分
-16.44-16.51
-all right, so if you want to go beyond the kind of things we're talking about this this
-course, if you really like databases which I do
-除了我们所讨论这⻔课的内容以外，你还想学更多的话，如果你真的就像我那样热爱数据库的话
-16.51-16.54 虚⽣花
-you have no idea how much I love databases
-你可能并不知道我是多么热爱数据库
-16.54-16.59
-If you want to go beyond the course material
-如果你想去学习课程资料以外的东⻄
-16.59-17.04
-there's two sort of ways to get involved in database research or other database topics
-going on at Carnegie Mellon
-那么这⾥有两种⽅式去参与数据库研究或者其他在卡内基梅隆⼤学的数据库课题
-17.04-17.13
-so the CMU database group has our weekly meetings on Mondays at 4:30 in the
-gates, gates building own a floor
-在每周⼀下午的4:30，CMU数据库讨论组会在GHC 8102举⾏每周会议
-17.13-17.23
-and this is other students visitors from companies ,and people in Pittsburgh from abroad
-coming and giving talks about what you know the the kind of researcher kind of work
-that they're doing
-这⾥会有其他学校的学⽣，⼀些⼤公司的来宾或者⼀些来⾃国外的⼈来参加这场会议，然后这些
-研究⼈员会对他们的⼯作进⾏演讲
-17.23-17.28
-If you want to get involved in the development of a sort of advanced system
-如果你想参与⾼级系统的开发
-17.28-17.35
-we have our team meetings on Tuesdays at 12 o'clock also in the gates building
-我们在每周⼆中午⼗⼆点的GHC 8115房间举办我们的团队会议
-17.35-17.39
-so we're building in addition to bustub sort of the academic system
-我们在为开发我们的学术系统BusTub⽽努⼒
-17.39-17.45
-we have a new sort of full-featured database management system that we've been
-doing for several years now
-我们有⼀套功能完善的新数据库管理系统，为此我们开发了好⼏年
-17.45-17.52
-that again if you want to get involved in this kind of stuff ,you should come check that
-out and I'll send a reminder on this Piazza
-如果你想加⼊这项⼯作，那你可以看下我之后在Piazza上发的提醒信息
-17.52-18.03
-it will say also to if you want to take the advanced class (15-721) in the spring ,all those
-projects are based on on this this new this other system we're building
-如果你想在春季选15-721这⻔⾼级课程，那么它⾥⾯的所有项⽬都会基于我们所开发的这个新
-系统
-18.03-18.11
-so if you want to get that and sort of learn learn how that system works and get involved
-in the early days of this thing ,no by all means come to this
-如果你想知道系统是如何⼯作的并想参与到早期开发中，那就啥也别说参与进来吧
-18.11-18.21
-okay ,so with that that that's that's it for the course I mean please if you have questions
-about things post posted coach them on Piazza and I'll respond
-好了，这就是这⻔课关于学术诚信所涉及的内容，如果你还有任何疑问，请在Piazza上贴出来，
-我会进⾏回复
-=====================================================================
-==
-18.21-18.25
-all right ,so now let's talk about Databases
-好了，现在让我们来讨论下数据库
-18.21-18.34
-the Databases are super important in in real life
-数据库在现实⽣活中⾮常重要
-18.34-18.36
-because they're used everywhere
-因为它们⽆处不在
-18.36-18.45
-,so many but every single complex are energy and any computer applications you can
-think of ,at the end of the day deep down inside of it there's going to be a database
-你能想象到的任何电脑应⽤程序，它们内部都会有⼀个数据库
-18.45-18.55
-right ,if it's a mobile phone application, if it's running your desktop, if it's a website right,
-if it's some kind of complex computer simulation, the end of the day there's always a
-database
-如果它是⼀个⼿机应⽤或者桌⾯程序，或者是⼀个⽹站，⼜或者是某种复杂的电脑模拟程序，在
-它们⾥⾯始终会有⼀个数据库
-18.55-19.00
-,everyone has database problems many things can then just be reduced down to
-database problems
-这些应⽤都有数据库层⾯的问题，许多事情都能最后简化为数据库层⾯的问题
-19.00-19.09
-so a database the definition I like to use is that it's a it's a collection of data
-that's related to gathers in some way
-所谓数据库，我喜欢这样去定义它，即它是以某种⽅式去进⾏关联的数据集合
-19.09-19.12
-that's trying to model some aspect of the real world
-这就可以试着对现实世界的某些⽅⾯进⾏建模
-19.12-19.17
-right ,it's not just a bunch of loose files you have randomly sitting on your laptop
-它们并不是那些随机分布在你电脑上的那些零散⽂件
-19.17-19.22
-right and that in some ways that the database but it's not really useful one because you
-can't ask questions about it
-某种意义上，这算是⼀种数据库，但并不是那么有⽤，因为你⽆法对它进⾏⼀些查询操作
-19.22-19.26
-so this data is usually related together or have some common theme to them
-这些数据通常会关联在⼀起或者它们之间有某些共同主题
-19.26-19.30
-and it's trying to you know model some aspect of something that's going on in reality
-可以试着去对现实⼀些事的某些⽅⾯进⾏建模
-19.30- 19.41虚⽣花
-so the example I always like to use for this class is that say we want to have a digital
-music store by something like Spotify or the iTunes Store right
-这个例⼦是我最喜欢在这个课堂上⽤的，假设我们想要有⼀个类似于Spotify或者iTunes商店那
-样的电⼦⾳乐商店
-19.41-19.46
-and so we're so backing this application will be a database
-在这些应⽤程序背后做⽀持的就是数据库
-19.46-19.51
-that's going to keep track of the various Artists we have and their Albums
-它⽤来保存许多艺术家以及他们的专辑信息
-19.51-20.00 虚⽣花
-right ,so the what we would put in this database would be basic information about their
-Artists ,and then information about what Albums that those Artists have released
-在这个数据库中我们所放⼊的是艺术家们的基本信息，以及他们所发⾏的专辑信息
-20.00-20.05
-all right so that's that cool right there that's that's that's a database
-这很Cool对吧。这就是数据库！
-
-
-> 参考：
-> 视频讲解：https://www.bilibili.com/video/BV1bQ4y1Y7iT/?spm_id_from=333.788
-> ppt：https://15445.courses.cs.cmu.edu/fall2021/schedule.html
-
 # Lecture #01: Course Introduction and the Relational Model
 
-数据库是相关联数据的集合，对真实世界的建模。
+这是一门关于如何构建 dbms 的课，而非如何使用 dbms 来搭建应用程序。这门课专注于关系型数据库。
 
-数据库是核心组件。
+DBMS 的不同部分：关系型数据，存储，执行，并发控制，恢复，分布式数据库，其他。
 
-没有数据库之前通常是用文件来存储数据。
+1. 存储：数据是怎么存在内存和磁盘中的。
+2. 执行：查询执行以及如何更新数据，存储数据和检索数据。
+3. 并发控制：当多个程序同时访问数据库该如何管理。
+4. 恢复：数据库崩溃了如何恢复，如何保证数据的安全性和持久性。
+5. 分布式数据库和一些其他的高级话题。
 
-![20220322162442](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220322162442.png)
 
-如果想查询某些数据需要逐行遍历文件进行筛选：
+our database in um just a comment comma separated value csv file um kind of where each
 
-![20220322162654](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220322162654.png)
+each row or line in the file represents one
 
-但是由此产生的一堆问题，例如：
+you know data entity so an artist or an album and
 
-如何实现两张表之间的映射？如果乱改某些字段该怎么办？如果一个 album 中有多个歌手该怎么办？
+kind of each column is going to represent
 
-如何查找特定的记录？两个应用如何使用同一个数据库？两个线程同时写同一个文件？
+a um uh an individual attribute about that
 
-数据写到一半数据库崩了怎么办？
+entity so
 
+um you know pretend we don't know anything
 
-# Lecture #14: Query Planning & Optimization I
+about any kind of you know database management systems that are out there
 
+like mysql postgre oracle sqlite any of that stuff um
 
-## QUERY OPTIMIZATION
+jen we don't know about that we're just kind of building an application up
 
-![20220318155259](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318155259.png)
+ourselves and what this is going to require is
 
-因为 declarative language 的缘故，查询的具体过程是由 DBMS 实现，而不同的过程开销不同，DBMS 需要选出性能最好的查询计划，进而引出了优化。
+that the application needs to
 
-declarative language : 所谓声明式语言，我觉得可以简单的理解为完成一个任务，只看结果，至于怎么完成的都由系统的实现者来决定而非写代码的人要考虑的问题。SQL 就是一种生命式语言，SQL 告诉 DBMS 想要什么，而不是告诉 DBMS 怎么做。
+parse the file each time it wants to read anything and it's going to have to
 
-目前出现了两个流派，第一个流派是声明式的语言，具体执行过程由 DBMS 来决定。第二个流派是人来写具体的执行过程。
+read align split the csp um and kind of figure out what's going
 
-优化一般有两种优化的思路：
+on every single time we want to access the data so
 
-1. 启发式的，重写查询，移除效率低的部分，不需要成本模型。
-2. 估计每一个查询计划的开销，选择开销最小的查询计划。
+um again here's here's just a simple
 
-一般来说以上两种手段都会采用。
+example using the um music store where we have two essentially tables stored as
 
-![20220318155350](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318155350.png)
+csv files so there's the artist table where we have
 
-如果两个关系代数产生的 tuple 集是相同的，那么可以认为二者是等价的。根据这个原理来实现优化。
+the the name of the artist the year they first started
 
-大部分的 DBMS 都会重写查询计划而非原生的 SQL 语句。
+releasing music in the country they're from
 
-一些具体的例子：
+and in this uh second album table
 
-1. 谓词下推(Predicate Push-down)，提前过滤符合条件的 tuple 从而降低 join 时中间数据集的大小。
-2. Projections Push down，
-3. 表达式简化(Expression Simplification)，重写出来一个更简单的表达式。
+um we have the the name of the album the
 
-## ARCHITECTURE OVERVIEW 查询流程总览 
+artist that released it and the year it was uh released
 
-![20220318153541](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318153541.png)
+so now let's say that that we want to issue
 
-1. SQL 查询。进行一些简单的预处理，处理一下字符串。
-2. Parser 生成抽象语法树。
-3. Binder 建立 AST 和数据库表名称之间的映射。
-4. 生成初始的逻辑计划，重写 Tree 。
-5. 优化：启发式，代价分析。
-6. 生成物理计划。
+essentially a query on on the data that we have and we want to know the year
 
-## 逻辑查询计划和物理查询计划的区别
+that ice cube went solo all right you know the
 
-![](image/lec14/1647590081687.png)
+ice cube had had some uh disagreements about the amount of money he was making
 
-逻辑算子和物理算子之间的映射，但是二者并非一对一对应，一个逻辑计划可能对应三个具体的物理算子。
+so he decided to go solo and start releasing homes on his own so
 
-物理算子定义了具体的执行流程。
+um i guess the the the way that we would do
 
-可以简单的将其理解为数据结构中的逻辑结构和物理结构。
+this we have the csv files is um we write you know you write some kind of
 
-优化是一个 NP-Hard 问题。
+like a python program to look something like this
 
-## 关系代数的等价性
+where uh essentially you open up the file and then you iterate over every
 
-如果两种查询得到同样的 tuple 集，那么可以认为这两种查询是等价的。
+line and file take the line remember it's just a csv
 
-查询重写(query rewriting)：DBMS 可以不通过开销模型来得到更好的查询。
+string you have to parse it into a record and then we want to do is check
 
-## 谓词下推 PREDICATE PUSHDOWN
+if
 
-下图是一个不做任何优化的查询例子。连接 student 和 enrolled 两个表查询成绩(grade)字段为 'A' 的学生 name 和 cid 。
+the value at position zero in the record is ice cube because we're looking for
 
-![20220318155828](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318155828.png)
+one ice cube when solo and uh you want to print out
 
-一个简单的优化措施：可以提前过滤 enrolled 表，将 grade='A' 的行筛选出来再与 student 表连接。这样就降低了两个表连接后所产生中间数据的大小。
+the uh the year so we're gonna cast the um
 
-![20220318155929](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318155929.png)
+the second value of the string into an int and return that
 
-尽可能早的过滤。
+so i i guess what's the problem with this it seems
 
-重排 predicates 顺序。
+pretty simple pretty straightforward um
 
-简化复杂的 predicate 。
+i mean i guess your your query could change maybe you want to know when
 
-可以同样提前过滤 student 表，因为只用到了 sid，name 两列，而其他列都没有用到如果加载到内存中显然浪费。
+the tourist big went so low um or started releasing music you could
 
-![](image/lec14/1647591114372.png)
+uh just swap out the ice cube for
 
-## 更多例子
+for a different name and get a different result or if you want to know the
 
-接下来是一些能够直接处理的优化，也就是在语法层面存在一些很直接的优化。
+country that someone's from um just change the
 
-例如下面的语句显然不合理，所以并没有真正的去执行，而是直接处理返回结果。
+position that you're printing out there so i
 
-![20220318162333](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318162333.png)
+guess this seems fine um but can anyone think
 
-除此之外还有更多的例子：
+of you know any issues that might come up if if you're managing things this way
 
-![20220318162517](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318162517.png)
+uh that is true so if um the the data gets really large then what you're going
 
-## 开销模型组成
+to have to do is kind of open the file and iterate over all of the uh
 
-1. 物理开销：CPU 执行，I/O，缓存命中等开销。
-2. 逻辑开销：算子处理数据量的开销。
-3. 算法开销：时间复杂度。
+the the lines here i guess what you could do is uh modify this a little bit
 
-磁盘的开销是最大的。
+to as soon as you know that there's only one
 
+record you're looking for in this case you could modify it a little bit to just
 
+return as soon as you find it but that's
 
+certainly true if if you're if you're not careful with
 
-# Lec15 并发控制理论
+how you code this then you might end up
 
-DBMS 的组件分为：
+iterating over every single line in the file every single time
 
-这一节主要研究基于代价的优化器。
+uh that is another problem that can come up so that the um
 
-根据代价模型估计多个计划的好坏从而选择一个最好的执行计划。
+statement was that there could be a
 
-![20220318190726](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318190726.png)
+duplicate entries for ice cube and there's no way to ensure
 
-谓词的选择性近似为概率：
+um using this method that uh um someone doesn't come in and you know put
 
-![20220318191822](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318191822.png)
+in another record uh for ice cubes then we there's no way
 
-基于概率的思想来处理交集和全集：
+to maintain kind of the um the
 
-![20220318191935](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318191935.png)
+invariant we want only one record to represent ice cream yes
 
-# Join 结果集评估
+that's another problem any others
 
-![20220318192841](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318192841.png)
+i have a whole list i can go through okay so
 
-此前是基于整个字段均匀分布，但是存在不独立的情况。
+uh the first problem um or the first a series of problems
 
-修改为桶内(区域字段)均匀分布，桶间不均匀。
+relates to uh uh data integrity so
 
-采样，取子集分析子集推全集。
+one problem might be is how do we ensure that the artist is the name
 
-左深树，Join 的左子树也是 Join 生产的中间表，右子树必须是表。
+the name of the artist is the same for each
 
-![20220318194511](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318194511.png)
+album entry so if you remember um in order to figure out you know kind
 
-## 
+of which artists have released which albums we
 
+store the artist name in the album uh csv file so
 
+um imagine that that you know you
 
+type in a wrong a wrong name to update one of the the uh album
 
-# lec15 事务
+rose or um you know an artist changes their name
 
-https://www.bilibili.com/video/BV1t3411v73Y/?spm_id_from=333.788
+or uh that sort of thing so how do you
 
-事务是一系列的操作，数据库操作的最基本单位。
+ensure that there's consistency between the name that an artist lists
 
-如何实现事务？
+in the artist's
 
-一个简单的策略是复制事务执行前的数据，一旦事务执行失败就用之前的数据覆盖。缺点是没法并发。
+file and the name that the artist lists in the albums file
 
-事务之间的并发，存在一些问题，临时性的不一致（难以避免），永久性的不一致（不接受！）。
+another problem that come up is you know what if someone
 
-如何实现事务之间的并发？
+overwrites the album
 
-为方便处理将数据库事务可以简化为对数据的读和写，将数据都简化为变量。
+year um in the the album file within invalid
 
-事务被 BEGIN 和 COMMIT/ABORT 包裹。其中 COMMIT 表示事务完成，ABORT 表示事务回滚，事务执行的结果只有这两种结局。
+string so in that code i showed you you're
 
-## ACID 
+expecting an integer um that that represents a year when
 
-ACID 是事务正确执行的标准。
+um the album was released someone comes in
 
-![20220321163209](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220321163209.png)
+and puts in just a regular string um then your your code's going to break
 
-1. 原子性:要么都完成要么没开始，不存在中间态。
-2. 一致性:应用系统从一个正确的状态到另一个正确的状态。而ACID就是说事务能够通过AID来保证这个C的过程。C是目的，AID都是手段。确保逻辑正确。一致性分为数据库一致性和事务一致性，此处是指数据库一致性。
-3. 隔离性：事务之间是独立的。临时的修改别人看不到。
-4. 持久性：写到磁盘上，永久保存。
+there's going to be a problem parsing and again there's no kind of i guess you
 
-## 原子性解决办法
+could have access control on your files but you know once someone's able to get
 
-原子性具体场景：
+in the file you can just make a mistake put in an invalid value for a particular
 
-1. 刚取出一百块钱，DBMS 就崩了。
-2. 刚取出一百块钱，断电了。
+field
 
-解决方法：
+uh what if there are multiple artists on an album so
 
-1. 写日志，将事务的每一步回滚到上一步的操作都记录到 undo log 中。除此之外日志可以提高I/O性能，先将一些 I/O 操作写到日志中，等待空闲的时候在根据日志去执行。日志还有一个作用是监控审计。
-2. 只备份修改的页，增量备份。目前很少用，大部分都是用日志。
+uh everything i showed um you know each each album only on an individual artist
 
-## 隔离性
+so it's just one um field in the cfd string but
 
-方便程序员处理，不用考虑隔离，由 DBMS 自动实现。
+you know imagine that there's a
 
-为了实现隔离，出现了并发控制，有些任务不能并行，需要串行完成。如何实现串行？
+multiple artists on a
 
+in that case i guess you know you could um
 
-## 三种冲突
+change the format instead of being a single string you could put you know a
 
+comma separated list inside the field of the csv file but then
 
-当两个事务中的某个存在写操作时才存在冲突，如果全是读是不存在冲突的。冲突有三种：读写冲突，写读冲突，写写冲突。
+you're you know complicating your parsing code you have
 
-![20220321183016](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220321183016.png)
+to go back and adjust your parsing code to now handle um you know potentially
 
-1. 读写冲突：第一次读数据A和第二次读数据A结果不一样，破坏了隔离性。
+one or more values in that field
 
-![20220321183144](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220321183144.png)
+and kind of the last problem and these are just a few that i you know
 
-2. 写读冲突(脏读)：T1事务更新数据A但没有提交，而此时T2事务对更新后的数据A进行操作。一旦T1事务撤销对数据A改变T2事务就会出问题。
+came up with here but there are many many more but
 
-![20220321182146](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220321182146.png)
+what happens if we delete an artist that has albums so imagine that you know you
 
-3. 写写冲突：如下图，最终保存下来的数据是 T1 中的B，T2 中的 A 。
+deleted the record for um
 
-![20220321182812](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220321182812.png)
+ice cube in the artist
 
-## 可串行化
+file and now he has a bunch of records or a bunch of
 
-![20220321184413](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220321184413.png)
+records representing albums in the album table and now there there's no
 
-之前提到的三种冲突是不能交换顺序的。除此之外可以交换顺序，而通过调整顺序可以实现串行化。如果通过调整发现存在冲突，无法改为串行那么就是不可串行化。
+uh artist remaining that they linked to
 
-依赖图：一种判断是否可串行化的方法。
+okay so that's kind of the data integrity side uh from an
 
-![20220321185306](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220321185306.png)
+information implementation perspective and uh this was
 
-![20220321221443](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220321221443.png)
+one of the points made is how do you find a particular error so again in the
 
-![20220321221920](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220321221920.png)
+example you end up in the code that i showed
 
-还是得看具体业务，虽然理论上不能串行，但是分析到具体业务，其实还是可以串行的。
+iterating through every single row every single time
 
-![20220321222032](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220321222032.png)
+um you want to find something and you you
 
-目前所有的读写冲突都存在错杀的情况。
+there are all sorts of ways to optimize it for example if you know the data is
 
-并发执行的最终效果需要和串行执行的最终结果一致。
+sorted you could do like binary search or something
 
-# Lec 16 二阶段锁
+or if you have a data structure that stores
 
-![20220321223329](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220321223329.png)
+it maybe like a hash table or something you could
 
-## 锁的类型
+index directly to
 
-latches 和 locks 。
+the the record you're looking for but just you know all of these things you're
 
-![20220321223543](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220321223543.png)
+building up additional complexity in your python program that you have to
 
-先获取逻辑上的 lock 真正执行的时候再获取物理上的 latches 。
+write um to access the code so
 
-* S锁：共享锁（读锁）
-* X锁：排他锁（写锁）
+uh all of that kind of implementation efficiency needs to be taken into
 
-![20220321223824](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220321223824.png)
+consideration when when you're designing your application
 
-## 两阶段锁
+similarly what if we want to create a new application that uses the same
 
-## 死锁检测和预防
+database so the database is stored in the csv files imagine that you know
 
-## 锁的层级
+someone else for some other purpose wants to come along and access the same
 
+csv files concurrently do you want them to have to
 
-# 参考
+rewrite kind of all the python code that you've had built up
 
-1. [笔记1](https://zhenghe.gitbook.io/open-courses/cmu-15-445-645-database-systems/relational-data-model)
-2. [笔记2](https://www.jianshu.com/nb/36265841)
-3. [fall2019/schedule](https://15445.courses.cs.cmu.edu/fall2019/schedule.html)
-4. [14-optimization1.pdf](https://15445.courses.cs.cmu.edu/fall2019/slides/14-optimization1.pdf)
-5. [视频中文翻译](https://www.bilibili.com/video/BV1Cp4y1C7dv?p=14)
-6. [一个好一点的视频中文翻译](https://www.zhihu.com/zvideo/1416347667424940032)
-7. [13-查询优化-I [中文讲解] CMU-15445 数据库内核](https://www.bilibili.com/video/BV1qR4y1W7v6/?spm_id_from=333.788)
+or maybe you need to do it in a different language
+
+but the point is that kind of you've you've had to do
+
+uh the work to build up uh this application
+
+and now it has to be replicated every time someone else wants to access the
+
+same data and even for you um you know like i said if you want to change the
+
+query or or [Music]
+
+change change things that you're looking for
+
+you run into the problem of having to kind of re-implement things from scratch
+
+every single time so um kind of another implementation
+
+question is what if two threads or two programs i try to
+
+write to the the file at the same time you know if i'm editing five and you're
+
+editing the file um we both save our work
+
+um who knows what's gonna happen uh you
+
+know one of us might uh override the other or uh maybe both of our rights get
+
+partially written and now you have kind of this garbage
+
+record in there so what you can end up with is um
+
+kind of all of this you have to implement some kind of
+
+concurrency layer uh to manage the current accesses to
+
+the data so the final piece um that i want to
+
+talk about is his durability which means like what happens
+
+if the machine crashes when when the program is updating records so you're
+
+doing right um
+
+power goes out or something or the your program crashes and
+
+you know now what happens to the data is inconsistent
+
+did you finish writing the whole record you wanted to write or um is it kind of
+
+uh half written now you have again this is
+
+garbage value um
+
+in your your database what if we want to replicate the
+
+database on multiple machines so we can have high availability
+
+how do we handle kind of concurrent rights to different machines
+
+because now the machines need to be synchronized across them and kind of the
+
+list goes on and on and on uh with all of these problems that can come up
+
+so that's kind of the the reason why we want to build a database management
+
+system so we don't have to handle all of this complexity all those different
+
+types of problems that i mentioned in application code
+
+okay so i explain what a database is the software that manages database
+
+is a database management system
+
+sometimes people use the words interchangeably i will try not to
+
+because it's diffusing but a database management
+
+system or dbms is a system the software that manages
+
+um the database and allows applications uh
+
+to store retrieve and analyze information that's
+
+that's stored in the database so rather than managing things in these
+
+csv files you can access them through the database and it
+
+kind of gives you all of these nice properties
+
+that avoid the problems that i mentioned before
+
+and a general purpose dbms is designed to allow you to
+
+uh define create query update and
+
+administer uh databases
+
+uh in in a generic sense so if you have again an application for managing
+
+students in a class or for managing
+
+an online music store kind of it's it's general purpose enough
+
+that you can program your applications um
+
+against the system so this is really good for
+
+uh like business reasons for your business or startup or
+
+your organization because the purpose of the value add that you're bringing is
+
+not that you can store data lots of people
+
+can store data but um what what a
+
+database management system allows you to do is focus on you know the core aspect
+
+of your business rather than worrying about all of these um
+
+issues surrounding actually managing the data and you know dbmss are are widely
+
+tested and deployed um so that they you know find all the
+
+bugs the concurrency bugs the consistency bugs all those problems that
+
+come up because kind of you know the the chances
+
+that that every single python program that you write is going to be 100 bug
+
+free all the time pretty much zero
+
+so um kind of the the the whole point of a
+
+database management system is that you can leverage kind of this this core set
+
+of functionality um for managing databases so you don't
+
+have to do it manually in application curve
+
+so i database management systems are not new
+
+the first one i came out of 1965 at general electric was called idm
+
+and essentially um
+
+[Music] they were they were used kind of to
+
+manage data but they were really uh writing applications um they were really
+
+difficult to build and maintain
+
+and that's because people were working at a very low level and there was you
+
+know really tight coupling between um the logical layer so kind of the the
+
+data model there and the physical layer that like the implementation
+
+writing to disk recruiting things from desk query and that kind of stuff
+
+um so
+
+kind of the the the big problem is that you had to know the the queries that you
+
+wanted your application to execute before you
+
+deployed the database and they were just really cumbersome and not
+
+not easy to work with so um kind of the things that we're going
+
+to talk about over the course of the semester
+
+um might seem obvious in retrospect but at the time uh you know people were
+
+struggling to build these applications and and they were kind of controversial
+
+the ideas were kind of controversial so there was this guy um at ibm named ted
+
+codd it's him
+
+who kind of observed that people were were reimplementing the same things over
+
+and over again reinventing the wheel um and and you know making a lot of
+
+mistakes uh uh along the way so he proposed kind of this this uh high-level
+
+idea called a relational model and there's this original uh i think it came
+
+out as a technical report in 1969 but nobody uh reads this one
+
+this is the one that everyone references came out a year later in 1970
+
+um it's a paper called a relational model
+
+of data for large shared data banks um
+
+and you know it's old because uh people uh
+
+when they write the text they spelled data and base as two
+
+separate words now you have it uh combined as one but
+
+um kind of the the core idea that he proposed
+
+um was the relational model and he actually
+
+uh won the turin award in uh 1981 if you know what that is um it's like uh the
+
+people call it the nobel prize for computing it's like the highest
+
+honor you can receive in computer science and he he uh he won it for um
+
+the relational model and as i said it was kind of
+
+um controversial at the time i mean you can
+
+look at it now and say oh yeah sure that makes sense but
+
+at the time it wasn't so obvious so kind of the
+
+relational model at a high level is a database abstraction to avoid a lot of
+
+low level maintenance and problems that people are running
+
+into writing database application so
+
+uh the the the kind of three main points um that
+
+they're gonna touch on are the
+
+the databases database databases should be stored in a simple data structure
+
+called relation
+
+where a relation essentially represents uh the relationship
+
+among attributes stored in the table so like the
+
+relationship if you are thinking about the the uh artist
+
+example um the relationship between the artist
+
+name um the the year
+
+uh that they that they started producing music and the country their first the
+
+relationship between those advocates kind of the the next piece is that
+
+you thought you should access data through a high-level language
+
+rather than kind of telling the database your database
+
+management system explicitly how how you wanted to get the data um you
+
+could just specify what data you wanted and let the database management system
+
+figure out kind of the best strategy to do it
+
+because you know if you're building a piece of software
+
+that's specialized interactive databases you should it should be pretty uh good
+
+at figuring out the best way to get you the data you want
+
+um and and finally the the last piece is that the physical
+
+storage of the data either
+
+at the time on on disk or
+
+secondary storage um now in memory also should be left up
+
+to um the the dvms implement so you have to worry about whether it's laid out in
+
+in a row format a csv file it's just completely abstracted to you you just
+
+know um what the data is that's in there and you can let the dbms kind of figure
+
+out the specifics of storing it and you know at the time like
+
+i said people argued that um
+
+a dbms would never be able to generate a query plan as efficient as uh kind of
+
+what a human could do kind of like how people used to argue
+
+about you know compilers no one could ever
+
+produce code that's newer no no a computer program compiler
+
+could ever produce code that's as efficient as what
+
+assembly that a human could write now almost no one writes at that level so
+
+kind of it's the same idea um with databases there was a lot of of
+
+human effort that went into designing programs to efficiently access
+
+it because they thought that you couldn't design a a system to do it
+
+uh efficiently
+
+so
+
+i mentioned that the relational model is a type of data model so the data
+
+model is just essentially a high level collection of concepts
+
+uh for describing the data that's stored in in a database
+
+so it's like a high level abstraction for for how we're going to represent the
+
+data now a schema
+
+is more specifically a description of a particular collection
+
+of data given a data model so what does that
+
+mean um
+
+it means that the schema
+
+defines exactly what we're going to store in the database so for example in
+
+the music store example um
+
+the schema would be the artist table followed by the different
+
+attributes that are associated with an artist so that's the schema that you
+
+would define that describes the data that's stored in
+
+the data
+
+so there are as i said lots and lots of different data models
+
+most dbmss that you may have heard of are based on this first relational data
+
+model and
+
+[Music] for a lot of reasons but probably the
+
+biggest one is that the relational model is
+
+uh probably the most flexible of all of them
+
+the relational model can kind of model all of these other or
+
+you you can represent all of these other data models using the relational model
+
+um and the the the exact you know uh uh api or or what's going on behind
+
+the scenes might not be as efficient but it's still general enough to be able to
+
+handle all these other models so
+
+nosql is a popular term it means a lot of things
+
+to a lot of different people but just at kind of a high level
+
+um
+
+like for example uh it's more than just a
+
+data model a lot of people when they hear nosql think about things like
+
+transactions or consistency or not having
+
+certain apis but just in terms of the actual no sql data model it covers kind
+
+of this key value stores
+
+graph database management systems document databases
+
+mongodb and kind of a broader column family
+
+databases and [Music]
+
+kind of these these data models are more restrictive than what you get with the
+
+relational model um and they don't give you as many as i said kind of guarantees
+
+in terms of um
+
+different properties that we're going to discuss over the course of the semester
+
+uh there are some just
+
+i'll finally say there's some application domains where
+
+these data models might make sense so imagine
+
+i know you're storing video data or you're storing
+
+log data or something you just want to shove it into a key value store that's
+
+that's perfectly valid and might be better
+
+for that particular type of application than a relational database
+
+array and matrix uh database management systems are
+
+kind of specialized more towards machine learning or
+
+um scientific applications there are a few um cyb
+
+tile db but they're not they're not really widespread and kind of they're
+
+narrowly focused on on these sorts of use cases and kind of the last group um
+
+hierarchical network and multi-value these are kind of either obsolete data
+
+models that people tried out in the past and
+
+they find and found didn't work well or they had other problems but they might
+
+still be hanging around in legacy systems
+
+so for the purposes of this course we're
+
+going to be focusing exclusively on the relational model
+
+and how database management system works in
+
+that context
+
+okay so
+
+what is the relational model exactly um
+
+the the relational model
+
+uh defines the the relations inside the
+
+database so like i mentioned the uh individual tables um sometimes they're
+
+in sql they're called tables um
+
+in the relational model they're called relations i i'll probably end up using
+
+them interchangeably but you can think of them just
+
+concretely as those examples from the music store
+
+there's the artist relation table and the album
+
+relation and the the structure of the relational
+
+model defines those relations and the contents inside them
+
+so the next piece as i mentioned is integrity
+
+which ensures that the database's contents um
+
+satisfy some constraints so um with the concern about you know uh
+
+whether or not there could be a garbage string value um inserted or overwritten
+
+on a [Music]
+
+when you're expecting an integer uh year kind of the integrity aspect seeks to
+
+mitigate that problem uh by forcing all of the year values to
+
+be integers and forcing that property and finally there's the the manipulation
+
+aspect which is the programming interface or api that you use to access
+
+and modify um the contents of the database and uh
+
+this is what we're going to talk about later um
+
+in in the lecture uh with relational algebra so relational
+
+algebra is a um
+
+programming programming interface for interacting with
+
+the relational model so
+
+again kind of just uh going through the example a relation is
+
+an unordered set so that's important
+
+there's no order to the values we don't necessarily care what order
+
+they appear in in the database
+
+they could be sorted they could not be sorted uh it doesn't matter it's just a
+
+set um and it contains
+
+the relationship of the attributes that represent entities so
+
+as i said a relation or table has many entries that are called uh um tuples
+
+tuples some people say either either is fine with me um but i'll probably end up
+
+saying both but uh tuples or records also in a table tupler record is
+
+interchangeable there's there's another word that sometimes people use
+
+called rows um
+
+i will try not to use that i might accidentally but a row implies something
+
+specific about how the data is stored so in the csv example you know every every
+
+uh data was stored as an individual line um but
+
+the the tuples and records represent individual
+
+data entries in a table um
+
+the the values are
+
+normally um scalar values things like integer
+
+strings that's not necessarily true anymore in the original specification
+
+they all had to be kind of these scalar values but
+
+um popular systems uh have started relaxing
+
+to store things like you could store an array maybe in an individual column or
+
+like a json document individual um
+
+um and there's also this notion of a null
+
+which is a member of every single uh domain it can be any um attribute can be
+
+set to null and it's not exactly like null in
+
+a null pointer or something but uh it's used to signify that we don't know
+
+what a particular value is so for example if if
+
+the the country that is ice cube is from uh we're null it just means that we
+
+don't we don't know what that value uh we don't know the specific value for
+
+that um record
+
+so uh uh
+
+again just a relation is is a mathematical term that represents uh
+
+this unordered set and um uh sql the sql equivalent is a table
+
+so in entering relation if i say an energy
+
+relation it means that there's a table with n individual columns and individual
+
+attributes unless it's three columns
+
+okay so a big piece of um the relational model is um that every
+
+relation should have a primary key
+
+that uniquely identifies a single tuple so um
+
+some dbmss will will automatically create this for you if you
+
+specify it they'll do it behind the scenes kind of think about like a
+
+an auto incrementing um unique integer um for four keys
+
+so in this this table example here um
+
+there's not really anything that we can use to uniquely identify i guess
+
+i mean you could potentially use the name of the artist
+
+um to
+
+uniquely identify but there's no guarantee that you know all those values
+
+are going to be unique so um
+
+what you can do is add kind of this surrogate primary key that's essentially
+
+just a just an integer and like i said it can be auto generating or random or
+
+whatever um kind of just to keep
+
+each each record or tuple
+
+unique so
+
+foreign keys uh are are related to primary keys in that
+
+they specify um that an attribute from one relation
+
+has a mapping to to some tuple in another relation
+
+so just concretely
+
+if we have this artist key here
+
+and we have the album key we know that uh the artists so the the
+
+new primary key id numbers that we've added to the album table
+
+um the artists 123 789
+
+reference artists stored tuples stored in the artist table so if we want to
+
+know um you know
+
+who wrote one of these or who released one of these albums we can go look up
+
+okay what's the number um
+
+of the artist and then go look up which artist that is
+
+in the area's table but you know there's a problem you can run into
+
+uh which is i mentioned earlier which is what if you want to have
+
+um multiple artists uh on on a single album
+
+so again you release like a mixtape or
+
+something we have a lot of different artists contributing but we only have
+
+this one um attribute to store uh the artist id and
+
+the the solution we come up with in the relational model
+
+is to create this a third table sometimes called the join table which is
+
+going to join or link the artist table with the album table so
+
+we're going to do is we're going to we're going to get rid of that artist
+
+column in the album table and instead
+
+create this new artist album table that has only two things in it so there's an
+
+artist id and an album id and now if if you look at it we can
+
+figure out okay here is how all of the uh artists link
+
+to the the albums that they release so in the case where you have
+
+um you know one
+
+uh uh artist on an album and there's only
+
+going to be one tuple in the artist album relation in
+
+the case we have multiple you'll have now multiple tuples
+
+okay so data manipulation languages or dml
+
+are the specific methods that that we use to
+
+store and retrieve um information from a database
+
+and they come specifically in two flavors so the first is procedural
+
+and that's uh that that a high-level query
+
+should specify how the dbms
+
+should compute the answer to our query so the key word here is how you're
+
+telling the database how you wanted to retrieve the data
+
+and this is going to be a relational algebra that we talked about
+
+uh in a couple slides here you're saying specifically how you want
+
+the data to be retrieved from the database
+
+the alternative is a non-procedural or declarative language
+
+um where you only specify
+
+what data you want retrieved from the database you know you don't tell the
+
+database management system how you want to get it back
+
+you just say uh what data you want and then the system goes and figures out how
+
+to do that for you so
+
+um an example of this non-procedural
+
+or declarative language is relational calculus uh we're not
+
+going to talk too much about relational calculus in this class
+
+um it's important it's uh really important for query optimization
+
+um but it's it's not really recovering this class don't worry too much about it
+
+um relational algebra and
+
+relational calculus are are uh they're logically equivalent
+
+um but we're like i said only focusing on on this first one another example of
+
+a declarative language is sql which we're going to talk about next
+
+class
+
+so relational algebra defines the original
+
+the original specification defines these uh seven
+
+operators and they're all fundamental operations
+
+that you can use uh to retrieve and manipulate the the
+
+two folds in a relationship these are the fundamental operators
+
+proposed by cod
+
+and they're based on
+
+mathematical ideas of set ultra
+
+so each operator listed here is going to
+
+take in one or more relations as input and it's going to output a new relation
+
+so in order to build up a query to get the
+
+data you want out of your database you can kind of chain these operators
+
+together to create more complex operations
+
+so we'll just kind of go through each one starting with select
+
+um sorry is your question no
+
+um so
+
+uh starting with select essentially the
+
+goal of the select operator is to uh choose a subset of the the two poles
+
+from a relation um that satisfy a particular predicate that you uh provide
+
+so the predicate you can think about it acting like a filter or kind of like an
+
+if statement that's only going to retain
+
+uh the tuples that qualify for for the the user specified predicate
+
+and you can of course combine multiple multiple predicates using
+
+conjunctions or disjunctions to get exactly the the
+
+subset that you want i think it's called restrict in the
+
+original um relational model paper but um
+
+everyone everyone calls it a select and the the symbol is the lowercase sigma
+
+um uh
+
+in relational algebra so just as an example we have this really simple
+
+relation here uh r it only has two um
+
+attributes or columns a id and bid
+
+so if we want to for example
+
+restrict or filter
+
+the relation to only cases where aid equals
+
+a2 then we apply that
+
+predicate and we get back uh just that subset that satisfies the
+
+predicate that we that we specified and as i said you can kind of change
+
+things together and say okay give me all of the the records where aid equals a2
+
+and bid equal or is greater than 102. so in
+
+this case you can see you're only going to get that one
+
+tuple
+
+and then if you're wondering how this how this works with sql i apologize i
+
+didn't come up with the naming convention but the the select
+
+relational algebra operator maps to the where clause in a sql statement
+
+um might be a little confusing but select
+
+in relation algebra maps to where clause again we'll talk about sql next times
+
+we'll go through these [Music]
+
+individualities but the projection statement is essentially
+
+going to generate a relation with tackles that only contain the
+
+attributes that you ask for and what does that mean you can do all
+
+sorts of things like rearrange the order of the attributes
+
+you can manipulate the values of the attributes
+
+do different types of modifications it's uh it specified the lowercase pi symbol
+
+and essentially a list of all of the different
+
+modifications
+
+so um here is just an example query where
+
+again we're doing the selection first so i mentioned you can chain them together
+
+we're doing the selection first to get only the records that have a id equals
+
+a2 and then we're performing a
+
+projection um where we're going to modify b by
+
+subtracting 100 and we're going to put you know swap the order of um
+
+the id and that's that's kind of the result you
+
+get so again this is a i didn't come up with the names but the
+
+projection operator maps to the uh select clause of the sql statement so
+
+the selection operator maps to the where clause the projection operator maps to
+
+the selected
+
+the union operator is essentially going to
+
+generate a relation that contains all the tuples that appear
+
+in either or or both relations uh it's just
+
+like a set union um so for example imagine we have
+
+another second table here s which has the same schema as the first one
+
+um to perform uh r
+
+s is going to give us essentially all of
+
+the tuples that appear in r all the tuples that appear in s
+
+and uh the sql syntax for this is a little bit different it's union all in
+
+order to get um potential duplicates um because of a difference between
+
+um set algebra and like a a bag or a
+
+multi-set algebra so you can see here that there are there
+
+is the the duplicate that appears in the union
+
+so in this example i the the output is ordered but that's again not necessarily
+
+to be true um because it's a set they could appear
+
+in uh the output relation could appear in any order
+
+and the answer would still you know still consider the correct so you can't
+
+count on the order in there uh the intersection operator
+
+is going to generate a relation that only contains the tuples that appear in
+
+both of the input relations so it's r intercept s again it's the same
+
+example where r and s both have the same schema and what we want to do is find
+
+kind of the intersection it's going to give us only a3
+
+appears in both r and s so you can do this in
+
+sql using the intercept operator so just as an example of when
+
+this might be useful if you think about the music store
+
+example um maybe we have one relation
+
+representing the rap artists another one representing um
+
+rock or country artists and you want to know which artists have um
+
+both rap albums and country albums so you just do an
+
+intersection of the two relations to get that answer
+
+the difference operator is going to generate a relation that
+
+contains only the tuples that appear in the first relation and not the second
+
+relation so in this example here you end up with
+
+only the unique ones that appear appear in r and not s
+
+and you can do that in sql using the accept
+
+keyword
+
+okay the product is essentially going to generate a
+
+relation that contains all of the possible combinations of tuples from um
+
+the both input relations so
+
+um sometimes it's called the cartesian product but it's the product of two
+
+relations it's going to be all the pairwise combinations
+
+essentially what you're going to get from doing
+
+um the product of rns is kind of all of these uh pairwise combinations of tuples
+
+from from both relations this might seem kind of useless but it
+
+does show up sometimes you know if you want to get
+
+generate all the possible combinations um in two tables uh but more importantly
+
+what what this is going to be used for is just from a conceptual or theoretical
+
+perspective it's going to let us model the next
+
+operator we're going to talk about which is a join
+
+so can you get all these these pairwise combinations
+
+uh this is the the syntax and sql for how to do it
+
+you can get all these pairwise combinations but now let's say that you
+
+just want the pairwise combinations where your
+
+primary key that we talked about in your foreign key match
+
+so you have two keys that match so the join operator is going to generate a
+
+relation that
+
+contains all all the tuples are a combination
+
+of the the two inputs where there's a
+
+common value for one or more attributes depending on on what you specify
+
+so uh what we're going to do is we're going
+
+to look for matches here and again these two tables
+
+have the same schema but you could do it in an arbitrary case in the music store
+
+example you have the artist
+
+relation and the album's relation and they share the
+
+artist's primary key that they join on
+
+so what's happening here with the join uh
+
+operator is that we're only finding the matches like i said uh that appear in
+
+both uh the r table and the s table
+
+so like i said kind of this this conceptually if you think about what the
+
+the product operator does you could produce all of these pairwise
+
+optimizations very sorry so you produce all these pairwise combinations and then
+
+um filter it down to just uh uh the the set that matches uh where
+
+the keys match but of course you never do this um
+
+because you know you have to first enumerate all the different uh
+
+combinations and then perform the filter so there are different optimizations you
+
+you might want to do to short-circuit this but from a theoretical perspective
+
+conceptual perspective it's useful to think about
+
+in this way so
+
+the sql syntax for this and again we'll go over these in in more detail
+
+next class but the sql syntax to do this joint here
+
+um is the natural journal
+
+um so uh over time like i said there there
+
+have been um extensions the original
+
+uh relational algebra where they built up more operators there's now
+
+a bunch that people have added rename assignment duplicate elimination
+
+animation imagine you want to count how many
+
+um albums a particular artist is released
+
+uh sorting so you can actually impose some kind of ordering uh on the
+
+unordered set um and set division
+
+so there are analogs for all of these in
+
+sql that we'll talk about don't don't worry too much about them they're not
+
+going to be super important for the course
+
+um so just in observation about relation relational algebra um and we've gone
+
+through all the operators but [Music]
+
+it's still defining more or less the high level
+
+steps that are necessary for how to compute a query so essentially
+
+we're telling um
+
+the database management system exactly how it should go about computing the
+
+query and in the example here um we have two
+
+you know more or less equivalent queries on on
+
+the one side you're doing uh the join between r and s first before
+
+applying the filter to only the two volts that have bid 102
+
+and on the other side uh you're filtering s to only the tuples that have
+
+102 uh bid equals 102 and then performing the joint so kind of these
+
+these two while they're going to produce the exact same answer one might be a lot
+
+more efficient than the other you know if you
+
+have again a billion tuples in the relation
+
+you might want to do the filtering first so you get down just one rather than
+
+having to you know find all the billion matches and then then do the filter so
+
+in this way um the the the uh relational algebra is still
+
+procedural and not declarative so really what we'd like is is a declarative
+
+language like sql for exiting um the database and that's kind of this
+
+idea where you want to state the high level
+
+answer or exactly what you want the database management system to compute
+
+for you rather than telling it how it should go
+
+about doing it and essentially you can just leave
+
+the low level details about you know how to actually do it to the database
+
+management system and if it's well implemented it should do it
+
+a lot better than the kind of
+
+high level procedural query you would produce
+
+so the relational model just as a concept is independent of any kind of
+
+specific um query language implementations there are a lot that got
+
+proposed over the years um i think there's an alpha proposed
+
+originally proposed by cod but no one talks about that anymore
+
+there's quail which increased by someone from berkeley
+
+and [Music]
+
+sql kind of emerged as the de facto standard some people call it sql
+
+it sql both are fine i'll still know what you're talking about if you say
+
+um so it's kind of emerged as the de facto standard um and there are standard
+
+specifications but uh pretty much every um
+
+system implements its own uh
+
+variant so uh if you write a query for my sequel it
+
+might not exactly match something that runs in postgres or oracle or sqlite or
+
+whatever uh so kind of that's the tricky part there is a standard that everyone
+
+like you know 98 adheres to but there's this kind of wiggle room where people
+
+implement their own special um
+
+divergences so going way back to the python example
+
+i gave earlier this was the code where you're going to iterate over
+
+all the lines and file to find
+
+the year that ice cube went solo and if we rewrite that
+
+in in a sql query we get this a lot more compact specification
+
+for what we want and not how we want the database management system
+
+uh to give it to us so we say we want to select the year from the artists table
+
+where the name of the artist is ice cube so that's a lot a higher level and we
+
+don't have to worry about kind of the low level details about reading the
+
+lines parsing the lines all that stuff we just tell the database management
+
+system this is what we want this is the answer that we want you
+
+figure out how to get it back to me so
+
+that kind of wraps everything up [Music]
+
+the the key takeaways are that you know databases are ubiquitous they're using
+
+all sorts of applications all over the place there's any amount of data being
+
+managed in an application you're using
+
+um there is almost certainly a database management
+
+system behind the scenes um relational algebra kind of defines
+
+the the primitives for processing queries on a relational database
+
+and we're going to see relation algebra
+
+again when we talk about query optimization and execution
+
+um but for now the next class is going to be uh
+
+specifically about sql where you go through some of the more advanced uh
+
+topics with with sql so um that's it and
+
+we'll see you [Music]
+
+[Applause] [Music]
+
+[Music]
+
+[Music]
+
+i put in much work with the bmt and the e-trouble get us a saint i grew on the
+
+double
+
+you

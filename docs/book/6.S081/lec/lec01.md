@@ -2,142 +2,21 @@
 
 [2021 视频知识点总结](https://pdos.csail.mit.edu/6.S081/2021/schedule.html)
 
+对硬件的抽象。进程和文件系统都是为了方便。
 
-interfaces if it works an application so um so this is what you're going to be doing in the course
+操作系统的任务是对硬件进行复用，在其中可以运行多个任务，例如编辑器，编译器或者多个不同的数据库。
 
-we're also interested in what the purpose of the operating system itself
+OS 同时运行所有事情并且事情之间相互不影响，这被称为**复用**。
 
-is as well as of the course
+任务之间相互不影响被称为**隔离**。
 
-so for that i have a sort of list of a couple of things which
+有时不同的任务之间想要交互，例如通过文本编辑器编辑代码后，编译器再读取其中内容。
 
-um you know there's lots of operating system
+在该共享的时候共享，不该共享的时候不共享。例如多个用户登陆一台机器，而用户与用户之间的信息不希望对方访问，那么此时就不能共享。这被称为访问控制系统。
 
-different operating systems out there they typically have a common set of
+如果程序需要获得硬件的完整性能，操作系统需要提供类似的功能。
 
-purposes
-
-one of them is to abstract the hardware um that is you know what you're given
-
-typically as a kind of starting point is you buy a computer a computer as a cpu
-
-in memory but that's a very low level uh set of
-
-resources it's fantastic to have much higher level
-
-um interfaces and abstractions that applications can use
-
-such as processes or file systems both for convenience
-
-and for portability another very important
-
-task of an operating system is to multiplex the hardware
-
-among many applications you might be running
-
-a text editor and a compiler or maybe multiple different database
-
-servers or something on your operating system
-
-it's fantastic to be able to have the operating system run both of them at the
-
-same time or all the things are going on at the same time
-
-without having them interfere that's often called multiplexing
-
-um because there may be a lot of things happening on the operating system at the
-
-same time it's it's critical that they not interfere
-
-unintentionally even if they have bugs and that's
-
-a task is called isolation the idea that
-
-different activities should not be allowed to interfere on the other hand
-
-there are times when different activities would like to
-
-interfere we'd like to interact or cooperate so
-
-for example if i create a file with a text editor
-
-and i'd like my compiler to read the file we definitely want to allow that
-
-kind of sharing so we want to allow sharing when it's
-
-sort of what the user has in mind um but in many circumstances the user
-
-doesn't want sharing maybe you're logged into
-
-a time sharing machine like athena and you don't want other people to read your
-
-files so we also need as well as sharing we
-
-want to not share when we don't want to which we could call security or a
-
-permission system or an access control system
-
-another thing that people value in operating systems is if you spend a lot
-
-of money on hardware on a computer you'd like your application to be able
-
-to get the sort of full performance that the hardware ought to be able to
-
-provide and you know a lot of that is just
-
-application programming but inevitably unfortunately some of it
-
-is the operating system has to make sure that
-
-whatever services it provides don't get in the way of applications
-
-getting high performance so you want to at least not get in the
-
-way and maybe even help applications achieve good performance
-
-finally with most operating systems have to support a wide range of
-
-different applications maybe it's a laptop
-
-running a text editor maybe it's running games
-
-maybe your operating system needs to support database servers or
-
-cloud computation and usually because operating systems are
-
-quite expensive to design and build people use the same operating systems
-
-for many different tasks like linux for example which
-
-i'm sure many of you are running is used in all of the situations i mentioned so
-
-the same operating system really has to be able to support
-
-a range of often quite different uses
-
-so we're hoping to be able to support um sort of all these different goals
-
-uh simultaneously um and we'll hear more about all of them
-
-during the course all right uh operating systems
-
-uh sort of people worked out a set of um design ideas over the decades that have
-
-worked pretty well sort of ways of organizing things and
-
-i'm going to lay out for you the sort of
-
-classic organization it's a sort of standard
-
-deal for uh for this course and
-
-um is actually quite common around for many operating systems so this is sort
-
-of you know os internal organization or
-
-um the way i think about it is a in terms of a draw a box for the
-
-computer um the computer sort of
+在许多的操作系统中有很常见的标准。
 
 comes with a bunch of hardware resources which i'll put at the bottom maybe
 

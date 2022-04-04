@@ -1,10 +1,10 @@
 # Lecture 3: GFS
 
-## 大型存储
+## 1. 大型存储
 
 事实证明存储是一个关键的抽象。一个简单的存储接口非常有用并且非常通用。所以用于构建分布式系统的很多想法也能用于设计存储系统或者其他表现良好的大型分布式存储系统。
 
-## 这就是为什么读这篇论文？
+## 2. 为什么读这篇论文？
 
 如何设计出一个大型存储系统的优秀接口？如何设计存储系统的内部结构使其有良好的表现？
 
@@ -12,1664 +12,233 @@
 
 这篇论文中出现的一些东西理解起来也相当简单，并且也是一篇关于系统的优秀论文。其中讨论了在使用存储系统时从硬件到软件的各方面问题，而且这是一个现实中使用的成功设计。虽然是一篇发表在学术会议上的学术论文，但已经在实际中生活中运行了。
 
-## 为什么分布式难？
+## 3. 为什么分布式难？
 
-通常设计大型分布式系统或者大型存储系统的初衷是为了能够获取巨大的性能，通过利用数百台机器资源来完成海量的工作。所以出发点通常是为了性能。
+采用分布式通常是为了**性能**。
 
-如何将数据拆分到很多服务器上？这样就能通过很多台服务器并行读取数据，通常这被称为分片。
+在分布式系统中需要将数据拆分，分散到多个机器上，也就是**分片**。
 
-如果你将数据进行切片并分发到数百台或者数千台服务器上，那么你会经常看到发生错误。
+但将数据分片到数百上千台机器上很容易出现故障。需要系统能够自动修复而非人工介入，此时需要自动容错系统，也就**是容错性**。
 
-如果有数千台服务器，那么总会有那么一台会有可能出现故障，因此，时时刻刻都可能会有故障出现。此时需要能够自动去修复这种故障问题，而不是通过人工介入去修复。所以需要自动容错系统。
+通过**复制**来实现容错，例如保留 2 个或 3 个或者 n 个数据副本。其中某个出错那么立刻切换到另一个副本上。
 
-从而就有了容错性，获取容错性做有效的方式就是复制，即保留2个或3个或者n个数据副本。如果一个副本出现了问题，还可以使用另一个。通过复制实现了容错。
+但是副本会带来**数据不一致**的问题。上层的应用程序对于数据的一致性就很棘手。如果为了维护强一致性就会**降低性能**。此时就和初衷背离了。
 
-多个数据副本又会带来数据不一致的问题。一致性又使得应用程序变得棘手。
+总结一下，分布式系统是为了提高性能，分布式需要数据分片，为了容错需要复制数据产生多副本，多副本又出现了一致性的问题，为了维护强一致性又会导致性能降低。
 
-如何设计系统才能摆脱数据不一致带来的问题？如果要保证很好的一致性会降低服务器的性能。此时和开头出现了矛盾。
+## 4. 一个强一致性的直观模型
 
-为了获得良好的一致性牺牲了性能，为了高性能降低了一致性。
+假设 c1,c2 两个客户端同时修改服务器中的某个值，而 c3,c4 分别读取该值会得到什么样的结果。
 
-最终想要构建一个具备强一致性或良好一致性的系统，该系统通过应用程序或客户端使用来看起来就像是在与单个服务器进行交互所期望的体验一样。
+此时会有两个写请求同时发送给服务器，接着服务器会响应。但是并没有明确的顺序，而不同顺序下得到的值是不一样的。这就出现了歧义。
 
-so 这就是一种强一致性，是一种思考强一致性的很直观的方式
-So，假设我们有一台单线程服务器并且一次只处理一个来自客户端的请求
-这很重要
-因为可能有许多客户端并发地将请求发送到服务器，服务器会看到这些并发请求，它首先选择一个或另一个，然后执行该请求以完成，然后执行下一个
-So，在一个存储服务器上，它里面有一个磁盘
-它处理的这个请求是一个写请求
-您知道它可能正在写一个item ，或者往这个可被写入的对象增加一个元素的，我的意思是如果它是可改变的则往其中添加一个item
-然后，我们继续，我们有一个可以存数据的表
-这张表可能是存储的是key和value对
-我们会对该表进行更新，如果请求进来就对其进行读取，我们将请求中的数据拿出来并写入到表中
-可以在这里得到良好表现的规则是，每个服务器确实在按照我们简化的模型来执行，一次执行一个请求，并且所有先前操作的数据反映了这些请求执行的顺序
-so 如果服务器收到一系列写请求操作
-并且服务器以一定顺序去处理这些操作
-然后，当你对请求读取时，你会看到某种你期望的value值，如果一次只进行一次写入操作
-这仍然不是很简单的行为
-你至少需要花几秒来思考下某些东西
-So，例如，如果我们有一大堆客户端
-Client 1会发送一个写请求，它想将x的值设置为1
-与此同时，Client 2也想去发送一个写请求给服务器，但它想把x的值设置为一个不同的值
-此时，突然发生了某件事情
-假设当这些写请求完成后，Client 3发送了一个读请求，服务器将结果返回给Client 3
-接着，Client 4也去读取x的值，然后它也得到了一个结果
-那么这两个客户端会看到怎样的结果呢？
-此处我假设Client 1和2同时发送这些请求
-So，如果我们正在监视网络的话
+单个服务器的容错能力不行，一旦发生故障整个系统就崩溃了。实际中通常构建主从复制服务器。
 
-9.13-9.16
-
- we'd see two requests heading to the server at the same time
-
-我们会看到在同一时间会有两个请求发送给服务器
-
-9.16-9.20
-
-and then sometime later the server would respond to them
-
-接着，在某个时候，服务器会对它们进行响应
-
-9.20-9.34
-
-so there's actually not enough here to be able to say whether the client would receipt would process the first request first which order there's not enough here to tell which order the server processes them in
-
-实际上，这里并给出没有足够信息来告诉我们，服务器是按照怎样的顺序来处理这些请求
-
-
-9.34-9.38
-
- and of course if it processes this request first
-
-当然如果服务器先处理第一个请求
-
-9.38-9.43
-
- then that means or it processes the write with value to second 
-
-这就意味着服务器然后才会处理这个值为2的写请求
-
-9.43-9.45
-
-and that means that subsequent reads have to see 2
-
-这就意味着这两个连续的读请求的返回结果是2
-
-9.45-9.49
-
- where is it the server happened to process this request first 
-
-如果服务器先处理第二个写请求
-
-9.49-9.50
-
-and this one's second
-
-然后再处理第一个写请求
-
-9.50-9.52
-
- that means the resulting value better be one
-
-那这就意味着结果值就是1
-
-9.52-9.54
-
-and these two requests and see 1
-
-那么这两个读请求得到的返回值就是1
-
-9.54-9.57
-
-what so I'm just putting this up to sort of illustrate 
-
-So，我拿这个例子是想解释一下
-
-9.57-9.59
-
-that even in a simple system 
-
-即使是在一个简单的系统中
-
-9.59-10.01
-
-there's ambiguity
-
-也存在了歧义
-
-10.01-10.05
-
-you can't necessarily tell from trace of what went into the server or what should come out
-
-你也不一定能从这里面分辨出来对服务器的请求顺序，以及服务器应该返回的内容是什么
-
-10.05-10.13
-
-all of you can tell is that some set of results is consistent or not consistent with a possible execution
-
-你们所能说的就是某个执行的结果与结果集是否一致
-
-10.13-10.18
-
-so certainly there's some completely wrong results we can see 
-
-So，我们可以看到这里面存在了一些完全错误的结果
-
-
-10.18-10.22
-
-go by it you know if client 3 sees a 2 
-
-如果Client 3看到的结果是2
-
-10.22-10.25
-
-then client 4 I bet had better see it 2 also
-
-然后，Client 4看到的结果最好也是2
-
-10.25-10.31
-
-because our model is well after the second write，you know client 3 these are two 
-
-因为在我们的模型中，当第二个写请求完成后，client 3看到的结果就是2
-
-10.31-10.32
-
-that means this write must have been second 
-
-那这就意味着这个写请求是第二个被处理的
-
-10.32-10.39
-
-and it still had better be it still has to have been the second write one client 4 goes to the data
-
-这个写请求最好是第二个写请求，那么Client 4拿到的也是一样的数据
-
-10.39-10.45
-
-so hopefully all this is just completely straightforward and just as expected 
-
-So，我希望这些东西对于你们来说理解起来很简单
-
-10.45-10.50
-
-because it's supposed to be the intuitive model of strong consistency 
-
-因为它是一个强一致性的直观模型
-
-10.50-10.52
-
-ok 
-
-
-
-10.52-10.56
-
-and so the problem with this of course is that a single server has poor fault tolerance right
-
-此处的问题在于单个服务器的容错能力很糟糕
-
-10.56-10.58
-
-if it crashes or it's disk dies or something，we're left with nothing 
-
-如果它崩溃了，硬盘挂掉了，或者发生了其他什么事故，那我们就会一无所有
-
-10.58-11.04
-
-and so in the real world of distributed systems we actually build replicated systems
-
-So，在现实生活中的分布式系统中，实际上我们会去构建主从复制服务器
-
-11.04-11.09
-
-so and that's where all the problems start leaking in is when we have a second copying data
-
-当我们有第二份数据副本时，这也是所有问题的起因
-
-11.09-11.15
-
-so here is what must be close to the worst replication design
-
-So，此处我所要展示的是最糟糕的主从复制设计
-
-11.15-11.22
-
-and I'm doing this to warn you of the problems that we will then be looking for in GFS
-
-我这么做的原因是要让你们知道我们会在GFS中遭遇哪些问题
-
-11.23-11.23
-
-all right 
-
-
-
-11.23-11-26
-
-so here's a bad replication design 
-
-So，这就是一个糟糕的主从复制设计
-
-
-11.26-11.31
-
-we're gonna have two servers now
-
-假设我们现在有两台服务器
-
-11.31-11.33
-
- each with a complete copy of the data 
-
-每个服务器都有一份完整的数据拷贝
-
-11.33-11.43
-
-and so on disks that are both gonna have this table of keys and values 
-
-在它们的硬盘上都保存了这个Key/Value表
-
-11.43-11.48
-
-the intuition of course is that we want to keep these tables we hope to keep these tables identical
-
-从直觉上来讲，我们想让这些表的内容完全一样
-
-11.48-11.51
-
- so that if one server fails
-
-这样的话，如果一台服务器故障了
-
-11.51-11.52
-
- we can read or write from the other server 
-
-那么我们就可从另一台服务器中读取或写入数据
-
-11.52-11.57
-
-and so that means that somehow every write must be processed by both servers
-
-这就意味着这两台服务器都得处理写入操作
-
-11.57-12.02 ******
-
-and reads have to be able to be processed by a single server
-
-并且读取操作必须由单个服务器处理
-
-12.02-12.03
-
-otherwise it's not fault tolerant
-
-否则，这就不是容错了
-
-12.03-12.04
-
-all right if reads have to consult both
-
-如果必须从两个服务器上进行数据读取
-
-12.04-12.08
-
-and we can't survive the loss of one of the servers 
-
-那我们就无法忍受其中一台服务器的数据丢失
-
-12.08-12.10
-
-okay 
-
-
-
-12.10-12.14
-
-so the problem is gonna come up 
-
-So，问题来了
-
-
-12.14-12.17
-
-well I suppose we have client 1 and client 2 
+例如目前有两台服务器，都保存了一份完整的数据，如果其中一台服务器故障那么可以直接切换到另一台服务器上读写。但是为了维护一致性，两台服务器都需要处理写入操作。而读取操作则是单个服务器处理，如果必须从两台服务器上读，那么就无法容忍服务器数据丢失。
 
 Well，假设我们有client1和client2
-
-12.17-12.20
-
-and they both want to do these writes
-
 它们两个都想进行写入操作
-
-
-12.20-12.23
-
- say one of them gonna write one and the other is going to write two
-
 其中一个服务器进行write x1操作，另一个则执行write x2操作
-
-
-12.23-12.27
-
-so client 1 is gonna launch its writex1 to both
-
 So，客户端1向两个服务器都发出了write x1请求
-
-12.27-12.30
-
- because we want to update both of them
-
 因为我们想更新这两个服务器的数据
-
-12.30*-12.35
-
- and client 2 is gonna launch it's write X2 to both of them
-
 接着，客户端2会向这两个服务器发送write x2请求
-
-
-12.35-12.40
-
- so what's gonna go wrong here
-
 So，这里会出现什么问题吗？
-
-12.40-12.43
-
-yeah
-
 请说
-
-
-
-12.43-12.50
-
-yeah we haven't done anything here to ensure that the two servers process the two requests in the same order
-
 没错，我们并没有做任何事情来保证这两个服务器是以同样的顺序来处理这两个请求的
-
-
-
-12.50-12.51
-
- right
-
-12.51-12.54
-
-that's a bad design
-
 这是一个糟糕的设计
-
-12.54-12.58
-
-so if server 1 processes client ones request first 
-
 如果服务器1先处理client 1的请求
-
-12.58-13.02
-
-it'll end up it'll start with a value of 1 
-
 执行完请求后，它表内的value就是1
-
-13.02-13.04
-
-and then it'll see client twos request 
-
 接着，服务器1又接受到了client 2的请求
-
-13.04-13.05
-
-and overwrite that with 2 
-
 并将表内的value覆写为2
-
-13.05-13.10
-
-if server 2 just happens to receive the packets over the network in a different order
-
 如果服务器2碰巧是以不同的顺序接收了网络数据包
-
-13.10-13.13
-
- it's going to execute client 2's requests and set the value to 2 
-
 那它就会先执行client 2的请求，并将表内value设置为2
-
-
-13.13-13.17
-
-and then it will see client ones request set the value to 1 
-
 然后它才会去处理client 1的请求，并将value设置为1
-
-
-13.17-13.23
-
-and now what a client a later reading client sees you know if client 3 happens to reach from this server 
-
 如果client 3碰巧从服务器1中读取数据
-
-13.23-13.26
-
-and client4 happens to reach from the other server
-
 碰巧，client 4则是从另一台服务器上读取数据的话
-
-13.26-13.28
-
- then we get into this terrible situation
-
 那我们就会陷入这种可怕的情况
-
-13.28-13.38
-
-where they're gonna read different values even though our intuitive model of a correct service says they both subsequent reads hefty you're the same value
-
 虽然我们直观的服务模型表示它们两个读取到的是相同的value，但它们读取的是不同的value，
-
-
-
-13.28-13.47
-
- and this can arise in other ways, you know suppose we try to fix this by making the clients always read from server one, if it's up and otherwise server two
-
 这种情况也可能会以其他方式出现，假设我们试着让所有的client始终都从服务器1中读取数据来解决这个问题，如果服务器1故障了，那再从服务器2中读取数据
-
-13.47-13.49
-
- if we do that
-
-如果我们这么做的话
-
-13.49-13.51
-
-then if this situation happened
-
 如果这种情况发生了
-
-13.51-13.55
-
-and for a while oh yeah both everybody reads might see client might see value 2
-
 在一段时间内，两个client可能读取到的都是服务器1的value 2
-
-13.55-13.56
-
-but a server one suddenly fails
-
 但如果服务器1突然故障了
-
-13.56-13.59
-
-then even though there was no write
-
 即使没有发生写入请求
-
-13.59-14.02
-
-suddenly the value for X we'll switch from 2 to 1
-
 我们的value值也会突然从2变成1
-
-14.02-14.04
-
-because if server 1 died
-
 因为如果服务器1崩了
-
-14.04-14.06
-
- it's all the clients switched to server 2
-
 所有的client就会切换到服务器2去读取数据
-
-14.06-14.11
-
-but just this mysterious change in the data that doesn't correspond to any write
-
 但这种数据上的迷之改变和任何写入操作都不对应
-
-14.11-14.16
-
-which is also totally not something that could have happened in this simple server model
-
 这完全不是这种简单服务器模型中可能发生的事情（知秋注：对于单个服务器来说，我好好的啊，没问题的，我怎么会知道不对）
-
-14.16-14.22
-
-all right 
-
-
-
-14.22-14.24
-
-so of course this can be fixed
-
 当然，我们可以解决这种情况
-
-14.24-14.31 ******
-
- the fix requires more communication usually between the servers or somewhere more complexity
-
 这种修复通常需要服务器之间或更复杂的地方进行更多的通信
-
-
-
-14.31-14.39
-
-and because of the cost of inevitable cost to the complexity to get strong consistency
-
 因为不可避免的在复杂性上付出代价来获得强大的一致性
-
-14.39-14.44
-
-there's a whole range of different solutions to get better consistency 
-
 我们可以通过各种不同的解决方案来获得更好的一致性
-
-14.44-14.55
-
-and a whole range of what people feel is an acceptable level of consistency in an acceptable sort of a set of anomalous behaviors that might be revealed 
-
 人们对于一致性的可接受范围取决于他们对那些异常行为的可接受度（知秋注：可以妥协下追求最终一致性，或者是版本一致性）
-
-
-
-
-14.55-15.02
-
-all right any questions about this disastrous model here
-
 对于这个灾难模型，你们中还有人对它有疑问吗
-
-15.02-15.05
-
-okay 
-
-
-
-15.05-15.08
-
-that's what you're talking about GFS
-
 这就是我们在讨论GFS时所要涉及的东西
-
-
-
-15.08-15.15
-
-a lot of thought about doing GFS was doing is fixing this 
-
 GFS所做的事情解决了这个问题
-
-15.15-15.18
-
-they had better but not perfect behavior
-
 它们拥有更好但并不是那么完美的表现
-
-15.18-15.21
-
-okay 
-
-
-
-15.21-15.24
-
-so where GFS came from in 2003 quite a while ago
-
 GFS是2003所出现的东西，这距离现在已经有一定年份了
-
-15.24-15.30
-
-actually at that time the web you know was certainly starting to be a very big deal
-
 实际上，在那个时候起，网络就变得非常重要
-
-15.30-15.34
-
-and people are building big websites
-
 人们会去构建大型网站
-
-15.34-15.38
-
-in addition there had been decades of research into distributed systems 
-
 此外，那时候对于分布式系统已经有了数十年的研究了
-
-15.38-15.44
-
-and people sort of knew at least at the academic level how to build all kinds of highly parallel fault tolerant whatever systems
-
 至少从学术的层面来讲，人们知道该如何构建具备高度并行，容错之类的系统
-
-15.44-15.48
-
-but there been very little use of academic ideas in industry
-
 但在行业内，几乎没有人去使用这些学术思想
-
-15.48-15.53
-
-but starting at around the time this paper was published
-
 但自从这篇论文发表出来后
-
-15.53-15.58
-
-big websites like Google started to actually build serious distributed systems 
-
 像谷歌这样的大型网站开始实际使用这些思想来构建分布式系统
-
-15.58-16.08
-
-and it was like very exciting for people like me who were I'm a kid I'm excited this to see see real uses of these ideas
-
 对于像我这样的人，就像一个小孩那样，在看到这些思想落地时，我会感到非常兴奋
-
-16.08-16.18
-
-where Google was coming from was, you know they had some vast data sets far larger than could be stored in a single disk like an entire crawl copy of the web
-
 谷歌拥有体积非常庞大的数据集，这些数据集大到无法保存在单个磁盘中，例如：一个完整的网站爬虫数据
-
-16.18-16.22
-
-or a little bit after this paper they had giant YouTube videos
-
 或者是在发布了这篇论文后，它们拥有了大量的Youtube视频
-
-16.28-16.28
-
-they had things like the intermedia files for building a search index
-
 他们通过一些中间文件来构建搜索索引
-
-16.28-16.32
-
-they also apparently kept enormous log files from all their web servers
-
 他们也会保留许多他们web服务器上的日志文件
-
-16.32-16.34
-
-so they could later analyze them
-
 这样他们就能日后分析这些文件了
-
-16.34-16.35
-
- so they had some big big data sets
-
 他们拥有某些非常庞大的数据集
-
-16.35-16.40
-
-they used both to store them and many many disks to store them
-
 谷歌不得不使用非常非常多的磁盘来保存这些数据
-
-16.40-16.43
-
- and they needed to be able to process them quickly with things like MapReduce
-
 他们需要能够快速地处理这些数据，例如通过MapReduce来处理
-
-16.43-16.48
-
- so they needed high speed parallel access to these vast amounts of data 
-
 So，他们需要以高速并行的方式来访问这些海量数据
-
-
-
-16.48-16.50
-
-okay 
-
-
-16.50-16.56
-
-so what they were looking for one goal was just that the thing be big and fast 
-
 他们所追的目标是又大又快
-
-16.56-17.05
-
-they also wanted a file system that was sort of global in the sense that many different applications could get at it 
-
 他们也希望能有一种全局的文件系统，这样许多不同的应用程序都能从上面获取数据
-
-17.05-17.13
-
-one way to build a big storage system is to you know you have some particular application and you build storage sort of dedicated and tailored to that application 
-
 构建大型存储系统的一种方法是，你知道自己有一些特定的应用程序，并且可以构建专门针对该应用程序的存储类型
-
-17.13-17.15
-
-and if somebody else in the next office needs big storage 
-
 如果隔壁办公室的某个人需要用到大型存储
-
-17.15-17.17
-
-well they can build their own thing
-
 那么这样他们就能构建自己的东西
-
-
-17.17-17.25
-
-right but if you have a universal or kind of global reusable storage system
-
 如果我们有一个通用或者全局可复用的存储系统
-
-17.25-17.30
-
-and that means that if I store a huge amount of data and say you know I'm crawling the web 
-
 这意味着如果我存储大量数据并说你知道我正在爬取网站
-
-17.30-17.33
-
-and you want to look at my crawled web pages
-
 并且你想看我所爬取的网页
-
-17.33-17.37
-
-because we're all using we're all playing in the same sandbox 
-
 因为我们都在同一个沙盒下进行
-
-17.37-17.39
-
-we're all using the same storage system 
-
 我们用的都是同一个存储系统
-
-17.39-17.41
-
-you can just read my files
-
 你可以直接读取我的文件
-
-
-
-17.41-17.43
-
-you know maybe access controls permitting
-
 这里面可能会有一些访问控制权限的问题
-
-17.43-17.54
-
- so the idea was to build a sort of file system where anybody you know anybody inside Google could name and read any of the files to allow sharing 
-
 它的思想是通过构建一套文件系统，这样在谷歌的任何人都能通过它来命名和读取其中所共享的任何文件
-
-17.53-18.07
-
- in order to get bigness and fastness they need to split the data through every file will be automatically split by GFS over many servers
-
 为了获得更大的牢固性，他们需要将每一个文件数据由GFS自动拆分到很多服务器中
-
-
-
-18.07-180.10
-
-so that writes and reads would just automatically be fast 
-
 这样读写速度就会变得非常快
-
-18.10-18.14
-
-as long as you were reading from lots and lots of reading a file from lots of clients 
-
 当你从许多client中读取一个文件时
-
-18.14-18.16
-
-you get high aggregate throughput 
-
 你就会得到很高的吞吐量
-
-18.16-18.23
-
-and also be able to for a single file be able to have single files that were bigger than any single disk 
-
 这样也就能够读取比一个硬盘容量还大的单个文件了
-
-18.23-18.26
-
-because we're building something out of hundreds of servers，
-
 因为我们是基于数百台服务器来构建的
-
-18.26-18.33
-
-we want automatic failure recovery
-
 我们想要拥有自动故障恢复的能力
-
-18.33-18.46
-
-we don't want to build a system where every time one of our hundreds of servers a fail, some human being has to go to the machine room and do something with the server or to get it up and running or transfers data or something 
-
 我们不想去构建这种系统，运行着该系统的数百台服务器中的某台故障了，就得让人去机房，然后去修理服务器，并让它重新跑起来，或者去往服务器上面传输数据
-
-18.46-18.48
-
-well this isn't just fix itself
-
 Well，这就不仅仅是自主修复了
-
-18.48-18.53
-
- um there were some sort of non goals 
-
 这里面还有些非功利目标
-
-18.53-18.56
-
-like one is that GFS was designed to run in a single data center
-
 其中一点是，GFS是被设计用于运行在单个数据中心的系统
-
-18.56-19.00
-
- so we're not talking about placing replicas all over the world
-
 So，我们并没有去讨论在全世界范围内放置数据副本
-
-
-19.00-19.12
-
-a single GFS installation just lived in one data center one big machine room，so getting this file system to work
-
 单个GFS是运行在一个数据中心或者一个大型机房中的
-
-19.12-19.19
-
-where the replicas are far distant from each other is a valuable goal but difficult 
-
 副本间彼此相距遥远是一个有价值的目标，但很难
-
-19.19-19.25
-
-so single data centers this is not a service to customers 
-
 So，数据中心并不是一个面向消费者的服务
-
-19.25-19.30 ****
-
-GFS was for internal use by applications written by Google engineers
-
 GFS是提供给Google工程师编写的应用程序内部使用
-
-19.30-19.33
-
-so it wasn't they weren't directly selling this
-
 So，谷歌并不直接出售这项服务
-
-19.33-19.38
-
-they might be selling services they used GFS internally，but they weren't selling it directly 
-
 谷歌会对外销售那些内部使用了GFS的服务，但他们不直接对外销售GFS
-
-
-19.38-19.39
-
-so it's just for internal use
-
 So，GFS只供内部使用
-
-19.39-19.50
-
-and it was tailored in a number of ways for big sequential file reads and writes
-
 谷歌对其经过一系列的量身定制，以便用于大型连续文件的读取和写入
-
-19.50-19.58
-
- there's a whole other domain like a system of storage systems that are optimized for small pieces of data
-
 当然，这也能用于一些其他领域，例如某种针对小型数据优化的存储系统
-
-19.58-20.06
-
- like a bank, that's holding bank balances probably wants a database that can read and write, an update you know 100 byte records that hold people's bank balances
-
 就拿银行来说，它可能想要一个可以读写更新的数据库，正如你们知道的那样可以使用100byte大小的数据就能保存人们的银行余额
-
-
-
-20.06-20.08
-
- but GFS is not that system
-
 但GFS并不是这种系统
-
-20.08-20.20
-
-so it's really for big or big is you know terabytes gigabytes some big sequential not random access
-
 So，它适用于对那些大型数据（TB级或者GB级数据）的连续访问而不是随机访问的场景
-
-20.20-20.25
-
-it's also that has a certain batch flavor 
-
 这有点批处理的那种意思
-
-20.25-20.29
-
-there's not a huge amount of effort to make access be very low latency
-
 谷歌在对降低访问延迟上并没有做太多努力
-
-20.29-20.34
-
-the focus is really on throughput of big you know multi megabyte operations
-
 他们的重心是放在了大吞吐量上面，例如：几MB大小的操作
-
-20.34-20.42
-
-this paper was published at s OSP in 2003 the top systems academic conference
-
 这篇论文是发表在2003年的顶级系统学术会议上
-
-
-
-20.42-20.53
-
-yeah usually the standard for papers such conferences they have you know a lot of very novel research
-
 通常这种会议上的论文标准就是在它得包含大量新颖的研究
-
-20.53-20.55
-
-this paper was not necessarily in that class
-
 这篇论文并不一定满足这一类标准
-
-20.55-20.58
-
-the specific ideas in this paper none of them are particularly new at the time 
-
 这篇论文中某些特定的思想在当时并不是特别新颖
-
-20.58-21.06
-
-and things like distribution and sharding and fault tolerance were you know well understood had to had to deliver those
-
 例如，分布式，切片，容错之类的想法其实非常好理解
-
-21.06-21.13
-
-but this paper described a system that was really operating in use at a far far larger scale hundreds of thousands of machines 
-
 但这篇论文所描述的系统是可以应用在由成百上千台机器所组成的大型集群上的
-
-21.13-21.16
-
-much bigger than any you know academics ever built
-
 这要远比任何一篇学术论文中所构建的集群都要庞大
-
-21.16-21.28
-
-the fact that it was used in industry and reflected real world experience of like what actually didn't work for deployed systems that had to work and had to be cost effective，
-
 它已在工业中使用并反映了在现实世界中的使用经验，例如对于必须工作且必须具有成本效益的已部署系统实际上不起作用，
-
-21.28-21.38
-
- also like extremely valuable the paper sort of proposed a fairly heretical view 
-
 这篇论文中提出了一种非常异端但非常有价值的观点
-
-
-
-21.38-21.42
-
-that it was okay for the storage system to have pretty weak consistency 
-
 即让存储系统具备弱一致性是ok的这种观点
-
-21.42-21.48
-
-the academic mindset at that time was the you know the storage system really should have good behavior
-
 当时的学术态度是，存储系统实际上应该具有良好的行为
-
-21.48-21.51
-
-like what's the point of building systems that sort of return the wrong data 
-
 就像在构建系统时，返回错误的数据这点
-
-
-
-
-
-
-
-
-
-八十六  阅举报
-03-02
-
-21.51-21.58
-
-like my terrible replication system like why do that why not build systems return the right data correct data instead of incorrect data 
-
 就像我这里糟糕的主备系统那样，为什么这样做，为什么不构建系统返回正确的数据而不是这些错误的数据
-
-21.58-22.03
-
-now with this paper actually does not guarantee return correct data 
-
 在这篇论文中，实际上它并没有保证返回的是正确数据
-
-
-
-22.03-22.08
-
-and you know the hope is that they take advantage of that in order to get better performance
-
 他们希望能够利用这点，以此来获得更好的性能
-
-
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-22.08-22.14
-
-I'm a final thing that was sort of interesting about this paper is its use of a single master
-
 在这篇论文中，最后一件令我们感兴趣的事情就是，它使用了一个单个master节点
-
-22.14-22.21
-
-in a sort of academic paper，you probably have some fault-tolerant replicated automatic failure recovering master 
-
 在某些学术论文中，你们可能看过一些具备容错，主从复制，自动故障恢复能力的master节点
-
-22.21-22.24
-
-perhaps many masters with the work split open 
-
 也有可能，许多master将这些工作分开，每个负责不同的内容
-
-22.24-22.28
-
-um but this paper said look you know you they can get away with a single master and it worked fine well
-
 但这篇论文则表示他们可以不再局限于单个master节点，也能很好地工作（知秋注：单个master可以让一致性更强，多个的话会减弱，但会带来别的提升）
-
-22.39-22.44
-
-cynically you know who's going to notice on the web that some vote count or something is wrong 
-
 不负责任地讲，没人会去注意投票数字的正确与否
-
-22.44-22.47
-
-or if you do a search on a search engine
-
 或者，如果你用搜索引擎进行搜索
-
-22.47-22.54
-
-now you're gonna know that oh you know like one of 20,000 items is missing from the search results or they're in the wrong order
-
 你们可能不会注意到返回的两万条结果里面丢了其中一条，或者说它们展示的顺序是错误的
-
-22.54-22.55
-
-probably not 
-
 可能确实不会去注意这些事情
-
-22.55-23.02
-
-so there was just much more tolerance in these kind of systems than there would like in a bank  for incorrect data 
-
 这种系统对于错误数据的容忍度要远比银行之类的要高得多
-
-23.02-23.05
-
-it doesn't mean that all data and websites can be wrong 
-
 这并不意味着所有的数据和网站可能都是错的
-
-23.05-23.09
-
-like if you're charging people for ad impressions，you had better get the numbers right 
-
 比如，如果你向人们收取广告展示费用，你最好展示的是正确的数字
-
-23.09-23.11
-
-but this is not really about that 
-
 但我想说的并不是这个
-
-23.11-23.22
-
-in addition，some of the ways in which GFS could serve up odd data could be compensated for in the applications
-
 此外，GFS会通过某些方式来对应用程序中的奇怪数据进行修正
-
-23.22-23.29
-
-like where the paper says you know applications should accompany their data with check sums  and clearly mark record boundaries 
-
 正如论文中所说的那样，应用程序应该在它们的数据中附加检查数量并且清楚的标记记录边界
-
-23.29-23.36
-
-that's so the applications can recover from GFS serving them maybe not quite the right data
-
 这样应用程序就能从GFS中恢复这些数据，尽管数据可能并不是完全正确
-
-23.36-23.42
-
-all right 
-
-
-23.42-23.48
-
-so the general structure  and this is just figure one in the paper
-
 它的基本结构请看论文中的Figure 1
-
-
-23.48-23.50
-
-so we have a bunch of clients hundreds hundreds of clients
-
 So，假设我们现在有成百上千个客户端
-
-23.50-23.57
-
-we have one master
-
 我们有一个master
-
-23.57-24.03
-
-although there might be replicas of the master 
-
 虽然可能还会有master的副本
-
-24.03-24.12
-
-the master keeps the mapping from file names to where to find the data basically  although there's really two tables
-
 master会维护文件名和数据保存位置之间的映射关系，这里确实会有两张表
-
-24.12-24.19
-
-so and then there's a bunch of chunk servers maybe hundreds of chunk servers 
-
 接着，它里面可能还有数百台chunk服务器
-
-24.19-24.22
-
-each with perhaps one or two disks
-
 每台chunk服务器中可能有1个或者2个磁盘
-
-24.22-24.26
-
- the separation  here's the master is all about naming  and knowing where the chunks are 
-
 此处的master是用来命名文件和查询这些chunk的位置信息
-
-24.26-24.29
-
-and the chunk servers store the actual data 
-
 chunk服务器是用来保存这些实际数据的
-
-24.29-24.31
-
-this is like a nice aspect of the design 
-
 这是在这个设计中非常nice的一个方面
-
-24.31-24.33
-
-that these two concerns are almost completely separated from each other 
-
 这种设计将这两个问题完全分离了开来
-
-24.33-24.38
-
-and can be designed just separately with separate properties 
-
 这样我们就可以分别来设计这两个部分了
-
-24.38-
-
-the master knows about all the files for every file 
-
 master 知道每个文件对应的所有文件
-
-00:24:43,170 --> 00:24:44,769
-
-the master keeps track of a list of chunks 
-
 master维护了一个chunks 的列表
-
-00:24:44,970 --> 00:24:48,059
-
- chunk identifier that contain the successive pieces that file
-
 块标识符（chunk identifier）包含该文件的连续片段
-
--24.53
-
-each chunk is 64 megabytes 
-
 每个chunk都是64MB大小
-
-24.53-24.56
-
-so if I have a you know gigabyte file
-
 如果我有1GB大小的文件
-
-
-24.56-25.02
-
-the master is gonna know that maybe the first chunk is stored here  and the second chunk is stored here  the third chunk is stored here 
-
 master就知道第一个chunk是存放在这个位置，第二个chunk是放在那个位置，第三个chunk就放在这个位置
-
-25.02-25.04
-
-and if I want to read whatever part of the file 
-
 如果我想去读取该文件中的某个部分
-
-25.04-25.08
-
-I need to ask the master oh which server hole is that chunk  and I go talk to that server 
-
 我需要去问master，哪一个服务器保存了这个chunk，然后我就会去和这个服务器进行通信
-
-25.08-25.09
-
-and read the chunk 
-
 并读取这个chunk
-
-25.09-25.10
-
-roughly speaking
-
 简单来讲就是这样
-
-25.10-25.16
-
-all right 
-
-
-
-25.16- 25.26
-
-so more precisely we need to turns out  if we're going to talk about how the system about the consistency of the system  and how it deals with fault
-
 说的更确切一点，我们需要去讨论系统是如何保证一致性，以及它是如何处理错误的
-
-
-
-
-
-25.26-25.30
-
-we need to know what the master is actually storing in a little bit more detail 
-
 我们需要去深入了解master实际保存的东西是什么
-
-
-25.30-25.39
-
-so the master data it's got two main tables  that we care about
-
 在master数据中，我们主要关心两张表
-
-
-25.39-25.53
-
- it's got one table  that map's file name to an array of chunk IDs  or chunk handles 
-
 其中一张表管理了文件名和chunk id数组（或chunk 句柄数组）之间的映射关系
-
-25.53-26.04
-
-this just tells you where to find the data  or what the identifiers are the chunks are 
-
 这张表会告诉你到哪里去找这些数据或者这些chunk的标识符是什么
-
-26.04-26.07
-
-so it's not much yet  you can do with a chunk identifier 
-
 你可以通过chunk标识符来做到这点
-
-26.07-26.11
-
-but the master also happens to have a second table 
-
 但master中也有第二张表
-
-26.11-26.19
-
-that map's chunk handles each chunk handle to a bunch of data about that chunk 
-
 它里面保存了每个chunk handle和chunk数据间的映射关系
-
-26.19-26.24
-
-so one is the list of chunk servers  that hold replicas of that data 
-
 So，其中一个是保存了这个数据副本的chunk服务器列表（知秋注：一份数据多个副本）
-
-26.24-26.28
-
-each chunk is stored on more than one chunk server
-
 每个chunk会被保存在多个chunk服务器上
-
-
-26.28-26.33
-
-so it's a list chunk servers 
-
 So，这里是chunk服务器列表
-
-26.33-26.41
-
-every chunk has a current version number 
-
 每个chunk都有一个当前版本号
-
-26.41-26.47
-
-so this master has a remembers the version number for each chunk 
-
 So，master要去记住每个chunk的版本号
-
-26.47-26.50
-
-all rights 
-
-
-
-26.50-26.53  ！！！！
-
-for a chunk have to be sequence suit  the chunks
-
 这里有一系列适合使用的chunks 
-
-26.53-26.55
-
-primary it's one of the replicas 
-
 primary 是其中一个副本
-
-26.55-27.00
-
-so master remembers the rich chunk servers the primary 
-
 so master 记住的是这些primary chunk 对应的chunk 服务器
-
-27.00-27.04
-
-and there's also that primary is only allowed to be primary for a certain lease time 
-
 也就是说，只有primary 才有资格和master去进行过期时间判断
-
-27.04-27.16
-
-so the master remembers the expiration time of the lease 
-
 master会去记住lease过期时间
-
-
-27.16-27.17
-
-this stuff  so far it's all in RAM
-
 所有的这些东西都是放在内存中的
-
-27.17-27.20
-
-and the master  so just be gone if the master crashed 
-
 如果master崩溃了，那么master凉了就凉了
-
-27.20-27.28
-
-so in order that you'd be able to reboot the master  and not forget everything about the file system
-
 So，为了能够去重启master，并保证不会丢失文件系统中的任何信息
-
-27.28-27.33
-
-the master actually stores all of this data on disk as well as in memory 
-
 实际上，master会将所有的信息都保存在磁盘上，不仅仅是保存在内存中
-
-27.33-27.36
-
-so reads just come from memory 
-
 So，读操作是在内存中进行的
-
-27.36-27.43
-
-but writes to at least the parts of this data  that had to be reflected  on this writes have to go to the disk 
-
 但写操作，至少对这部分数据来讲，它的写操作必须在磁盘中进行
-
-27.43-27.50
-
-so and the way it actually managed  that is that there's all the master has a log on disk 
-
 实际上GFS的管理方式是，master会将所有的操作记录以日志的形式放在磁盘中
-
-27.50-27.53
-
-and every time it changes the data 
-
 当每次修改数据时
-
-
-27.53-27.58
-
-it appends an entry to the log on disk and checkpoint
-
 它会在磁盘上所保存的log后面追加操作记录，并建立checkpoint
-
-27.58-28.10
-
-so some of this stuff actually needs to be on disk and some doesn't 
-
 So，在这些东西里面，有部分需要保存在磁盘上，有些则不需要
-
-28.10-28.17
-
-it turns out I'm guessing a little bit here，but certainly the array of chunk handles has to be on disk 
-
 我稍微猜测下，chunk handle数组必须放在磁盘上
-
-28.17-28.20
-
-and so I'm gonna write nv here for non-volatile meaning 
-
 So，这里我用nv来表示非易失性
-
-28.20-28.21
-
-it it's got to be reflected on disk 
-
 它代表的就是磁盘之类的东西（知秋注：关于易失性存储和非易失性存储可以去看simviso所翻译的CMU15-445 数据库导论中的存储相关内容）
-
-
-
-28.21-28.26
-
-the list of chunk servers it turns out doesn't
-
 然而事实证明，chunk服务器列表则不需要保存在磁盘上
-
-28.26-28.30
-
-because the master if it reboots talks to all the chunk servers and ask them what chunks they have 
-
 因为当master重启后，它会去和所有chunk服务器进行通信，并询问它们上面保存了哪些chunk
-
-28.30-28.36
-
-so this is I imagine not written to disk 
-
 So，我觉得这种就不用写到磁盘上了
-
-28.36-28.39
-
-the version number  any guesses written to disk not written to disk 
-
 我们来猜一下，版本号是应该写到磁盘上，还是不写到磁盘上？
-
-28.39-28.44
-
-requires knowing how the system works 
-
 这需要去了解系统是如何工作的
-
-28.44-28.55
-
-I'm gonna vote written to disk non-volatile 
-
 我更倾向于将它写到磁盘这种非易失性存储设备里
-
-28.55-28.58
-
-we can argue about that later when we talk about how system works 
-
 我们可以在之后讨论系统的工作原理时，再去争论这个
-
-28.58-29.07
-
-identity the primary it turns out not almost certainly not written to disk
-
 事实证明，primary几乎不会写入到磁盘中
-
-29.07-29.08
-
-so volatile
-
 So，它是易失性的
-
-29.08-29.14
-
-and the reason is the master is um reboots and forgets
-
 理由是master重启后，它就会忘记哪一个是primary
-
-29.14-29.16
-
-therefore since it's volatile forgets who the primary is for a chunk 
-
 由于它是易失性的，master会忘记这个chunk的primary到底是哪个
-
-29.16-29.20
-
-it can simply wait for the 60 second lease expiration time
-
 它可以简单地等待60秒过期时间
-
-29.20-29.24
-
-and then it knows that absolutely no primary will be functioning for this chunk 
-
 然后，master就会知道绝对没有任何primary可用于该chunk
-
-29.24-29.26
-
-and then it can designate a different primary safely 
-
 然后它就可以为这个chunk安全地指定一个不同的primary
-
-
-29.26-29.30
-
-and similarly the lease expiration stuff is volatile
-
 类似的，这个lease过期时间也是易失性的（知秋注：如果master挂掉，重启后并不知道之前的过期时间停留在几秒，重新刷新了）
-
-29.30-29.37
-
-so that means that whenever a file is extended with a new chunk goes to the next 64 megabyte boundary 
-
 这就意味着，当一个文件被追加了一个新的chunk，即文件大小又增加了64MB
-
-29.37-29.41
-
-or the version number changes
-
 或者版本号改变了
-
-29.41-29.43
-
- because the new primary is designated 
-
 因为已经指定了新的primary
-
-29.43-29.48
-
-that means that the master has to first append a little record to his log 
-
 这就意味着master必须先在它的日志里面追加一条记录
-
-29.48-29.53
-
-basically saying  oh I just added a such-and-such a chunk to this file 
-
 简单来讲就是，Oh，我往这个文件里追加了这样一个chunk
-
-
-
-29.53-29.56
-
-or I just changed the version number 
-
 或者，我只是改变了版本号
-
-29.56-29.59
-
-so every time I change is one of those that needs to writes right it's disk 
-
 So，当我每次修改它们其中一个时，这都需要写到磁盘上
-
-29.59-30.01
-
-so this is paper doesn't talk about this much 
-
 这篇论文并没有对此谈论太多
 
 30.01-30.05
