@@ -7,6 +7,8 @@
 
 ## 一些总结
 
+1. 什么是复制状态机？https://zhuanlan.zhihu.com/p/356486304
+
 分布式存储系统的难点是什么？
 
 问题：如何高性能的利用数百台机器资源进而完成大量的工作？
@@ -124,4 +126,62 @@ Raft 无法避免分割选票，但是可以降低发生的概率。将选举定
 
 正常情况下 Leader 告诉 Follow 发生的 log 的内容，而 Follow 全盘接收并添加到本地的 log 中。
 
-https://mit-public-courses-cn-translatio.gitbook.io/mit6-824/lecture-06-raft1/6.9-ke-neng-de-yi-chang-qing-kuang
+
+## Coding 
+
+检测代码正确性：
+
+    $ cd src/raft
+    $ go test
+
+实现下面的接口，调用 Make(peers,me,...) 来创建一个 Raft server 。
+peers 参数是一个 Raft server（包括这个）的网络标识符数组，用于 RPC 。
+me 参数是该对等体在对等体数组中的索引。
+
+Start(command) 要求Raft开始启动，将该命令附加到复制的日志中。Start()应立即返回，而不需要等待日志追加完成。该服务希望你的实现为每个新提交的日志条目发送一个 ApplyMsg 到 Make() 的 applyCh 通道参数。
+
+    // create a new Raft server instance:
+    // 创建一个新的Raft服务器实例。
+    rf := Make(peers, me, persister, applyCh)
+
+    // start agreement on a new log entry:
+    // 启动在一个新的日志条目的协议。
+    rf.Start(command interface{}) (index, term, isleader)
+
+    // ask a Raft for its current term, and whether it thinks it is leader
+    // 询问一个 Raft 的当前任期，以及它是否认为自己是领导者。
+    rf.GetState() (term, isLeader)
+
+    // each time a new entry is committed to the log, each Raft peer
+    // should send an ApplyMsg to the service (or tester).
+    // 每当一个新条目被提交到日志中时，每个 Raft 对等体
+    // 应该向服务（或测试者）发送一个ApplyMsg。
+    type ApplyMsg
+
+## Part 2A: leader election (moderate)
+
+这部分是实现领导者选举和心跳。首先使用 `go test -run 2A` 来检测这部分代码的正确性。直接运行的话会出现如下内容。因为没有实现相应功能，所以会失败。
+
+    $ go test -run 2A
+    Test (2A): initial election ...
+    --- FAIL: TestInitialElection2A (5.00s)
+        config.go:460: expected one leader, got none
+    Test (2A): election after network failure ...
+    --- FAIL: TestReElection2A (5.11s)
+        config.go:460: expected one leader, got none
+    Test (2A): multiple elections ...
+    --- FAIL: TestManyElections2A (5.02s)
+        config.go:460: expected one leader, got none
+    FAIL
+    exit status 1
+    FAIL    6.824/raft      15.126s
+
+
+1. 参考论文的 Figure 2 补全结构体。定义一个结构来保存每个日志条目的信息。
+
+日志的结构体怎么写？
+
+
+
+2. 填入 RequestVoteArgs 和 RequestVoteReply 结构。修改Make()以创建一个后台goroutine，当它有一段时间没有收到另一个对等体的消息时，它将通过发送RequestVote RPCs定期启动领导者选举。这样，如果已经有了一个领导者，对等体将了解谁是领导者，或者自己成为领导者。实现RequestVote()RPC处理程序，这样服务器就可以互相投票了。
+

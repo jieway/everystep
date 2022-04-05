@@ -1813,7 +1813,7 @@ and for our purposes really the most critical piece of state is that raft has a 
 
 
 
-一百二十五  阅举报
+一百二十七  阅举报
 6-02
 20.05-20.14
 
@@ -3463,7 +3463,7 @@ which may well not be the most recent start
 
 
 
-一百二十一  阅举报
+一百二十二  阅举报
 6-03
 
 41.02-41.08
@@ -5411,33 +5411,8 @@ and get answers from everybody who everybody's alive, before the second election
 
 
 
-八十五  阅举报
-
-
-
-
-
-
-
-
+八十六  阅举报
 6-04
-
-2021年7月19日 更新
-
-注册登录
-
-
-
-
-
-
-开启更多功能，提升办公效能✕
-
-
-
-
-
-
 
 
 01:00:19 - 01:00:30
@@ -5490,7 +5465,6 @@ you better make sure there's no point， in having the election time or anybody'
 
 
 
-
 1.00.59-1.01.04
 
 because then it will go off before, you couldn't even expected new AppendEntries
@@ -5500,13 +5474,11 @@ because then it will go off before, you couldn't even expected new AppendEntries
 因为这样在结束计时前，你都不能去期待有任何新的AppendEntries出现
 
 
-
 1.01.04-1.01.09 （再次复述1.00.43-1.00.48）
 
 the lower limit is certainly the lower limit is one heartbeat interval in fact
 
 选举计时器的下限，实际上是心跳的一次间隔时间
-
 
 
 
@@ -5530,13 +5502,11 @@ so for 100 millisecond heartbeats, you probably want to have the very shortest p
 
 
 
-
 1.01.25-1.01.27
 
  you know three times the heartbeat interval
 
 即3倍的心跳间隔
-
 
 
 1.01.27-1.01.33
@@ -5564,13 +5534,11 @@ So，最大值是多少呢？
 你可以将最大值设置为某段时间的随机倍数值
 
 
-
 1.01.45-1.01.52
 
 you know where should we set the maximum timer randomizing over
 
 我们可以将选举计时器的最大值随机设置在这里
-
 
 
 
@@ -5612,7 +5580,6 @@ there's no leader
 
 
 
-
 1.02.17-1.02.19
 
 you know the clients requests are being thrown away
@@ -5639,14 +5606,11 @@ so the beer barrier we choose this maximum ，the long or delay we're imposing o
 
 
 
-
-
 01.02.33 - 01.02.43
 
 you know whether that's important depends on sort of how high performance we need this to be  and how often we think there will be failures
 
 这是否重要取决于我们所需要的性能高低以及故障发生的频率如何
-
 
 
 
@@ -5675,13 +5639,11 @@ how long it takes to recover
 Ok，这就是其中一种考虑
 
 
-
 01:02:53,670 - 01:02:56,130
 
 the other consideration is that this gap
 
 另一个考虑就是这段间隔
-
 
 
 
@@ -5702,7 +5664,6 @@ that is the expected gap in time between the first timer are going off and the s
 that is longer than the expected round-trip time the amount of time it takes to send an RPC and get the response 
 
 也要大于发送RPC并获得响应所消耗的预期往返时间
-
 
 
 
@@ -5729,8 +5690,6 @@ we need to make maximum at least long enough
  that there's pretty likely to be 10 milliseconds difference between the smallest random number and the next smallest random number
 
 比如，该最小随机数和下个最小随机数之间要大概相差10ms
-
-
 
 
 
@@ -5772,7 +5731,6 @@ any questions about the election timeouts
 
 
 
-
 1.04.15 - 1.04.29
 
 one tiny point is that  you want to choose new random timeouts every timers there's every time I node resets its election timer
@@ -5780,7 +5738,6 @@ one tiny point is that  you want to choose new random timeouts every timers ther
 其中一个小问题是，你想每个计时器选择一个新的随机超时时间（我）来设置选举计时器
 
 其中有一个小点就是，我们会想为每个选举计时器每次选择一个新的随机超时时间
-
 
 
 
@@ -5804,14 +5761,11 @@ one tiny point is that  you want to choose new random timeouts every timers ther
 
 
 
-
 01:04:39 - 01:04:44
 
 you choose this one server happens by ill chance to choose the same random number as another server 
 
 这样处理，倒霉的时候，一个服务器可能会选择与另一台服务器相同的随机数
-
-
 
 
 
@@ -5827,13 +5781,11 @@ that means that you're gonna have split votes over and over again forever
 
 
 
-
 01.04.49 - 01:04.58
 
 that's why you want to almost certainly choose a different a new fresh random number for the election timeout value every time you reset the timer
 
 这也就是为什么，当你每次重置选举计时器的时候，一定要选择一个不同的新的随机数来设置超时触发选举时间的原因
-
 
 
 
@@ -5843,14 +5795,11 @@ all right
 
 
 
-
 01.05.03 - 01.05.06
 
 so the final issue about leader election
 
 关于leader选举的最后一个问题
-
-
 
 
 
@@ -5876,7 +5825,6 @@ and the old leader is sort of out there with a couple clients and a minority of 
 
 
 
-
 01:05:17,219 - 01:05:21
 
 and there's a majority in the other half of the network 
@@ -5888,7 +5836,6 @@ and there's a majority in the other half of the network
 and the majority of the new half of the network elects a new leader
 
 在多数派所在的网络分区中，它们选出了一个新的leader
-
 
 
 
@@ -5992,13 +5939,11 @@ So，这就意味着，如果老的leader在另一个分区，那么当许多Cli
 
 
 
-
 1.06.50-1.06.58
 
 so no client will be fooled into thinking that old server executed anything for it 
 
 So，没有任何Client会蠢到认为老的leader执行了任何操作
-
 
 
 
@@ -6016,7 +5961,6 @@ the possibility that before server fails, it sends out append entries to a subse
 
 
 
-
 1.07.19-1.07.22
 
 and as a very interesting question
@@ -6025,14 +5969,11 @@ and as a very interesting question
 
 
 
-
 01.07.24 - 01.07.27
 
 which I'll probably spend a good 45 minutes talking about
 
 我可能要花45分钟来谈论它
-
-
 
 
 
@@ -6050,7 +5991,6 @@ okay
 
 
 
-
 1.07.40-1.07.45
 
 so how about the contents of the logs
@@ -6065,7 +6005,6 @@ and how in particular how a newly elected leader possibly picking up the pieces 
 
 
 
-
 1.07.55-1.08.07
 
 how does a newly elected leader sort out the possibly divergent logs on the different replicas in order to restore sort of consistent state in the system
@@ -6074,11 +6013,9 @@ how does a newly elected leader sort out the possibly divergent logs on the diff
 
 
 
-
 1.08.07-1.08.14
 
 all right 
-
 
 
 
@@ -6126,13 +6063,11 @@ they're required to accept they just do by the rules of figure two，if they've 
 
 
 
-
 1.08.43-1.08.51
 
 you know they just take whatever the leader sends them AppendEntries appended to the log and obey commit messages and execute there's hardly anything to go wrong 
 
 不管leader发给它们什么AppendEntries，它们都无脑的添加到log中，遵守提交的消息并执行它，这么做怎么都不会错
-
 
 
 1.08.51-1.09.00
@@ -6159,13 +6094,11 @@ So，我们所非常感兴趣的一件事就是，当连续发生了很多次崩
 
 
 
-
 1.09.16-1.09.18
 
 so here's an example
 
 So，这里有一个例子
-
 
 
 1.09.18-1.09.23
@@ -6191,7 +6124,6 @@ and the way I'm gonna draw out these diagrams
 and we're gonna be wondering is that possible and what happens if they do look like that 
 
 我们会想知道，如果发生了这些情况，这会怎么样
-
 
 
 1.09.37-1.09.39
@@ -6231,7 +6163,6 @@ and server two and server three saw command from also term three
 服务器2和3也在term 3中看到了指令
 
 
-
 1.10.08-1.10.11
 
 and the second slot the server one has nothing there at all 
@@ -6243,7 +6174,6 @@ and the second slot the server one has nothing there at all
 and so question for this like the very first question is can this arrive ？could this setup arise and how？
 
 那么像最早的那个第一个问题一样，我所画的这种情况是会出现吗，怎么出现的？
-
 
 
 
@@ -6270,7 +6200,6 @@ he got a command that sent out to everybody. everybody received AppendEntries at
 and then I got a server 3 got a second request from a client 
 
 接着，服务器3得到了来自一个Client端的第二个请求
-
 
 
 1.11.16-1.11.19
@@ -6311,7 +6240,6 @@ So，这种情况是所有情况中最简单的，即日志没有什么不同的
 
 
 
-
 1.11.38-1.11.43
 
 and we know how it could possibly arise
@@ -6327,7 +6255,6 @@ So，如果leader（服务器3）现在挂掉了
 1.11.46-1.11..50
 
  you know the next server they're gonna need to make sure server 1
-
 
 
 1.11.50-1.11.51
@@ -6355,7 +6282,6 @@ or we'll be at an election and some of the leader is chosen
 要知道，这里面会有两件事情必然会发生
 
 
-
 1.11.58-1.12.05
 
 the new leader has got to recognize that this command could have committed 
@@ -6369,7 +6295,6 @@ it's not allowed to throw it away
 我们不允许让它将这些命令给丢掉
 
 
-
 1.12.07-1.12.15
 
 and it needs to make sure server one fills in this blank here with indeed this very same command that everybody else had in that slot
@@ -6379,7 +6304,6 @@ and it needs to make sure server one fills in this blank here with indeed this v
 1.12.15-1.12.17
 
  all right
-
 
 
 
@@ -6432,7 +6356,6 @@ three servers again
 这里有三个服务器
 
 
-
 1.12.39-1.12.47
 
 now I mean a number the slots in the log
@@ -6440,13 +6363,11 @@ now I mean a number the slots in the log
 现在我要给日志中的slot进行标号
 
 
-
 1.12.47-1.12.57
 
  and so we can refer to them got slot 10 11 12 13
 
 So，我们可以使用10,11,12,13这些数字来指代这些slot
-
 
 
 1.12.57-1.13.02
@@ -6469,7 +6390,6 @@ and server 3 has a term command from term 5
 
 
 
-
 01.13.15 - 01.13.24 *************************
 
 so you know before we analyze these to figure out what would happen and what would a server do if it saw this we need to ask could this even occur
@@ -6481,7 +6401,6 @@ So，在我们分析这些信息以找出会发生什么以及如果服务器看
 because sometimes the answer to the question oh jeez what would happen if this configuration arose 
 
 因为有时如果出现这种情况，这会发生什么呢？
-
 
 
 
@@ -6512,8 +6431,6 @@ So，还有人想说吗？
 
 
 
-
-
 01.14.59 - 01.15.02
 
 in brief we know this configuration can arise
@@ -6525,8 +6442,6 @@ in brief we know this configuration can arise
  and so the way we can then get the four and a five here is
 
 So，我们可以让这里出现4和5的方式是
-
-
 
 
 
@@ -6550,13 +6465,11 @@ now for term 4, its elected leader
 服务器2是term 4中所选出来的leader
 
 
-
 01.15.12 - 01.15.16
 
  because a request from a client, it appends it to its own log and crashes
 
 因为它收到了一个来自Client端的请求，它将该请求追加到它自己的日志上，然后崩溃了
-
 
 
 01.15.16 - 01.15.18
@@ -6568,7 +6481,6 @@ So，现在我们就出现有这样的情况
 01.15.19
 
 right
-
 
 
 
@@ -6592,7 +6504,6 @@ and then so now we have to ask whether who could be elected or we have to give b
 
 
 
-
 01.15.30 - 01.15.31
 
 oh gosh what could be elected
@@ -6613,13 +6524,11 @@ the reason why I could be elected is
 
 
 
-
 01:15:35 - 01:15:39
 
  because it only needs request vote responses from majority
 
 因为它只需要收到来自多数派服务器那头的RequestVote响应
-
 
 
 1.15.39-1.15.41
@@ -6660,7 +6569,6 @@ So，你们需要能够去解决这些问题
 
 
 
-
 01.16.04 - 01.16.11
 
 in order to get to the stage of saying yes this could happen and therefore raft must do something sensible as opposed to it cannot happen
@@ -6669,13 +6577,11 @@ in order to get to the stage of saying yes this could happen and therefore raft 
 
 
 
-
 01.16.09 - 01.16.14
 
 because some things can't happen
 
 因为某些事情不会发生，raft也就无须去考虑了
-
 
 
 01.16.17 - 01.16.25
@@ -6709,13 +6615,11 @@ we need to have some sense of what would be an acceptable outcome
 right 
 
 
-
 1.16.47-1.16.50
 
 and just eyeballing this
 
 我们只需盯着这个
-
 
 
 
@@ -6736,7 +6640,6 @@ it could have been committed
 so we cannot throw it away
 
 So，我们没法将它给抛掉
-
 
 
 1.17.01-1.17.04
@@ -6777,7 +6680,6 @@ the command in slot 12
 
 
 
-
 1.17.13-1.17.20  (不知道Raft需要做什么 --> 老师制定一个方案）
 
 so we're entitled we don't know haven't we'll actually do but raft is entitled to drop both of these
@@ -6797,7 +6699,6 @@ this is entitled dropped it's not required to drop either one of them
 此处，raft有权去drop掉这4和5两个命令，但我并没有说drop的是哪一个命令
 
 
-
 1.17.31-1.17.33
 
 but I mean oh it certainly must drop one at least one
@@ -6809,8 +6710,6 @@ but I mean oh it certainly must drop one at least one
  because you have to have identical log contents in the end
 
 因为我们必须让最后的日志内容完全一样
-
-
 
 
 
@@ -6832,7 +6731,6 @@ this could have been committed it
 so one possibility is that
 
 So，其中一种可能是
-
 
 
 1.17.55-1.17.58
@@ -6896,7 +6794,6 @@ and so maybe the replicas didn't execute it either
 So，副本（replica）可能也并不会去执行它
 
 
-
 1.18.24-1.18.28
 
 so it's actually possible that this wasn't committed
@@ -6916,13 +6813,11 @@ it could be legal for raft
 对于raft来说，这可能是合法的
 
 
-
 1.18.36-1.18.39
 
 if raft knew more than it does know
 
 如果raft知道的比它所知道的来得更多
-
 
 
 
@@ -6999,7 +6894,6 @@ because a client knows about it
 因为Client都知道这条条目已经被提交了
 
 
-
 1.19.17-1.19.25
 
 or the possibility the leader never did and yeah we could you know， if we have to assume that it was committed
@@ -7028,9 +6922,4 @@ Well，我们在周四再继续讨论这个吧
 
 
 
-
-
- 
-
-七十  阅举报
-
+七十一  阅举报

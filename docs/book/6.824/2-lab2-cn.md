@@ -124,7 +124,7 @@ Implement Raft leader election and heartbeats (AppendEntries RPCs with no log en
 
 * Follow the paper's Figure 2. At this point you care about sending and receiving RequestVote RPCs, the Rules for Servers that relate to elections, and the State related to leader election,
 
-按照论文中的图2。在这一点上，你关心的是发送和接收RequestVote RPCs，与选举有关的服务器规则，以及与领导选举有关的状态。
+按照论文中的图2。在这一点上，你关心的是发送和接收 RequestVote RPCs ，与选举有关的服务器规则，以及与领导选举有关的状态。
 
 Add the Figure 2 state for leader election to the Raft struct in raft.go. You'll also need to define a struct to hold information about each log entry.
 
@@ -132,7 +132,7 @@ Add the Figure 2 state for leader election to the Raft struct in raft.go. You'll
 
 Fill in the RequestVoteArgs and RequestVoteReply structs. Modify Make() to create a background goroutine that will kick off leader election periodically by sending out RequestVote RPCs when it hasn't heard from another peer for a while. This way a peer will learn who is the leader, if there is already a leader, or become the leader itself. Implement the RequestVote() RPC handler so that servers will vote for one another.
 
-填入RequestVoteArgs和RequestVoteReply结构。修改Make()以创建一个后台goroutine，当它有一段时间没有收到另一个对等体的消息时，它将通过发送RequestVote RPCs定期启动领导者选举。这样，如果已经有了一个领导者，对等体将了解谁是领导者，或者自己成为领导者。实现RequestVote()RPC处理程序，这样服务器就可以互相投票了。
+填入 RequestVoteArgs 和 RequestVoteReply 结构。修改Make()以创建一个后台goroutine，当它有一段时间没有收到另一个对等体的消息时，它将通过发送RequestVote RPCs定期启动领导者选举。这样，如果已经有了一个领导者，对等体将了解谁是领导者，或者自己成为领导者。实现RequestVote()RPC处理程序，这样服务器就可以互相投票了。
 
 To implement heartbeats, define an AppendEntries RPC struct (though you may not need all the arguments yet), and have the leader send them out periodically. Write an AppendEntries RPC handler method that resets the election timeout so that other servers don't step forward as leaders when one has already been elected.
 
