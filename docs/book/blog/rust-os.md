@@ -43,4 +43,3 @@ Multiboot 标准是引导程序的一个标准，GNU GRUB 则是该标准的具�
 
 ## 3. VGA Text Mode
 
-

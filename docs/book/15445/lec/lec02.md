@@ -1,989 +1,288 @@
 ## 02 - Advanced SQL (CMU Databases Sys…
 
-今天课程内容主要是⾼级SQL相关
+例如排序，如果告诉数据库系统具体怎么做的话就需要写一些排序算法，例如冒泡排序。但是对于声明式的语言，例如 SQL ，不需要告诉怎么系统怎么完成，怎么完成由系统本身决定。数据库系统会生成一个最优的查询计划。
 
-关系代数的⽬标是站在一个高级层面去告诉数据库系统计算出我们想要的答案，⽽不是告诉它具体该
-怎么做。例如排序，如果告诉数据库系统具体怎么做的话就需要写一些排序算法，例如冒泡排序。但是对于声明式的语言，例如 SQL ，不需要告诉怎么系统怎么完成，怎么完成由系统本身决定。数据库系统会生成一个最优的查询计划。
+SQL 最初叫 SEQUEL，由IBM所发明，并且作为System R项⽬的⼀部分。本意是结构化英语查询语⾔。
 
-我之所以把SQL读作SEQUEL的部分原因并不是因为我出⽣在1970年代，只是它⼀开始的名字
-的拼写就是SEQUEL
-03:39-03:44 虚⽣花
-Right ,this was invented by IBM, as part of the system R project.
-它是由IBM所发明，并且作为System R项⽬的⼀部分
-03:44-03:47 虚⽣花
-Right, so it stood for the Structured English Query Language.
-它的意思是结构化英语查询语⾔
-03:47-03:52 虚⽣花
-So if you remember from the Ted Codd paper, I said that Ted.Codd was a mathematician.
-如果你记得Ted Codd所发表的论⽂的话，我曾说过他是⼀名数学家
-03:52-04:00 虚⽣花
-Right, he devised that relational algebra and relational model, but he didn't actually
-define the programming language you would use to write queries on it.
-他设计了关系代数以及关系模型，但实际上他并没有定义任何你能够⽤来编写查询语句的编程语
-⾔
-04:00-04:01 虚⽣花
-Right, you can't write queries using relational algebra.
-你没办法使⽤关系代数来编写查询
-04:01-04:07 虚⽣花
-Right, it's sort of you know there's no it's very difficult to write that in the keyboard to
-do that.
-这很难⽤键盘去敲出来
-04:07-04:13 虚⽣花
-He did later define or come up with his own query language called alpha, but that
-was much later in 1970s.
-但在1970年代末期，他才定义了他⾃⼰的查询语⾔Alpha
-04:13-04:18 虚⽣花
-So back then when people said, hey there's a relational model idea we should actually try
-to build a system to do this.
-因此在那时，⼈们表示因为有了关系模型，我们应该试着构建⼀个系统来做这些事情
-04:18-04:23 虚⽣花
-People had to come up with their own language that could implement relational calculus
-or relational algebra.
-⼈们必须拿出他们⾃⼰的语⾔，这些语⾔能够实现关系演算或者关系代数
-04:23-04:26 虚⽣花
-So at IBM they came out with SQL
-因此，IBM他们推出了SQL
-4.26-4.33 虚⽣花
-this is part of the system R project which is a sort of one of the first relational database
-systems that people were trying to build in the 1970s.
-这是System R项⽬的⼀部分，它也是⼈们在1970年代第⼀个尝试构建的关系型数据库系统
-04:34-04:38 虚⽣花
-The other major one was ingres that came out of Berkeley.
-另⼀个主流则是由伯克利所推出的Ingres
-04:38-04:40 虚⽣花
-So you've ever heard of PostgreSQL.
-你们可能已经听说过PostgreSQL
-44
-04:40-04:43 虚⽣花
-Right ,PostgreSQL was invented by the same guy that did ingress.
-PostgreSQL是由开发Ingres的那批⼈所开发的
-04:43-04:46 虚⽣花
-So it's called PostgreSQL as in post ingress the thing that came after ingress.
-它之所以被称为PostgreSQL，是因为它是在Ingres之后所开发出来的
-04:46-04:50
-So the ingres guys had their own language called quel
-开发Ingres的那群⼈有他们⾃⼰的语⾔Quel
-4.50-4.53
-and this was developed by one of my advisers Mike Stormbreaker.
-它是由我的导师Mike Stormbreaker所开发的
-04:53-4.56
-He claims it was much better than SQL
-他声称这要⽐SQL要好得多
-4.56-4.57
-and the IBM guys didn't know what they were doing
-IBM那群⼈根本不知道他们在⼲什么
-4.57-5.00
-of course most people have never heard a quel.
-当然，⼤部分⼈都没有听说过Quel
-05:00-05:04
-Right, I said it didn't actually win IBM won.
+Ted Codd 是一名数学家，他设计了关系代数以及关系模型，但实际上他并没有定义任何能够⽤来编写查询语句的编程语言。在1970年代末期，他才定义了他⾃⼰的查询语⾔Alpha。因此在那时，⼈们表示因为有了关系模型，我们应该试着构建⼀个系统来做这些事情。⼈们必须拿出他们⾃⼰的语⾔，这些语⾔能够实现关系演算或者关系代数，因此，IBM他们推出了SQL。这是 System R 项⽬的⼀部分，它也是⼈们在1970年代第⼀个尝试构建的关系型数据库系统。另⼀个主流则是由伯克利所推出的Ingres，目前的 PostgreSQL 是由开发Ingres的那批⼈所开发的。之所以被称为PostgreSQL，是因为它是在Ingres之后所开发出来的。开发Ingres的那群⼈有他们⾃⼰的语⾔Quel，它是由 Mike Stormbreaker 所开发的，他声称这要⽐SQL要好得多。IBM那群⼈根本不知道他们在⼲什么，当然，⼤部分⼈都没有听说过Quel
+
 我并没有说它赢了IBM
-05:04-05:07
-So back then again it was spelled out as SEQUEL
 在那时候，它的拼写是SEQUEL
-5.07-5.19
-IBM later got sued for, I think you know copyright infringement
-trademark infringement, there was some guy in England that had the term SQL spelt out
-in the full English word for his programming language.
 之后因为英国有个⼈为他的编程语⾔也取名SQL，IBM为此与他产⽣了版权和商标纠纷
-05:19-05:23
-So it is shortened it to be SQL.
 因此，它被简称为SQL
-05:23-05:31
-So what happened was the reason why we use SQL today, because IBM it's not
-back then IBM is and what it is now.
 我们现在使⽤SQL的原因是因为当时IBM的地位和现在的地位完全不同
-52
-05:31-05:35 虚⽣花
-Right, everyone thinks the big tech companies like Microsoft Amazon and Google.
 现在可能每个⼈都觉得微软，亚⻢逊和⾕歌才是⼤型科技公司
-53
-05:35-05:38 虚⽣花
-Back in the 1970s -1980s, IBM was the juggernaut.
 在1970-1980年代，IBM的地位⾄⾼⽆上
-05:38-05:44
-So essentially whatever IBM did or said, this is the way we're gonna do it that ended up
-being the standard.
 因此从本质上来讲，不管IBM说了什么或者做了什么，最终都成为了⾏业标准
-55
-05:44-05:49
-So when IBM first released their first commercial relational database system DB2.
 当IBM⾸先发布了他们第⼀个商⽤关系型数据库DB2时
-56
-05:49-05:54
-So they never actually released system R was just sort of a research prototype
 他们实际上从未放出System R，他们只是放出了研究原型
-5.54-6.00
-but then finally made DB2 or at least that DB2 supported SQL, So that
-essentially became the standard.
 但他们最终做出了DB2，DB2⽀持SQL，因此SQL成为了标准
-06:02-06:08 虚⽣花
-And the reason why Oracle sort of took off and got as big as it is today is, they were
-sort of copying what IBM was doing in the 1970s.
 之所以Oracle起⻜并成为当今巨头的原因是因为他们抄袭了IBM在1970年代时所作的成果
-06:08-06:12 虚⽣花
-In more ways than one we could talk to her that later.
 这其中原因有很多，我们会在之后讨论
-06:12-06:22 虚⽣花
-And they did they had SQL, so when IBM came out with DB2 and had SQL , Oracle was
-right at the right place at the right time said we now supports we know we support
-SQL too.
 当IBM推出了DB2和SQL时，Oracle在正确的时间和正确的地点表示他们⾃⼰同样也⽀持了SQL
-61
-06:22-06:28 虚⽣花
-So it became an ANSI standard in 1986 and became an international standard in 1987
 因此，这在1986年成为ANSI标准，同时在1987年成为国际标准
-6.28-6.31 winston
-and now the short burden just means the Structured Query Language.
 现在简称结构化查询语⾔（SQL）
-62
-06:32-06:38 虚⽣花
-So SQL even though it's from 1970s, it's not a dead language, it's not certainly static
 尽管SQL是1970年代的产物，但它并不是什么没⼈⽤的语⾔，它也不是静态类型语⾔
-6.38-6.42 虚⽣花
-, it's sort of like you know C++ keep new specifications every so often
 就和你知道的C++那样，它⼀直与时俱进
-6.42-6.49 虚⽣花
-it's the same thing in SQL every so often there's a new specification where they add in
-new features and new functionalities to to the basic language.
 对于SQL也是⼀样，⼈们经常为它添加新的特性和新的功能
-06:49-06:53 虚⽣花
-So the latest standard is defined in SQL 2016
 最新的标准是在SQL2016版本时定制的
-6.53-6.58
-and you can see over the years at the add new versions they add new features.
 你可以看到随着时间的推移，开发⼈员会在新的版本中添加新的特性
-06:59-07:06 虚⽣花
-Right, so 2016, they added JSON, Polymorphic tables, they add XML stuff and then
-2003,1999 added Regex and triggers.
 在2016版本中，他们添加了对JSON和多态表的⽀持，2003版本中则添加了对XML的⽀持，在
 1999版本中，则⽀持了正则和触发器
-07:06-07:13
-Typically what happens is there's a standards body that the members are all from the
-major database companies
 通常，这会有⼀个标准，制定这种标准的成员都是来⾃主流数据库公司
-7.13-7.17
-and the major database companies come up with their own proprietary features and
-extensions,
 主流的数据库公司会推出他们⾃⼰专有的功能和扩展
-7.17-7.22
-and then they go in the standards body and push to try to get their version of certain
-functionality as part of the standard.
 然后他们会试着将他们的某些功能纳⼊标准
-7.23-7.29
-Right, so this is although there is a SQL standard， nobody actually follows it to the T.
 这就是为什么虽然有SQL标准，但没⼈去遵守的原因了
-07:28-07:34
-Right, because everyone sort of has their own proprietary things that got invented before
-the standard came out said, this is how you should do things.
-因为在标准出来之前（即该标准指引你应该怎么做），每个公司就已经发明了他们⾃⼰专有的东
-⻄
-07:34-07:39 虚⽣花
-So if you're gonna claim that your database system supports SQL
+因为在标准出来之前（即该标准指引你应该怎么做），每个公司就已经发明了他们⾃⼰专有的东⻄
 因此，如果你声明你的数据库系统⽀持SQL
-7.39-7.43 虚⽣花
-the bare minimum you need to have is actually what is defined in the SQL-92 standard.
 那么，你所需要满⾜的最低要求也得是SQL-92标准
-07:43-07:53 虚⽣花
-So this is what the basic SQL that we know about today select, insert, update, delete,
-create tables, transactions things like that all that's defined in SQL-92.
-这也就是我们如今所熟知的基本SQL，例如select，insert，update，delete，创建表，事务这
-些东⻄都在SQL-92中定义了
-07:53-07:57 虚⽣花
-So again, if someone says their databases system supports SQL, chances are they
-that really mean this.
+这也就是我们如今所熟知的基本SQL，例如select，insert，update，delete，创建表，事务这些东⻄都在SQL-92中定义了
 因此，如果有⼈说他们的数据库系统⽀持SQL，他们所说的其实就是这个意思
-07:57-08:07 虚⽣花
-And then the more advanced databases both an open source and the commercial
-ones, they add a bunch of more features from the newer standards.
 ⽆论是开源的还是商⽤的⾼级数据库系统，它们都添加了很多新标准中的特性
-08:07-08:18
-And then there's this great website here it's a bit dated now, but it's going at its
-some random dude who basically looked at sort of the top four,top five
-database systems.
 这⾥有个很棒的⽹站，上⾯有⼈列出了前四或者前五的数据库系统
-08:18-08:24
-And just look to see how they differ on various SQL features it compares SQL
-functionalities.
 上⾯可以看到不同数据库间SQL特性以及功能的⽐较
-08:24-08:26
-And we'll see this as we go through today
 我们会在今天的课上看到这个
-8.26-8.33
-there'll be some examples where the standard says one thing different database
-systems do other things it's usually MySQL.
-这其中会涉及到⼀些例⼦，⽐如，标准SQL下⼀件事情在不同数据库系统间是怎么做的，通常我
-们看MySQL就可以了
-例如，标准SQL是如何做的，其他的数据库系统⼜是如何处理的，通常我们看MySQL就可以了
-08:33-08:40
-And this is just an even though there's a standard nobody actually follows it exactly.
+这其中会涉及到⼀些例⼦，⽐如，标准SQL下⼀件事情在不同数据库系统间是怎么做的，通常我们看MySQL就可以了。例如，标准SQL是如何做的，其他的数据库系统⼜是如何处理的，通常我们看MySQL就可以了
 尽管有标准实现，但实际上并没有⼈去按照标准去做
-08:40-08:45
-Right,there's no database system that I'm aware of that would claim that they're you
-know certify for SQL:2016.
 据我所知，⽬前没有任何数据库系统通过了SQL 2016标准的认证
-08:45-08:47
-Right,they have bits and pieces of things.
 它们只⽀持了⼀些很零碎的功能
 注：
 DML数据库操作语⾔
 DDL数据库定义语⾔
 DCL数据库控制语⾔
-08:49-08:55 虚⽣花
-So SQL itself technically is not a single language, it's sort of a collection of things.
 从技术层⾯⽽⾔，SQL并不是⼀⻔单⼀语⾔，它是某些东⻄的集合
-08:55-09:00 wisnton
-In a particular, it's a collection of a DML,DDL and DCL commands.
 具体⼀点,它是⼀个DML，DDL和DCL命令的集合。
-09:00-09:11 虚⽣花
-So DML will be would be the Data Maniplulation Language would be the commands, like
-insert,update,delete,selects like the things that actually manipulate the data that you can
-store in your database.
 DML其实就是数据操作语⾔，它是⼀种命令，例如insert、update、delete、select这些命令来
 操作你存在数据库中数据
-09:11-09:17 虚⽣花
-The DDL is the way you create tables actually define schemas to actually store things.
 DDL是⼀种你通过创建schema来存储东⻄的⽅式
 DDL是⼀种你可以通过定义schemas 来创建表存储数据的⽅式
-09:17-09:24 虚⽣花
-And then the DCL is the way you sort of do security authorization to grant you know
-who's allowed to read what data.
 然后是DCL，它是某种关于安全性授权的东⻄，它可以⽤来控制哪些⼈可以读取哪些数据
-09:24-09:31 虚⽣花
-There's a bunch of other things like, how to define views, how to define integrity and
-strange referential constraints.
 当然，这⾥⾯还包含了⼀些其他东⻄，例如如何定义视图，如何定义完整性以及奇怪的参照约束
-09:31-09:34 虚⽣花
-As well as transactions
 当然还有事务相关
-9.34-9.36 虚⽣花
-these are all part of the umbrella of SQL.
 这就是SQL的组成了
-09:36-09:40 虚⽣花
-Right, and within that there's these different categories of commands.
 其中有很多不同种类的命令
-09:40-09:51
-So the one important thing that I want to point out here, and we'll see this
-throughout today's lecture is unlike in relational algebra which is based on set theory
-or sets.
 我想指出⼀件重要的事，这也是我们今天课上的内容，它和关系代数不同，它是基于集合论的某
 种东⻄
-09:51-09:54 虚⽣花
-SQL is actually based on bag algebra.
 SQL实际上是基于bag algebra
-09:54-09:59 虚⽣花
-So the way it sort of thing about this you could have like lists sets or bags.
 你可以把它当成list，set或者bag
-09:59-10:01
-So a list can have duplicates
 在⼀个list中可以有重复元素
-10.01-10.07
-but there's a defined orders, if I push something to my list that's its position in that list.
 但它⾥⾯是有顺序的，如果我将某个元素添加到list上，添加的位置就是它在list中的位置
-10:07-10:09
-A set is unordered
 set中的元素顺序是⽆序的
-10.09-10.13
-meaning the elements don't have a position, but you can't have duplicates
 这意味着元素并没有固定位置，并且你不能有重复元素
-10.13-10.18
-if I try to insert the same thing into a set， it just gets over the old run gets overwritten.
 如果我试着向⼀个set中插⼊相同元素，它就会将原来的元素覆盖掉
-10:18-10:25
-A bag has neither a set position or ordering, but it also allows for duplicates.
 在bag中既没有固定位置也没有顺序，但它允许元素重复
-10:25-10:29
-Right, and we'll see why we've got to do this as we go along
 随着我们的讨论，我们会看到我们为什么必须这样做
-10.29-10.40
-because if we want to actually define order on our elements, or if you want to make
-sure that we don't have duplicates, essentially the database system has to do extra work
-to to provide that for you.
 因为如果我们想让我们的元素有顺序，或者你想保证没有重复元素出现，那么本质上来说，数据
 库必须为我们做⼀些额外⼯作才能提供这种功能
-！！！！！！！！！！
-10:40-10:49
-And so the idea is that only if you explicitly ask the database system to provide you
-ordering and provide you to remove duplicates.
 只有你显式地要求数据库系统为你提供排序以及移除重复元素
 即只有当你明确的告诉数据库系统：为我提供排序，为我删除重复元素
-10:49-10:53 winston
-It won't actually do it and this actually make things be more efficient.
 它做不到这样，实际上是更⾼效处理事情。
 此时它真的做不到，⽽实际上，如果能做到，真的可以让事情处理的更⾼效
-10:54-11:03 Winston
-All right, so the outline for today is we're going to cover Aggregations + Group
-Bys, a bunch of operations on Strings / Dates and Times，then we had to do Output
-control.
 今天的课纲 ，我们要讲 聚合函数 + Group By；处理字符串、⽇期和时间类型；然后还有
-Output control。
-11:03-11:08 Winston
-And then the more complicated things have been Nested Queries,Common
-Table Expressions and window functions.
 接着是更复杂的Nested Queries、Common Table Expressions(CTE)和window functions。
-97
-11:08-11:14
-So for homework one, you'll need to use all of these except for the window functions.
 在作业1中，你会需要⽤到除了window函数以外的所有功能
-98
-11:14-11:16
-All right,it's gonna be doing homework one on SQLite.
 你们会使⽤SQLite来完成作业1
-11:16-11:22 虚⽣花
-And only actually the latest version of SQLite as of last week, just added support for
-window functions
 实际上，在上周放出的SQLite最新版中，它添加了对window函数的⽀持
-11.22-11.24 虚⽣花
-but everything else SQLite should be able to support.
 但对于其他东⻄，SQLite都⽀持
-100
-11:29-11:34 Winston
-Okay all right, so for this we're needs a sample database comprised of three tables.
 我们需要⼀个含有三张表的简单数据库
-101
-11:34-11:37 Winston
-So sort of it's a mock University.
 像这样，它是⼀个虚拟的⼤学（名）。
-11:37-11:41 虚⽣花
-So we're gonna have a student table where students have student IDs, names, logins
-and GPA
 我们会有⼀张student表，上⾯有学⽣的id，name，login以及GPA
-11.41-11.44 虚⽣花
-will have a course table with course cids and name.
 然后有⼀张course表，上⾯有课程id以及name
-11:44-11:46 虚⽣花
-And then we'll have an enrolled table
 接着，我们会有⼀张enrolled表
-11.46-11.54 虚⽣花
-where we have a certain foreign key reference from the student table, and the course
-table and along with the grade that the student got in the class.
 在这张表中我们使⽤student表中的sid作为外键使⽤，⾥⾯有course表中的cid以及学⽣在这⻔
 课中所得的分数
-11:54-11:59
-All right, we'll use this as our running example as we go along.
 我们会将它作为我们讨论的例⼦使⽤
-12:00-12:03 虚⽣花
-All right, so the first thing we talk about our aggregations.
 ⾸先我们要讨论聚合函数
-12:03-12:05 虚⽣花
-Right, and these are pretty simple to understand
 这些很容易去理解
-12.05-12.10 虚⽣花
-it's basically a function that you define in the output list of your select statement
 它基本上就是⼀个函数，它会返回你所select语句执⾏的所得到的结果
-12.10-12.15 虚⽣花
-that's going to take as input multiple tuples a set of tuples
 它将多个tuple作为输⼊
-12.15-12.20 ****************
-and it's gonna compute some kind of aggregation on top of that and produced a single
-result.
 它会在此基础上计算某种聚合并产生单个结果
-12:20-12:25
-Right, so the SQL-92 standard defines AVG(),MIN(),MAX(),SUM() and COUNT().
 在SQL-92标准中定义了AVG()、MIN()、MAX()、SUM() 以及 COUNT()函数
-12:25-12:36
-And again think of this is like in case of count, you're gonna take a bag of tuples as the
-input， and you're gonna count the number of tuples there are and that you're
-a produces a single output that has that that count.
 例如，在COUNT()函数中，你将⼀组tuple作为输⼊，然后你要去数出tuple的个数，接着你将数
 出来的结果作为单个值输出
-12:36-12:49
-Right, it's again so this is what's in the basic standard, the the later version of the
-standard and in other database systems they'll have other things like
-median, mode,standard deviation.
 这只是⼀种基础标准，在之后的标准和其他数据库系统中，它们还提供了例如中位数，取模以及
 标准偏差之类的东⻄
-12:49-12:54
-Right, in the github different aggregates and some of them actually that allow you to find
-your own aggregations as well.
 某些数据库系统也允许你使⽤你⾃⼰的聚合函数
-12:55-12:57 winston
-So let's look an example like this.
 我们来看下这个例⼦。
-12:57-13:05
-Right, so say we want to count the number of students in this student table where the
-login ends with “@CS”.
 假设我们想去数出student表中login字段中以"@cs"结尾的学⽣数量
-113
-13:05-13:08
-I'll cover what like is means later on
 我会在之后介绍LIKE的意思
-13.08-13.09
-but essentially it's just looking for a wild card here.
 但本质上来说，这⾥它是⽤做通配符使⽤
-13:09-13:18 winston
-Right, so the first thing the most important thing to remember about aggregations is
-that the aggregation can only appear in the output list of the select statement.
 ⾸先记住聚合函数最重要的事：聚合函数只能出现在 select ⼦句中作输出列
-13:18-13:24 winston
-Right, so I have it here in the in this it's saying, this is I want to produce at the output, I
-can't have it in these in these other parts here.
 这⾥它（PPT）说，这就是我想要产⽣的输出（结果），输出中不能有其他字段
 我这想在输出部分产⽣（结果），
 还不能有它的其余字段。
-13:24-13:26 winston
-Right, cuz it doesn't really make sense.
 它（其余部分在这）没意义
-13:26-13:32
-Right, because you're computing aggregation after you've sort of applied a filter
-to figure out what tuples actually match your where clause.
 根据 where ⼦句过滤条件找出实际匹配的tuple，之后聚合运算
-13:32-13:39 虚⽣花
-But the same point out here is that in case of count(), again we just want to count the
-number of tuples.
 但同样，在此处的COUNT()例⼦中，我们只想去数出tuple的数量
-13:39-13:43 虚⽣花
-The login field here doesn't actually mean anything.
 这⾥的login字段实际上没有任何意义
-13:43-13:51 虚⽣花
-Right, because we're just counting the number of tuples, it doesn't matter whether you
-know what the login actually is at the point after we do the filtering.
 因为我们只想数出过滤完后的tuple的个数，这与login字段的内容是什么并没有关系
-13:51-13:55
-So we can rewrite this just to have a *(star).
 So，我们可以使⽤⼀个"*"来重写这个
-13:55-14:02
-Right, the star is a special you know special keyword in SQL the basically says all
-attributes for the tuple.
 "*"是SQL中的特殊关键字，它代表了该tuple中的所有属性
-14:02-14:07
-Begin go even further and say we can actually replace the star with a one.
 实际上更进⼀步，我们可以将这个“*"⽤1替换
-14:07-14:12
-Right, count the number of tuples by just adding one every single time.
 即每数⼀个tuple，tuple的数量就加1
-14:12-14:21
-Right, so this is a good example
 因此，这是⼀个好例⼦
-where we have three different queries that all produce or semantically the same to
-produce the same result.
 因为我们有三种不同的查询，但它们都能产⽣语义上相同的结果
-14:21-14:28
-But the database system could choose different flavours or different variations of this, in
-order to derive that answer
 但为了得出答案，数据库系统可以去选择这种查询的不同变体
-14.28-14.30
-and some of them may have different performance differences.
 它们中的某些在性能上可能有不同的差异
-14:30-14:31
-This one's pretty simple
 这种可能相当简单
-14.31-14.35
-so the most differences would be smart to realize,
 我们能很快意识到此处最⼤的差别在哪
-14.35-14.36
-I don't need a copy around the login here,
 我不需要在COUNT中传⼊login
-14.36-14.38
-I can just replace that with a one.
 我可以⽤1去替换此处的login
-14:38-14:39
-Right,most of them will do that.
 ⼤部分数据库系统都会这么做
-14:39-14:42
-But from what complicating things it may not always work.
 但如果遇到复杂的场景，它就不⼀定会⼀直有效
-14:44-14:47
-We actually can combine the aggregate multiple a grits together in a single query.
 实际上，我们可以在单个查询中放⼊多个聚合函数
-14:47-14:54
-So say for this one we want to get the number of students and their average GPA where
-their login ends with “@CS”.
-假设，在这个例⼦中，我们想去得到login字段中以"@cs"结尾的学⽣的数量以及他们的平均
-GPA
-132
-14:54-15:02 虚⽣花
-Right, so now you see I've combined it average GPA and count in my output list for my
-select statement.
+假设，在这个例⼦中，我们想去得到login字段中以"@cs"结尾的学⽣的数量以及他们的平均GPA
 现在你可以看到，我在SELECT语句中将AVG(GPA)和COUNT(sid)都放在了⼀起
-15:02-15:04 winston
-And then it'll produce my my result like that.
 然后它产⽣的结果就像我这⾥展示的这样
-15:04-15:06 winston
-Right, pretty straightforward.
 很简单。
-115
-15:07-15:16
-I can also add the distinct keyword to tell it to only count the distinct elements, or values
-of attributes for my tuples.
-我也可以在SQL语句中加⼊DISTINCT关键字来告诉数据库，让它只去数我tuple中出现的不重复
-的元素，或者是不重复的属性值
-15:16-15:24
-So this is saying count the number of unique students with unique logins from the
-student table where the login ends with “@CS”.
+我也可以在SQL语句中加⼊DISTINCT关键字来告诉数据库，让它只去数我tuple中出现的不重复的元素，或者是不重复的属性值
 即计算在Student表中，login字段中以"@cs"结尾的不重复的学⽣个数
-15:24-15:28 虚⽣花
-Right, and so I had the distinct side of account.
 这样，我就得到了不重复的账号个数
-15:28-15:30 虚⽣花
-Now this one's sort of nonsensical to some way,
 某种意义上来说，这可能有点荒谬
-15.30-15.38 虚⽣花
-because presumably no two students can have the same login, you know login account
-otherwise you'd have problems.
 因为，想必不存在有两个学⽣的登录账户是相同的情况，不然这就出问题了
-15:38-15:46 虚⽣花
-But in other cases you know, you can apply the same kind of thing for other scenarios
-and it would work the way you wanted to work.
 但在其他例⼦中，你可以将这种运⽤在其他相同的场景之中，并且它也会按照你想的那样去做
-15:46-15:50
-Right, in this case here we produce the same result.
 在这个例⼦中，我们产⽣了相同的结果
-15:50-15.56 虚⽣花
-So the one thing that now you may want to try to start doing is now that I'm start doing
-aggregations
 现在我要开始计算聚合
-15.56-16.02 虚⽣花
-I want to get additional information about my data, outside of just what I'm computing
-in my aggregate.
 除了我现在计算的聚合以外，我还想从我的数据中得到额外的信息
-16:03-16:13 虚⽣花
-Right, so say that I want to get the average GPA of the students that are enrolled in the
-course, and I want to know what that e.cid was.
 假设，我想知道选这⻔课学⽣的平均GPA以及这⻔课的cid
-16:13-16:19 虚⽣花
-Right, so in this case here I've now added the e.cid to my output list outside of
-my aggregation.
 因此，在这个例⼦中，我将e.cid加到了聚合之外的输出列表中
-16:19-16:23 winston
-Right, did you take a guess what would happen here.
 你们猜下这个SQL执⾏结果
-16:28-16:29 winston
-Would this work or not ?
 这个SQL 能不能运⾏？
-16:32-16:36 winston
-Raise your hand, you think would work.
-Raise your hand, if you think it wouldn't work.
 举下⼿，你认为这能运⾏。
 举下⼿，如果你认为这不能运⾏。
-127
-16:37-16:38 winston
-See of you, why?
 来，就你，为什么？
-128
-16:43-16:52
-（Judy 说的）
-16:52-17:00 虚⽣花
-Correct, yes, so he said is there's not a single e.cid for all my tuples that are competing
-my average on.
 没错，他说的对，在我⽤来计算平均GPA的所有tuple中，它们的cid并不是⼀样的
-129
-17:00-17:05
-Right, it's all the students are taking all the different classes
 所有的学⽣上的课都是不同的
-what e.cid to actually put is the output.
 那么在输出结果中的e.cid实际上是什么呢？
-17:05-17:14 虚⽣花
-Right, it's the SQL standard say, this is actually undefined and in most systems
-you actually will get an error with this.
 按照SQL的标准来讲，这实际上并没有被定义，在⼤部分的系统中你得到关于这个的报错
-17:14-17:16 虚⽣花
-We can actually test this.
 我们其实可以测试⼀下
-17:16-17:21 虚⽣花
-Right, so in this ,here we go.
-开始
-17:22-17:24 winston
-I have three three terminal setup.
 我开了3个终端
-17:24-17:33 winston
-All right, so this is running a machine back in my office, I have three panels, the top one
-is PostgreSQL, the bottom one or the middle one is MySQl, and the bottom one is SQLite.
 这是在我办公室运⾏的机器，
 我有三个⾯板，
 上⾯的是PostgreSQL，
 中间的是MySQL，
 然后是SQLite。
-17:35-17:39
-It's as much easier for you to type from this machine here so I can log into that.
 对于你们来说，⽤这台机器进⾏输⼊要更简单，我可以在这⾥登录
-17:42-17:48
-Right, okay, so the query was we wanted to select, where was it.
 此处我们想进⾏select操作
-17:50-17:53
-Just get the average GPA of students enrolled in each course.
 找到每⻔课程注册学⽣的平均GPA
-17:53-18:14
-Right, so ‘SELECT AVG(s.gpa), e.cid FROM enrolled AS e, student AS s WHERE e.sid =
-s.sid;
-SELECT AVG(s.gpa), e.cid FROM enrolled AS e, student AS s WHERE e.sid = s.sid;
-139
-18:14-18:23 winston
-Right,so PostgreSQL says, you can't do this because as he said the e.cid and
-I'm highlighting here,so you can see it.
 PostgreSQL说，你不能这样做，因为它在e.cid这有标记，你们看。
-18:23-18:27 虚⽣花
-So the cid is not defined it's not part of the aggregation.
 此处的cid并没有被定义，它并不是聚合的⼀部分
-18:27-18:30 虚⽣花
-Right, so it doesn't know which cid you actually want.
 因此，PostgreSQL并不知道你实际想要的是哪个cid
-18:30-18:35 winston
-So now if we go down and try this in MySQL.
 现在我们来试⼀下MySQL
-18:40-18:41 winston
-MySQL gave us an answer.
 MySQL 给了我们⼀个结果。
-144
-18:43-18:46 winston
-Right, but is that correct?
 但是正确的吗？
-145
-18:46-18:51 winston
-No right, because what cid do the pick I picked a random one.
 不对，因为在cid中给我随便挑了个。
-146
-18:52-18:56 winston
-Right,and then now we can try in SQLite same thing.
 现在我们同样来试SQLite
-18:57-19:00 （winston）
-SQLite gave us a different cid.
 SQLite 给了我们不同的cid
-19:00-19:04 虚⽣花
-So you see they both competed the correct average,but they chose different cid.
 你可以看到MySQL和SQLite都算出了正确的平均值，但它们选择了不同的cid进⾏计算
-19:05-19:10
-All right, and just because I know that MySQL guys watch these videos and complain.
 All right，我知道看视频的⼩伙伴在这⾥会对MySQL有疑惑
-19:12-19:19winston
-I will say that so this is running MySQL in and，so MySQL traditionally allowed you to do
-loosey goosey things like this.
 我要说MySQL运⾏时，MySQL原则上允许你⼲不合规的事
-19:19-19:26 winston
-Right, so this would be running it what they would call it traditional mode, but you can
-set the SQL mode to be more strict.
 他们把这种执⾏称为严格模式，但你可以设置SQL mode让它更严格。
 在MySQL中，这种运⾏模式我们称之为传统模式，但你也可以将SQL的模式设置的更为严格
 19:27-19:30 虚⽣花
-So now if I run that same query,it throws the same error that PostgreSQL did.
 现在，如果我执⾏相同的查询，它会报出和PostgreSQL同样的错误
-19:30-19:37 虚⽣花
-So by default the least MySQL 5.7 will now throw errors in older versions they didn't do
-that .
 默认情况下，MySQL 5.7及以上版本会报错，然⽽⽼版本的MySQL并不会报错
-19:40-19:45 虚⽣花
-OK,So a way to fix this is to do GROUP BY.
 修复这个问题的⼀个⽅法就是使⽤GROUP BY
-19:45-19:58
-So with GROUP BY I what's gonna happen is, now we're gonna define how we want
-to essentially buck it together ,the tuples in our output based on one attribute.
 GROUP BY所做的就是，基于某个属性将我们想要的tuple放在⼀起，即物以类聚
-19:58-20:02
-And then now we can then compute the aggregation on the tuples in each bucket.
 接着，现在我们就可以对每个bucket中的tuple进⾏聚合计算
-158
-20:03-20:07
-Right so again, what I wanted to do was get the AVG(s.GPA) per course
 我现在想做的就是得到每⻔课的平均分
-20.07-20.11 winston
-I add now in my group by clause the course ID.
 我现在把课程ID加在group by⼦句中
-
-02-02
-02-02
 ⽂件超过20M，有上传限制。这⾥拆成2个10min 的
-20:13-20:14 虚⽣花
-What will happen is when I first execute the query.
 当我⾸先执⾏这个查询时会发⽣什么呢
-20:14-20:18 winston
-This is essentially what I would see after the join.
 实际上我会看到（e.cid这个列）加在（表）后⾯
-20:18-20:25
-But now with the group by clause, I'll combine together the the tuples based on the
-course ID.
 group by⼦句是将 tuples 与课程ID合并在⼀起
 通过这个group by字句，我将e.cid与基于课程ID的tuple合并在⼀起
-4
-20:25-20:28
-And then for each of these now I'll compute my aggregate.
 然后我会对每组进⾏平均GPA计算
-20:29-20:32 虚⽣花
-Right, and now I can group them by course ID
 现在，可以根据课程id对它们进⾏分组
-20.32-20.36 虚⽣花
-and that corresponds to the buckets are generated from before.
 并且分组操作针对的是之前⽣成的bucket
-20:36-20:42 winston
-Right, so we have to use group by if we want to extract information about the
-aggregations we're computing .
 如果我们想在聚合函数中提取信息,就必须使⽤group by 运算。
-7
-20:42-20:51 winston
-Right, and so just like before any time we have a attribute that we won't appear in our
-output select clause, it has to appear in the group by.
 就像刚才的属性，我们不能将它(e.cid)放到select⼦句做输出（time --> 18:30），需要将它放
 在group by中才允许。
-8
-20:51-20:55 winston
-So here the student name we're trying to throw that in in our output Clause.
 我们试⼀下把s.name放到output部分中。
-9
-20:55-20:56 winston
-It won't work.
 它不能运⾏
-10
-20:59-21:00 winston
-Because it has to be in our group by Clause.
 因为它（s.name）必须放在 group by⼦句中。
-11
-21:00-21:04
-Now this one is sorted to get nonsensical, it's technically correct SQL it produced a
-result.
 这种写法确实很荒谬，从技术⻆度⽽⾔，确实是正确的SQL，它能产⽣结果
-12
-21:09-21:06
-But from a human standpoint we know doesn't mean anything,
 但从⼈的⻆度⽽⾔，我们并不明⽩这是什么意思，
-21:06-21:12 winston
-good well like what does it mean to group by course ID. And then the student name to
-compute the AVG(s.GPA).
 这⾥SQL的意思是先根据课程id进⾏分组，然后根据学⽣姓名计算平均GPA
-14
-21:12-21:15 winston
-Right, the student's GPA is gonna be their GPA.
 得到学⽣的GPA就是他们的GPA
-15
-21:17-21:25 winston
-Okay, so now you may think，alright well maybe I want to do them with some more some
-additional filtering all my aggregations.
 现在你可能会想：我要针对我的聚合结果来做⼀些过滤
-16
-21:25-21:30 winston
-So that I don't look at,you know, I don't produce every single result as part of the output.
-不⽤想,
 我不会在输出部分列出每个唯⼀结果。
 你知道，我不会将每个结果都作为输出的⼀部分
-17
-21:30-21:37 winston
-So you may think that you out want to put it use the aggregations in your where clause.
 你可能会这么想：把要⽤的聚合函数结果放在WHERE⼦句中。
-21:37-21:39
-So here now, I'm now I'm computing average GPA,
 现在，我使⽤这条语句来计算平均GPA
-21:39-21:47 winston
-But I'm added in my where clause,something that says filter out anything where the GPA
-is is not, you know greater than 3.9.
 但是我放在了where⼦句中，上⾯写着过滤掉不符合的GPA，就是要⼤于3.9的（GPA）
-20
-21:47-21:50
-This is look only trying to look at the courses with avg_GPA is greater than 3.9.
 这部分的意思就是找出avg_GPA⼤于3.9的课程
-21:50-
-Right, so this doesn't work,
 这并不奏效
--21.58
-because we can't access anything in our aggregations in our where clause
 因为我们⽆法访问where⼦句中聚合部分的任何东⻄
-21.58-22.00
-because we don't have them yet in our where clause.
 因为在我们的where⼦句执⾏时它们并不存在
-22
-22:00-22:06
-Right, so again the way to think about this is the where clause is filtering tuples as we
-go along.
 因此，where⼦句的作⽤是⽤来过滤我们所看到的tuple
-22:06-22:10
-And after we do our filtering, then we can actually then computer aggregation.
 当我们过滤完，然后我们就可以进⾏聚合计算
-22:10-22:17
-So we can't compute we can't use an aggregation to filter tuples,
 因此，我们⽆法在where字句中使⽤聚合函数结果去过滤tuple
-22.17-22.17 虚⽣花
-because we haven't computed the aggregation yet.
 因为我们还没有进⾏任何聚合计算
-22:17-22:22 虚⽣花
-Right, so the way to get around this is to use the having clause.
 因此，解决这个问题的⽅法就是使⽤HAVING⼦句
-22:22-22:27
-But now you can reference anything in your output list.
 现在，你就可以从你的输出列表中引⽤它⾥⾯的任何东⻄了
-22:27-22:31
-So I've taken my average GPA, and I've aliased it to AVG_GPA,
 此处，我把avg_GPA作为AVG(s.gpa)的别名
-22.31-22.34
-and I can publish that down on here
 然后我就可以在HAVING⼦句中引⽤它
-22.34-22.36
-and this will produce the answer that I want.
 这就会⽣成我想要的结果
-22:36-22:41 虚⽣花
-Right,computes the aggregation is just like before, and then it applies additional filtering
-on it.
 这会和之前计算聚合⼀样，然后此处它会对结果额外做⼀次过滤
-22:41-22:52 虚⽣花
-So now, not in this example but there's other examples where you can do sort of certain
-optimizations in the system based on what you know is in your having clause.
 虽然并没在这个例⼦中出现，但是其他例⼦中会出现这种情况，你可以根据HAVING⼦句中的你
 所知道的东⻄来在系统中进⾏某些优化
-22:52-22.54
-Right again, this is the great thing about declarative language
 这就是声明性语⾔的优势
-22.54-23.00
-you know everything all ahead of time what the programmer the person wants in their
-answer.
 即你可以提前知道这⼀切，这也是程序员所想要的答案
 通过这些，你可以提前知道，所得结果中包含了程序员想要的⼀切
-23:00-23:09
-So you can use hints about what you knows could come later in the query plan to help
-you do certain refinements or reduce the amount of work you have to do as you run the
-query.
 你可以使⽤提示的查询计划，来帮助你改进或减少某些运⾏查询的⼯作量。
-23:09-23:20 winston
-So instead of using AVG_GPA say, I wanted to do a count where the number of tuples
-are less than some, you know first each group less than some value .
 在AVG_GPA这，我想给tuples计数，找出⼩于某值的组。
 我想统计⼩于某个值的⼀些集合的数量（通过GROUP BY来做）
-23:20-23:24
-So as I'm going along as I'm computing my aggregate.
 随着我的聚合函数计算的进⾏
-23:24-23:29
-If I then recognize that, oh my having Clause says, filter anything less than ten tuples
 然后，我意识到我需要的tuple数量不超过10个，我要通过我的HAVING⼦句来进⾏滤掉
 我的HAVING⼦句表示要过滤掉任何⼩于10的tuple
-23:29-23:32
-If not if I not hit tuple number eleven for a group
 那么我在分组中留下累计到11的tuple（没听清单词）
 那么我不会让第11个Tuple存在于这个组中
-23.32
-I know that I never need to count anything else for that for that tuples that come
-later,because it'll never pass that having Clause .
 我知道，最后⼀部分计数的tuple没⽤，因为它没传到having⼦句中（知秋注：数量够了就⽆需
 要再接收判断了）
-36
-23:40-23:44 winston
-So I can just throw away those tuples as I go along because it's wasted work.
 So 我可以去掉⼀些tuple，因为它做⽆⽤功。
-37
-23:44-23:49 winston
-Right, if you're writing this in a procedural language like Python.
 就像你⽤Python程序语⾔这样编写
 Right，你也可以⽤诸如Python这样的程序语⾔来实现这些 （知秋注：你查出来结果后，⾃⼰来
 做过滤等操作）
-38
-23:49-23:53 winston
-All right, well you had to write these steps, but it's you know by by yourself.
 All right，你不得不去写这些步骤，但你⾃⼰要懂其中的内在逻辑。
 你懂得。
-39
-23:53-23:57 winston
-The you know the Database System is not going to know what's gonna come later on,
-because it can't peek ahead.
 你要知道数据库是不知道之后要做什么的（知秋注：你得告诉它），因为它不能预知。
-40
-23:57-23:59 winston
-Right, but in a declarative language like SQL we can do that.
 但在SQL这种声明性语⾔中，我们可以做到这⼀点。（机翻）
 Right，但我们可以通过像SQL 这样的声明性语⾔来做到这⼀点
-###################################################################
-41
-24:02-24:05 虚⽣花
-So the next thing we want to talk about is how to handle strings.
 我们接下来想谈论的是如何处理字符串
-24:05-24:15
-So this is a table that sort of summarize the different variations of how strings are
-handled in different database systems.
 该表总结了在不同数据库系统中字符串处理⽅式的异同
-43
-24:15-24:23
-So the the SQL standard specced says that,all strings like some varchars chars text
-fields.
 SQL标准规范有说，所有的字符串，例如：varchar，char和text field
-44
-24:23-24:29
-They have to be case sensitive,and the way you declare them is with single quotes.
 并且它们必须区分⼤⼩写，并且使⽤单引号来进⾏声明
-45
-24:29-24:31
-And most systems follow this.
 ⼤多数数据库系统都遵循这⼀点
-24:31-24:35 winston
-Right, the red herrings of the oddballs are both MySQL and SQLite.
 MySQL和 SQLite 会⽤古怪的⽅式避开。
 MySQL和 SQLite 实现的⽅式就很奇特. (拿不准)
 对此，MySQL和SQLite的处理⽅式有点古怪
-47
-24:40-24:44 winston
-So in SQLite the strings are sensitive, but you can have both single and double double
-quotes-to mark them.
 SQLite 中字符串是⼤⼩写敏感的，但你可以⽤单双引号标记他们。
-48
-24:44-24:50 winston
-In MySQL it's case insensitive,and you can use either single or double quotes.
 MySQL中是不区分⼤⼩写的，你可以使⽤单双引号
-49
-24:50-24:57
-Now my problem is that when I started using database systems back in like 2000, I was
-using MySQL 3.
 我在2000年的时候，当时使⽤数据库系统有遇到过这⽅⾯问题，当时⽤的是MySQL 3（注：
 2000 年MySQL 3.23 版本发布）
-50
-24:57-25:09 winston
-And it's like, you know ingrained my memory to just use double quotes, because that's
-what we use back then, so I'm always had to correct myself every time I switch over
-another database system to go always go back and use single quotes.
 使⽤双引号根深蒂固在我的记忆中，
 我每次都在纠正⾃⼰，切换数据库时随时回来改⽤单引号。
 你知道，使⽤双引号这种⽅式已经在我脑海⾥根深蒂固了，因为这是我过去养成的习惯。所以，
 每次在我切换到另⼀个数据库系统时我时常要修正我⾃⼰，使⽤单引号。
-25:09-25:17
-MySQL again has the mode you can say to follow the stand it'll get better, and they then
-enforce the single quote requirement.
 MySQL现在已经有⽀持标准模式，即满⾜我们这种强迫症患者的需求，即必须使⽤单引号
-25:17-25:19 winston
-But I think by default you don't get that.
 但在默认情况不⾏。
 但在默认情况下，你就不需要考虑这些了
-53
-25:19-25:24 winston
-Right, so in the SQL standards say you want to take the name.
 依据SQL标准，我想取出⼀个name
-54
-25:24-25:31 winston
-You want to take the name of KaNyE, and have it matched with KaNyE with, you know
-mixed case.
 我想匹配并取出⼀个叫 ‘KaNyE’ 的name，可以看到是⼤⼩写混合的
 你看⼤⼩写混合的。
-55
-25:31-25:38
-in the SQL standard you had the upper case using the upper, you know the upper
-function to make this match work.
 在SQL 标准中，使⽤upper 转化成⼤写字⺟， 再通过 upper函数来匹配。
 在SQL 标准中，使⽤upper函数 转化成⼤写字⺟， 再匹配。
 在SQL标准下，你不得不使⽤upper函数进⾏⼤写转换，来做这项匹配⼯作
-56
-25:38-25:40
-And MySQL you don't have to do that.
 在MySQL中不⽤这么做
-57
-25:40-25:43 winston
-Right, because all all the strings are matching or case insensitive.
 因为所有的字符串匹配不区分⼤⼩写。
-58
-25:43-25:51
-Now, I showed this before how to do like clause, but I think it's a line you do the string
-matching.
 之前展示过 like ⼦句，但它不适⽤匹配第⼀个字符
 我们来看之前展示过的 like ⼦句，你可以通过这⼀⾏来进⾏字符串匹配
-59
-25:51-25:59
-All right, so like is basically doing, you know trying to match some wildcard in your string
-with another string.
 基本上是， 试着⽤你的百搭字符串匹配其他字符串。
 基本上这个like会做什么呢，你知道，他会尝试去匹配通配符所能匹配的字符串
-60
-25:59-26:05
-So for whatever reason instead of using star like most other things they use the print a
-%.
 不论你是什么字符都⽤ * 号代表，⽽这⾥（数据库）就打印⼀个 %
 出于某种原因，这⾥（数据库）使⽤⼀个%来代替我们常⽤ * 号所表达的意思
-61
-26:05-26:13
-So ‘%’ means any one or more strings, and then the underscore means exactly match
-one character.
 所以这⾥ % 的意思是指⼀个或多个字符，同样 _ 的意思是匹配⼀个字符。
-62
-26:13- 26:21
-All right, so say I want to get all the course or the all the course IDs from the enrolled
 table that start with 15-445,15-721,
 All right, 我想从 enrolled 表中取出所有课程ID为15-445和15-721的记录.
 注：表格是根据ppt做的，详情请看本⽂件夹内《02节课所⽤到的表》

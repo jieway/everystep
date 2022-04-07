@@ -5,162 +5,11 @@
 3. 阅读：[Raft一致性算法论文](https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md)
 4. 
 
-## 一些总结
-
-1. 什么是复制状态机？https://zhuanlan.zhihu.com/p/356486304
-
-分布式存储系统的难点是什么？
-
-问题：如何高性能的利用数百台机器资源进而完成大量的工作？
-
-首先进行**分片**，也就是将数据分割到大量的服务器上。因为有很多机器，所以可能会发生故障，所以需要**容错**。解决容错的方法是维护**副本**，但是副本又导致了一致性的问题。为了保证一致性就需要降低性能，反之提供性能就降低了一致性。
-
-
-
-1. Raft 论文总结
-
-一致性算法实现了将一组机器当成一个整体的功能，即使其中某些机器出现故障这个整体依旧能够正常运行。
-
-最初 Paxos 算法统治者一致性算法这一领域，但是这个算法难以理解，需要做很大的修改才能在实际中应用。
-
-而 Raft 算法设计时参考了这一点，比 Paxos 算法更容易理解并且能更清楚的知道它为什么能工作。
-
-Raft 将算法分为了领导人选举，日志复制和安全三个模块并减少了状态机的状态（相对于 Paxos，Raft 减少了非确定性和服务器互相处于非一致性的方式）。
-
-Raft 的特性：
-
-1. 强领导人：和其他一致性算法相比，Raft 使用一种更强的领导能力形式。比如，日志条目只从领导人发送给其他的服务器。这种方式简化了对复制日志的管理并且使得 Raft 算法更加易于理解。
-2. 领导选举：Raft 算法使用一个随机计时器来选举领导人。这种方式只是在任何一致性算法都必须实现的心跳机制上增加了一点机制。在解决冲突的时候会更加简单快捷。
-3. 成员关系调整：Raft 使用一种共同一致的方法来处理集群成员变换的问题，在这种方法下，处于调整过程中的两种不同的配置集群中大多数机器会有重叠，这就使得集群在成员变换的时候依然可以继续工作。
-
-什么是复制状态机？
-
-Paxos 有两个明显的缺点。第一个缺点是 Paxos 算法特别的难以理解，不透明。Paxos算法的第二个问题就是它没有提供一个足够好的用来构建一个现实系统的基础。
-
-Paxos 算法在理论上被证明是正确可行的，但是现实的系统和 Paxos 差别是如此的大，以至于这些证明没有什么太大的价值。
-
-
-Google Chubby:在Paxos算法描述和实现现实系统中间有着巨大的鸿沟。最终的系统建立在一种没有经过证明的算法之上。
-
-Raft : 可理解性，直观认识，减少状态的数量来简化需要考虑的状态空间
-
-
-Log 是 Leader 用来对操作排序的一种手段。所有副本以相同的顺序执行相同的操作。
-
-Follower 收到操作后并不执行而是存在本地，然后将操作发送给 Leader ，直到收到 Leader 的 commit 号之后才会执行。
-
-Leader 需要在本地复制一份客户端请求的副本，一旦 Follower 由于网络原因或者其他原因短时间离线了或者丢了一些消息，Leader 能够向 Follower 重传丢失的 Log 消息。
-
-所有节点保存 log 的另一个原因是帮助服务器重启恢复。服务器重启后需要读取 log 内容，所有此前 Raft 节点需要将 log 写入磁盘中。但是此时该节点并不知道当前 log 的执行位置，所以不会对 Log 做任何操作。
-
-如果 Leader 处理速度远大于 Follower ，那么会导致 Follower 堆积大量 log 进而导致内存被填满。解决方案是 Leader 和 Follower 之间进行通信，Leader 告诉 Follower 目前执行到了哪一步进而调节速度。
-
-Leader 出现故障后进行会重启，然后选举 Leader 。选举出来的 Leader 首先会确认当前 log 执行到哪一步了，然后确认一个过半服务器都认可的 log 执行点。
-
-接口：
-
-Start函数：客户端向 KV 层发送一个请求，KV 层将请求转发给 Raft 层，而 Raft 层则将请求存放在 log 中的某处，当 log 被 commited 时会告诉 kv 层。
-
-applyCh 的 channel： 随着时间的推移，Raft 层会通知 kv 层，告诉此前被 commited 的 log 。此处被并非是最近的一次 log 可能中间夹杂着几百条。
-
-一般来说不同副本的 log 的末尾是不相同的。例如 Leader 向 Follower 发送日志到一半故障了，有些 Follower 收到了而有些 Follower 没收到所以日志不同。但对于 Raft 来说，Raft会最终强制不同副本的Log保持一致，虽然短暂的不一致但是最终都将一致。
-
-* 为什么Raft系统会有个Leader，为什么我们需要一个Leader？
-
-不用 Leader 也是可以的，例如 Paxos 。但是在不出故障的前提下有 Leader 会使整个系统更加高效，例如一个请求通过一轮消息就可以获得过半的服务器认可，但是无 Leader 首先需要一轮消息来确认一个临时 Leader 然后通过第二轮消息来确认请求。所以一个 Leader 提升了两倍的性能。此外一个 Leader 可以更好的理解 Raft 系统的工作流程。
-
-在整个系统中可能有多个 Leader 通过任期号 term number 来区分，每一个任期内只有一个 Leader ，也就是要么没有要么只有一个 Leader 。
-
-* 如何选举 Leader ？
-
-有一个定时器，在这段时间内如果一直没有收到当前 Leader 的消息会认为 Leader 已经下线进而触发选举。
-
-* 选举流程？
-
-增加任期号，开启一个新的周期。当前服务器向剩余 N - 1 个服务器发送请求投票的 RPC ，N 是服务器总数。Raft 中规定自己会投给自己。
-
-在一个任期内每一个节点只会对一个候选人投一次票，所以不会出现两个候选人获得过半的选票。过半的原则导致了只能有一个胜出的候选人。如果超过一半的服务器故障那么永远也无法选出一个 Leader 。
-
-一旦服务器赢得选举会立刻向其他节点发送一条AppendEntries消息给其他所有的服务器。Raft 规定只有 Leader 才能发送 AppendEntries ，进而隐晦的表明自己就是 Leader 。
-
-* 什么时候进行选举？
-
-Leader 出现故障一定会有选举，但是 Leader 没有故障也有可能存在选举。例如网络很慢导致丢失了几个心跳进而导致几个选举定时器超时开始了新的选举，但是此时 Leader 还在健康运行并认为自己的还是 Leader 。
-
-> 例如，当出现网络分区时，旧Leader始终在一个小的分区中运行，而较大的分区会进行新的选举，最终成功选出一个新的Leader。这一切，旧的Leader完全不知道。所以我们也需要关心，在不知道有新的选举时，旧的Leader会有什么样的行为？
-
-在两个网络分区中，一个分区有着过半的服务器，另一个分区内服务器没有过半。而在没有过半的分区中存在一个旧 Leader ，但是过半的分区中选出了新的 Leader ，此时旧 Leader 会出现两个问题：
-
-1. 客户端向旧 Leader 发送请求，但是旧 Leader 因为在没有过半的分区内所以凑不够一定数量的投票进而导致无法 commite 也就是永远无法响应客户端。
-2. 有可能旧 Leader 向一部分 Follow 发送完 AppendEntries 就故障了。
-
-* 选举定时器
-
-Leader 会定时的向 Follow 发送 AppendEntries 消息，Follow 收到消息后会重置所有 Raft 节点的选举定时器。
-
-* 选举失败
-
-如果大面积网络故障，超过半数的节点无法参与选举那么会导致选举失败，此时什么事情都不会发生。
-
-候选人同时参加竞选也会导致选举失败，也就是所有的分割选票(Split Vote)。例如网络中的节点同时超时节点变为候选人，而所有节点都投给了自己无法选出 Leader ，如果下次还是同时发生那么状态就会持续下去。
-
-* 分割选票
-
-Raft 无法避免分割选票，但是可以降低发生的概率。将选举定时器随机选择一个超时时间即可。
-
-例如 Leader 故障后，Follow 在同一时刻重置了计时器，而此时定时器选取了不同的超时时间。因为超时时间存在先后所以提前到达超时时间的节点会率先发起投票如果获得超半数的选票那么该节点就可成为新的 Leader 。
-
-* 为了分割选票对超时时间做的处理
-
-其中超时时间不能小于 Leader 的心跳间隔，因为一旦小于这个间隔，存在没有正常收到心跳但是却触发了选举。
-
-超时时间的上限影响了系统能多快从故障中恢复。因为这段时间内旧 Leader 故障系统实际上是瘫痪的，而客户端的请求则被丢弃，所以上限越长也就导致恢复时间越长。
-
-此外两个节点之间的超时时间差也要足够长，确保第一个开始选举的点能够完成一轮选取，也就是需要大于发生一条 RPC  往返所需的时间。
-
-在 lab2 中需要在几秒内搞定如果不行就会报错，实际上这个限制并不严格。
-
-每次节点重置自己的选举定时器时都会随机重置一个时间，而非第一次重置一次后续一直使用，因为这也是有可能导致存在分割选票的情况。
-
-* 旧 Leader 故障后，新 Leader 如何确保整理不一致的 log ？
-
-正常情况下 Leader 告诉 Follow 发生的 log 的内容，而 Follow 全盘接收并添加到本地的 log 中。
-
-
-## Coding 
-
-检测代码正确性：
-
-    $ cd src/raft
-    $ go test
-
-实现下面的接口，调用 Make(peers,me,...) 来创建一个 Raft server 。
-peers 参数是一个 Raft server（包括这个）的网络标识符数组，用于 RPC 。
-me 参数是该对等体在对等体数组中的索引。
-
-Start(command) 要求Raft开始启动，将该命令附加到复制的日志中。Start()应立即返回，而不需要等待日志追加完成。该服务希望你的实现为每个新提交的日志条目发送一个 ApplyMsg 到 Make() 的 applyCh 通道参数。
-
-    // create a new Raft server instance:
-    // 创建一个新的Raft服务器实例。
-    rf := Make(peers, me, persister, applyCh)
-
-    // start agreement on a new log entry:
-    // 启动在一个新的日志条目的协议。
-    rf.Start(command interface{}) (index, term, isleader)
-
-    // ask a Raft for its current term, and whether it thinks it is leader
-    // 询问一个 Raft 的当前任期，以及它是否认为自己是领导者。
-    rf.GetState() (term, isLeader)
-
-    // each time a new entry is committed to the log, each Raft peer
-    // should send an ApplyMsg to the service (or tester).
-    // 每当一个新条目被提交到日志中时，每个 Raft 对等体
-    // 应该向服务（或测试者）发送一个ApplyMsg。
-    type ApplyMsg
-
 ## Part 2A: leader election (moderate)
 
-这部分是实现领导者选举和心跳。首先使用 `go test -run 2A` 来检测这部分代码的正确性。直接运行的话会出现如下内容。因为没有实现相应功能，所以会失败。
+这部分是实现领导者**选举**和**心跳**。使用 `go test -run 2A` 来检测这部分代码的正确性。
+
+直接运行的话会出现如下内容。因为没有实现相应功能，所以会失败。
 
     $ go test -run 2A
     Test (2A): initial election ...
@@ -177,11 +26,217 @@ Start(command) 要求Raft开始启动，将该命令附加到复制的日志中�
     FAIL    6.824/raft      15.126s
 
 
-1. 参考论文的 Figure 2 补全结构体。定义一个结构来保存每个日志条目的信息。
+此外还要关注，如何收发 RequestVote RPCs ，与选举有关的规则，以及与领导选举有关的状态。
 
-日志的结构体怎么写？
+1. 在`raft.go`中的Raft结构中添加图2中领导者选举的状态。
+
+* 当前节点的状态(Follower/Candidate/Leader)
+* 服务器已知最新的任期（在服务器首次启动时初始化为0，单调递增）
+* 当前任期内收到选票的 candidateId，如果没有投给任何候选人则为空。
+* 存放日志。
+* 上次收到心跳的时间。 
+* 下次选举超时的时间。
+
+节点的状态分为三种类型：Follower，Candidate，Leader 。下面是三种状态需要负责的事情。
+
+* Leader：处理客户端请求，复制请求到其他服务器上，并告诉什么其他服务器什么时候能用。
+  * 接收来自客户端的请求，将日志附加到本地日志中，日志应用到状态机后响应客户端。
+  * 向其他的所有服务器发送 AppendEntries 附加日志，防止 Follower 超时。
+  * 如果 Follower 发送来的 log entries 索引值大于等于 nextIndex (lastLogIndex ≥ nextIndex)。
+    * 如果成功：更新相应跟随者的 nextIndex 和 matchIndex 。
+    * 如果因为日志不一致而失败，则 nextIndex 递减并重试。
+  * 假设存在 N 满足N > commitIndex，使得大多数的 matchIndex[i] ≥ N以及log[N].term == currentTerm 成立，则令 commitIndex = N（5.3 和 5.4 节）
+
+* Follower：处理 Leader 和 Candidate 发来的请求。如果在规定时间内没有收到当前 Leader 发来的心跳则自动转为 Candidate 。
+
+* Candidate：选举，如果超时则重新选举，成为 Leader 或成为 Follower 。
+  * 从 Leader 变为 Candidate 后立刻开始选举过程（自增当前任期号，投给自己，重置选取超时器，向其他服务器发送请求投票的 RPC）。
+  * 拿到超半数的投票后则变为 Leader 。
+  * 收到来自 Leader 的 AppendEntries 日志的 RPC 请求后成为 Follower 。
+  * 选举超时，重新投票。
 
 
+Figure 2 中有介绍，由三部分组成，分别是状态机的命令和领导人接收到该条目时的任期（初始索引为1），此外还有当前日志的下标 index 。 
 
-2. 填入 RequestVoteArgs 和 RequestVoteReply 结构。修改Make()以创建一个后台goroutine，当它有一段时间没有收到另一个对等体的消息时，它将通过发送RequestVote RPCs定期启动领导者选举。这样，如果已经有了一个领导者，对等体将了解谁是领导者，或者自己成为领导者。实现RequestVote()RPC处理程序，这样服务器就可以互相投票了。
+
+2. 日志结构体如何定义？
+
+包含三个信息：收到该 log 的任期，当前日志的索引，需要执行的命令。
+
+命令如何表示？参考已经定义的方法 `Start(command interface{})`，用 Interfaces 表示。
+
+3. 实现 RequestVoteArgs 和 RequestVoteReply 结构。
+
+* RequestVoteArgs，RequestVoteReply 是用来干什么的？
+
+投票的时候需要用到，通过 RequestVoteArgs 构造出一张选票发送出去。RequestVoteReply 则用来接收信息，所以需要“传引用”。
+
+* 投票的时候需要提供什么信息？
+
+需要提供当前的任期 term 和提供这张票人的 id ，也就是 raft 节点自己。
+
+* 需要返回什么样的信息？
+
+是否投给自己 voteGranted 以及当前的任期号 term 。
+
+4. 修改 `Make()` 以创建一个后台goroutine，当它有一段时间没有收到另一个对等体的消息时，它将通过发送RequestVote RPCs定期启动领导者选举。这样，如果已经有了一个领导者，对等体将了解谁是领导者，或者自己成为领导者。实现 RequestVote() RPC 处理程序，这样服务器就可以互相投票了。
+
+大致流程是首先**初始化超时时间**，然后进行**选举**，最后发送**心跳包**维持自己的地位。
+
+Make() 输入参数含义：其中 peers[] 存储了所有的 Raft server ，当然也包括自己 peers[me] 。这也是第三个参数 me 的含义。peers[] 中有固定的顺序。第四个参数 persister 用于持久化。第五个参数 applyCh 是一个 channel ，Raft 向其中发送 ApplyMsg。
+
+* 如何初始化超时时间？
+
+超时时间使用一个随机数来生成一个固定区间(例如 150-300 毫秒)内的值，用当前时间作为随机种子。
+
+随机数确保了不同对等体的选举超时不会总是在同一时间发生，否则所有对等体将只为自己投票，没有人会成为领导者。
+
+论文的第5.2节提到选举超时的范围是150到300毫秒。只有当领导者发送心跳的频率大大超过每150毫秒一次时，这样的范围才有意义。因为测试者把你限制在每秒10次心跳，所以你必须使用比文件中的150到300毫秒更大的选举超时，但不能太大，因为那样你可能无法在5秒内选出一个领导者。
+
+* 如何进行选举？
+
+首先判断是否已经 killed ？ killed 用来判断是否已经调用 kill 终止整个程序了。
+
+接下来判断是否已经是 Leader ？如果是就终止，不再执行。
+
+然后确保真的超时了，当前时间减去上次收到心跳包的时间大于超时时间上限。
+
+然后进行选举，首先重置状态，例如重置超时时间，任期加一，变为 Candidate ，给自己投票。
+
+然后构造选票结构体，发给剩余的所有对等体。然后分析返回的信息。如果回复的任期大于当前任期，那么立刻转为 Follower 并重置当前任期。如果投给自己那么投票数累加，再判断票数是否过半，若过半则成为 Leader 。最后向所有节点广播并发送心跳包。
+
+对等体如何处理投票的请求？也就是 RequestVote 的实现。
+
+首先将当前节点的任期更新到返回值中。然后判断输入参数的任期是否小于当前节点的任期，若小于则不投，若大于当前节点转为 Follower ，若等于接下来判断当前节点是否已经投票了，没有的话再去投票。
+
+* 如何实现心跳。
+
+为了维持 Leader 的地位，需要在超时时间内向所有节点发送心跳包。
+
+首先判断是否已经调用 kill，然后判断当前节点是否是 Leader 若是则进行广播心跳包。
+
+广播心跳包的实现方式，首先初始化 AppendEntriesArgs 结构体，然后遍历所有对等体，将其发送出去。若根据返回参数判断出对方的任期大于当前节点的任期那么立刻转为 Follower 。
+
+测试者要求领导者每秒发送心跳RPC的次数不超过10次。执行一次 RPC 沉睡一会，例如沉睡 0.2s 。
+
+然而，请记住，如果出现分裂投票，领袖选举可能需要多轮投票（如果数据包丢失或候选人不走运地选择相同的随机退避时间，就会发生这种情况）。你必须选择足够短的选举超时（以及心跳间隔），即使需要多轮选举，也很可能在5秒内完成。
+
+
+5. 其他
+
+不要忘记实现 GetState()。返回当前任期并判断是否是 Leader 。
+
+测试员在永久关闭一个实例时，会调用你的Raft的rf.Kill()。您可以使用rf.killed()检查Kill()是否被调用。您可能希望在所有的循环中都这样做，以避免死亡的Raft实例打印混乱的信息。
+
+Go RPC只发送名称以大写字母开头的结构字段。子结构也必须有大写的字段名（例如，数组中的日志记录字段）。labgob包会对此发出警告；不要忽视这些警告。
+
+在提交第2A部分之前，请确保你通过了2A测试，这样你就会看到这样的内容。
+
+    $ go test -run 2A
+    Test (2A): initial election ...
+    ... Passed --   3.5  3   58   16840    0
+    Test (2A): election after network failure ...
+    ... Passed --   5.4  3  118   25269    0
+    Test (2A): multiple elections ...
+    ... Passed --   7.3  7  624  138014    0
+    PASS
+    ok  	6.824/raft	16.265s
+    $
+
+每一行 "通过 "包含五个数字；它们是测试所花的时间（秒）、Raft对等体的数量、测试期间发送的RPC数量、RPC消息中的总字节数，以及Raft报告的提交的日志条目数量。您的数字将与这里显示的数字不同。如果你愿意，你可以忽略这些数字，但它们可以帮助你理智地检查你的实现所发送的RPC的数量。对于所有的实验2、3和4，如果你的解决方案在所有的测试中花费超过600秒（去测试），或者任何单独的测试花费超过120秒，评分脚本将会失败。
+
+
+## Part 2B: log (hard)
+
+使用 `go test -run 2B` 来检测代码是否正确。
+
+通过`TestBasicAgree2B()`。从实现`Start()`开始，然后编写代码，通过 AppendEntries RPCs 发送和接收新的日志条目，如下图2。在每个对等体的`applyCh`上发送每个新提交的条目。你将需要实施选举限制（文件中的5.4.1节）。
+
+1. 实现 `Start()` 。该函数实现了什么样的功能？
+
+输入的是 command 将其追加到 log 中，如果当前节点不是 leader 则返回 false 。即便当前 Raft 实例被 kill 掉，该函数也应当返回。
+
+输出的三个参数分别是输入命令对应的索引，当前周期，当前节点是否是 leader 。
+
+* 日志索引加一，追加日志。
+
+
+在早期的Lab 2B测试中，无法达成协议的一个方法是，即使领导人还活着，也要重复举行选举。寻找选举定时器管理中的错误，或者在赢得选举后不立即发送心跳的问题。
+
+你的代码可能有重复检查某些事件的循环。不要让这些循环在没有暂停的情况下连续执行，因为这将使你的执行速度慢到无法通过测试。使用 Go 的条件变量，或者在每个循环迭代中插入 time.Sleep(10 * time.Millisecond) 。
+
+如果测试失败，建议查看config.go和test_test.go中的测试代码，以更好地了解测试的内容。config.go 提供了测试人员如何使用Raft API。
+
+如果代码运行太慢，即将进行的测试可能会失败。可以用 time 命令检查你的解决方案使用了多少实时时间和CPU时间。下面是典型的输出。
+
+    $ time go test -run 2B
+    Test (2B): basic agreement ...
+    ... Passed --   0.9  3   16    4572    3
+    Test (2B): RPC byte count ...
+    ... Passed --   1.7  3   48  114536   11
+    Test (2B): agreement after follower reconnects ...
+    ... Passed --   3.6  3   78   22131    7
+    Test (2B): no agreement if too many followers disconnect ...
+    ... Passed --   3.8  5  172   40935    3
+    Test (2B): concurrent Start()s ...
+    ... Passed --   1.1  3   24    7379    6
+    Test (2B): rejoin of partitioned leader ...
+    ... Passed --   5.1  3  152   37021    4
+    Test (2B): leader backs up quickly over incorrect follower logs ...
+    ... Passed --  17.2  5 2080 1587388  102
+    Test (2B): RPC counts aren't too high ...
+    ... Passed --   2.2  3   60   20119   12
+    PASS
+    ok  	6.824/raft	35.557s
+
+    real	0m35.899s
+    user	0m2.556s
+    sys	0m1.458s
+    $
+
+`ok 6.824/raft 35.557s` 意味着Go测量了2B测试所花费的时间是35.557秒的实际（挂钟）时间。`user 0m2.556s` 意味着代码消耗了2.556 秒的CPU时间，或实际执行指令的时间（而不是等待或睡眠）。如果在2B测试中使用的实际时间远远超过1分钟，或者远远超过5秒的CPU时间，那么以后可能会遇到麻烦。寻找花费在睡眠或等待RPC超时上的时间，在没有睡眠或等待条件或通道消息的情况下运行的循环，或发送大量的RPC。
+
+
+## Part 2C: persistence (hard)
+
+如果基于Raft的服务器重新启动，它应该在其停止的地方恢复服务。这就要求Raft在重启后仍能保持持久的状态。该文件的图2提到了哪些状态应该是持久的。
+
+真正的实现会在每次Raft的持久化状态发生变化时将其写入磁盘，并在重启后重新启动时从磁盘读取状态。你的实现不会使用磁盘；相反，它将从Persister对象（见persister.go）保存和恢复持久化状态。调用Raft.Make()的人提供了一个Persister，它最初持有Raft最近的持久化状态（如果有的话）。Raft应该从该Persister初始化其状态，并在每次状态改变时使用它来保存其持久化状态。使用Persister的ReadRaftState（）和SaveRaftState（）方法。
+
+通过添加保存和恢复持久化状态的代码，完成raft.go中的 persist() 和 readPersist() 函数。你将需要把状态编码（或 "序列化"）为一个字节数组，以便将其传递给持久化器。使用labgob编码器；参见persist()和readPersist()中的注释。labgob就像Go的gob编码器，但如果你试图用小写的字段名对结构进行编码，会打印出错误信息。在你的实现改变持久化状态的地方插入对persist()的调用。一旦你完成了这些，并且如果你的其他实现是正确的，你就应该通过所有的2C测试。
+
+运行git pull以获得最新的实验室软件。
+
+2C测试比2A或2B的测试要求更高，失败可能是由于你的2A或2B的代码有问题造成的。
+
+你可能会需要一次备份多个条目的NextIndex的优化。看看从第7页底部和第8页顶部开始的扩展Raft论文（用灰线标记）。论文中的细节很模糊，你需要填补这些空白，也许可以借助6.824 Raft的讲义。
+
+你的代码应该通过所有2C测试（如下图所示），以及2A和2B测试。
+
+    $ go test -run 2C
+    Test (2C): basic persistence ...
+    ... Passed --   5.0  3   86   22849    6
+    Test (2C): more persistence ...
+    ... Passed --  17.6  5  952  218854   16
+    Test (2C): partitioned leader and one follower crash, leader restarts ...
+    ... Passed --   2.0  3   34    8937    4
+    Test (2C): Figure 8 ...
+    ... Passed --  31.2  5  580  130675   32
+    Test (2C): unreliable agreement ...
+    ... Passed --   1.7  5 1044  366392  246
+    Test (2C): Figure 8 (unreliable) ...
+    ... Passed --  33.6  5 10700 33695245  308
+    Test (2C): churn ...
+    ... Passed --  16.1  5 8864 44771259 1544
+    Test (2C): unreliable churn ...
+    ... Passed --  16.5  5 4220 6414632  906
+    PASS
+    ok  	6.824/raft	123.564s
+    $
+
+It is a good idea to run the tests multiple times before submitting and check that each run prints PASS.
+
+在提交之前，最好多次运行测试，并检查每一次运行都打印出PASS。
+
+    $ for i in {0..10}; do go test; done
 
