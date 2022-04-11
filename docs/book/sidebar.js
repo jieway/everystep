@@ -38,8 +38,8 @@ module.exports = [
   {
     title: '🎉 6.824',
     children: [
-      '6.824/lec/lec01',
-      '6.824/lec/lec02',
+      // '6.824/lec/lec01',
+      // '6.824/lec/lec02',
       // 'lec/lec03',
       // 'lec/lec06',
       // 'lec/lec07',
