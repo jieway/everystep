@@ -1,5 +1,7 @@
 # Lab 0: Intro and Setup
 
+主页：https://inst.eecs.berkeley.edu/~cs61c/su21/labs/lab00/
+
 # 环境配置
 
 我用了一个不带图形界面的 Ub18.04 + virtual box 其实就是将 WSL 替换为虚拟机。

@@ -1,8 +1,10 @@
 # Lab 1: C and GDB
- 
-拿到框架代码 `git pull starter main` 
 
-如果出错就添加远程库 ` git remote add starter https://github.com/61c-teach/su21-lab-starter.git`
+`git remote add starter https://github.com/61c-teach/su21-lab-starter.git`
+
+`git pull starter main` 
+
+联系指针，字符，结构体
 
 ## Exercise 1
 
