@@ -107,9 +107,10 @@ module.exports = [
     ]
   },
   {
-    title: '🍻 15-213 (CSAPP)',
+    title: '🍻 CSAPP',
     children: [
-      '15-213/1-summary',
+      '15-213/0-sum',
+      '15-213/1-lab1',
       '15-213/2-lab1'
     ]
   },

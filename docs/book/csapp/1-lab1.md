@@ -1,6 +1,9 @@
-# LAB-1: Data Lab
+# lab1 Data Lab
 
 建议先阅读 CS:APP 第二章。
+
+1. https://www.bilibili.com/video/BV1iW411d7hd?p=1
+2. https://www.bilibili.com/video/BV1iW411d7hd?p=2
 
 ## 1. 目的
 

@@ -169,7 +169,61 @@
 
 使用 qemu 的调试功能去研究计算机是如何引导的。
 
+PC 的低 1MB 物理地址始终保持原始布局是为了确保与现有软件的向后兼容。
 
-When Intel finally "broke the one megabyte barrier" with the 80286 and 80386 processors, which supported 16MB and 4GB physical address spaces respectively, the PC architects nevertheless preserved the original layout for the low 1MB of physical address space in order to ensure backward compatibility with existing software. Modern PCs therefore have a "hole" in physical memory from 0x000A0000 to 0x00100000, dividing RAM into "low" or "conventional memory" (the first 640KB) and "extended memory" (everything else). In addition, some space at the very top of the PC's 32-bit physical address space, above all physical RAM, is now commonly reserved by the BIOS for use by 32-bit PCI devices.
+现代 PC 在 0x000A0000 到 0x00100000 之间有一个 hole ，这个 hole 将内存切分为传统内存（前 640kb）和扩展内存（剩余所有）。
+
+此外，在PC的32位物理地址空间的最顶端的一些空间，在所有物理RAM之上，现在通常由BIOS保留，供32位PCI设备使用。
+
+现代的 x86 处理器可以支持超过 4GB 的物理内存，所以物理内存可以扩展到 0xFFFFFFFF 之上。
+
+In this case the BIOS must arrange to leave a second hole in the system's RAM at the top of the 32-bit addressable region, to leave room for these 32-bit devices to be mapped. 
+
+Because of design limitations JOS will use only the first 256MB of a PC's physical memory anyway, so for now we will pretend that all PCs have "only" a 32-bit physical address space. But dealing with complicated physical address spaces and other aspects of hardware organization that evolved over many years is one of the important practical challenges of OS development.
 
 https://pdos.csail.mit.edu/6.828/2018/labs/lab1/
+
+#### The ROM BIOS
+
+In this portion of the lab, you'll use QEMU's debugging facilities to investigate how an IA-32 compatible computer boots.
+
+Open two terminal windows and cd both shells into your lab directory. In one, enter make qemu-gdb (or make qemu-nox-gdb). This starts up QEMU, but QEMU stops just before the processor executes the first instruction and waits for a debugging connection from GDB. In the second terminal, from the same directory you ran make, run make gdb. You should see something like this,
+
+    athena% make gdb
+    GNU gdb (GDB) 6.8-debian
+    Copyright (C) 2008 Free Software Foundation, Inc.
+    License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+    This is free software: you are free to change and redistribute it.
+    There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+    and "show warranty" for details.
+    This GDB was configured as "i486-linux-gnu".
+    + target remote localhost:26000
+    The target architecture is assumed to be i8086
+    [f000:fff0] 0xffff0:	ljmp   $0xf000,$0xe05b
+    0x0000fff0 in ?? ()
+    + symbol-file obj/kern/kernel
+    (gdb) 
+
+
+We provided a .gdbinit file that set up GDB to debug the 16-bit code used during early boot and directed it to attach to the listening QEMU. (If it doesn't work, you may have to add an add-auto-load-safe-path in your .gdbinit in your home directory to convince gdb to process the .gdbinit we provided. gdb will tell you if you have to do this.)
+
+The following line:
+
+[f000:fff0] 0xffff0:	ljmp   $0xf000,$0xe05b
+
+is GDB's disassembly of the first instruction to be executed. From this output you can conclude a few things:
+
+    The IBM PC starts executing at physical address 0x000ffff0, which is at the very top of the 64KB area reserved for the ROM BIOS.
+    The PC starts executing with CS = 0xf000 and IP = 0xfff0.
+    The first instruction to be executed is a jmp instruction, which jumps to the segmented address CS = 0xf000 and IP = 0xe05b.
+
+Why does QEMU start like this? This is how Intel designed the 8088 processor, which IBM used in their original PC. Because the BIOS in a PC is "hard-wired" to the physical address range 0x000f0000-0x000fffff, this design ensures that the BIOS always gets control of the machine first after power-up or any system restart - which is crucial because on power-up there is no other software anywhere in the machine's RAM that the processor could execute. The QEMU emulator comes with its own BIOS, which it places at this location in the processor's simulated physical address space. On processor reset, the (simulated) processor enters real mode and sets CS to 0xf000 and the IP to 0xfff0, so that execution begins at that (CS:IP) segment address. How does the segmented address 0xf000:fff0 turn into a physical address?
+
+To answer that we need to know a bit about real mode addressing. In real mode (the mode that PC starts off in), address translation works according to the formula: physical address = 16 * segment + offset. So, when the PC sets CS to 0xf000 and IP to 0xfff0, the physical address referenced is:
+
+    16 * 0xf000 + 0xfff0   # in hex multiplication by 16 is
+    = 0xf0000 + 0xfff0     # easy--just append a 0.
+    = 0xffff0 
+
+0xffff0 is 16 bytes before the end of the BIOS (0x100000). Therefore we shouldn't be surprised that the first thing that the BIOS does is jmp backwards to an earlier location in the BIOS; after all how much could it accomplish in just 16 bytes?
+
