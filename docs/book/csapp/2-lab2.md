@@ -274,27 +274,29 @@ rsp 始终指向栈顶，rbp 始终指向栈底。
  469 0000000000401062 <phase_5>:
  470   401062:   53                      push   %rbx            # 保存 rbx 
  471   401063:   48 83 ec 20             sub    $0x20,%rsp      # 开辟空间
- 472   401067:   48 89 fb                mov    %rdi,%rbx       # 
- 473   40106a:   64 48 8b 04 25 28 00    mov    %fs:0x28,%rax
+ 472   401067:   48 89 fb                mov    %rdi,%rbx       # rbx = rdi
+ 473   40106a:   64 48 8b 04 25 28 00    mov    %fs:0x28,%rax   # rax = 
  474   401071:   00 00
  475   401073:   48 89 44 24 18          mov    %rax,0x18(%rsp)
  476   401078:   31 c0                   xor    %eax,%eax
  477   40107a:   e8 9c 02 00 00          call   40131b <string_length>
- 478   40107f:   83 f8 06                cmp    $0x6,%eax
- 479   401082:   74 4e                   je     4010d2 <phase_5+0x70>
- 480   401084:   e8 b1 03 00 00          call   40143a <explode_bomb>
- 481   401089:   eb 47                   jmp    4010d2 <phase_5+0x70>
- 482   40108b:   0f b6 0c 03             movzbl (%rbx,%rax,1),%ecx
- 483   40108f:   88 0c 24                mov    %cl,(%rsp)
- 484   401092:   48 8b 14 24             mov    (%rsp),%rdx
- 485   401096:   83 e2 0f                and    $0xf,%edx
- 486   401099:   0f b6 92 b0 24 40 00    movzbl 0x4024b0(%rdx),%edx
+ 478   40107f:   83 f8 06                cmp    $0x6,%eax # eax 存放着输入字符长度，此处要求输入 6 个字符
+ 479   401082:   74 4e                   je     4010d2 <phase_5+0x70>   # 相同则跳转到 4010d2
+ 480   401084:   e8 b1 03 00 00          call   40143a <explode_bomb>   # 不同则爆炸
+ 481   401089:   eb 47                   jmp    4010d2 <phase_5+0x70>   # 
+
+ 482   40108b:   0f b6 0c 03             movzbl (%rbx,%rax,1),%ecx  # ecx = rbx + rax * 1 此时 rax = 0 rbx = 'a'
+ 483   40108f:   88 0c 24                mov    %cl,(%rsp)  # cl 是 ecx 的低位表示
+ 484   401092:   48 8b 14 24             mov    (%rsp),%rdx # rdx = (rsp)
+ 485   401096:   83 e2 0f                and    $0xf,%edx # 取低四位 edx = 0001
+ 486   401099:   0f b6 92 b0 24 40 00    movzbl 0x4024b0(%rdx),%edx # rdx 是 edx 的 64 位形式 edx = 0x4024b0 + 0001
  487   4010a0:   88 54 04 10             mov    %dl,0x10(%rsp,%rax,1)
  488   4010a4:   48 83 c0 01             add    $0x1,%rax
  489   4010a8:   48 83 f8 06             cmp    $0x6,%rax
  490   4010ac:   75 dd                   jne    40108b <phase_5+0x29>
+
  491   4010ae:   c6 44 24 16 00          movb   $0x0,0x16(%rsp)
- 492   4010b3:   be 5e 24 40 00          mov    $0x40245e,%esi
+ 492   4010b3:   be 5e 24 40 00          mov    $0x40245e,%esi # 0x40245e = "flyers"
  493   4010b8:   48 8d 7c 24 10          lea    0x10(%rsp),%rdi
  494   4010bd:   e8 76 02 00 00          call   401338 <strings_not_equal>
  495   4010c2:   85 c0                   test   %eax,%eax
@@ -302,8 +304,8 @@ rsp 始终指向栈顶，rbp 始终指向栈底。
  497   4010c6:   e8 6f 03 00 00          call   40143a <explode_bomb>
  498   4010cb:   0f 1f 44 00 00          nopl   0x0(%rax,%rax,1)
  499   4010d0:   eb 07                   jmp    4010d9 <phase_5+0x77>
- 500   4010d2:   b8 00 00 00 00          mov    $0x0,%eax
- 501   4010d7:   eb b2                   jmp    40108b <phase_5+0x29>
+ 500   4010d2:   b8 00 00 00 00          mov    $0x0,%eax   # eax = 0x0
+ 501   4010d7:   eb b2                   jmp    40108b <phase_5+0x29>   # 跳转到 40108b
  502   4010d9:   48 8b 44 24 18          mov    0x18(%rsp),%rax
  503   4010de:   64 48 33 04 25 28 00    xor    %fs:0x28,%rax
  504   4010e5:   00 00
@@ -312,3 +314,98 @@ rsp 始终指向栈顶，rbp 始终指向栈底。
  507   4010ee:   48 83 c4 20             add    $0x20,%rsp
  508   4010f2:   5b                      pop    %rbx
  509   4010f3:   c3                      ret
+
+循环六次，每次将输入字符的后四位作为索引从给定字符串中取出，取出的结果要和 flyers 相同。
+
+索引分别是 9 15 14 5 6 7 也就是保证输入字符的末位是这几个数字。73 79 78 69 70 71 也就是 IONEFG 。
+
+## phase_6
+
+ 511 00000000004010f4 <phase_6>:
+ 512   4010f4:   41 56                   push   %r14
+ 513   4010f6:   41 55                   push   %r13
+ 514   4010f8:   41 54                   push   %r12
+ 515   4010fa:   55                      push   %rbp
+ 516   4010fb:   53                      push   %rbx
+ 517   4010fc:   48 83 ec 50             sub    $0x50,%rsp
+ 518   401100:   49 89 e5                mov    %rsp,%r13
+ 519   401103:   48 89 e6                mov    %rsp,%rsi
+ 520   401106:   e8 51 03 00 00          call   40145c <read_six_numbers>
+ 521   40110b:   49 89 e6                mov    %rsp,%r14
+ 522   40110e:   41 bc 00 00 00 00       mov    $0x0,%r12d
+ 523   401114:   4c 89 ed                mov    %r13,%rbp
+ 524   401117:   41 8b 45 00             mov    0x0(%r13),%eax
+ 525   40111b:   83 e8 01                sub    $0x1,%eax
+ 526   40111e:   83 f8 05                cmp    $0x5,%eax
+ 527   401121:   76 05                   jbe    401128 <phase_6+0x34>
+ 528   401123:   e8 12 03 00 00          call   40143a <explode_bomb>
+ 529   401128:   41 83 c4 01             add    $0x1,%r12d
+ 530   40112c:   41 83 fc 06             cmp    $0x6,%r12d
+ 531   401130:   74 21                   je     401153 <phase_6+0x5f>
+ 532   401132:   44 89 e3                mov    %r12d,%ebx
+ 533   401135:   48 63 c3                movslq %ebx,%rax
+ 534   401138:   8b 04 84                mov    (%rsp,%rax,4),%eax
+ 535   40113b:   39 45 00                cmp    %eax,0x0(%rbp)
+ 536   40113e:   75 05                   jne    401145 <phase_6+0x51>
+ 537   401140:   e8 f5 02 00 00          call   40143a <explode_bomb>
+ 538   401145:   83 c3 01                add    $0x1,%ebx
+ 539   401148:   83 fb 05                cmp    $0x5,%ebx
+ 540   40114b:   7e e8                   jle    401135 <phase_6+0x41>
+ 541   40114d:   49 83 c5 04             add    $0x4,%r13
+ 542   401151:   eb c1                   jmp    401114 <phase_6+0x20>
+ 543   401153:   48 8d 74 24 18          lea    0x18(%rsp),%rsi
+ 544   401158:   4c 89 f0                mov    %r14,%rax
+ 545   40115b:   b9 07 00 00 00          mov    $0x7,%ecx
+ 546   401160:   89 ca                   mov    %ecx,%edx
+ 547   401162:   2b 10                   sub    (%rax),%edx
+ 548   401164:   89 10                   mov    %edx,(%rax)
+ 549   401166:   48 83 c0 04             add    $0x4,%rax
+ 550   40116a:   48 39 f0                cmp    %rsi,%rax
+ 551   40116d:   75 f1                   jne    401160 <phase_6+0x6c>
+ 552   40116f:   be 00 00 00 00          mov    $0x0,%esi
+ 553   401174:   eb 21                   jmp    401197 <phase_6+0xa3>
+ 554   401176:   48 8b 52 08             mov    0x8(%rdx),%rdx
+ 555   40117a:   83 c0 01                add    $0x1,%eax
+ 556   40117d:   39 c8                   cmp    %ecx,%eax
+ 557   40117f:   75 f5                   jne    401176 <phase_6+0x82>
+ 558   401181:   eb 05                   jmp    401188 <phase_6+0x94>
+ 559   401183:   ba d0 32 60 00          mov    $0x6032d0,%edx
+ 560   401188:   48 89 54 74 20          mov    %rdx,0x20(%rsp,%rsi,2)
+ 561   40118d:   48 83 c6 04             add    $0x4,%rsi
+ 562   401191:   48 83 fe 18             cmp    $0x18,%rsi
+ 563   401195:   74 14                   je     4011ab <phase_6+0xb7>
+ 564   401197:   8b 0c 34                mov    (%rsp,%rsi,1),%ecx
+ 565   40119a:   83 f9 01                cmp    $0x1,%ecx
+ 566   40119d:   7e e4                   jle    401183 <phase_6+0x8f>
+ 567   40119f:   b8 01 00 00 00          mov    $0x1,%eax
+ 568   4011a4:   ba d0 32 60 00          mov    $0x6032d0,%edx
+ 569   4011a9:   eb cb                   jmp    401176 <phase_6+0x82>
+ 570   4011ab:   48 8b 5c 24 20          mov    0x20(%rsp),%rbx
+ 571   4011b0:   48 8d 44 24 28          lea    0x28(%rsp),%rax
+ 572   4011b5:   48 8d 74 24 50          lea    0x50(%rsp),%rsi
+ 573   4011ba:   48 89 d9                mov    %rbx,%rcx
+ 574   4011bd:   48 8b 10                mov    (%rax),%rdx
+ 575   4011c0:   48 89 51 08             mov    %rdx,0x8(%rcx)
+ 576   4011c4:   48 83 c0 08             add    $0x8,%rax
+ 577   4011c8:   48 39 f0                cmp    %rsi,%rax
+ 578   4011cb:   74 05                   je     4011d2 <phase_6+0xde>
+ 579   4011cd:   48 89 d1                mov    %rdx,%rcx
+ 580   4011d0:   eb eb                   jmp    4011bd <phase_6+0xc9>
+ 581   4011d2:   48 c7 42 08 00 00 00    movq   $0x0,0x8(%rdx)
+ 582   4011d9:   00
+ 583   4011da:   bd 05 00 00 00          mov    $0x5,%ebp
+ 584   4011df:   48 8b 43 08             mov    0x8(%rbx),%rax
+ 585   4011e3:   8b 00                   mov    (%rax),%eax
+ 586   4011e5:   39 03                   cmp    %eax,(%rbx)
+ 587   4011e7:   7d 05                   jge    4011ee <phase_6+0xfa>
+ 588   4011e9:   e8 4c 02 00 00          call   40143a <explode_bomb>
+ 589   4011ee:   48 8b 5b 08             mov    0x8(%rbx),%rbx
+ 590   4011f2:   83 ed 01                sub    $0x1,%ebp
+ 591   4011f5:   75 e8                   jne    4011df <phase_6+0xeb>
+ 592   4011f7:   48 83 c4 50             add    $0x50,%rsp
+ 593   4011fb:   5b                      pop    %rbx
+ 594   4011fc:   5d                      pop    %rbp
+ 595   4011fd:   41 5c                   pop    %r12
+ 596   4011ff:   41 5d                   pop    %r13
+ 597   401201:   41 5e                   pop    %r14
+ 598   401203:   c3                      ret
