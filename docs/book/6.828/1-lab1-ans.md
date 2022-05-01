@@ -2,7 +2,7 @@
 
 阅读：https://pdos.csail.mit.edu/6.828/2018/labs/lab1/
 
-第一部分主要是为了熟悉使用 x86 汇编语言、QEMU x86 仿真器、以及 PC 的加电引导过程。第二部分查看我们的 6.828 内核的引导加载器，它位于 lab 的 boot 目录中。第三部分深入到名为 JOS 的 6.828 内核模型内部，它在 kernel 目录中。
+这个实验由三部分组成，第一部分主要是为了熟悉使用 x86 汇编语言、QEMU x86 仿真器、以及 PC 的加电引导过程。第二部分查看我们的 6.828 内核的引导加载器，它位于 lab 的 boot 目录中。第三部分深入到名为 JOS 的 6.828 内核模型内部，它在 kernel 目录中。
 
 ## 0. 下载代码
 
@@ -151,11 +151,11 @@
     |   VGA Display    |
     +------------------+  <- 0x000A0000 (640KB)
     |                  |
-    |    Low Memory    |
-    |                  |
+    |    Low Memory    |  早期 PC 唯一可以访问的区域
+    |                  |  早期 PC 一般内存大小为 16KB, 32KB, 或 64KB
     +------------------+  <- 0x00000000
 
-这台 PC 是基于 16 bit 的 8088 处理器，只能处理 1MB 的物理内存，所以物理地址是从  0x00000000 开始到 0x000FFFFF 结束，并非是 0xFFFFFFFF 结束。
+第一太 PC 是基于 16 bit 的 8088 处理器，只能处理 1MB 的物理内存，所以物理地址是从  0x00000000 开始到 0x000FFFFF 结束，并非是 0xFFFFFFFF 结束。
 
 ![20220417235310](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220417235310.png)
 
@@ -167,63 +167,102 @@
 
 ![20220418000022](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220418000022.png)
 
-使用 qemu 的调试功能去研究计算机是如何引导的。
+Intel 在 80286 和 80386 两个处理器上打破了 1 MB 的限制，分别支持 16 MB 和 4GB 物理地址空间。
+但是 PC 架构师为了兼容已有的软件，依旧保留了低 0 - 1MB 之间的内存布局。
 
-PC 的低 1MB 物理地址始终保持原始布局是为了确保与现有软件的向后兼容。
+现代 PC 在 0x000A0000 到 0x00100000 之间看起来就想要一个“洞” ，这个洞将内存切分为传统内存（前 640kb）和扩展内存（剩余所有）。
 
-现代 PC 在 0x000A0000 到 0x00100000 之间有一个 hole ，这个 hole 将内存切分为传统内存（前 640kb）和扩展内存（剩余所有）。
+此外，在PC的32位物理地址空间的最顶端的一些空间通常由BIOS保留，供 32 位 PCI 设备使用。
 
-此外，在PC的32位物理地址空间的最顶端的一些空间，在所有物理RAM之上，现在通常由BIOS保留，供32位PCI设备使用。
+现代的 x86 处理器可以支持超过 4GB 的物理内存，所以物理内存可以扩展到 0xFFFFFFFF 之上。所以 BIOS 需要在 32 位可寻址区域的顶部留下第二个洞，为了兼容 32 位设备的映射。
 
-现代的 x86 处理器可以支持超过 4GB 的物理内存，所以物理内存可以扩展到 0xFFFFFFFF 之上。
+这个实验的 JOS 只使用了前 256MB ，所以假设只有 32 位的物理空间。
 
-In this case the BIOS must arrange to leave a second hole in the system's RAM at the top of the 32-bit addressable region, to leave room for these 32-bit devices to be mapped. 
+这一部分将会使用 qemu 的 debug 工具来研究计算机启动。
 
-Because of design limitations JOS will use only the first 256MB of a PC's physical memory anyway, so for now we will pretend that all PCs have "only" a 32-bit physical address space. But dealing with complicated physical address spaces and other aspects of hardware organization that evolved over many years is one of the important practical challenges of OS development.
+可以用 tmux 开两个窗口，一个窗口输入 `make qemu-nox-gdb` 另一个窗口输入 `make gdb` 摘取其中一行输入信息：
 
-https://pdos.csail.mit.edu/6.828/2018/labs/lab1/
-
-#### The ROM BIOS
-
-In this portion of the lab, you'll use QEMU's debugging facilities to investigate how an IA-32 compatible computer boots.
-
-Open two terminal windows and cd both shells into your lab directory. In one, enter make qemu-gdb (or make qemu-nox-gdb). This starts up QEMU, but QEMU stops just before the processor executes the first instruction and waits for a debugging connection from GDB. In the second terminal, from the same directory you ran make, run make gdb. You should see something like this,
-
-    athena% make gdb
-    GNU gdb (GDB) 6.8-debian
-    Copyright (C) 2008 Free Software Foundation, Inc.
-    License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-    This is free software: you are free to change and redistribute it.
-    There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
-    and "show warranty" for details.
-    This GDB was configured as "i486-linux-gnu".
-    + target remote localhost:26000
-    The target architecture is assumed to be i8086
     [f000:fff0] 0xffff0:	ljmp   $0xf000,$0xe05b
-    0x0000fff0 in ?? ()
-    + symbol-file obj/kern/kernel
-    (gdb) 
 
+PC 从 0x000ffff0 开始执行，第一条要执行的指令是 jmp，跳转到分段地址 CS=0xf000 和 IP=0xe05b 。
 
-We provided a .gdbinit file that set up GDB to debug the 16-bit code used during early boot and directed it to attach to the listening QEMU. (If it doesn't work, you may have to add an add-auto-load-safe-path in your .gdbinit in your home directory to convince gdb to process the .gdbinit we provided. gdb will tell you if you have to do this.)
+因特尔最初是这样设计的，而 BIOS 处于 0x000f0000 和 0x000fffff 之间。这样设计确保了 PC 启动或重启都能获得机器的控制权。
 
-The following line:
+QEMU 自带 BIOS 并且会将其放置在模拟的物理地址空间的位置上，当处理器复位时，模拟的处理器进入实模式，将 CS 设置为 0xf000，IP 设置为 0xfff0 。然后就在 CS:IP 段处开始执行。
 
-[f000:fff0] 0xffff0:	ljmp   $0xf000,$0xe05b
+分段地址 0xf000:ffff0 如何变成物理地址？这里面有一个公式：
 
-is GDB's disassembly of the first instruction to be executed. From this output you can conclude a few things:
-
-    The IBM PC starts executing at physical address 0x000ffff0, which is at the very top of the 64KB area reserved for the ROM BIOS.
-    The PC starts executing with CS = 0xf000 and IP = 0xfff0.
-    The first instruction to be executed is a jmp instruction, which jumps to the segmented address CS = 0xf000 and IP = 0xe05b.
-
-Why does QEMU start like this? This is how Intel designed the 8088 processor, which IBM used in their original PC. Because the BIOS in a PC is "hard-wired" to the physical address range 0x000f0000-0x000fffff, this design ensures that the BIOS always gets control of the machine first after power-up or any system restart - which is crucial because on power-up there is no other software anywhere in the machine's RAM that the processor could execute. The QEMU emulator comes with its own BIOS, which it places at this location in the processor's simulated physical address space. On processor reset, the (simulated) processor enters real mode and sets CS to 0xf000 and the IP to 0xfff0, so that execution begins at that (CS:IP) segment address. How does the segmented address 0xf000:fff0 turn into a physical address?
-
-To answer that we need to know a bit about real mode addressing. In real mode (the mode that PC starts off in), address translation works according to the formula: physical address = 16 * segment + offset. So, when the PC sets CS to 0xf000 and IP to 0xfff0, the physical address referenced is:
+    address = 16 * segment + offset
 
     16 * 0xf000 + 0xfff0   # in hex multiplication by 16 is
     = 0xf0000 + 0xfff0     # easy--just append a 0.
     = 0xffff0 
 
-0xffff0 is 16 bytes before the end of the BIOS (0x100000). Therefore we shouldn't be surprised that the first thing that the BIOS does is jmp backwards to an earlier location in the BIOS; after all how much could it accomplish in just 16 bytes?
+0xffff0 是 BIOS 结束前的16个字节（0x100000）。如果继续向后执行， 16 字节 BIOS 就结束了，这么小的空间能干什么？
+
+### Exercise 2.
+
+使用 gdb 的 si 指令搞清楚 BIOS 的大致情况，不需要搞清楚所有细节。
+
+当 BIOS 启动的时候会先设置中断描述表，然后初始化各种硬件，例如 VGA 。
+
+当初始化 PCI 总线和 BIOS 知晓的所有重要设备后，将会寻找一个可启动的设备，如软盘、硬盘或CD-ROM。
+
+最终，当找到一个可启动的磁盘时，BIOS 从磁盘上读取 boot loader 并将控制权转移给它。
+
+## Part 2: The Boot Loader
+
+在磁盘或软盘中，512B 为一个扇区，扇区是最小单元。
+
+如果磁盘是可启动的，第一个扇区被称为 boot sector ，因为这是启动加载器代码所在的地方。
+
+当 BIOS 发现可启动的软盘或磁盘时，那么将会把 512B 的 boot sector 从磁盘加载到内存 0x7c00 到 0x7dff 之间。然后使用 jmp 指令设置 CS:IP 为 0000:7c00 最后将控制权传递给引导装载程序。
+
+与 BIOS 的加载地址一样，这些地址是相当随意的--但它们对PC来说是固定的和标准化的。
+
+在 6.828 中使用传统的硬盘启动机制，也就是 boot loader 不能超过 512B 。
+
+boot loader 由汇编语言 `boot/boot.S` 和一个 C 语言文件 `boot/main.c` 组成。需要搞明白这两个文件的内容。
+
+Boot Loader 负责两个功能：
+
+1. boot loader 从实模式切换到 32 位的保护模式，因为只有在保护模式下软件才能访问超过 1MB 的物理内存。此外在保护模式下，段偏移量就变为了 32 而非 16 。
+2. 其次，Boot Loader 通过 x86 的特殊 I/O 指令直接访问 IDE 磁盘设备寄存器，从硬盘上读取内核。
+
+
+理解了 Boot Loader 的源代码后，看看 `obj/boot/boot.asm` 文件。这个文件是 GNUmakefile 在编译 Boot Loader 后创建的 Boot Loader 的反汇编。这个反汇编文件使我们很容易看到 Boot Loader 的所有代码在物理内存中的位置，也使我们更容易在 GDB 中跟踪 Boot Loader 发生了什么。同样的，`obj/kern/kernel.asm` 包含了 JOS 内核的反汇编，这对调试很有用。
+
+在 gdb 中使用 b *0x7c00 在该地址处设置断点，然后使用 c 或 si 继续执行。c 将会跳转到下一个断点处，而 si 跳转到下一条指令，si N 则一次跳转 N 条指令。
+
+使用 `x/Ni ADDR` 来打印地址中存储的内容。其中 N 是要反汇编的连续指令的数量，ADDR 是开始反汇编的内存地址。
+
+## Exercise 3. 
+
+阅读 [lab tools guide](https://pdos.csail.mit.edu/6.828/2018/labguide.html)，即使你已经很熟悉了，最好看看。
+
+在 0x7c00 设置一个断点，启动扇区将会加载到此处。跟踪 `boot/boot.S` 并使用 `obj/boot/boot.asm` 来定位当前执行位置。使用 GDB 的 x/i 命令来反汇编 Boot Loader 中的指令序列并和 `obj/boot/boot.asm` 比较。
+
+跟踪 boot/main.c 中的 bootmain() 函数，此后追踪到 readsect() 并研究对应的汇编指令，然后返回到 bootmain() 。确定从磁盘上读取内核剩余扇区的for循环的开始和结束。找出循环结束后将运行的代码，在那里设置一个断点，并继续到该断点。然后逐步完成 Boot Loader 的剩余部分。
+
+* 回答下面的问题：
+
+1. 在什么时候，处理器开始执行32位代码？究竟是什么原因导致从16位到32位模式的转换？
+
+2. Boot Loader执行的最后一条指令是什么，它刚刚加载的内核的第一条指令是什么？
+
+3. 内核的第一条指令在哪里？
+
+4. Boot Loader如何决定它必须读取多少个扇区才能从磁盘上获取整个内核？它在哪里找到这些信息？
+
+接下来进一步研究 `boot/main.c` 中的 C 语言部分。
+
+### Exercise 4.
+
+建议阅读 'K&R' 5.1 到 5.5 搞清楚指针，此外弄清楚 [pointers.c](https://pdos.csail.mit.edu/6.828/2018/labs/lab1/pointers.c) 的输出，否则后续会很痛苦。
+
+需要了解 ELF 二进制文件才能搞清楚 `boot/main.c` 。
+
+当编译链接一个 C 语言程序时，首先需要将 .c 文件编译为 .o 结尾的 object 文件，其中包含了相应的二进制格式的汇编指令。
+
+链接器将所有的 .o 文件链接为单个二进制镜像，例如 `obj/kern/kernel` ，这是一个 ELF 格式的二进制文件，全称叫做 “Executable and Linkable Format” 。此处可以简单的将 ELF 认为头部带有加载信息，然后是是程序部分，每部分都是连续的代码或数据块，将指定的地址加载到内存中。Boot Loader 将其加载到内存中并开始执行。
 
