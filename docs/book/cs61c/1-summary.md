@@ -1,10 +1,9 @@
 # CS61C
 
-计组和体系结构
+体系结构
 
-[su21](https://inst.eecs.berkeley.edu/~cs61c/su21)
+https://inst.eecs.berkeley.edu/~cs61c/su20/
 
-体验很好，文档提供了非常多的信息。
 
 ## 进度
 

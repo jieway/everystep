@@ -1,6 +1,23 @@
 # Lab 0: Intro and Setup
 
-主页：https://inst.eecs.berkeley.edu/~cs61c/su21/labs/lab00/
+主页：https://inst.eecs.berkeley.edu/~cs61c/su20/labs/lab00/
+
+## Exercise 1: Course Policies
+
+略
+
+## Exercise 2: Setup
+
+大致浏览一遍。
+
+## Exercise 3: Command Line Essentials
+
+命令行已经熟悉了，跳过。
+
+## Exercise 4: Fun with Git
+
+
+
 
 # 环境配置
 
