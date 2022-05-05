@@ -144,7 +144,7 @@
     |                  |
     |                  |
     +------------------+  <- 0x00100000 (1MB)
-    |     BIOS ROM     |    
+    |     BIOS ROM     |    BIOS 基本的输入输出
     +------------------+  <- 0x000F0000 (960KB)
     |  16-bit devices, |
     |  expansion ROMs  |    
@@ -153,7 +153,7 @@
     +------------------+  <- 0x000A0000 (640KB)
     |                  |
     |    Low Memory    |  早期 PC 唯一可以访问的区域
-    |                  |  早期 PC 一般内存大小为 16KB, 32KB, 或 64KB
+    |                  |  实际上早期 PC 一般内存大小为 16KB, 32KB, 或 64KB
     +------------------+  <- 0x00000000
 
 
@@ -216,21 +216,21 @@ QEMU 自带 BIOS 并且会将其放置在模拟的物理地址空间的位置上
     [f000:e070]    0xfe070: mov    $0xf34c2,%edx    # edx = 0xf34c2 
     [f000:e076]    0xfe076: jmp    0xfd15c          # 跳转到 0xfd15c
     [f000:d15c]    0xfd15c: mov    %eax,%ecx        # ecx = eax
-    [f000:d15f]    0xfd15f: cli                     # 关闭中断
+    [f000:d15f]    0xfd15f: cli                     # 关闭硬件中断
     [f000:d160]    0xfd160: cld                     # 设置了方向标志，表示后续操作的内存变化
     [f000:d161]    0xfd161: mov    $0x8f,%eax       # eax = 0x8f  接下来的三条指令用于关闭不可屏蔽中断
     [f000:d167]    0xfd167: out    %al,$0x70        # 0x70 和 0x71 是用于操作 CMOS 的端口
-    [f000:d169]    0xfd169: in     $0x71,%al        # 
-    [f000:d16b]    0xfd16b: in     $0x92,%al        
-    [f000:d16d]    0xfd16d: or     $0x2,%al
-    [f000:d16f]    0xfd16f: out    %al,$0x92
-    [f000:d171]    0xfd171: lidtw  %cs:0x6ab8       
-    [f000:d177]    0xfd177: lgdtw  %cs:0x6a74       
+    [f000:d169]    0xfd169: in     $0x71,%al        # 从CMOS读取选择的寄存器
+    [f000:d16b]    0xfd16b: in     $0x92,%al        # 读取系统控制端口A
+    [f000:d16d]    0xfd16d: or     $0x2,%al         
+    [f000:d16f]    0xfd16f: out    %al,$0x92        # 启动 A20
+    [f000:d171]    0xfd171: lidtw  %cs:0x6ab8       # 加载到 IDT 表
+    [f000:d177]    0xfd177: lgdtw  %cs:0x6a74       # 加载到 GDT 表
     [f000:d17d]    0xfd17d: mov    %cr0,%eax        # eax = cr0
     [f000:d180]    0xfd180: or     $0x1,%eax        # 
-    [f000:d184]    0xfd184: mov    %eax,%cr0
-    [f000:d187]    0xfd187: ljmpl  $0x8,$0xfd18f
-    => 0xfd18f:     mov    $0x10,%eax
+    [f000:d184]    0xfd184: mov    %eax,%cr0        # 打开保护模式
+    [f000:d187]    0xfd187: ljmpl  $0x8,$0xfd18f    # 通过 ljmp 进入保护模式
+    => 0xfd18f:     mov    $0x10,%eax               # 设置段寄存器
     => 0xfd194:     mov    %eax,%ds
     => 0xfd196:     mov    %eax,%es
 
@@ -244,11 +244,7 @@ QEMU 自带 BIOS 并且会将其放置在模拟的物理地址空间的位置上
 
 磁盘是由扇区组成，一个扇区为 512 B。磁盘的第一个扇区称为 boot sector ，这里面存放着 boot loader 。
 
-BIOS 将 512B 的 boot sector 从磁盘加载到内存 0x7c00 到 0x7dff 之间。然后使用 jmp 指令设置 CS:IP 为 0000:7c00 最后将控制权传递给引导装载程序。
-
-与 BIOS 的加载地址一样，这些地址是相当随意的--但它们对PC来说是固定的和标准化的。
-
-在 6.828 中使用传统的硬盘启动机制，也就是 boot loader 不能超过 512B 。
+BIOS 将 512B 的 boot sector 从磁盘加载到内存 0x7c00 到 0x7dff 之间。然后使用 jmp 指令设置 CS:IP 为 0000:7c00 最后将控制权传递给引导装载程序。在 6.828 中使用传统的硬盘启动机制，也就是 boot loader 不能超过 512B 。
 
 boot loader 由汇编语言 `boot/boot.S` 和一个 C 语言文件 `boot/main.c` 组成。需要搞明白这两个文件的内容。
 
@@ -270,19 +266,30 @@ Boot Loader 负责两个功能：
 
 在 0x7c00 设置一个断点，启动扇区将会加载到此处。跟踪 `boot/boot.S` 并使用 `obj/boot/boot.asm` 来定位当前执行位置。使用 GDB 的 x/i 命令来反汇编 Boot Loader 中的指令序列并和 `obj/boot/boot.asm` 比较。
 
+* 阅读 `obj/boot/boot.asm` 下面是一些总结：
+
+在汇编中 . 开头的是汇编器指令，功能是告诉汇编器如何做，而不是做什么。汇编器指令并不会直接翻译为机器码，汇编指令会直接翻译为机器码。首先设置实模式的标志，进入实模式。然后关闭中断，防止执行时被打断，接下来设置字符串指针的移动方向。做了一些初始化工作，例如寄存器清零，开启 A20 数据线，为切换到 32 位做准备。处理 GDT 。
+
 跟踪 boot/main.c 中的 bootmain() 函数，此后追踪到 readsect() 并研究对应的汇编指令，然后返回到 bootmain() 。确定从磁盘上读取内核剩余扇区的for循环的开始和结束。找出循环结束后将运行的代码，在那里设置一个断点，并继续到该断点。然后逐步完成 Boot Loader 的剩余部分。
 
 * 回答下面的问题：
 
 1. 在什么时候，处理器开始执行32位代码？究竟是什么原因导致从16位到32位模式的转换？
 
-boot.S 57 line.
+* 从 boot.S 的第 55 行开始切换为 32 位代码，切换到 32 位后会有更多的寻址空间。
 
-2. Boot Loader执行的最后一条指令是什么，它刚刚加载的内核的第一条指令是什么？
+2. Boot Loader 执行的最后一条指令是什么，它刚刚加载的内核的第一条指令是什么？
+
+* 最后一条指令是 `boot/main.c` 的 `((void (*)(void)) (ELFHDR->e_entry))();` 
+*  `movw $0x1234, 0x472`
 
 3. 内核的第一条指令在哪里？
 
+* 内核的第一条指令在 0x1000c 处，对应的源码位于 kern/entry.S 中。
+
 4. Boot Loader如何决定它必须读取多少个扇区才能从磁盘上获取整个内核？它在哪里找到这些信息？
+
+> 这些信息存放在 Proghdr 中。
 
 接下来进一步研究 `boot/main.c` 中的 C 语言部分。
 
@@ -308,19 +315,28 @@ ELF 的二进制文件头部的长度是固定的，然后是长度可变的程�
 
 通过键入检查内核可执行文件中所有部分的名称、大小和链接地址的完整列表。
 
+    $ objdump -h obj/kern/kernel
 
-    athena% objdump -h obj/kern/kernel
-    (If you compiled your own toolchain, you may need to use i386-jos-elf-objdump)
+    obj/kern/kernel:     file format elf32-i386
 
-其中还包含了一些帮助调试的信息。
+    Sections:
+    Idx Name          Size      VMA       LMA       File off  Algn
+    0 .text         00001917  f0100000  00100000  00001000  2**4
+                    CONTENTS, ALLOC, LOAD, READONLY, CODE
+    1 .rodata       00000714  f0101920  00101920  00002920  2**5
+                    CONTENTS, ALLOC, LOAD, READONLY, DATA
+    2 .stab         00003889  f0102034  00102034  00003034  2**2
+                    CONTENTS, ALLOC, LOAD, READONLY, DATA
+    3 .stabstr      000018af  f01058bd  001058bd  000068bd  2**0
+                    CONTENTS, ALLOC, LOAD, READONLY, DATA
+    4 .data         0000a300  f0108000  00108000  00009000  2**12
+                    CONTENTS, ALLOC, LOAD, DATA
+    5 .bss          00000648  f0112300  00112300  00013300  2**5
+                    CONTENTS, ALLOC, LOAD, DATA
+    6 .comment      00000023  00000000  00000000  00013948  2**0
+                    CONTENTS, READONLY
 
-请特别注意.text部分的 "VMA"（或链接地址）和 "LMA"（或加载地址）。一个部分的加载地址是指该部分应该被加载到内存中的内存地址。
-
-一个部分的链接地址是从等待执行的内存地址。
-
-通常，链接和加载地址是相同的。例如阅读 boot loader 中的 .text 部分。
-
-    athena% objdump -h obj/boot/boot.out
+VMA 是逻辑地址，LMA 是加载到内存中的物理地址。通常这两个地址是相同的。
 
 boot loader 根据 ELF 文件的头部决定加载哪些部分。程序头部指定了哪些信息需要加载及其地址。可以通过下面的命令来查看程序头部。
 
@@ -334,17 +350,28 @@ boot loader 根据 ELF 文件的头部决定加载哪些部分。程序头部指
 
 BIOS 将 boot sector 加载到内存中并从 0x7c00 处开始，这是 boot sector 的加载地址。boot sector 从这里开始执行。这也是 boot sector 执行的地方，所以这也是它的链接地址。
 
-通过 -Ttext 0x7C00 设置链接地址在 boot/Makefrag 中，所以链接器将会在生成代码中生成正确的地址。
+在 `boot/Makefrag` 中通过 -Ttext 0x7C00 设置了启动地址。
 
 ### Exercise 5.
 
-再次追踪 Boot Loader 的前几条指令，找出第一条指令，如果把 Boot Loader 的链接地址弄错了，就会 "中断 "或做错事。然后把boot/Makefrag中的链接地址改成错误的，运行make clean，用make重新编译实验室，并再次追踪到boot loader，看看会发生什么。不要忘了把链接地址改回来，然后再做一次清理。
+再次追踪 Boot Loader 的前几条指令，找出第一条指令，如果把 Boot Loader 的链接地址弄错了，就会 "中断 "或做错事。然后把`boot/Makefrag` 中的链接地址改成错误的，运行make clean，用make重新编译实验室，并再次追踪到boot loader，看看会发生什么。不要忘了把链接地址改回来，然后再做一次清理。
+
+修改 `boot/Makefrag` 中的 `-Ttext 0x7C00` ，查看结果，例如将 其改为 `-Ttext 0x0C00` 。起初依旧加载到 0x7c00 处，但是跳转的时候出现问题。也就是最初的指令并不依赖地址，跳转的时候依赖。
+
+![20220505143831](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220505143831.png)
 
 回头看内核加载和链接的地址，和 Boot Loader 不同的是，这两个地址并不相同。内核告诉 Boot Loader 在一个低的地址（1 兆字节）将其加载到内存中，但它希望从一个高的地址执行。我们将在下一节中深入探讨如何使这一工作。
 
 此外 ELF 还有很多重要的信息。例如 e_entry 是程序 entry point 的地址。可以通过如下命令查看：
 
-    athena% objdump -f obj/kern/kernel
+    $ objdump -f obj/kern/kernel
+
+    obj/kern/kernel:     file format elf32-i386
+    architecture: i386, flags 0x00000112:
+    EXEC_P, HAS_SYMS, D_PAGED
+    start address 0x0010000c
+
+kernel 是从 0x0010000c 处开始执行。
 
 此时应当理解 `boot/main.c` 中的 ELF loader 。它将内核的每个部分从磁盘上读到内存中的该部分的加载地址，然后跳转到内核的入口点。
 
@@ -354,43 +381,97 @@ BIOS 将 boot sector 加载到内存中并从 0x7c00 处开始，这是 boot sec
 
 重新打开 gdb 检测，在 BIOS 进入 Boot Loader 时检查 0x00100000 处的 8 个内存字，然后在 Boot Loader 进入内核时再次检查。为什么它们会不同？在第二个断点处有什么？(你不需要用 QEMU 来回答这个问题，只需要思考一下。)
 
+> 不同是因为内核加载进来了，内核指令。
+
 ## Part 3: The Kernel
 
-最初先执行汇编，然后为 C 语言执行做一些准备。
+最初先执行汇编，然后为 C 语言执行做一些准备。使用虚拟内存来解决位置依赖的问题。
 
-使用虚拟内存来解决位置依赖的问题。
+Boot Loader 的虚拟地址和物理地址是相同的，但是内核的虚拟地址和物理地址是不同的，更为复杂，链接和加载地址都在 `kern/kernel.ld` 的顶部。
 
-当你在上面检查 Boot Loader 的链接地址和加载地址时，它们完全匹配，但是在内核的链接地址（由 objdump 打印的）和加载地址之间有一个（相当大的）差异。回去检查这两个地址，确保你能看到我们在说什么。(链接内核比启动加载器更复杂，所以链接和加载地址都在kern/kernel.ld的顶部)。
-
-操作系统内核通常喜欢在非常高的虚拟地址上链接和运行，例如0xf0100000，以便将处理器的虚拟地址空间的低部分留给用户程序使用。这种安排的原因将在下一个实验中变得更加清楚。
+OS 内核一般在比较高的虚拟地址上链接和运行，例如0xf0100000，而地址空间的低部分留给了用户程序使用。
 
 许多机器在地址0xf0100000处没有任何物理内存，所以我们不能指望能在那里存储内核。相反，我们将使用处理器的内存管理硬件将虚拟地址 0xf0100000（内核代码期望运行的链接地址）映射到物理地址0x00100000（引导加载器将内核加载到物理内存的地方）。这样，尽管内核的虚拟地址足够高，可以为用户进程留下足够的地址空间，但它将被加载到物理内存中，位于PC的RAM的1MB处，就在BIOS ROM上方。这种方法要求PC至少有几兆字节的物理内存（这样物理地址0x00100000才行），但这可能是1990年以后制造的任何PC的真实情况。
 
 事实上，在下一个实验中，我们将把PC的整个底部256MB的物理地址空间，从物理地址0x00000000到0x0fffffff，分别映射到虚拟地址0xf0000000到0xffffffff。现在你应该明白为什么JOS只能使用前256MB的物理内存了。
 
-
-现在，我们只需映射前4MB的物理内存，这就足以让我们开始运行。我们使用`kern/entrypgdir.c`中手工编写的、静态初始化的页目录和页表来做这件事。现在，你不需要了解这个工作的细节，只需要了解它的效果。在`kern/entry.S`设置CR0_PG标志之前，内存引用被视为物理地址（严格来说，它们是线性地址，但`boot/boot.S`设置了从线性地址到物理地址的身份映射，我们永远不会改变）。一旦CR0_PG被设置，内存引用就是虚拟地址，被虚拟内存硬件翻译成物理地址。 entry_pgdir将0xf0000000到0xf0400000范围内的虚拟地址翻译成物理地址0x00000000到0x00400000，以及虚拟地址0x00000000到0x00400000到物理地址0x00000000到0x00400000。任何不在这两个范围内的虚拟地址都会引起硬件异常，由于我们还没有设置中断处理，这将导致QEMU转储机器状态并退出（如果你没有使用6.828补丁版本的QEMU，则会无休止地重新启动）。
-
+现在，我们只需映射前 4MB 的物理内存，这就足以让我们开始运行。我们使用`kern/entrypgdir.c`中手工编写的、静态初始化的页目录和页表来做这件事。现在，你不需要了解这个工作的细节，只需要了解它的效果。在`kern/entry.S`设置 CR0_PG 标志之前，内存引用被视为物理地址（严格来说，它们是线性地址，但`boot/boot.S`设置了从线性地址到物理地址的映射，我们永远不会改变）。一旦CR0_PG被设置，内存引用就是虚拟地址，被虚拟内存硬件翻译成物理地址。 entry_pgdir 将 0xf0000000 到 0xf0400000 范围内的虚拟地址翻译成物理地址0x00000000到0x00400000，以及虚拟地址0x00000000到0x00400000到物理地址0x00000000到0x00400000。任何不在这两个范围内的虚拟地址都会引起硬件异常，由于我们还没有设置中断处理，这将导致QEMU转储机器状态并退出（如果你没有使用6.828补丁版本的QEMU，则会无休止地重新启动）。
 
 ### Exercise 7.
 
 使用QEMU和GDB追踪到JOS的内核，在 `movl %eax, %cr0` 处停止。检查0x00100000和0xf0100000处的内存。现在，使用stepi GDB命令对该指令进行单步操作。再次，检查0x00100000和0xf0100000处的内存。确保你明白刚刚发生了什么。
 
-在新的映射建立后的第一条指令是什么，如果映射没有建立，它将不能正常工作？把`kern/entry.S`中的`movl %eax, %cr0`注释出来，追踪到它，看看你是否正确。
+在新的映射建立后的第一条指令是什么，如果映射没有建立，它将不能正常工作？把`kern/entry.S`中的`movl %eax, %cr0`注释，追踪到它，看看你是否正确。
 
-大多数人认为printf()这样的函数是理所当然的，有时甚至认为它们是C语言的 "原语"。但是在操作系统的内核中，我们必须自己实现所有的I/O。
+![20220505155904](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220505155904.png)
 
-阅读kern/printf.c、lib/printfmt.c和kern/console.c，并确保你理解它们之间的关系。在后面的实验中会清楚为什么 printfmt.c 位于单独的 lib 目录中。
+在 0x00100000 处打断点，比较两个地址中存储的数据后发现不一样。
+
+![20220505160121](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220505160121.png)
+
+> 然后执行几条指令，执行完 `mov    %eax,%cr0` 后发现两个地址中存储的数据一致。说明此时启用了页表明完成了地址映射。
+
+大多数人认为 printf() 这样的函数是理所当然的，有时甚至认为它们是C语言的 "原语"。但是在操作系统的内核中，我们必须自己实现所有的I/O。
+
+### Formatted Printing to the Console
+
+阅读 `kern/printf.c`、`lib/printfmt.c` 和 `kern/console.c`，并确保你理解它们之间的关系。在后面的实验中会清楚为什么 `printfmt.c` 位于单独的 lib 目录中。
+
+`kern/printf.c` 中的 `cprintf()` 函数调用了 `vcprintf()` 函数，该函数又调用了 `lib/printfmt.c` 中的 `vprintfmt()` 函数。
+
+	va_start(ap, fmt);
+	cnt = vcprintf(fmt, ap);
+	va_end(ap);
+
+接下来研究 `cprintf()` 函数，函数签名是 `int cprintf(const char *fmt, ...)` 其中 ... 表示可变参数。
+
+然后是 [va_start](https://en.cppreference.com/w/c/variadic/va_start) ，简单来说，就是将可变参数放置到 ap 中。
+
+然后调用 vcprintf 函数，将得到的参数 ap 传进去，最后调用 `va_end` 释放参数列表。此外，这部分还涉及到了 va_arg ，后面会用到，例如 `va_arg(*ap, int)` 表示用 int 来解析 ap 。
+
+
+其中 putch 函数作为参数传入，而 putch 函数调用了 cputchar 函数，该函数再次调用了 cons_putc 函数，根据注释可知该函数负责将字符输出到终端。根据调用关系，可以简单的认为 putch 实现了将数据打印到终端的功能，至于实现细节后续再研究。
+
+接下来回头研究 `lib/printfmt.c` 中的 `vprintfmt()` 函数，因为 `kern/printf.c` 中的 `cprintf()` 最终调用了该函数。
+
+```vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap)```
+
+该函数的函数签名中共四个参数，下面是四个参数的解释：
+
+1. 第一个参数是 putch 函数，之前已经解释过了，负责实现打印到终端。
+2. 第二个参数 putdat 初始值为零，目前还不知道负责什么功能。
+3. 第三个参数 fmt 是输入的字符串。
+4. 第四个参数 ap 是 va_list 类型，这个参数实现了可变参数，也就是可以处理不同数量的参数。
+
+cons_putc 分别调用了 serial_putc，lpt_putc 和 cga_putc 三个函数。
 
 ### Exercise 8.
 
-练习 8. 我们省略了一小段代码--使用"%o "形式的模式打印八进制数字所需的代码。找到并填入这个代码片段。
+我们省略了一小段代码--使用"%o "形式的模式打印八进制数字所需的代码。找到并填入这个代码片段。
 
-能够回答以下问题: 
+		case 'u':
+			num = getuint(&ap, lflag);
+			base = 10;
+			goto number;
 
-1. 解释一下printf.c和console.c之间的接口。具体来说，console.c输出了什么函数？这个函数是如何被printf.c使用的？
-2. 从console.c中解释如下：
+		// (unsigned) octal
+		case 'o':
+			// Replace this with your code.
+			num = getuint(&ap, lflag);
+			base = 8;
+			goto number;
+			break;
 
+
+回答以下问题: 
+
+1. 解释一下 printf.c 和 console.c 之间的接口。具体来说，console.c输出了什么函数？这个函数是如何被printf.c使用的？
+
+printf.c 中的 putch() 函数调用了 console.c 中的 cputchar() 函数，该函数再次调用了 cons_putc() 函数，这个函数负责将数据打印到终端。
+
+2. 从 console.c 中解释如下：
+
+```c
     1      if (crt_pos >= CRT_SIZE) {
     2              int i;
     3              memmove(crt_buf, crt_buf + CRT_COLS, (CRT_SIZE - CRT_COLS) * sizeof(uint16_t));
@@ -398,10 +479,20 @@ BIOS 将 boot sector 加载到内存中并从 0x7c00 处开始，这是 boot sec
     5                      crt_buf[i] = 0x0700 | ' ';
     6              crt_pos -= CRT_COLS;
     7      }
+```
+
+这段函数源自 `console.c` 文件中的 `cga_putc()` 函数，该函数会被 `cons_putc()` 函数所调用。根据注释可知，`cons_putc()` 负责将数据打印到终端，那么 `cga_putc()` 则是负责具体实现如何打印到终端。
+
+然后研究 `void* memmove( void* dest, const void* src, std::size_t count );` 从 src 处复制 count 大小的数据到 dest 上。最后分析 `memmove(crt_buf, crt_buf + CRT_COLS, (CRT_SIZE - CRT_COLS) * sizeof(uint16_t));` 其实就是将当前屏幕上的数据向上移动一行。
+
+最后的 for 循环就是将最新写入的部分(crt_pos >= CRT_SIZE)打印出来。
 
 3. 对于下面的问题，你可能希望参考第2讲的注释。这些笔记涵盖了GCC在X86上的调用惯例。
 
     逐步跟踪以下代码的执行。
+
+    int x = 1, y = 3, z = 4;
+    cprintf("x %d, y %x, z %d\n", x, y, z);
 
     在对cprintf()的调用中，fmt指向什么？ap指的是什么？
 
@@ -518,5 +609,14 @@ s尽管大多数C语言程序不需要在指针和整数之间进行转换，但
 你可能会发现在回溯中缺少一些函数。例如，你可能会看到对monitor()的调用，但没有对runcmd()的调用。这是因为编译器对一些函数的调用进行了内联。其他优化可能导致你看到意外的行数。如果你把GNUMakefile中的-O2去掉，回溯可能会更有意义（但你的内核会运行得更慢）。
 
 
-这样就完成了实验室的工作。在实验室目录中，用git commit提交你的修改，然后输入make handin提交你的代码。
 
+# 总结
+
+PC 启动 => BIOS => boot loader => kernel 
+
+1. PC 启动，加电自检。
+2. 跳转到 0xfe05b 处执行 BIOS 代码。进行一系列的初始化工作，例如设置中断描述符表，VGA 等。
+3. 将 boot loader 加载到 0x7c00 处，然后将控制权交给 boot loader 。
+   1. 从 16 位切换到 32 位，拥有更多的寻址空间。(boot.S)
+   2. 读取磁盘中的内核数据并写入内存中。(boot/main.c)
+4. 
