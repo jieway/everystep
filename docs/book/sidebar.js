@@ -106,14 +106,14 @@ module.exports = [
       'compile/ch5'
     ]
   },
-  {
-    title: '🍻 CSAPP',
-    children: [
-      '15-213/0-sum',
-      '15-213/1-lab1',
-      '15-213/2-lab2'
-    ]
-  },
+  // {
+  //   title: '🍻 CSAPP',
+  //   children: [
+  //     '15-213/0-sum',
+  //     '15-213/1-lab1',
+  //     '15-213/2-lab2'
+  //   ]
+  // },
   {
     title: '🎊 爬虫笔记',
     children: [

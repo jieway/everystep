@@ -672,13 +672,3 @@ mon_backtrace(int argc, char **argv, struct Trapframe *tf)
 }
 ```
 
-# 总结
-
-PC 启动 => BIOS => boot loader => kernel 
-
-1. PC 启动，加电自检。
-2. 跳转到 0xfe05b 处执行 BIOS 代码。进行一系列的初始化工作，例如设置中断描述符表，VGA 等。
-3. 将 boot loader 加载到 0x7c00 处，然后将控制权交给 boot loader 。
-   1. 从 16 位切换到 32 位，拥有更多的寻址空间。(boot.S)
-   2. 读取磁盘中的内核数据并写入内存中。(boot/main.c)
-4. 
