@@ -1,14 +1,15 @@
 # Lab 2: Memory Management
 
-https://pdos.csail.mit.edu/6.828/2018/labs/lab2/
+来源：https://pdos.csail.mit.edu/6.828/2018/labs/lab2/
 
 ## Introduction
 
-这个 lab 用来实现 OS 的内存管理，内存管理分为两部分。
+在这个 lab 中，将会实现 OS 的内存管理。内存管理由两部分组成。
 
-第一个组件是内核的物理内存分配器，这样内核就可以分配内存并随后释放它。你的分配器将以4096字节为单位操作，称为页。你的任务是维护数据结构，记录哪些物理页是空闲的，哪些是分配的，以及有多少进程在共享每个分配的页。你还将编写分配和释放内存页的程序。
+第一部分是物理内核分配器，内核能够分配并释放内存。分配器以 4096 字节为单位进行分配，也叫做一页。
+维护一个数据结构，该数据结构记录了哪些物理页被分配，哪些没有被分配，某个被分配的物理页上有多少个进行在共享使用。编写分配和释放内存页的程序。
 
-内存管理的第二个组成部分是虚拟内存，它将内核和用户软件使用的虚拟地址映射到物理内存中的地址。当指令使用内存时，x86硬件的内存管理单元（MMU）执行映射，咨询一组页表。你将修改JOS以根据我们提供的规范来设置MMU的页表。
+第二部分是虚拟内存，该部分实现了内核和用户软件使用的虚拟地址到物理地址的映射。当使用内存时，由 x86 中的 MMU 通过查询页表来实现映射。按照提示修改 JOS 中的 MMU 页表使其符合规范。
 
 ## Getting started
 
@@ -17,7 +18,7 @@ https://pdos.csail.mit.edu/6.828/2018/labs/lab2/
     git checkout -b lab2 origin/lab2
     git merge lab1
 
-下面是切换到 lab2 后新增加的问题，需要浏览一遍。
+下面是切换到 lab2 后新增加的文件，需要浏览一遍。
 
 * inc/memlayout.h
 * kern/pmap.c
@@ -25,9 +26,24 @@ https://pdos.csail.mit.edu/6.828/2018/labs/lab2/
 * kern/kclock.h 
 * kern/kclock.c
 
-memlayout.h 描述了虚拟地址空间的布局，你必须通过修改 pmap.c 来实现。memlayout.h 和 pmap.h 定义了 PageInfo 结构，你将用它来跟踪哪些物理内存页是空闲的。kclock.c 和 kclock.h 操纵 PC 的电池支持的时钟和 CMOS RAM 硬件，其中 BIOS 记录了 PC 包含的物理内存的数量，除此之外。pmap.c 中的代码需要读取这个设备硬件，以便计算出有多少物理内存，但这部分代码已经为你完成了：你不需要知道CMOS硬件工作的细节。
+`memlayout.h` 描述了虚拟地址空间的布局，必须通过修改 `pmap.c` 来实现。
 
-请特别注意 `memlayout.h` 和 `pmap.h` 因为本实验要求你使用并理解它们所包含的许多定义。 `inc/mmu.h` 也包含了许多对本实验有用的定义。
+`memlayout.h` 和 `pmap.h` 定义了 `PageInfo` 结构，用它来跟踪哪些物理内存页是空闲的。
+
+`kclock.c` 和 `kclock.h` 操纵 PC 的电池支持的时钟和 CMOS RAM 硬件，其中 BIOS 记录了 PC 包含的物理内存的数量。
+
+`pmap.c` 中的代码需要读取这个设备硬件，以便计算出有多少物理内存，但这部分代码已经为完成了，不需要知道CMOS硬件工作的细节。
+
+注意 `memlayout.h` 和 `pmap.h` 因为本实验要求你使用并理解它们所包含的许多定义。 
+
+`inc/mmu.h` 也包含了许多对本实验有用的定义。
+
+在 Lab1 中已经完成了 16 位到 32 位的转换。实现了将 0xf0000000 到 0xf0400000 之间的虚拟地址映射到物理地址 0x00000000 00400000 上。
+
+
+接下来仔细研究 `memlayout.h` 。
+
+![20220515200905](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220515200905.png)
 
 ## Part 1: Physical Page Management
 
