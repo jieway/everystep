@@ -2,27 +2,65 @@
 
 阅读：https://pdos.csail.mit.edu/6.828/2018/labs/lab1/
 
-这个实验由三部分组成：
+这个 lab 由三部分组成：
 
-* 第一部分主要是为了熟悉使用 x86 汇编语言、QEMU x86 仿真器、以及 PC 的加电引导过程。
-* 第二部分查看我们的 6.828 内核的引导加载器，它位于 lab 的 boot 目录中。
-* 第三部分深入到名为 JOS 的 6.828 内核模型内部，它在 kernel 目录中。
+* 第一部分主要是为了熟悉使用 x86 汇编语言、QEMU x86 模拟器、PC 加电引导过程。
+* 第二部分关注 6.828 内核引导加载器，位于 lab 的 boot 目录中。
+* 第三部分研究 6.828 内核(JOS)初始化内核初始化，位于 lab 的 kernel 目录中。
 
-> 因为文章太长，拆分成了三篇。
+后续会用到 git ，需要学习 [Git](http://www.git-scm.com/) 。
+
+深入了解，建议阅读 [Git user's manual](http://www.kernel.org/pub/software/scm/git/docs/user-manual.html) 。
+
+如果学过其他的版本控制工具但是没了解过 Git ，建议阅读 [Git for Computer Scientists](https://eagain.net/articles/git-for-computer-scientists/) 。
+
+下载代码：
+
+    % mkdir ~/6.828
+    % cd ~/6.828
+    % add git
+    % git clone https://pdos.csail.mit.edu/6.828/2018/jos.git lab
+    Cloning into lab...
+    % cd lab
+    % 
 
 # Part 1: PC Bootstrap
 
-来源：https://pdos.csail.mit.edu/6.828/2018/labs/lab1/
-
 这部分介绍 x86 汇编语言和 PC 引导过程，熟悉 QEMU 和 QEMU/GDB 调试。不用写代码但是需要回答问题。
 
-## Exercise 1.
+## 1. Getting Started with x86 assembly
 
-阅读材料，熟悉汇编语言。跳过了。
+> Exercise 1. 阅读材料，熟悉汇编语言。现在不用看，但是后续需要不断的参考。
 
-## The PC's Physical Address Space
+## 2. Simulating the x86
 
-`make qemu` 和 `make qemu-nox` 都是用来启动 qemu ，区别是后者不带图形界面。
+代码跑在 qemu 模拟器上，没有跑在裸机上。
+
+在 lab 文件夹中，通过 `make` 可以构建 JOS 的 boot loader 和 kernel。
+
+通过 `make qemu` 或 `make qemu-nox` 可以启动 qemu ，区别是前者带图形界面，后者不带。
+
+使用 `ctrl + a x` 可以退出 qemu 。
+
+下面分析 help 和 kerninfo 两个命令：
+
+    K> help
+    help - Display this list of commands
+    kerninfo - Display information about the kernel
+    K> kerninfo
+    Special kernel symbols:
+    _start                  0010000c (phys)
+    entry  f010000c (virt)  0010000c (phys)
+    etext  f0101917 (virt)  00101917 (phys)
+    edata  f0112300 (virt)  00112300 (phys)
+    end    f0112940 (virt)  00112940 (phys)
+    Kernel executable memory footprint: 75KB
+
+help 打印出可执行的命令，kerninfo 打印出内核信息。
+
+## 3. The PC's Physical Address Space
+
+下面深入了解 PC 的启动细节，PC 的物理地址空间布局如下：
 
     +------------------+  <- 0xFFFFFFFF (4GB)
     |      32-bit      |
@@ -42,40 +80,29 @@
     |                  |
     |                  |
     +------------------+  <- 0x00100000 (1MB)
-    |     BIOS ROM     |    BIOS 基本的输入输出
+    |     BIOS ROM     |  
     +------------------+  <- 0x000F0000 (960KB)
     |  16-bit devices, |
     |  expansion ROMs  |    
     +------------------+  <- 0x000C0000 (768KB)
-    |   VGA Display    |    用于视频显示
+    |   VGA Display    | 
     +------------------+  <- 0x000A0000 (640KB)
     |                  |
-    |    Low Memory    |  早期 PC 唯一可以访问的区域
-    |                  |  实际上早期 PC 一般内存大小为 16KB, 32KB, 或 64KB
+    |    Low Memory    | 
+    |                  |  
     +------------------+  <- 0x00000000
 
+早期的 PC 是 16bit ，例如 8088 处理器，只能处理 1MB 的物理内存。因为地址线是 20 位，所以地址空间是 $2^{20}$ ，即 $1MB$ 。因为地址空间只有 1MB ，所以内存空间从 `0x00000000` 开始到 `0x000FFFFF` 结束。
 
-早期的 PC 是 16bit ，例如 8088 处理器，只能处理 1MB 的物理内存。（为什么是 1MB 接下来会解释）
+早期 PC 的数据线是 16 位，所以一次只能取 $2^{16}$ 大小的数据，即 64KB 大小。
 
-1. 内存布局的前 640KB 是低内存，这是早期 PC 唯一可以随机访问的区域。此外早期 PC 的内存可以设置为 16KB，32KB 或 64KB 。
+32 位 PC 的地址空间是 32 位，所以大小为 $4G = 2^32$ 。物理空间从 `0x00000000` 开始，到 `0xFFFFFFFF` 结束。
 
-2. 从 0x000A0000 到 0x000FFFFF 这片内存区域留给硬件使用，例如视频显示的缓冲区，Basic Input/Output System (BIOS) 。起初这片区域是用 ROM 来实现的，也就是只能读不能写，而目前是用 flash 来实现，读写均可。此外 BIOS 负责初始化，初始化完成后会将 OS 加载到内存中，此后将控制权交给 OS 。
+内存布局的前 640KB 是低内存，这是早期 PC 唯一可以随机访问的区域。此外早期 PC 的内存可以设置为 16KB，32KB 或 64KB 。
+
+从 0x000A0000 到 0x000FFFFF 这片内存区域留给硬件使用，例如视频显示的缓冲区，Basic Input/Output System (BIOS) 。起初这片区域是用 ROM 来实现的，也就是只能读不能写，而目前是用 flash 来实现，读写均可。此外 BIOS 负责初始化，初始化完成后会将 OS 加载到内存中，此后将控制权交给 OS 。
 
 随着时代的发展，PC 开始支持 4GB 内存，所以地址空间扩展到了 0xFFFFFFFF 。但是为了兼容已有的软件，保留了 0 - 1MB 之间的内存布局。0x000A0000 到 0x00100000 这区域看起来像是一个洞。前 640kb 是传统内存，剩余的部分是扩展内存。在 32 位下，PC 顶端的一些空间保留给 BIOS ，方便 32 位 PCI 设备使用。但是支持的内存空间已经超过了 4GB 的物理内存，也就是物理内存可以扩展到 0xFFFFFFFF 之上。但是为了兼容 32 位设备的映射，在 32 位高地址部分留给 BIOS 的这片内存区域依旧保留，看起来像第二个洞。本实验中， JOS 只使用了前 256MB，可以假设只有 32 位的物理内存。
-
-* 为什么只能处理 1MB 的物理内存？
-
-因为 16 位的 PC 数据线是 16 位($2^{16} = 64KB$)，而地址线是 20 位( $2^{20} = 1MB$)。数据线决定了一次能获取的数据量，所以一次只能取 64KB。而地址线决定了可寻址空间大小，所以寻址空间是 1MB 。这也解释了实模式下为什么段长是 64KB 。所以物理空间从 `0x00000000` 开始到 `0x000FFFFF` 结束，并非是 `0xFFFFFFFF` 结束。
-
-而 32 位 PC 的地址空间是 32 位，所以大小为 $4G = 2^32$ 。物理空间从 `0x00000000` 开始，到 `0xFFFFFFFF` 结束。
-
-* 新的问题，寄存器都是 16 位的，怎么表示 20 位的地址？
-
-既然一个寄存器无法表示那么就用两个寄存器来表示，也就是分段。将 1MB 的空间在逻辑上以 64KB 为单位切分，段长就是 64KB 。地址由段基地址和段内偏移两部分组成，其中段基址左移四位再加上段内偏移即可。
-
-段基址不一定是 65536 的倍数，因为段允许重叠。
-
-* 为什么要分段？
 
 ## The ROM BIOS
 
@@ -87,11 +114,17 @@
 
     [f000:fff0] 0xffff0:	ljmp   $0xf000,$0xe05b
 
-PC 从 0x000ffff0 开始执行，第一条要执行的指令是 jmp，跳转到分段地址 CS=0xf000 和 IP=0xe05b 。
+PC 从物理地址 `0x000ffff0` 处开始执行，处于 BIOS 地址的顶部。
 
-起初因特尔是这样设计的，而 BIOS 处于 0x000f0000 和 0x000fffff 之间。这样设计确保了 PC 启动或重启都能获得机器的控制权。
+PC 从 `CS=0xf000` 和 `IP=0xfff0` 处开始执行。
 
-QEMU 自带 BIOS 并且会将其放置在模拟的物理地址空间的位置上，当处理器复位时，模拟的处理器进入实模式，将 CS 设置为 0xf000，IP 设置为 0xfff0 。然后就在 CS:IP 段处开始执行。
+第一条执行的指令是 jmp，跳转到分段地址 `CS=0xf000` 和 `IP=0xe05b` 。
+
+为什么 qemu 从此处开始执行？
+
+Intel 的 8088 处理器起初是这样设计的。因为 BIOS 处于 `0x000f0000` 和 `0x000fffff` 之间。这样设计确保了 PC 启动或重启都能获得机器的控制权，此外 BIOS 写死在这个地方。因为启动的时候只有 BIOS 能够被 CPU 处理。
+
+qemu 自带的 BIOS 会模拟真实的物理地址空间。当处理器启动，模拟的处理器进入实模式后会将 CS 设置为 0xf000，IP 设置为 0xfff0 。此后就在 CS:IP 段处开始执行。
 
 分段地址 0xf000:ffff0 如何变成物理地址？这里面有一个公式：
 
@@ -99,15 +132,15 @@ QEMU 自带 BIOS 并且会将其放置在模拟的物理地址空间的位置上
 
 例如：
 
-    16 * 0xf000 + 0xfff0   # in hex multiplication by 16 is
-    = 0xf0000 + 0xfff0     # easy--just append a 0.
+    16 * 0xf000 + 0xfff0   # 这是 16 进制
+    = 0xf0000 + 0xfff0     # 仅仅是左移一位
     = 0xffff0 
 
-0xffff0 是 BIOS 结束前的16个字节（0x100000）。如果继续向后执行， 16 字节 BIOS 就结束了，这么小的空间能干什么？
+在实模式下使用段式内存管理。因为数据线为 16 位，所以一次只能取 $2^{16}$ 的数据，即 64KB 。而地址线是20 位，即 $2^{20}$ ，也就是一个16 位的数据无法一次性索引 20 位的地址空间。解决方案是分段，一个寄存器表示段基地址，另一个寄存器表示段偏移量，其中段基址左移四位(16 进制下就是左移一位)再加上段内偏移即可。段基址不一定是 65536 的倍数，因为段允许重叠。
 
-## Exercise 2.
+0xffff0 是 BIOS 结束前的16个字节（0x100000）也是 PC 开始执行的第一条指令地址。如果继续向后执行， 16 字节 BIOS 就结束了，这么小的空间能干什么？
 
-使用 gdb 的 si 指令搞清楚 BIOS 的大致情况，不需要搞清楚所有细节。
+> Exercise 2.使用 gdb 的 si 指令搞清楚 BIOS 的大致情况，不需要搞清楚所有细节。
 
 使用 si 逐行查看指令：
 
@@ -140,10 +173,11 @@ QEMU 自带 BIOS 并且会将其放置在模拟的物理地址空间的位置上
 
 当 BIOS 启动的时候会先设置中断描述表，然后初始化各种硬件，例如 VGA 。
 
-当初始化 PCI 总线和 BIOS 知晓的所有重要设备后，将会寻找一个可启动的设备，如软盘、硬盘或CD-ROM。
+当初始化 PCI 总线和 BIOS 知晓的所有重要设备后，将会寻找一个可启动的设备，如软盘、硬盘或 CD-ROM 。
 
 最终，当找到一个可启动的磁盘时，BIOS 从磁盘上读取 boot loader 并将控制权转移给它。
 
 ## Part 1 总结
 
 PC 通电后，CPU 首先执行 BIOS ，执行一些初始化工作。
+

@@ -14,9 +14,8 @@
 5. lab5 文件系统。
 6. lab6 网络驱动，
 
-## 实验介绍
+## 参考
 
-1. [tools](https://pdos.csail.mit.edu/6.828/2018/tools.html)
-2. [Lab 1: Booting a PC](https://pdos.csail.mit.edu/6.828/2018/labs/lab1/)
+* 《操作系统真相还原》
+* [linux-insides](https://github.com/0xAX/linux-insides)
 
-结合《操作系统真相还原》阅读。

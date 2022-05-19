@@ -2,6 +2,8 @@
 
 参考内容主要源自 https://pdos.csail.mit.edu/6.828/2018/tools.html 。
 
+> 如下内容已经打包为 docker 镜像，如果想省事就直接下载镜像吧  `docker pull weijiew/6828:2018` 。
+
 流程：创建文件夹，下载代码，配置环境，编译成功。
 
     % mkdir ~/6.828
@@ -19,6 +21,7 @@
     git clone https://github.com/mit-pdos/6.828-qemu.git qemu
     sudo apt-get install libsdl1.2-dev libtool-bin libglib2.0-dev libz-dev libpixman-1-dev
     ./configure --disable-kvm --disable-werror --target-list="i386-softmmu x86_64-softmmu"
+    make && make install
 
 出现如下错误：
 
@@ -90,6 +93,7 @@
 
 再次编译，没有问题了！
 
+    $ cd lab
     $ make
     + ld obj/kern/kernel
     ld: warning: section `.bss' type changed to PROGBITS
@@ -98,6 +102,8 @@
     + ld boot/boot
     boot block is 380 bytes (max 510)
     + mk obj/kern/kernel.img
+
+启动 qemu
 
     $ sudo make qemu
 
@@ -108,4 +114,3 @@
 接下来继续阅读 lab1 ：https://pdos.csail.mit.edu/6.828/2018/labs/lab1/ 
 
 使用 `make grade` 来测试，验证程序是否正确。
-

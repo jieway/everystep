@@ -38,8 +38,7 @@
 
 `inc/mmu.h` 也包含了许多对本实验有用的定义。
 
-在 Lab1 中已经完成了 16 位到 32 位的转换。实现了将 0xf0000000 到 0xf0400000 之间的虚拟地址映射到物理地址 0x00000000 00400000 上。
-
+在 Lab1 中已经完成了 16 位到 32 位的转换。实现了将 0xf0000000 - 0xf0400000 之间的虚拟地址映射到物理地址 0x00000000 - 00400000 上。
 
 接下来仔细研究 `memlayout.h` 。
 
@@ -51,9 +50,7 @@
 
 你现在要编写物理页分配器。它通过一个 PageInfo 对象的链接列表来跟踪哪些页面是空闲的（与xv6不同的是，这些对象并没有嵌入到空闲页面本身），每个页面都对应一个物理页面。你需要在编写其余的虚拟内存实现之前编写物理页分配器，因为你的页表管理代码将需要分配物理内存来存储页表。
 
-### Exercise 1. 
-
-实现 `kern/pmap.c` 中的 `boot_alloc()`, `mem_init()` （只到调用check_page_free_list(1)为止）, `page_init()`, `page_alloc()`, `page_free()` 。建议按顺序来。
+> Exercise 1.  实现 `kern/pmap.c` 中的 `boot_alloc()`, `mem_init()` （只到调用check_page_free_list(1)为止）, `page_init()`, `page_alloc()`, `page_free()` 。建议按顺序来。
 
 `check_page_free_list()` 和 `check_page_alloc()` 用来测试物理页分配器。
 
@@ -63,10 +60,26 @@
 
 在 `mem_init()` 函数中，首先检测通过 `i386_detect_memory()` 当前机器内存数量 。然后通过 `boot_alloc()` 函数创建初始页目录并初始化为 0 。
 
+0. 怎么执行到这个这一步的？
+
+回顾一下：
+
+* `boot.S` 和 `main.c`  组成了 boot loader 。
+* 此后文件 `entry.S` 实现了进入内核。
+* 随即跳转到 `kern/init.c:i386_init()`，初始化 BSS 数据，初始化终端，最后初始化内存。最终进入`kern/monitor.c:monitor()`。
+* 通过 `mem_init()` 函数初始化内存。设置二级页表，kern_pgdir 是根部的线性地址，仅用来设置内核部分地址空间(addresses >= UTOP),
+* `kern/monitor.c:monitor()` 负责处理输入命令。
+* 
 
 1. 实现 boot_alloc(n)
 
-阅读注释可知：这个函数只用于 JOS 设置虚拟内存。page_alloc() 是真正的内存分配器。如果 n>0 ，分配足够的连续物理内存页以容纳'n'字节。 不对内存进行初始化。返回一个内核虚拟地址。如果n==0，返回下一个空闲页的地址，不分配任何东西。如果内存不够该函数会 panic 。这个函数只能在初始化过程中使用，在page_free_list列表被设置好之前。
+阅读注释可知：这个函数只用于 JOS 设置虚拟内存。page_alloc() 是真正的内存分配器。
+
+如果 n>0 ，分配足够的连续物理内存页以容纳'n'字节。 不对内存进行初始化。返回一个内核虚拟地址。
+
+如果n==0，返回下一个空闲页的地址，不分配任何东西。
+
+如果内存不够该函数会 panic 。这个函数只能在初始化过程中使用，在page_free_list列表被设置好之前。
 
 ```cpp
 	if (n == 0) return nextfree;
@@ -80,9 +93,27 @@
 	return result;
 ```
 
+此后初始化内核页表 kern_pgdir 。
+
+```cpp
+	kern_pgdir = (pde_t *) boot_alloc(PGSIZE);
+	memset(kern_pgdir, 0, PGSIZE);
+	kern_pgdir[PDX(UVPT)] = PADDR(kern_pgdir) | PTE_U | PTE_P;
+```
+
+建立内核页表虚拟地址和物理地址之间的映射。其中 UVPT 是某段虚拟地址的起始地址。PDX 实现了虚拟地址到页表索引的转换。
+
+PADDR 实现了虚拟地址和物理地址之间的映射，地址应当大于等于 KERNBASE ，否则会 panic 。用户和内核的权限是只读。
+
 2. 实现 `mem_init()`
 
-检测内存数量，然后创建并初始化内核页表。接下来分配一个 npages 的数组 'struct PageInfo' ，并将其存储在'pages'中。内核使用这个数组来跟踪物理页：对于每个物理页，在这个数组中都有一个相应的结构PageInfo。'npages'是内存中物理页的数量。 使用 memset 来初始化每个结构PageInfo的所有字段为 0 。
+检测内存数量，然后创建并初始化内核页表。
+
+接下来分配一个 npages 的数组 'struct PageInfo' ，并将其存储在'pages'中。
+
+内核使用这个数组来跟踪物理页：对于每个物理页，在这个数组中都有一个相应的结构PageInfo。
+
+'npages'是内存中物理页的数量。 使用 memset 来初始化每个结构PageInfo的所有字段为 0 。
 
 ```cpp
 	pages = (struct PageInfo *) boot_alloc(sizeof(struct PageInfo) * npages);

@@ -1,6 +1,6 @@
 # Lab 1 Part 2: The Boot Loader
 
-磁盘是由扇区组成，一个扇区为 512 B。磁盘的第一个扇区称为 boot sector ，这里面存放着 boot loader 。
+磁盘是由扇区组成，一个扇区为 512 B。磁盘的第一个扇区称为 boot sector ，其中存放着 boot loader 。
 
 BIOS 将 512B 的 boot sector 从磁盘加载到内存 0x7c00 到 0x7dff 之间。然后使用 jmp 指令设置 CS:IP 为 0000:7c00 最后将控制权传递给引导装载程序。在 6.828 中使用传统的硬盘启动机制，也就是 boot loader 不能超过 512B 。
 
@@ -18,15 +18,13 @@ Boot Loader 负责两个功能：
 
 使用 `x/Ni ADDR` 来打印地址中存储的内容。其中 N 是要反汇编的连续指令的数量，ADDR 是开始反汇编的内存地址。
 
-## Exercise 3. 
-
-阅读 [lab tools guide](https://pdos.csail.mit.edu/6.828/2018/labguide.html)，即使你已经很熟悉了，最好看看。
+> Exercise 3. 阅读 [lab tools guide](https://pdos.csail.mit.edu/6.828/2018/labguide.html)，即使你已经很熟悉了，最好看看。
 
 在 0x7c00 设置一个断点，启动扇区将会加载到此处。跟踪 `boot/boot.S` 并使用 `obj/boot/boot.asm` 来定位当前执行位置。使用 GDB 的 x/i 命令来反汇编 Boot Loader 中的指令序列并和 `obj/boot/boot.asm` 比较。
 
 * 阅读 `obj/boot/boot.asm` 下面是一些总结：
 
-在汇编中 . 开头的是汇编器指令，功能是告诉汇编器如何做，而不是做什么。汇编器指令并不会直接翻译为机器码，汇编指令会直接翻译为机器码。首先设置实模式的标志，进入实模式。然后关闭中断，防止执行时被打断，接下来设置字符串指针的移动方向。做了一些初始化工作，例如寄存器清零，开启 A20 数据线，为切换到 32 位做准备。处理 GDT 。
+在汇编中以 . 开头的是汇编器指令，功能是告诉汇编器如何做，而不是做什么。汇编器指令并不会直接翻译为机器码，汇编指令会直接翻译为机器码。首先设置实模式的标志，进入实模式。然后关闭中断，防止执行时被打断，接下来设置字符串指针的移动方向。做了一些初始化工作，例如寄存器清零，开启 A20 数据线，为切换到 32 位做准备。处理 GDT 。
 
 跟踪 boot/main.c 中的 bootmain() 函数，此后追踪到 readsect() 并研究对应的汇编指令，然后返回到 bootmain() 。确定从磁盘上读取内核剩余扇区的for循环的开始和结束。找出循环结束后将运行的代码，在那里设置一个断点，并继续到该断点。然后逐步完成 Boot Loader 的剩余部分。
 
@@ -51,9 +49,7 @@ Boot Loader 负责两个功能：
 
 接下来进一步研究 `boot/main.c` 中的 C 语言部分。
 
-## Exercise 4.
-
-建议阅读 'K&R' 5.1 到 5.5 搞清楚指针，此外弄清楚 [pointers.c](https://pdos.csail.mit.edu/6.828/2018/labs/lab1/pointers.c) 的输出，否则后续会很痛苦。
+> Exercise 4. 建议阅读 'K&R' 5.1 到 5.5 搞清楚指针，此外弄清楚 [pointers.c](https://pdos.csail.mit.edu/6.828/2018/labs/lab1/pointers.c) 的输出，否则后续会很痛苦。
 
 需要了解 ELF 二进制文件才能搞清楚 `boot/main.c` 。
 
@@ -110,9 +106,7 @@ BIOS 将 boot sector 加载到内存中并从 0x7c00 处开始，这是 boot sec
 
 在 `boot/Makefrag` 中通过 -Ttext 0x7C00 设置了启动地址。
 
-## Exercise 5.
-
-再次追踪 Boot Loader 的前几条指令，找出第一条指令，如果把 Boot Loader 的链接地址弄错了，就会 "中断 "或报错。然后把`boot/Makefrag` 中的链接地址改成错误的，运行make clean，用make重新编译实验室，并再次追踪到boot loader，看看会发生什么。不要忘了把链接地址改回来，然后再做一次清理。
+> Exercise 5.再次追踪 Boot Loader 的前几条指令，找出第一条指令，如果把 Boot Loader 的链接地址弄错了，就会 "中断 "或报错。然后把`boot/Makefrag` 中的链接地址改成错误的，运行make clean，用make重新编译实验室，并再次追踪到boot loader，看看会发生什么。不要忘了把链接地址改回来，然后再做一次清理。
 
 修改 `boot/Makefrag` 中的 `-Ttext 0x7C00` ，查看结果，例如将 其改为 `-Ttext 0x0C00` 。起初依旧加载到 0x7c00 处，但是跳转的时候出现问题。也就是最初的指令并不依赖地址，跳转的时候依赖。
 
@@ -133,9 +127,7 @@ kernel 是从 0x0010000c 处开始执行。
 
 此时应当理解 `boot/main.c` 中的 ELF loader 。它将内核的每个部分从磁盘上读到内存中的该部分的加载地址，然后跳转到内核的入口点。
 
-## Exercise 6.
-
-可以使用 GDB 的 x 命令来查看内存。此处知晓 `x/Nx ADDR` 就够用了，在ADDR处打印N个字的内存。
+> Exercise 6.可以使用 GDB 的 x 命令来查看内存。此处知晓 `x/Nx ADDR` 就够用了，在ADDR处打印N个字的内存。
 
 重新打开 gdb 检测，在 BIOS 进入 Boot Loader 时检查 0x00100000 处的 8 个内存字，然后在 Boot Loader 进入内核时再次检查。为什么它们会不同？在第二个断点处有什么？(你不需要用 QEMU 来回答这个问题，只需要思考一下。)
 
