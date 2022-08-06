@@ -2,7 +2,7 @@
 
 参考内容主要源自 https://pdos.csail.mit.edu/6.828/2018/tools.html 。
 
-> 如下内容已经打包为 docker 镜像，如果想省事就直接下载镜像吧  `docker pull weijiew/6828:2018` 。
+> 如下内容已经打包为 docker 镜像，如果想省事可以直接下载镜像：  `docker pull weijiew/6828:2018` 。
 
 流程：创建文件夹，下载代码，配置环境，编译成功。
 

@@ -2,7 +2,7 @@
 
 体系结构
 
-https://inst.eecs.berkeley.edu/~cs61c/su20/
+https://inst.eecs.berkeley.edu/~cs61c/su21/
 
 
 ## 进度

@@ -231,7 +231,7 @@ esp 寄存器指向栈顶，ebp 指向栈底。在 32 位模式下，堆栈只�
 * 运行objdump -G obj/kern/kernel
 * 运行gcc -pipe -nostdinc -O2 -fno-builtin -I. -MD -Wall -Wno-format -DJOS_KERNEL -gstabs -c -S kern/init.c，并查看init.s。
 * 看看bootloader是否在内存中加载符号表作为加载内核二进制的一部分
-* 完成debuginfo_eip的实现，插入对stab_binsearch的调用，以找到地址的行号。
+* 完成 debuginfo_eip 的实现，插入对stab_binsearch的调用，以找到地址的行号。
 
 
 	stab_binsearch(stabs, &lline, &rline, N_SLINE, addr);

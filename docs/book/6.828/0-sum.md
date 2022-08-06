@@ -3,9 +3,9 @@
 1. 课程安排：https://pdos.csail.mit.edu/6.828/2018/schedule.html
 2. 中文翻译：https://zhuanlan.zhihu.com/p/49935908
 
-## 实验简介
+## 1. 实验简介
 
-最终实现一个非宏内核 OS 。
+共有 6 个 lab ，最终实现一个非宏内核 OS 。
 
 1. lab1 OS 启动过程，boot loader，内核。
 2. lab2 内存管理，物理内存，虚拟地址，内核地址空间。
@@ -14,8 +14,7 @@
 5. lab5 文件系统。
 6. lab6 网络驱动，
 
-## 参考
+## 3. 参考
 
 * 《操作系统真相还原》
 * [linux-insides](https://github.com/0xAX/linux-insides)
-

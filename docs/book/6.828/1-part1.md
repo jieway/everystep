@@ -2,37 +2,14 @@
 
 阅读：https://pdos.csail.mit.edu/6.828/2018/labs/lab1/
 
-这个 lab 由三部分组成：
-
-* 第一部分主要是为了熟悉使用 x86 汇编语言、QEMU x86 模拟器、PC 加电引导过程。
-* 第二部分关注 6.828 内核引导加载器，位于 lab 的 boot 目录中。
-* 第三部分研究 6.828 内核(JOS)初始化内核初始化，位于 lab 的 kernel 目录中。
-
-后续会用到 git ，需要学习 [Git](http://www.git-scm.com/) 。
-
-深入了解，建议阅读 [Git user's manual](http://www.kernel.org/pub/software/scm/git/docs/user-manual.html) 。
-
-如果学过其他的版本控制工具但是没了解过 Git ，建议阅读 [Git for Computer Scientists](https://eagain.net/articles/git-for-computer-scientists/) 。
-
-下载代码：
-
-    % mkdir ~/6.828
-    % cd ~/6.828
-    % add git
-    % git clone https://pdos.csail.mit.edu/6.828/2018/jos.git lab
-    Cloning into lab...
-    % cd lab
-    % 
-
 # Part 1: PC Bootstrap
 
-这部分介绍 x86 汇编语言和 PC 引导过程，熟悉 QEMU 和 QEMU/GDB 调试。不用写代码但是需要回答问题。
+介绍 x86 汇编语言和 PC 启动过程。
 
-## 1. Getting Started with x86 assembly
+## Exercise 1. 
 
-> Exercise 1. 阅读材料，熟悉汇编语言。现在不用看，但是后续需要不断的参考。
+阅读材料，熟悉汇编语言。现在不用看，但是后续需要不断的参考。
 
-## 2. Simulating the x86
 
 代码跑在 qemu 模拟器上，没有跑在裸机上。
 
@@ -86,7 +63,7 @@ help 打印出可执行的命令，kerninfo 打印出内核信息。
     |  expansion ROMs  |    
     +------------------+  <- 0x000C0000 (768KB)
     |   VGA Display    | 
-    +------------------+  <- 0x000A0000 (640KB)
+    +------------------+  <- 0x000A0000 (640KB) IOPHYSMEM
     |                  |
     |    Low Memory    | 
     |                  |  
