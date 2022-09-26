@@ -2,42 +2,53 @@
 
 阅读：https://pdos.csail.mit.edu/6.828/2018/labs/lab1/
 
-# Part 1: PC Bootstrap
+## 1. 如何配置环境？
 
-介绍 x86 汇编语言和 PC 启动过程。
+上一篇文章
 
-## Exercise 1. 
+## 2. 如何下载并运行代码？
 
-阅读材料，熟悉汇编语言。现在不用看，但是后续需要不断的参考。
+首先下载代码：
 
+    % mkdir ~/6.828
+    % cd ~/6.828
+    % add git
+    % git clone https://pdos.csail.mit.edu/6.828/2018/jos.git lab
+    Cloning into lab...
+    % cd lab
+    % 
 
 代码跑在 qemu 模拟器上，没有跑在裸机上。
 
-在 lab 文件夹中，通过 `make` 可以构建 JOS 的 boot loader 和 kernel。
+通过 `make` 命令可以构建 JOS 的 boot loader 和 kernel。
 
-通过 `make qemu` 或 `make qemu-nox` 可以启动 qemu ，区别是前者带图形界面，后者不带。
+通过 `make qemu` 或  可以启动 qemu 。
+
+在 SSH 窗口中使用 `make qemu-nox` 更方便，因为不会弹出窗口。
 
 使用 `ctrl + a x` 可以退出 qemu 。
 
-下面分析 help 和 kerninfo 两个命令：
+## 3. x86 汇编没学过怎么办？
 
-    K> help
-    help - Display this list of commands
-    kerninfo - Display information about the kernel
-    K> kerninfo
-    Special kernel symbols:
-    _start                  0010000c (phys)
-    entry  f010000c (virt)  0010000c (phys)
-    etext  f0101917 (virt)  00101917 (phys)
-    edata  f0112300 (virt)  00112300 (phys)
-    end    f0112940 (virt)  00112940 (phys)
-    Kernel executable memory footprint: 75KB
+阅读 [《PC Assembly Language》](https://pdos.csail.mit.edu/6.828/2018/readings/pcasm-book.pdf) 但书中的汇编使用的是 Intel 风格，而代码采用的 GNU 风格，可以通过 [Brennan's Guide to Inline Assembly](http://www.delorie.com/djgpp/doc/brennan/brennan_att_inline_djgpp.html) 了解二者的差异，进而转换。
 
-help 打印出可执行的命令，kerninfo 打印出内核信息。
 
-## 3. The PC's Physical Address Space
+[Intel 80386 Reference Programmer's Manual Table of Contents](https://pdos.csail.mit.edu/6.828/2018/readings/i386/toc.htm)
 
-下面深入了解 PC 的启动细节，PC 的物理地址空间布局如下：
+## 4. Exercise 1. 如何解决？
+
+阅读材料，熟悉汇编语言，了解两种汇编风格并学会转换。现在不用看，但是后续需要不断的参考。
+
+## 5. 如何使用终端？
+
+通过 `make qemu` 进入中断。此时终端仅支持 help 和 kerninfo 两个命令。其中 help 打印出可执行的命令，kerninfo 打印出内核信息。
+
+此时已经将内核二进制文件(`obj/kern/kernel.img`)复制到磁盘的前几个扇区中。可以在真正的机器上这样做，但是不建议，因为可能会硬盘此前所保存的信息丢失。
+
+
+## 6. PC 的内存地址空间布局是什么？
+
+下图是 PC 的物理地址空间布局如下：
 
     +------------------+  <- 0xFFFFFFFF (4GB)
     |      32-bit      |
@@ -69,29 +80,27 @@ help 打印出可执行的命令，kerninfo 打印出内核信息。
     |                  |  
     +------------------+  <- 0x00000000
 
-早期的 PC 是 16bit ，例如 8088 处理器，只能处理 1MB 的物理内存。因为地址线是 20 位，所以地址空间是 $2^{20}$ ，即 $1MB$ 。因为地址空间只有 1MB ，所以内存空间从 `0x00000000` 开始到 `0x000FFFFF` 结束。
 
-早期 PC 的数据线是 16 位，所以一次只能取 $2^{16}$ 大小的数据，即 64KB 大小。
+最初的 PC 是 16 位，例如因特尔 8088 处理器，并且只能处理 1MB 的物理内存。因此，早期PC的物理地址空间将从0x00000000开始，但在0x000FFFFF而不是0xFFFFFFFF结束。
 
-32 位 PC 的地址空间是 32 位，所以大小为 $4G = 2^32$ 。物理空间从 `0x00000000` 开始，到 `0xFFFFFFFF` 结束。
+* 为什么 16 位的内存地址却能处理 1MB 的物理内存？
 
-内存布局的前 640KB 是低内存，这是早期 PC 唯一可以随机访问的区域。此外早期 PC 的内存可以设置为 16KB，32KB 或 64KB 。
+> 因为地址线是 20 位，所以地址空间是 $2^{20}$ ，即 $1MB$ 。因为地址空间只有 1MB ，所以内存空间从 `0x00000000` 开始到 `0x000FFFFF` 结束。早期 PC 的数据线是 16 位，所以一次只能取 $2^{16}$ 大小的数据，即 64KB 大小。32 位 PC 的地址空间是 32 位，所以大小为 $4G = 2^32$ 。物理空间从 `0x00000000` 开始，到 `0xFFFFFFFF` 结束。
 
-从 0x000A0000 到 0x000FFFFF 这片内存区域留给硬件使用，例如视频显示的缓冲区，Basic Input/Output System (BIOS) 。起初这片区域是用 ROM 来实现的，也就是只能读不能写，而目前是用 flash 来实现，读写均可。此外 BIOS 负责初始化，初始化完成后会将 OS 加载到内存中，此后将控制权交给 OS 。
+1. [0x00000000, 0x000A0000 (640KB)] 称为 "Low Memory" ,早期 PC 唯一可用的随机存取存储器。实际上，最初的 PC 内存大小通常为 16 KB， 32 KB 或 64KB 的 RAM 。
+2. [0x000A0000, 0x000FFFFF] 例如视频显示的缓冲区，其中 0x000F0000 到 0x000FFFFF 留给了 Basic Input/Output System (BIOS) 。起初这片区域是用 ROM 来实现的，也就是只能读不能写，而目前是用 flash 来实现，读写均可。此外 BIOS 负责初始化，初始化完成后会将 OS 加载到内存中，此后将控制权交给 OS 。
 
 随着时代的发展，PC 开始支持 4GB 内存，所以地址空间扩展到了 0xFFFFFFFF 。但是为了兼容已有的软件，保留了 0 - 1MB 之间的内存布局。0x000A0000 到 0x00100000 这区域看起来像是一个洞。前 640kb 是传统内存，剩余的部分是扩展内存。在 32 位下，PC 顶端的一些空间保留给 BIOS ，方便 32 位 PCI 设备使用。但是支持的内存空间已经超过了 4GB 的物理内存，也就是物理内存可以扩展到 0xFFFFFFFF 之上。但是为了兼容 32 位设备的映射，在 32 位高地址部分留给 BIOS 的这片内存区域依旧保留，看起来像第二个洞。本实验中， JOS 只使用了前 256MB，可以假设只有 32 位的物理内存。
 
-## The ROM BIOS
+## 7. 启动流程分析
 
 这一部分将会使用 qemu 的 debug 工具来研究计算机启动。
 
-![20220504195748](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220504195748.png)
-
-可以用 tmux 开两个窗口，一个窗口输入 `make qemu-nox-gdb` 另一个窗口输入 `make gdb` 摘取其中一行输入信息：
+debug 时需要开两个窗口，建议 tmux 。一个窗口输入 `make qemu-nox-gdb` 另一个窗口输入 `make gdb` 摘取其中一行输出信息：
 
     [f000:fff0] 0xffff0:	ljmp   $0xf000,$0xe05b
 
-PC 从物理地址 `0x000ffff0` 处开始执行，处于 BIOS 地址的顶部。
+这是 GDB 反汇编出来的第一条指令，从中可以得出 PC 从物理地址 `0x000ffff0` 处开始执行，处于 BIOS 地址的顶部。
 
 PC 从 `CS=0xf000` 和 `IP=0xfff0` 处开始执行。
 
@@ -117,7 +126,9 @@ qemu 自带的 BIOS 会模拟真实的物理地址空间。当处理器启动，
 
 0xffff0 是 BIOS 结束前的16个字节（0x100000）也是 PC 开始执行的第一条指令地址。如果继续向后执行， 16 字节 BIOS 就结束了，这么小的空间能干什么？
 
-> Exercise 2.使用 gdb 的 si 指令搞清楚 BIOS 的大致情况，不需要搞清楚所有细节。
+## 8. Exercise 2.
+
+使用 gdb 的 si 指令搞清楚 BIOS 的大致情况，不需要搞清楚所有细节。
 
 使用 si 逐行查看指令：
 
