@@ -109,7 +109,7 @@ sys_trace(void){
 * 接下来是修改 `kernel/syscall.c` 中的 `syscall()` 函数以打印跟踪输出。
 * 先将在头部添加 `extern uint64 sys_trace(void); `方便别的文件引用。
 * 接下来在 `static uint64 (*syscalls[])(void)` 添加相应内容 `[SYS_trace]   sys_trace,`
-* 后续内容修改如下：
+* 因为要打印系统调用名称，但是缺少系统调用号和名称之间的映射，需要建立二者的映射。
 
 ```cpp
 static char* syscall_names[] = {
@@ -175,7 +175,6 @@ syscall(void)
 任务是添加一个系统调用函数 sysinfo ，先把用户态下的执行流程设置好。
 
 将 `$U/_sysinfotest` 添加到 Makefile 的 UPROGS 中。接下来执行 make qemu 后发现报错：
-
 
 ![20220318135234](https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318135234.png)
 
