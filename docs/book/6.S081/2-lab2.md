@@ -4,6 +4,8 @@
 
 > 需要提前阅读的内容：xv6书的第2章和第4章的4.3和4.4节，以及相关的源文件。系统调用的用户空间代码在 `user/user.h` 和 `user/usys.pl` 中。内核空间的代码是 `kernel/syscall.h` , `kernel/syscall.c`。与进程有关的代码是 `kernel/proc.h` 和 `kernel/proc.c` 。
 
+下面是对上述需要阅读内容的提炼总结以及部分翻译。
+
 ## 1. 前置阅读内容总结
 
 xv6 book ch2 总结
@@ -80,8 +82,21 @@ xv6 book ch2 总结
 - 2.7 Real world
   - 实际上现代操作系统中即存在宏内核，也存在微内核。许多Unix内核都是宏内核，例如 Linux 。此外大多数操作系统都采用了进程概念，大多数进程都与xv6的相似。
   - 现代操作系统支持进程可以拥有多个线程，以允许一个进程利用多个CPU。在一个进程中支持多个线程涉及到不少 xv6 没有的机制，包括潜在的接口变化(如Linux的`clone`，`fork`的变种)，以控制线程所共享进程的那些部分。
+- 4.3 Code: Calling system calls
+  - 第2章以`initcode.S`调用`exec`系统调用结束（user/initcode.S:11）。接下来研究用户调用是如何在内核中实现`exec`系统调用的。
+  - 用户代码将`exec`的参数放在寄存器`a0`和`a1`中，并将系统调用号放在`a7`中。系统调用号与函数指针表`syscalls`数组（kernel/syscall.c:108）中的项匹配。`ecall`指令进入内核，执行`uservec`、`usertrap`，然后执行`syscall` 。
+  - `syscall`（kernel/syscall.c:133）从trapframe中的`a7`中得到系统调用号，并其作为索引在`syscalls`查找相应函数。对于第一个系统调用`exec`，`a7`将为`SYS_exec`（kernel/syscall.h:8），这会让`syscall`调用`exec`的实现函数`sys_exec`。
+  - 当系统调用函数返回时，`syscall`将其返回值记录在`p->trapframe->a0`中。用户空间的`exec()`将会返回该值，因为RISC-V上的C调用通常将返回值放在`a0`中。系统调用返回负数表示错误，0或正数表示成功。如果系统调用号无效，`syscall`会打印错误并返回-1。
+- 4.4 Code: System call arguments
+  - 内核的系统调用实现需要找到用户代码传递的参数。因为用户代码调用系统调用的包装函数，参数首先会存放在寄存器中，这是C语言存放参数的约定位置。内核trap代码将用户寄存器保存到当前进程的trap frame中，内核代码可以在那里找到它们。函数`argint`、`argaddr`和`argfd`从trap frame中以整数、指针或文件描述符的形式检索第n个系统调用参数。它们都调用`argraw`来获取保存的用户寄存器（kernel/syscall.c:35）。
+  - 一些系统调用传递指针作为参数，而内核必须使用这些指针来读取或写入用户内存。例如，`exec`系统调用会向内核传递一个指向用户空间中的字符串的指针数组。这些指针带来了两个挑战。首先，用户程序可能是错误的或恶意的，可能会传递给内核一个无效的指针或一个旨在欺骗内核访问内核内存而不是用户内存的指针。第二，xv6内核页表映射与用户页表映射不一样，所以内核不能使用普通指令从用户提供的地址加载或存储。
+  - 内核实现了安全地将数据复制到用户提供的地址或从用户提供的地址复制数据的函数。例如`fetchstr`（kernel/syscall.c:25）。文件系统调用，如`exec`，使用`fetchstr`从用户空间中检索字符串文件名参数。`fetchstr`调用`copyinstr`来做这些困难的工作。
+  - `copyinstr`（kernel/vm.c:406）将用户页表`pagetable`中的虚拟地址`srcva`复制到`dst`，需指定最大复制字节数。它使用`walkaddr`（调用`walk`函数）在软件中模拟分页硬件的操作，以确定`srcva`的物理地址`pa0`。`walkaddr`（kernel/vm.c:95）检查用户提供的虚拟地址是否是进程用户地址空间的一部分，所以程序不能欺骗内核读取其他内存。类似的函数`copyout`，可以将数据从内核复制到用户提供的地址。
 
-## 2. 做实验
+
+
+
+## 2. 实验
 
 开始实验，切换到syscall分支。
 
