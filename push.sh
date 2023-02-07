@@ -5,6 +5,6 @@ read commitMessage
 
 git add .
 git commit -m "$commitMessage"
-git push -u origin main
+git push -u origin master
 
 echo "git commit success!"
