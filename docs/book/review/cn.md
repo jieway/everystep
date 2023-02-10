@@ -1,3 +1,8 @@
+# 计算机网络
+
+## OSI 和 TCP 的区别？
+- OSI 是一个标准，但是并不符合实际，实现起来复杂。
+- TCP 是一种实现方式，TCP 是 OSI 的简化版。分为应用层，传输层，网络层，网络接口层。
 
 ## OSDI 七层模型是什么？
 - 物(物理层)
@@ -8,10 +13,6 @@
 - 适(表示层)
 - 用(应用层)。
 
-## OSI 和 TCP 的区别？
-- OSI 是一个标准，但是并不符合实际，实现起来复杂。
-- TCP 是一种实现方式，TCP 是 OSI 的简化版。分为应用层，传输层，网络层，网络接口层。
-
 ## UDP 协议
 - 无连接的传输层协议，因为无连接所以不可靠。功能简单，没有流量控制，没有拥塞控制。
 - 头部只有八字节所以开销小，源端口，目的端口，长度和校验和。
@@ -19,47 +20,43 @@
   * 校验和是针对报文整体，包含数据报部分和头部计算出来一个数值，保证数据在运输过程中不出错。
 - 适用于实时场景，例如视频多媒体之类。
 
+## TCP 三次握手
+
+
 ## TCP 协议是什么？
-
-TCP 是面向连接的可靠传输协议。TCP 是点对点，UDP 是一对多的协议。
-
-GBN 协议是针对第一个发送的数据报进行计时，然后将之后的所有数据报重传。
-
-SR 协议是针对发送窗口中的所有数据报，哪个数据报超时就重传哪个。
+- TCP 是面向连接的可靠传输协议。TCP 是点对点，UDP 是一对多的协议。
+- GBN 协议是针对第一个发送的数据报进行计时，然后将之后的所有数据报重传。
+- SR 协议是针对发送窗口中的所有数据报，哪个数据报超时就重传哪个。
 
 ## TCP 多少字节？最大传输单元？
-
-最大传输单元（MTU） 1500 字节，IP 头部 20 字节，TCP 头部 20 字节，所以 TCP 的数据报最多 1460 字节。
+- 最大传输单元（MTU） 1500 字节，IP 头部 20 字节，TCP 头部 20 字节，所以 TCP 的数据报最多 1460 字节。
 
 ## 流量控制和拥塞控制区别？
-
-流量控制是指控制两点之间的流量传输速度，通过调整窗口尺寸来实现，属于局部。
-而拥塞控制是根据整个网络的拥塞情况来调整数据传输，拥塞情况则用丢包，超时等信息来判断，属于全局。
+- 流量控制是指控制两点之间的流量传输速度，通过调整窗口尺寸来实现，属于局部。
+- 而拥塞控制是根据整个网络的拥塞情况来调整数据传输，拥塞情况则用丢包，超时等信息来判断，属于全局。
 
 ## 拥塞控制流程？
-
-慢开始，拥塞避免，快重传，快恢复。
-
-慢开始：拥塞窗口指数增长到设置的值。
-
-快重传是指当收到连续三个连续的重复确认就重传，而不是等待超时再重传。
+- 慢开始，拥塞避免，快重传，快恢复。
+- 慢开始：拥塞窗口指数增长到设置的值。
+- 快重传是指当收到连续三个连续的重复确认就重传，而不是等待超时再重传。
 
 ## 什么是累计确认？
-
-例如接收端收到了 1，2，3，4，5 而发送端收到了 3 的确认，发送端就不用再逐个确认 1，2 了。收到 3 表示 3 之前的都已经收到了。
+- 例如接收端收到了 1，2，3，4，5 而发送端收到了 3 的确认，发送端就不用再逐个确认 1，2 了。收到 3 表示 3 之前的都已经收到了。
 
 ## Cookie 和 Session 的区别？
+- HTTP 是一种不保存状态，即无状态（stateless）协议。
+- HTTP 是无状态协议，Session 解决了这个问题。具体流程是在服务端针对用户创建相应的 Session 。但是客户端如何定位服务端相应用户的 Session ？主要是通过存储在客户端的 Cookie 中添加 Session id ，然后发送到服务端定位到相应的 Session 。
+- Cookie 和 Session 都是用来跟踪浏览器用户身份的会话方式，但是两者的应用场景不太一样。
+  - Cookie 一般用来保存用户信息。Session 的主要作用就是通过服务端记录用户的状态。
+  - Cookie 数据保存在客户端(浏览器端)，Session 数据保存在服务器端。相对来说 Session 安全性更高。
 
-HTTP 是一种不保存状态，即无状态（stateless）协议。
+- Cookies and sessions are two different mechanisms used to store information about a user's state in a web application.
 
-HTTP 是无状态协议，Session 解决了这个问题。具体流程是在服务端针对用户创建相应的 Session 。但是客户端如何定位服务端相应用户的 Session ？主要是通过存储在客户端的 Cookie 中添加 Session id ，然后发送到服务端定位到相应的 Session 。
+- A cookie is a small piece of data that is stored on the user's computer by the web browser. This data can be used to remember the user's preferences, login information, or any other information that needs to persist across multiple requests. Cookies are stored on the client-side and are sent to the server with every request, which allows the server to retrieve information about the user's previous interactions with the application.
 
-Cookie 和 Session 都是用来跟踪浏览器用户身份的会话方式，但是两者的应用场景不太一样。
+- On the other hand, a session is a server-side mechanism for storing information about a user's state. When a user logs into a web application, the server creates a session, and assigns a unique session ID to the user. This session ID is then stored on the client-side, usually in a cookie, and sent back to the server with each request. The server uses this session ID to retrieve information about the user's session and state from its memory.
 
-Cookie 一般用来保存用户信息。Session 的主要作用就是通过服务端记录用户的状态。
-
-Cookie 数据保存在客户端(浏览器端)，Session 数据保存在服务器端。相对来说 Session 安全性更高。
-
+- In summary, cookies are stored on the client-side, and are used to store information that needs to persist across multiple requests. Sessions are stored on the server-side, and are used to store information about a user's state in a web application.
 
 ## RPC
 -   RPC的实现流程？
@@ -80,7 +77,6 @@ Cookie 数据保存在客户端(浏览器端)，Session 数据保存在服务器
 -   那么，根据这个实现，如果第一次的请求是响应成功的，但是由于网络原因失败，应该怎么办？
     -   不懂了，之后没继续深挖
 
-## TCP 三次握手
 
 ## 粘包
 - 什么是粘包？

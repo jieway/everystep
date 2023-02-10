@@ -19,8 +19,14 @@
     sudo apt-get install gcc-multilib
 
     git clone https://github.com/mit-pdos/6.828-qemu.git qemu
+    cd qemu
     sudo apt-get install libsdl1.2-dev libtool-bin libglib2.0-dev libz-dev libpixman-1-dev
     ./configure --disable-kvm --disable-werror --target-list="i386-softmmu x86_64-softmmu"
+
+如果报错 `ERROR: Python not found. Use --python=/path/to/python` 需要安装Python 2.7才能正常配置。执行下述命令。
+
+    ./configure --disable-kvm --disable-werror --target-list="i386-softmmu x86_64-softmmu" --python=/usr/bin/python2
+
     make && make install
 
 出现如下错误：

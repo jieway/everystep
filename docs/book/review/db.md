@@ -3,12 +3,35 @@
 ## 1. 什么是事务？
 - 事务是逻辑上的一组操作，要么都执行，要么都不执行。
 
+- A transaction is a logical set of operations that are either all or none of them executed.
+
+- A transaction is a sequence of one or more operations that are executed as a single, atomic unit of work. In database systems, a transaction is used to ensure that a group of related changes to the database are made in an all-or-nothing manner. If any one of the operations in the transaction fails, the entire transaction is rolled back, restoring the database to its state prior to the transaction. If all operations in the transaction succeed, the transaction is committed, and the changes are made permanent in the database.
+
+- Transactions are used to ensure the integrity and consistency of the data stored in a database. They provide a mechanism for grouping related operations into a single, cohesive unit, and for ensuring that these operations are executed as a single, indivisible unit of work. This helps to ensure that the database remains in a consistent state, even in the event of system failures, network outages, or other unexpected events.
+
+- Transactions can be used in many different types of systems, including database systems, financial systems, and distributed systems. In these systems, transactions are used to ensure the integrity and consistency of the data, and to provide a mechanism for coordinating the execution of operations across multiple systems or components.
+
+
+
 ## 2. ACID 是什么？
+
+- ACID is an acronym that stands for Atomicity, Consistency, Isolation, and Durability, which are the key properties of a transaction in a database system. These properties ensure that transactions are executed reliably and that the data in the database remains consistent and correct, even in the presence of failures or errors.
+
 - A 是指**原子性**（`Atomicity`）表示事务的最小执行单位，指一个事务要么都完成要么什么都不做。
+- Atomicity refers to the all-or-nothing nature of transactions. A transaction is either completed in its entirety or not at all. If any operation within the transaction fails, the entire transaction is rolled back, and the database is left in its original state prior to the transaction.
+
 - C 是指**一致性**（`Consistency`） ，执行前后，数据需要保持一致，例如转账前后无论成功与否，金额的总数不变。
-- I 是指隔离性（Isolation）并发访问数据库时，用户的事务不被其他事务所干扰。
-- D 是指持久性(Durability）执行完毕后数据永久的写入磁盘，发生故障后也不受影响。
-- 只有保证了 AID，才能进而实现 C 。原子性，隔离性和持久性是数据库的属性，而一致性（在 ACID 意义上）是应用程序的属性。应用可能依赖数据库的原子性和隔离属性来实现一致性，但这并不仅取决于数据库。因此，字母 C 不属于 ACID 。
+- Consistency refers to the requirement that a transaction brings the database from one valid state to another. Transactions must preserve the integrity constraints of the database, and must not leave the database in an inconsistent or corrupt state.
+
+- **I 是指隔离性（Isolation）并发访问数据库时，用户的事务不被其他事务所干扰。**
+- Isolation refers to the requirement that the execution of one transaction must be isolated from the execution of other transactions. Each transaction must be executed as if it were the only transaction executing, even if multiple transactions are executing concurrently.
+
+- **D 是指持久性(Durability）执行完毕后数据永久的写入磁盘，发生故障后也不受影响。**
+- Durability refers to the requirement that once a transaction has been committed, its changes to the database must be permanent and survive any subsequent failures. This is typically achieved through the use of transaction logs, backups, and other techniques to ensure that the data is preserved in the event of a crash or other failure.
+
+- **只有保证了 AID，才能进而实现 C 。原子性，隔离性和持久性是数据库的属性，而一致性（在 ACID 意义上）是应用程序的属性。应用可能依赖数据库的原子性和隔离属性来实现一致性，但这并不仅取决于数据库。因此，字母 C 不属于 ACID 。**
+- Together, the ACID properties provide a strong foundation for building reliable and correct database systems. By ensuring the atomicity, consistency, isolation, and durability of transactions, ACID provides a way to ensure that the data stored in a database is accurate, consistent, and secure.
+
 
 ## 3. 并发事务可能导致的问题？
 - 脏读：
@@ -96,7 +119,7 @@
 	- 另外，MySQL还提供了一种名为“复制”的功能，允许将数据从一个数据库复制到另一个数据库。复制功能使用Binlog来记录从主
 
 
-## 1.redo log 和 undo log ？
+## 13.redo log 和 undo log ？
 - redo log
 	- Redo log是记录数据库中更改操作的日志文件。当数据库执行更改操作时，它会先将更改写入redo log中，然后再将更改应用到数据库中。如果数据库在执行更改操作过程中出现问题，可以使用redo log来恢复数据库。
 - undo log 
