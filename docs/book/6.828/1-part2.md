@@ -8,7 +8,6 @@ BIOS 将 512B 的 boot sector 从磁盘加载到内存 0x7c00 到 0x7dff 之间�
 > 简而言之，0x7c00 = 32KB - 1024B  
 > 最初 IBM 设计 DOS 1.0 最小内存是 32KB 。
 > 为了加载 boot loader 所消耗的内存要大于 512B ，选择了 1024B 。
-> 具体可参考：https://zhuanlan.zhihu.com/p/38433204 。
 
 boot loader 由汇编语言 `boot/boot.S` 和一个 C 语言文件 `boot/main.c` 组成。需要搞明白这两个文件的内容。
 
