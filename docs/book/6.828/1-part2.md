@@ -24,15 +24,20 @@ Boot Loader 负责两个功能：
 
 使用 `x/Ni ADDR` 来打印地址中存储的内容。其中 N 是要反汇编的连续指令的数量，ADDR 是开始反汇编的内存地址。
 
-> Exercise 3. 阅读 [lab tools guide](https://pdos.csail.mit.edu/6.828/2018/labguide.html)，即使你已经很熟悉了，最好看看。
+:::danger💡 Exercise 3.
+Exercise 3. 阅读 [lab tools guide](https://pdos.csail.mit.edu/6.828/2018/labguide.html)，即使你已经很熟悉了，最好看看。
 
 在 0x7c00 设置一个断点，启动扇区将会加载到此处。跟踪 `boot/boot.S` 并使用 `obj/boot/boot.asm` 来定位当前执行位置。使用 GDB 的 x/i 命令来反汇编 Boot Loader 中的指令序列并和 `obj/boot/boot.asm` 比较。
+
+跟踪 boot/main.c 中的 bootmain() 函数，此后追踪到 readsect() 并研究对应的汇编指令，然后返回到 bootmain() 。确定从磁盘上读取内核剩余扇区的for循环的开始和结束。找出循环结束后将运行的代码，在那里设置一个断点，并继续到该断点。然后逐步完成 Boot Loader 的剩余部分。
+
+:::
 
 * 阅读 `obj/boot/boot.asm` 下面是一些总结：
 
 在汇编中以 . 开头的是汇编器指令，功能是告诉汇编器如何做，而不是做什么。汇编器指令并不会直接翻译为机器码，汇编指令会直接翻译为机器码。首先设置实模式的标志，进入实模式。然后关闭中断，防止执行时被打断，接下来设置字符串指针的移动方向。做了一些初始化工作，例如寄存器清零，开启 A20 数据线，为切换到 32 位做准备。处理 GDT 。
 
-跟踪 boot/main.c 中的 bootmain() 函数，此后追踪到 readsect() 并研究对应的汇编指令，然后返回到 bootmain() 。确定从磁盘上读取内核剩余扇区的for循环的开始和结束。找出循环结束后将运行的代码，在那里设置一个断点，并继续到该断点。然后逐步完成 Boot Loader 的剩余部分。
+
 
 * 回答下面的问题：
 

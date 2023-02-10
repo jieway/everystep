@@ -14,6 +14,8 @@
 5. lab5 文件系统。
 6. lab6 网络驱动，
 
+在做实验的过程中会产生一堆疑问，建议阅读 [linux-insides](https://github.com/0xAX/linux-insides) 这本书。
+
 ## 3. 参考
 
 * 《操作系统真相还原》
