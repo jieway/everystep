@@ -105,4 +105,12 @@ module.exports = [
       'compile/ch5'
     ]
   },
+  {
+    title: '🧁 6.828 2018',
+    children: [
+      '6.828/0-sum',
+      '6.828/1-env',
+      '6.828/1-part1',
+    ]
+  },
 ]
