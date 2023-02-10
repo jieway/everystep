@@ -254,7 +254,7 @@ QEMU 模拟器有自己的 BIOS，它把它放在处理器的模拟物理地址�
 
 0xffff0 是 BIOS 结束前的16个字节（0x100000）也是 PC 开始执行的第一条指令地址。如果继续向后执行， 16 字节 BIOS 就结束了，这么小的空间能干什么？
 
-> !练习2.
+> **练习2.**
 > 使用GDB的 si(Step Instruction) 命令追踪到 ROM BIOS 中的几个指令，并尝试猜测它可能在做什么。你可能想看看[Phil Storrs I/O](http://web.archive.org/web/20040404164813/members.iweb.net.au/~pstorr/pcbook/book2/book2.htm)端口描述，以及[6.828参考资料页面](https://pdos.csail.mit.edu/6.828/2018/reference.html)上的其他资料。不需要弄清楚所有的细节--只需要先弄清楚BIOS在做什么的大概意思。
 > 
 > 使用 si 逐行查看指令：
