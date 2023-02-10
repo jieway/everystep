@@ -254,37 +254,40 @@ QEMU 模拟器有自己的 BIOS，它把它放在处理器的模拟物理地址�
 
 0xffff0 是 BIOS 结束前的16个字节（0x100000）也是 PC 开始执行的第一条指令地址。如果继续向后执行， 16 字节 BIOS 就结束了，这么小的空间能干什么？
 
-> **Note**
+::: callout 💡 练习2.
 > 使用GDB的 si(Step Instruction) 命令追踪到 ROM BIOS 中的几个指令，并尝试猜测它可能在做什么。你可能想看看[Phil Storrs I/O](http://web.archive.org/web/20040404164813/members.iweb.net.au/~pstorr/pcbook/book2/book2.htm)端口描述，以及[6.828参考资料页面](https://pdos.csail.mit.edu/6.828/2018/reference.html)上的其他资料。不需要弄清楚所有的细节--只需要先弄清楚BIOS在做什么的大概意思。
-> 
-> 使用 si 逐行查看指令：
-> [f000:fff0]    0xffff0: ljmp   $0xf000,$0xe05b    # 该指令是一条长跳（ljmp）指令，跳转到 `$0xfe05b` 处，用于将控制权转移到内存的不同位置
-> [f000:e05b]    0xfe05b: cmpl   $0x0,%cs:0x6ac8    # 若 0x6ac8 处的值为零则跳转
-> [f000:e062]    0xfe062: jne    0xfd2e1
-> [f000:e066]    0xfe066: xor    %dx,%dx          # 将 dx 寄存器清零
-> [f000:e068]    0xfe068: mov    %dx,%ss          # 将 ss 寄存器清零
-> [f000:e06a]    0xfe06a: mov    $0x7000,%esp     # esp = 0x7000 esp 始终指向栈顶
-> [f000:e070]    0xfe070: mov    $0xf34c2,%edx    # edx = 0xf34c2 
-> [f000:e076]    0xfe076: jmp    0xfd15c          # 跳转到 0xfd15c
-> [f000:d15c]    0xfd15c: mov    %eax,%ecx        # ecx = eax
-> [f000:d15f]    0xfd15f: cli                     # 关闭硬件中断
-> [f000:d160]    0xfd160: cld                     # 设置了方向标志，表示后续操作的内存变化
-> [f000:d161]    0xfd161: mov    $0x8f,%eax       # eax = 0x8f  接下来的三条指令用于关闭不可屏蔽中断
-> [f000:d167]    0xfd167: out    %al,$0x70        # 0x70 和 0x71 是用于操作 CMOS 的端口
-> [f000:d169]    0xfd169: in     $0x71,%al        # 从CMOS读取选择的寄存器
-> [f000:d16b]    0xfd16b: in     $0x92,%al        # 读取系统控制端口A
-> [f000:d16d]    0xfd16d: or     $0x2,%al         
-> [f000:d16f]    0xfd16f: out    %al,$0x92        # 启动 A20
-> [f000:d171]    0xfd171: lidtw  %cs:0x6ab8       # 加载到 IDT 表
-> [f000:d177]    0xfd177: lgdtw  %cs:0x6a74       # 加载到 GDT 表
-> [f000:d17d]    0xfd17d: mov    %cr0,%eax        # eax = cr0
-> [f000:d180]    0xfd180: or     $0x1,%eax        # 
-> [f000:d184]    0xfd184: mov    %eax,%cr0        # 打开保护模式
-> [f000:d187]    0xfd187: ljmpl  $0x8,$0xfd18f    # 通过 ljmp 进入保护模式
-> => 0xfd18f:     mov    $0x10,%eax               # 设置段寄存器
-> => 0xfd194:     mov    %eax,%ds
-> => 0xfd196:     mov    %eax,%es
-    
+::: 
+
+
+:::danger
+使用 si 逐行查看指令：
+[f000:fff0]    0xffff0: ljmp   $0xf000,$0xe05b    # 该指令是一条长跳（ljmp）指令，跳转到 `$0xfe05b` 处，用于将控制权转移到内存的不同位置
+[f000:e05b]    0xfe05b: cmpl   $0x0,%cs:0x6ac8    # 若 0x6ac8 处的值为零则跳转
+[f000:e062]    0xfe062: jne    0xfd2e1
+[f000:e066]    0xfe066: xor    %dx,%dx          # 将 dx 寄存器清零
+[f000:e068]    0xfe068: mov    %dx,%ss          # 将 ss 寄存器清零
+[f000:e06a]    0xfe06a: mov    $0x7000,%esp     # esp = 0x7000 esp 始终指向栈顶
+[f000:e070]    0xfe070: mov    $0xf34c2,%edx    # edx = 0xf34c2 
+[f000:e076]    0xfe076: jmp    0xfd15c          # 跳转到 0xfd15c
+[f000:d15c]    0xfd15c: mov    %eax,%ecx        # ecx = eax
+[f000:d15f]    0xfd15f: cli                     # 关闭硬件中断
+[f000:d160]    0xfd160: cld                     # 设置了方向标志，表示后续操作的内存变化
+[f000:d161]    0xfd161: mov    $0x8f,%eax       # eax = 0x8f  接下来的三条指令用于关闭不可屏蔽中断
+[f000:d167]    0xfd167: out    %al,$0x70        # 0x70 和 0x71 是用于操作 CMOS 的端口
+[f000:d169]    0xfd169: in     $0x71,%al        # 从CMOS读取选择的寄存器
+[f000:d16b]    0xfd16b: in     $0x92,%al        # 读取系统控制端口A
+[f000:d16d]    0xfd16d: or     $0x2,%al         
+[f000:d16f]    0xfd16f: out    %al,$0x92        # 启动 A20
+[f000:d171]    0xfd171: lidtw  %cs:0x6ab8       # 加载到 IDT 表
+[f000:d177]    0xfd177: lgdtw  %cs:0x6a74       # 加载到 GDT 表
+[f000:d17d]    0xfd17d: mov    %cr0,%eax        # eax = cr0
+[f000:d180]    0xfd180: or     $0x1,%eax        # 
+[f000:d184]    0xfd184: mov    %eax,%cr0        # 打开保护模式
+[f000:d187]    0xfd187: ljmpl  $0x8,$0xfd18f    # 通过 ljmp 进入保护模式
+=> 0xfd18f:     mov    $0x10,%eax               # 设置段寄存器
+=> 0xfd194:     mov    %eax,%ds
+=> 0xfd196:     mov    %eax,%es
+:::    
 
 当 BIOS 启动的时候会先设置中断描述表，然后初始化各种硬件，例如 VGA 。
 
