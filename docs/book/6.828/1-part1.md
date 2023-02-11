@@ -43,11 +43,11 @@
 
 [Intel 80386 Reference Programmer's Manual Table of Contents](https://pdos.csail.mit.edu/6.828/2018/readings/i386/toc.htm)
 
-:::danger💡 练习2.
-练习1. 熟悉一下[6.828参考页](https://pdos.csail.mit.edu/6.828/2018/reference.html)上的汇编语言材料。阅读材料，熟悉汇编语言，了解两种汇编风格并学会转换。现在不用看，但是后续需要不断的参考。
-:::
-
-建议阅读[Brennan's Guide to Inline Assembly](http://www.delorie.com/djgpp/doc/brennan/brennan_att_inline_djgpp.html)中的 "The Syntax" 部分。它对我们将在JOS中与GNU汇编器一起使用的AT&T汇编语法做了很好的（而且相当简短）描述。
+> 练习1.
+> 
+> 练习1. 熟悉一下[6.828参考页](https://pdos.csail.mit.edu/6.828/2018/reference.html)上的汇编语言材料。阅读材料，熟悉汇编语言，了解两种汇编风格并学会转换。现在不用看，但是后续需要不断的参考。
+> 
+> 建议阅读[Brennan's Guide to Inline Assembly](http://www.delorie.com/djgpp/doc/brennan/brennan_att_inline_djgpp.html)中的 "The Syntax" 部分。它对我们将在JOS中与GNU汇编器一起使用的AT&T汇编语法做了很好的（而且相当简短）描述。
 
 ### 2.2 模拟 x86
 
@@ -255,13 +255,12 @@ QEMU 模拟器有自己的 BIOS，它把它放在处理器的模拟物理地址�
 
 0xffff0 是 BIOS 结束前的16个字节（0x100000）也是 PC 开始执行的第一条指令地址。如果继续向后执行， 16 字节 BIOS 就结束了，这么小的空间能干什么？
 
-:::danger 💡 Exercise 2.
+> Exercise 2.
+> 
 > 使用GDB的 si(Step Instruction) 命令追踪到 ROM BIOS 中的几个指令，并尝试猜测它可能在做什么。
 > 可以参考 Phil Storrs I/O 中关于端口的描述，以及[6.828参考资料页面](https://pdos.csail.mit.edu/6.828/2018/reference.html)上的其他资料。
+> 
 > 不需要弄清楚所有的细节--只需要先弄清楚BIOS在做什么的大概意思。
-::: 
-
-:::callout 🍧
 
 使用 si 逐行查看指令。这些汇编代码是实现引导程序的代码，用于在启动电脑之后将控制权转移到内存的不同位置。代码实现了以下操作：跳转到内存的不同位置、对于一些指令，在特定条件下执行跳转操作、清零寄存器、将 esp 寄存器指向栈顶、设置 edx 寄存器、关闭硬件中断、设置方向标志、关闭不可屏蔽中断、启动 A20 地址线、加载到 IDT 和 GDT 表、打开保护模式并进入保护模式
 
@@ -275,9 +274,7 @@ QEMU 模拟器有自己的 BIOS，它把它放在处理器的模拟物理地址�
 
 在一些特定情况下，不可屏蔽中断 (NMI) 可能会干扰系统正常运行，例如当系统正在进行一些关键操作时。关闭不可屏蔽中断可以确保系统在执行关键操作时不会被打断，从而避免对系统造成影响。
 
-启动 A20 地址线。
-
-打开保护模式并进入保护模式。
+启动 A20 地址线。打开保护模式并进入保护模式。
 
 IDT 和 GDT 是两个在 x86 架构中常用的描述符表。IDT (Interrupt Descriptor Table) 是一个中断描述符表，它描述了各种硬件和软件中断的行为，包括处理方式和中断处理程序的地址。当硬件或软件中断发生时，CPU 会转到 IDT 中的相应描述符，执行相应的中断处理程序。GDT (Global Descriptor Table) 是一个全局描述符表，它描述了系统中各个代码段和数据段的性质，如大小、访问权限、执行属性等。GDT 的作用是提供给段寄存器选择段，并在进行内存访问时对内存访问进行限制。
 

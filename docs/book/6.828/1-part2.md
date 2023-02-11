@@ -2,7 +2,7 @@
 
 磁盘是由扇区组成，一个扇区为 512 B。磁盘的第一个扇区称为 boot sector ，其中存放着 boot loader 。
 
-BIOS 将 512B 的 boot sector 从磁盘加载到内存 0x7c00 到 0x7dff 之间。然后使用 jmp 指令设置 CS:IP 为 0000:7c00 最后将控制权传递给引导装载程序。在 6.828 中使用传统的硬盘启动机制，也就是 boot loader 不能超过 512B 。
+BIOS 将 512B 的 boot sector 从磁盘加载到内存 0x7c00 到 0x7dff 之间。然后使用 jmp 指令设置 CS:IP 为 0000:7c00 最后将控制权传递给引导装载程序。JOS 使用传统的硬盘启动机制，也就是 boot loader 不能超过 512B 。当 BIOS 找到一个可以启动的磁盘以后就会把这 512 字节的扇区加载到 0x7c00 到 0x7dff 中。
 
 > 为什么是 0x7c00？
 > 简而言之，0x7c00 = 32KB - 1024B  
@@ -23,43 +23,45 @@ Boot Loader 负责两个功能：
 
 使用 `x/Ni ADDR` 来打印地址中存储的内容。其中 N 是要反汇编的连续指令的数量，ADDR 是开始反汇编的内存地址。
 
-:::danger💡 Exercise 3.
-Exercise 3. 阅读 [lab tools guide](https://pdos.csail.mit.edu/6.828/2018/labguide.html)，即使你已经很熟悉了，最好看看。
+> Exercise 3.
+> 
+> Exercise 3. 阅读 [lab tools guide](https://pdos.csail.mit.edu/6.828/2018/labguide.html)，即使你已经很熟悉了，最好看看。
+> 
+> 在 0x7c00 设置一个断点，启动扇区将会加载到此处。跟踪 `boot/boot.S` 并使用 `obj/boot/boot.asm` 来定位当前执行位置。使用 GDB 的 x/i 命令来反汇编 Boot Loader 中的指令序列并和 `obj/boot/boot.asm` 比较。
+> 
+> 跟踪 boot/main.c 中的 bootmain() 函数，此后追踪到 readsect() 并研究对应的汇编指令，然后返回到 bootmain() 。确定从磁盘上读取内核剩余扇区的for循环的开始和结束。找出循环结束后将运行的代码，在那里设置一个断点，并继续到该断点。然后逐步完成 Boot Loader 的剩余部分。
 
-在 0x7c00 设置一个断点，启动扇区将会加载到此处。跟踪 `boot/boot.S` 并使用 `obj/boot/boot.asm` 来定位当前执行位置。使用 GDB 的 x/i 命令来反汇编 Boot Loader 中的指令序列并和 `obj/boot/boot.asm` 比较。
-
-跟踪 boot/main.c 中的 bootmain() 函数，此后追踪到 readsect() 并研究对应的汇编指令，然后返回到 bootmain() 。确定从磁盘上读取内核剩余扇区的for循环的开始和结束。找出循环结束后将运行的代码，在那里设置一个断点，并继续到该断点。然后逐步完成 Boot Loader 的剩余部分。
-
-:::
+0x7c00 是 boot loader 的起始地址，
 
 * 阅读 `obj/boot/boot.asm` 下面是一些总结：
 
 在汇编中以 . 开头的是汇编器指令，功能是告诉汇编器如何做，而不是做什么。汇编器指令并不会直接翻译为机器码，汇编指令会直接翻译为机器码。首先设置实模式的标志，进入实模式。然后关闭中断，防止执行时被打断，接下来设置字符串指针的移动方向。做了一些初始化工作，例如寄存器清零，开启 A20 数据线，为切换到 32 位做准备。处理 GDT 。
 
-
-
 * 回答下面的问题：
 
 1. 在什么时候，处理器开始执行32位代码？究竟是什么原因导致从16位到32位模式的转换？
 
-* 从 boot.S 的第 55 行开始切换为 32 位代码，切换到 32 位后会有更多的寻址空间。
+从 boot.S 的第 55 行开始切换为 32 位代码，切换到 32 位后会有更多的寻址空间。
 
 2. Boot Loader 执行的最后一条指令是什么，它刚刚加载的内核的第一条指令是什么？
 
-* 最后一条指令是 `boot/main.c` 的 `((void (*)(void)) (ELFHDR->e_entry))();` 
-*  `movw $0x1234, 0x472`
+最后一条指令是 `boot/main.c` 的 `((void (*)(void)) (ELFHDR->e_entry))();`  `movw $0x1234, 0x472`
+
+将内核ELF文件载入内存后，调用内核入口点
 
 3. 内核的第一条指令在哪里？
 
-* 内核的第一条指令在 0x1000c 处，对应的源码位于 kern/entry.S 中。
+内核的第一条指令在 0x1000c 处，对应的源码位于 kern/entry.S 中。
 
-4. Boot Loader如何决定它必须读取多少个扇区才能从磁盘上获取整个内核？它在哪里找到这些信息？
+4. Boot Loader 如何决定它必须读取多少个扇区才能从磁盘上获取整个内核？它在哪里找到这些信息？
 
-> 这些信息存放在 Proghdr 中。
+这些信息存放在 Proghdr 中。
 
 接下来进一步研究 `boot/main.c` 中的 C 语言部分。
 
-> Exercise 4. 建议阅读 'K&R' 5.1 到 5.5 搞清楚指针，此外弄清楚 [pointers.c](https://pdos.csail.mit.edu/6.828/2018/labs/lab1/pointers.c) 的输出，否则后续会很痛苦。
+> Exercise 4. 
+> 
+> 建议阅读 'K&R' 5.1 到 5.5 搞清楚指针，此外弄清楚 [pointers.c](https://pdos.csail.mit.edu/6.828/2018/labs/lab1/pointers.c) 的输出，否则后续会很痛苦。
 
 需要了解 ELF 二进制文件才能搞清楚 `boot/main.c` 。
 
@@ -116,7 +118,7 @@ BIOS 将 boot sector 加载到内存中并从 0x7c00 处开始，这是 boot sec
 
 在 `boot/Makefrag` 中通过 -Ttext 0x7C00 设置了启动地址。
 
-> Exercise 5.再次追踪 Boot Loader 的前几条指令，找出第一条指令，如果把 Boot Loader 的链接地址弄错了，就会 "中断 "或报错。然后把`boot/Makefrag` 中的链接地址改成错误的，运行make clean，用make重新编译实验室，并再次追踪到boot loader，看看会发生什么。不要忘了把链接地址改回来，然后再做一次清理。
+> Exercise 5.再次追踪 Boot Loader 的前几条指令，找出第一条指令，如果把 Boot Loader 的链接地址弄错了，就会 "中断 "或报错。然后把`boot/Makefrag` 中的链接地址改成错误的，运行 make clean，用make重新编译实验室，并再次追踪到 boot loader，看看会发生什么。不要忘了把链接地址改回来，然后再做一次清理。
 
 修改 `boot/Makefrag` 中的 `-Ttext 0x7C00` ，查看结果，例如将 其改为 `-Ttext 0x0C00` 。起初依旧加载到 0x7c00 处，但是跳转的时候出现问题。也就是最初的指令并不依赖地址，跳转的时候依赖。
 
@@ -145,6 +147,28 @@ kernel 是从 0x0010000c 处开始执行。
 
 ## Part 2 总结
 
-BIOS 将磁盘第一个扇区的数据(512B)复制到内存 0x7c00 到 0x7dff 之间。（这个地址是x86规定的，可自定义）。
+CPU 执行完成 Qemu 中预先设定的 BIOS 代码（将磁盘第一个扇区的数据(512B)复制到内存 0x7c00 到 0x7dff 之间，即 boot.S 和 bootmain.c 统称为 boot loader ）后会跳转到 0x7c00 。
 
-这部分数据被称为 boot loader ，负责两个功能：切换到 32 位，将内核加载到内存中。
+
+    +------------------+  <- 0x00100000 (1MB)
+    |                  |  
+    |     BIOS ROM     |  <- 0x000ffff0 🎯 1. 将第一个扇区从磁盘读到 0x7c00 
+    |                  | 
+    +------------------+  <- 0x000F0000 (960KB)
+    |  16-bit devices, |
+    |  expansion ROMs  |    
+    +------------------+  <- 0x000C0000 (768KB)
+    |   VGA Display    | 
+    +------------------+  <- 0x000A0000 (640KB) IOPHYSMEM
+    |                  |  
+    |    Low Memory    |  <- 0x000x7c00 🔍 2. 转为 32 位，将内核写到 0x10000
+    |                  |  
+    |                  |  <- 0x00010000 🔎 3. 执行内核
+    |                  |  
+    +------------------+  <- 0x00000000
+
+1. 读取第一个扇区，将 boot.S 和 bootmain 读取到 0x7c00 处。
+2. 执行 boot.S 和 bootmain 
+   1. boot.S 设置了保护模式和一个堆栈，以便 C 代码可以运行，然后调用 bootmain()。
+   2. bootmain 读入内核并跳转到它。
+3. 执行内核，Part 3 将会继续研究。
