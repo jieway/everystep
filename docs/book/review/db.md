@@ -1,37 +1,18 @@
 # 数据库
 
+
 ## 1. 什么是事务？
+- 事务：满足 ACID 的一系列操作，要么全部成功，要么全部失败
 - 事务是逻辑上的一组操作，要么都执行，要么都不执行。
 
-- A transaction is a logical set of operations that are either all or none of them executed.
-
-- A transaction is a sequence of one or more operations that are executed as a single, atomic unit of work. In database systems, a transaction is used to ensure that a group of related changes to the database are made in an all-or-nothing manner. If any one of the operations in the transaction fails, the entire transaction is rolled back, restoring the database to its state prior to the transaction. If all operations in the transaction succeed, the transaction is committed, and the changes are made permanent in the database.
-
-- Transactions are used to ensure the integrity and consistency of the data stored in a database. They provide a mechanism for grouping related operations into a single, cohesive unit, and for ensuring that these operations are executed as a single, indivisible unit of work. This helps to ensure that the database remains in a consistent state, even in the event of system failures, network outages, or other unexpected events.
-
-- Transactions can be used in many different types of systems, including database systems, financial systems, and distributed systems. In these systems, transactions are used to ensure the integrity and consistency of the data, and to provide a mechanism for coordinating the execution of operations across multiple systems or components.
-
-
-
 ## 2. ACID 是什么？
-
-- ACID is an acronym that stands for Atomicity, Consistency, Isolation, and Durability, which are the key properties of a transaction in a database system. These properties ensure that transactions are executed reliably and that the data in the database remains consistent and correct, even in the presence of failures or errors.
-
 - A 是指**原子性**（`Atomicity`）表示事务的最小执行单位，指一个事务要么都完成要么什么都不做。
-- Atomicity refers to the all-or-nothing nature of transactions. A transaction is either completed in its entirety or not at all. If any operation within the transaction fails, the entire transaction is rolled back, and the database is left in its original state prior to the transaction.
-
 - C 是指**一致性**（`Consistency`） ，执行前后，数据需要保持一致，例如转账前后无论成功与否，金额的总数不变。
-- Consistency refers to the requirement that a transaction brings the database from one valid state to another. Transactions must preserve the integrity constraints of the database, and must not leave the database in an inconsistent or corrupt state.
-
-- **I 是指隔离性（Isolation）并发访问数据库时，用户的事务不被其他事务所干扰。**
-- Isolation refers to the requirement that the execution of one transaction must be isolated from the execution of other transactions. Each transaction must be executed as if it were the only transaction executing, even if multiple transactions are executing concurrently.
-
-- **D 是指持久性(Durability）执行完毕后数据永久的写入磁盘，发生故障后也不受影响。**
-- Durability refers to the requirement that once a transaction has been committed, its changes to the database must be permanent and survive any subsequent failures. This is typically achieved through the use of transaction logs, backups, and other techniques to ensure that the data is preserved in the event of a crash or other failure.
-
-- **只有保证了 AID，才能进而实现 C 。原子性，隔离性和持久性是数据库的属性，而一致性（在 ACID 意义上）是应用程序的属性。应用可能依赖数据库的原子性和隔离属性来实现一致性，但这并不仅取决于数据库。因此，字母 C 不属于 ACID 。**
-- Together, the ACID properties provide a strong foundation for building reliable and correct database systems. By ensuring the atomicity, consistency, isolation, and durability of transactions, ACID provides a way to ensure that the data stored in a database is accurate, consistent, and secure.
-
+- I 是指隔离性（Isolation）并发访问数据库时，用户的事务不被其他事务所干扰。
+- D 是指持久性(Durability）执行完毕后数据永久的写入磁盘，发生故障后也不受影响。
+- 只有保证了 AID，才能进而实现 C 。原子性，隔离性和持久性是数据库的属性，而一致性（在 ACID 意义上）是应用程序的属性。应用可能依赖数据库的原子性和隔离属性来实现一致性，但这并不仅取决于数据库。因此，字母 C 不属于 ACID 。虽然要满足 ACID 才算事务，但是大多数都不满足，所以 ACID 可以理解为衡量事务的四个维度。
+- 如何实现事务的原子性？
+  - 执行到中间态时终止的话，需要把之前做的工作都撤销，回到之前的状态。
 
 ## 3. 并发事务可能导致的问题？
 - 脏读：
@@ -53,7 +34,7 @@
 - 因此，不可重复读是指在同一个事务中，多次读取同一数据时，可能会出现不一致的情况；幻读是指在同一个事务中，一次查询操作会对另一个查询造成影响。
 
 
-## 5 .MySQL 中的四种事务隔离级别？
+## 5. MySQL 中的四种事务隔离级别？
 - 读未提交（READ UNCOMMITTED）：此级别允许脏读，意味着一个事务可以读取另一个事务未提交的修改。
 - 读已提交（READ COMMITTED）：此级别可以防止脏读，但仍然允许不可重复读和幻读。
 - 可重复读（REPEATABLE READ）：此级别防止脏读和不可重复读，但仍然允许幻读。
@@ -83,7 +64,7 @@
 - 意向锁是有数据引擎自己维护的，用户无法手动操作意向锁，在为数据行加共享 / 排他锁之前，InooDB 会先获取该数据行所在在数据表的对应意向锁。
 - 意向锁之间是互相兼容的。意向锁和共享锁和排它锁互斥（这里指的是表级别的共享锁和排他锁，意向锁不会与行级的共享锁和排他锁互斥）。
 
-##  10. InnoDB 有哪几类行锁？
+## 10. InnoDB 有哪几类行锁？
 -   **记录锁（Record Lock）** ：为单个行记录上锁。
 	- 记录锁可以用于防止脏读或不可重复读。脏读是指当事务读取数据时，其他事务已经对数据进行了修改但还没有提交，导致事务读取到的数据不一致的情况。不可重复读是指当事务读取数据两次时，其他事务对数据进行了修改，导致事务读取的两次数据不一致的情况。记录锁可以在事务读取数据时锁定特定记录，以防止脏读或不可重复读的发生。
 	- 例如，假设有一个数据库表，其中包含以下记录：(1, 100) (2, 200) (3, 300) (4, 400) (5, 500)
@@ -107,46 +88,38 @@
 	- 如果事务A使用当前读，则它会读取到记录(2, 250)，这可能会导致脏读或不可重复读的情况。
 	- 如果事务A使用快照读，则它会读取到记录(2, 200)，这可能会导致幻读的情况。
 
-## 12.  什么是 binlog ?
-- Binlog 是MySQL数据库的二进制日志文件，记录了数据库中发生的所有更改操作。这些操作包括数据库中表的修改、插入和删除操作。
+## 12. 什么是 binlog ?
+- binlog 是**逻辑日志**，记录的是这个语句的原始逻辑/变化（修改，插入，删除），比如“`给 ID=2 这一行的 c 字段加 1` ”。
+- binlog 是追加写，不会覆盖之前的数据，可以提供完整的数据归档的能力。
 - Binlog 可以用于在数据库发生故障后恢复数据，也可以用于在多个数据库之间同步数据。
-- Binlog 是追加写的方式，不会覆盖此前数据，可以提供完整的数据归档能力。
-- Binlog的格式由多种不同的二进制格式组成，其中包括：
+- Binlog 的格式由多种不同的二进制格式组成，其中包括：
 		-   Statement-based: 记录SQL语句本身
 		-   Row-based: 记录对数据行所做的修改
 	- MySQL数据库默认使用Statement-based 格式，但是也可以选择使用 Row-based 格式。
 	- Binlog的使用方式也可以有所不同。例如，可以设置Binlog为“开启”或“关闭”状态，或者可以设置为“记录所有操作”或“记录部分操作”。
 	- 另外，MySQL还提供了一种名为“复制”的功能，允许将数据从一个数据库复制到另一个数据库。复制功能使用Binlog来记录从主
 
+## 13.什么是 redo log ？
+- redo log 是**物理日志**，记录的是“在某个数据页上做了什么修改”；
+- redo log 提供 crash-safe 能力。一般只有4G ，4个文件，循环复写。
+- redo log 是记录数据库中更改操作的日志文件。当数据库执行更改操作时，它会先将更改写入redo log中，然后再将更改应用到数据库中。如果数据库在执行更改操作过程中出现问题，可以使用redo log来恢复数据库。
+- 数据库中**逻辑日志**和**物理日志**的**区别**
+  - 在数据库系统中，逻辑日志和物理日志是不同的日志类型，具有独特的功能和用途。
+  - 逻辑日志（也称为事务日志）记录了数据库中对数据的逻辑操作，例如插入、更新和删除记录。这些逻辑操作在执行前先记录在日志中，以确保事务的原子性和一致性。如果事务成功完成，逻辑日志将用于提交事务，并将更改永久写入数据库。如果事务失败，则可以使用逻辑日志回滚事务，以恢复数据库的原始状态。
+  - 物理日志（也称为磁盘日志）记录了数据库写入磁盘的物理操作。例如，物理日志可以记录数据页的写入操作，以确保在系统故障时能够恢复数据。物理日志在数据库恢复过程中非常重要，因为它可以提供有关数据页的详细信息，以便在故障后进行恢复。
+  - 总的来说，逻辑日志和物理日志是不同的日志类型，分别用于支持数据库的事务处理和数据恢复功能。它们在数据库系统中起到重要作用，
 
-## 13.redo log 和 undo log ？
-- redo log
-	- Redo log是记录数据库中更改操作的日志文件。当数据库执行更改操作时，它会先将更改写入redo log中，然后再将更改应用到数据库中。如果数据库在执行更改操作过程中出现问题，可以使用redo log来恢复数据库。
-- undo log 
-	- Undo log是记录数据库中取消操作的日志文件。当数据库执行取消操作时，它会先记录原来的数据状态，然后将取消操作应用到数据库中。如果取消操作后，数据库出现了问题，可以使用undo log来恢复数据库。
+## 14. 什么是 undo log ？ 
+- Undo log是记录数据库中取消操作的日志文件。当数据库执行取消操作时，它会先记录原来的数据状态，然后将取消操作应用到数据库中。如果取消操作后，数据库出现了问题，可以使用undo log来恢复数据库。
 
-## binlog && redo log
-
-### [](https://fanlv.fun/2020/08/01/mysql-45-lesson/#%E4%BB%80%E4%B9%88%E6%98%AF-binlog "什么是 binlog")什么是 binlog
-
--   binlog 是逻辑日志，记录的是这个语句的原始逻辑/变化，比如“`给 ID=2 这一行的 c 字段加 1` ”。
--   binlog 是追加写，不会覆盖之前的数据，可以提供完整的数据归档的能力。
-
-### [](https://fanlv.fun/2020/08/01/mysql-45-lesson/#%E4%BB%80%E4%B9%88%E6%98%AF-redo-log "什么是 redo log")什么是 redo log
-
--   redo log 是物理日志，记录的是“在某个数据页上做了什么修改”；
--   redo log 提供 crash-safe 能力。
--   一般只有4G ，4个文件，循环复写。
-
-### [](https://fanlv.fun/2020/08/01/mysql-45-lesson/#binlog-%E5%92%8C-redo-log-%E4%B8%8D%E5%90%8C%E7%82%B9 "binlog 和 redo log 不同点")binlog 和 redo log 不同点
-
-因为最开始 MySQL 里并没有 InnoDB 引擎。MySQL 自带的引擎是 MyISAM，但是 MyISAM 没有 crash-safe 的能力，binlog 日志只能用于归档。而 InnoDB 是另一个公司以插件形式引入 MySQL 的，既然只依靠 binlog 是没有 crash-safe 能力的，所以 InnoDB 使用另外一套日志系统——也就是 redo log 来实现 crash-safe 能力。
+## 15. binlog 和 redo log 不同点?
+- 因为最开始 MySQL 里并没有 InnoDB 引擎。MySQL 自带的引擎是 MyISAM，但是 MyISAM 没有 crash-safe 的能力，binlog 日志只能用于归档。而 InnoDB 是另一个公司以插件形式引入 MySQL 的，既然只依靠 binlog 是没有 crash-safe 能力的，所以 InnoDB 使用另外一套日志系统——也就是 redo log 来实现 crash-safe 能力。
 
 1.  redo log 是 InnoDB 引擎特有的；binlog 是 MySQL 的 Server 层实现的，所有引擎都可以使用。
 2.  redo log 是物理日志，记录的是“在某个数据页上做了什么修改”；binlog 是逻辑日志，记录的是这个语句的原始逻辑，比如“给 ID=2 这一行的 c 字段加 1 ”。
 3.  redo log 是循环写的，空间固定会用完；binlog 是可以追加写入的。“追加写”是指 binlog 文件写到一定大小后会切换到下一个，并不会覆盖以前的日志。
 
-### [](https://fanlv.fun/2020/08/01/mysql-45-lesson/#binlog-%E7%9A%84%E5%86%99%E5%85%A5%E6%9C%BA%E5%88%B6 "binlog 的写入机制")binlog 的写入机制
+## 16. binlog 的写入机制
 
 其实，binlog 的写入逻辑比较简单：事务执行过程中，先把日志写到 binlog cache，事务提交的时候，再把 binlog cache 写到 binlog 文件中。
 
@@ -1801,9 +1774,6 @@ InnoDB 支持聚簇索引，而 MyISAM 不支持聚簇索引。
 7. MyISAM支持全文索引，InnoDB 5.6 后支持。
 
 ## 服务器处理客户端请求的查询流程
-
-![一个查询所经历的流程](image/DB/1647398866687.png)
-
 总的来看，客户进程向服务进程发送一段文本语句。服务进程处理后将结果发送给客户进程。
 
 1. 连接管理：
@@ -1820,24 +1790,7 @@ InnoDB 支持聚簇索引，而 MyISAM 不支持聚簇索引。
    2. 写入数据。
    3. 可以为不同的表设置不同的存储引擎。
 
-
-## MySQL 字符集
-
-1. utf8mb3：阉割过的utf8字符集，只使⽤1～3个字节表示字符。
-2. utf8mb4：正宗的utf8字符集，使⽤1～4个字节表示字符。
-
-在 MYSQL 中，默认的 UTF8 是指 utf8mb3 如果要存 4 字节的字符，例如 emoji 需要指定 utf8mb4。
-
-![](image/DB/1647421413494.png)
-
-## 3. 什么是聚集？
-
-
-## 4. 什么是 OLTP，OLAP ？
-
-
 ## 5. 数据库(DB)和数据库管理系统(DBMS)的区别？
-
 * DB 是存储数据的仓库，本质上是一个文件系统。
 * DBMS 是用于操纵和管理的软件，对数据库进行统一的管理。
 
@@ -1859,21 +1812,23 @@ InnoDB 支持聚簇索引，而 MyISAM 不支持聚簇索引。
 
 
 
-## 9. Mysql的事务原理
 
-事务：满足 ACID 的一系列操作，要么全部成功，要么全部失败
+数据库中的 HeapFile 结构是什么？
+HeapFile 是一种数据库中的存储结构，它代表了存储在数据库中的一个文件。
 
-事务的 ACID 特性：
+HeapFile 的名称源自于其存储方式：所有记录堆叠在一起，不按任何特定的顺序存储。因此，在读取记录时需要进行顺序搜索，以找到所需的记录。
 
-1. 原子性（Atomicity，或称不可分割性），不可分割，要么
-2. 一致性（Consistency）
-3. 隔离性（Isolation）
-4. 持久性（Durability）
+尽管 HeapFile 不如其他存储结构（例如 B-树）具有高效的读取性能，但它仍然具有一些优点，例如简单易用和快速的插入性能。因此，HeapFile 在许多数据库系统中仍然广泛使用。
 
-虽然要满足 ACID 才算事务，但是大多数都不满足，所以 ACID 可以理解为衡量事务的四个维度。
+总的来说，HeapFile 是一种简单但有效的存储结构，适用于特定的使用场景，如对性能要求不高的数据读取任务。
 
-### 9.1 如何实现事务的原子性？
 
-首先事物是指一组操作，而原子性是指这组操作要么都做完，要么都不做，不存在中间态。
+什么是 OLTP，OLAP ？
+OLTP (Online Transaction Processing) 和 OLAP (Online Analytical Processing) 是两种不同的数据库系统架构。
 
-所以执行到中间态时终止的话，需要把之前做的工作都撤销，回到之前的状态。
+OLTP 系统用于处理大量的快速事务处理。例如，在一个电商网站中，OLTP 系统负责处理每个订单，包括更新用户帐户信息，库存信息以及订单历史记录。因此，OLTP 系统通常具有较高的事务处理能力和低延迟。
+
+OLAP 系统则用于处理大量的分析数据。例如，在电商网站中，OLAP 系统可以统计销售数据，追踪产品销售情况和趋势，并以此为基础进行预测。因此，OLAP 系统通常具有更强的数据分析能力，但可能需要更长的时间来处理大量的数据。
+
+总的来说，OLTP 和 OLAP 是两种不同的数据库系统，分别用于处理不同类型的数据处理需求。在实际应用中，一些数据库系统可以同时支持 OLTP 和 OLAP，以满足不同的业务需求。
+
