@@ -113,4 +113,15 @@ module.exports = [
       '6.828/1-part1',
     ]
   },
+  {
+    title: '🍼 八股',
+    children: [
+      'review/1_go',
+      'review/2_cpp',
+      'review/3_cn',
+      // 'review/4_db',
+      // 'review/5_os',
+      // 'review/6_rust',
+    ]
+  },
 ]
