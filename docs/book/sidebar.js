@@ -106,11 +106,17 @@ module.exports = [
     ]
   },
   {
-    title: '🧁 6.828 2018',
+    title: '🧁 6.828',
     children: [
       '6.828/0-sum',
       '6.828/1-env',
       '6.828/1-part1',
+    ]
+  },
+  {
+    title: '🐼 rCore',
+    children: [
+      'rcore/ch1',
     ]
   },
   {

@@ -13,9 +13,11 @@ features:
   details:  写一个 CPU
 - title: 🦄 6.S081
   details:  Operation System
+- title: 🐼 rCore
+  details:  一步步从零写 OS
 - title: 🚀 CS144
   details:  写一个 TCP
 - title: 🎡 6.830
   details:  实现一个关系型 DB
-footer: 2019 - 2022 ©weijiew. Released under the CC BY-NC-SA 4.0 International License.
+footer: 2019 - 2023 ©weijiew. Released under the CC BY-NC-SA 4.0 International License.
 ---
