@@ -117,6 +117,7 @@ module.exports = [
     title: '🐼 rCore',
     children: [
       'rcore/ch1',
+      'rcore/ch2',
     ]
   },
   {

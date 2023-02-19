@@ -1,4 +1,9 @@
-# AbyssOS
+# rCore-Tutorial-Book-v3
+
+参考 [rCore-Tutorial-Book-v3](http://rcore-os.cn/rCore-Tutorial-Book-v3/index.html) 实现下述内容。
+
+- 第零章：操作系统概述
+- 第一章：应用程序与基本执行环境 
 
 ## 0. 环境配置
 
@@ -185,10 +190,27 @@ Qemu 启动后 PC 被初始化为 0x1000 。可以检查一下 Qemu 的启动固
 
 - 函数调用与栈
 
-函数调用返回需要根据调用者来确定返回地址，例如在两个不同的地方调用同一个函数，显然函数返回之后会回到不同的地址。其他控制流都只需要跳转到一个**编译期固定**下来的地址，而函数调用的返回跳转是跳转到一个**运行时确定**（确切地说是在函数调用发生的时候）的地址。
+对于循环或者条件判断来说，跳转前后的位置在编译期都能确定，可以直接以汇编的形式呈现。但函数调用不行，因为不同函数调用不同一个函数的返回地址是不同的，需要在**运行时**才能确定，即当函数调用发生的那一刻才能确定。
 
+在汇编中一般使用 jal/jalr 实现上述功能，即跳转之前将返回地址保存在寄存器中。但是如果嵌套使用会出现新的问题，即 a 调用 b ，b 调用 c 是会将 a 的返回信息给覆盖掉。
 
+为了避免函数返回信息因为多次嵌套被覆盖，需要将这些信息保存到内存中。即在调用子函数之前，将寄存器中的值保存到内存中，当恢复时从物理内存中恢复寄存器的值即可。
 
+根据谁来保存寄存器中的值可以将其分为两类，即调用者保存的是 Caller-Saved ，而被调者这保存的是 Callee-Saved 。
+
+为什么这样分类？以 sp 寄存器为例，属于被调用者保存，如果作为调用者保存那么调用者就有可能将其修改掉从而导致程序出错。
+
+- 调用规范
+
+调用规范是指函数调用之间的约定，规则，即下述三个方面。
+
+1. 函数的输入参数和返回值如何传递；
+2. 函数调用上下文中调用者/被调用者保存寄存器的划分；
+3. 其他的在函数调用流程中对于寄存器的使用方法。
+
+此前函数调用时需要保存的信息实际上是保存在栈中。sp 寄存器保存了栈指针，始终指向栈顶。当创建一个函数时， sp 需要减去一个值从而为该函数申请栈空间，用来存放一些信息，这块内存被称为**栈帧**（Stack Frame）。sp 通过增加一个值的方式从而实现回收空间。sp 是一个被调用者保存的寄存器。
+
+## 6. 基于 SBI 服务完成输出和关机
 
 RustSBI 不仅仅在计算机启动时负责环境初始化，此外还要在内核运行时响应内核的请求并为内核提供服务。
 
@@ -210,9 +232,15 @@ Unit-like struct 在 Rust 中有很多用途，例如作为标记或者占位符
 
 此前 panic 的处理是一个死循环，接下来完善这个功能。在 panic 函数中打印错误信息并关机。
 
+创建一个 Makefile 文件，输入下述内容，然后执行 `make run` 运行程序。
 
-qemu-system-riscv64 \
-  -machine virt \
-  -nographic \
-  -bios ../bootloader/rustsbi-qemu.bin \
-   -device loader,file=target/riscv64gc-unknown-none-elf/release/abyssos.bin,addr=0x80200000 \
+    run:
+        cargo build --release
+        rust-objcopy --strip-all target/riscv64gc-unknown-none-elf/release/abyssos -O binary target/riscv64gc-unknown-none-elf/release/abyssos.bin
+        qemu-system-riscv64 \
+            -machine virt \
+            -nographic \
+            -bios ../bootloader/rustsbi-qemu.bin \
+            -device loader,file=target/riscv64gc-unknown-none-elf/release/abyssos.bin,addr=0x80200000 \
+
+此时已经能够实现一个最小化的内核。
