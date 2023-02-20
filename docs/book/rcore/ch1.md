@@ -1,9 +1,6 @@
-# rCore-Tutorial-Book-v3
+# 第一章：应用程序与基本执行环境 
 
 参考 [rCore-Tutorial-Book-v3](http://rcore-os.cn/rCore-Tutorial-Book-v3/index.html) 实现下述内容。
-
-- 第零章：操作系统概述
-- 第一章：应用程序与基本执行环境 
 
 ## 0. 环境配置
 
