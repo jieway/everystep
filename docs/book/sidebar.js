@@ -118,6 +118,7 @@ module.exports = [
     children: [
       'rcore/ch1',
       'rcore/ch2',
+      'rcore/ch3',
     ]
   },
   {
