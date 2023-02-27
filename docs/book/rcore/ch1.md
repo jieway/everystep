@@ -1,8 +1,8 @@
-# 第一章：应用程序与基本执行环境 
+# 第一章：应用程序与基本执行环境
 
 参考 [rCore-Tutorial-Book-v3](http://rcore-os.cn/rCore-Tutorial-Book-v3/index.html) 实现下述内容。
 
-## 0. 环境配置
+ ## 0. 环境配置
 
 下载代码并配置相关内容，建议 docker ，否则非常浪费时间。
 
