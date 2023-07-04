@@ -2,25 +2,15 @@
 
 参考内容主要源自 https://pdos.csail.mit.edu/6.828/2018/tools.html 。
 
-> 如下内容已经打包为 docker 镜像，如果想省事可以直接下载镜像：  `docker pull weijiew/6828:2018` 。
+环境：WSL2 ubuntu20.04 
 
-流程：创建文件夹，下载代码，配置环境，编译成功。
-
-    % mkdir ~/6.828
-    % cd ~/6.828
-    % git clone https://pdos.csail.mit.edu/6.828/2018/jos.git lab
-    Cloning into lab...
-    % cd lab
-    % 
-
-我的环境是：WSL2 ubuntu20.04
-
-    sudo apt-get install -y build-essential gdb
-    sudo apt-get install gcc-multilib
-
+    mkdir ~/6.828
+    cd ~/6.828
+    git clone https://pdos.csail.mit.edu/6.828/2018/jos.git lab
+    sudo apt-get install -y build-essential gdb gcc-multilib
     git clone https://github.com/mit-pdos/6.828-qemu.git qemu
-    cd qemu
     sudo apt-get install libsdl1.2-dev libtool-bin libglib2.0-dev libz-dev libpixman-1-dev
+    cd qemu
     ./configure --disable-kvm --disable-werror --target-list="i386-softmmu x86_64-softmmu"
 
 如果报错 `ERROR: Python not found. Use --python=/path/to/python` 需要安装Python 2.7才能正常配置。执行下述命令。
@@ -36,9 +26,7 @@
     /usr/bin/ld: /home/yunwei/qemu/qga/commands-posix.c:634: undefined reference to `minor'
     collect2: error: ld returned 1 exit status
 
-在 `qga/commands-posix.c` 文件中加上头文件: `#include<sys/sysmacros.h>`
-
-    make && make install
+在 `qga/commands-posix.c` 文件中加上头文件 `#include<sys/sysmacros.h>` 随后重新执行 `make && make install` 。
 
 进入 lab 后执行如下命令报错：
 
