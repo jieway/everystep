@@ -2,7 +2,7 @@ const versioning = require('./lib/versioning.js')
 
 module.exports = {
   base: '/',
-  title: 'codestep',
+  title: 'everystep',
   description: '记一些笔记🌼',
   markdown: {
     lineNumbers: true
@@ -15,7 +15,7 @@ module.exports = {
   ],
   theme: 'default-prefers-color-scheme',
   themeConfig: {
-    repo: 'weijiew/codestep',
+    repo: 'weijiew/everystep',
     repoLabel: 'Github',
     editLinks: true,
     editLinkText: '帮助我们改善此页面！',
@@ -29,8 +29,8 @@ module.exports = {
       text: '联系', items: [
         {
           text: 'GitHub', items: [
-            { text: '项目地址', link: 'https://github.com/weijiew/codestep' },
-            { text: '反馈提问', link: 'https://github.com/weijiew/codestep/issues/new/choose' }
+            { text: '项目地址', link: 'https://github.com/weijiew/everystep' },
+            { text: '反馈提问', link: 'https://github.com/weijiew/everystep/issues/new/choose' }
           ]
         },
         {

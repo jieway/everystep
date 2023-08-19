@@ -1,4 +1,4 @@
-# codestep
+# everystep
 
 <div align='center' >
 
@@ -16,7 +16,7 @@
 ![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)
 ![WeChat](https://img.shields.io/badge/WeChat-07C160?style=for-the-badge&logo=wechat&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-<a href="License: CC BY-SA 4.0"><img src="https://img.shields.io/github/license/weijiew/codestep?color=265ca2&labelColor=212c42)](http://creativecommons.org/licenses/by-sa/4.0/" alt="copyright"/></a>
+<a href="License: CC BY-SA 4.0"><img src="https://img.shields.io/github/license/weijiew/everystep?color=265ca2&labelColor=212c42)](http://creativecommons.org/licenses/by-sa/4.0/" alt="copyright"/></a>
 
 </div>
 
@@ -76,4 +76,4 @@
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=weijiew/codestep&type=Date)](https://star-history.com/#weijiew/codestep&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=weijiew/everystep&type=Date)](https://star-history.com/#weijiew/everystep&Date)

@@ -1,5 +1,5 @@
 {
-  "name": "codestep",
+  "name": "everystep",
   "version": "1.0.0",
   "description": "Take some notes",
   "scripts": {
@@ -7,7 +7,7 @@
     "build": "vuepress build docs",
     "deploy": "sh g.sh"
   },
-  "repository": "https://github.com/weijiew/codestep",
+  "repository": "https://github.com/weijiew/everystep",
   "author": "weijiew <jiewei314@gmail.com>",
   "license": "CC-BY-NC-SA-4.0",
   "dependencies": {
