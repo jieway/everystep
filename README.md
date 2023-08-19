@@ -74,6 +74,17 @@
 - 操作系统
 - 网络
 
+
+## 本地运行
+
+
+```
+mdbook serve --open
+```
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=weijiew/everystep&type=Date)](https://star-history.com/#weijiew/everystep&Date)
+
+
+
