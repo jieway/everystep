@@ -15,7 +15,6 @@
     - [Lab 10](6.S081/10-lab10.md)
     - [Lab 11](6.S081/11-lab11.md)
 
-
 - [🎡 6.830](6.830/1-lab0.md)
     - [Lab 1 Answers](6.830/ans/2-lab1-ans.md)
     - [Lab 2 Answers](6.830/ans/3-lab2-ans.md)
@@ -72,11 +71,6 @@
     - [Chapter 2](rcore/ch2.md)
     - [Chapter 3](rcore/ch3.md)
 
-
 - [🍼 八股](review/1_go.md)
     - [C++](review/2_cpp.md)
     - [Computer Networks](review/3_cn.md)
-
-
-- [从零实现 BitCask 存储引擎](bitcask/README.md)
-    - [第一章：](bitcask/ch1.md)
