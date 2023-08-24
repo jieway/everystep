@@ -16,30 +16,25 @@
 ![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)
 ![WeChat](https://img.shields.io/badge/WeChat-07C160?style=for-the-badge&logo=wechat&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-<a href="License: CC BY-SA 4.0"><img src="https://img.shields.io/github/license/weijiew/everystep?color=265ca2&labelColor=212c42)](http://creativecommons.org/licenses/by-sa/4.0/" alt="copyright"/></a>
-
 </div>
 
-该项目最初为写名校 lab 过程中留下了的记录，后逐渐演化为造轮子过程中的笔记。项目名称为 everystep，整个项目以问题为导向，紧紧围绕着当前所面临的问题是什么？如何解决？解决后产生的新问题是什么？记录了实现系统过程中所遇到的问题，以书籍的形式组织起来更合适，故没有将其放到blog中。
+该项目最初为写名校 lab 过程中留下了的记录，后逐渐演化为造轮子过程中的笔记。为降低复杂度，便于理解旨在提供最简单的实现。整个项目以问题为导向，紧紧围绕着当前所面临的问题是什么？如何解决？解决后产生的新问题是什么？记录了实现系统过程中所遇到的问题，以书籍的形式组织起来更合适，故没有将其放到blog中。
 
 写代码时要紧紧抓住 “我当前所面临的问题是什么？”否则很容易浪费时间。其次是要不断的去问为什么，思考背后的原理，动机，搞清楚对哪部分内容认识不到位。总之个人知识库，记录所学，如有错误还请指正。
 
-  - ⛽  MIT 6.NULL 工欲善其事，必先利其器！
-  - 🤖 CS61C 写一个 CPU
-  - 💥 CS61A 
-  - 🥞 CS:APP-lab
-  - 🐼 rCore 一步步从零写 OS
-    - OS 启动，实现一个最小 OS 
-  - 🎉 6.824 2022
-    - 视频知识点总结(lec2ing)
-    - lab1 翻译 + 总结
-    - lab2 翻译
+  - ⛽ 从零实现 BitCask 存储引擎 
+  - 🐼 从零实现 LSM-Tree 存储引擎 (ing)
+  - 🎉 6.824 2022 分布式系统
   - 🦄 6.S081 2020 Operation System
-    - 11 个 lab 的个人总结
   - 🎡 6.830 2021 实现一个关系型 DB
-    - lab1- lab6 翻译 + 总结
-  - 😈 AbyssKV 实现一个存储引擎
-  - 🚀 CS144 写一个 TCP
+
+## TODO
+
+  - 🤖 从零实现关系型数据库
+  - 🐼 从零实现操作系统
+  - 🚀 从零实现 TCP
+  - 🎡 从零实现编译器
+  - 💥 从零实现链接器
 
 ## 本地运行
 
