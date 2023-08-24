@@ -2,6 +2,12 @@
 
 [Introduction](README.md)
 
+- [💫 BitCask](bitcask/README.md)
+    - [Part 1](bitcask/ch1.md)
+    - [Part 2](bitcask/ch2.md)
+    - [Part 3](bitcask/ch3.md)
+    - [Part 4](bitcask/ch4.md)
+
 - [🦄 6.S081](6.S081/0-summary.md)
     - [Lab 1](6.S081/1-lab1.md)
     - [Lab 2](6.S081/2-lab2.md)
