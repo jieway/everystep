@@ -1,6 +1,6 @@
 # Summary
 
-[Introduction](README.md)
+[简介](README.md)
 
 - [💫 BitCask](bitcask/README.md)
     - [Part 1](bitcask/ch1.md)
