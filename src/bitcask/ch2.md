@@ -1,6 +1,79 @@
-# Part 2. Set、Get 方法实现
+# Part 2. 如何使用存储引擎？
 
-这一章节主要研究数据在内存中是如何组织的。
+这一章以自顶向下的方式来描述，将要实现一个什么样的东西，以及如何使用。
+
+## 如何使用 DiskStorage ？
+
+下面讲了该怎么使用这个存储引擎，首先就是如何实例化。要实例化 `DiskStorage`，可以使用提供的构造函数 `NewDiskStorage`。这个构造函数接受一个文件名作为参数，并返回一个 `DiskStorage` 实例的指针，同时会进行初始化操作，包括初始化 `KeyDir` 索引映射和打开文件。
+
+下面是一个实例化 `DiskStorage` 的示例代码：
+
+```go
+func main() {
+    // 调用 NewDiskStorage 构造函数来实例化 DiskStorage
+    storage, err := NewDiskStorage("data.db")
+    if err != nil {
+        fmt.Println("Error creating DiskStorage:", err)
+        return
+    }
+    defer storage.Close() // 最后关闭存储实例
+
+    // 使用实例进行操作
+    err = storage.Set("key1", "value1")
+    if err != nil {
+        fmt.Println("Error setting value:", err)
+        return
+    }
+
+    value, err := storage.Get("key1")
+    if err != nil {
+        fmt.Println("Error getting value:", err)
+        return
+    }
+
+    fmt.Println("Value for key1:", value)
+}
+```
+
+在上面的示例中，`NewDiskStorage("data.db")` 调用实例化了一个名为 "data.db" 的磁盘存储。然后，通过实例进行了 `Set` 和 `Get` 操作。最后，在程序结束时，通过 `defer storage.Close()` 来确保存储实例关闭，以便数据被正确地刷新到磁盘。
+
+通过实例化 `DiskStorage`，您可以使用其提供的方法来操作键值对数据，并在磁盘和内存中进行数据存储和检索。
+
+## NewDiskStorage
+
+`NewDiskStorage` 是一个构造函数，用于创建 `DiskStorage` 实例，并在创建过程中执行初始化操作。以下是 `NewDiskStorage` 函数的功能和流程解释：
+
+```go
+func NewDiskStorage(fileName string) (*DiskStorage, error) {
+    ds := &DiskStorage{
+        FileName: fileName,
+        KeyDir:   make(map[string]KeyEntry),
+    }
+
+    // 检查文件是否存在
+    _, err := os.Stat(fileName)
+    if err == nil {
+        ds.initKeyDir() // 如果文件存在，初始化 KeyDir 映射
+    }
+
+    // 打开或创建文件
+    ds.File, err = os.OpenFile(fileName, os.O_APPEND|os.O_RDWR|os.O_CREATE, 0644)
+    return ds, err
+}
+```
+
+解释 `NewDiskStorage` 的步骤：
+
+1. **创建 DiskStorage 实例**：首先，创建一个 `DiskStorage` 实例 `ds`，并设置其 `FileName` 字段为传入的文件名。同时，创建一个空的 `KeyDir` 映射，用于存储键索引。
+
+2. **检查文件是否存在**：使用 `os.Stat(fileName)` 来检查指定的文件是否存在。如果文件存在（即没有返回错误），则说明存储系统中可能已经有数据。在这种情况下，调用 `initKeyDir` 方法以初始化 `KeyDir` 映射。
+
+3. **打开或创建文件**：使用 `os.OpenFile` 打开指定的文件。如果文件不存在，将会被创建。打开文件时使用了 `os.O_APPEND`、`os.O_RDWR` 和 `os.O_CREATE` 标志，以允许文件追加、读写和创建。
+
+4. **返回实例和错误**：返回创建的 `DiskStorage` 实例和可能的错误。如果发生错误，可能是因为文件打开或初始化过程中出现了问题。
+
+通过调用 `NewDiskStorage`，您可以创建一个经过初始化的 `DiskStorage` 实例，准备好用于存储和检索键值对数据。
+
 
 首先实现 DiskStorage ，用来管理一些元信息，例如数据在内存中的索引，用 map 来存。
 ## DiskStorage
@@ -40,6 +113,7 @@ type DiskStorage struct {
 
 总之，`DiskStorage` 结构体是一个将键值对数据存储到磁盘并允许通过键进行检索的简单实现。它通过在内存中维护索引映射和在磁盘文件中存储实际数据来实现这一功能。
 
+
 ## KeyEntry
 
 然后是 KeyEntry ，用来组织数据在内存中的存储方式。`KeyEntry` 在这个代码中扮演着关键的角色，用于管理和跟踪每个键值对在磁盘文件中的位置和元数据。具体来说，`KeyEntry` 有以下用途：
@@ -54,79 +128,74 @@ type DiskStorage struct {
 
 总之，`KeyEntry` 的存在使得系统能够高效地定位和管理存储在磁盘文件中的键值对。它提供了键值对的位置、时间戳和大小等关键信息，使存储和检索操作更加快速和可靠。
 
-## Set 
+## initKeyDir
 
-当调用 `Set(key, value string) error` 方法时，将执行以下步骤来向存储中添加新的键值对：
+`initKeyDir` 函数在创建 `DiskStorage` 实例时，当检测到指定的磁盘文件已经存在时被调用。这是为了在初始化存储系统时，从已有的数据文件中读取并加载现有的键值对信息。
 
-1. 获取当前时间戳：通过 `time.Now().Unix()` 获取当前时间戳，以便记录键值对添加的时间。
+具体来说，以下情况会触发调用 `initKeyDir` 函数：
 
-2. 编码键值对：将键、值和时间戳传递给 `EncodeKV` 函数，该函数会将它们编码成字节序列。这个字节序列包括一个头部，其中包含时间戳、键的长度和值的长度。
+1. **创建新的 `DiskStorage` 实例**：当调用 `NewDiskStorage` 构造函数创建新的 `DiskStorage` 实例时，会首先检查指定的文件是否已经存在。
 
-3. 写入数据：调用 `ds.write(data)`，这会将编码后的键值对数据写入磁盘文件中。`ds.write(data)` 函数将数据写入文件，并在写入后执行 `ds.File.Sync()` 同步操作，确保数据被实际写入磁盘。
+2. **已有的数据文件**：如果文件已经存在，说明存储系统之前可能已经存储了一些键值对数据。为了确保新创建的 `DiskStorage` 实例能够恢复已有的数据，它会调用 `initKeyDir` 函数来加载这些现有的键值对信息。
 
-4. 更新 KeyDir 映射：创建一个新的 `KeyEntry` 实例，其中包含时间戳、写入位置和键值对数据的总大小。然后，将这个 `KeyEntry` 添加到 `KeyDir` 映射中，以便稍后能够通过键查找数据的位置和元数据。
+3. **内存中的索引构建**：`initKeyDir` 函数的主要目的是在内存中构建键索引映射 `KeyDir`。这个映射可以用来在内存中快速访问键值对的位置和元数据，以加速后续的读取、写入和查询操作。
 
-5. 更新写入位置：增加 `ds.WritePosition` 的值，以便为下一个键值对的写入位置做好准备。
+总之，`initKeyDir` 函数在创建 `DiskStorage` 实例时被调用，用于加载已有的键值对数据，并在内存中构建键索引映射，以便在之后的操作中能够高效地访问存储的数据。
 
-整个 `Set` 的流程如下：
+`initKeyDir` 是一个在 `DiskStorage` 结构体中定义的方法，用于初始化内存中的键索引映射 `KeyDir`，以便在创建 `DiskStorage` 实例时能够快速访问存储在磁盘文件中的键值对的位置和元数据。以下是 `initKeyDir` 方法的功能和流程解释：
 
 ```go
-func (ds *DiskStorage) Set(key, value string) error {
-    timestamp := uint32(time.Now().Unix())
-    totalSize, data, _ := EncodeKV(timestamp, key, value) // 编码键值对为字节序列
-    ds.write(data) // 写入数据到磁盘文件
-    ds.KeyDir[key] = NewKeyEntry(timestamp, ds.WritePosition, totalSize) // 更新 KeyDir 映射
-    ds.WritePosition += totalSize // 更新写入位置
-    return nil
+func (ds *DiskStorage) initKeyDir() {
+    file, err := os.Open(ds.FileName)
+    if err != nil {
+        fmt.Println("Error initializing KeyDir:", err)
+        return
+    }
+    defer file.Close()
+
+    for {
+        headerBytes := make([]byte, HeaderSize)
+        _, err := file.Read(headerBytes)
+        if err != nil {
+            break
+        }
+
+        timestamp, keySize, valueSize, _ := DecodeHeader(headerBytes)
+        keyBytes := make([]byte, keySize)
+        file.Read(keyBytes)
+
+        valueBytes := make([]byte, valueSize)
+        file.Read(valueBytes)
+
+        key := string(keyBytes)
+        value := string(valueBytes)
+
+        totalSize := HeaderSize + uint32(keySize+valueSize)
+        ds.KeyDir[key] = NewKeyEntry(timestamp, ds.WritePosition, totalSize)
+        ds.WritePosition += totalSize
+
+        fmt.Printf("loaded k=%s, v=%s\n", key, value)
+    }
 }
 ```
 
-通过这个流程，新的键值对被编码并写入磁盘文件，同时也在内存中维护了键值对的索引，以便后续的检索和操作。
+解释 `initKeyDir` 的步骤：
 
-## Get
+1. 打开文件：使用 `os.Open` 方法打开指定的磁盘文件以读取数据。如果打开文件时发生错误，方法会输出错误信息并返回。
 
-当调用 `Get(key string) (string, error)` 方法时，将执行以下步骤来获取特定键的值：
+2. 循环读取：通过一个循环，从文件中连续读取每个键值对的数据。循环会一直运行，直到无法读取到更多数据（`file.Read` 返回错误）。
 
-1. 从 `KeyDir` 映射中查找键：首先，会检查 `KeyDir` 映射，看是否存在给定的键。如果存在，可以通过 `KeyEntry` 得知该键值对的位置和大小信息，从而可以在磁盘文件中找到对应的数据。
+3. 读取头部信息：首先，从文件中读取一个固定大小的字节序列，该序列包含了键值对头部的信息。这些信息包括时间戳、键的大小和值的大小。
 
-2. 定位到文件位置：使用 `KeyEntry` 中的 `Position` 信息，将文件指针定位到存储特定键值对的位置。这通过调用 `ds.File.Seek()` 来实现。
+4. 解码头部：使用 `DecodeHeader` 函数解码头部信息，以获取时间戳、键的大小和值的大小。
 
-3. 读取数据：从定位的文件位置开始，读取键值对数据的字节序列。首先，会创建一个足够大的字节切片来容纳数据，然后使用 `ds.File.Read()` 从文件中读取数据到切片中。
+5. 读取键和值数据：根据键和值的大小信息，从文件中分别读取键和值的字节数据。
 
-4. 解码数据：解码从文件中读取的数据，以从字节序列中提取键和值。这涉及到调用 `DecodeKV` 函数，它会将字节序列解码为键和值。
+6. 构建 `KeyEntry`：使用解码的信息和从文件中读取的数据，创建一个新的 `KeyEntry` 实例，其中包含时间戳、位置和总大小信息。
 
-5. 返回值：从解码后的数据中获取值部分，并作为结果返回。
+7. 更新位置和索引：将新的 `KeyEntry` 添加到 `KeyDir` 映射中，然后更新 `WritePosition`，以便为下一个键值对的写入位置做好准备。
 
-整个 `Get` 的流程如下：
+8. 输出加载信息：将加载的键和值信息打印出来，以便查看初始化过程。
 
-```go
-func (ds *DiskStorage) Get(key string) (string, error) {
-    kv, ok := ds.KeyDir[key]
-    if !ok {
-        return "", fmt.Errorf("key not found")
-    }
+通过这个流程，`initKeyDir` 方法会逐个读取磁盘文件中的键值对，并在内存中构建 `KeyDir` 映射，以便之后的操作可以快速定位和访问键值对的位置和元数据。这在创建 `DiskStorage` 实例时非常有用。
 
-    ds.File.Seek(int64(kv.Position), 0) // 将文件指针定位到键值对位置
-    data := make([]byte, kv.TotalSize) // 创建足够大的字节切片
-    _, err := ds.File.Read(data) // 从文件读取数据到切片
-    if err != nil {
-        return "", err
-    }
-
-    // 解码数据，获取值部分
-    _, _, value, err := DecodeKV(data)
-    if err != nil {
-        return "", err
-    }
-
-    return value, nil // 返回值
-}
-```
-
-通过这个流程，`Get` 方法可以根据键查找存储在磁盘文件中的相应值，并将其解码后返回。这种方式避免了需要扫描整个文件以查找特定键的情况，从而实现了高效的键值对检索。
-
-## 总结
-
-综上一个简单的 BitCask 存储引擎就写好了，目前还非常简陋，只提供了 Set 和 Get 方法，还有很多可以做的事情。
-
-可以尝试实现增加 CRC 字段，Delete 方法等功能。
