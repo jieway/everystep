@@ -34,7 +34,7 @@
 </details>
 
 <details>
-    <summary> 🐼 从零实现 LSM-Tree 存储引擎 (ing) </summary>
+    <summary> 🧊 从零实现 LSM-Tree 存储引擎 (ing) </summary>
 </details>
 
 <details>
@@ -49,20 +49,52 @@
     <summary> 🎡 6.830 2021 实现一个关系型 DB </summary>
 </details>
 
+## TODO
+
+<details>
+    <summary> 🧊 从零实现预写日志（WAL，Write-ahead log） </summary>
+</details>
+
+<details>
+     <summary> 🧊 从零实现分布式共识算法（Raft） </summary>
+</details>
+
+<details>
+    <summary> 🧊 从零实现分布式数据库 </summary>
+</details>
+
 <details>
     <summary> 🤖 从零实现关系型数据库</summary>
 </details>
 
-## TODO
+<details>
+    <summary> 🐼 从零实现操作系统（XV6） </summary>
+</details>
 
-  - 🐼 从零实现操作系统（XV6）
-  - 🚀 从零实现 TCP
-  - 🎡 从零实现编译器
-  - 💥 从零实现链接器
-  - ⚡️ 从零实现时序数据库
-  - 🌟 从零实现分布式数据库
-  - 🚀 从零实现深度学习框架
 
+<details>
+    <summary> 🚀 从零实现 TCP </summary>
+</details>
+
+<details>
+    <summary> 🎡 从零实现编译器 </summary>
+</details>
+
+<details>
+    <summary> 💥 从零实现链接器 </summary>
+</details>
+
+<details>
+    <summary> ⚡️ 从零实现时序数据库 </summary>
+</details>
+
+<details>
+    <summary> 🌟 从零实现分布式数据库 </summary>
+</details>
+
+<details>
+    <summary> 🚀 从零实现深度学习框架 </summary>
+</details>
 
 ## 思考
 
