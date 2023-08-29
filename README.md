@@ -23,13 +23,10 @@
 <details>
     <summary> ⛽ 从零实现 BitCask 存储引擎 </summary>
     
-    Part 1. 一条数据的数据编码解码过程
-    
-    Part 2. 如何使用存储引擎？
-    
-    Part 3 Set、Get 方法实现
-    
-    Part 4 删除逻辑和 Compact 
+- Part 1. 一条数据的数据编码解码过程
+- Part 2. 如何使用存储引擎？
+- Part 3 Set、Get 方法实现
+- Part 4 删除逻辑和 Compact 
 
 </details>
 
