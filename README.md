@@ -20,19 +20,49 @@
 
 该项目最初为写名校 lab 过程中留下了的记录，但是因为[学术诚信](http://integrity.mit.edu/)的缘故，公开解决方案甚至代码是不合适的。但是直接删了有点可惜，后来想尝试换一门语言重写 lab/proj/hw 等内容，所以逐渐演化为用其他语言重写，造轮子过程中的笔记。例如从零实现 OS/Compiler/DB/ld 等，此外和课程答案相关的内容确实会逐渐删去。
 
-  - ⛽ 从零实现 BitCask 存储引擎 
-  - 🐼 从零实现 LSM-Tree 存储引擎 (ing)
-  - 🎉 6.824 2022 分布式系统
-  - 🦄 6.S081 2020 Operation System
-  - 🎡 6.830 2021 实现一个关系型 DB
+<details>
+    <summary> ⛽ 从零实现 BitCask 存储引擎 </summary>
+    
+    Part 1. 一条数据的数据编码解码过程
+    
+    Part 2. 如何使用存储引擎？
+    
+    Part 3 Set、Get 方法实现
+    
+    Part 4 删除逻辑和 Compact 
+
+</details>
+
+<details>
+    <summary> 🐼 从零实现 LSM-Tree 存储引擎 (ing) </summary>
+</details>
+
+<details>
+    <summary> 🎉 6.824 2022 分布式系统 </summary>
+</details>
+
+<details>
+    <summary> 🦄 6.S081 2020 Operation System </summary>
+</details>
+
+<details>
+    <summary> 🎡 6.830 2021 实现一个关系型 DB </summary>
+</details>
+
+<details>
+    <summary> 🤖 从零实现关系型数据库</summary>
+</details>
 
 ## TODO
 
-  - 🤖 从零实现关系型数据库
   - 🐼 从零实现操作系统（XV6）
   - 🚀 从零实现 TCP
   - 🎡 从零实现编译器
   - 💥 从零实现链接器
+  - ⚡️ 从零实现时序数据库
+  - 🌟 从零实现分布式数据库
+  - 🚀 从零实现深度学习框架
+
 
 ## 思考
 
