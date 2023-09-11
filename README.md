@@ -41,6 +41,19 @@
 </details>
 
 <details>
+    <summary> 🤖 从零实现关系型数据库</summary>
+
+  - Part 1. 总览
+  - Part 2. 实现 Tuple
+  - Part 3. 实现 Page
+  - Part 4. 实现 HeapFile
+  - Part 5. 支持 int 和 string 等数据类型。
+  - Part 6. 实现 Catalog
+
+</details>
+
+
+<details>
     <summary> 🎉 6.824 2022 分布式系统 </summary>
 </details>
 
@@ -63,11 +76,7 @@
 </details>
 
 <details>
-    <summary> 🧊 从零实现分布式数据库 </summary>
-</details>
-
-<details>
-    <summary> 🤖 从零实现关系型数据库</summary>
+    <summary> 🌟 从零实现分布式数据库 </summary>
 </details>
 
 <details>
@@ -91,9 +100,6 @@
     <summary> ⚡️ 从零实现时序数据库 </summary>
 </details>
 
-<details>
-    <summary> 🌟 从零实现分布式数据库 </summary>
-</details>
 
 <details>
     <summary> 🚀 从零实现深度学习框架 </summary>
@@ -114,7 +120,7 @@ cd everystep && mdbook serve --open
 
 ## 贡献
 
-大部分项目已经将问题拆解为努努力就能实现的地步了。但是因为时间不多，大部份内容都是和 GPT 交流的过程中产生的，且没有仔细润色所以文字一定程度存在割裂感，故欢迎任何意义上能够优化项目的贡献。
+大部分项目已经将问题拆解为努努力就能实现的地步了。但是因为时间不多没有仔细润色，文字一定程度存在割裂感，故欢迎任何意义上能够优化项目的贡献。
 
 ## Star 历史
 

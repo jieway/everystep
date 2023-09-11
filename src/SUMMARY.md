@@ -14,7 +14,6 @@
     - [Part 3](lsm/ch3.md)
     - [Part 4](lsm/ch4.md)
 
-
 - [🦄 6.S081](6.S081/0-summary.md)
     - [Lab 1](6.S081/1-lab1.md)
     - [Lab 2](6.S081/2-lab2.md)
