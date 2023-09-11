@@ -52,18 +52,40 @@
 
 </details>
 
+<details>
+    <summary> 🦄 6.S081 2020 Operation System </summary>
+
+  - Part 1. Lab util
+  - Part 2. Lab syscall
+  - Part 3. 实现 Page
+  - Part 4. Lab pgtbl
+  - Part 5. Lab trap
+  - Part 6. Lab cow
+  - Part 7. Lab thread
+  - Part 8. Lab lock
+  - Part 9. Lab fs
+  - Part 10. Lab mmap
+  - Part 11. Lab net
+
+</details>
+
+<details>
+    <summary> 🎡 6.830 2021 实现一个关系型 DB </summary>
+
+  - Part 1. Lab 1: SimpleDB
+  - Part 2. Lab 2: SimpleDB Operators
+  - Part 3. Lab 3: Query Optimization
+  - Part 4. Lab 4: SimpleDB Transactions
+  - Part 5. Lab 5: B+ Tree Index
+  - Part 6. Lab 6: Rollback and Recovery
+
+</details>
+
 
 <details>
     <summary> 🎉 6.824 2022 分布式系统 </summary>
 </details>
 
-<details>
-    <summary> 🦄 6.S081 2020 Operation System </summary>
-</details>
-
-<details>
-    <summary> 🎡 6.830 2021 实现一个关系型 DB </summary>
-</details>
 
 ## TODO
 
@@ -99,7 +121,6 @@
 <details>
     <summary> ⚡️ 从零实现时序数据库 </summary>
 </details>
-
 
 <details>
     <summary> 🚀 从零实现深度学习框架 </summary>
