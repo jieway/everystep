@@ -3,10 +3,10 @@
 [简介](README.md)
 
 - [⛽ 从零实现 BitCask 存储引擎](bitcask/README.md)
-    - [Part 1](bitcask/ch1.md)
-    - [Part 2](bitcask/ch2.md)
-    - [Part 3](bitcask/ch3.md)
-    - [Part 4](bitcask/ch4.md)
+    - [数据在磁盘上如何存放？](bitcask/ch1.md)
+    - [存储引擎的接口设计](bitcask/ch2.md)
+    - [实现 Set、Get](bitcask/ch3.md)
+    - [删除逻辑和 Compact ](bitcask/ch4.md)
 
 - [🧊 从零实现 LSM-Tree 存储引擎](lsm/README.md)
     - [Part 1](lsm/ch1.md)

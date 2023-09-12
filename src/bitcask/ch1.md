@@ -1,4 +1,4 @@
-# Part 1. 一条数据的数据编码解码过程
+# Part 1. 数据在磁盘上如何存放？
 
 这一章节主要研究数据在磁盘上是如何组织的。先从自底向上的方式来描述所需的组件。
 ## 1. 数据组成
@@ -83,7 +83,7 @@ func EncodeHeader(timestamp, keySize, valueSize uint32) ([]byte, error) {
 
 1. **函数声明：**
    ```go
-   func EncodeHeader(timestamp, keySize, valueSize uint32) ([]byte, error) {
+   func EncodeHeader(timestamp, keySize, valueSize uint32) ([]byte, error)
    ```
    这行代码定义了一个名为 `EncodeHeader` 的函数，它接受三个参数：时间戳 `timestamp`、键的大小 `keySize` 和值的大小 `valueSize`。这个函数会返回两个值：编码后的头部数据字节切片和一个错误（如果有的话）。
 
@@ -150,24 +150,24 @@ func EncodeHeader(timestamp, keySize, valueSize uint32) ([]byte, error) {
 
 下面的完整的结构
 
-    ```go
-    func EncodeKV(timestamp uint32, key, value string) (uint32, []byte, error) {
-        // 使用 EncodeHeader 函数编码头部信息，得到头部数据
-        header, err := EncodeHeader(timestamp, uint32(len(key)), uint32(len(value)))
-        if err != nil {
-            return 0, nil, err
-        }
-
-        // 将键和值的字节数据拼接在一起，形成完整的数据行
-        data := append(header, append([]byte(key), []byte(value)...)...)
-
-        // 计算整个数据行的总大小（包括头部、键和值）
-        totalSize := HeaderSize + uint32(len(key)) + uint32(len(value))
-        
-        // 返回总大小、完整数据行的字节切片和 nil 错误
-        return totalSize, data, nil
+```go
+func EncodeKV(timestamp uint32, key, value string) (uint32, []byte, error) {
+    // 使用 EncodeHeader 函数编码头部信息，得到头部数据
+    header, err := EncodeHeader(timestamp, uint32(len(key)), uint32(len(value)))
+    if err != nil {
+        return 0, nil, err
     }
-    ```
+
+    // 将键和值的字节数据拼接在一起，形成完整的数据行
+    data := append(header, append([]byte(key), []byte(value)...)...)
+
+    // 计算整个数据行的总大小（包括头部、键和值）
+    totalSize := HeaderSize + uint32(len(key)) + uint32(len(value))
+        
+    // 返回总大小、完整数据行的字节切片和 nil 错误
+    return totalSize, data, nil
+}
+```
 
 ## 4. 如何解码头部数据？
 
@@ -244,32 +244,32 @@ func DecodeHeader(data []byte) (uint32, uint32, uint32, error) {
 
 当我们需要从一个编码后的数据行字节切片中解码出时间戳、键和值时，以便于理解数据行的内容和信息，我们可以使用这段代码来实现。我将逐步解释这段代码的每一部分，以便你更好地理解它的工作原理。
 
-    ```go
-    func DecodeKV(data []byte) (uint32, string, string, error) {
-        // 检查数据字节切片是否足够长，至少需要 HeaderSize 长度
-        if len(data) < HeaderSize {
-            return 0, "", "", errors.New("data too short")
-        }
-
-        // 解码数据行的头部，获取时间戳、键的大小和值的大小
-        timestamp, keySize, valueSize, err := DecodeHeader(data[:HeaderSize])
-        if err != nil {
-            return 0, "", "", err
-        }
-
-        // 检查数据字节切片是否足够长，以保证可以解码键和值的内容
-        if len(data) < int(HeaderSize+keySize+valueSize) {
-            return 0, "", "", errors.New("key/value data too short")
-        }
-
-        // 解码键和值的内容
-        key := string(data[HeaderSize : HeaderSize+keySize])
-        value := string(data[HeaderSize+keySize : HeaderSize+keySize+valueSize])
-
-        // 返回解码后的时间戳、键、值和 nil 错误
-        return timestamp, key, value, nil
+```go
+func DecodeKV(data []byte) (uint32, string, string, error) {
+    // 检查数据字节切片是否足够长，至少需要 HeaderSize 长度
+    if len(data) < HeaderSize {
+        return 0, "", "", errors.New("data too short")
     }
-    ```
+
+    // 解码数据行的头部，获取时间戳、键的大小和值的大小
+    timestamp, keySize, valueSize, err := DecodeHeader(data[:HeaderSize])
+    if err != nil {
+        return 0, "", "", err
+    }
+
+    // 检查数据字节切片是否足够长，以保证可以解码键和值的内容
+    if len(data) < int(HeaderSize+keySize+valueSize) {
+        return 0, "", "", errors.New("key/value data too short")
+    }
+
+    // 解码键和值的内容
+    key := string(data[HeaderSize : HeaderSize+keySize])
+    value := string(data[HeaderSize+keySize : HeaderSize+keySize+valueSize])
+
+    // 返回解码后的时间戳、键、值和 nil 错误
+    return timestamp, key, value, nil
+}
+```
 
 总结：
 
