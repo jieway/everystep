@@ -31,7 +31,7 @@
 </details>
 
 <details>
-    <summary> 🧊 从零实现 LSM-Tree 存储引擎 (ing) </summary>
+    <summary> 🧊 从零实现 LSM-Tree 存储引擎 </summary>
 
 - Part 1. 总览
 - Part 2. 查询、写入过程
