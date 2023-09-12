@@ -30,10 +30,6 @@
 
 总之，Bitcask 的 `Compact` 机制旨在通过合并、清理和整理操作，优化存储引擎的性能和存储空间利用。这有助于维持存储系统的高效性能，并减少存储资源的浪费。
 
-
-这个代码只是提供了一个 example 并没有真正使用 [[feat] add compact.](https://github.com/weijiew/abyssdb/commit/069f53e6e1103e19ccdef1696d8bab9eeff5ec4f)
-
-
 ## 其他
 
 下面是一些简单且容易实现任务，并且可以加深代码理解。后续有时间的话会挨个实现并讲解。

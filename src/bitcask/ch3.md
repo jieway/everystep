@@ -79,4 +79,4 @@ func (ds *DiskStorage) Get(key string) (string, error) {
 
 如果仅仅是粘贴没有任何成就感，可以尝试修改之前的代码，例如增加一个 CRC 字段来进一步加深理解。通过 CRC 可以确保数据存取过程中是否一致。编码数据的时候直接将 CRC 附加到字段中即可，解码的时候要根据读取的数据重新生成 CRC 并和之前存的 CRC 比对数据是否一致。
 
-这个很简单，可以尝试自己能否实现，这是我的实现：[[feat] add crc support.](https://github.com/weijiew/abyssdb/commit/61c8c7790819e97ee65c1784ebc0cf38810f6a41) 。
+这个很简单，可以尝试自己能否实现。

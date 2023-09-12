@@ -41,6 +41,15 @@
     - [Lab 5 (Chinese)](6.830/cn/6-lab5.md)
     - [Lab 6 (Chinese)](6.830/cn/7-lab6.md)
 
+- [🤖 从零实现关系型数据库](abyssdb/p0.md)
+    - [Part 1. 总览](abyssdb/p1.md)
+    - [Part 2. 实现 Tuple](abyssdb/p2.md)
+    - [Part 3. 实现 Page](abyssdb/p3.md)
+    - [Part 4. 实现 HeapFile](abyssdb/p4.md)
+    - [Part 5. 实现 BufferPool](abyssdb/p5.md)
+    - [Part 6. 支持 int 和 string 等数据类型。](abyssdb/p6.md)
+    - [Part 7. 实现 Catalog](abyssdb/p7.md)
+
 - [🎉 6.824](6.824/0-lab0.md)
     - [Lab 1 (Chinese)](6.824/1-lab1-cn.md)
     - [Lab 1](6.824/1-lab1.md)
