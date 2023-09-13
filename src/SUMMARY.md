@@ -42,7 +42,7 @@
     - [Lab 6 (Chinese)](6.830/cn/7-lab6.md)
 
 - [🤖 从零实现关系型数据库](abyssdb/p0.md)
-    - [Part 1. 总览](abyssdb/p1.md)
+    - [从 Table 开始](abyssdb/p1.md)
     - [Part 2. 实现 Tuple](abyssdb/p2.md)
     - [Part 3. 实现 Page](abyssdb/p3.md)
     - [Part 4. 实现 HeapFile](abyssdb/p4.md)
