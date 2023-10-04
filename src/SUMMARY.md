@@ -87,11 +87,6 @@
     - [Environment Setup](6.828/1-env.md)
     - [Part 1](6.828/1-part1.md)
 
-- [🐼 rCore](rcore/ch0.md)
-    - [Chapter 1](rcore/ch1.md)
-    - [Chapter 2](rcore/ch2.md)
-    - [Chapter 3](rcore/ch3.md)
-
 - [🍼 八股](review/1_go.md)
     - [C++](review/2_cpp.md)
     - [Computer Networks](review/3_cn.md)
