@@ -1,14 +1,15 @@
-@media only screen and (max-width:1080px) {
+@media only screen and (max-width: 1080px) {
     .sidetoc {
         display: none !important;
     }
 }
 
-@media only screen and (min-width:1080px) {
+@media only screen and (min-width: 1080px) {
     main {
         position: relative;
         padding-right: 170px;
     }
+
     .sidetoc {
         margin-left: auto;
         margin-right: auto;
@@ -16,6 +17,7 @@
         left: calc(100% - 200px);
         position: absolute;
     }
+
     .pagetoc {
         position: fixed;
         width: 200px;
@@ -23,6 +25,7 @@
         overflow: auto;
         z-index: 1000;
     }
+
     .pagetoc a {
         border-left: 1px solid var(--sidebar-bg);
         color: var(--fg) !important;
@@ -34,11 +37,13 @@
         text-decoration: none;
         font-size: 1.2rem;
     }
+
     .pagetoc a:hover,
     .pagetoc a.active {
         background: var(--sidebar-bg);
         color: var(--sidebar-fg) !important;
     }
+
     .pagetoc .active {
         background: var(--sidebar-bg);
         color: var(--sidebar-fg);
@@ -65,6 +70,7 @@
     width: 5px;
     height: 5px;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #8080ff;
     border-radius: 3px;
@@ -77,18 +83,25 @@ table {
 
 /* 只使用底部的页面跳转，因为左右两边的宽跳转会被 page-toc 遮盖 */
 @media only screen and (max-width: 2560px) {
-    .nav-wide-wrapper { display: none; }
-    .nav-wrapper { 
+    .nav-wide-wrapper {
+        display: none;
+    }
+
+    .nav-wrapper {
         display: block;
         position: fixed;
         bottom: 50px;
         left: var(--page-padding);
-        right: var(--page-padding); 
+        right: var(--page-padding);
     }
 }
+
 @media only screen and (max-width: 2560px) {
-    .sidebar-visible .nav-wide-wrapper { display: none; }
-    .sidebar-visible .nav-wrapper { 
+    .sidebar-visible .nav-wide-wrapper {
+        display: none;
+    }
+
+    .sidebar-visible .nav-wrapper {
         display: block;
         left: calc(var(--sidebar-width) + var(--page-padding));
     }
@@ -107,8 +120,9 @@ table {
 .fa-github {
     font-weight: 550;
 }
-.fa-github:after{
-    content: "繁星点点尽在你的指尖 🌟";
+
+.fa-github:after {
+    content: "Star一下 🤣🤣🤣";
     margin-left: 4px;
 }
 

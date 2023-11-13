@@ -7,6 +7,9 @@ src = "src"
 
 [output.html]
 additional-css = ["theme/style.css"]
+additional-js = ["theme/custom.js"]
+git-repository-url = "https://github.com/weijiew/everystep"
+edit-url-template = "https://github.com/weijiew/everystep/edit/main/{path}"
 
 [output.html.playground]
 editable = true
