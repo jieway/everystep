@@ -1,6 +1,18 @@
 [book]
-authors = ["weijiew"]
-language = "en"
-multilingual = false
-src = "src"
 title = "everystep"
+authors = ["weijiew"]
+language = "zh-CN"
+src = "src"
+
+
+[output.html]
+additional-css = ["theme/style.css"]
+
+[output.html.playground]
+editable = true
+copy-js = true
+# line-numbers = true
+
+[output.html.fold]
+enable = true
+level = 0
