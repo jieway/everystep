@@ -86,46 +86,6 @@
     <summary> 🎉 6.824 2022 分布式系统 </summary>
 </details>
 
-
-## TODO
-
-<details>
-    <summary> 🧊 从零实现预写日志（WAL，Write-ahead log） </summary>
-</details>
-
-<details>
-     <summary> 🧊 从零实现分布式共识算法（Raft） </summary>
-</details>
-
-<details>
-    <summary> 🌟 从零实现分布式数据库 </summary>
-</details>
-
-<details>
-    <summary> 🐼 从零实现操作系统（XV6） </summary>
-</details>
-
-
-<details>
-    <summary> 🚀 从零实现 TCP </summary>
-</details>
-
-<details>
-    <summary> 🎡 从零实现编译器 </summary>
-</details>
-
-<details>
-    <summary> 💥 从零实现链接器 </summary>
-</details>
-
-<details>
-    <summary> ⚡️ 从零实现时序数据库 </summary>
-</details>
-
-<details>
-    <summary> 🚀 从零实现深度学习框架 </summary>
-</details>
-
 ## 思考
 
 写代码时要紧紧抓住 “我当前所面临的问题是什么？”否则很容易浪费时间。其次是要不断的去问为什么，思考背后的原理，动机，搞清楚对哪部分内容认识不到位。总之个人知识库，记录所学，如有错误还请指正。
