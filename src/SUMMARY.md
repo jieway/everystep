@@ -6,19 +6,6 @@
 
 ---
 
-- [🍬 使用 C++23 从零实现 Leveldb](solardb/README.md)
-    - [C++23环境配置](solardb/ch0.md)
-        - [运行Leveldb](solardb/ch0/ch1.md)
-        - [下载，编译和运行](solardb/ch0/ch2.md)
-        - [GCC11 安装并运行](solardb/ch0/ch3.md)
-        - [Cmake 安装和实践](solardb/ch0/ch4.md)
-        - [Gtest](solardb/ch0/ch5.md)
-    - [Public 修改](solardb/ch1/ch0.md)
-        - [Slice](solardb/ch1/ch1.md)
-            - [Slice 介绍](solardb/ch1/s1/ch1.md)
-            - [Slice 改造](solardb/ch1/s1/ch2.md)
-
-
 - [⛽ 从零实现 BitCask 存储引擎](bitcask/README.md)
     - [数据在磁盘上如何存放？](bitcask/ch1.md)
     - [存储引擎的接口设计](bitcask/ch2.md)
@@ -107,3 +94,16 @@
 - [🍼 八股](review/1_go.md)
     - [C++](review/2_cpp.md)
     - [Computer Networks](review/3_cn.md)
+
+<!-- - [🍬 使用 C++23 从零实现 Leveldb](solardb/README.md) -->
+<!--     - [环境配置](solardb/ch0.md) -->
+<!--     - [现代 C++ 学习](solardb/ch1.md) -->
+<!--     - [编译并运行 Leveldb](solardb/ch2.md) -->
+<!--     - [下载，编译和运行](solardb/ch0/ch2.md) -->
+<!--     - [Cmake 安装和实践](solardb/ch0/ch4.md) -->
+<!--     - [Gtest](solardb/ch0/ch5.md) -->
+<!--     - [Public 修改](solardb/ch1/ch0.md) -->
+<!--     - [Slice](solardb/ch1/ch1.md) -->
+<!--     - [Slice 介绍](solardb/ch1/s1/ch1.md) -->
+<!--     - [Slice 改造](solardb/ch1/s1/ch2.md) -->
+
