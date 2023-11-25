@@ -6,16 +6,18 @@
 
 ---
 
-<!-- - [使用 C++23 从零实现 Leveldb](leveldb-cpp23/README.md) -->
-<!--     - [C++23环境配置](leveldb-cpp23/ch1.md) -->
-<!--         - [GCC11 安装并运行](leveldb-cpp23/ch3.md) -->
-<!--         - [Cmake 安装和实践](leveldb-cpp23/ch4.md) -->
-<!--     - [运行Leveldb](leveldb-cpp23/ch2.md) -->
-<!--         - [下载，编译和运行](leveldb-cpp23/ch3.md) -->
-<!--         - [修改](leveldb-cpp23/ch4.md) -->
-<!--     - [CPP](leveldb-cpp23/) -->
-<!--     - [auto](leveldb-cpp23/) -->
-<!--     - [auto](leveldb-cpp23/) -->
+- [🍬 使用 C++23 从零实现 Leveldb](solardb/README.md)
+    - [C++23环境配置](solardb/ch0.md)
+        - [运行Leveldb](solardb/ch0/ch1.md)
+        - [下载，编译和运行](solardb/ch0/ch2.md)
+        - [GCC11 安装并运行](solardb/ch0/ch3.md)
+        - [Cmake 安装和实践](solardb/ch0/ch4.md)
+        - [Gtest](solardb/ch0/ch5.md)
+    - [Public 修改](solardb/ch1/ch0.md)
+        - [Slice](solardb/ch1/ch1.md)
+            - [Slice 介绍](solardb/ch1/s1/ch1.md)
+            - [Slice 改造](solardb/ch1/s1/ch2.md)
+
 
 - [⛽ 从零实现 BitCask 存储引擎](bitcask/README.md)
     - [数据在磁盘上如何存放？](bitcask/ch1.md)
@@ -28,7 +30,6 @@
     - [Part 2](lsm/ch2.md)
     - [Part 3](lsm/ch3.md)
     - [Part 4](lsm/ch4.md)
-
 
 - [🦄 6.S081](6.S081/0-summary.md)
     - [Lab 1](6.S081/1-lab1.md)

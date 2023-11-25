@@ -4,14 +4,14 @@ var initAll = function () {
         return;
     }
 
-    var images = document.querySelectorAll("main img")
-    Array.prototype.forEach.call(images, function (img) {
-        img.addEventListener("click", function () {
-            BigPicture({
-                el: img,
-            });
-        });
-    });
+//    var images = document.querySelectorAll("main img")
+//    Array.prototype.forEach.call(images, function (img) {
+//        img.addEventListener("click", function () {
+//            BigPicture({
+//                el: img,
+//            });
+//        });
+//    });
 
     // Un-active everything when you click it
     Array.prototype.forEach.call(document.getElementsByClassName("pagetoc")[0].children, function (el) {
@@ -139,7 +139,7 @@ var initAll = function () {
     script.setAttribute("data-repo", "weijiew/everystep");
     script.setAttribute("data-repo-id", "MDEwOlJlcG9zaXRvcnkyNDUxMTU1NTU=");
     script.setAttribute("data-category", "章节评论区");
-    script.setAttribute("data-category-id", "DIC_kwDODpwqo84Ca6Sw");
+    script.setAttribute("data-category-id", "DIC_kwDODpwqo84Ca6Sv");
     script.setAttribute("data-mapping", "specific");
     script.setAttribute("data-term", pagePath);
     script.setAttribute("data-reactions-enabled", "1");

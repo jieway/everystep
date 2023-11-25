@@ -18,15 +18,17 @@
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 </div>
 
-该项目最初为写名校 lab 过程中留下了的记录，但是因为[学术诚信](http://integrity.mit.edu/)的缘故，公开解决方案甚至代码是不合适的。但是直接删了有点可惜，后来想尝试换一门语言重写 lab/proj/hw 等内容，所以逐渐演化为用其他语言重写，造轮子过程中的笔记。例如从零实现 OS/Compiler/DB/ld 等，此外和课程答案相关的内容确实会逐渐删去。
+该项目最初为写名校 lab 过程中留下了的记录，但是因为[学术诚信](http://integrity.mit.edu/)
+的缘故，公开解决方案甚至代码是不合适的。但是直接删了有点可惜，后来想尝试换一门语言重写 lab/proj/hw
+等内容，所以逐渐演化为用其他语言重写，造轮子过程中的笔记。例如从零实现 OS/Compiler/DB/ld 等，此外和课程答案相关的内容确实会逐渐删去。
 
 <details>
     <summary> ⛽ 从零实现 BitCask 存储引擎 </summary>
-    
+
 - Part 1. 一条数据的数据编码解码过程
 - Part 2. 如何使用存储引擎？
 - Part 3 Set、Get 方法实现
-- Part 4 删除逻辑和 Compact 
+- Part 4 删除逻辑和 Compact
 
 </details>
 
@@ -43,87 +45,47 @@
 <details>
     <summary> 🤖 从零实现关系型数据库</summary>
 
-  - Part 1. 总览
-  - Part 2. 实现 Tuple
-  - Part 3. 实现 Page
-  - Part 4. 实现 HeapFile
-  - Part 5. 支持 int 和 string 等数据类型。
-  - Part 6. 实现 Catalog
+- Part 1. 总览
+- Part 2. 实现 Tuple
+- Part 3. 实现 Page
+- Part 4. 实现 HeapFile
+- Part 5. 支持 int 和 string 等数据类型。
+- Part 6. 实现 Catalog
 
 </details>
 
 <details>
     <summary> 🦄 6.S081 2020 Operation System </summary>
 
-  - Part 1. Lab util
-  - Part 2. Lab syscall
-  - Part 3. 实现 Page
-  - Part 4. Lab pgtbl
-  - Part 5. Lab trap
-  - Part 6. Lab cow
-  - Part 7. Lab thread
-  - Part 8. Lab lock
-  - Part 9. Lab fs
-  - Part 10. Lab mmap
-  - Part 11. Lab net
+- Part 1. Lab util
+- Part 2. Lab syscall
+- Part 3. 实现 Page
+- Part 4. Lab pgtbl
+- Part 5. Lab trap
+- Part 6. Lab cow
+- Part 7. Lab thread
+- Part 8. Lab lock
+- Part 9. Lab fs
+- Part 10. Lab mmap
+- Part 11. Lab net
 
 </details>
 
 <details>
     <summary> 🎡 6.830 2021 实现一个关系型 DB </summary>
 
-  - Part 1. Lab 1: SimpleDB
-  - Part 2. Lab 2: SimpleDB Operators
-  - Part 3. Lab 3: Query Optimization
-  - Part 4. Lab 4: SimpleDB Transactions
-  - Part 5. Lab 5: B+ Tree Index
-  - Part 6. Lab 6: Rollback and Recovery
+- Part 1. Lab 1: SimpleDB
+- Part 2. Lab 2: SimpleDB Operators
+- Part 3. Lab 3: Query Optimization
+- Part 4. Lab 4: SimpleDB Transactions
+- Part 5. Lab 5: B+ Tree Index
+- Part 6. Lab 6: Rollback and Recovery
 
 </details>
 
 
 <details>
     <summary> 🎉 6.824 2022 分布式系统 </summary>
-</details>
-
-
-## TODO
-
-<details>
-    <summary> 🧊 从零实现预写日志（WAL，Write-ahead log） </summary>
-</details>
-
-<details>
-     <summary> 🧊 从零实现分布式共识算法（Raft） </summary>
-</details>
-
-<details>
-    <summary> 🌟 从零实现分布式数据库 </summary>
-</details>
-
-<details>
-    <summary> 🐼 从零实现操作系统（XV6） </summary>
-</details>
-
-
-<details>
-    <summary> 🚀 从零实现 TCP </summary>
-</details>
-
-<details>
-    <summary> 🎡 从零实现编译器 </summary>
-</details>
-
-<details>
-    <summary> 💥 从零实现链接器 </summary>
-</details>
-
-<details>
-    <summary> ⚡️ 从零实现时序数据库 </summary>
-</details>
-
-<details>
-    <summary> 🚀 从零实现深度学习框架 </summary>
 </details>
 
 ## 思考
