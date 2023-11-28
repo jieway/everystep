@@ -17,7 +17,7 @@
 
 dice.py 里面就两个函数，其实特别简单。一个用于模拟真实的筛子，另外一个则是用于测试的骰子。
 
-答案：[00.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/00.py)
+答案：[00.py](https://github.com/rainjw/cs61a/blob/master/proj/hog/tests/00.py)
 
 ## Problem 1
 
@@ -29,7 +29,7 @@ roll_dice 函数就是来统计分数，只要骰子中含有 1 分数就是 1 �
 
 需要先运行 **python3 ok -q 00 -u --local** 来确保自己已经理解 roll_dice 函数的功能。
 
-答案：[01.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/01.py)
+答案：[01.py](https://github.com/rainjw/cs61a/blob/master/proj/hog/tests/01.py)
 
 以下是该功能的代码实现，这是我最开始的思路：
 
@@ -69,7 +69,7 @@ roll_dice 函数就是来统计分数，只要骰子中含有 1 分数就是 1 �
 
 经过手算这几道题目肯定能够明白代码的实现逻辑。
 
-答案：[02.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/02.py)
+答案：[02.py](https://github.com/rainjw/cs61a/blob/master/proj/hog/tests/02.py)
 
 `free_bacon()` 的代码实现如下：
 
@@ -92,7 +92,7 @@ roll_dice 函数就是来统计分数，只要骰子中含有 1 分数就是 1 �
 
 同样先运行：`python3 ok -q 03 -u --local`
 
-答案：[03.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/03.py)
+答案：[03.py](https://github.com/rainjw/cs61a/blob/master/proj/hog/tests/03.py)
 
 代码实现：
 
@@ -107,7 +107,7 @@ roll_dice 函数就是来统计分数，只要骰子中含有 1 分数就是 1 �
 
 这道题是 Swine Swap 规则的实现方式。
 
-答案：[04.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/04.py)
+答案：[04.py](https://github.com/rainjw/cs61a/blob/master/proj/hog/tests/04.py)
 
 `python3 ok -q 04 --local` 通过测试。注意如果用 log10 需要在引入 `from math import log10`
 
@@ -124,7 +124,7 @@ roll_dice 函数就是来统计分数，只要骰子中含有 1 分数就是 1 �
 
 ## Problem 5a
 
-答案：[05a.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/05a.py)
+答案：[05a.py](https://github.com/rainjw/cs61a/blob/master/proj/hog/tests/05a.py)
 
 代码实现：
 
@@ -151,16 +151,16 @@ roll_dice 函数就是来统计分数，只要骰子中含有 1 分数就是 1 �
 
 在上一题的基础上需要添加几条规则。
 
-答案：[05b.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/05b.py)
+答案：[05b.py](https://github.com/rainjw/cs61a/blob/master/proj/hog/tests/05b.py)
 
-实现代码：[hog.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/hog.py)
+实现代码：[hog.py](https://github.com/rainjw/cs61a/blob/master/proj/hog/hog.py)
 # Phase 2: Commentary
 
 ## Problem 6 
 
 添加输出，提高交互性。
 
-答案：[06.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/06.py)
+答案：[06.py](https://github.com/rainjw/cs61a/blob/master/proj/hog/tests/06.py)
 
 ```python
 def silence(score0, score1):
@@ -179,7 +179,7 @@ def silence(score0, score1):
 
 ## Problem 7
 
-答案：[07.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/07.py)
+答案：[07.py](https://github.com/rainjw/cs61a/blob/master/proj/hog/tests/07.py)
 
 ```python
     # BEGIN PROBLEM 7
@@ -206,7 +206,7 @@ def silence(score0, score1):
 ## Problem 8
 
 
-答案：[08.py](https://github.com/weijiew/cs61a/blob/master/proj/hog/tests/08.py)
+答案：[08.py](https://github.com/rainjw/cs61a/blob/master/proj/hog/tests/08.py)
 
 
 ```python

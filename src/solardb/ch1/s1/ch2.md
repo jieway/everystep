@@ -1,6 +1,6 @@
 # Slice 改造
 
-担心改造后看不出问题，先加强一下 [slice 测试](https://github.com/weijiew/solardb/commit/f4eccec7499ec498bcc1977adbbadc049742c29b#diff-608d8de3fba954c50110b6d7386988f27295de845e9d7174e40095ba5efcf1bb)
+担心改造后看不出问题，先加强一下 [slice 测试](https://github.com/rainjw/solardb/commit/f4eccec7499ec498bcc1977adbbadc049742c29b#diff-608d8de3fba954c50110b6d7386988f27295de845e9d7174e40095ba5efcf1bb)
 
 ## 1. 空指针使用 nullptr
 

@@ -10,7 +10,7 @@
 
 这门课最吸引我的地方是有测试程序，根据测试程序来判断代码能否通过全部的测试用例。如果不行，进而改进。
 
-我的代码：[cs61a](https://github.com/weijiew/cs61a) 。
+我的代码：[cs61a](https://github.com/rainjw/cs61a) 。
 
 环境：wsl (Ubuntu 20.04 LTS), python 3.8 。
 

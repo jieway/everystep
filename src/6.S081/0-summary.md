@@ -26,7 +26,7 @@ schedule 页面：https://pdos.csail.mit.edu/6.828/2020/schedule.html
 
 据此命令 `riscv64-unknown-elf-gcc --version` 出现如下内容：
 
-    weijiew@ubuntu:~$ riscv64-unknown-elf-gcc --version
+    @ubuntu:~$ riscv64-unknown-elf-gcc --version
 
     Command 'riscv64-unknown-elf-gcc' not found, but can be installed with:
 
@@ -36,7 +36,7 @@ schedule 页面：https://pdos.csail.mit.edu/6.828/2020/schedule.html
 
 安装后输入下面的两条命令判断 `riscv64-unknown-elf-gcc --version`
 
-    weijiew@ubuntu:~$ riscv64-unknown-elf-gcc --version
+    @ubuntu:~$ riscv64-unknown-elf-gcc --version
     riscv64-unknown-elf-gcc () 9.3.0
     Copyright (C) 2019 Free Software Foundation, Inc.
     This is free software; see the source for copying conditions.  There is NO
@@ -44,7 +44,7 @@ schedule 页面：https://pdos.csail.mit.edu/6.828/2020/schedule.html
 
 `qemu-system-riscv64 --version`
 
-    weijiew@ubuntu:~$ qemu-system-riscv64 --version
+    @ubuntu:~$ qemu-system-riscv64 --version
     QEMU emulator version 4.2.0 (Debian 1:4.2-3ubuntu6)
     Copyright (c) 2003-2019 Fabrice Bellard and the QEMU Project developers
 

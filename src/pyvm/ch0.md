@@ -4,7 +4,7 @@
 
 作者的代码：[pythonvm](https://gitee.com/hinus/pythonvm/) 。
 
-我的代码：[my-pyvm](https://github.com/weijiew/my-pyvm) 。
+我的代码：[my-pyvm](https://github.com/rainjw/my-pyvm) 。
 
 # 环境
 
