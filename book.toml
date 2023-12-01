@@ -7,7 +7,7 @@ src = "src"
 
 [output.html]
 additional-css = ["theme/style.css"]
-additional-js = ["theme/custom.js"]
+# additional-js = ["theme/custom.js"]
 git-repository-url = "https://github.com/rainjw/everystep"
 edit-url-template = "https://github.com/rainjw/everystep/edit/main/{path}"
 
