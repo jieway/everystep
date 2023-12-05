@@ -2,23 +2,6 @@
 
 [简介](README.md)
 
-# 🍭 操作系统
-
----
-
-- [6.S081](6.S081/0-summary.md)
-    - [Lab 1](6.S081/1-lab1.md)
-    - [Lab 2](6.S081/2-lab2.md)
-    - [Lab 3](6.S081/3-lab3.md)
-    - [Lab 4](6.S081/4-lab4.md)
-    - [Lab 5](6.S081/5-lab5.md)
-    - [Lab 6](6.S081/6-lab6.md)
-    - [Lab 7](6.S081/7-lab7.md)
-    - [Lab 8](6.S081/8-lab8.md)
-    - [Lab 9](6.S081/9-lab9.md)
-    - [Lab 10](6.S081/10-lab10.md)
-    - [Lab 11](6.S081/11-lab11.md)
-
 # 🚀 数据库
 
 ---
@@ -54,6 +37,24 @@
     - [Lab 6 (Chinese)](6.830/cn/7-lab6.md)
 
 
+
+# 🍭 操作系统
+
+---
+
+- [6.S081](6.S081/0-summary.md)
+    - [Lab 1](6.S081/1-lab1.md)
+    - [Lab 2](6.S081/2-lab2.md)
+    - [Lab 3](6.S081/3-lab3.md)
+    - [Lab 4](6.S081/4-lab4.md)
+    - [Lab 5](6.S081/5-lab5.md)
+    - [Lab 6](6.S081/6-lab6.md)
+    - [Lab 7](6.S081/7-lab7.md)
+    - [Lab 8](6.S081/8-lab8.md)
+    - [Lab 9](6.S081/9-lab9.md)
+    - [Lab 10](6.S081/10-lab10.md)
+    - [Lab 11](6.S081/11-lab11.md)
+
 # 🧊 分布式
 
 ---
@@ -64,38 +65,9 @@
     - [Lab 2 (Chinese)](6.824/2-lab2-cn.md)
     - [Lab 2](6.824/2-lab2.md)
 
-- [CS61A](cs61a/0-summary.md)
-    - [Lab 00](cs61a/1-lab00.md)
-    - [Homework 01](cs61a/2-hw01.md)
-    - [Lab 01](cs61a/3-lab01.md)
-    - [Hog](cs61a/4-hog.md)
-    - [Homework 02](cs61a/5-hw02.md)
-    - [Lab 02](cs61a/6-lab02.md)
-    - [Homework 03](cs61a/7-hw03.md)
-    - [Lab 04](cs61a/8-lab04.md)
-    - [Lab 05](cs61a/9-lab05.md)
-    - [Homework 04](cs61a/10-hw04.md)
-    - [Lab 06](cs61a/11-lab06.md)
-    - [Homework 05](cs61a/12-hw05.md)
-    - [Lab 07](cs61a/13-lab07.md)
-    - [Lab 08](cs61a/14-lab08.md)
-    - [Homework 06](cs61a/15-hw06.md)
-
-- [CS61c](cs61c/1-summary.md)
-    - [Lab 0](cs61c/2-lab0.md)
-
-# 🐲 编译原理
-
----
-
-- [编译原理](compile/ch0.md)
-    - [Chapter 1](compile/ch1.md)
-    - [Chapter 2](compile/ch2.md)
-    - [Chapter 3](compile/ch3.md)
-    - [Chapter 4](compile/ch4.md)
-    - [Chapter 5](compile/ch5.md)
 
 # 🔥 其他
+
 
 ---
 
