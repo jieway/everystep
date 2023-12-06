@@ -1,7 +1,7 @@
 # everystep
 
 <p align='center'>
-  <img src='theme/images/background-cover_.png' width='500'>
+  <img src='theme/images/background-cover_.png' width='800'>
 </p>
 
 
