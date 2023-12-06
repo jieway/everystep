@@ -79,7 +79,7 @@
 ## 本地运行
 
 ```
-git clone https://github.com/rainjw/everystep.git
+git clone https://github.com/weijiew/everystep.git
 cd everystep && mdbook serve --open
 ```
 
@@ -89,8 +89,8 @@ cd everystep && mdbook serve --open
 
 ## Star 历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=rainjw/everystep&type=Date)](https://star-history.com/#rainjw/everystep&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=weijiew/everystep&type=Date)](https://star-history.com/#weijiew/everystep&Date)
 
 ## 协议
 
-2019 - 2023 ©rainjw. Released under the CC BY-NC-SA 4.0 International License.
+2019 - 2023 ©weijiew. Released under the CC BY-NC-SA 4.0 International License.

@@ -39,7 +39,7 @@ https://hansimov.gitbook.io/csapp/part2/ch09-virtual-memory
 
 `(pte & (PTE_R|PTE_W|PTE_X)) == 0` 表示非叶子节点。
 
-commit: [PASS Lab3 Print a page table](https://github.com/rainjw/6.S081-2020/commit/6632a87f01b651984a54bd04f20cc63a99ca1b3f).
+commit: [PASS Lab3 Print a page table](https://github.com/weijiew/6.S081-2020/commit/6632a87f01b651984a54bd04f20cc63a99ca1b3f).
 
   $ make qemu-gdb
   pte printout: OK (6.9s)

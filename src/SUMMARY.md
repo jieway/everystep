@@ -2,11 +2,39 @@
 
 [简介](README.md)
 
+# 🍭 操作系统
+
+---
+
+- [6.S081](6.S081/0-summary.md)
+    - [Lab 1](6.S081/1-lab1.md)
+    - [Lab 2](6.S081/2-lab2.md)
+    - [Lab 3](6.S081/3-lab3.md)
+    - [Lab 4](6.S081/4-lab4.md)
+    - [Lab 5](6.S081/5-lab5.md)
+    - [Lab 6](6.S081/6-lab6.md)
+    - [Lab 7](6.S081/7-lab7.md)
+    - [Lab 8](6.S081/8-lab8.md)
+    - [Lab 9](6.S081/9-lab9.md)
+    - [Lab 10](6.S081/10-lab10.md)
+    - [Lab 11](6.S081/11-lab11.md)
+
+
 # 🚀 数据库
 
 ---
 
 - [从零实现 BitCask 存储引擎](bitcask/README.md)
+    - [BitCask 简介](bitcask/p1.md)
+    - [创建 C++ 项目](bitcask/p1.md)
+    - [数据在内存中](bitcask/p1.md)
+    - [数据在磁盘上](bitcask/p1.md)
+    - [BenchMark](bitcask/p1.md)
+    - [实现合并](bitcask/p1.md)
+    - [实现垃圾回收](bitcask/p1.md)
+    - [hintfile 实现](bitcask/p1.md)
+    - [哈希表优化为多线程](bitcask/p1.md)
+
     - [数据在磁盘上如何存放？](bitcask/ch1.md)
     - [存储引擎的接口设计](bitcask/ch2.md)
     - [实现 Set、Get](bitcask/ch3.md)
@@ -38,22 +66,6 @@
 
 
 
-# 🍭 操作系统
-
----
-
-- [6.S081](6.S081/0-summary.md)
-    - [Lab 1](6.S081/1-lab1.md)
-    - [Lab 2](6.S081/2-lab2.md)
-    - [Lab 3](6.S081/3-lab3.md)
-    - [Lab 4](6.S081/4-lab4.md)
-    - [Lab 5](6.S081/5-lab5.md)
-    - [Lab 6](6.S081/6-lab6.md)
-    - [Lab 7](6.S081/7-lab7.md)
-    - [Lab 8](6.S081/8-lab8.md)
-    - [Lab 9](6.S081/9-lab9.md)
-    - [Lab 10](6.S081/10-lab10.md)
-    - [Lab 11](6.S081/11-lab11.md)
 
 # 🧊 分布式
 

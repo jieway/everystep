@@ -2,9 +2,9 @@
 
 接下来先解释 slice ，随后对其进行改造。
 
-这是没有修改过的代码，建议先阅读代码 [slice.h](https://github.com/rainjw/solardb/blob/8dd82d6f6deb4beb781e8294a60b146cca8fae36/slice.h)
+这是没有修改过的代码，建议先阅读代码 [slice.h](https://github.com/weijiew/solardb/blob/8dd82d6f6deb4beb781e8294a60b146cca8fae36/slice.h)
 ，这是一个调用 slice
-的示例代码 [main.cpp](https://github.com/rainjw/solardb/blob/8dd82d6f6deb4beb781e8294a60b146cca8fae36/main.cpp)。
+的示例代码 [main.cpp](https://github.com/weijiew/solardb/blob/8dd82d6f6deb4beb781e8294a60b146cca8fae36/main.cpp)。
 
 ## 1. Slice 简介
 

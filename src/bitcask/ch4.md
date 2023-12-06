@@ -6,7 +6,7 @@
 
 删除采用的时逻辑删除，可以简单粗暴的在内存中把 key 对应的 value 抹掉，这样无法从磁盘中查数据了。但是磁盘中依旧有需要被删除的数据该怎么办？接下来是合并操作，通常称为 compaction ，在 LSM Tree 中也有这个东西。首先从头开始读取磁盘文件，根据拿到的数据去哈希表中查找，判断是否被逻辑删除，若被删了则跳过，若没有则创建一张新的哈希表建立新的索引，并把数据写入新的文件中。这样把所有的旧数据都遍历一遍，该删的数据就都删干净了。
 
-这是一个逻辑删除的实现，并没有实现物理删除 [[feat] add delete and test.](https://github.com/rainjw/abyssdb/commit/243d884c45d5eae3eb1d8fd9bbf573b6f4e85703) 
+这是一个逻辑删除的实现，并没有实现物理删除 [[feat] add delete and test.](https://github.com/weijiew/abyssdb/commit/243d884c45d5eae3eb1d8fd9bbf573b6f4e85703) 
 
 实现物理删除要进一步研究 Compact 机制，这个也很简单。
 

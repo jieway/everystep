@@ -136,7 +136,7 @@ var initAll = function () {
     script.src = "https://giscus.app/client.js";
     script.async = true;
     script.crossOrigin = "anonymous";
-    script.setAttribute("data-repo", "rainjw/everystep");
+    script.setAttribute("data-repo", "weijiew/everystep");
     script.setAttribute("data-repo-id", "MDEwOlJlcG9zaXRvcnkyNDUxMTU1NTU=");
     script.setAttribute("data-category", "章节评论区");
     script.setAttribute("data-category-id", "DIC_kwDODpwqo84Ca6Sv");

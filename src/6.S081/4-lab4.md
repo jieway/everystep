@@ -194,7 +194,7 @@ A: "He110 World"; 0x726c6400; no, 57616 is 110 in hex regardless of endianness.
 	$ call
 	x=3 y=5221
 
-* [详细代码](https://github.com/rainjw/6.S081-2020/commit/a3894ff5e3b7e9a3e08a0a1ea1697ff3bac9bb87)
+* [详细代码](https://github.com/weijiew/6.S081-2020/commit/a3894ff5e3b7e9a3e08a0a1ea1697ff3bac9bb87)
 
 
 ## Backtrace (moderate)
@@ -233,7 +233,7 @@ fp 保存在寄存器 s0 中，每个函数调用栈
 
 通过循环，不断打印 ra ，通过 pre fp 拿到父函数的地址再打印 ra 即可。
 
-* [详细代码](https://github.com/rainjw/6.S081-2020/commit/102e77e9b3324df1062b8812b578f0d5b95d1a71)
+* [详细代码](https://github.com/weijiew/6.S081-2020/commit/102e77e9b3324df1062b8812b578f0d5b95d1a71)
 
 ## Alarm (hard)
 
@@ -267,4 +267,4 @@ proc 中需要保存 interval ，还需要一个字段表示当前时间 n ，�
     time: OK 
     Score: 85/85
 
-* [详细代码](https://github.com/rainjw/6.S081-2020/commit/bddcd70db9d2f61749c8bd58b8100f49217a122d)
+* [详细代码](https://github.com/weijiew/6.S081-2020/commit/bddcd70db9d2f61749c8bd58b8100f49217a122d)
