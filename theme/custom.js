@@ -4,14 +4,14 @@ var initAll = function () {
         return;
     }
 
-//    var images = document.querySelectorAll("main img")
-//    Array.prototype.forEach.call(images, function (img) {
-//        img.addEventListener("click", function () {
-//            BigPicture({
-//                el: img,
-//            });
-//        });
-//    });
+   var images = document.querySelectorAll("main img")
+   Array.prototype.forEach.call(images, function (img) {
+       img.addEventListener("click", function () {
+           BigPicture({
+               el: img,
+           });
+       });
+   });
 
     // Un-active everything when you click it
     Array.prototype.forEach.call(document.getElementsByClassName("pagetoc")[0].children, function (el) {
