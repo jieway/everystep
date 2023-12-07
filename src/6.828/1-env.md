@@ -4,8 +4,7 @@
 
 环境：WSL2 ubuntu20.04 
 
-    mkdir ~/6.828
-    cd ~/6.828
+    mkdir ~/6.828 && cd ~/6.828
     git clone https://pdos.csail.mit.edu/6.828/2018/jos.git lab
     sudo apt-get install -y build-essential gdb gcc-multilib
     git clone https://github.com/mit-pdos/6.828-qemu.git qemu

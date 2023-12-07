@@ -7,10 +7,9 @@ src = "src"
 
 [output.html]
 additional-css = ["theme/style.css"]
-# additional-js = ["theme/custom.js"]
+additional-js = ["theme/custom.js"]
 git-repository-url = "https://github.com/weijiew/everystep"
-edit-url-template = "https://github.com/weijiew/everystep/edit/main/{path}"
-additional-js = ["mermaid.min.js", "mermaid-init.js"]
+edit-url-template = "https://github.com/weijiew/everystep/edit/master/{path}"
 
 [output.html.playground]
 editable = true
