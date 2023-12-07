@@ -136,11 +136,12 @@ var initAll = function () {
     script.src = "https://giscus.app/client.js";
     script.async = true;
     script.crossOrigin = "anonymous";
+
     script.setAttribute("data-repo", "weijiew/everystep");
     script.setAttribute("data-repo-id", "MDEwOlJlcG9zaXRvcnkyNDUxMTU1NTU=");
     script.setAttribute("data-category", "章节评论区");
-    script.setAttribute("data-category-id", "DIC_kwDODpwqo84Ca6Sv");
-    script.setAttribute("data-mapping", "specific");
+    script.setAttribute("data-category-id", "[在此输入分类 ID]");
+    script.setAttribute("data-mapping", "pathname");
     script.setAttribute("data-term", pagePath);
     script.setAttribute("data-reactions-enabled", "1");
     script.setAttribute("data-emit-metadata", "0");
