@@ -84,7 +84,7 @@
 ```
 git clone https://github.com/weijiew/everystep.git
 cd everystep && mdbook serve --open
-kill $(lsof -t -i:3000) ;  mdbook serve --open
+mdbook serve --open
 ```
 
 ## 贡献
