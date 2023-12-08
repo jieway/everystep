@@ -1,0 +1,440 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="sidebar-visible no-js light">
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>存储引擎的接口设计 - everystep</title>
+
+
+    <!-- Custom HTML head -->
+    
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" href="../favicon.svg">
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/chrome.css">
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="../highlight.css">
+    <link rel="stylesheet" href="../tomorrow-night.css">
+    <link rel="stylesheet" href="../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+    <link rel="stylesheet" href="../theme/style.css">
+
+
+</head>
+<body>
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "../";
+        var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        var html = document.querySelector('html');
+        html.classList.remove('no-js')
+        html.classList.remove('light')
+        html.classList.add(theme);
+        html.classList.add('js');
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="sidebar-scrollbox">
+            <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">简介</a></li><li class="chapter-item affix "><li class="part-title">🍭 操作系统</li><li class="spacer"></li><li class="chapter-item "><a href="../6.S081/0-summary.html"><strong aria-hidden="true">1.</strong> 6.S081</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.S081/1-lab1.html"><strong aria-hidden="true">1.1.</strong> Lab 1</a></li><li class="chapter-item "><a href="../6.S081/2-lab2.html"><strong aria-hidden="true">1.2.</strong> Lab 2</a></li><li class="chapter-item "><a href="../6.S081/3-lab3.html"><strong aria-hidden="true">1.3.</strong> Lab 3</a></li><li class="chapter-item "><a href="../6.S081/4-lab4.html"><strong aria-hidden="true">1.4.</strong> Lab 4</a></li><li class="chapter-item "><a href="../6.S081/5-lab5.html"><strong aria-hidden="true">1.5.</strong> Lab 5</a></li><li class="chapter-item "><a href="../6.S081/6-lab6.html"><strong aria-hidden="true">1.6.</strong> Lab 6</a></li><li class="chapter-item "><a href="../6.S081/7-lab7.html"><strong aria-hidden="true">1.7.</strong> Lab 7</a></li><li class="chapter-item "><a href="../6.S081/8-lab8.html"><strong aria-hidden="true">1.8.</strong> Lab 8</a></li><li class="chapter-item "><a href="../6.S081/9-lab9.html"><strong aria-hidden="true">1.9.</strong> Lab 9</a></li><li class="chapter-item "><a href="../6.S081/10-lab10.html"><strong aria-hidden="true">1.10.</strong> Lab 10</a></li><li class="chapter-item "><a href="../6.S081/11-lab11.html"><strong aria-hidden="true">1.11.</strong> Lab 11</a></li></ol></li><li class="chapter-item "><li class="part-title">🚀 数据库</li><li class="spacer"></li><li class="chapter-item expanded "><a href="../bitcask/index.html"><strong aria-hidden="true">2.</strong> 从零实现 BitCask 存储引擎</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.1.</strong> BitCask 简介</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.2.</strong> 创建 C++ 项目</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.3.</strong> 数据在内存中</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.4.</strong> 数据在磁盘上</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.5.</strong> BenchMark</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.6.</strong> 实现合并</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.7.</strong> 实现垃圾回收</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.8.</strong> hintfile 实现</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.9.</strong> 哈希表优化为多线程</a></li><li class="chapter-item "><a href="../bitcask/ch1.html"><strong aria-hidden="true">2.10.</strong> 数据在磁盘上如何存放？</a></li><li class="chapter-item expanded "><a href="../bitcask/ch2.html" class="active"><strong aria-hidden="true">2.11.</strong> 存储引擎的接口设计</a></li><li class="chapter-item "><a href="../bitcask/ch3.html"><strong aria-hidden="true">2.12.</strong> 实现 Set、Get</a></li><li class="chapter-item "><a href="../bitcask/ch4.html"><strong aria-hidden="true">2.13.</strong> 删除逻辑和 Compact </a></li></ol></li><li class="chapter-item "><a href="../abyssdb/p0.html"><strong aria-hidden="true">3.</strong> 从零实现关系型数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../abyssdb/p1.html"><strong aria-hidden="true">3.1.</strong> 从 Table 开始</a></li><li class="chapter-item "><a href="../abyssdb/p2.html"><strong aria-hidden="true">3.2.</strong> Part 2. 实现 Tuple</a></li><li class="chapter-item "><a href="../abyssdb/p3.html"><strong aria-hidden="true">3.3.</strong> Part 3. 实现 Page</a></li><li class="chapter-item "><a href="../abyssdb/p4.html"><strong aria-hidden="true">3.4.</strong> Part 4. 实现 HeapFile</a></li><li class="chapter-item "><a href="../abyssdb/p5.html"><strong aria-hidden="true">3.5.</strong> Part 5. 实现 BufferPool</a></li><li class="chapter-item "><a href="../abyssdb/p6.html"><strong aria-hidden="true">3.6.</strong> Part 6. 支持 int 和 string 等数据类型。</a></li><li class="chapter-item "><a href="../abyssdb/p7.html"><strong aria-hidden="true">3.7.</strong> Part 7. 实现 Catalog</a></li></ol></li><li class="chapter-item "><a href="../6.830/1-lab0.html"><strong aria-hidden="true">4.</strong> 6.830</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.830/ans/2-lab1-ans.html"><strong aria-hidden="true">4.1.</strong> Lab 1 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/3-lab2-ans.html"><strong aria-hidden="true">4.2.</strong> Lab 2 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/4-lab3-ans.html"><strong aria-hidden="true">4.3.</strong> Lab 3 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/5-lab4-ans.html"><strong aria-hidden="true">4.4.</strong> Lab 4 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/6-lab5-ans.html"><strong aria-hidden="true">4.5.</strong> Lab 5 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/7-lab6-ans.html"><strong aria-hidden="true">4.6.</strong> Lab 6 Answers</a></li><li class="chapter-item "><a href="../6.830/cn/2-lab1.html"><strong aria-hidden="true">4.7.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/3-lab2.html"><strong aria-hidden="true">4.8.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/4-lab3.html"><strong aria-hidden="true">4.9.</strong> Lab 3 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/5-lab4.html"><strong aria-hidden="true">4.10.</strong> Lab 4 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/6-lab5.html"><strong aria-hidden="true">4.11.</strong> Lab 5 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/7-lab6.html"><strong aria-hidden="true">4.12.</strong> Lab 6 (Chinese)</a></li></ol></li><li class="chapter-item "><li class="part-title">🧊 分布式</li><li class="spacer"></li><li class="chapter-item "><a href="../6.824/0-lab0.html"><strong aria-hidden="true">5.</strong> 6.824</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.824/1-lab1-cn.html"><strong aria-hidden="true">5.1.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/1-lab1.html"><strong aria-hidden="true">5.2.</strong> Lab 1</a></li><li class="chapter-item "><a href="../6.824/2-lab2-cn.html"><strong aria-hidden="true">5.3.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/2-lab2.html"><strong aria-hidden="true">5.4.</strong> Lab 2</a></li></ol></li><li class="chapter-item "><li class="part-title">🔥 其他</li><li class="spacer"></li><li class="chapter-item "><a href="../6.828/0-sum.html"><strong aria-hidden="true">6.</strong> 6.828</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.828/1-env.html"><strong aria-hidden="true">6.1.</strong> Environment Setup</a></li><li class="chapter-item "><a href="../6.828/1-part1.html"><strong aria-hidden="true">6.2.</strong> Part 1</a></li></ol></li><li class="chapter-item "><a href="../review/1_go.html"><strong aria-hidden="true">7.</strong> 八股</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../review/2_cpp.html"><strong aria-hidden="true">7.1.</strong> C++</a></li><li class="chapter-item "><a href="../review/3_cn.html"><strong aria-hidden="true">7.2.</strong> Computer Networks</a></li></ol></li><li class="chapter-item "><a href="../lsm/index.html"><strong aria-hidden="true">8.</strong> 从零实现 LSM-Tree 存储引擎</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../lsm/ch1.html"><strong aria-hidden="true">8.1.</strong> Part 1</a></li><li class="chapter-item "><a href="../lsm/ch2.html"><strong aria-hidden="true">8.2.</strong> Part 2</a></li><li class="chapter-item "><a href="../lsm/ch3.html"><strong aria-hidden="true">8.3.</strong> Part 3</a></li><li class="chapter-item "><a href="../lsm/ch4.html"><strong aria-hidden="true">8.4.</strong> Part 4</a></li></ol></li></ol>
+        </div>
+        <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+                        <div id="menu-bar-hover-placeholder"></div>
+            <div id="menu-bar" class="menu-bar sticky bordered">
+                <div class="left-buttons">
+                    <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="fa fa-paint-brush"></i>
+                    </button>
+                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                        <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                    </ul>
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <h1 class="menu-title">everystep</h1>
+
+                <div class="right-buttons">
+                    <a href="../print.html" title="Print this book" aria-label="Print this book">
+                        <i id="print-button" class="fa fa-print"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep" title="Git repository" aria-label="Git repository">
+                        <i id="git-repository-button" class="fa fa-github"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep/edit/master/src/bitcask/ch2.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <i id="git-edit-button" class="fa fa-edit"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+            <script type="text/javascript">
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+
+                // Get viewed page store
+                var viewed_key = 'mdbook-viewed';
+                var viewed_map = {};
+                try {
+                    var viewed_storage = localStorage.getItem(viewed_key);
+                    if (viewed_storage) {
+                        viewed_map = JSON.parse(viewed_storage)
+                    }
+                } catch (e) { }
+
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+
+                    // Apply viewed style
+                    if (viewed_map[link.pathname]) {
+                        link.classList.add('md-viewed')
+                    }
+                }); 
+
+                // Mark viewed after 30s
+                setTimeout(function() {
+                    viewed_map[location.pathname] = 1;
+                    localStorage.setItem(viewed_key, JSON.stringify(viewed_map));
+                }, 30000)
+            </script>
+
+            <div id="content" class="content">
+                <!-- Page table of contents -->
+                <div class="sidetoc"><nav class="pagetoc"></nav></div>
+                <main>
+                    <h1 id="part-2-存储引擎的接口设计"><a class="header" href="#part-2-存储引擎的接口设计">Part 2. 存储引擎的接口设计</a></h1>
+<p>这一章以自顶向下的方式来描述，将要实现一个什么样的东西，以及如何使用。</p>
+<h2 id="如何使用-diskstorage-"><a class="header" href="#如何使用-diskstorage-">如何使用 DiskStorage ？</a></h2>
+<p>下面讲了该怎么使用这个存储引擎，首先就是如何实例化。要实例化 <code>DiskStorage</code>，可以使用提供的构造函数 <code>NewDiskStorage</code>。这个构造函数接受一个文件名作为参数，并返回一个 <code>DiskStorage</code> 实例的指针，同时会进行初始化操作，包括初始化 <code>KeyDir</code> 索引映射和打开文件。</p>
+<p>下面是一个实例化 <code>DiskStorage</code> 的示例代码：</p>
+<pre><code class="language-go">func main() {
+    // 调用 NewDiskStorage 构造函数来实例化 DiskStorage
+    storage, err := NewDiskStorage(&quot;data.db&quot;)
+    if err != nil {
+        fmt.Println(&quot;Error creating DiskStorage:&quot;, err)
+        return
+    }
+    defer storage.Close() // 最后关闭存储实例
+
+    // 使用实例进行操作
+    err = storage.Set(&quot;key1&quot;, &quot;value1&quot;)
+    if err != nil {
+        fmt.Println(&quot;Error setting value:&quot;, err)
+        return
+    }
+
+    value, err := storage.Get(&quot;key1&quot;)
+    if err != nil {
+        fmt.Println(&quot;Error getting value:&quot;, err)
+        return
+    }
+
+    fmt.Println(&quot;Value for key1:&quot;, value)
+}
+</code></pre>
+<p>在上面的示例中，<code>NewDiskStorage(&quot;data.db&quot;)</code> 调用实例化了一个名为 &quot;data.db&quot; 的磁盘存储。然后，通过实例进行了 <code>Set</code> 和 <code>Get</code> 操作。最后，在程序结束时，通过 <code>defer storage.Close()</code> 来确保存储实例关闭，以便数据被正确地刷新到磁盘。</p>
+<p>通过实例化 <code>DiskStorage</code>，您可以使用其提供的方法来操作键值对数据，并在磁盘和内存中进行数据存储和检索。</p>
+<h2 id="newdiskstorage"><a class="header" href="#newdiskstorage">NewDiskStorage</a></h2>
+<p><code>NewDiskStorage</code> 是一个构造函数，用于创建 <code>DiskStorage</code> 实例，并在创建过程中执行初始化操作。以下是 <code>NewDiskStorage</code> 函数的功能和流程解释：</p>
+<pre><code class="language-go">func NewDiskStorage(fileName string) (*DiskStorage, error) {
+    ds := &amp;DiskStorage{
+        FileName: fileName,
+        KeyDir:   make(map[string]KeyEntry),
+    }
+
+    // 检查文件是否存在
+    _, err := os.Stat(fileName)
+    if err == nil {
+        ds.initKeyDir() // 如果文件存在，初始化 KeyDir 映射
+    }
+
+    // 打开或创建文件
+    ds.File, err = os.OpenFile(fileName, os.O_APPEND|os.O_RDWR|os.O_CREATE, 0644)
+    return ds, err
+}
+</code></pre>
+<p>解释 <code>NewDiskStorage</code> 的步骤：</p>
+<ol>
+<li>
+<p><strong>创建 DiskStorage 实例</strong>：首先，创建一个 <code>DiskStorage</code> 实例 <code>ds</code>，并设置其 <code>FileName</code> 字段为传入的文件名。同时，创建一个空的 <code>KeyDir</code> 映射，用于存储键索引。</p>
+</li>
+<li>
+<p><strong>检查文件是否存在</strong>：使用 <code>os.Stat(fileName)</code> 来检查指定的文件是否存在。如果文件存在（即没有返回错误），则说明存储系统中可能已经有数据。在这种情况下，调用 <code>initKeyDir</code> 方法以初始化 <code>KeyDir</code> 映射。</p>
+</li>
+<li>
+<p><strong>打开或创建文件</strong>：使用 <code>os.OpenFile</code> 打开指定的文件。如果文件不存在，将会被创建。打开文件时使用了 <code>os.O_APPEND</code>、<code>os.O_RDWR</code> 和 <code>os.O_CREATE</code> 标志，以允许文件追加、读写和创建。</p>
+</li>
+<li>
+<p><strong>返回实例和错误</strong>：返回创建的 <code>DiskStorage</code> 实例和可能的错误。如果发生错误，可能是因为文件打开或初始化过程中出现了问题。</p>
+</li>
+</ol>
+<p>通过调用 <code>NewDiskStorage</code>，您可以创建一个经过初始化的 <code>DiskStorage</code> 实例，准备好用于存储和检索键值对数据。</p>
+<p>首先实现 DiskStorage ，用来管理一些元信息，例如数据在内存中的索引，用 map 来存。</p>
+<h2 id="diskstorage"><a class="header" href="#diskstorage">DiskStorage</a></h2>
+<p><code>DiskStorage</code> 是在提供的代码中定义的一个结构体，表示了一个基于磁盘的键值存储系统。它包含了管理和操作键值对存储的方法和数据。</p>
+<pre><code class="language-go">type DiskStorage struct {
+	FileName      string
+	WritePosition uint32
+	KeyDir        map[string]KeyEntry
+	File          *os.File
+}
+</code></pre>
+<p>以下是 <code>DiskStorage</code> 结构体的重要成员和功能的解释：</p>
+<ol>
+<li>
+<p><strong>FileName</strong>: 一个字符串字段，表示用于存储数据的磁盘文件的名称。</p>
+</li>
+<li>
+<p><strong>WritePosition</strong>: 一个无符号整数字段，表示当前写入新数据的文件位置。在执行 <code>Set</code> 操作时，新的键值对数据将被追加到该位置之后。</p>
+</li>
+<li>
+<p><strong>KeyDir</strong>: 一个映射（map）字段，用于在内存中维护键值对的索引。它将键映射到 <code>KeyEntry</code> 结构体，以记录键值对的位置、时间戳和总大小等信息。</p>
+</li>
+<li>
+<p><strong>File</strong>: 一个指向磁盘文件的指针（*os.File）。该文件用于实际存储键值对的数据。</p>
+</li>
+<li>
+<p><strong>NewDiskStorage(fileName string) (*DiskStorage, error)</strong>: 一个构造函数，用于创建新的 <code>DiskStorage</code> 实例。它接受一个文件名作为参数，如果该文件存在，则会初始化 <code>KeyDir</code> 映射以加载文件中的现有数据。</p>
+</li>
+<li>
+<p><strong>Set(key, value string) error</strong>: 用于将键值对添加到存储中的方法。它接受键和值作为参数，生成时间戳并将数据编码后写入磁盘文件。同时，它还更新了 <code>KeyDir</code> 映射和 <code>WritePosition</code>，以反映新键值对的位置和信息。</p>
+</li>
+<li>
+<p><strong>Get(key string) (string, error)</strong>: 用于根据键检索值的方法。它会根据提供的键查找 <code>KeyDir</code> 映射，找到对应的 <code>KeyEntry</code>，然后根据位置信息从磁盘文件中读取数据并进行解码。</p>
+</li>
+<li>
+<p><strong>write(data []byte) error</strong>: 一个辅助方法，用于将数据写入磁盘文件。它会将提供的字节数据写入文件，并执行文件同步以确保数据被写入磁盘。</p>
+</li>
+<li>
+<p><strong>initKeyDir()</strong>: 初始化 <code>KeyDir</code> 映射的方法。它会读取现有的磁盘文件，解码其中存储的键值对，并在内存中构建 <code>KeyDir</code> 映射以加速后续操作。</p>
+</li>
+<li>
+<p><strong>Close()</strong>: 用于关闭存储系统的方法。它会执行文件同步操作，将数据刷新到磁盘，并关闭文件。</p>
+</li>
+</ol>
+<p>总之，<code>DiskStorage</code> 结构体是一个将键值对数据存储到磁盘并允许通过键进行检索的简单实现。它通过在内存中维护索引映射和在磁盘文件中存储实际数据来实现这一功能。</p>
+<h2 id="keyentry"><a class="header" href="#keyentry">KeyEntry</a></h2>
+<p>然后是 KeyEntry ，用来组织数据在内存中的存储方式。<code>KeyEntry</code> 在这个代码中扮演着关键的角色，用于管理和跟踪每个键值对在磁盘文件中的位置和元数据。具体来说，<code>KeyEntry</code> 有以下用途：</p>
+<ol>
+<li>
+<p><strong>位置追踪</strong>：<code>KeyEntry</code> 中的 <code>Position</code> 字段表示键值对在磁盘文件中的位置。这允许系统知道在文件中的哪个位置存储了特定的键值对。在进行 <code>Get</code> 操作时，可以根据 <code>KeyEntry</code> 中的位置信息迅速定位和读取相应的数据。</p>
+</li>
+<li>
+<p><strong>时间戳记录</strong>：<code>KeyEntry</code> 的 <code>Timestamp</code> 字段记录了键值对添加的时间戳。这在需要了解特定键值对何时被添加的情况下非常有用，例如用于数据审计或其他需要时间相关信息的场景。</p>
+</li>
+<li>
+<p><strong>总大小信息</strong>：<code>KeyEntry</code> 中的 <code>TotalSize</code> 字段记录了键值对数据的总大小。这对于确定下一个键值对的写入位置很重要，因为在文件中的位置是逐个递增的。通过总大小，可以在文件中为下一个键值对分配合适的位置。</p>
+</li>
+<li>
+<p><strong>内存中的索引</strong>：<code>KeyEntry</code> 用作在内存中的索引，以便在执行 <code>Get</code> 操作时，可以通过键快速查找到对应的键值对位置和元数据。这避免了需要扫描整个文件以查找特定键的开销。</p>
+</li>
+</ol>
+<p>总之，<code>KeyEntry</code> 的存在使得系统能够高效地定位和管理存储在磁盘文件中的键值对。它提供了键值对的位置、时间戳和大小等关键信息，使存储和检索操作更加快速和可靠。</p>
+<h2 id="initkeydir"><a class="header" href="#initkeydir">initKeyDir</a></h2>
+<p><code>initKeyDir</code> 函数在创建 <code>DiskStorage</code> 实例时，当检测到指定的磁盘文件已经存在时被调用。这是为了在初始化存储系统时，从已有的数据文件中读取并加载现有的键值对信息。</p>
+<p>具体来说，以下情况会触发调用 <code>initKeyDir</code> 函数：</p>
+<ol>
+<li>
+<p><strong>创建新的 <code>DiskStorage</code> 实例</strong>：当调用 <code>NewDiskStorage</code> 构造函数创建新的 <code>DiskStorage</code> 实例时，会首先检查指定的文件是否已经存在。</p>
+</li>
+<li>
+<p><strong>已有的数据文件</strong>：如果文件已经存在，说明存储系统之前可能已经存储了一些键值对数据。为了确保新创建的 <code>DiskStorage</code> 实例能够恢复已有的数据，它会调用 <code>initKeyDir</code> 函数来加载这些现有的键值对信息。</p>
+</li>
+<li>
+<p><strong>内存中的索引构建</strong>：<code>initKeyDir</code> 函数的主要目的是在内存中构建键索引映射 <code>KeyDir</code>。这个映射可以用来在内存中快速访问键值对的位置和元数据，以加速后续的读取、写入和查询操作。</p>
+</li>
+</ol>
+<p>总之，<code>initKeyDir</code> 函数在创建 <code>DiskStorage</code> 实例时被调用，用于加载已有的键值对数据，并在内存中构建键索引映射，以便在之后的操作中能够高效地访问存储的数据。</p>
+<p><code>initKeyDir</code> 是一个在 <code>DiskStorage</code> 结构体中定义的方法，用于初始化内存中的键索引映射 <code>KeyDir</code>，以便在创建 <code>DiskStorage</code> 实例时能够快速访问存储在磁盘文件中的键值对的位置和元数据。以下是 <code>initKeyDir</code> 方法的功能和流程解释：</p>
+<pre><code class="language-go">func (ds *DiskStorage) initKeyDir() {
+    file, err := os.Open(ds.FileName)
+    if err != nil {
+        fmt.Println(&quot;Error initializing KeyDir:&quot;, err)
+        return
+    }
+    defer file.Close()
+
+    for {
+        headerBytes := make([]byte, HeaderSize)
+        _, err := file.Read(headerBytes)
+        if err != nil {
+            break
+        }
+
+        timestamp, keySize, valueSize, _ := DecodeHeader(headerBytes)
+        keyBytes := make([]byte, keySize)
+        file.Read(keyBytes)
+
+        valueBytes := make([]byte, valueSize)
+        file.Read(valueBytes)
+
+        key := string(keyBytes)
+        value := string(valueBytes)
+
+        totalSize := HeaderSize + uint32(keySize+valueSize)
+        ds.KeyDir[key] = NewKeyEntry(timestamp, ds.WritePosition, totalSize)
+        ds.WritePosition += totalSize
+
+        fmt.Printf(&quot;loaded k=%s, v=%s\n&quot;, key, value)
+    }
+}
+</code></pre>
+<p>解释 <code>initKeyDir</code> 的步骤：</p>
+<ol>
+<li>
+<p>打开文件：使用 <code>os.Open</code> 方法打开指定的磁盘文件以读取数据。如果打开文件时发生错误，方法会输出错误信息并返回。</p>
+</li>
+<li>
+<p>循环读取：通过一个循环，从文件中连续读取每个键值对的数据。循环会一直运行，直到无法读取到更多数据（<code>file.Read</code> 返回错误）。</p>
+</li>
+<li>
+<p>读取头部信息：首先，从文件中读取一个固定大小的字节序列，该序列包含了键值对头部的信息。这些信息包括时间戳、键的大小和值的大小。</p>
+</li>
+<li>
+<p>解码头部：使用 <code>DecodeHeader</code> 函数解码头部信息，以获取时间戳、键的大小和值的大小。</p>
+</li>
+<li>
+<p>读取键和值数据：根据键和值的大小信息，从文件中分别读取键和值的字节数据。</p>
+</li>
+<li>
+<p>构建 <code>KeyEntry</code>：使用解码的信息和从文件中读取的数据，创建一个新的 <code>KeyEntry</code> 实例，其中包含时间戳、位置和总大小信息。</p>
+</li>
+<li>
+<p>更新位置和索引：将新的 <code>KeyEntry</code> 添加到 <code>KeyDir</code> 映射中，然后更新 <code>WritePosition</code>，以便为下一个键值对的写入位置做好准备。</p>
+</li>
+<li>
+<p>输出加载信息：将加载的键和值信息打印出来，以便查看初始化过程。</p>
+</li>
+</ol>
+<p>通过这个流程，<code>initKeyDir</code> 方法会逐个读取磁盘文件中的键值对，并在内存中构建 <code>KeyDir</code> 映射，以便之后的操作可以快速定位和访问键值对的位置和元数据。这在创建 <code>DiskStorage</code> 实例时非常有用。</p>
+
+                    <div id="giscus-container"></div>
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+                    <a rel="prev" href="../bitcask/ch1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../bitcask/ch3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            <a rel="prev" href="../bitcask/ch1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+            <a rel="next" href="../bitcask/ch3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </nav>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        window.playground_copyable = true;
+    </script>
+
+    <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var pagePath = "bitcask/ch2.md"
+    </script>
+
+
+    <!-- Custom JS scripts -->
+
+
+</body>
+</html>

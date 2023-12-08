@@ -1,0 +1,529 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="sidebar-visible no-js light">
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>八股 - everystep</title>
+
+
+    <!-- Custom HTML head -->
+    
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" href="../favicon.svg">
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/chrome.css">
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="../highlight.css">
+    <link rel="stylesheet" href="../tomorrow-night.css">
+    <link rel="stylesheet" href="../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+    <link rel="stylesheet" href="../theme/style.css">
+
+
+</head>
+<body>
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "../";
+        var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        var html = document.querySelector('html');
+        html.classList.remove('no-js')
+        html.classList.remove('light')
+        html.classList.add(theme);
+        html.classList.add('js');
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="sidebar-scrollbox">
+            <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">简介</a></li><li class="chapter-item affix "><li class="part-title">🍭 操作系统</li><li class="spacer"></li><li class="chapter-item "><a href="../6.S081/0-summary.html"><strong aria-hidden="true">1.</strong> 6.S081</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.S081/1-lab1.html"><strong aria-hidden="true">1.1.</strong> Lab 1</a></li><li class="chapter-item "><a href="../6.S081/2-lab2.html"><strong aria-hidden="true">1.2.</strong> Lab 2</a></li><li class="chapter-item "><a href="../6.S081/3-lab3.html"><strong aria-hidden="true">1.3.</strong> Lab 3</a></li><li class="chapter-item "><a href="../6.S081/4-lab4.html"><strong aria-hidden="true">1.4.</strong> Lab 4</a></li><li class="chapter-item "><a href="../6.S081/5-lab5.html"><strong aria-hidden="true">1.5.</strong> Lab 5</a></li><li class="chapter-item "><a href="../6.S081/6-lab6.html"><strong aria-hidden="true">1.6.</strong> Lab 6</a></li><li class="chapter-item "><a href="../6.S081/7-lab7.html"><strong aria-hidden="true">1.7.</strong> Lab 7</a></li><li class="chapter-item "><a href="../6.S081/8-lab8.html"><strong aria-hidden="true">1.8.</strong> Lab 8</a></li><li class="chapter-item "><a href="../6.S081/9-lab9.html"><strong aria-hidden="true">1.9.</strong> Lab 9</a></li><li class="chapter-item "><a href="../6.S081/10-lab10.html"><strong aria-hidden="true">1.10.</strong> Lab 10</a></li><li class="chapter-item "><a href="../6.S081/11-lab11.html"><strong aria-hidden="true">1.11.</strong> Lab 11</a></li></ol></li><li class="chapter-item "><li class="part-title">🚀 数据库</li><li class="spacer"></li><li class="chapter-item "><a href="../bitcask/index.html"><strong aria-hidden="true">2.</strong> 从零实现 BitCask 存储引擎</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.1.</strong> BitCask 简介</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.2.</strong> 创建 C++ 项目</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.3.</strong> 数据在内存中</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.4.</strong> 数据在磁盘上</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.5.</strong> BenchMark</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.6.</strong> 实现合并</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.7.</strong> 实现垃圾回收</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.8.</strong> hintfile 实现</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">2.9.</strong> 哈希表优化为多线程</a></li><li class="chapter-item "><a href="../bitcask/ch1.html"><strong aria-hidden="true">2.10.</strong> 数据在磁盘上如何存放？</a></li><li class="chapter-item "><a href="../bitcask/ch2.html"><strong aria-hidden="true">2.11.</strong> 存储引擎的接口设计</a></li><li class="chapter-item "><a href="../bitcask/ch3.html"><strong aria-hidden="true">2.12.</strong> 实现 Set、Get</a></li><li class="chapter-item "><a href="../bitcask/ch4.html"><strong aria-hidden="true">2.13.</strong> 删除逻辑和 Compact </a></li></ol></li><li class="chapter-item "><a href="../abyssdb/p0.html"><strong aria-hidden="true">3.</strong> 从零实现关系型数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../abyssdb/p1.html"><strong aria-hidden="true">3.1.</strong> 从 Table 开始</a></li><li class="chapter-item "><a href="../abyssdb/p2.html"><strong aria-hidden="true">3.2.</strong> Part 2. 实现 Tuple</a></li><li class="chapter-item "><a href="../abyssdb/p3.html"><strong aria-hidden="true">3.3.</strong> Part 3. 实现 Page</a></li><li class="chapter-item "><a href="../abyssdb/p4.html"><strong aria-hidden="true">3.4.</strong> Part 4. 实现 HeapFile</a></li><li class="chapter-item "><a href="../abyssdb/p5.html"><strong aria-hidden="true">3.5.</strong> Part 5. 实现 BufferPool</a></li><li class="chapter-item "><a href="../abyssdb/p6.html"><strong aria-hidden="true">3.6.</strong> Part 6. 支持 int 和 string 等数据类型。</a></li><li class="chapter-item "><a href="../abyssdb/p7.html"><strong aria-hidden="true">3.7.</strong> Part 7. 实现 Catalog</a></li></ol></li><li class="chapter-item "><a href="../6.830/1-lab0.html"><strong aria-hidden="true">4.</strong> 6.830</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.830/ans/2-lab1-ans.html"><strong aria-hidden="true">4.1.</strong> Lab 1 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/3-lab2-ans.html"><strong aria-hidden="true">4.2.</strong> Lab 2 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/4-lab3-ans.html"><strong aria-hidden="true">4.3.</strong> Lab 3 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/5-lab4-ans.html"><strong aria-hidden="true">4.4.</strong> Lab 4 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/6-lab5-ans.html"><strong aria-hidden="true">4.5.</strong> Lab 5 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/7-lab6-ans.html"><strong aria-hidden="true">4.6.</strong> Lab 6 Answers</a></li><li class="chapter-item "><a href="../6.830/cn/2-lab1.html"><strong aria-hidden="true">4.7.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/3-lab2.html"><strong aria-hidden="true">4.8.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/4-lab3.html"><strong aria-hidden="true">4.9.</strong> Lab 3 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/5-lab4.html"><strong aria-hidden="true">4.10.</strong> Lab 4 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/6-lab5.html"><strong aria-hidden="true">4.11.</strong> Lab 5 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/7-lab6.html"><strong aria-hidden="true">4.12.</strong> Lab 6 (Chinese)</a></li></ol></li><li class="chapter-item "><li class="part-title">🧊 分布式</li><li class="spacer"></li><li class="chapter-item "><a href="../6.824/0-lab0.html"><strong aria-hidden="true">5.</strong> 6.824</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.824/1-lab1-cn.html"><strong aria-hidden="true">5.1.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/1-lab1.html"><strong aria-hidden="true">5.2.</strong> Lab 1</a></li><li class="chapter-item "><a href="../6.824/2-lab2-cn.html"><strong aria-hidden="true">5.3.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/2-lab2.html"><strong aria-hidden="true">5.4.</strong> Lab 2</a></li></ol></li><li class="chapter-item "><li class="part-title">🔥 其他</li><li class="spacer"></li><li class="chapter-item "><a href="../6.828/0-sum.html"><strong aria-hidden="true">6.</strong> 6.828</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.828/1-env.html"><strong aria-hidden="true">6.1.</strong> Environment Setup</a></li><li class="chapter-item "><a href="../6.828/1-part1.html"><strong aria-hidden="true">6.2.</strong> Part 1</a></li></ol></li><li class="chapter-item expanded "><a href="../review/1_go.html" class="active"><strong aria-hidden="true">7.</strong> 八股</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../review/2_cpp.html"><strong aria-hidden="true">7.1.</strong> C++</a></li><li class="chapter-item "><a href="../review/3_cn.html"><strong aria-hidden="true">7.2.</strong> Computer Networks</a></li></ol></li><li class="chapter-item "><a href="../lsm/index.html"><strong aria-hidden="true">8.</strong> 从零实现 LSM-Tree 存储引擎</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../lsm/ch1.html"><strong aria-hidden="true">8.1.</strong> Part 1</a></li><li class="chapter-item "><a href="../lsm/ch2.html"><strong aria-hidden="true">8.2.</strong> Part 2</a></li><li class="chapter-item "><a href="../lsm/ch3.html"><strong aria-hidden="true">8.3.</strong> Part 3</a></li><li class="chapter-item "><a href="../lsm/ch4.html"><strong aria-hidden="true">8.4.</strong> Part 4</a></li></ol></li></ol>
+        </div>
+        <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+                        <div id="menu-bar-hover-placeholder"></div>
+            <div id="menu-bar" class="menu-bar sticky bordered">
+                <div class="left-buttons">
+                    <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="fa fa-paint-brush"></i>
+                    </button>
+                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                        <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                    </ul>
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <h1 class="menu-title">everystep</h1>
+
+                <div class="right-buttons">
+                    <a href="../print.html" title="Print this book" aria-label="Print this book">
+                        <i id="print-button" class="fa fa-print"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep" title="Git repository" aria-label="Git repository">
+                        <i id="git-repository-button" class="fa fa-github"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep/edit/master/src/review/1_go.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <i id="git-edit-button" class="fa fa-edit"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+            <script type="text/javascript">
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+
+                // Get viewed page store
+                var viewed_key = 'mdbook-viewed';
+                var viewed_map = {};
+                try {
+                    var viewed_storage = localStorage.getItem(viewed_key);
+                    if (viewed_storage) {
+                        viewed_map = JSON.parse(viewed_storage)
+                    }
+                } catch (e) { }
+
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+
+                    // Apply viewed style
+                    if (viewed_map[link.pathname]) {
+                        link.classList.add('md-viewed')
+                    }
+                }); 
+
+                // Mark viewed after 30s
+                setTimeout(function() {
+                    viewed_map[location.pathname] = 1;
+                    localStorage.setItem(viewed_key, JSON.stringify(viewed_map));
+                }, 30000)
+            </script>
+
+            <div id="content" class="content">
+                <!-- Page table of contents -->
+                <div class="sidetoc"><nav class="pagetoc"></nav></div>
+                <main>
+                    <h1 id="go"><a class="header" href="#go">Go</a></h1>
+<h2 id="golang-中-make-和-new-的区别"><a class="header" href="#golang-中-make-和-new-的区别">golang 中 make 和 new 的区别？</a></h2>
+<ul>
+<li>make 用来初始化内置的数据结构（slice, map, Channel），new 则是根据传入类型为其分配一片内存空间并返回指向这片内存空间的指针。</li>
+<li>new 只分配内存，make用于slice，map，和channel的初始化。</li>
+<li>make 默认生成 0 。</li>
+<li>make 只能用来初始化 slice map channel 吗？
+<ul>
+<li>也可以用于初始化结构体（struct）和指定长度和容量的动态数组（slice）。</li>
+<li>使用 make 初始化一个结构体时，返回一个指向新分配的结构体的指针。</li>
+<li>使用 make 初始化指定长度和容量的动态数组时，返回一个指向新分配的数组的指针。</li>
+</ul>
+</li>
+</ul>
+<h2 id="数组array和切片slice的区别"><a class="header" href="#数组array和切片slice的区别">数组（array）和切片（slice）的区别？</a></h2>
+<ul>
+<li>数组长度固定，切片长度可变。</li>
+<li>数组中存值类型，切片中存引用。所以在函数中传递数组会产生副本，而传递切片不会产生副本，因为全是引用。</li>
+<li>slice 包含了三个属性，分别是指向数组的指针，当前长度，总长度。</li>
+</ul>
+<h2 id="go-defer多个-defer-的顺序defer-在什么时机会修改返回值"><a class="header" href="#go-defer多个-defer-的顺序defer-在什么时机会修改返回值">go defer，多个 defer 的顺序，defer 在什么时机会修改返回值？</a></h2>
+<ul>
+<li>顺序：先正着执行函数语句，再倒着回头执行 go defer 。类似 java 的 try catch 或 C++ 中的析构函数。</li>
+<li>目的：<code>defer</code> 语句通常用于在函数结束前释放资源，例如关闭文件、释放锁、关闭数据库连接等。</li>
+<li>思考：我认为这样设计是为了保证 defer 语句始终在最后执行，可以方便的添加操作。</li>
+<li>其他：panic 会等待之前的defer执行完成后才会触发。</li>
+</ul>
+<p>下面的程序的运行结果是：</p>
+<pre><code class="language-go">func main() {
+if (true) {
+	defer fmt.Printf(&quot;1&quot;)
+} else {
+	defer fmt.Printf(&quot;2&quot;)
+}
+fmt.Printf(&quot;3&quot;)
+}
+</code></pre>
+<p>答案是：31 ，先输出 3 是因为 1 前面有 defer 。</p>
+<h2 id="for-range-的时候它的地址会发生变化么"><a class="header" href="#for-range-的时候它的地址会发生变化么">for range 的时候它的地址会发生变化么?</a></h2>
+<ul>
+<li>以 <code>for _, v := range studs</code> 为例，会返回下标和 studs 指针两个变量。但是指针是不变的，变化的是存储的内容。如果直接对 $v 会导致存储的内容均为同一个地址。</li>
+</ul>
+<h2 id="channel"><a class="header" href="#channel">Channel</a></h2>
+<ul>
+<li>Channel 是用来在多个协程之间传递信息的机制。下面是一个简单的例子</li>
+</ul>
+<pre><code class="language-go">func main() {
+    messages := make(chan string)
+
+    go func() {
+        messages &lt;- &quot;Hello&quot;
+    }()
+
+    msg := &lt;-messages
+    fmt.Println(msg)
+}
+</code></pre>
+<p>在这个示例中，首先使用 make() 函数创建了一个字符串通道 messages。然后启动一个新的协程，该协程将字符串 &quot;Hello&quot; 发送到 messages 通道中，即 messages &lt;- &quot;Hello&quot;。最后，我们从 messages 通道中接收消息，并将其存储在变量 msg 中，即 <code>msg := &lt;-messages</code>。最后将 msg 打印到标准输出中。</p>
+<p>需要注意的是，当在协程之间发送和接收消息时，如果没有任何协程在等待接收消息，发送操作将被阻塞，直到有协程准备好接收。同样地，如果没有任何协程在发送消息，接收操作也将被阻塞，直到有协程发送消息为止。这种机制保证了 Channel 上的消息传递是同步的，避免了并发问题。</p>
+<h2 id="select-用法性质"><a class="header" href="#select-用法性质">select 用法，性质</a></h2>
+<ul>
+<li>在 Go 中，select 是一种控制流语句，用于等待多个通道上的操作，并在其中任意一个通道就绪时执行相应的操作。以下是一个使用 select 的简单示例：</li>
+</ul>
+<pre><code class="language-go">func main() {
+    ch1 := make(chan string)
+    ch2 := make(chan string)
+
+    go func() {
+        time.Sleep(1 * time.Second)
+        ch1 &lt;- &quot;Hello&quot;
+    }()
+
+    go func() {
+        time.Sleep(2 * time.Second)
+        ch2 &lt;- &quot;World&quot;
+    }()
+
+    select {
+    case msg1 := &lt;-ch1:
+        fmt.Println(msg1)
+    case msg2 := &lt;-ch2:
+        fmt.Println(msg2)
+    }
+}
+</code></pre>
+<p>在这个示例中，创建了两个字符串通道 ch1 和 ch2，然后启动两个协程，分别向这两个通道发送字符串消息。在 main() 函数中，使用 select 语句等待 ch1 和 ch2 上的任意一个通道就绪。一旦其中任意一个通道就绪，就会执行相应的 case 语句，打印消息到标准输出。</p>
+<p>在这个例子中，由于 ch1 上的消息先到达，所以 <code>msg1 := &lt;-ch1</code> 的 case 语句被执行，输出 &quot;Hello&quot; 。如果 ch2 上的消息先到达，那么 <code>msg2 := &lt;-ch2</code> 的 case 语句将被执行，输出 &quot;World&quot; 。由于 select 语句只会执行一个 case 分支，因此无论哪个通道先就绪，都只会输出一个消息。</p>
+<ul>
+<li>
+<p>select 和 switch 相似，但应用场景不同。switch 用于分支判断。用于对固定数量的选项进行选择。select 用于等待多个通道上的操作，如果没有通道准备就绪就阻塞，如果有一个通道就绪则执行相应的代码块，如果有多个通道就绪则随机选择一个执行。</p>
+</li>
+<li>
+<p>若没有指明选择哪个分支执行会存在随机性。以下三个原则：</p>
+<ul>
+<li>执行能返回的。</li>
+<li>若存在多个能返回的则随机选取一个。</li>
+<li>若均无法返回则执行 return 。</li>
+</ul>
+</li>
+</ul>
+<h2 id="go-语言函数调用和-c-函数调用的区别"><a class="header" href="#go-语言函数调用和-c-函数调用的区别">Go 语言函数调用和 C 函数调用的区别？</a></h2>
+<ul>
+<li>C 语言函数调用需要同时使用寄存器（ eax 寄存器传递返回值）和栈，而 Go 只需要栈即可。</li>
+<li>因为访问寄存器的速度要快于访问栈的速度，所以 C 语言的效率更高，但实现复杂且需要考虑不同架构寄存器差异，而 Go 实现简单，不用考虑不同寄存器的差异，但是性能差。</li>
+</ul>
+<h2 id="go-函数参数传递是传值还是传址"><a class="header" href="#go-函数参数传递是传值还是传址">Go 函数参数传递是传值还是传址？</a></h2>
+<ul>
+<li>Go 传递基本数据类型，结构体和指针均采用传值的方式。</li>
+</ul>
+<h2 id="waitgroup-作用并举例"><a class="header" href="#waitgroup-作用并举例">WaitGroup 作用并举例？</a></h2>
+<ul>
+<li>在 Go 中，WaitGroup 是一种同步机制，用于等待一组协程执行完毕。以下是一个简单的使用 WaitGroup 的示例：</li>
+</ul>
+<pre><code class="language-go">func main() {
+    var wg sync.WaitGroup
+
+    for i := 0; i &lt; 5; i++ {
+        wg.Add(1)
+        go func(id int) {
+            defer wg.Done()
+            fmt.Println(&quot;Goroutine&quot;, id, &quot;started&quot;)
+        }(i)
+    }
+
+    wg.Wait()
+    fmt.Println(&quot;All goroutines finished&quot;)
+}
+</code></pre>
+<p>在这个示例中，首先创建一个 WaitGroup 变量 wg。然后，启动 5 个协程，每个协程都会打印出一个字符串。在每个协程中，我们使用 wg.Add(1) 方法将 WaitGroup 的计数器加 1，表示有一个协程正在执行。然后使用 defer wg.Done() 方法在协程结束时将 WaitGroup 的计数器减 1，表示一个协程已经完成。最后调用 wg.Wait() 方法等待所有协程执行完毕，直到 WaitGroup 的计数器降为 0。一旦计数器降为 0，我们就可以打印出一条消息，表示所有协程都已经执行完毕。</p>
+<p>需要注意的是，当在协程之间进行并发操作时，我们需要使用 WaitGroup 等同步机制来确保所有协程都执行完毕。这可以避免出现竞态条件和其他并发问题。</p>
+<h2 id="go-中-context-的结构及其应用"><a class="header" href="#go-中-context-的结构及其应用">Go 中 context 的结构及其应用？</a></h2>
+<ul>
+<li>在不同协程之间传递信息。</li>
+</ul>
+<pre><code class="language-go">type Task struct {
+    ID        int
+    Name      string
+    CancelCtx context.Context // 用于取消任务
+    CancelFn  context.CancelFunc
+}
+
+func (t *Task) Run() {
+	// 使用一个无限循环，每次循环中都会检查任务的取消状态
+	for {
+        select {
+        case &lt;-t.CancelCtx.Done():
+            // 任务被取消，退出
+            return
+        default:
+        }
+
+        // 执行任务
+        fmt.Printf(&quot;Running task %d (%s)\n&quot;, t.ID, t.Name)
+        time.Sleep(time.Second)
+    }
+}
+
+func main() {
+    tasks := []*Task{
+        {ID: 1, Name: &quot;Task 1&quot;},
+        {ID: 2, Name: &quot;Task 2&quot;},
+        {ID: 3, Name: &quot;Task 3&quot;},
+    }
+
+    // 启动所有任务
+    for _, task := range tasks {
+	    // 为每个任务创建一个可取消的 context
+        task.CancelCtx, task.CancelFn = context.WithCancel(context.Background())
+        go task.Run()
+    }
+	// 等待 5 秒后取消第二个任务
+    time.Sleep(time.Second * 5)
+
+    // 取消第二个任务
+    tasks[1].CancelFn()
+}
+</code></pre>
+<h2 id="切片和数组的异同"><a class="header" href="#切片和数组的异同">切片和数组的异同？</a></h2>
+<ul>
+<li>切片是对数组的封装，可以理解为动态数组，当数组内容不够时可通过 append 来扩容。</li>
+<li>数组是一片长度连续的内存空间，而切片是一个结构体，由长度，容量，底层数组三个变量组成。长度表示当前数据个数，而容量表示总容量。</li>
+<li>切片是如何扩容的？
+<ul>
+<li>因为底层数组申请完后空间不可变所以当容量不够之时会重新申请一篇内存，并将原始数据复制过去。</li>
+<li>扩容数据量的差异？
+<ul>
+<li>1.18 之前：当原 slice 容量小于 <code>1024</code> 的时候，新 slice 容量变成原来的 <code>2</code> 倍；原 slice 容量超过 <code>1024</code>，新 slice 容量变成原来的<code>1.25</code>倍。</li>
+<li>1.18 之后：当原slice容量(oldcap)小于256的时候，新slice(newcap)容量为原来的2倍；原slice容量超过256，新slice容量 $$newcap = oldcap+(oldcap+3*256)/4$$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="map-底层原理扩容机制"><a class="header" href="#map-底层原理扩容机制">map 底层原理，扩容机制？</a></h2>
+<ul>
+<li>Go 语言采用数组加链表的方式，当节点达到一定个数（8）之后会转为红黑树。</li>
+<li>Go 扩容是创建一个更大的 hash 表，将数据迁移过去。</li>
+<li>在 Go 语言中，使用 <code>append</code> 函数往 slice 中添加元素时，如果 slice 的容量不足以容纳新的元素，<code>append</code> 函数会创建一个新的底层数组并返回一个新的 slice，原来的 slice 也会指向新的底层数组。</li>
+<li>如果在调用 <code>append</code> 函数时不处理它的返回值，就会导致原来的 slice 不再指向新的底层数组，而是指向原来的底层数组。这会导致在后续的操作中使用原来的 slice 访问数据时出现问题，因为它指向的底层数组并不包含最新的数据。</li>
+<li>因此，在使用 <code>append</code> 函数时，应该将其返回值赋值给原来的 slice，以确保它指向的是最新的底层数组。</li>
+</ul>
+<p>例如：<code>s := []int{1, 2, 3} s = append(s, 4)</code></p>
+<p>这样就可以确保在后续的操作中使用的是最新的 slice，避免出现问题。</p>
+<h2 id="有时候会遇到一些空的结构体这个目的是什么"><a class="header" href="#有时候会遇到一些空的结构体这个目的是什么">有时候会遇到一些空的结构体，这个目的是什么？</a></h2>
+<p>空结构体不占任何内存，使用空结构体，可以帮咱们节省内存空间，提升性能golang</p>
+<ol start="3">
+<li>
+<p>goroutine 如何出让执行/被挂起? (提sleep, chan, Gosched都行) </p>
+</li>
+<li>
+<p>goroutine 很多会有什么问题？(应提到调度延迟、内存占用、协程池)</p>
+</li>
+</ol>
+<h2 id="协程和线程的区别"><a class="header" href="#协程和线程的区别">协程和线程的区别？</a></h2>
+<ul>
+<li>概念
+<ul>
+<li>线程是 OS 的基本调度单位，轻量级的进程。</li>
+<li>协程是用户态的轻量级线程，由程序员显示控制。</li>
+</ul>
+</li>
+<li>地址空间
+<ul>
+<li>线程之间共享同一地址空间</li>
+<li>协程之间不共享同一地址空间，只能在同一个进程中切换。因为协程是在用户态执行，需要依赖程序支持，上下文信息由程序维护，因此协程并不共享地址空间。而线程的信息是由 OS 来维护，共享同一地址空间。</li>
+</ul>
+</li>
+<li>切换开销：
+<ul>
+<li>线程的切换开销大，协程的切换开销小。</li>
+<li>协程有程序控制更有针对性，而线程由 OS 控制，所以协程开销小。</li>
+</ul>
+</li>
+<li>适用场景：
+<ul>
+<li>线程需要大量并发执行的场景。</li>
+<li>协程需要细粒度控制的场景。</li>
+</ul>
+</li>
+</ul>
+<h3 id="作业帮一面"><a class="header" href="#作业帮一面">作业帮(一面)</a></h3>
+<ol>
+<li>channel实现</li>
+<li>go调度原理</li>
+<li>select和epoll的区别</li>
+<li>时序数据库如何实现</li>
+<li>数据库中的乐观锁悲观锁</li>
+<li>程序中的乐观锁和悲观锁</li>
+<li>二叉搜索树,两个节点被交换了位置,怎么恢复</li>
+</ol>
+<h2 id="context相关"><a class="header" href="#context相关">context相关</a></h2>
+<ul>
+<li>Context 结构是 Go 的标准库中为了管理和传递上下文信息（如请求的超时时间和请求的唯一标识符）而设计的一个类型。Context 类型是一个接口，它可以通过调用 context.With* 方法来创建不同类型的子上下文。
+1、context 结构是什么样的？
+2、context 使用场景和用途</li>
+</ul>
+<h2 id="channel相关"><a class="header" href="#channel相关">channel相关</a></h2>
+<p>1、channel 是否线程安全？锁用在什么地方？</p>
+<p>2、go channel 的底层实现原理 （数据结构）</p>
+<p>3、nil、关闭的 channel、有数据的 channel，再进行读、写、关闭会怎么样？（各类变种题型）</p>
+<p>4、向 channel 发送数据和从 channel 读数据的流程是什么样的？</p>
+<h2 id="map-相关"><a class="header" href="#map-相关">map 相关</a></h2>
+<p>1、map 使用注意的点，并发安全？</p>
+<p>2、map 循环是有序的还是无序的？</p>
+<p>3、 map 中删除一个 key，它的内存会释放么？</p>
+<p>4、怎么处理对 map 进行并发访问？有没有其他方案？ 区别是什么？</p>
+<p>5、 nil map 和空 map 有何不同？</p>
+<p>6、map 的数据结构是什么？是怎么实现扩容？</p>
+<h2 id="gmp相关"><a class="header" href="#gmp相关">GMP相关</a></h2>
+<p>1、什么是 GMP？（必问）</p>
+<p>2、进程、线程、协程有什么区别？</p>
+<p>3、抢占式调度是如何抢占的？</p>
+<p>4、M 和 P 的数量问题？</p>
+<h2 id="锁相关"><a class="header" href="#锁相关">锁相关</a></h2>
+<p>1、除了 mutex 以外还有那些方式安全读写共享变量？</p>
+<p>2、Go 如何实现原子操作？</p>
+<p>3、Mutex 是悲观锁还是乐观锁？悲观锁、乐观锁是什么？</p>
+<p>4、Mutex 有几种模式？</p>
+<p>5、goroutine 的自旋占用资源如何解决</p>
+<h2 id="并发相关"><a class="header" href="#并发相关">并发相关</a></h2>
+<p>1、怎么控制并发数？</p>
+<p>2、多个 goroutine 对同一个 map 写会 panic，异常是否可以用 defer 捕获？</p>
+<p>3、如何优雅的实现一个 goroutine 池（百度、手写代码）</p>
+<h2 id="gc相关"><a class="header" href="#gc相关">GC相关</a></h2>
+<p>1、go gc 是怎么实现的？（必问）</p>
+<p>2、go 是 gc 算法是怎么实现的？ （得物，出现频率低）</p>
+<p>3、GC 中 stw 时机，各个阶段是如何解决的？ （百度）</p>
+<p>4、GC 的触发时机？</p>
+<h2 id="内存相关"><a class="header" href="#内存相关">内存相关</a></h2>
+<p>1、谈谈内存泄露，什么情况下内存会泄露？怎么定位排查内存泄漏问题？</p>
+<p>2、知道 golang 的内存逃逸吗？什么情况下会发生内存逃逸？</p>
+<p>3、请简述 Go 是如何分配内存的？</p>
+<p>Channel 分配在栈上还是堆上？哪些对象分配在堆上，哪些对象分配在栈上？</p>
+<p>4、介绍一下大对象小对象，为什么小对象多了会造成 gc 压力？</p>
+
+                    <div id="giscus-container"></div>
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+                    <a rel="prev" href="../6.828/1-part1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../review/2_cpp.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            <a rel="prev" href="../6.828/1-part1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+            <a rel="next" href="../review/2_cpp.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </nav>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        window.playground_copyable = true;
+    </script>
+
+    <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var pagePath = "review/1_go.md"
+    </script>
+
+
+    <!-- Custom JS scripts -->
+
+
+</body>
+</html>
