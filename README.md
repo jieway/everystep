@@ -1,20 +1,18 @@
 # everystep
 
-
-<p align='center'>
-  <img src='theme/images/background-cover_.png' width='800'>
-</p>
-
 <div align="center">
+
+  <a href="https://github.com/weijiew/everystep">
+    <img src="theme/logo.png" alt="logo" width="200" height="180">
+  </a>
 
 [![阅读](https://img.shields.io/badge/阅读-read-brightgreen.svg)](https://everystep.dev/)
 ![Stars](https://img.shields.io/github/stars/weijiew/everystep)
 ![forks](https://img.shields.io/github/forks/weijiew/everystep)
 ![issues](https://img.shields.io/github/issues/weijiew/everystep)
 
-  <a href="https://github.com/weijiew/everystep">
-    <img src="theme/logo.png" alt="logo" width="200" height="180">
-  </a>
+  <img src='theme/images/background-cover_.png' width='800'>
+
 
 </div>
 
