@@ -3,7 +3,7 @@
 <div align="center">
 
   <a href="https://github.com/weijiew/everystep">
-    <img src="theme/logo.png" alt="logo" width="200" height="180">
+    <img src="theme/logo.jpg" alt="logo" width="200" height="180">
   </a>
 
 [![阅读](https://img.shields.io/badge/阅读-read-brightgreen.svg)](https://everystep.dev/)
