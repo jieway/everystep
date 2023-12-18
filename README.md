@@ -1,8 +1,24 @@
 # everystep
 
+
 <p align='center'>
   <img src='theme/images/background-cover_.png' width='800'>
 </p>
+
+<div align="center">
+
+[![阅读](https://img.shields.io/badge/阅读-read-brightgreen.svg)](https://everystep.dev/)
+![Stars](https://img.shields.io/github/stars/weijiew/everystep)
+![forks](https://img.shields.io/github/forks/weijiew/everystep)
+![issues](https://img.shields.io/github/issues/weijiew/everystep)
+
+  <a href="https://github.com/weijiew/everystep">
+    <img src="theme/logo.png" alt="logo" width="200" height="180">
+  </a>
+
+</div>
+
+
 
 
 该项目最初为写名校 lab 过程中留下了的记录，但是因为[学术诚信](http://integrity.mit.edu/)的缘故，公开解决方案甚至代码是不合适的。但是直接删了有点可惜，后来想尝试换一门语言重写 lab/proj/hw 等内容，所以逐渐演化为用其他语言重写，造轮子过程中的笔记。例如从零实现 OS/Compiler/DB/ld 等，此外和课程答案相关的内容确实会逐渐删去。
@@ -84,7 +100,6 @@
 ```
 git clone https://github.com/weijiew/everystep.git
 cd everystep && mdbook serve --open
-mdbook serve --open
 ```
 
 ## 贡献
