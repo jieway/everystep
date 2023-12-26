@@ -2,6 +2,20 @@
 
 [简介](README.md)
 
+# 🐷 使用 C++ 23 重写 LevelDB
+
+---
+
+- [简介](araydb/p0/0-summary.md)
+    - [Hello World](araydb/p0/1-create.md)
+- [public 模块](araydb/p1/0-summary.md)
+    - [Slice](araydb/p1/1-slice.md)
+    - [Status](araydb/p1/2-status.md)
+    - [Arean](araydb/p1/3-arean.md)
+    - [Bloom 过滤器](araydb/p1/4-bloom.md)
+    - [Cache](araydb/p1/5-cache.md)
+- [db 模块](araydb/p2/0-summary.md)
+
 # 🍭 操作系统
 
 ---
@@ -24,8 +38,8 @@
 
 ---
 
-- [从零实现 BitCask 存储引擎](bitcask/README.md)
-    - [BitCask 简介](bitcask/p1.md)
+- [从零实现 Bitcask 存储引擎](bitcask/README.md)
+    - [Bitcask 简介](bitcask/p1.md)
     - [创建 C++ 项目](bitcask/p1.md)
     - [数据在内存中](bitcask/p1.md)
     - [数据在磁盘上](bitcask/p1.md)
@@ -65,8 +79,6 @@
     - [Lab 6 (Chinese)](6.830/cn/7-lab6.md)
 
 
-
-
 # 🧊 分布式
 
 ---
@@ -77,44 +89,3 @@
     - [Lab 2 (Chinese)](6.824/2-lab2-cn.md)
     - [Lab 2](6.824/2-lab2.md)
 
-
-# 🔥 其他
-
-
----
-
-- [6.828](6.828/0-sum.md)
-    - [Environment Setup](6.828/1-env.md)
-    - [Part 1](6.828/1-part1.md)
-
-
-- [八股](review/1_go.md)
-    - [C++](review/2_cpp.md)
-    - [Computer Networks](review/3_cn.md)
-
-
-- [从零实现 LSM-Tree 存储引擎](lsm/README.md)
-    - [Part 1](lsm/ch1.md)
-    - [Part 2](lsm/ch2.md)
-    - [Part 3](lsm/ch3.md)
-    - [Part 4](lsm/ch4.md)
-
-
-<!-- - [🍬 使用 C++23 从零实现 Leveldb](solardb/README.md) -->
-<!--     - [环境配置](solardb/ch0.md) -->
-<!--     - [现代 C++ 学习](solardb/ch1.md) -->
-<!--     - [编译并运行 Leveldb](solardb/ch2.md) -->
-<!--     - [下载，编译和运行](solardb/ch0/ch2.md) -->
-<!--     - [Cmake 安装和实践](solardb/ch0/ch4.md) -->
-<!--     - [Gtest](solardb/ch0/ch5.md) -->
-<!--     - [Public 修改](solardb/ch1/ch0.md) -->
-<!--     - [Slice](solardb/ch1/ch1.md) -->
-<!--     - [Slice 介绍](solardb/ch1/s1/ch1.md) -->
-<!--     - [Slice 改造](solardb/ch1/s1/ch2.md) -->
-
-<!-- - [🍼 C++23 从零实现 Risc-V 编译器](cpprvcc/p0.md)
-    - [启动代码](cpprvcc/p1.md)
-      - [Optional](cpprvcc/p1/p1.md)
-      - [Tuple](cpprvcc/p1/p2.md)
-      - 
-    - [p1](cpprvcc/p1.md) -->
