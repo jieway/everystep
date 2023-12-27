@@ -2,7 +2,7 @@
 
 [简介](README.md)
 
-# 🐷 使用 C++ 23 重写 LevelDB
+# 🐷 使用现代 C++ 重写 LevelDB
 
 ---
 
@@ -12,8 +12,9 @@
     - [Slice](araydb/p1/1-slice.md)
     - [Status](araydb/p1/2-status.md)
     - [Arean](araydb/p1/3-arean.md)
-    - [Bloom 过滤器](araydb/p1/4-bloom.md)
-    - [Cache](araydb/p1/5-cache.md)
+    - [CMake 拆分](araydb/p1/4-cmake.md)
+    - [Hash](araydb/p1/5-hash.md)
+    - [Bloom 过滤器](araydb/p1/6-bloom.md)
 - [日志和错误处理](araydb/p2/0-summary.md)
 - [核心数据结构和算法](araydb/p2/0-summary.md)
 - [数据库操作和接口](araydb/p2/0-summary.md)
@@ -54,7 +55,6 @@
     - [实现垃圾回收](bitcask/p1.md)
     - [hintfile 实现](bitcask/p1.md)
     - [哈希表优化为多线程](bitcask/p1.md)
-
     - [数据在磁盘上如何存放？](bitcask/ch1.md)
     - [存储引擎的接口设计](bitcask/ch2.md)
     - [实现 Set、Get](bitcask/ch3.md)
