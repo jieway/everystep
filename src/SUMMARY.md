@@ -8,13 +8,19 @@
 
 - [简介](araydb/p0/0-summary.md)
     - [Hello World](araydb/p0/1-create.md)
-- [public 模块](araydb/p1/0-summary.md)
+- [基础和辅助组件](araydb/p1/0-summary.md)
     - [Slice](araydb/p1/1-slice.md)
     - [Status](araydb/p1/2-status.md)
     - [Arean](araydb/p1/3-arean.md)
     - [Bloom 过滤器](araydb/p1/4-bloom.md)
     - [Cache](araydb/p1/5-cache.md)
-- [db 模块](araydb/p2/0-summary.md)
+- [日志和错误处理](araydb/p2/0-summary.md)
+- [核心数据结构和算法](araydb/p2/0-summary.md)
+- [数据库操作和接口](araydb/p2/0-summary.md)
+- [数据库核心功能](araydb/p2/0-summary.md)
+- [特定语言接口](araydb/p2/0-summary.md)
+- [高级功能和优化](araydb/p2/0-summary.md)
+
 
 # 🍭 操作系统
 
