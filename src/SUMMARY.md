@@ -21,8 +21,6 @@
     - [实现 Set、Get](bitcask/ch3.md)
     - [删除逻辑和 Compact ](bitcask/ch4.md)
 
-
-
 # 🍭 操作系统
 
 ---

@@ -41,6 +41,4 @@ cd everystep && mdbook serve --open
 
 ## 协议
 
-版权声明：本项目中的所有文章均为我（weijiew）原创作品。如需引用，请务必明确标明来源。若发现有恶意剽窃或未经授权的转载行为，我将采取法律措施保护我的权利。让我们共同努力，营造一个健康的技术创作氛围。
-
 2019 - 2023 ©weijiew. Released under the CC BY-NC-SA 4.0 International License.
