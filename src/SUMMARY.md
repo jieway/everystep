@@ -2,25 +2,25 @@
 
 [简介](README.md)
 
-# 🐷 使用现代 C++ 重写 LevelDB
+# 🐷 造轮子
 
 ---
 
-- [简介](araydb/p0/0-summary.md)
-    - [Hello World](araydb/p0/1-create.md)
-- [基础和辅助组件](araydb/p1/0-summary.md)
-    - [Slice](araydb/p1/1-slice.md)
-    - [Status](araydb/p1/2-status.md)
-    - [Arean](araydb/p1/3-arean.md)
-    - [CMake 拆分](araydb/p1/4-cmake.md)
-    - [Hash](araydb/p1/5-hash.md)
-    - [Bloom 过滤器](araydb/p1/6-bloom.md)
-- [日志和错误处理](araydb/p2/0-summary.md)
-- [核心数据结构和算法](araydb/p2/0-summary.md)
-- [数据库操作和接口](araydb/p2/0-summary.md)
-- [数据库核心功能](araydb/p2/0-summary.md)
-- [特定语言接口](araydb/p2/0-summary.md)
-- [高级功能和优化](araydb/p2/0-summary.md)
+- [从零实现 Bitcask 存储引擎](bitcask/README.md)
+    - [Bitcask 简介](bitcask/p1.md)
+    - [创建 C++ 项目](bitcask/p2.md)
+    - [数据在内存中](bitcask/p3.md)
+    - [数据在磁盘上](bitcask/p1.md)
+    - [BenchMark](bitcask/p1.md)
+    - [实现合并](bitcask/p1.md)
+    - [实现垃圾回收](bitcask/p1.md)
+    - [hintfile 实现](bitcask/p1.md)
+    - [哈希表优化为多线程](bitcask/p1.md)
+    - [数据在磁盘上如何存放？](bitcask/ch1.md)
+    - [存储引擎的接口设计](bitcask/ch2.md)
+    - [实现 Set、Get](bitcask/ch3.md)
+    - [删除逻辑和 Compact ](bitcask/ch4.md)
+
 
 
 # 🍭 操作系统
@@ -42,23 +42,6 @@
 
 
 # 🚀 数据库
-
----
-
-- [从零实现 Bitcask 存储引擎](bitcask/README.md)
-    - [Bitcask 简介](bitcask/p1.md)
-    - [创建 C++ 项目](bitcask/p1.md)
-    - [数据在内存中](bitcask/p1.md)
-    - [数据在磁盘上](bitcask/p1.md)
-    - [BenchMark](bitcask/p1.md)
-    - [实现合并](bitcask/p1.md)
-    - [实现垃圾回收](bitcask/p1.md)
-    - [hintfile 实现](bitcask/p1.md)
-    - [哈希表优化为多线程](bitcask/p1.md)
-    - [数据在磁盘上如何存放？](bitcask/ch1.md)
-    - [存储引擎的接口设计](bitcask/ch2.md)
-    - [实现 Set、Get](bitcask/ch3.md)
-    - [删除逻辑和 Compact ](bitcask/ch4.md)
 
 - [从零实现关系型数据库](abyssdb/p0.md)
     - [从 Table 开始](abyssdb/p1.md)
@@ -94,4 +77,26 @@
     - [Lab 1](6.824/1-lab1.md)
     - [Lab 2 (Chinese)](6.824/2-lab2-cn.md)
     - [Lab 2](6.824/2-lab2.md)
+
+# 🔥 知识点总结
+
+---
+
+- [C++ by Example](bg/cpp/0-sum.md)
+    - [引用](bg/cpp/1-ref.md)
+    - [new/delete 、malloc/free](bg/cpp/2-delete-new.md)
+    - [const、define](bg/cpp/3-const-define.md)
+    - [constexpr 、consteval](bg/cpp/4-constexpr.md)
+    - [char、string、string_view](bg/cpp/5-string.md)
+    - [std::move](bg/cpp/6-move.md)
+    - [结构化绑定](bg/cpp/7-structured-binding.md)
+    - [make_unique](bg/cpp/8-make_unique.md)
+    - [std::future](bg/cpp/9-future.md)
+    - [std::async](bg/cpp/10-async.md)
+    - [template](bg/cpp/11-template.md)
+    - [std::condition_variable](bg/cpp/12-condition_variable.md)
+    - [std::optional](bg/cpp/13-optional.md)
+    - [std::chrono](bg/cpp/14-chrono.md)
+    - [std::variant](bg/cpp/15-variant.md)
+
 
