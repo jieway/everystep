@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="sidebar-visible no-js light">
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>Lab 5 - everystep</title>
+
+
+    <!-- Custom HTML head -->
+    
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" href="../favicon.svg">
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/chrome.css">
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="../highlight.css">
+    <link rel="stylesheet" href="../tomorrow-night.css">
+    <link rel="stylesheet" href="../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+    <link rel="stylesheet" href="../theme/style.css">
+
+
+</head>
+<body>
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "../";
+        var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        var html = document.querySelector('html');
+        html.classList.remove('no-js')
+        html.classList.remove('light')
+        html.classList.add(theme);
+        html.classList.add('js');
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="sidebar-scrollbox">
+            <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">简介</a></li><li class="chapter-item affix "><li class="part-title">🐷 造轮子</li><li class="spacer"></li><li class="chapter-item "><a href="../bitcask/index.html"><strong aria-hidden="true">1.</strong> 从零实现 Bitcask 存储引擎</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.1.</strong> Bitcask 简介</a></li><li class="chapter-item "><a href="../bitcask/p2.html"><strong aria-hidden="true">1.2.</strong> 创建 C++ 项目</a></li><li class="chapter-item "><a href="../bitcask/p3.html"><strong aria-hidden="true">1.3.</strong> 数据在内存中</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.4.</strong> 数据在磁盘上</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.5.</strong> BenchMark</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.6.</strong> 实现合并</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.7.</strong> 实现垃圾回收</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.8.</strong> hintfile 实现</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.9.</strong> 哈希表优化为多线程</a></li><li class="chapter-item "><a href="../bitcask/ch1.html"><strong aria-hidden="true">1.10.</strong> 数据在磁盘上如何存放？</a></li><li class="chapter-item "><a href="../bitcask/ch2.html"><strong aria-hidden="true">1.11.</strong> 存储引擎的接口设计</a></li><li class="chapter-item "><a href="../bitcask/ch3.html"><strong aria-hidden="true">1.12.</strong> 实现 Set、Get</a></li><li class="chapter-item "><a href="../bitcask/ch4.html"><strong aria-hidden="true">1.13.</strong> 删除逻辑和 Compact </a></li></ol></li><li class="chapter-item "><li class="part-title">🍭 操作系统</li><li class="spacer"></li><li class="chapter-item expanded "><a href="../6.S081/0-summary.html"><strong aria-hidden="true">2.</strong> 6.S081</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.S081/1-lab1.html"><strong aria-hidden="true">2.1.</strong> Lab 1</a></li><li class="chapter-item "><a href="../6.S081/2-lab2.html"><strong aria-hidden="true">2.2.</strong> Lab 2</a></li><li class="chapter-item "><a href="../6.S081/3-lab3.html"><strong aria-hidden="true">2.3.</strong> Lab 3</a></li><li class="chapter-item "><a href="../6.S081/4-lab4.html"><strong aria-hidden="true">2.4.</strong> Lab 4</a></li><li class="chapter-item expanded "><a href="../6.S081/5-lab5.html" class="active"><strong aria-hidden="true">2.5.</strong> Lab 5</a></li><li class="chapter-item "><a href="../6.S081/6-lab6.html"><strong aria-hidden="true">2.6.</strong> Lab 6</a></li><li class="chapter-item "><a href="../6.S081/7-lab7.html"><strong aria-hidden="true">2.7.</strong> Lab 7</a></li><li class="chapter-item "><a href="../6.S081/8-lab8.html"><strong aria-hidden="true">2.8.</strong> Lab 8</a></li><li class="chapter-item "><a href="../6.S081/9-lab9.html"><strong aria-hidden="true">2.9.</strong> Lab 9</a></li><li class="chapter-item "><a href="../6.S081/10-lab10.html"><strong aria-hidden="true">2.10.</strong> Lab 10</a></li><li class="chapter-item "><a href="../6.S081/11-lab11.html"><strong aria-hidden="true">2.11.</strong> Lab 11</a></li></ol></li><li class="chapter-item "><li class="part-title">🚀 数据库</li><li class="chapter-item "><a href="../abyssdb/p0.html"><strong aria-hidden="true">3.</strong> 从零实现关系型数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../abyssdb/p1.html"><strong aria-hidden="true">3.1.</strong> 从 Table 开始</a></li><li class="chapter-item "><a href="../abyssdb/p2.html"><strong aria-hidden="true">3.2.</strong> Part 2. 实现 Tuple</a></li><li class="chapter-item "><a href="../abyssdb/p3.html"><strong aria-hidden="true">3.3.</strong> Part 3. 实现 Page</a></li><li class="chapter-item "><a href="../abyssdb/p4.html"><strong aria-hidden="true">3.4.</strong> Part 4. 实现 HeapFile</a></li><li class="chapter-item "><a href="../abyssdb/p5.html"><strong aria-hidden="true">3.5.</strong> Part 5. 实现 BufferPool</a></li><li class="chapter-item "><a href="../abyssdb/p6.html"><strong aria-hidden="true">3.6.</strong> Part 6. 支持 int 和 string 等数据类型。</a></li><li class="chapter-item "><a href="../abyssdb/p7.html"><strong aria-hidden="true">3.7.</strong> Part 7. 实现 Catalog</a></li></ol></li><li class="chapter-item "><a href="../6.830/1-lab0.html"><strong aria-hidden="true">4.</strong> 6.830</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.830/ans/2-lab1-ans.html"><strong aria-hidden="true">4.1.</strong> Lab 1 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/3-lab2-ans.html"><strong aria-hidden="true">4.2.</strong> Lab 2 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/4-lab3-ans.html"><strong aria-hidden="true">4.3.</strong> Lab 3 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/5-lab4-ans.html"><strong aria-hidden="true">4.4.</strong> Lab 4 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/6-lab5-ans.html"><strong aria-hidden="true">4.5.</strong> Lab 5 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/7-lab6-ans.html"><strong aria-hidden="true">4.6.</strong> Lab 6 Answers</a></li><li class="chapter-item "><a href="../6.830/cn/2-lab1.html"><strong aria-hidden="true">4.7.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/3-lab2.html"><strong aria-hidden="true">4.8.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/4-lab3.html"><strong aria-hidden="true">4.9.</strong> Lab 3 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/5-lab4.html"><strong aria-hidden="true">4.10.</strong> Lab 4 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/6-lab5.html"><strong aria-hidden="true">4.11.</strong> Lab 5 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/7-lab6.html"><strong aria-hidden="true">4.12.</strong> Lab 6 (Chinese)</a></li></ol></li><li class="chapter-item "><li class="part-title">🧊 分布式</li><li class="spacer"></li><li class="chapter-item "><a href="../6.824/0-lab0.html"><strong aria-hidden="true">5.</strong> 6.824</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.824/1-lab1-cn.html"><strong aria-hidden="true">5.1.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/1-lab1.html"><strong aria-hidden="true">5.2.</strong> Lab 1</a></li><li class="chapter-item "><a href="../6.824/2-lab2-cn.html"><strong aria-hidden="true">5.3.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/2-lab2.html"><strong aria-hidden="true">5.4.</strong> Lab 2</a></li></ol></li></ol>
+        </div>
+        <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+                        <div id="menu-bar-hover-placeholder"></div>
+            <div id="menu-bar" class="menu-bar sticky bordered">
+                <div class="left-buttons">
+                    <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="fa fa-paint-brush"></i>
+                    </button>
+                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                        <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                    </ul>
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <h1 class="menu-title">everystep</h1>
+
+                <div class="right-buttons">
+                    <a href="../print.html" title="Print this book" aria-label="Print this book">
+                        <i id="print-button" class="fa fa-print"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep" title="Git repository" aria-label="Git repository">
+                        <i id="git-repository-button" class="fa fa-github"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep/edit/master/src/6.S081/5-lab5.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <i id="git-edit-button" class="fa fa-edit"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+            <script type="text/javascript">
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+
+                // Get viewed page store
+                var viewed_key = 'mdbook-viewed';
+                var viewed_map = {};
+                try {
+                    var viewed_storage = localStorage.getItem(viewed_key);
+                    if (viewed_storage) {
+                        viewed_map = JSON.parse(viewed_storage)
+                    }
+                } catch (e) { }
+
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+
+                    // Apply viewed style
+                    if (viewed_map[link.pathname]) {
+                        link.classList.add('md-viewed')
+                    }
+                }); 
+
+                // Mark viewed after 30s
+                setTimeout(function() {
+                    viewed_map[location.pathname] = 1;
+                    localStorage.setItem(viewed_key, JSON.stringify(viewed_map));
+                }, 30000)
+            </script>
+
+            <div id="content" class="content">
+                <!-- Page table of contents -->
+                <div class="sidetoc"><nav class="pagetoc"></nav></div>
+                <main>
+                    <h1 id="lab-lazy"><a class="header" href="#lab-lazy">Lab lazy</a></h1>
+<p>首先阅读实验手册 <a href="https://pdos.csail.mit.edu/6.S081/2020/labs/lazy.html">Lab: xv6 lazy page allocation</a> / <a href="http://xv6.dgs.zone/labs/requirements/lab5.html">中文</a> 。</p>
+<p>首先切换分支：</p>
+<p>$ git fetch
+$ git checkout lazy
+$ make clean</p>
+<p>接下来学习前置内容.</p>
+<h2 id="0-总结"><a class="header" href="#0-总结">0. 总结</a></h2>
+<p>在此之前申请内存的时候是用</p>
+<p>总的来说,当申请内存的时候是立即分配.这个实验要实现的是只有真正使用的时候才会立即分配内存.</p>
+<blockquote>
+<p>下面是阅读 <a href="https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/lec08-page-faults-frans">Lec8</a> 的一些总结和 </p>
+</blockquote>
+<p>总的来说四块内容:</p>
+<ul>
+<li>lazy allocation</li>
+<li>copy-on-write fork</li>
+<li>demand paging</li>
+<li>memory mapped files</li>
+</ul>
+<p>在 XV6 中，一旦用户空间进程触发了page fault，会导致进程被杀掉。</p>
+<p>虚拟内存的两个优点：Isolation，level of indirection 。</p>
+<p>trampoline page，它使得内核可以将一个物理内存page映射到多个用户地址空间中。</p>
+<p>guard page，它同时在内核空间和用户空间用来保护Stack。</p>
+<p>直接映射表示虚拟地址就是物理地址。</p>
+<p>page fault 三个有价值的信息：</p>
+<ul>
+<li>引起page fault的内存地址。</li>
+<li>引起page fault的原因类型。</li>
+<li>引起page fault时的程序计数器值，这表明了page fault在用户空间发生的位置。</li>
+</ul>
+<p>当程序出现 page fault 时会触发 trap 机制，也就是将程序运行切换到内核，同时也会将出错的地址存放在STVAL寄存器中。</p>
+<p>SCAUSE 寄存器中保存了触发 page fault 的原因。例如 13 表示是因为 load 引起的 page fault；15 表示是因为 store 引起的 page fault；12 表示是因为指令执行引起的 page fault 。</p>
+<p>综上因为 page fault 触发 trap 机制并且进入到内核空间，STVAL 寄存器和 SCAUSE 寄存器都会有相应的值。</p>
+<p>第三个信息触发引起page fault时的程序计数器值。通过 trap 机制我们已经了解到这个地址存放在 SEPC（Supervisor Exception Program Counter）寄存器中，并同时会保存在 trapframe-&gt;epc 中。关注这个值的目的在于当修复 page table 后可以通过重新执行对应的指令。</p>
+<p>sbrk 可以扩大自己的 heap 。最初 sbrk 位于 heap 的底端，同时也是 stack 的顶端。由 p-&gt;sz 表示。</p>
+<p>默认的 sbrk 是 eager allocation ，也就是一旦调用就立即分配相应的内存。但在实际使用中应用程序所需内存的大小是难以预测的，并且为了考虑最坏的情况分配的内存更倾向于多分配一些。所以常常会导致有些内存永远也用不上。</p>
+<p>lazy allocation 的思想是使用的时候在具体分配，而不是一下子分配好。sbrk 调用的时候仅仅是将 <code>p-&gt;sz + n</code>，n 是需要新分配的内存page数量，此时内核不会分配任何物理内存。直到使用到这块内存时才会去分配物理内存。</p>
+<p>所以，如果我们解析一个大于旧的p-&gt;sz，但是又小于新的p-&gt;sz（注，也就是旧的p-&gt;sz + n）的虚拟地址，我们希望内核能够分配一个内存page，并且重新执行指令。</p>
+<p>如果出现一个 page fault ，并且虚拟地址小于当前p-&gt;sz，同时大于stack，可以认为来自 heap 的内存并且内核还没有分配物理内存。解决这个问题可以通过 kalloc 函数分配一个内存 page 初始化 page 内容为零，并将其映射到用户页表中。然后重新执行指令即可。</p>
+<p>eager allocation 可以明确的知道物理内存不够。lazy allocation 当发现物理内存不够的时候有两种解决方案，其一是直接返回一个错误并杀掉进程。</p>
+<p>通过 sbrk 扩容后，p-&gt;sz 会更新，如果待解析的地址旧的 p-&gt;sz 且小于新的 p-&gt;sz 则认为是有效地址，只是还未分配。但是大于新的 p-&gt;sz 则认为是程序错误。</p>
+<ul>
+<li>Zero Fill On Demand </li>
+</ul>
+<p>用户程序的地址空间分为text区域，data区域，同时还有一个BSS区域.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318135511.png" alt="20220318135511" />
+Copy On Write Fork</p>
+<p>子进程和父进程的一些全局变量是共享的,而在此之前子进程复制了一份. 这些变量是只读的.</p>
+<p>只有在修改的时候才会单独复制要修改的页并更新映射关系.父进程和子进程都采用同样的处理方式.</p>
+<p>当向一个只读 page 执行写操作时,如何区分是普通读写还是 copy-on-write 场景?</p>
+<p>通过读取页表的 RSW 位可以判断是否为 copy-on-write 场景进而执行相应的操作。</p>
+<p>当多个进程指向同一个物理页的时候其中一个进程不能释放共享的页表,否则会导致其他页的出问题.
+通过引用计数来解决这个问题.</p>
+<ul>
+<li>Demand paging</li>
+</ul>
+<p>text和data也以 lazy 的方式加载.也就是所谓的按需加载.</p>
+<p>如果内存不够用可以选择 LRU 算法.</p>
+<p>dirty page 和 non-dirty page 更倾向于撤回后者.因为前者很有可能继续更改.</p>
+<ul>
+<li>Memory Mapped Files</li>
+</ul>
+<p>page fault 结合了 page table 和 trap .</p>
+<h2 id="1-eliminate-allocation-from-sbrk-easy"><a class="header" href="#1-eliminate-allocation-from-sbrk-easy">1. Eliminate allocation from sbrk() (easy)</a></h2>
+<ol>
+<li>
+<p>修改 sysproc.c 中的 sys_sbrk(). 删除对growproc()的调用,更新 sz. </p>
+</li>
+<li>
+<p>make qmeu 启动 xv6 并输出  echo hi 会报错: </p>
+<p>$ echo hi
+usertrap(): unexpected scause 0x000000000000000f pid=3
+sepc=0x00000000000012ac stval=0x0000000000004008
+panic: uvmunmap: not mapped</p>
+</li>
+</ol>
+<p>原因是没有读取的内容还没有被映射,也就是没有分配物理内存,这是符合预期的.</p>
+<h2 id="2-lazy-allocation-moderate"><a class="header" href="#2-lazy-allocation-moderate">2. Lazy allocation (moderate)</a></h2>
+<p>解决上面的错误,也就是新分配一个物理页面并映射到发生错误的地址，然后返回到用户空间，让进程继续执行。</p>
+<p>scause 寄存器中保存了报错原因,由报错可知 <code>scause 0x000000000000000f</code> 也就是 15 .</p>
+<p>通过查看 RISC-V 的文档可知 15 表示是因为 store 引起的 page fault . (lec8) 而 13 是页错误.</p>
+<p>发生 13 或 15 类型的错误,原因是没有真正的分配内存,这是符合预期的,因为之前只是简单的修改了 sz .</p>
+<p>在 usertrap 中分配内存.通过 r_scause() 获取出错类型,通过 r_stval 获取映射失败的虚拟地址.然后分配内存即可.</p>
+<p>接下来运行 make qemu 输出如下内容会出错:</p>
+<p>$ echo hi
+panic: uvmunmap: not mapped</p>
+<p>这是因为 lazy 的缘故,消除映射的时候以为映射过了,其实有些地址没有建立映射但是进行了消除.此处简单的 cotinue 即可.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318135538.png" alt="20220318135538" /></p>
+<p>接下来就可以正常输出了:</p>
+<p>$ echo hi
+hi</p>
+<h2 id="lazytests-and-usertests-moderate"><a class="header" href="#lazytests-and-usertests-moderate">Lazytests and Usertests (moderate)</a></h2>
+<p>处理 sbrk 参数为负的情况,直接在 sys_sbrk 中处理即可.</p>
+<p>处理不合理的地址,地址应当小于 sz 大于 sp .</p>
+<p>处理 uvmcopy 函数,发现没有建立映射的内存 cotinue 即可.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/weijiew/pic/images/20220318135555.png" alt="20220318135555" />
+修改 fork() 函数,其中需要将父页的内容复制到子页中(uvmcopy),而复制的过程中因为 lazy 的缘故存在一些没有映射的页,所以当发现地址不存在时需要忽略.</p>
+<p>接下来是处理系统调用,当发生系统调用执行(exe.c)函数的时候的时候发现地址不存在(walkaddr),需要分配内存并建立相关映射,这块的逻辑和 usertrap 的处理类似了.</p>
+<h2 id="参考"><a class="header" href="#参考">参考</a></h2>
+<ol>
+<li>https://zhuanlan.zhihu.com/p/367314945</li>
+<li>https://blog.miigon.net/posts/s081-lab5-lazy-page-allocation/</li>
+</ol>
+
+                    <div id="giscus-container"></div>
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+                    <a rel="prev" href="../6.S081/4-lab4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../6.S081/6-lab6.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            <a rel="prev" href="../6.S081/4-lab4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+            <a rel="next" href="../6.S081/6-lab6.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </nav>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        window.playground_copyable = true;
+    </script>
+
+    <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var pagePath = "6.S081/5-lab5.md"
+    </script>
+
+
+    <!-- Custom JS scripts -->
+
+
+</body>
+</html>

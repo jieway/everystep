@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="sidebar-visible no-js light">
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>Lab 2 Answers - everystep</title>
+
+
+    <!-- Custom HTML head -->
+    
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" href="../../favicon.svg">
+    <link rel="shortcut icon" href="../../favicon.png">
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/chrome.css">
+    <link rel="stylesheet" href="../../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="../../highlight.css">
+    <link rel="stylesheet" href="../../tomorrow-night.css">
+    <link rel="stylesheet" href="../../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+    <link rel="stylesheet" href="../../theme/style.css">
+
+
+</head>
+<body>
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "../../";
+        var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        var html = document.querySelector('html');
+        html.classList.remove('no-js')
+        html.classList.remove('light')
+        html.classList.add(theme);
+        html.classList.add('js');
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="sidebar-scrollbox">
+            <ol class="chapter"><li class="chapter-item affix "><a href="../../index.html">简介</a></li><li class="chapter-item affix "><li class="part-title">🐷 造轮子</li><li class="spacer"></li><li class="chapter-item "><a href="../../bitcask/index.html"><strong aria-hidden="true">1.</strong> 从零实现 Bitcask 存储引擎</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.1.</strong> Bitcask 简介</a></li><li class="chapter-item "><a href="../../bitcask/p2.html"><strong aria-hidden="true">1.2.</strong> 创建 C++ 项目</a></li><li class="chapter-item "><a href="../../bitcask/p3.html"><strong aria-hidden="true">1.3.</strong> 数据在内存中</a></li><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.4.</strong> 数据在磁盘上</a></li><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.5.</strong> BenchMark</a></li><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.6.</strong> 实现合并</a></li><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.7.</strong> 实现垃圾回收</a></li><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.8.</strong> hintfile 实现</a></li><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.9.</strong> 哈希表优化为多线程</a></li><li class="chapter-item "><a href="../../bitcask/ch1.html"><strong aria-hidden="true">1.10.</strong> 数据在磁盘上如何存放？</a></li><li class="chapter-item "><a href="../../bitcask/ch2.html"><strong aria-hidden="true">1.11.</strong> 存储引擎的接口设计</a></li><li class="chapter-item "><a href="../../bitcask/ch3.html"><strong aria-hidden="true">1.12.</strong> 实现 Set、Get</a></li><li class="chapter-item "><a href="../../bitcask/ch4.html"><strong aria-hidden="true">1.13.</strong> 删除逻辑和 Compact </a></li></ol></li><li class="chapter-item "><li class="part-title">🍭 操作系统</li><li class="spacer"></li><li class="chapter-item "><a href="../../6.S081/0-summary.html"><strong aria-hidden="true">2.</strong> 6.S081</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../6.S081/1-lab1.html"><strong aria-hidden="true">2.1.</strong> Lab 1</a></li><li class="chapter-item "><a href="../../6.S081/2-lab2.html"><strong aria-hidden="true">2.2.</strong> Lab 2</a></li><li class="chapter-item "><a href="../../6.S081/3-lab3.html"><strong aria-hidden="true">2.3.</strong> Lab 3</a></li><li class="chapter-item "><a href="../../6.S081/4-lab4.html"><strong aria-hidden="true">2.4.</strong> Lab 4</a></li><li class="chapter-item "><a href="../../6.S081/5-lab5.html"><strong aria-hidden="true">2.5.</strong> Lab 5</a></li><li class="chapter-item "><a href="../../6.S081/6-lab6.html"><strong aria-hidden="true">2.6.</strong> Lab 6</a></li><li class="chapter-item "><a href="../../6.S081/7-lab7.html"><strong aria-hidden="true">2.7.</strong> Lab 7</a></li><li class="chapter-item "><a href="../../6.S081/8-lab8.html"><strong aria-hidden="true">2.8.</strong> Lab 8</a></li><li class="chapter-item "><a href="../../6.S081/9-lab9.html"><strong aria-hidden="true">2.9.</strong> Lab 9</a></li><li class="chapter-item "><a href="../../6.S081/10-lab10.html"><strong aria-hidden="true">2.10.</strong> Lab 10</a></li><li class="chapter-item "><a href="../../6.S081/11-lab11.html"><strong aria-hidden="true">2.11.</strong> Lab 11</a></li></ol></li><li class="chapter-item "><li class="part-title">🚀 数据库</li><li class="chapter-item "><a href="../../abyssdb/p0.html"><strong aria-hidden="true">3.</strong> 从零实现关系型数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../abyssdb/p1.html"><strong aria-hidden="true">3.1.</strong> 从 Table 开始</a></li><li class="chapter-item "><a href="../../abyssdb/p2.html"><strong aria-hidden="true">3.2.</strong> Part 2. 实现 Tuple</a></li><li class="chapter-item "><a href="../../abyssdb/p3.html"><strong aria-hidden="true">3.3.</strong> Part 3. 实现 Page</a></li><li class="chapter-item "><a href="../../abyssdb/p4.html"><strong aria-hidden="true">3.4.</strong> Part 4. 实现 HeapFile</a></li><li class="chapter-item "><a href="../../abyssdb/p5.html"><strong aria-hidden="true">3.5.</strong> Part 5. 实现 BufferPool</a></li><li class="chapter-item "><a href="../../abyssdb/p6.html"><strong aria-hidden="true">3.6.</strong> Part 6. 支持 int 和 string 等数据类型。</a></li><li class="chapter-item "><a href="../../abyssdb/p7.html"><strong aria-hidden="true">3.7.</strong> Part 7. 实现 Catalog</a></li></ol></li><li class="chapter-item expanded "><a href="../../6.830/1-lab0.html"><strong aria-hidden="true">4.</strong> 6.830</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../6.830/ans/2-lab1-ans.html"><strong aria-hidden="true">4.1.</strong> Lab 1 Answers</a></li><li class="chapter-item expanded "><a href="../../6.830/ans/3-lab2-ans.html" class="active"><strong aria-hidden="true">4.2.</strong> Lab 2 Answers</a></li><li class="chapter-item "><a href="../../6.830/ans/4-lab3-ans.html"><strong aria-hidden="true">4.3.</strong> Lab 3 Answers</a></li><li class="chapter-item "><a href="../../6.830/ans/5-lab4-ans.html"><strong aria-hidden="true">4.4.</strong> Lab 4 Answers</a></li><li class="chapter-item "><a href="../../6.830/ans/6-lab5-ans.html"><strong aria-hidden="true">4.5.</strong> Lab 5 Answers</a></li><li class="chapter-item "><a href="../../6.830/ans/7-lab6-ans.html"><strong aria-hidden="true">4.6.</strong> Lab 6 Answers</a></li><li class="chapter-item "><a href="../../6.830/cn/2-lab1.html"><strong aria-hidden="true">4.7.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../../6.830/cn/3-lab2.html"><strong aria-hidden="true">4.8.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../../6.830/cn/4-lab3.html"><strong aria-hidden="true">4.9.</strong> Lab 3 (Chinese)</a></li><li class="chapter-item "><a href="../../6.830/cn/5-lab4.html"><strong aria-hidden="true">4.10.</strong> Lab 4 (Chinese)</a></li><li class="chapter-item "><a href="../../6.830/cn/6-lab5.html"><strong aria-hidden="true">4.11.</strong> Lab 5 (Chinese)</a></li><li class="chapter-item "><a href="../../6.830/cn/7-lab6.html"><strong aria-hidden="true">4.12.</strong> Lab 6 (Chinese)</a></li></ol></li><li class="chapter-item "><li class="part-title">🧊 分布式</li><li class="spacer"></li><li class="chapter-item "><a href="../../6.824/0-lab0.html"><strong aria-hidden="true">5.</strong> 6.824</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../6.824/1-lab1-cn.html"><strong aria-hidden="true">5.1.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../../6.824/1-lab1.html"><strong aria-hidden="true">5.2.</strong> Lab 1</a></li><li class="chapter-item "><a href="../../6.824/2-lab2-cn.html"><strong aria-hidden="true">5.3.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../../6.824/2-lab2.html"><strong aria-hidden="true">5.4.</strong> Lab 2</a></li></ol></li></ol>
+        </div>
+        <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+                        <div id="menu-bar-hover-placeholder"></div>
+            <div id="menu-bar" class="menu-bar sticky bordered">
+                <div class="left-buttons">
+                    <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="fa fa-paint-brush"></i>
+                    </button>
+                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                        <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                    </ul>
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <h1 class="menu-title">everystep</h1>
+
+                <div class="right-buttons">
+                    <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                        <i id="print-button" class="fa fa-print"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep" title="Git repository" aria-label="Git repository">
+                        <i id="git-repository-button" class="fa fa-github"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep/edit/master/src/6.830/ans/3-lab2-ans.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <i id="git-edit-button" class="fa fa-edit"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+            <script type="text/javascript">
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+
+                // Get viewed page store
+                var viewed_key = 'mdbook-viewed';
+                var viewed_map = {};
+                try {
+                    var viewed_storage = localStorage.getItem(viewed_key);
+                    if (viewed_storage) {
+                        viewed_map = JSON.parse(viewed_storage)
+                    }
+                } catch (e) { }
+
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+
+                    // Apply viewed style
+                    if (viewed_map[link.pathname]) {
+                        link.classList.add('md-viewed')
+                    }
+                }); 
+
+                // Mark viewed after 30s
+                setTimeout(function() {
+                    viewed_map[location.pathname] = 1;
+                    localStorage.setItem(viewed_key, JSON.stringify(viewed_map));
+                }, 30000)
+            </script>
+
+            <div id="content" class="content">
+                <!-- Page table of contents -->
+                <div class="sidetoc"><nav class="pagetoc"></nav></div>
+                <main>
+                    <h1 id="lab-2-simpledb-operators"><a class="header" href="#lab-2-simpledb-operators">Lab 2: SimpleDB Operators</a></h1>
+<p>这个 lab 大致要实现。</p>
+<ul>
+<li>
+<p>实现 Filter 和 Join ，已经提供了 Project 和 OrderBy 的实现。</p>
+</li>
+<li>
+<p>实现 StringAggregator 和 IntegerAggregator 。编写计算一个特定字段在输入 tuple 序列的多个组中的聚合。其中 IntegerAggregator 使用整数除法来计算平均数，因为 SimpleDB 只支持整数。StringAggegator 只需要支持 COUNT 聚合，因为其他操作对字符串没有意义。</p>
+</li>
+<li>
+<p>实现<code>Aggregate</code>操作符。和其他运算符一样，聚合运算符实现了 <code>OpIterator</code> 接口，这样它们就可以放在 SimpleDB 查询计划中。注意<code>Aggregate</code>运算符的输出是每次调用<code>next()</code>时整个组的聚合值，并且聚合构造器需要聚合和分组字段。</p>
+</li>
+<li>
+<p>实现<code>insert</code>和<code>delete</code>操作符。像所有的操作符一样，<code>Insert</code>和<code>Delete</code>实现了<code>OpIterator</code>，接受一个要插入或删除的 tuple 流，并输出一个带有整数字段的单一 tuple ，表示插入或删除的 tuple 数量。这些操作者将需要调用<code>BufferPool</code>中的适当方法，这些方法实际上是修改磁盘上的页面。检查插入和删除 tuple 的测试是否正常工作。</p>
+</li>
+<li>
+<p>实现 BufferPool 中的页面置换策略(LRU) 。</p>
+</li>
+</ul>
+<h2 id="exercise-1"><a class="header" href="#exercise-1">Exercise 1</a></h2>
+<p>实现 <code>execution/Predicate.java</code>,<code>execution/JoinPredicate.java</code>,<code>execution/Filter.java</code> 和 <code>execution/Join.java</code> 并通过 PredicateTest、JoinPredicateTest、FilterTest 和 JoinTest 中的单元测试。此外，还需通过系统测试 FilterTest 和 JoinTest。</p>
+<p>Filter，Join，Project 和 OrderBy 都是数据库中常见的算子(operator)。</p>
+<p>已经提供了 Project 和 OrderBy 的实现，实现 Filter 和 Join 。</p>
+<p>Project 是投影的意思。使用 <code>SELECT *</code> 表示查询表的所有列，使用 <code>SELECT 列1, 列2, 列3</code> 则可以仅返回指定列，这种操作称为投影。研究一下 Project 类就会发现其实就选择指定列输出。</p>
+<p>OrderBy 表示按照指定字段排序输出结果集。</p>
+<p>接下来实现 Filter 直译是过滤的意思，将符合条件的留下，所以需要一个判断语句。而判断也就是 Predicate 直译是谓词，第一次看到这个意思我是迷茫的，其实本质上就是一个真或假的表达式。准确的定义解释是：A predicate is an expression that evaluates to True or False 。 </p>
+<p><code>Predicate.java</code> 比较表内的字段和提供的数据，三个参数分别是待比较的字段序号、比较符和待比较的数。其中 <code>filter()</code> 方法输入一个 Tuple ，然后比较 Tuple 的 Field 是否符合预期。</p>
+<p><code>JoinPredicate.java</code> 和 <code>Predicate.java</code> 类似，只是实现两个 Tuple 的比较。</p>
+<p><code>Filter.java</code> 在构造函数中实例化 Predicate 和 OpIterator。其中 <code>fetchNext()</code> 方法逐个读取 OpIterator 中的 Tuple ，然后让他们与 Predicate 中 Field 进行比较，如果为真则返回该 Tuple。</p>
+<p><code>Join.java</code> 就是对 <code>JoinPredicate.java</code> 的使用，通过构造函数实例化 <code>JoinPredicate</code> 和两个OpIterator 。实现一系类get方法和open、close等迭代器的函数。最后完成fetchNext函数找到两个迭代器中可以jion的字段进行join。</p>
+<p>fetchNext 中由两个 while 循环进行遍历，直到最外层迭代器遍历完成，每次遍历 child1 取出一个 Tuple ，与 child2 中的所有 Tuple 做 filter 比较，直到有符合要求的，创建新的 TupleDesc ，并且将 child1 和 child2 的字段（field），加入newTuple中，然后返回newTuple，同时将 child2 重置到最开始。</p>
+<h2 id="exercise-2"><a class="header" href="#exercise-2">Exercise 2</a></h2>
+<p>实现下面几个方法并通过 IntegerAggregatorTest 、StringAggregatorTest 和 AggregateTest 单元测试。此外还需要通过 AggregateTest 的系统测试。</p>
+<ul>
+<li>src/java/simpledb/execution/IntegerAggregator.java</li>
+<li>src/java/simpledb/execution/StringAggregator.java</li>
+<li>src/java/simpledb/execution/Aggregate.java</li>
+</ul>
+<p>只需要实现单个字段的聚合（aggregation）和单个字段的分组（group by）即可。聚合其实就对一组数据进行操作（加减乘除，最值等）。具体可参考：<a href="https://www.runoob.com/sql/sql-groupby.html">SQL GROUP BY 语句</a>。</p>
+<p><code>IntegerAggregator(0, Type.INT_TYPE, 1, Aggregator.Op.SUM)</code> 是生成一个整数聚合的对象。</p>
+<p>其中 0 表示分组(Group By)字段位置，也就是根据第零列来聚合。可以为 NO_GROUPING，表示不进行聚合。</p>
+<p>Type.INT_TYPE 表示这一列的数据类型，目前只有整数和字符串。1 表示待聚合的字段，Aggregator.Op.SUM 表示执行加法操作。</p>
+<p>需要看懂 IntegerAggregatorTest 测试类。其中 scan1 是一张基础表，sum/min/max/avg 是四张经过聚合操作后的表，用于验证 scan1 经过聚合后的结果是否符合预期。</p>
+<p><code>mergeTupleIntoGroup()</code> 根据 gbField 字段先判断是否需要进行 group by 。如果需要，那么根据 gbField 从 tup 中提取待聚合的字段，再判断是否是初次填入，然后根据对应 Op 执行对应逻辑。如果不需要 group by 直接累加即可，不需要映射，</p>
+<p>StringAggregator 和 IntegerAggregator 逻辑类似，并且仅支持 COUNT 。</p>
+<p>Aggregate 是将前两个整合一下。</p>
+<h2 id="exercise-3"><a class="header" href="#exercise-3">Exercise 3.</a></h2>
+<p>增加 tuple 或删除 tuple</p>
+<ol>
+<li>编写 <code>HeapPage.java</code> 并通过 <code>HeapPageWriteTest</code> 。</li>
+</ol>
+<p>首先根据要删除 tuple 的 RecordId 判断是否被使用，如果已经被使用就比较当前的 tuple 和待删除的 tuple 对象，一致就删除并标记。如果没有被使用那么 tuple slot 就是空。</p>
+<ul>
+<li>markDirty() 用一个队列来记录脏页的 tid，如果是脏页就加入队列中，如果不是就从队列中删除。</li>
+<li>isDirty() 返回队列中最后一个脏页，如果没有脏页就返回 null。</li>
+<li>insertTuple() 首先判断当前页面 td 和待插入 tuple 的 TupleDesc 是否匹配。然后遍历空余的 slot，寻找插入位置找到后插入并设置 RecordId 。最后标记该位置已经被插入。</li>
+<li>markSlotUsed() 修改 head 表示 tuple 被使用。</li>
+<li>deleteTuple() 依旧是判断当前页面 td 和待删除 tuple 的 TupleDesc 是否匹配。然后根据待删除的 tuple 找到 RecordId 判断是否存在，最后根据索引判断 slot 是否被使用，如果使用就删除。</li>
+</ul>
+<ol start="2">
+<li>编写 HeapFile.java 并通过 <code>HeapFileWriteTest</code> </li>
+</ol>
+<ul>
+<li><code>insertTuple()</code> 如果当前没有页面就调用 writePage 在磁盘中创建空页。然后去 BufferPool 取页，接下来判断取到的页中是否含有空 slot ，然后插入 tuple 。</li>
+<li><code>deleteTuple()</code> 从 BufferPool 中取出 page 然后删除 tuple 。</li>
+</ul>
+<ol start="3">
+<li>编写 BufferPool.java 中的 insertTuple() 和 deleteTuple() 并通过 <code>BufferPoolWriteTest</code>。</li>
+</ol>
+<h2 id="exercise-4"><a class="header" href="#exercise-4">Exercise 4.</a></h2>
+<p>实现 <code>execution/Insert.java</code> 和 <code>execution/Delete.java</code> 并通过 InsertTest 和 InsertTest，DeleteTest system tests</p>
+<h2 id="exercise-5"><a class="header" href="#exercise-5">Exercise 5.</a></h2>
+<p>实现 BufferPool.java 中的 flushPage() 方法，</p>
+<p>通过 EvictionTest system test</p>
+<p>discardPage() 方法是直接从缓冲池中删除不写回磁盘。</p>
+<p>用 LRU 来实现！通过这道题可以学会 LRU ，<a href="https://leetcode-cn.com/problems/lru-cache/">Leetcode 146. LRU 缓存</a>，这个<a href="https://www.bilibili.com/video/BV1hp4y1x7MH">视频</a>讲的很好！ </p>
+
+                    <div id="giscus-container"></div>
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+                    <a rel="prev" href="../../6.830/ans/2-lab1-ans.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../6.830/ans/4-lab3-ans.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            <a rel="prev" href="../../6.830/ans/2-lab1-ans.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+            <a rel="next" href="../../6.830/ans/4-lab3-ans.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </nav>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        window.playground_copyable = true;
+    </script>
+
+    <script src="../../ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var pagePath = "6.830/ans/3-lab2-ans.md"
+    </script>
+
+
+    <!-- Custom JS scripts -->
+
+
+</body>
+</html>

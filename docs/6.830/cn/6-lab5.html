@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="sidebar-visible no-js light">
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>Lab 5 (Chinese) - everystep</title>
+
+
+    <!-- Custom HTML head -->
+    
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" href="../../favicon.svg">
+    <link rel="shortcut icon" href="../../favicon.png">
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/chrome.css">
+    <link rel="stylesheet" href="../../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="../../highlight.css">
+    <link rel="stylesheet" href="../../tomorrow-night.css">
+    <link rel="stylesheet" href="../../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+    <link rel="stylesheet" href="../../theme/style.css">
+
+
+</head>
+<body>
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "../../";
+        var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        var html = document.querySelector('html');
+        html.classList.remove('no-js')
+        html.classList.remove('light')
+        html.classList.add(theme);
+        html.classList.add('js');
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="sidebar-scrollbox">
+            <ol class="chapter"><li class="chapter-item affix "><a href="../../index.html">简介</a></li><li class="chapter-item affix "><li class="part-title">🐷 造轮子</li><li class="spacer"></li><li class="chapter-item "><a href="../../bitcask/index.html"><strong aria-hidden="true">1.</strong> 从零实现 Bitcask 存储引擎</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.1.</strong> Bitcask 简介</a></li><li class="chapter-item "><a href="../../bitcask/p2.html"><strong aria-hidden="true">1.2.</strong> 创建 C++ 项目</a></li><li class="chapter-item "><a href="../../bitcask/p3.html"><strong aria-hidden="true">1.3.</strong> 数据在内存中</a></li><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.4.</strong> 数据在磁盘上</a></li><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.5.</strong> BenchMark</a></li><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.6.</strong> 实现合并</a></li><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.7.</strong> 实现垃圾回收</a></li><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.8.</strong> hintfile 实现</a></li><li class="chapter-item "><a href="../../bitcask/p1.html"><strong aria-hidden="true">1.9.</strong> 哈希表优化为多线程</a></li><li class="chapter-item "><a href="../../bitcask/ch1.html"><strong aria-hidden="true">1.10.</strong> 数据在磁盘上如何存放？</a></li><li class="chapter-item "><a href="../../bitcask/ch2.html"><strong aria-hidden="true">1.11.</strong> 存储引擎的接口设计</a></li><li class="chapter-item "><a href="../../bitcask/ch3.html"><strong aria-hidden="true">1.12.</strong> 实现 Set、Get</a></li><li class="chapter-item "><a href="../../bitcask/ch4.html"><strong aria-hidden="true">1.13.</strong> 删除逻辑和 Compact </a></li></ol></li><li class="chapter-item "><li class="part-title">🍭 操作系统</li><li class="spacer"></li><li class="chapter-item "><a href="../../6.S081/0-summary.html"><strong aria-hidden="true">2.</strong> 6.S081</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../6.S081/1-lab1.html"><strong aria-hidden="true">2.1.</strong> Lab 1</a></li><li class="chapter-item "><a href="../../6.S081/2-lab2.html"><strong aria-hidden="true">2.2.</strong> Lab 2</a></li><li class="chapter-item "><a href="../../6.S081/3-lab3.html"><strong aria-hidden="true">2.3.</strong> Lab 3</a></li><li class="chapter-item "><a href="../../6.S081/4-lab4.html"><strong aria-hidden="true">2.4.</strong> Lab 4</a></li><li class="chapter-item "><a href="../../6.S081/5-lab5.html"><strong aria-hidden="true">2.5.</strong> Lab 5</a></li><li class="chapter-item "><a href="../../6.S081/6-lab6.html"><strong aria-hidden="true">2.6.</strong> Lab 6</a></li><li class="chapter-item "><a href="../../6.S081/7-lab7.html"><strong aria-hidden="true">2.7.</strong> Lab 7</a></li><li class="chapter-item "><a href="../../6.S081/8-lab8.html"><strong aria-hidden="true">2.8.</strong> Lab 8</a></li><li class="chapter-item "><a href="../../6.S081/9-lab9.html"><strong aria-hidden="true">2.9.</strong> Lab 9</a></li><li class="chapter-item "><a href="../../6.S081/10-lab10.html"><strong aria-hidden="true">2.10.</strong> Lab 10</a></li><li class="chapter-item "><a href="../../6.S081/11-lab11.html"><strong aria-hidden="true">2.11.</strong> Lab 11</a></li></ol></li><li class="chapter-item "><li class="part-title">🚀 数据库</li><li class="chapter-item "><a href="../../abyssdb/p0.html"><strong aria-hidden="true">3.</strong> 从零实现关系型数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../abyssdb/p1.html"><strong aria-hidden="true">3.1.</strong> 从 Table 开始</a></li><li class="chapter-item "><a href="../../abyssdb/p2.html"><strong aria-hidden="true">3.2.</strong> Part 2. 实现 Tuple</a></li><li class="chapter-item "><a href="../../abyssdb/p3.html"><strong aria-hidden="true">3.3.</strong> Part 3. 实现 Page</a></li><li class="chapter-item "><a href="../../abyssdb/p4.html"><strong aria-hidden="true">3.4.</strong> Part 4. 实现 HeapFile</a></li><li class="chapter-item "><a href="../../abyssdb/p5.html"><strong aria-hidden="true">3.5.</strong> Part 5. 实现 BufferPool</a></li><li class="chapter-item "><a href="../../abyssdb/p6.html"><strong aria-hidden="true">3.6.</strong> Part 6. 支持 int 和 string 等数据类型。</a></li><li class="chapter-item "><a href="../../abyssdb/p7.html"><strong aria-hidden="true">3.7.</strong> Part 7. 实现 Catalog</a></li></ol></li><li class="chapter-item expanded "><a href="../../6.830/1-lab0.html"><strong aria-hidden="true">4.</strong> 6.830</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../6.830/ans/2-lab1-ans.html"><strong aria-hidden="true">4.1.</strong> Lab 1 Answers</a></li><li class="chapter-item "><a href="../../6.830/ans/3-lab2-ans.html"><strong aria-hidden="true">4.2.</strong> Lab 2 Answers</a></li><li class="chapter-item "><a href="../../6.830/ans/4-lab3-ans.html"><strong aria-hidden="true">4.3.</strong> Lab 3 Answers</a></li><li class="chapter-item "><a href="../../6.830/ans/5-lab4-ans.html"><strong aria-hidden="true">4.4.</strong> Lab 4 Answers</a></li><li class="chapter-item "><a href="../../6.830/ans/6-lab5-ans.html"><strong aria-hidden="true">4.5.</strong> Lab 5 Answers</a></li><li class="chapter-item "><a href="../../6.830/ans/7-lab6-ans.html"><strong aria-hidden="true">4.6.</strong> Lab 6 Answers</a></li><li class="chapter-item "><a href="../../6.830/cn/2-lab1.html"><strong aria-hidden="true">4.7.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../../6.830/cn/3-lab2.html"><strong aria-hidden="true">4.8.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../../6.830/cn/4-lab3.html"><strong aria-hidden="true">4.9.</strong> Lab 3 (Chinese)</a></li><li class="chapter-item "><a href="../../6.830/cn/5-lab4.html"><strong aria-hidden="true">4.10.</strong> Lab 4 (Chinese)</a></li><li class="chapter-item expanded "><a href="../../6.830/cn/6-lab5.html" class="active"><strong aria-hidden="true">4.11.</strong> Lab 5 (Chinese)</a></li><li class="chapter-item "><a href="../../6.830/cn/7-lab6.html"><strong aria-hidden="true">4.12.</strong> Lab 6 (Chinese)</a></li></ol></li><li class="chapter-item "><li class="part-title">🧊 分布式</li><li class="spacer"></li><li class="chapter-item "><a href="../../6.824/0-lab0.html"><strong aria-hidden="true">5.</strong> 6.824</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../6.824/1-lab1-cn.html"><strong aria-hidden="true">5.1.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../../6.824/1-lab1.html"><strong aria-hidden="true">5.2.</strong> Lab 1</a></li><li class="chapter-item "><a href="../../6.824/2-lab2-cn.html"><strong aria-hidden="true">5.3.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../../6.824/2-lab2.html"><strong aria-hidden="true">5.4.</strong> Lab 2</a></li></ol></li></ol>
+        </div>
+        <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+                        <div id="menu-bar-hover-placeholder"></div>
+            <div id="menu-bar" class="menu-bar sticky bordered">
+                <div class="left-buttons">
+                    <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="fa fa-paint-brush"></i>
+                    </button>
+                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                        <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                    </ul>
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <h1 class="menu-title">everystep</h1>
+
+                <div class="right-buttons">
+                    <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                        <i id="print-button" class="fa fa-print"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep" title="Git repository" aria-label="Git repository">
+                        <i id="git-repository-button" class="fa fa-github"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep/edit/master/src/6.830/cn/6-lab5.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <i id="git-edit-button" class="fa fa-edit"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+            <script type="text/javascript">
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+
+                // Get viewed page store
+                var viewed_key = 'mdbook-viewed';
+                var viewed_map = {};
+                try {
+                    var viewed_storage = localStorage.getItem(viewed_key);
+                    if (viewed_storage) {
+                        viewed_map = JSON.parse(viewed_storage)
+                    }
+                } catch (e) { }
+
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+
+                    // Apply viewed style
+                    if (viewed_map[link.pathname]) {
+                        link.classList.add('md-viewed')
+                    }
+                }); 
+
+                // Mark viewed after 30s
+                setTimeout(function() {
+                    viewed_map[location.pathname] = 1;
+                    localStorage.setItem(viewed_key, JSON.stringify(viewed_map));
+                }, 30000)
+            </script>
+
+            <div id="content" class="content">
+                <!-- Page table of contents -->
+                <div class="sidetoc"><nav class="pagetoc"></nav></div>
+                <main>
+                    <h1 id="lab-5-翻译"><a class="header" href="#lab-5-翻译">Lab 5 翻译</a></h1>
+<p>Assigned: Wednesday, April 21, 2021
+Due: Tuesday, May 4, 2021 11:59 PM EDT</p>
+<h2 id="0-introduction"><a class="header" href="#0-introduction">0. Introduction</a></h2>
+<p>In this lab you will implement a B+ tree index for efficient lookups and range scans. We supply you with all of the low-level code you will need to implement the tree structure. You will implement searching, splitting pages, redistributing tuples between pages, and merging pages.</p>
+<p>在这个实验中，你将实现一个B+树形索引，用于高效的查找和范围扫描。我们为你提供了实现树形结构所需的所有底层代码。你将实现搜索、拆分页面、在页面之间重新分配 tuple 以及合并页面。</p>
+<p>You may find it helpful to review sections 10.3--10.7 in the textbook, which provide detailed information about the structure of B+ trees as well as pseudocode for searches, inserts and deletes.</p>
+<p>你可能会发现复习教科书中的第10.3--10.7节很有帮助，这些章节提供了关于B+树结构的详细信息，以及搜索、插入和删除的伪代码。</p>
+<p>As described by the textbook and discussed in class, the internal nodes in B+ trees contain multiple entries, each consisting of a key value and a left and a right child pointer. Adjacent keys share a child pointer, so internal nodes containing m keys have m+1 child pointers. Leaf nodes can either contain data entries or pointers to data entries in other database files. For simplicity, we will implement a B+tree in which the leaf pages actually contain the data entries. Adjacent leaf pages are linked together with right and left sibling pointers, so range scans only require one initial search through the root and internal nodes to find the first leaf page. Subsequent leaf pages are found by following right (or left) sibling pointers.</p>
+<p>正如教科书所描述的和课堂上讨论的，B+树的内部节点包含多个条目，每个条目由一个键值和一个左、右子指针组成。相邻的键共享一个子指针，所以包含m个键的内部节点有m+1个子指针。叶子节点可以包含数据条目或指向其他数据库文件的数据条目的指针。为了简单起见，我们将实现一个B+树，其中叶子页实际上包含数据条目。相邻的叶子页用左右的同级指针连接在一起，所以范围扫描只需要通过根节点和内部节点进行一次初始搜索就可以找到第一个叶子页。随后的叶子页是通过跟随右（或左）同级指针找到的。</p>
+<h2 id="1-getting-started"><a class="header" href="#1-getting-started">1. Getting started</a></h2>
+<p>You should begin with the code you submitted for Lab 4 (if you did not submit code for Lab 4, or your solution didn't work properly, contact us to discuss options). Additionally, we are providing extra source and test files for this lab that are not in the original code distribution you received.</p>
+<p>你应该从你为实验4提交的代码开始（如果你没有为实验4提交代码，或者你的解决方案没有正常工作，请与我们联系，讨论各种方案）。此外，我们还为这个实验提供了额外的源文件和测试文件，这些文件不在你收到的原始代码分发中。</p>
+<p>You will need to add these new files to your release and set up your lab4 branch. The easiest way to do this is to change to your project directory (probably called simple-db-hw), set up the branch, and pull from the master GitHub repository:</p>
+<p>你需要把这些新文件添加到你的版本中，并建立你的lab4分支。最简单的方法是切换到你的项目目录（可能叫simple-db-hw），建立分支，然后从GitHub的主仓库拉取。</p>
+<pre><code>$ cd simple-db-hw $ git pull upstream master
+</code></pre>
+<h2 id="2-search"><a class="header" href="#2-search">2. Search</a></h2>
+<p>Take a look at index/ and BTreeFile.java. This is the core file for the implementation of the B+Tree and where you will write all your code for this lab. Unlike the HeapFile, the BTreeFile consists of four different kinds of pages. As you would expect, there are two different kinds of pages for the nodes of the tree: internal pages and leaf pages. Internal pages are implemented in BTreeInternalPage.java, and leaf pages are implemented in BTreeLeafPage.java. For convenience, we have created an abstract class in BTreePage.java which contains code that is common to both leaf and internal pages. In addition, header pages are implemented in BTreeHeaderPage.java and keep track of which pages in the file are in use. Lastly, there is one page at the beginning of every BTreeFile which points to the root page of the tree and the first header page. This singleton page is implemented in BTreeRootPtrPage.java. Familiarize yourself with the interfaces of these classes, especially BTreePage, BTreeInternalPage and BTreeLeafPage. You will need to use these classes in your implementation of the B+Tree.</p>
+<p>看一下 index/ 和 BTreeFile.java 。这是实现B+Tree的核心文件，你将在这里编写本实验的所有代码。与HeapFile不同，BTreeFile由四种不同的页面组成。正如你所期望的，树的节点有两种不同的页：内部页和叶子页。内部页在BTreeInternalPage.java中实现，而叶子页在BTreeLeafPage.java中实现。为了方便起见，我们在BTreePage.java中创建了一个抽象类，其中包含了叶子页和内部页的共同代码。此外，标题页在BTreeHeaderPage.java中实现，并跟踪文件中哪些页正在使用。最后，在每个BTreeFile的开头都有一个页面，它指向树的根页和第一个标题页。这个单子页在BTreeRootPtrPage.java中实现。熟悉这些类的接口，特别是BTreePage、BTreeInternalPage和BTreeLeafPage。你将需要在你的B+Tree的实现中使用这些类。</p>
+<p>Your first job is to implement the findLeafPage() function in BTreeFile.java. This function is used to find the appropriate leaf page given a particular key value, and is used for both searches and inserts. For example, suppose we have a B+Tree with two leaf pages (See Figure 1). The root node is an internal page with one entry containing one key (6, in this case) and two child pointers. Given a value of 1, this function should return the first leaf page. Likewise, given a value of 8, this function should return the second page. The less obvious case is if we are given a key value of 6. There may be duplicate keys, so there could be 6's on both leaf pages. In this case, the function should return the first (left) leaf page.</p>
+<p>你的第一个工作是在BTreeFile.java中实现findLeafPage()函数。这个函数用于在给定一个特定的键值的情况下找到合适的叶子页，并且用于搜索和插入。例如，假设我们有一个有两个叶子页的B+Tree（见图1）。根节点是一个内部页面，有一个条目，包含一个键（本例中为6）和两个子指针。给定一个值为1，这个函数应该返回第一个叶子页。同样地，如果数值为8，这个函数应该返回第二个页面。不太明显的情况是，如果我们给定的键值是6，可能有重复的键，所以两个叶子页上可能都有6。在这种情况下，这个函数应该返回第一个（左边）叶子页。</p>
+<p><img src="image/6-lab5/1644485061911.png" alt="" />
+Figure 1: A simple B+ Tree with duplicate keys</p>
+<p>图1：一个简单的有重复 key 的 B+ 树</p>
+<p>Your findLeafPage() function should recursively search through internal nodes until it reaches the leaf page corresponding to the provided key value. In order to find the appropriate child page at each step, you should iterate through the entries in the internal page and compare the entry value to the provided key value. BTreeInternalPage.iterator() provides access to the entries in the internal page using the interface defined in BTreeEntry.java. This iterator allows you to iterate through the key values in the internal page and access the left and right child page ids for each key. The base case of your recursion happens when the passed-in BTreePageId has pgcateg() equal to BTreePageId.LEAF, indicating that it is a leaf page. In this case, you should just fetch the page from the buffer pool and return it. You do not need to confirm that it actually contains the provided key value f.</p>
+<p>你的findLeafPage()函数应该递归地搜索内部节点，直到到达与所提供的键值相对应的叶子页。为了在每一步找到合适的子页面，你应该遍历内部页面中的条目，并将条目值与提供的键值进行比较。BTreeInternalPage.iterator()使用BTreeEntry.java中定义的接口提供了对内部页面中条目的访问。这个迭代器允许你遍历内部页面中的键值，并访问每个键的左右子页面ID。当传入的BTreePageId的pgcateg()等于BTreePageId.LEAF时，你递归的基本情况就会发生，表明它是一个叶子页。在这种情况下，你应该只是从缓冲池中获取该页并返回它。你不需要确认它是否真的包含所提供的键值f。</p>
+<p>Your findLeafPage() code must also handle the case when the provided key value f is null. If the provided value is null, recurse on the left-most child every time in order to find the left-most leaf page. Finding the left-most leaf page is useful for scanning the entire file. Once the correct leaf page is found, you should return it. As mentioned above, you can check the type of page using the pgcateg() function in BTreePageId.java. You can assume that only leaf and internal pages will be passed to this function.</p>
+<p>你的findLeafPage()代码还必须处理所提供的键值f为空的情况。如果提供的值是空的，每次都在最左边的子页上递归，以便找到最左边的叶子页。找到最左边的叶子页对于扫描整个文件是很有用的。一旦找到正确的叶子页，你应该返回它。如上所述，你可以使用BTreePageId.java中的pgcateg()函数检查页面的类型。你可以假设只有叶子页和内部页会被传递给这个函数。</p>
+<p>Instead of directly calling BufferPool.getPage() to get each internal page and leaf page, we recommend calling the wrapper function we have provided, BTreeFile.getPage(). It works exactly like BufferPool.getPage(), but takes an extra argument to track the list of dirty pages. This function will be important for the next two exercises in which you will actually update the data and therefore need to keep track of dirty pages.</p>
+<p>与其直接调用BufferPool.getPage()来获取每个内部页面和叶子页面，我们建议调用我们提供的包装函数BTreeFile.getPage()。它的工作原理与BufferPool.getPage()完全一样，但需要一个额外的参数来跟踪脏页的列表。这个函数在接下来的两个练习中非常重要，你将实际更新数据，因此需要跟踪脏页。</p>
+<p>Every internal (non-leaf) page your findLeafPage() implementation visits should be fetched with READ_ONLY permission, except the returned leaf page, which should be fetched with the permission provided as an argument to the function. These permission levels will not matter for this lab, but they will be important for the code to function correctly in future labs.</p>
+<p>你的findLeafPage()实现访问的每一个内部（非叶子）页面都应该以READ_ONLY权限获取，除了返回的叶子页面，它应该以作为函数参数提供的权限获取。这些权限级别对本实验来说并不重要，但它们对代码在未来实验中的正常运行非常重要。</p>
+<h2 id="exercise-1-btreefilefindleafpage"><a class="header" href="#exercise-1-btreefilefindleafpage">Exercise 1: BTreeFile.findLeafPage()</a></h2>
+<p>Implement BTreeFile.findLeafPage().</p>
+<p>After completing this exercise, you should be able to pass all the unit tests in BTreeFileReadTest.java and the system tests in BTreeScanTest.java.</p>
+<p>完成这个练习后，你应该能够通过BTreeFileReadTest.java中的所有单元测试和BTreeScanTest.java中的系统测试。</p>
+<h2 id="3-insert"><a class="header" href="#3-insert">3. Insert</a></h2>
+<p>In order to keep the tuples of the B+Tree in sorted order and maintain the integrity of the tree, we must insert tuples into the leaf page with the enclosing key range. As was mentioned above, findLeafPage() can be used to find the correct leaf page into which we should insert the tuple. However, each page has a limited number of slots and we need to be able to insert tuples even if the corresponding leaf page is full.</p>
+<p>为了使B+Tree的 tuple 保持排序，并保持树的完整性，我们必须将 tuple 插入到具有包围键范围的叶页中。如上所述，findLeafPage()可以用来找到我们应该插入 tuple 的正确叶子页。然而，每个页面都有有限的槽位，我们需要能够插入 tuple ，即使相应的叶子页面已经满了。</p>
+<p>As described in the textbook, attempting to insert a tuple into a full leaf page should cause that page to split so that the tuples are evenly distributed between the two new pages. Each time a leaf page splits, a new entry corresponding to the first tuple in the second page will need to be added to the parent node. Occasionally, the internal node may also be full and unable to accept new entries. In that case, the parent should split and add a new entry to its parent. This may cause recursive splits and ultimately the creation of a new root node.</p>
+<p>正如教科书中所描述的，试图在一个完整的叶子页中插入一个tuple应该导致该页分裂，以便tuple均匀地分布在两个新页中。每次叶子页分裂时，需要向父节点添加一个与第二页中第一个tuple对应的新条目。偶尔，内部节点也可能是满的，无法接受新条目。在这种情况下，父节点应该拆分并向其父节点添加一个新条目。这可能会导致递归分裂，最终创建一个新的根节点。</p>
+<p>In this exercise you will implement splitLeafPage() and splitInternalPage() in BTreeFile.java. If the page being split is the root page, you will need to create a new internal node to become the new root page, and update the BTreeRootPtrPage. Otherwise, you will need to fetch the parent page with READ_WRITE permissions, recursively split it if necessary, and add a new entry. You will find the function getParentWithEmptySlots() extremely useful for handling these different cases. In splitLeafPage() you should &quot;copy&quot; the key up to the parent page, while in splitInternalPage() you should &quot;push&quot; the key up to the parent page. See Figure 2 and review section 10.5 in the text book if this is confusing. Remember to update the parent pointers of the new pages as needed (for simplicity, we do not show parent pointers in the figures). When an internal node is split, you will need to update the parent pointers of all the children that were moved. You may find the function updateParentPointers() useful for this task. Additionally, remember to update the sibling pointers of any leaf pages that were split. Finally, return the page into which the new tuple or entry should be inserted, as indicated by the provided key field. (Hint: You do not need to worry about the fact that the provided key may actually fall in the exact center of the tuples/entries to be split. You should ignore the key during the split, and only use it to determine which of the two pages to return.)</p>
+<p>在这个练习中，你将在 BTreeFile.java 中实现 splitLeafPage() 和 splitInternalPage() 。如果被分割的页面是根页面，你将需要创建一个新的内部节点来成为新的根页面，并更新BTreeRootPtrPage。否则，你将需要以READ_WRITE权限获取父页，必要时递归分割，并添加一个新条目。你会发现函数getParentWithEmptySlots()对于处理这些不同的情况非常有用。在splitLeafPage()中，你应该将键 &quot;复制 &quot;到父页上，而在splitInternalPage()中，你应该将键 &quot;推 &quot;到父页上。如果这一点令人困惑，请参见图2，并回顾教科书中的10.5节。记住要根据需要更新新页面的父指针（为了简单起见，我们不在图中显示父指针）。当一个内部节点被分割时，你将需要更新所有被移动的子节点的父指针。你可能会发现函数updateParentPointers()对这项任务很有用。此外，记得要更新任何被拆分的叶子页面的兄弟姐妹指针。最后，返回新的tuple或条目应该被插入的页面，如所提供的键字段所示。(提示：你不需要担心所提供的键实际上可能正好落在要分割的tuple/条目的中心。在分割过程中，你应该忽略这个键，而只是用它来决定返回两个页面中的哪一个）。</p>
+<p><img src="image/6-lab5/1644501314066.png" alt="" />
+Figure 2: Splitting pages</p>
+<p>Whenever you create a new page, either because of splitting a page or creating a new root page, call getEmptyPage() to get the new page. This function is an abstraction which will allow us to reuse pages that have been deleted due to merging (covered in the next section).</p>
+<p>每当你创建一个新的页面，无论是因为拆分一个页面还是创建一个新的根页面，都要调用getEmptyPage()来获取新的页面。这个函数是一个抽象，它将允许我们重新使用因合并而被删除的页面（在下一节涉及）。</p>
+<p>We expect that you will interact with leaf and internal pages using BTreeLeafPage.iterator() and BTreeInternalPage.iterator() to iterate through the tuples/entries in each page. For convenience, we have also provided reverse iterators for both types of pages: BTreeLeafPage.reverseIterator() and BTreeInternalPage.reverseIterator(). These reverse iterators will be especially useful for moving a subset of tuples/entries from a page to its right sibling.</p>
+<p>我们希望你能使用BTreeLeafPage.iterator()和BTreeInternalPage.iterator()与叶子页和内部页进行交互，以迭代每个页面中的 tuple /条目。为了方便，我们还为这两种类型的页面提供了反向迭代器。BTreeLeafPage.reverseIterator（）和BTreeInternalPage.reverseIterator（）。这些反向迭代器对于将一个页面中的 tuple /条目子集移动到其右边的同级页面中特别有用。</p>
+<p>As mentioned above, the internal page iterators use the interface defined in BTreeEntry.java, which has one key and two child pointers. It also has a recordId, which identifies the location of the key and child pointers on the underlying page. We think working with one entry at a time is a natural way to interact with internal pages, but it is important to keep in mind that the underlying page does not actually store a list of entries, but stores ordered lists of m keys and m+1 child pointers. Since the BTreeEntry is just an interface and not an object actually stored on the page, updating the fields of BTreeEntry will not modify the underlying page. In order to change the data on the page, you need to call BTreeInternalPage.updateEntry(). Furthermore, deleting an entry actually deletes only a key and a single child pointer, so we provide the funtions BTreeInternalPage.deleteKeyAndLeftChild() and BTreeInternalPage.deleteKeyAndRightChild() to make this explicit. The entry's recordId is used to find the key and child pointer to be deleted. Inserting an entry also only inserts a key and single child pointer (unless it's the first entry), so BTreeInternalPage.insertEntry() checks that one of the child pointers in the provided entry overlaps an existing child pointer on the page, and that inserting the entry at that location will keep the keys in sorted order.</p>
+<p>如上所述，内部页面迭代器使用BTreeEntry.java中定义的接口，它有一个key和两个child pointers。它还有一个recordId，用于识别底层页面上键和子指针的位置。我们认为一次处理一个条目是与内部页面交互的自然方式，但重要的是要记住，底层页面实际上并不存储一个条目列表，而是存储m个键和m+1个子指针的有序列表。由于BTreeEntry只是一个接口，而不是实际存储在页面上的对象，更新BTreeEntry的字段不会修改底层页面。为了改变页面上的数据，你需要调用BTreeInternalPage.updateEntry（）。此外，删除一个条目实际上只删除了一个键和一个子指针，所以我们提供了BTreeInternalPage.deleteKeyAndLeftChild()和BTreeInternalPage.deleteKeyAndRightChild()的功能来明确这一点。该条目的recordId被用来寻找要删除的key和child指针。插入一个条目也只插入一个键和单个子指针（除非它是第一个条目），所以BTreeInternalPage.insertEntry()检查所提供的条目中的一个子指针是否与页面上现有的一个子指针重叠，在该位置插入条目将保持键的排序顺序。</p>
+<p>In both splitLeafPage() and splitInternalPage(), you will need to update the set of dirtypages with any newly created pages as well as any pages modified due to new pointers or new data. This is where BTreeFile.getPage() will come in handy. Each time you fetch a page, BTreeFile.getPage() will check to see if the page is already stored in the local cache (dirtypages), and if it can't find the requested page there, it fetches it from the buffer pool. BTreeFile.getPage() also adds pages to the dirtypages cache if they are fetched with read-write permission, since presumably they will soon be dirtied. One advantage of this approach is that it prevents loss of updates if the same pages are accessed multiple times during a single tuple insertion or deletion.</p>
+<p>在 splitLeafPage() 和 splitInternalPage() 中，你需要用任何新创建的页面以及由于新指针或新数据而修改的页面来更新 dirtypages 的集合。这就是BTreeFile.getPage()的用武之地。每次你获取一个页面时，BTreeFile.getPage()都会检查该页面是否已经存储在本地缓存（dirtypages）中，如果它在那里找不到所请求的页面，它就会从缓冲池中获取它。BTreeFile.getPage()还将页面添加到dirtypages缓存中，如果它们是以读写权限获取的，因为据推测它们很快就会被弄脏。这种方法的一个优点是，如果在一次tuple插入或删除过程中多次访问相同的页面，它可以防止更新的损失。</p>
+<p>Note that in a major departure from HeapFile.insertTuple(), BTreeFile.insertTuple() could return a large set of dirty pages, especially if any internal pages are split. As you may remember from previous labs, the set of dirty pages is returned to prevent the buffer pool from evicting dirty pages before they have been flushed.</p>
+<p>请注意，与 HeapFile.insertTuple() 大相径庭的是，BTreeFile.insertTuple() 可能会返回一大组脏页，特别是在任何内部页面被分割的情况下。你可能还记得以前的实验，返回脏页集是为了防止缓冲池在脏页被刷新之前驱逐它们。</p>
+<p>Warning: as the B+Tree is a complex data structure, it is helpful to understand the properties necessary of every legal B+Tree before modifying it. Here is an informal list:</p>
+<p>警告：由于B+Tree是一个复杂的数据结构，在修改它之前，了解每个合法B+Tree的必要属性是很有帮助的。这里是一个非正式的列表。</p>
+<p>If a parent node points to a child node, the child nodes must point back to those same parents.</p>
+<p>如果一个父节点指向一个子节点，子节点必须指向那些相同的父节点。</p>
+<p>If a leaf node points to a right sibling, then the right sibling points back to that leaf node as a left sibling.</p>
+<p>如果一个叶子节点指向一个右边的兄弟姐妹，那么右边的兄弟姐妹就会作为左边的兄弟姐妹指向该叶子节点。</p>
+<p>The first and last leaves must point to null left and right siblings respectively.
+Record Id's must match the page they are actually in.
+A key in a node with non-leaf children must be larger than any key in the left child, and smaller than any key in the right child.
+A key in a node with leaf children must be larger or equal than any key in the left child, and smaller or equal than any key in the right child.
+A node has either all non-leaf children, or all leaf children.
+A non-root node cannot be less than half full.
+We have implemented a mechanized check for all these properties in the file BTreeChecker.java. This method is also used to test your B+Tree implementation in the systemtest/BTreeFileDeleteTest.java. Feel free to add calls to this function to help debug your implementation, like we did in BTreeFileDeleteTest.java.</p>
+<p>第一个和最后一个叶子必须分别指向空的左边和右边的兄弟姐妹。
+记录的Id必须与它们实际所在的页面相匹配。
+有非叶子的节点中的一个键必须大于左侧子节点中的任何键，并且小于右侧子节点中的任何键。
+一个有叶子的节点中的键必须大于或等于左边子节点中的任何键，并且小于或等于右边子节点中的任何键。
+一个节点要么有所有非叶子的孩子，要么有所有叶子的孩子。
+一个非根节点不能少于一半。
+我们已经在BTreeChecker.java文件中实现了对所有这些属性的机械化检查。在systemtest/BTreeFileDeleteTest.java中，这个方法也被用来测试你的B+Tree实现。请随意添加对该函数的调用，以帮助调试你的实现，就像我们在BTreeFileDeleteTest.java中做的那样。</p>
+<p>N.B.</p>
+<p>The checker method should always pass after initialization of the tree and before starting and after completing a full call to key insertion or deletion, but not necessarily within internal methods.</p>
+<p>检查器方法应该总是在树的初始化之后，在开始和完成对键插入或删除的完整调用之前传递，但不一定在内部方法中传递。</p>
+<p>A tree may be well formed (and therefore pass checkRep()) but still incorrect. For example, the empty tree will always pass checkRep(), but may not always be correct (if you just inserted a tuple, the tree should not be empty). ***</p>
+<p>一个树可能形成得很好（因此通过了checkRep()），但是仍然不正确。例如，空的树总是能通过checkRep()，但不一定总是正确的（如果你刚刚插入了一个tuple，树不应该是空的）。***</p>
+<h2 id="exercise-2-splitting-pages"><a class="header" href="#exercise-2-splitting-pages">Exercise 2: Splitting Pages</a></h2>
+<p>Implement BTreeFile.splitLeafPage() and BTreeFile.splitInternalPage().</p>
+<p>After completing this exercise, you should be able to pass the unit tests in BTreeFileInsertTest.java. You should also be able to pass the system tests in systemtest/BTreeFileInsertTest.java. Some of the system test cases may take a few seconds to complete. These files will test that your code inserts tuples and splits pages correcty, and also handles duplicate tuples.</p>
+<p>完成这个练习后，你应该能够通过BTreeFileInsertTest.java中的单元测试。你也应该能够通过 systemtest/BTreeFileInsertTest.java 中的系统测试。一些系统测试案例可能需要几秒钟的时间来完成。这些文件将测试你的代码是否正确地插入 tuple 和分割页面，并处理重复的 tuple 。</p>
+<h2 id="4-delete"><a class="header" href="#4-delete">4. Delete</a></h2>
+<p>In order to keep the tree balanced and not waste unnecessary space, deletions in a B+Tree may cause pages to redistribute tuples (Figure 3) or, eventually, to merge (see Figure 4). You may find it useful to review section 10.6 in the textbook.</p>
+<p>为了保持树的平衡，不浪费不必要的空间，B+树中的删除可能会导致页面重新分配 tuple （图3）或最终合并（见图4）。你可能会发现复习一下教科书中的第10.6节是很有用的。</p>
+<p><img src="image/6-lab5/1644564797612.png" alt="" />
+Figure 3: Redistributing pages</p>
+<p><img src="image/6-lab5/1644564966538.png" alt="" />
+Figure 4: Merging pages</p>
+<p>As described in the textbook, attempting to delete a tuple from a leaf page that is less than half full should cause that page to either steal tuples from one of its siblings or merge with one of its siblings. If one of the page's siblings has tuples to spare, the tuples should be evenly distributed between the two pages, and the parent's entry should be updated accordingly (see Figure 3). However, if the sibling is also at minimum occupancy, then the two pages should merge and the entry deleted from the parent (Figure 4). In turn, deleting an entry from the parent may cause the parent to become less than half full. In this case, the parent should steal entries from its siblings or merge with a sibling. This may cause recursive merges or even deletion of the root node if the last entry is deleted from the root node.</p>
+<p>正如教科书中所描述的那样，如果试图从一个不满一半的叶子页中删除一个 tuple ，应该会导致该页从它的一个兄弟姐妹那里偷取 tuple 或与它的一个兄弟姐妹合并。如果该页的一个兄弟姐妹有多余的 tuple ，这些 tuple 应该在两个页面之间平均分配，并且父页的条目应该相应地被更新（见图3）。然而，如果兄弟姐妹也处于最小的占用率，那么这两个页面就应该合并，并从父页面删除条目（图4）。反过来，从父本中删除一个条目可能会导致父本的入住率低于一半。在这种情况下，父本应该从其兄弟姐妹那里偷取条目，或者与兄弟姐妹合并。这可能会导致递归合并，甚至是删除根节点，如果最后一个条目从根节点上被删除。</p>
+<p>In this exercise you will implement stealFromLeafPage(), stealFromLeftInternalPage(), stealFromRightInternalPage(), mergeLeafPages() and mergeInternalPages() in BTreeFile.java. In the first three functions you will implement code to evenly redistribute tuples/entries if the siblings have tuples/entries to spare. Remember to update the corresponding key field in the parent (look carefully at how this is done in Figure 3 - keys are effectively &quot;rotated&quot; through the parent). In stealFromLeftInternalPage()/stealFromRightInternalPage(), you will also need to update the parent pointers of the children that were moved. You should be able to reuse the function updateParentPointers() for this purpose.</p>
+<p>在这个练习中，你将在BTreeFile.java中实现 stealFromLeafPage(), stealFromLeftInternalPage(), stealFromRightInternalPage(), mergeLeafPages() 和 mergeInternalPages() 。在前三个函数中，你将实现代码，在兄弟姐妹有 tuple /条目的情况下均匀地重新分配 tuple /条目。记住要更新父代中相应的键字段（仔细看看图3中是如何做到的--键字在父代中被有效地 &quot;旋转 &quot;了）。在stealFromLeftInternalPage()/stealFromRightInternalPage()中，你还需要更新被移动的子项的父项指针。你应该可以为这个目的重新使用函数 updateParentPointers()。</p>
+<p>In mergeLeafPages() and mergeInternalPages() you will implement code to merge pages, effectively performing the inverse of splitLeafPage() and splitInternalPage(). You will find the function deleteParentEntry() extremely useful for handling all the different recursive cases. Be sure to call setEmptyPage() on deleted pages to make them available for reuse. As with the previous exercises, we recommend using BTreeFile.getPage() to encapsulate the process of fetching pages and keeping the list of dirty pages up to date.</p>
+<p>在mergeLeafPages()和mergeInternalPages()中，你将实现合并页面的代码，有效地执行splitLeafPage()和splitInternalPage()的逆过程。你会发现函数deleteParentEntry()对于处理所有不同的递归情况非常有用。请确保在被删除的页面上调用setEmptyPage()，以使它们可以被重新使用。与之前的练习一样，我们建议使用BTreeFile.getPage()来封装获取页面的过程，并保持脏页面列表的更新。</p>
+<h2 id="exercise-3-redistributing-pages"><a class="header" href="#exercise-3-redistributing-pages">Exercise 3: Redistributing pages</a></h2>
+<p>Implement BTreeFile.stealFromLeafPage(), BTreeFile.stealFromLeftInternalPage(), BTreeFile.stealFromRightInternalPage().</p>
+<p>After completing this exercise, you should be able to pass some of the unit tests in BTreeFileDeleteTest.java (such as testStealFromLeftLeafPage and testStealFromRightLeafPage). The system tests may take several seconds to complete since they create a large B+ tree in order to fully test the system.</p>
+<p>完成这个练习后，你应该能够通过BTreeFileDeleteTest.java中的一些单元测试（如testStealFromLeftLeafPage和testStealFromRightLeafPage）。系统测试可能需要几秒钟才能完成，因为它们会创建一个大的B+树，以便全面测试系统。</p>
+<p>Exercise 4: Merging pages</p>
+<p>Implement BTreeFile.mergeLeafPages() and BTreeFile.mergeInternalPages().</p>
+<p>实现BTreeFile.mergeLeafPages()和BTreeFile.mergeInternalPages()。</p>
+<p>Now you should be able to pass all unit tests in BTreeFileDeleteTest.java and the system tests in systemtest/BTreeFileDeleteTest.java.</p>
+<p>现在你应该能够通过BTreeFileDeleteTest.java中的所有单元测试和systemtest/BTreeFileDeleteTest.java中的系统测试。</p>
+<h2 id="5-transactions"><a class="header" href="#5-transactions">5. Transactions</a></h2>
+<p>You may remember that B+ trees can prevent phantom tuples from showing up between two consecutive range scans by using next-key locking. Since SimpleDB uses page-level, strict two-phase locking, protection against phantoms effectively comes for free if the B+ tree is implemented correctly. Thus, at this point you should also be able to pass BTreeNextKeyLockingTest.</p>
+<p>你可能还记得，B+树可以通过使用下一个键锁定来防止幻影 tuple 在两个连续的范围扫描之间出现。由于SimpleDB使用了页级的、严格的两阶段锁定，如果B+树被正确实现，对幻影的保护实际上是免费的。因此，在这一点上，你也应该能够通过BTreeNextKeyLockingTest。</p>
+<p>Additionally, you should be able to pass the tests in test/simpledb/BTreeDeadlockTest.java if you have implemented locking correctly inside of your B+ tree code.</p>
+<p>此外，如果你在B+树代码中正确实现了锁定，你应该能够通过test/simpledb/BTreeDeadlockTest.java的测试。</p>
+<p>If everything is implemented correctly, you should also be able to pass the BTreeTest system test. We expect many people to find BTreeTest difficult, so it's not required, but we'll give extra credit to anyone who can run it successfully. Please note that this test may take up to a minute to complete.</p>
+<p>如果一切实施正确，你也应该能够通过BTreeTest系统测试。我们预计很多人会觉得BTreeTest很难，所以它不是必须的，但我们会给能够成功运行它的人加分。请注意，这个测试可能需要一分钟的时间来完成。</p>
+<h2 id="6-extra-credit"><a class="header" href="#6-extra-credit">6. Extra Credit</a></h2>
+<p>Bonus Exercise 5: (10% extra credit)</p>
+<p>Create and implement a class called BTreeReverseScan which scans the BTreeFile in reverse, given an optional IndexPredicate.</p>
+<p>创建并实现一个名为BTreeReverseScan的类，该类在给定一个可选的IndexPredicate后，反向扫描BTreeFile。</p>
+<p>You can use BTreeScan as a starting point, but you will probably need to implement a reverse iterator in BTreeFile. You will also likely need to implement a separate version of BTreeFile.findLeafPage(). We have provided reverse iterators on BTreeLeafPage and BTreeInternalPage which you may find useful. You should also write code to test that your implementation works correctly. BTreeScanTest.java is a good place to look for ideas.</p>
+<p>你可以使用BTreeScan作为起点，但你可能需要在BTreeFile中实现一个反向迭代器。你也可能需要实现一个单独的BTreeFile.findLeafPage()版本。我们已经在BTreeLeafPage和BTreeInternalPage上提供了反向迭代器，你可能会发现它很有用。你还应该编写代码来测试你的实现是否正常工作。BTreeScanTest.java是一个寻找思路的好地方。</p>
+<h2 id="7-logistics"><a class="header" href="#7-logistics">7. Logistics</a></h2>
+<p>You must submit your code (see below) as well as a short (1 page, maximum) writeup describing your approach. This writeup should:</p>
+<p>你必须提交你的代码（见下文），以及描述你的方法的简短（最多1页）的文章。这篇报告应该</p>
+<p>Describe any design decisions you made, including anything that was difficult or unexpected.</p>
+<p>描述你所做的任何设计决定，包括任何困难或意外。</p>
+<p>Discuss and justify any changes you made outside of BTreeFile.java.</p>
+<p>讨论并论证你在BTreeFile.java之外所做的任何改动。</p>
+<p>How long did this lab take you? Do you have any suggestions for ways to improve it?</p>
+<p>这个实验花了你多长时间？你有什么建议可以改进它吗？</p>
+<p>Optional: If you did the extra credit exercise, explain your implementation and show us that you thoroughly tested it.</p>
+<p>可选：如果你做了加分练习，请解释你的实现，并向我们展示你彻底测试了它。</p>
+<h2 id="71-collaboration"><a class="header" href="#71-collaboration">7.1. Collaboration</a></h2>
+<p>This lab should be manageable for a single person, but if you prefer to work with a partner, this is also OK. Larger groups are not allowed. Please indicate clearly who you worked with, if anyone, on your writeup.</p>
+<p>这个实验对一个人来说应该是可以应付的，但如果你喜欢和一个伙伴一起工作，这也是可以的。不允许有较大的团体。如果有的话，请在你的报告中明确指出你和谁一起工作。</p>
+<h2 id="72-submitting-your-assignment"><a class="header" href="#72-submitting-your-assignment">7.2. Submitting your assignment</a></h2>
+<p>We will be using gradescope to autograde all programming assignments. You should have all been invited to the class instance; if not, please let us know and we can help you set up. You may submit your code multiple times before the deadline; we will use the latest version as determined by gradescope. Place the write-up in a file called lab3-writeup.txt with your submission. You also need to explicitly add any other files you create, such as new *.java files.</p>
+<p>我们将使用gradescope对所有编程作业进行自动评分。你们应该都被邀请到班级实例中；如果没有，请告诉我们，我们可以帮助你们设置。你可以在截止日期前多次提交你的代码；我们将使用由gradescope确定的最新版本。把写好的东西放在一个叫lab3-writeup.txt的文件里，和你的提交一起。你还需要明确地添加你创建的任何其他文件，如新的*.java文件。</p>
+<p>The easiest way to submit to gradescope is with .zip files containing your code. On Linux/MacOS, you can do so by running the following command:</p>
+<p>向 gradescope 提交的最简单方法是使用包含你的代码的 .zip 文件。在Linux/MacOS上，你可以通过运行以下命令来实现。</p>
+<pre><code>$ zip -r submission.zip src/ lab5-writeup.txt
+</code></pre>
+<h2 id="73-submitting-a-bug"><a class="header" href="#73-submitting-a-bug">7.3. Submitting a bug</a></h2>
+<p>SimpleDB is a relatively complex piece of code. It is very possible you are going to find bugs, inconsistencies, and bad, outdated, or incorrect documentation, etc.</p>
+<p>SimpleDB是一个相对复杂的代码。你很可能会发现错误、不一致，以及糟糕的、过时的或不正确的文档等等。</p>
+<p>We ask you, therefore, to do this lab with an adventurous mindset. Don't get mad if something is not clear, or even wrong; rather, try to figure it out yourself or send us a friendly email.</p>
+<p>因此，我们要求你以一种冒险的心态来做这个实验。如果有不清楚的地方，甚至是错误的地方，不要生气；而是要自己尝试去弄清楚，或者给我们发一封友好的电子邮件。</p>
+<p>Please submit (friendly!) bug reports to 6.830-staff@mit.edu. When you do, please try to include:</p>
+<p>A description of the bug.
+A .java file we can drop in the test/simpledb directory, compile, and run.
+A .txt file with the data that reproduces the bug. We should be able to convert it to a .dat file using HeapFileEncoder.
+You can also post on the class page on Piazza if you feel you have run into a bug.</p>
+<p>请提交（友好的！）错误报告到6.830-staff@mit.edu。当你这样做时，请尽量包括。</p>
+<p>对该错误的描述。
+一个我们可以放在test/simpledb目录下的.java文件，并进行编译和运行。
+一个包含再现该错误的数据的.txt文件。我们应该能够用HeapFileEncoder将其转换为.dat文件。
+如果你觉得你遇到了一个bug，你也可以在Piazza的类页面上发帖。</p>
+<h2 id="74-grading"><a class="header" href="#74-grading">7.4 Grading</a></h2>
+<p>75% of your grade will be based on whether or not your code passes the system test suite we will run over it. These tests will be a superset of the tests we have provided. Before handing in your code, you should make sure it produces no errors (passes all of the tests) from both ant test and ant systemtest.</p>
+<p>Important: before testing, gradescope will replace your build.xml, HeapFileEncoder.java and the entire contents of the test directory with our version of these files. This means you cannot change the format of .dat files! You should also be careful changing our APIs. You should test that your code compiles the unmodified tests.</p>
+<p>You should get immediate feedback and error outputs for failed tests (if any) from gradescope after submission. The score given will be your grade for the autograded portion of the assignment. An additional 25% of your grade will be based on the quality of your writeup and our subjective evaluation of your code. This part will also be published on gradescope after we finish grading your assignment.</p>
+<p>We had a lot of fun designing this assignment, and we hope you enjoy hacking on it!</p>
+<p>你的成绩的75%将基于你的代码是否通过我们将对其进行的系统测试套件。这些测试将是我们提供的测试的一个超集。在交出你的代码之前，你应该确保它在ant test和ant systemtest中没有产生错误（通过所有的测试）。</p>
+<p>重要的是：在测试之前，gradescope 会用我们的版本替换你的 build.xml、HeapFileEncoder.java 以及测试目录中的全部内容。这意味着你不能改变.dat文件的格式! 你也应该小心改变我们的API。你应该测试你的代码是否编译了未修改的测试。</p>
+<p>在提交后，你应该从 gradescope 得到即时反馈和失败测试的错误输出（如果有的话）。给出的分数将是你在作业的自动评分部分的成绩。另外25%的分数将基于你的写作质量和我们对你代码的主观评价。在我们给你的作业评分后，这部分也将在 gradescope 上公布。</p>
+<p>我们在设计这项作业时非常有趣，我们希望你能享受到黑客的乐趣!</p>
+
+                    <div id="giscus-container"></div>
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+                    <a rel="prev" href="../../6.830/cn/5-lab4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../6.830/cn/7-lab6.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            <a rel="prev" href="../../6.830/cn/5-lab4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+            <a rel="next" href="../../6.830/cn/7-lab6.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </nav>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        window.playground_copyable = true;
+    </script>
+
+    <script src="../../ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var pagePath = "6.830/cn/6-lab5.md"
+    </script>
+
+
+    <!-- Custom JS scripts -->
+
+
+</body>
+</html>

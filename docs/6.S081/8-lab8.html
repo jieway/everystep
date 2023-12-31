@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="sidebar-visible no-js light">
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>Lab 8 - everystep</title>
+
+
+    <!-- Custom HTML head -->
+    
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" href="../favicon.svg">
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/chrome.css">
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="../highlight.css">
+    <link rel="stylesheet" href="../tomorrow-night.css">
+    <link rel="stylesheet" href="../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+    <link rel="stylesheet" href="../theme/style.css">
+
+
+</head>
+<body>
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "../";
+        var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        var html = document.querySelector('html');
+        html.classList.remove('no-js')
+        html.classList.remove('light')
+        html.classList.add(theme);
+        html.classList.add('js');
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="sidebar-scrollbox">
+            <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">简介</a></li><li class="chapter-item affix "><li class="part-title">🐷 造轮子</li><li class="spacer"></li><li class="chapter-item "><a href="../bitcask/index.html"><strong aria-hidden="true">1.</strong> 从零实现 Bitcask 存储引擎</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.1.</strong> Bitcask 简介</a></li><li class="chapter-item "><a href="../bitcask/p2.html"><strong aria-hidden="true">1.2.</strong> 创建 C++ 项目</a></li><li class="chapter-item "><a href="../bitcask/p3.html"><strong aria-hidden="true">1.3.</strong> 数据在内存中</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.4.</strong> 数据在磁盘上</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.5.</strong> BenchMark</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.6.</strong> 实现合并</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.7.</strong> 实现垃圾回收</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.8.</strong> hintfile 实现</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.9.</strong> 哈希表优化为多线程</a></li><li class="chapter-item "><a href="../bitcask/ch1.html"><strong aria-hidden="true">1.10.</strong> 数据在磁盘上如何存放？</a></li><li class="chapter-item "><a href="../bitcask/ch2.html"><strong aria-hidden="true">1.11.</strong> 存储引擎的接口设计</a></li><li class="chapter-item "><a href="../bitcask/ch3.html"><strong aria-hidden="true">1.12.</strong> 实现 Set、Get</a></li><li class="chapter-item "><a href="../bitcask/ch4.html"><strong aria-hidden="true">1.13.</strong> 删除逻辑和 Compact </a></li></ol></li><li class="chapter-item "><li class="part-title">🍭 操作系统</li><li class="spacer"></li><li class="chapter-item expanded "><a href="../6.S081/0-summary.html"><strong aria-hidden="true">2.</strong> 6.S081</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.S081/1-lab1.html"><strong aria-hidden="true">2.1.</strong> Lab 1</a></li><li class="chapter-item "><a href="../6.S081/2-lab2.html"><strong aria-hidden="true">2.2.</strong> Lab 2</a></li><li class="chapter-item "><a href="../6.S081/3-lab3.html"><strong aria-hidden="true">2.3.</strong> Lab 3</a></li><li class="chapter-item "><a href="../6.S081/4-lab4.html"><strong aria-hidden="true">2.4.</strong> Lab 4</a></li><li class="chapter-item "><a href="../6.S081/5-lab5.html"><strong aria-hidden="true">2.5.</strong> Lab 5</a></li><li class="chapter-item "><a href="../6.S081/6-lab6.html"><strong aria-hidden="true">2.6.</strong> Lab 6</a></li><li class="chapter-item "><a href="../6.S081/7-lab7.html"><strong aria-hidden="true">2.7.</strong> Lab 7</a></li><li class="chapter-item expanded "><a href="../6.S081/8-lab8.html" class="active"><strong aria-hidden="true">2.8.</strong> Lab 8</a></li><li class="chapter-item "><a href="../6.S081/9-lab9.html"><strong aria-hidden="true">2.9.</strong> Lab 9</a></li><li class="chapter-item "><a href="../6.S081/10-lab10.html"><strong aria-hidden="true">2.10.</strong> Lab 10</a></li><li class="chapter-item "><a href="../6.S081/11-lab11.html"><strong aria-hidden="true">2.11.</strong> Lab 11</a></li></ol></li><li class="chapter-item "><li class="part-title">🚀 数据库</li><li class="chapter-item "><a href="../abyssdb/p0.html"><strong aria-hidden="true">3.</strong> 从零实现关系型数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../abyssdb/p1.html"><strong aria-hidden="true">3.1.</strong> 从 Table 开始</a></li><li class="chapter-item "><a href="../abyssdb/p2.html"><strong aria-hidden="true">3.2.</strong> Part 2. 实现 Tuple</a></li><li class="chapter-item "><a href="../abyssdb/p3.html"><strong aria-hidden="true">3.3.</strong> Part 3. 实现 Page</a></li><li class="chapter-item "><a href="../abyssdb/p4.html"><strong aria-hidden="true">3.4.</strong> Part 4. 实现 HeapFile</a></li><li class="chapter-item "><a href="../abyssdb/p5.html"><strong aria-hidden="true">3.5.</strong> Part 5. 实现 BufferPool</a></li><li class="chapter-item "><a href="../abyssdb/p6.html"><strong aria-hidden="true">3.6.</strong> Part 6. 支持 int 和 string 等数据类型。</a></li><li class="chapter-item "><a href="../abyssdb/p7.html"><strong aria-hidden="true">3.7.</strong> Part 7. 实现 Catalog</a></li></ol></li><li class="chapter-item "><a href="../6.830/1-lab0.html"><strong aria-hidden="true">4.</strong> 6.830</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.830/ans/2-lab1-ans.html"><strong aria-hidden="true">4.1.</strong> Lab 1 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/3-lab2-ans.html"><strong aria-hidden="true">4.2.</strong> Lab 2 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/4-lab3-ans.html"><strong aria-hidden="true">4.3.</strong> Lab 3 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/5-lab4-ans.html"><strong aria-hidden="true">4.4.</strong> Lab 4 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/6-lab5-ans.html"><strong aria-hidden="true">4.5.</strong> Lab 5 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/7-lab6-ans.html"><strong aria-hidden="true">4.6.</strong> Lab 6 Answers</a></li><li class="chapter-item "><a href="../6.830/cn/2-lab1.html"><strong aria-hidden="true">4.7.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/3-lab2.html"><strong aria-hidden="true">4.8.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/4-lab3.html"><strong aria-hidden="true">4.9.</strong> Lab 3 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/5-lab4.html"><strong aria-hidden="true">4.10.</strong> Lab 4 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/6-lab5.html"><strong aria-hidden="true">4.11.</strong> Lab 5 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/7-lab6.html"><strong aria-hidden="true">4.12.</strong> Lab 6 (Chinese)</a></li></ol></li><li class="chapter-item "><li class="part-title">🧊 分布式</li><li class="spacer"></li><li class="chapter-item "><a href="../6.824/0-lab0.html"><strong aria-hidden="true">5.</strong> 6.824</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.824/1-lab1-cn.html"><strong aria-hidden="true">5.1.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/1-lab1.html"><strong aria-hidden="true">5.2.</strong> Lab 1</a></li><li class="chapter-item "><a href="../6.824/2-lab2-cn.html"><strong aria-hidden="true">5.3.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/2-lab2.html"><strong aria-hidden="true">5.4.</strong> Lab 2</a></li></ol></li></ol>
+        </div>
+        <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+                        <div id="menu-bar-hover-placeholder"></div>
+            <div id="menu-bar" class="menu-bar sticky bordered">
+                <div class="left-buttons">
+                    <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="fa fa-paint-brush"></i>
+                    </button>
+                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                        <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                    </ul>
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <h1 class="menu-title">everystep</h1>
+
+                <div class="right-buttons">
+                    <a href="../print.html" title="Print this book" aria-label="Print this book">
+                        <i id="print-button" class="fa fa-print"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep" title="Git repository" aria-label="Git repository">
+                        <i id="git-repository-button" class="fa fa-github"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep/edit/master/src/6.S081/8-lab8.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <i id="git-edit-button" class="fa fa-edit"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+            <script type="text/javascript">
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+
+                // Get viewed page store
+                var viewed_key = 'mdbook-viewed';
+                var viewed_map = {};
+                try {
+                    var viewed_storage = localStorage.getItem(viewed_key);
+                    if (viewed_storage) {
+                        viewed_map = JSON.parse(viewed_storage)
+                    }
+                } catch (e) { }
+
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+
+                    // Apply viewed style
+                    if (viewed_map[link.pathname]) {
+                        link.classList.add('md-viewed')
+                    }
+                }); 
+
+                // Mark viewed after 30s
+                setTimeout(function() {
+                    viewed_map[location.pathname] = 1;
+                    localStorage.setItem(viewed_key, JSON.stringify(viewed_map));
+                }, 30000)
+            </script>
+
+            <div id="content" class="content">
+                <!-- Page table of contents -->
+                <div class="sidetoc"><nav class="pagetoc"></nav></div>
+                <main>
+                    <h1 id="lab-lock"><a class="header" href="#lab-lock">Lab lock</a></h1>
+<p>首先切换代码：</p>
+<pre><code>$ git fetch
+$ git checkout lock
+$ make clean
+</code></pre>
+<p>前置内容：</p>
+<pre><code>第6章：《锁》和相应的代码。
+第3.5节：《代码：物理内存分配》
+第8.1节至第8.3节：《概述》、《Buffer cache层》和《代码：Buffer cache》
+</code></pre>
+<h2 id="总结"><a class="header" href="#总结">总结</a></h2>
+<p>在多核机器上并行性差的原因是因为锁的争用。</p>
+<p>这个实验必须跑在多核机器上！</p>
+<p>通过 kalloctest 可以判断锁的争夺次数，通过 usertests sbrkmuch 判断是否可以正常分配内存。确保通过 usertests 和 make grade 。</p>
+<p>使用 cpuid 返回当前内核时需要关闭中断(push_off)，用完后再打开(push_off)。</p>
+<p>锁优化的两个思路：</p>
+<ol>
+<li>能不共享就不共享。</li>
+<li>非得共享就尽可能的降低锁的粒度。</li>
+</ol>
+<h2 id="memory-allocatormoderate"><a class="header" href="#memory-allocatormoderate">Memory allocator(moderate)</a></h2>
+<p><code>user/kalloctest.c</code> 中三个进程的地址空间对kalloc和kfree的多次调用。</p>
+<p>优化前锁的正用情况：</p>
+<pre><code>$  kalloctest
+start test1
+test1 results:
+--- lock kmem/bcache stats
+lock: kmem: #fetch-and-add 14549 #acquire() 433016
+lock: bcache: #fetch-and-add 0 #acquire() 1242
+--- top 5 contended locks:
+lock: proc: #fetch-and-add 94663 #acquire() 505245
+lock: proc: #fetch-and-add 41749 #acquire() 505570
+lock: proc: #fetch-and-add 31109 #acquire() 505573
+lock: kmem: #fetch-and-add 14549 #acquire() 433016
+lock: virtio_disk: #fetch-and-add 13668 #acquire() 114
+tot= 14549
+test1 FAIL
+start test2
+total free number of pages: 32499 (out of 32768)
+</code></pre>
+<p>重新设计 kalloc.c 降低对 kmem 锁的争用，从而提高并行性。</p>
+<p>之前是对一个整个 freelist 直接上锁，一个 CPU 占用后就不能再用了。</p>
+<blockquote>
+<p>此处用到了第一个策略，能不共享就不共享。</p>
+</blockquote>
+<p>可以将 freelist 拆分，为每个 CPU 分配独立的 freelist 从而支持多个 CPU 同时申请内存，也就是并发。</p>
+<p>除此之外可能存在某个 CPU 申请过猛的情况，也就是 freelist 不够用了，此时可以从别的 CPU 对应的 freelist 中借。</p>
+<ol>
+<li>修改 kmem 数据结构，改为数组实现，分别对应不同的 CPU 。</li>
+<li>修改 kfree，之前是直接删，现在需要获得 cpuid ，而 hind 提及获取 cpuid 时需要关闭中断。</li>
+<li>CPU 中 freelist 不够用了，可以从别的 freelist 中借。借有两种策略，一种是直接对着一个收割，另一种是均匀收割。均匀收割的话不数字不能太大，否则依旧存在锁征用。</li>
+</ol>
+<p>下面是 64 个块均匀收割的输出：</p>
+<pre><code>--- lock kmem/bcache stats
+lock: kmem_cpu_0: #fetch-and-add 41 #acquire() 577717
+lock: kmem_cpu_1: #fetch-and-add 0 #acquire() 2358581
+lock: kmem_cpu_2: #fetch-and-add 0 #acquire() 1973063
+lock: kmem_cpu_3: #fetch-and-add 0 #acquire() 380552
+lock: kmem_cpu_4: #fetch-and-add 0 #acquire() 380552
+lock: kmem_cpu_5: #fetch-and-add 0 #acquire() 380552
+lock: kmem_cpu_6: #fetch-and-add 0 #acquire() 380552
+lock: kmem_cpu_7: #fetch-and-add 0 #acquire() 380552
+</code></pre>
+<p>下面是 32 个块均匀收割的输出：</p>
+<pre><code>--- lock kmem/bcache stats
+lock: kmem_cpu_0: #fetch-and-add 0 #acquire() 87445
+lock: kmem_cpu_1: #fetch-and-add 0 #acquire() 174204
+lock: kmem_cpu_2: #fetch-and-add 0 #acquire() 171477
+lock: kmem_cpu_3: #fetch-and-add 0 #acquire() 55
+lock: kmem_cpu_4: #fetch-and-add 0 #acquire() 55
+lock: kmem_cpu_5: #fetch-and-add 0 #acquire() 55
+lock: kmem_cpu_6: #fetch-and-add 0 #acquire() 55
+lock: kmem_cpu_7: #fetch-and-add 0 #acquire() 55
+</code></pre>
+<p>显然在均匀收割的情况下，32 较为合理。</p>
+<h2 id="buffer-cache-hard"><a class="header" href="#buffer-cache-hard">Buffer cache (hard)</a></h2>
+<p>优化 Buffer cache 部分的锁征用问题。</p>
+<p>和 kalloc 不同的是，kalloc 是一个 CPU 占用一个 freelist ，而此处则是一个 Buffer cache 可被多个 CPU 访问。所以不能从能不共享就不共享的角度来处理，而是从尽可能降低锁的粒度的角度处理。</p>
+<p>此前是将一整个 Buffer cache 链表加锁。可以改为数组加链表，当两个进程同时访问数组的同一个位置时才加锁，这样可以细化锁的粒度，从而降低并发。</p>
+<p>换成数组加链表：</p>
+<ol>
+<li>首先根据 dev 和 blockno 生成对应索引，查看对应桶中的是否存在 blockno 。</li>
+<li>如果存在直接返回。</li>
+<li>如果不存在就选择 LRU 节点删除。</li>
+<li>取出每一个桶中的 LRU 节点(加锁)，遍历所有桶，寻找使用次数最少的节点驱逐。</li>
+<li>然后根据 key 将待查找的节点加入桶中。</li>
+</ol>
+<p>存在的问题：</p>
+<p>在多线程场景下，如果对单个链表加锁，去锁后不能保证之前取得的 LRU 节点依旧有效，因为在去锁后有可能别的节点调用该节点使得 LRU 节点更改。</p>
+<p>解决方案：</p>
+<p>在遍历桶的时候，如果桶中没有节点不可能成为 LRU 节点则直接释放锁，反之锁不释放始终保持。也就是之前锁的策略粒度太小出问题了，需要加大粒度。</p>
+<p>存在的问题：</p>
+<p>接下来是死锁的问题，两个进程同时保持并申请对方的资源时会导致死锁。上一个方案加大了锁的粒度进而导致了存在死锁的可能。</p>
+<p>死锁的四个条件：</p>
+<ol>
+<li>互斥（一个资源在任何时候只能属于一个线程）</li>
+<li>请求保持（线程在拿着一个锁的情况下，去申请另一个锁）</li>
+<li>不剥夺（外力不强制剥夺一个线程已经拥有的资源）</li>
+<li>环路等待（请求资源的顺序形成了一个环）</li>
+</ol>
+<p>可以通过释放待查找桶的锁来解决问题。但是存在多个进程同时申请获得多分缓存的情况。</p>
+<p>可以将驱逐+重分配的过程限制为单线程。也就是乐观锁。</p>
+<p>bget 的功能是，如果带查找的节点在缓存中那么直接返回，反之驱逐 LRU 节点。</p>
+
+                    <div id="giscus-container"></div>
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+                    <a rel="prev" href="../6.S081/7-lab7.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../6.S081/9-lab9.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            <a rel="prev" href="../6.S081/7-lab7.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+            <a rel="next" href="../6.S081/9-lab9.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </nav>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        window.playground_copyable = true;
+    </script>
+
+    <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var pagePath = "6.S081/8-lab8.md"
+    </script>
+
+
+    <!-- Custom JS scripts -->
+
+
+</body>
+</html>

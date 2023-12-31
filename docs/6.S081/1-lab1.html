@@ -1,0 +1,729 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="sidebar-visible no-js light">
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>Lab 1 - everystep</title>
+
+
+    <!-- Custom HTML head -->
+    
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" href="../favicon.svg">
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/chrome.css">
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="../highlight.css">
+    <link rel="stylesheet" href="../tomorrow-night.css">
+    <link rel="stylesheet" href="../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+    <link rel="stylesheet" href="../theme/style.css">
+
+
+</head>
+<body>
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "../";
+        var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        var html = document.querySelector('html');
+        html.classList.remove('no-js')
+        html.classList.remove('light')
+        html.classList.add(theme);
+        html.classList.add('js');
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="sidebar-scrollbox">
+            <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">简介</a></li><li class="chapter-item affix "><li class="part-title">🐷 造轮子</li><li class="spacer"></li><li class="chapter-item "><a href="../bitcask/index.html"><strong aria-hidden="true">1.</strong> 从零实现 Bitcask 存储引擎</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.1.</strong> Bitcask 简介</a></li><li class="chapter-item "><a href="../bitcask/p2.html"><strong aria-hidden="true">1.2.</strong> 创建 C++ 项目</a></li><li class="chapter-item "><a href="../bitcask/p3.html"><strong aria-hidden="true">1.3.</strong> 数据在内存中</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.4.</strong> 数据在磁盘上</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.5.</strong> BenchMark</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.6.</strong> 实现合并</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.7.</strong> 实现垃圾回收</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.8.</strong> hintfile 实现</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.9.</strong> 哈希表优化为多线程</a></li><li class="chapter-item "><a href="../bitcask/ch1.html"><strong aria-hidden="true">1.10.</strong> 数据在磁盘上如何存放？</a></li><li class="chapter-item "><a href="../bitcask/ch2.html"><strong aria-hidden="true">1.11.</strong> 存储引擎的接口设计</a></li><li class="chapter-item "><a href="../bitcask/ch3.html"><strong aria-hidden="true">1.12.</strong> 实现 Set、Get</a></li><li class="chapter-item "><a href="../bitcask/ch4.html"><strong aria-hidden="true">1.13.</strong> 删除逻辑和 Compact </a></li></ol></li><li class="chapter-item "><li class="part-title">🍭 操作系统</li><li class="spacer"></li><li class="chapter-item expanded "><a href="../6.S081/0-summary.html"><strong aria-hidden="true">2.</strong> 6.S081</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../6.S081/1-lab1.html" class="active"><strong aria-hidden="true">2.1.</strong> Lab 1</a></li><li class="chapter-item "><a href="../6.S081/2-lab2.html"><strong aria-hidden="true">2.2.</strong> Lab 2</a></li><li class="chapter-item "><a href="../6.S081/3-lab3.html"><strong aria-hidden="true">2.3.</strong> Lab 3</a></li><li class="chapter-item "><a href="../6.S081/4-lab4.html"><strong aria-hidden="true">2.4.</strong> Lab 4</a></li><li class="chapter-item "><a href="../6.S081/5-lab5.html"><strong aria-hidden="true">2.5.</strong> Lab 5</a></li><li class="chapter-item "><a href="../6.S081/6-lab6.html"><strong aria-hidden="true">2.6.</strong> Lab 6</a></li><li class="chapter-item "><a href="../6.S081/7-lab7.html"><strong aria-hidden="true">2.7.</strong> Lab 7</a></li><li class="chapter-item "><a href="../6.S081/8-lab8.html"><strong aria-hidden="true">2.8.</strong> Lab 8</a></li><li class="chapter-item "><a href="../6.S081/9-lab9.html"><strong aria-hidden="true">2.9.</strong> Lab 9</a></li><li class="chapter-item "><a href="../6.S081/10-lab10.html"><strong aria-hidden="true">2.10.</strong> Lab 10</a></li><li class="chapter-item "><a href="../6.S081/11-lab11.html"><strong aria-hidden="true">2.11.</strong> Lab 11</a></li></ol></li><li class="chapter-item "><li class="part-title">🚀 数据库</li><li class="chapter-item "><a href="../abyssdb/p0.html"><strong aria-hidden="true">3.</strong> 从零实现关系型数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../abyssdb/p1.html"><strong aria-hidden="true">3.1.</strong> 从 Table 开始</a></li><li class="chapter-item "><a href="../abyssdb/p2.html"><strong aria-hidden="true">3.2.</strong> Part 2. 实现 Tuple</a></li><li class="chapter-item "><a href="../abyssdb/p3.html"><strong aria-hidden="true">3.3.</strong> Part 3. 实现 Page</a></li><li class="chapter-item "><a href="../abyssdb/p4.html"><strong aria-hidden="true">3.4.</strong> Part 4. 实现 HeapFile</a></li><li class="chapter-item "><a href="../abyssdb/p5.html"><strong aria-hidden="true">3.5.</strong> Part 5. 实现 BufferPool</a></li><li class="chapter-item "><a href="../abyssdb/p6.html"><strong aria-hidden="true">3.6.</strong> Part 6. 支持 int 和 string 等数据类型。</a></li><li class="chapter-item "><a href="../abyssdb/p7.html"><strong aria-hidden="true">3.7.</strong> Part 7. 实现 Catalog</a></li></ol></li><li class="chapter-item "><a href="../6.830/1-lab0.html"><strong aria-hidden="true">4.</strong> 6.830</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.830/ans/2-lab1-ans.html"><strong aria-hidden="true">4.1.</strong> Lab 1 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/3-lab2-ans.html"><strong aria-hidden="true">4.2.</strong> Lab 2 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/4-lab3-ans.html"><strong aria-hidden="true">4.3.</strong> Lab 3 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/5-lab4-ans.html"><strong aria-hidden="true">4.4.</strong> Lab 4 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/6-lab5-ans.html"><strong aria-hidden="true">4.5.</strong> Lab 5 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/7-lab6-ans.html"><strong aria-hidden="true">4.6.</strong> Lab 6 Answers</a></li><li class="chapter-item "><a href="../6.830/cn/2-lab1.html"><strong aria-hidden="true">4.7.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/3-lab2.html"><strong aria-hidden="true">4.8.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/4-lab3.html"><strong aria-hidden="true">4.9.</strong> Lab 3 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/5-lab4.html"><strong aria-hidden="true">4.10.</strong> Lab 4 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/6-lab5.html"><strong aria-hidden="true">4.11.</strong> Lab 5 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/7-lab6.html"><strong aria-hidden="true">4.12.</strong> Lab 6 (Chinese)</a></li></ol></li><li class="chapter-item "><li class="part-title">🧊 分布式</li><li class="spacer"></li><li class="chapter-item "><a href="../6.824/0-lab0.html"><strong aria-hidden="true">5.</strong> 6.824</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.824/1-lab1-cn.html"><strong aria-hidden="true">5.1.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/1-lab1.html"><strong aria-hidden="true">5.2.</strong> Lab 1</a></li><li class="chapter-item "><a href="../6.824/2-lab2-cn.html"><strong aria-hidden="true">5.3.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/2-lab2.html"><strong aria-hidden="true">5.4.</strong> Lab 2</a></li></ol></li></ol>
+        </div>
+        <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+                        <div id="menu-bar-hover-placeholder"></div>
+            <div id="menu-bar" class="menu-bar sticky bordered">
+                <div class="left-buttons">
+                    <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="fa fa-paint-brush"></i>
+                    </button>
+                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                        <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                    </ul>
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <h1 class="menu-title">everystep</h1>
+
+                <div class="right-buttons">
+                    <a href="../print.html" title="Print this book" aria-label="Print this book">
+                        <i id="print-button" class="fa fa-print"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep" title="Git repository" aria-label="Git repository">
+                        <i id="git-repository-button" class="fa fa-github"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep/edit/master/src/6.S081/1-lab1.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <i id="git-edit-button" class="fa fa-edit"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+            <script type="text/javascript">
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+
+                // Get viewed page store
+                var viewed_key = 'mdbook-viewed';
+                var viewed_map = {};
+                try {
+                    var viewed_storage = localStorage.getItem(viewed_key);
+                    if (viewed_storage) {
+                        viewed_map = JSON.parse(viewed_storage)
+                    }
+                } catch (e) { }
+
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+
+                    // Apply viewed style
+                    if (viewed_map[link.pathname]) {
+                        link.classList.add('md-viewed')
+                    }
+                }); 
+
+                // Mark viewed after 30s
+                setTimeout(function() {
+                    viewed_map[location.pathname] = 1;
+                    localStorage.setItem(viewed_key, JSON.stringify(viewed_map));
+                }, 30000)
+            </script>
+
+            <div id="content" class="content">
+                <!-- Page table of contents -->
+                <div class="sidetoc"><nav class="pagetoc"></nav></div>
+                <main>
+                    <h1 id="lab-util"><a class="header" href="#lab-util">Lab util</a></h1>
+<p>熟悉 xv6 及其系统调用。</p>
+<p>https://pdos.csail.mit.edu/6.828/2020/labs/util.html</p>
+<p>需要阅读 xv6 book 第一章，下面是一些总结及部分翻译。</p>
+<h2 id="1-前置阅读内容总结"><a class="header" href="#1-前置阅读内容总结">1. 前置阅读内容总结</a></h2>
+<ul>
+<li>第一章：操作系统接口
+<ul>
+<li>OS 需要实现多个程序运行在同一台计算机上。OS 对硬件进程抽象，为上层应用程序提供服务。例如一个文字处理程序不需要关心正在使用哪种类型的磁盘硬件。</li>
+<li>OS 为程序共享数据，相互交互提供了基础。OS 以接口的形式向用户程序提供服务，一方面希望接口简单，另一方面希望接口提供强大功能。可以通过减少依赖的方式实现，将功能组合进而提高通用性。</li>
+<li>本书使用 xv6 来说明 OS 的具体概念。xv6 模仿了Unix的内部设计， Unix 接口设计的很好，精准且与其机制结合得很好，此外提供了很好的通用性。现代操作系统--BSD、Linux、macOS、Solaris，Windows 都和Unix的接口类似。</li>
+<li>xv6 采用了传统的内核形式，为运行中的程序提供服务的特殊程序。每一个运行中的程序被称之为进程，拥有指令，数据和栈。指令实现了程序的计算。数据是计算作用的变量。堆栈组织了程序的过程调用。进程可以有多个，但通常只有一个内核。</li>
+<li>当一个进程需要调用内核服务时，首先调用一个系统调用，即操作系统接口中的一个接口。此后系统调用进入内核，内核执行完成后返回。因此，一个进程在用户空间和内核空间中交替执行。</li>
+<li>内核使用 CPU 提供的硬件保护机制来确保每个进程在用户空间执行只能访问自己的内存。内核实现了上述保护硬件权限保护功能。相较于用户程序而言，内核程序拥有更多的权限。用户程序调用系统调用时，内核会提高权限级别并执行内核中预设的功能。</li>
+<li>用户态下所看到的接口是内核提供的系统调用。xv6 内核提供了Unix内核传统上提供的服务和系统调用的一个子集。下面列出了xv6的所有系统调用。
+<ul>
+<li><code>int fork()</code> 创建一个进程，返回子进程的  PID. </li>
+<li><code>int exit(int status)</code>  终止当前进程，将状态报告给 wait ，没有返回值。</li>
+<li><code>int wait(int *status)</code> 等待子进程退出，<code>*status</code> 表示退出状态，返回子进程的 PID 。 </li>
+<li><code>int kill(int pid)</code> 终止进程PID。返回0，或-1为错误。</li>
+<li><code>int getpid()</code> 返回当前进程的PID。</li>
+<li><code>int sleep(int n)</code> 暂停n个时钟。</li>
+<li><code>int exec(char *file, char *argv[])</code> 加载一个文件并带着参数执行，仅在出错时返回。 </li>
+<li><code>char *sbrk(int n)</code> 为进程内存扩大 n 个字节，返回新内存的起点。</li>
+<li><code>int open(char *file, int flags)</code> 打开一个文件；flags 表示读/写；返回一个fd（文件描述符）。</li>
+<li><code>int write(int fd, char *buf, int n)</code>  从buf写n个字节到文件描述符fd；返回n。</li>
+<li><code>int read(int fd, char *buf, int n)</code>  向 buf 中读取n个字节；返回读取的数量；如果文件结束则返回 0 。</li>
+<li><code>int close(int fd)</code> 释放打开的文件fd。</li>
+<li><code>int dup(int fd)</code> 返回一个新的文件描述符，指的是与 fd 相同的文件。</li>
+<li><code>int pipe(int p[])</code> 创建一个管道，把读/写文件描述符放在p[0]和p[1]中。</li>
+<li><code>int chdir(char *dir)</code> 改变当前目录。</li>
+<li><code>int mkdir(char *dir)</code> 创建一个新的目录。</li>
+<li><code>int mknod(char *file, int, int)</code>  创建一个设备文件。</li>
+<li><code>int fstat(int fd, struct stat *st)</code> 将打开的文件的信息放入<code>*st</code>。 </li>
+<li><code>int stat(char *file, struct stat *st)</code> 将一个命名的文件的信息放入<code>*st</code>。 </li>
+<li><code>int link(char *file1, char *file2)</code> 为文件file1创建另一个名字（file2）。 </li>
+<li><code>int unlink(char *file)</code> 删除一个文件。</li>
+<li>通常若不做其他说明，返回 0 表示没有错误，返回 1 表示存在错误。</li>
+</ul>
+</li>
+<li>后续会结合 xv6 代码会详解服务，进程、内存、文件描述符、管道和文件系统，shell 等概念。</li>
+<li>shell 是用户程序，并非内核的一部分。shell 在用户态下读取命令并执行。shell 的种类有很多，可以随时被替换。xv6 shell 是 Unix Bourne shell 的一个简单实现，具体代码可以在 <code>user/sh.c:1</code> 找到。</li>
+</ul>
+</li>
+<li>1.1 进程和内存
+<ul>
+<li>一个xv6进程由用户空间内存（指令、数据和堆栈）和内核专用的每个进程状态组成。 xv6 采用时间共享的方式来调度进程，从执行的进程组中透明地切换可用的CPU。 当一个进程不执行时，xv6 会保存该进程的 CPU 寄存器，当它下次运行该进程时再恢复这些寄存器。内核通过进程标识符 PID 同每个进程相关联。</li>
+<li>进程使用 fork 可以创建新的进程，fork 使得新进程获得了调用进程内存的精确拷贝，包括指令和数据。fork 在原流程和新流程中都会返回。在原进程中，fork 返回新进程的 PID 。在新进程中，fork 返回 0 。原进程和新进程通常被称为父进程和子进程。</li>
+<li>exit 系统调用使当前进程停止执行，并释放所打开的文件资源，例如内存。exit 的参数是一个整数，通常 0 表示成功，1 表示失败。系统调用返回当前进程的已退出（或已终止）子进程的 PID，并将子进程的退出状态复制到传递给 wait 的地址；如果调用者的子进程没有一个退出，则等待一个退出。如果调用者没有子进程，<code>wait</code>立即返回-1。如果父进程不关心子进程的退出状态，则可以传递一个 0 地址<code>wait</code>。</li>
+<li>父子进程的打印顺序是随机的，取决于父子进程哪个更快调用。子进程推出后父进程返回，随后父进程打印。</li>
+<li>虽然子进程与父进程具有相同的内存内容，但父进程和子进程使用单独的内存和单独的寄存器执行：更改一个变量不会影响另一个变量。例如，当<code>wait</code>的返回值存储在父进程的<code>pid</code>中时，它不会更改子进程中的变量<code>pid</code>。子进程中<code>pid</code>的值仍然为零。</li>
+<li>系统调用将调用进程的内存替换为从文件系统中存储的文件中加载的新内存映像。文件必须具有特定的格式，该格式指定文件的哪一部分保存指令，哪一部分是数据，在哪个指令开始等。Xv6使用ELF格式。通常文件是编译程序源代码的结果。当成功时，它不返回调用程序；相反，从文件加载的指令在ELF标头中声明的切入点开始执行。<code>exec</code>有两个参数：分别是可执行文件的文件名和字符串参数数组。例如：</li>
+</ul>
+</li>
+</ul>
+<pre><code>char *argv[3];
+
+argv[0] = &quot;echo&quot;;
+argv[1] = &quot;hello&quot;;
+argv[2] = 0;
+exec(&quot;/bin/echo&quot;, argv);
+printf(&quot;exec error\n&quot;);
+</code></pre>
+<ul>
+<li>这个片段将调用程序替换为<code>/bin/echo</code>运行参数列表的程序实例<code>echo</code> <code>hello</code>。大多数程序忽略参数数组的第一个元素，一般是程序的名称。</li>
+<li>xv6 shell 使用上面的调用来代表用户运行程序。shell 的主要结构很简单，参见<code>main</code>。主循环读取用户的一行输入，然后调用<code>fork</code>，创建 shell 进程的副本。父进程调用<code>wait</code>，而子进程运行命令。例如，如果在 shell 中输入<code>echo hello</code>，则调用<code>runcmd</code>时将使用“<code>echo hello</code>”作为参数。<code>runcmd</code>运行实际的命令。对于&quot;<code>echo hello</code>&quot;，它将调用<code>exec</code>。如果<code>exec</code>成功，则子进程将执行来自<code>echo</code>而不是<code>runcmd</code>的指令。在某些时候，<code>echo</code>将调用<code>out</code>，这将导致父进程从<code>main</code>中的<code>wait</code>返回。</li>
+<li>为什么没有在一次调用中合并；稍后将看到shell在其I/O重定向的实现中利用了分离。为了避免创建重复进程然后立即替换它（用<code>exec</code>）的浪费，操作内核通过使用虚拟内存技术（如写时复制）来优化此用例的<code>fork</code>的实现。</li>
+<li>Xv6隐式分配大多数用户空间内存：分配父内存的子副本所需的内存，并分配足够的内存来保存可执行文件。在运行时需要更多内存的进程可以调用<code>sbrk（n）</code>将其数据内存增加<code>n</code>个字节；返回新内存的位置。</li>
+<li>1.2 I/O和文件描述符
+<ul>
+<li>文件描述符是一个整数，用来表示文件，目录或设备。xv6  使用文件描述符作为每个进程表的索引。每个进程都拥有。</li>
+<li>在内部，xv6内核使用文件描述符作为每个进程表的索引，每个进程都有一个自己的文件描述符空间，并从零开始编号。通常情况下一个进程从文件描述符0（标准输入）读取信息，将输出写入文件描述符1（标准输出），并将错误信息写入文件描述符2（标准错误）。shell 利用约定来实现I/O重定向和管道。shell确保它始终打开三个文件描述符，默认情况下是控制台的文件描述符。</li>
+<li>调用<code>read(fd, buf, n)</code>从文件描述符<code>fd</code>中最多读取<code>n</code>个字节，将其复制到<code>buf</code>中，并返回读取的字节数。指向一个文件的每个文件描述符都有一个与之相关的偏移量。读取 &quot;从当前文件的偏移量读取数据，然后将该偏移量向前推进多少个字节：随后的 &quot;读取 &quot;将返回第一个 &quot;读取 &quot;所返回的字节之后的数据。当没有更多的字节可读时，<code>read</code>返回0，表示文件的结束。</li>
+<li>调用 <code>write(fd，buf，n)</code>将<code>n</code>个字节从<code>buf</code>写入文件描述符<code>fd</code>并返回写入的字节数。只有在发生错误时才写入少于<code>n</code>个字节。与<code>read</code>一样，<code>write</code>将数据写入当前文件偏移量，然后将偏移量向前推进写入的字节数：每次<code>写入</code>在前一次停止的地方进行。</li>
+<li>下面的程序片段（构成程序<code>cat</code>的本质）将数据从其标准输入复制到其标准输出。如果发生错误，它会向标准错误写入一条消息。</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-c">char buf[512];
+int n;
+
+for(;;){
+  n = read(0, buf, sizeof buf);
+  if(n == 0)
+    break;
+  if(n &lt; 0){
+    fprintf(2, &quot;read error\n&quot;);
+    exit(1);
+  }
+  if(write(1, buf, n) != n){
+    fprintf(2, &quot;write error\n&quot;);
+    exit(1);
+  }
+}
+</code></pre>
+<ul>
+<li>在代码片段中需要注意的重要一点是，<code>cat</code>不知道是在读取文件、控制台还是管道。同样，<code>cat</code>也不知道它是在打印到控制台、文件还是其他什么。文件描述符的使用以及文件描述符0输入和文件描述符1输出的约定允许<code>cat</code>的简单实现。</li>
+<li>这个<code>close</code>系统调用释放了一个文件描述符，使得它可以在将来的<code>open</code>、<code>tube</code>或<code>dup</code>系统调用中自由使用（见下文）。新分配的文件描述符总是当前进程中编号最低的未使用描述符。</li>
+<li>文件描述符和交互使I/O重定向易于实现。<code>fork</code>复制父进程的文件描述符表及其内存，以便子进程开始时与父进程完全相同的打开文件。系统调用替换调用进程的内存，但保留其文件表。这种行为允许shell通过 fork 来实现，在子进程中重新打开选定的文件描述符，然后调用<code>exec</code>来运行新程序。以下是shell为命令<code>cat</code> <code>&lt;</code> <code>input.txt</code>运行的代码的简化版本：</li>
+</ul>
+<pre><code>char *argv[2];
+
+argv[0] = &quot;cat&quot;;
+argv[1] = 0;
+if(fork() == 0) {
+  close(0);
+  open(&quot;input.txt&quot;, O_RDONLY);
+  exec(&quot;cat&quot;, argv);
+}
+</code></pre>
+<ul>
+<li>子进程关闭文件描述符 0 后，<code>open</code>保证为新打开的文件使用该文件描述符<code>input.txt</code>：0将是最小的可用文件描述符。<code>cat</code>然后执行文件描述符0（标准输入）引用<code>input.txt</code>。父进程的文件描述符不会被这个序列改变，因为它只修改子进程的描述符。</li>
+<li>xv6 shell中的I/O重定向代码就是这样工作的。回想一下，在代码的这一点上，shell已经 fork 了子shell，<code>runcmd</code>将调用<code>exec</code>来加载新程序。</li>
+<li>第二个参数<code>open</code>由一组标志组成，表示为位，用于控制<code>open</code>的作用。可能的值在文件控制（fcntl）头中定义：<code>O_RDONLY</code>、<code>O_WRONLY</code>、<code>O_RDWR</code>、<code>O_CREATE</code>和<code>O_TRUNC</code>，指示<code>open</code>打开文件以进行读取或写入，或同时进行读取和写入，如果文件不存在则创建文件，并将文件截断为零长度。</li>
+<li>现在应该很清楚为什么<code>fork</code>和<code>exec</code>是分开的调用是有帮助的：在两者之间，shell 有机会重定向子进程的I/O而不会干扰主shell的I/O设置。人们可以想象一个假设的组合<code>forkexec</code>系统调用，但是用这样的调用进行I/O重定向的选项看起来很尴尬。shell可以在调用<code>forkexec</code>之前修改自己的I/O设置（然后取消这些修改）；或者<code>forkexec</code>可以将I/O重定向的指令作为参数；或者（最不吸引人的）每个程序（如<code>cat</code>）都可以被教导做自己的I/O重定向。</li>
+<li>尽管<code>fork</code>复制了文件描述符表，但每个基础文件偏移量都在父文件和子文件之间共享。</li>
+</ul>
+<pre><code>if(fork() == 0) {
+  write(1, &quot;hello &quot;, 6);
+  exit(0);
+} else {
+  wait(0);
+  write(1, &quot;world\n&quot;, 6);
+}
+</code></pre>
+<ul>
+<li>在这个片段的末尾，附加到文件描述符1的文件将包含数据<code>hello</code> <code>world</code>。父级中的<code>write</code>（由于<code>wait</code>，只有在子级完成后才运行）从子级<code>写</code>停止的地方开始。这种行为有助于从shell命令序列中产生顺序输出，例如<code>（echo</code> <code>hello</code>；<code>echo</code> <code>world）</code> <code>&gt;output.txt</code>。</li>
+<li>这个<code>dup</code>系统调用复制了一个现有的文件描述符，返回一个新的文件描述符，它引用同一个底层I/O对象。两个文件描述符共享一个偏移量，就像<code>fork</code>复制的文件描述符一样。这是另一种将<code>hello</code> <code>world</code>写入文件的方法：</li>
+</ul>
+<pre><code>fd = dup(1);
+write(1, &quot;hello &quot;, 6);
+write(fd, &quot;world\n&quot;, 6);
+</code></pre>
+<ul>
+<li>如果两个文件描述符通过一系列<code>fork</code>和<code>dup</code>调用从相同的原始文件描述符派生，则它们共享偏移量。否则，文件描述符不共享偏移量，即使它们是由对同一文件的<code>打开</code>调用引起的。<code>dup</code>允许shell实现如下命令：<code>ls</code> <code>现有文件</code> <code>非现有文件</code> <code>&gt;</code> <code>tmp1</code> <code>2&gt;&amp;1</code>。<code>2&gt;&amp;1</code>告诉shell给命令一个文件描述符2，它是描述符1的副本。现有文件的名称和不存在文件的错误消息都将显示在文件<code>tmp1</code>中。xv6 shell不支持错误文件描述符的I/O重定向，但现在您知道如何实现它了。</li>
+<li>文件描述符是一个强大的抽象，因为它们隐藏了它们所连接的细节：写入文件描述符1的进程可能正在写入文件、控制台等设备或管道。</li>
+<li>1.3 管道
+<ul>
+<li>A是一个小内核缓冲区，作为一对文件描述符暴露给进程，一个用于读取，一个用于写入。将数据写入管道的一端可以从管道的另一端读取数据。管道为进程提供了一种通信方式。</li>
+<li>下面的示例代码运行程序<code>wc</code>，其标准输入连接到管道的读取端。</li>
+</ul>
+</li>
+</ul>
+<pre><code>int p[2];
+char *argv[2];
+
+argv[0] = &quot;wc&quot;;
+argv[1] = 0;
+
+pipe(p);
+if(fork() == 0) {
+  close(0);
+  dup(p[0]);
+  close(p[0]);
+  close(p[1]);
+  exec(&quot;/bin/wc&quot;, argv);
+} else {
+  close(p[0]);
+  write(p[1], &quot;hello world\n&quot;, 12);
+  close(p[1]);
+}
+</code></pre>
+<ul>
+<li>程序调用<code>pipe</code>，它创建一个新的管道，并记录数组<code>p</code>中的读写文件描述符。在<code>fork</code>之后，父级和子级都有引用管道的文件描述符。子级调用<code>over</code>和<code>dup</code>使文件描述符零引用管道的读取端，关闭<code>p</code>中的文件描述符，并调用<code>exec</code>运行<code>wc</code>。当<code>wc</code>从其标准输入读取时，它从管道读取。父级关闭管道的读取端，写入管道，然后关闭写入端。</li>
+<li>如果没有可用的数据，管道上的<code>读取</code>等待写入数据或关闭所有引用写入端的文件描述符；在后一种情况下，<code>读取</code>将返回0，就像到达数据文件的末尾一样。<code>读取</code>阻塞直到新数据不可能到达的事实是子级在执行上述<code>wc</code>之前关闭管道的写入端很重要的原因之一：如果<code>wc</code>的文件描述符之一引用管道的写入端，<code>wc</code>将永远不会看到文件结束。</li>
+<li>xv6 shell以类似于上述代码的方式实现<code>grep fork sh. c|wc-l</code>之类的管道。子进程创建一个管道来连接管道的左端和右端。然后它调用管道的左端的<code>fork</code>和<code>runcmd</code>，调用管道的右端的<code>fork</code>和<code>runcmd</code>，并等待两者都完成。管道的右端可能是一个命令，它本身包括一个管道（例如，<code>a</code> <code>|</code> <code>b</code> <code>|</code> <code>c）</code>，它本身分叉两个新的子进程（一个用于<code>b</code>，一个用于<code>c</code>）。因此，shell可以创建一个进程树。这棵树的叶子是命令，内部节点是等待左右子进程完成的进程。</li>
+</ul>
+<pre><code>echo hello world | wc
+</code></pre>
+<ul>
+<li>可以在没有管道的情况下实现</li>
+</ul>
+<pre><code>echo hello world &gt;/tmp/xyz; wc &lt;/tmp/xyz
+</code></pre>
+<ul>
+<li>在这种情况下，管道与临时文件相比至少有三个优点。首先，管道会自动清理自己；使用文件重定向，shell在完成时必须小心删除<code>/tmp/xyz</code>。其次，管道可以传递任意长的数据流，而文件重定向需要磁盘上足够的可用空间来存储所有数据。第三，管道允许并行执行管道阶段，而文件方法要求第一个程序在第二个程序启动之前完成。</li>
+<li>1.4 文件系统
+<ul>
+<li>xv6文件系统提供数据文件，其中包含未解释的字节数组，以及目录，其中包含对数据文件和其他目录的命名引用。这些目录形成一棵树，从一个名为的特殊目录开始。a like<code>/a/b/c</code>指的是根目录<code>/</code>中名为<code>a</code>的目录内名为<code>b</code>的目录内名为<code>c</code>的文件或目录。不以<code>/</code>开头的路径相对于调用进程的路径进行评估，可以通过<code>chdir</code>系统调用更改。这两个代码片段打开同一个文件（假设所有涉及的目录都存在）：</li>
+</ul>
+</li>
+</ul>
+<pre><code>chdir(&quot;/a&quot;);
+chdir(&quot;b&quot;);
+open(&quot;c&quot;, O_RDONLY);
+
+open(&quot;/a/b/c&quot;, O_RDONLY);
+</code></pre>
+<ul>
+<li>第一个片段将进程的当前目录更改为<code>/a/b</code>；第二个片段既不引用也不更改进程的当前目录。</li>
+<li>有创建新文件和目录的系统调用：<code>mkdir</code>创建一个新目录，使用<code>O_CREATE</code>标志<code>打开</code>创建一个新数据文件，<code>mKnod</code>创建一个新设备文件。</li>
+</ul>
+<pre><code>mkdir(&quot;/dir&quot;);
+fd = open(&quot;/dir/file&quot;, O_CREATE|O_WRONLY);
+close(fd);
+mknod(&quot;/console&quot;, 1, 1);
+</code></pre>
+<ul>
+<li><code>mKnod</code>创建一个引用设备的特殊文件。与设备文件关联的是主要和次要设备号（<code>mKnod</code>的两个参数），它们唯一标识内核设备。当进程稍后打开设备文件时，内核将<code>读取</code>和<code>写入</code>系统调用转移到内核设备实现，而不是将它们传递给文件系统。</li>
+<li>文件名与文件本身不同；同一个底层文件，称为an，可以有多个名称。每个链接由目录中的一个条目组成；该条目包含文件名和对inode的引用。inode包含关于文件的内容，包括其类型（文件或目录或设备）、长度、文件内容在磁盘上的位置以及文件链接的数量。</li>
+<li>该<code>fstat</code>系统调用从文件描述符引用的inode中检索信息。它填充一个<code>struct</code> <code>stat</code>，在<code>stat. h</code>中定义为：</li>
+</ul>
+<pre><code>#define T_DIR     1   // Directory
+#define T_FILE    2   // File
+#define T_DEVICE  3   // Device
+
+struct stat {
+  int dev;     // File system's disk device
+  uint ino;    // Inode number
+  short type;  // Type of file
+  short nlink; // Number of links to file
+  uint64 size; // Size of file in bytes
+};
+</code></pre>
+<ul>
+<li>这个<code>link</code>系统调用创建了另一个文件系统名，它引用了与现有文件相同的inode。这个片段创建了一个名为<code>a</code>和<code>b</code>的新文件。</li>
+</ul>
+<pre><code>open(&quot;a&quot;, O_CREATE|O_WRONLY);
+link(&quot;a&quot;, &quot;b&quot;);
+</code></pre>
+<ul>
+<li>读取或写入<code>a</code>与读取或写入<code>b</code>相同。每个inode由唯一的 <code>_inode_ _number_</code> 标识。在上面的代码序列之后，可以通过检查<code>fstat</code>的结果来确定<code>a</code>和<code>b</code>引用相同的底层内容：两者都将返回相同的inode编号（<code>ino</code>），并且<code>nlink</code>计数将设置为2。</li>
+<li>该<code>解除关联</code>系统调用从文件系统中删除一个名称。只有当文件的链接计数为零且没有文件描述符引用它时，才释放文件的inode和保存其内容的磁盘空间</li>
+</ul>
+<pre><code>unlink(&quot;a&quot;);
+</code></pre>
+<ul>
+<li>到最后一个代码序列，使inode和文件内容可以作为<code>b</code>访问。此外，</li>
+</ul>
+<pre><code>fd = open(&quot;/tmp/xyz&quot;, O_CREATE|O_RDWR);
+unlink(&quot;/tmp/xyz&quot;);
+</code></pre>
+<ul>
+<li>是一种创建没有名称的临时inode的惯用方法，该inode将在进程关闭<code>fd</code>或退出时被清理。</li>
+<li>Unix提供了可从shell调用的文件实用程序作为用户级程序，例如<code>mkdir</code>、<code>ln</code>和<code>rm</code>。这种设计允许任何人通过添加新的用户级程序来扩展命令行界面。事后看来，这个计划似乎很明显，但在Unix时代设计的其他系统经常将这样的命令构建到shell中（并将shell构建到内核中）。</li>
+<li>一个例外是<code>cd</code>，它内置在shell中。<code>cd</code>必须改变shell本身的当前工作目录。如果<code>cd</code>作为常规命令运行，那么shell将分叉一个子进程，子进程将运行<code>cd</code>，<code>cd</code>将改变_子_的工作目录。父的（即shell的）工作目录不会改变。</li>
+<li>1.5 现实世界
+<ul>
+<li>Unix结合了“标准”文件描述符、管道和方便的shell语法，这是编写通用可重用程序的一个重大进步。这个想法引发了一种“软件工具”文化，这种文化是Unix强大和流行的主要原因，shell是第一个所谓的“脚本语言”。Unix系统调用接口今天仍然存在于BSD、Linux和macOS等系统中。</li>
+<li>Unix系统调用接口已经通过可移植操作系统接口（POSIX）标准进行了标准化。Xv6_不_符合POSIX标准：它缺少许多系统调用（包括基本的系统调用，如<code>lsearch</code>），并且它提供的许多系统调用与标准不同。我们对xv6的主要目标是简单和清晰，同时提供一个简单的UNIX系统调用接口。一些人已经扩展了xv6，增加了一些系统调用和一个简单的C库，以便运行基本的Unix程序。然而，现代内核提供了比xv6更多的系统调用和更多种类的内核服务。例如，它们支持网络、窗口系统、用户级线程、许多设备的驱动程序等。现代内核不断快速发展，并提供POSIX以外的许多功能。</li>
+<li>Unix通过一组文件名和文件描述符接口统一访问多种类型的资源（文件、目录和设备）。这个想法可以扩展到更多种类的资源；一个很好的例子是Plan 9，它将“资源就是文件”的概念应用于网络、图形等。然而，大多数Unix派生的操作系统并没有遵循这条路线。</li>
+<li>文件系统和文件描述符是强大的抽象。即便如此，操作系统接口还有其他模型。Unix的前身Multics对文件存储进行了抽象，使其看起来像内存，从而产生了非常不同的界面风格。Multics设计的复杂性直接影响了Unix的设计者，他们的目标是构建更简单的东西。</li>
+<li>Xv6没有提供用户或保护一个用户免受另一个用户的概念；在Unix术语中，所有xv6进程都以root身份运行。本书探讨了xv6如何实现其类Unix接口，但这些思想和概念不仅仅适用于Unix。任何操作系统都必须将进程多路复用到底层硬件上，将进程相互隔离，并提供受控进程间通信的机制。在学习了xv6之后，您应该能够查看其他更复杂的操作系统，并了解这些系统中xv6背后的概念。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-实验"><a class="header" href="#2-实验">2. 实验</a></h2>
+<h3 id="sleep-easy"><a class="header" href="#sleep-easy">sleep (easy)</a></h3>
+<p>在 xv6 中实现 Unix 中的 sleep 命令。</p>
+<pre><code class="language-cpp">int
+main(int argc, char *argv[]) {
+    if (argc != 2) {
+        fprintf(2, &quot;input error!\n&quot;);
+        exit(1);
+    }else {
+        int k = atoi(argv[1]);
+        sleep(k);
+    }
+    exit(0);
+}
+</code></pre>
+<pre><code>$ sleep 2 
+</code></pre>
+<p>argc = 2
+argv[0] = sleep
+argv[1] = 2</p>
+<h3 id="pingpong-easy"><a class="header" href="#pingpong-easy">pingpong (easy)</a></h3>
+<pre><code class="language-cpp">#include &quot;kernel/types.h&quot;
+#include &quot;kernel/stat.h&quot;
+#include &quot;user/user.h&quot;
+
+int
+main(int argc, char *argv[]) {
+    int p2c[2], c2p[2];
+    pipe(p2c); pipe(c2p);
+    char buf[64];
+
+    if (fork() &gt; 0) {
+        write(p2c[1], &quot;ping&quot;, 4);
+        read(c2p[0], buf, 4);
+        printf(&quot;%d: received %s\n&quot;, getpid(), buf);
+    }else {
+        read(p2c[0], buf, 4);
+        printf(&quot;%d: received %s\n&quot;, getpid(), buf);
+        write(c2p[1], &quot;pong&quot;, 4);
+    }
+    exit(0);
+}
+</code></pre>
+<h3 id="primes-moderatehard"><a class="header" href="#primes-moderatehard">primes (moderate)/(hard)</a></h3>
+<pre><code class="language-cpp">#include &quot;kernel/types.h&quot;
+#include &quot;kernel/stat.h&quot;
+#include &quot;user/user.h&quot;
+
+void prime(int rd){
+    int n;
+    read(rd, &amp;n, 4);
+    printf(&quot;prime %d\n&quot;, n);
+    int created = 0;
+    int p[2];
+    int num;
+    while(read(rd, &amp;num, 4) != 0){
+        if(created == 0){
+            pipe(p);
+            created = 1;
+            int pid = fork();
+            if(pid == 0){
+                close(p[1]);
+                prime(p[0]);
+                return;
+            }else{
+                close(p[0]);
+            }
+        }
+        if(num % n != 0){
+            write(p[1], &amp;num, 4);
+        }
+    }
+    close(rd);
+    close(p[1]);
+    wait(0);
+}
+
+int
+main(int argc, char *argv[]){
+    int p[2];
+    pipe(p);
+    // 父进程
+    if(fork() != 0){
+        close(p[0]);
+        for(int i = 2; i &lt;= 35; i++){
+            // 第一个参数是文件描述符
+            // 第二个参数是数据的指针
+            // 第三个参数是要写入的字节数
+            write(p[1], &amp;i, 4);
+        }
+        close(p[1]);
+        wait(0);
+    }else{
+        // 子进程
+        close(p[1]);
+        prime(p[0]);
+        close(p[0]);
+    }
+    exit(0);
+}
+</code></pre>
+<h3 id="find-moderate"><a class="header" href="#find-moderate">find (moderate</a></h3>
+<p>照着 ls.c 改就行了。</p>
+<pre><code class="language-cpp">#include &quot;kernel/types.h&quot;
+#include &quot;kernel/stat.h&quot;
+#include &quot;user/user.h&quot;
+#include &quot;kernel/fs.h&quot;
+
+char* fmtname(char * path)
+{
+    static char buf[DIRSIZ+1];
+    char *p;
+    
+    for (p = path + strlen(path); p &gt;= path &amp;&amp; *p != '/'; p--);
+    p ++;
+    if (strlen(p) &gt;= DIRSIZ) return p;
+    memmove(buf, p, strlen(p));
+    buf[strlen(p)] = 0;
+    return buf;
+}
+
+void
+find(char *path,char *name)
+{
+  char buf[512], *p;
+  int fd;
+  struct dirent de;
+  struct stat st;
+
+  if((fd = open(path, 0)) &lt; 0){
+    fprintf(2, &quot;ls: cannot open %s\n&quot;, path);
+    return;
+  }
+
+  if(fstat(fd, &amp;st) &lt; 0){
+    fprintf(2, &quot;ls: cannot stat %s\n&quot;, path);
+    close(fd);
+    return;
+  }
+
+  switch(st.type){
+  case T_FILE:
+    if (strcmp(fmtname(path), name) == 0) printf(&quot;%s\n&quot;, path);
+    break;
+
+  case T_DIR:
+    if(strlen(path) + 1 + DIRSIZ + 1 &gt; sizeof buf){
+      printf(&quot;ls: path too long\n&quot;);
+      break;
+    }
+    strcpy(buf, path);
+    p = buf+strlen(buf);
+    *p++ = '/';
+    while(read(fd, &amp;de, sizeof(de)) == sizeof(de)){
+      if(de.inum == 0)
+        continue;
+      memmove(p, de.name, DIRSIZ);
+      p[DIRSIZ] = 0;
+      // 忽略当前目录和父目录
+      if (!strcmp(de.name, &quot;.&quot;) || !strcmp(de.name, &quot;..&quot;)) continue;
+      find(buf, name);
+    }
+    break;
+  }
+  close(fd);
+}
+
+int
+main(int argc, char *argv[])
+{
+    if (argc != 3) {
+        fprintf(2, &quot;usage: find [path] [patten]\n&quot;);
+        exit(1);
+    }
+    find(argv[1], argv[2]);
+    exit(0);
+}
+</code></pre>
+<h3 id="xargs-moderate"><a class="header" href="#xargs-moderate">xargs (moderate)</a></h3>
+<pre><code>$ echo hello | xargs echo aa aaa aaa
+aa aaa aaa hello
+
+argv[0]: xargs
+argv[1]: echo
+argv[2]: aa
+argv[3]: aaa
+argv[4]: aaa    
+</code></pre>
+<pre><code class="language-cpp">#include &quot;kernel/types.h&quot;
+#include &quot;kernel/stat.h&quot;
+#include &quot;user/user.h&quot;
+
+
+int
+main(int argc, char *argv[]) {
+    if(argc &lt; 2) {
+        printf(&quot;Usage: xargs [command]\n&quot;);
+        exit(-1);
+    }
+    // 拿到当前进程的标准化输入
+    char buf[16];
+    read(0, buf, 16);
+
+    // 构造完整参数
+    char *xargv[16];
+    int xargc = 0;
+    for (int i = 1; i &lt; argc; i++) {
+        xargv[xargc++] = argv[i];
+    }
+
+    // 遍历标准输入
+    char *p = buf;
+    for (int i = 0; i &lt; 16; i++) {
+        if (buf[i] == '\n') {
+            if (fork() &gt; 0) {
+                p = &amp;buf[i + 1];
+                wait(0);
+            }else {
+                // 把标准输入放入指定位置
+                buf[i] = 0;
+                xargv[xargc] = p; 
+                xargc++;
+                xargv[xargc] = 0;
+                xargc++;
+
+                exec(xargv[0] , xargv);
+                exit(0);
+            }
+        }
+    }
+    wait(0);
+    exit(0);
+}
+</code></pre>
+<pre><code>$ ./grade-lab-util
+make: 'kernel/kernel' is up to date.
+== Test sleep, no arguments == sleep, no arguments: OK (2.8s)
+== Test sleep, returns == sleep, returns: OK (0.8s)
+== Test sleep, makes syscall == sleep, makes syscall: OK (0.8s)
+== Test pingpong == pingpong: OK (1.1s)
+== Test primes == primes: OK (0.9s)
+== Test find, in current directory == find, in current directory: OK (1.0s)
+== Test find, recursive == find, recursive: OK (1.1s)
+== Test xargs == xargs: OK (1.1s)
+== Test time ==
+time: OK
+Score: 100/100
+</code></pre>
+
+                    <div id="giscus-container"></div>
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+                    <a rel="prev" href="../6.S081/0-summary.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../6.S081/2-lab2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            <a rel="prev" href="../6.S081/0-summary.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+            <a rel="next" href="../6.S081/2-lab2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </nav>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        window.playground_copyable = true;
+    </script>
+
+    <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var pagePath = "6.S081/1-lab1.md"
+    </script>
+
+
+    <!-- Custom JS scripts -->
+
+
+</body>
+</html>

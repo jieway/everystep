@@ -1,0 +1,511 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="sidebar-visible no-js light">
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>Lab 2 - everystep</title>
+
+
+    <!-- Custom HTML head -->
+    
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" href="../favicon.svg">
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/chrome.css">
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="../highlight.css">
+    <link rel="stylesheet" href="../tomorrow-night.css">
+    <link rel="stylesheet" href="../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+    <link rel="stylesheet" href="../theme/style.css">
+
+
+</head>
+<body>
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "../";
+        var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        var html = document.querySelector('html');
+        html.classList.remove('no-js')
+        html.classList.remove('light')
+        html.classList.add(theme);
+        html.classList.add('js');
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="sidebar-scrollbox">
+            <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">简介</a></li><li class="chapter-item affix "><li class="part-title">🐷 造轮子</li><li class="spacer"></li><li class="chapter-item "><a href="../bitcask/index.html"><strong aria-hidden="true">1.</strong> 从零实现 Bitcask 存储引擎</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.1.</strong> Bitcask 简介</a></li><li class="chapter-item "><a href="../bitcask/p2.html"><strong aria-hidden="true">1.2.</strong> 创建 C++ 项目</a></li><li class="chapter-item "><a href="../bitcask/p3.html"><strong aria-hidden="true">1.3.</strong> 数据在内存中</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.4.</strong> 数据在磁盘上</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.5.</strong> BenchMark</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.6.</strong> 实现合并</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.7.</strong> 实现垃圾回收</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.8.</strong> hintfile 实现</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.9.</strong> 哈希表优化为多线程</a></li><li class="chapter-item "><a href="../bitcask/ch1.html"><strong aria-hidden="true">1.10.</strong> 数据在磁盘上如何存放？</a></li><li class="chapter-item "><a href="../bitcask/ch2.html"><strong aria-hidden="true">1.11.</strong> 存储引擎的接口设计</a></li><li class="chapter-item "><a href="../bitcask/ch3.html"><strong aria-hidden="true">1.12.</strong> 实现 Set、Get</a></li><li class="chapter-item "><a href="../bitcask/ch4.html"><strong aria-hidden="true">1.13.</strong> 删除逻辑和 Compact </a></li></ol></li><li class="chapter-item "><li class="part-title">🍭 操作系统</li><li class="spacer"></li><li class="chapter-item expanded "><a href="../6.S081/0-summary.html"><strong aria-hidden="true">2.</strong> 6.S081</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.S081/1-lab1.html"><strong aria-hidden="true">2.1.</strong> Lab 1</a></li><li class="chapter-item expanded "><a href="../6.S081/2-lab2.html" class="active"><strong aria-hidden="true">2.2.</strong> Lab 2</a></li><li class="chapter-item "><a href="../6.S081/3-lab3.html"><strong aria-hidden="true">2.3.</strong> Lab 3</a></li><li class="chapter-item "><a href="../6.S081/4-lab4.html"><strong aria-hidden="true">2.4.</strong> Lab 4</a></li><li class="chapter-item "><a href="../6.S081/5-lab5.html"><strong aria-hidden="true">2.5.</strong> Lab 5</a></li><li class="chapter-item "><a href="../6.S081/6-lab6.html"><strong aria-hidden="true">2.6.</strong> Lab 6</a></li><li class="chapter-item "><a href="../6.S081/7-lab7.html"><strong aria-hidden="true">2.7.</strong> Lab 7</a></li><li class="chapter-item "><a href="../6.S081/8-lab8.html"><strong aria-hidden="true">2.8.</strong> Lab 8</a></li><li class="chapter-item "><a href="../6.S081/9-lab9.html"><strong aria-hidden="true">2.9.</strong> Lab 9</a></li><li class="chapter-item "><a href="../6.S081/10-lab10.html"><strong aria-hidden="true">2.10.</strong> Lab 10</a></li><li class="chapter-item "><a href="../6.S081/11-lab11.html"><strong aria-hidden="true">2.11.</strong> Lab 11</a></li></ol></li><li class="chapter-item "><li class="part-title">🚀 数据库</li><li class="chapter-item "><a href="../abyssdb/p0.html"><strong aria-hidden="true">3.</strong> 从零实现关系型数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../abyssdb/p1.html"><strong aria-hidden="true">3.1.</strong> 从 Table 开始</a></li><li class="chapter-item "><a href="../abyssdb/p2.html"><strong aria-hidden="true">3.2.</strong> Part 2. 实现 Tuple</a></li><li class="chapter-item "><a href="../abyssdb/p3.html"><strong aria-hidden="true">3.3.</strong> Part 3. 实现 Page</a></li><li class="chapter-item "><a href="../abyssdb/p4.html"><strong aria-hidden="true">3.4.</strong> Part 4. 实现 HeapFile</a></li><li class="chapter-item "><a href="../abyssdb/p5.html"><strong aria-hidden="true">3.5.</strong> Part 5. 实现 BufferPool</a></li><li class="chapter-item "><a href="../abyssdb/p6.html"><strong aria-hidden="true">3.6.</strong> Part 6. 支持 int 和 string 等数据类型。</a></li><li class="chapter-item "><a href="../abyssdb/p7.html"><strong aria-hidden="true">3.7.</strong> Part 7. 实现 Catalog</a></li></ol></li><li class="chapter-item "><a href="../6.830/1-lab0.html"><strong aria-hidden="true">4.</strong> 6.830</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.830/ans/2-lab1-ans.html"><strong aria-hidden="true">4.1.</strong> Lab 1 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/3-lab2-ans.html"><strong aria-hidden="true">4.2.</strong> Lab 2 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/4-lab3-ans.html"><strong aria-hidden="true">4.3.</strong> Lab 3 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/5-lab4-ans.html"><strong aria-hidden="true">4.4.</strong> Lab 4 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/6-lab5-ans.html"><strong aria-hidden="true">4.5.</strong> Lab 5 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/7-lab6-ans.html"><strong aria-hidden="true">4.6.</strong> Lab 6 Answers</a></li><li class="chapter-item "><a href="../6.830/cn/2-lab1.html"><strong aria-hidden="true">4.7.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/3-lab2.html"><strong aria-hidden="true">4.8.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/4-lab3.html"><strong aria-hidden="true">4.9.</strong> Lab 3 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/5-lab4.html"><strong aria-hidden="true">4.10.</strong> Lab 4 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/6-lab5.html"><strong aria-hidden="true">4.11.</strong> Lab 5 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/7-lab6.html"><strong aria-hidden="true">4.12.</strong> Lab 6 (Chinese)</a></li></ol></li><li class="chapter-item "><li class="part-title">🧊 分布式</li><li class="spacer"></li><li class="chapter-item "><a href="../6.824/0-lab0.html"><strong aria-hidden="true">5.</strong> 6.824</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.824/1-lab1-cn.html"><strong aria-hidden="true">5.1.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/1-lab1.html"><strong aria-hidden="true">5.2.</strong> Lab 1</a></li><li class="chapter-item "><a href="../6.824/2-lab2-cn.html"><strong aria-hidden="true">5.3.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/2-lab2.html"><strong aria-hidden="true">5.4.</strong> Lab 2</a></li></ol></li></ol>
+        </div>
+        <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+                        <div id="menu-bar-hover-placeholder"></div>
+            <div id="menu-bar" class="menu-bar sticky bordered">
+                <div class="left-buttons">
+                    <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="fa fa-paint-brush"></i>
+                    </button>
+                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                        <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                    </ul>
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <h1 class="menu-title">everystep</h1>
+
+                <div class="right-buttons">
+                    <a href="../print.html" title="Print this book" aria-label="Print this book">
+                        <i id="print-button" class="fa fa-print"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep" title="Git repository" aria-label="Git repository">
+                        <i id="git-repository-button" class="fa fa-github"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep/edit/master/src/6.S081/2-lab2.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <i id="git-edit-button" class="fa fa-edit"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+            <script type="text/javascript">
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+
+                // Get viewed page store
+                var viewed_key = 'mdbook-viewed';
+                var viewed_map = {};
+                try {
+                    var viewed_storage = localStorage.getItem(viewed_key);
+                    if (viewed_storage) {
+                        viewed_map = JSON.parse(viewed_storage)
+                    }
+                } catch (e) { }
+
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+
+                    // Apply viewed style
+                    if (viewed_map[link.pathname]) {
+                        link.classList.add('md-viewed')
+                    }
+                }); 
+
+                // Mark viewed after 30s
+                setTimeout(function() {
+                    viewed_map[location.pathname] = 1;
+                    localStorage.setItem(viewed_key, JSON.stringify(viewed_map));
+                }, 30000)
+            </script>
+
+            <div id="content" class="content">
+                <!-- Page table of contents -->
+                <div class="sidetoc"><nav class="pagetoc"></nav></div>
+                <main>
+                    <h1 id="lab-syscall"><a class="header" href="#lab-syscall">Lab syscall</a></h1>
+<p>上一个实验仅仅是在用户态下面增加一些功能，而这个实验不仅仅是用户态还涉及到了内核。通过这个实验来了解内核的结构以及内核是如何工作的。</p>
+<blockquote>
+<p>需要提前阅读的内容：xv6书的第2章和第4章的4.3和4.4节，以及相关的源文件。系统调用的用户空间代码在 <code>user/user.h</code> 和 <code>user/usys.pl</code> 中。内核空间的代码是 <code>kernel/syscall.h</code> , <code>kernel/syscall.c</code>。与进程有关的代码是 <code>kernel/proc.h</code> 和 <code>kernel/proc.c</code> 。</p>
+</blockquote>
+<p>下面是对上述需要阅读内容的提炼总结以及部分翻译。</p>
+<h2 id="1-前置阅读内容总结"><a class="header" href="#1-前置阅读内容总结">1. 前置阅读内容总结</a></h2>
+<p>xv6 book ch2 总结</p>
+<ul>
+<li>OS 需要保证以下三个功能：多路复用：同时支持多个活动。隔离：进程出现问题不影响其他进程执行。交互：进程之间需要能够交互，例如管道。第二章主要介绍宏内核如何实现上述功能，此外还介绍了 xv6 启动时第一个进程的创建。</li>
+<li>Xv6运行在多核RISC-V微处理器上，RISC-V 是一个64位的CPU。xv6 是用 &quot;LP64 &quot;C语言编写的，所以 long(L) 和指针(P)是64位的，但int是32位的。</li>
+<li>CPU 需要和硬件交互，而硬件大部分呈I/O接口的形式。此处硬件是通过带&quot;-machine virt &quot;选项的qemu模拟出来的。硬件例如 RAM 、包含启动代码的ROM、与用户键盘/屏幕的串行连接以及用于存储的磁盘。</li>
+<li>2.1 为什么需要 OS ？
+<ul>
+<li>如果直接将 OS 当作库函数，那么无法保障隔离性。</li>
+<li>为了实现隔离，需要引入权限使得应用程序不能直接访问敏感的硬件资源。所以需要将硬件资源抽象为服务，例如，Unix应用程序只通过文件系统的<code>open</code>、<code>read</code>、<code>write</code>和<code>close</code>系统调用与文件系统进行交互，而不是直接读写磁盘。</li>
+<li>同样，Unix 在进程之间透明地切换硬件CPU，必要时保存和恢复寄存器状态，这样应用程序就不必意识到时间共享。这种透明性允许操作系统共享CPU，即使一些应用程序处于无限循环中。</li>
+<li>Unix进程使用<code>exec</code>来建立它们的内存映像，而不是直接与物理内存交互。这使得操作系统可以决定将进程放在内存的什么位置；如果内存紧张，操作系统甚至可能将进程的部分数据存储在磁盘上。<code>exec</code>还允许用户将可执行文件储存在文件系统中。</li>
+<li>Unix 进程之间的许多形式的交互都是通过文件描述符进行的。文件描述符不仅可以抽象出许多细节（例如，管道或文件中的数据存储在哪里），而且它们的定义方式也可以简化交互。例如，如果管道中的一个应用程序崩溃了，内核就会为管道中的另一个进程产生一个文件结束信号。</li>
+<li>xv6 中的系统调用接口经过精心设计，既为程序员提供了便利，又提供了强隔离的可能。Unix接口并不是抽象资源的唯一方式，但事实证明它是一种非常好的方式。</li>
+</ul>
+</li>
+<li>2.2 机器模式，监督模式和系统调用
+<ul>
+<li>为了实现强隔离，在应用程序和 OS 之间花了条线使得应用程序崩溃后不会影响 OS ，并且 OS 还能处理崩溃的应用程序确保其他程序正确运行。</li>
+<li>为了实现强隔离，操作系统必须确保应用程序不能修改（甚至不能读取）操作系统的数据结构和指令，应用程序不能访问其他进程的内存。</li>
+<li>CPU提供了强隔离的硬件支持。例如，RISC-V有三种模式，CPU可以执行指令：<strong>机器模式</strong>、<strong>监督者（supervisor）模式</strong>和<strong>用户模式</strong>。在机器模式下执行的指令具有完全的权限，一个CPU在机器模式下启动。机器模式主要用于配置计算机。Xv6会在机器模式下执行几条指令，然后转为监督者模式。</li>
+<li>CPU 在<strong>机器模式</strong>下启动，然后转为<strong>监督者模式</strong>，随后转为<strong>用户模式</strong>。CPU 在<strong>机器模式</strong>下具有完全的权限。在<strong>监督者模式</strong>下被允许执行特权指令，叫做允许在内核空间。例如启用和禁用中断，读写保存页表地址的寄存器等。在<strong>用户模式</strong>下执行特权指令会导致切换到监督者模式，进而终止该程序。应用程序只能执行用户模式的指令。</li>
+<li>一个应用程序如果要调用内核函数（如xv6中的<code>read</code>系统调用），必须过渡到内核。CPU提供了一个特殊的指令，可以将CPU从用户模式切换到监督者模式，并在内核指定的入口处进入内核。(RISC-V为此提供了<code>ecall</code>指令。)一旦CPU切换到监督者模式，内核就可以验证系统调用的参数，决定是否允许应用程序执行请求的操作，然后拒绝或执行该操作。由内核控制监督者模式的入口点是很重要的；如果应用程序可以决定内核的入口点，那么恶意应用程序就能够在跳过参数验证的情况下进入内核。</li>
+</ul>
+</li>
+<li>2.3 Kernel 组织
+<ul>
+<li>根据操作系统的哪一部分应该在监督者模式下运行存在两种方式，分别是宏内核和微内核。</li>
+<li><strong>宏内核</strong>将所有系统调用的实现都在监督者模式下运行。优点是实现方便，并且 OS 之间的不同部分容易协作。缺点是接口实现复杂，一旦出问题会导致整个内核崩溃。</li>
+<li><strong>微内核</strong>能不放在监督者模式下运行就不放。用户模式下执行大部分代码。例如文件系统作为用户级进程运行。应用程序通过内核提供的进程间通信机制来实现和文件服务器的交互。例如，如果一个像shell这样的应用程序想要读写文件，它就会向文件服务器发送一个消息，并等待响应。</li>
+<li>在微内核中，内核接口由一些低级函数组成，用于启动应用程序、发送消息、访问设备硬件等。这种组织方式使得内核相对简单，因为大部分操作系统驻留在用户级服务器中。</li>
+<li>xv6 和大多数Unix操作系统一样，是以宏内核的形式实现的。因此，xv6内核接口与操作系统接口相对应，内核实现了完整的操作系统。由于xv6不提供很多服务，所以它的内核比一些微内核要小，但从概念上讲xv6是宏内核。</li>
+</ul>
+</li>
+<li>2.4 Code: xv6 organization
+<ul>
+<li>xv6内核源码在<code>kernel/</code>子目录下。按照模块化的概念，源码被分成了多个文件。模块间的接口在<code>kernel/defs.h</code>中定义。</li>
+<li>bio.c 文件系统的磁盘块缓存。</li>
+<li>console.c 连接到用户键盘和屏幕。</li>
+<li>entry.S 最早的启动说明。</li>
+<li>exec.c exec() 系统调用. </li>
+<li>file.c 支持文件描述符。 </li>
+<li>fs.c 文件系统。 </li>
+<li>kalloc.c 物理页分配器. </li>
+<li>kernelvec.S 处理来自内核的陷阱，以及定时器中断。 </li>
+<li>log.c 文件系统记录和崩溃恢复。</li>
+<li>main.c 在启动过程中控制其他模块的初始化。 </li>
+<li>pipe.c 管道。 plic.c RISC-V中断控制器。</li>
+<li>printf.c 格式化的输出到控制台。 </li>
+<li>proc.c 流程和调度安排。</li>
+<li>sleeplock.c 产生CPU的锁。</li>
+<li>spinlock.c 不产生CPU的锁。</li>
+<li>start.c 早期的机器模式启动代码。</li>
+<li>string.c C语言字符串和字节数库。</li>
+<li>swtch.S 线程切换。 </li>
+<li>syscall.c 派遣系统调用到处理功能。</li>
+<li>sysfile.c 文件相关的系统调用。</li>
+<li>sysproc.c 进程相关的系统调用。</li>
+<li>trampoline.S 在用户和内核之间切换的汇编代码。</li>
+<li>trap.c 用C代码来处理和返回陷阱和中断。</li>
+<li>uart.c 串行端口的控制台设备驱动程序。</li>
+<li>virtio_disk.c 磁盘设备驱动程序。</li>
+<li>vm.c 管理页表和地址空间。</li>
+</ul>
+</li>
+<li>2.5 Process overview
+<ul>
+<li>xv6 以进程为单位来实现隔离。进程隔离可以防止一个进程破坏另一个进程的内存、CPU、文件描述符等。此外还可以防止进程破坏内核。内核必须小心实现进程抽象，因为一个错误或恶意的应用程序可能会欺骗内核或硬件做一些不好的事情（例如，规避隔离）。内核用来实现进程的机制包括：用户/监督模式标志、地址空间和线程的时间片轮转。</li>
+<li>为了实施隔离，进程抽象为程序提供了一种拥有整个机器的错觉。进程为程序提供了一个看似私有的内存系统，或者说是地址空间，其他进程不能对其进行读写。进程还为程序提供了“私有”的CPU，用来执行程序的指令。</li>
+<li>XV6 使用页表（由硬件实现）使得每个进程拥有自己的地址空间。RISC-V 页表将<strong>虚拟地址</strong>（RISC-V指令操作的地址）转换（或 &quot;映射&quot;）为<strong>物理地址</strong>（CPU芯片发送到主存储器的地址）。</li>
+<li>Xv6为每个进程维护一个单独的页表，定义该进程的地址空间。如图2.3所示，进程的用户空间内存的地址空间是从虚拟地址0开始的。指令存放在最前面，其次是全局变量，然后是栈，最后是一个堆区（用于<strong>malloc</strong>），进程可以根据需要扩展。有一些因素限制了进程地址空间的最大长度：RISC-V上的指针是64位宽；硬件在页表中查找虚拟地址时只使用低的39位；xv6只使用39位中的38位。因此，最大地址是$2^{38}-1$ = 0x3fffffffff，也就是<code>MAXVA</code>（kernel/riscv.h:348）。在地址空间的顶端，xv6保留了一页，用于<strong>trampoline</strong>和映射进程<strong>trapframe</strong>的页，以便切换到内核，第4章会详细解释。</li>
+<li>xv6内核为每个进程维护了许多状态，记录在<code>proc</code>结构体(kernel/proc.h:86)。一个进程最重要的内核状态是它的页表、内核栈和运行状态。用<code>p-&gt;xxx</code>来表示<code>proc</code>结构的元素，例如，<code>p-&gt;pagetable</code>是指向进程页表的指针。</li>
+<li>每个进程都有一个线程在执行进程的指令。一个线程可以被暂停，然后再恢复。为了在进程之间透明地切换，内核会暂停当前运行的线程，并恢复另一个进程的线程。线程的大部分状态（局部变量、函数调用返回地址）都存储在线程的栈中。每个进程有两个栈：用户栈和内核栈（<code>p-&gt;kstack</code>）。当进程在执行用户指令时，只有它的用户栈在被使用，而它的内核栈是空的。当进程进入内核时（因为系统调用或中断），内核代码在进程的内核栈上执行；当进程在内核中时，它的用户栈仍然包含保存的数据，但不被主动使用。进程的线程在用户栈和内核栈中交替执行。内核栈是独立的（并且受到保护，不受用户代码的影响），所以即使一个进程用户栈被破坏了，内核也可以执行。</li>
+<li>一个进程可以通过执行RISC-V <code>ecall</code>指令进行系统调用。该指令提高硬件权限级别，并将程序计数器改变为内核定义的入口点。入口点的代码会切换到内核栈，并执行实现系统调用的内核指令。当系统调用完成后，内核切换回用户栈，并通过调用<code>sret</code>指令返回用户空间，降低硬件特权级别，恢复执行系统调用前的用户指令。进程的线程可以在内核中阻塞等待I/O，当I/O完成后，再从离开的地方恢复。</li>
+<li><code>p-&gt;state</code>表示进程是创建、就绪、运行、等待I/O，还是退出。</li>
+<li><code>p-&gt;pagetable</code>以RISC-V硬件需要的格式保存进程的页表，当进程在用户空间执行时，xv6使分页硬件使用进程的<code>p-&gt;pagetable</code>。进程的页表也会记录分配给该进程内存的物理页地址。</li>
+</ul>
+</li>
+<li>2.6 Code: starting xv6 and the first process
+<ul>
+<li>本节主要关注内核如何启动和运行的第一个进程。</li>
+<li>当计算机开机后，会首先从一个只读存储器中读取 bootloader 。bootloader  负责将 xv6 内核加载到内存中。随后在机器模式下，CPU从 <code>_entry</code>（kernel/entry.S:6）开始执行 xv6 。RISC-V在禁用分页硬件的情况下启动：虚拟地址直接映射到物理地址。</li>
+<li>loader 将xv6内核加载到物理地址<code>0x80000000</code>的内存中。之所以将内核放在<code>0x80000000</code>而不是<code>0x0</code>，是因为地址范围<code>0x0:0x80000000</code>包含I/O设备。</li>
+<li><code>_entry</code>处的指令设置了一个栈，这样 xv6 就可以运行 C 代码。Xv6在文件<code>start.c</code>(kernel/start.c:11)中声明了初始栈的空间，即<code>stack0</code>。在<code>_entry</code>处的代码加载栈指针寄存器<code>sp</code>，地址为<code>stack0+4096</code>，也就是栈的顶部，因为RISC-V的栈是向下扩张的。现在内核就拥有了栈，<code>_entry</code>调用<code>start</code>(kernel/start.c:21)，并执行其C代码。</li>
+<li>函数<code>start</code>执行一些只有在机器模式下才允许的配置，然后切换到监督者模式。为了进入监督者模式，RISC-V提供了指令<code>mret</code>。这条指令最常用来从上一次的调用中返回，上一次调用从监督者模式到机器模式。<code>start</code>并不是从这样的调用中返回，而是把事情设置得像有过这样的调用一样：它在寄存器<code>mstatus</code>中把上一次的特权模式设置为特权者模式，它把<code>main</code>的地址写入寄存器<code>mepc</code>中，把返回地址设置为<code>main</code>函数的地址，在特权者模式中把<code>0</code>写入页表寄存器<code>satp</code>中，禁用虚拟地址转换，并把所有中断和异常委托给特权者模式。</li>
+<li>在进入特权者模式之前，<code>start</code>还要执行一项任务：对时钟芯片进行编程以初始化定时器中断。在完成了这些基本管理后，<code>start</code>通过调用<code>mret</code>“返回”到监督者模式。这将导致程序计数器变为<code>main</code>（kernel/main.c:11）的地址。</li>
+<li>在<code>main</code>(kernel/main.c:11)初始化几个设备和子系统后，它通过调用<code>userinit</code>(kernel/proc.c:212)来创建第一个进程。第一个进程执行一个用RISC-V汇编编写的小程序<code>initcode.S</code>（user/initcode.S:1），它通过调用<code>exec</code>系统调用重新进入内核。正如我们在第一章中所看到的，<code>exec</code>用一个新的程序（本例中是<code>/init</code>）替换当前进程的内存和寄存器。</li>
+<li>一旦内核完成<code>exec</code>，它就会在<code>/init</code>进程中返回到用户空间。<code>init</code> (user/init.c:15)在需要时会创建一个新的控制台设备文件，然后以文件描述符0、1和2的形式打开它。然后它在控制台上启动一个shell。这样系统就启动了。</li>
+</ul>
+</li>
+<li>2.7 Real world
+<ul>
+<li>实际上现代操作系统中即存在宏内核，也存在微内核。许多Unix内核都是宏内核，例如 Linux 。此外大多数操作系统都采用了进程概念，大多数进程都与xv6的相似。</li>
+<li>现代操作系统支持进程可以拥有多个线程，以允许一个进程利用多个CPU。在一个进程中支持多个线程涉及到不少 xv6 没有的机制，包括潜在的接口变化(如Linux的<code>clone</code>，<code>fork</code>的变种)，以控制线程所共享进程的那些部分。</li>
+</ul>
+</li>
+<li>4.3 Code: Calling system calls
+<ul>
+<li>第2章以<code>initcode.S</code>调用<code>exec</code>系统调用结束（user/initcode.S:11）。接下来研究用户调用是如何在内核中实现<code>exec</code>系统调用的。</li>
+<li>用户代码将<code>exec</code>的参数放在寄存器<code>a0</code>和<code>a1</code>中，并将系统调用号放在<code>a7</code>中。系统调用号与函数指针表<code>syscalls</code>数组（kernel/syscall.c:108）中的项匹配。<code>ecall</code>指令进入内核，执行<code>uservec</code>、<code>usertrap</code>，然后执行<code>syscall</code> 。</li>
+<li><code>syscall</code>（kernel/syscall.c:133）从trapframe中的<code>a7</code>中得到系统调用号，并其作为索引在<code>syscalls</code>查找相应函数。对于第一个系统调用<code>exec</code>，<code>a7</code>将为<code>SYS_exec</code>（kernel/syscall.h:8），这会让<code>syscall</code>调用<code>exec</code>的实现函数<code>sys_exec</code>。</li>
+<li>当系统调用函数返回时，<code>syscall</code>将其返回值记录在<code>p-&gt;trapframe-&gt;a0</code>中。用户空间的<code>exec()</code>将会返回该值，因为RISC-V上的C调用通常将返回值放在<code>a0</code>中。系统调用返回负数表示错误，0或正数表示成功。如果系统调用号无效，<code>syscall</code>会打印错误并返回-1。</li>
+</ul>
+</li>
+<li>4.4 Code: System call arguments
+<ul>
+<li>内核的系统调用实现需要找到用户代码传递的参数。因为用户代码调用系统调用的包装函数，参数首先会存放在寄存器中，这是C语言存放参数的约定位置。内核trap代码将用户寄存器保存到当前进程的trap frame中，内核代码可以在那里找到它们。函数<code>argint</code>、<code>argaddr</code>和<code>argfd</code>从trap frame中以整数、指针或文件描述符的形式检索第n个系统调用参数。它们都调用<code>argraw</code>来获取保存的用户寄存器（kernel/syscall.c:35）。</li>
+<li>一些系统调用传递指针作为参数，而内核必须使用这些指针来读取或写入用户内存。例如，<code>exec</code>系统调用会向内核传递一个指向用户空间中的字符串的指针数组。这些指针带来了两个挑战。首先，用户程序可能是错误的或恶意的，可能会传递给内核一个无效的指针或一个旨在欺骗内核访问内核内存而不是用户内存的指针。第二，xv6内核页表映射与用户页表映射不一样，所以内核不能使用普通指令从用户提供的地址加载或存储。</li>
+<li>内核实现了安全地将数据复制到用户提供的地址或从用户提供的地址复制数据的函数。例如<code>fetchstr</code>（kernel/syscall.c:25）。文件系统调用，如<code>exec</code>，使用<code>fetchstr</code>从用户空间中检索字符串文件名参数。<code>fetchstr</code>调用<code>copyinstr</code>来做这些困难的工作。</li>
+<li><code>copyinstr</code>（kernel/vm.c:406）将用户页表<code>pagetable</code>中的虚拟地址<code>srcva</code>复制到<code>dst</code>，需指定最大复制字节数。它使用<code>walkaddr</code>（调用<code>walk</code>函数）在软件中模拟分页硬件的操作，以确定<code>srcva</code>的物理地址<code>pa0</code>。<code>walkaddr</code>（kernel/vm.c:95）检查用户提供的虚拟地址是否是进程用户地址空间的一部分，所以程序不能欺骗内核读取其他内存。类似的函数<code>copyout</code>，可以将数据从内核复制到用户提供的地址。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-实验"><a class="header" href="#2-实验">2. 实验</a></h2>
+<p>开始实验，切换到syscall分支。</p>
+<pre><code class="language-sh">$ git checkout syscall
+$ make clean
+</code></pre>
+<p>直接运行测试 <code>make grade</code> 发现 trace 和 sysinfotest 无法执行，接下来的任务就是实现这两个命令。</p>
+<pre><code>如果出现如下问题，可将 `grade-lab-syscall` 第一行 `#!/usr/bin/env python` 改为 `#!/usr/bin/env python3` 
+
+/usr/bin/env: ‘python’: No such file or directory
+make: *** [Makefile:227: grade] Error 127
+
+接下来再次运行 make grade 发现不能执行 trace 和 sysinfotest。
+</code></pre>
+<h3 id="system-call-tracing-moderate"><a class="header" href="#system-call-tracing-moderate">System call tracing (moderate)</a></h3>
+<p>添加一个跟踪系统调用的功能。创建一个名为 trace 的系统调用的函数。输入中有个参数，该参数是一个整数（掩码），指定位置决定了要跟踪哪些系统调用。例如要跟踪一条命令中 fork 的系统调用。那么就要设置 fork 对应的掩码 1 &lt;&lt; SYS_fork ， 其中SYS_fork是kernel/syscall.h中的一个系统调用编号。因为 SYS_fork = 1，所以此时掩码就是 2 因为 <code>2 = 1 &lt;&lt; 1</code> 。</p>
+<p>打印出要跟踪的系统调用的进程ID、系统调用的名称和返回值，包含子进程。下面是几个实现好的例子。</p>
+<pre><code class="language-sh">$ trace 32 grep hello README
+3: syscall read -&gt; 1023
+3: syscall read -&gt; 966
+3: syscall read -&gt; 70
+3: syscall read -&gt; 0
+</code></pre>
+<p>其中 32 是掩码，而 $$32 = 2^5$$ ，查阅 <code>kernel/syscall.h</code> 可知 <code>SYS_read    5</code> ，那么要跟踪的系统调用就是 read 。将执行 <code>grep hello README</code> 过程中调用 read 的进程ID、系统调用的名称和返回值打印出来。</p>
+<pre><code class="language-sh">$ trace 2147483647 grep hello README
+4: syscall trace -&gt; 0
+4: syscall exec -&gt; 3
+4: syscall open -&gt; 3
+4: syscall read -&gt; 1023
+4: syscall read -&gt; 966
+4: syscall read -&gt; 70
+4: syscall read -&gt; 0
+4: syscall close -&gt; 0
+</code></pre>
+<p>2147583647 的31个低位全部被设置，所以所有的系统调用都将被跟踪。</p>
+<pre><code class="language-sh">$ grep hello README
+$
+</code></pre>
+<p>这个例子中，程序没有被跟踪，所以没有输出。</p>
+<pre><code class="language-sh">$ trace 2 usertests forkforkfork
+usertests starting
+test forkforkfork: 407: syscall fork -&gt; 408
+408: syscall fork -&gt; 409
+409: syscall fork -&gt; 410
+410: syscall fork -&gt; 411
+409: syscall fork -&gt; 412
+410: syscall fork -&gt; 413
+409: syscall fork -&gt; 414
+411: syscall fork -&gt; 415
+...
+$   
+</code></pre>
+<p>usertests 中的 <code>forkforkfork</code> test的所有后代的fork系统调用都被追踪。</p>
+<p>最终实现出来的结果就是上面所呈现的，课程进程 ID 不同。</p>
+<blockquote>
+<p>跟着 hint 走，下面的内容是结合了提示之后我的实现步骤。</p>
+</blockquote>
+<ul>
+<li>
+<p>在 Makefile 第 152 行处添加 <code>$U/_trace</code> 。目的是编译的时候能够识别到 trace 。</p>
+</li>
+<li>
+<p>运行<code>make qemu</code> 发现报错，无法编译 <code>user/trace.c</code> 第 17 行的 trace 函数 。原因是这个系统调用还没有被注册，在 <code>user/user.h</code> 添加即可，接下来需要判断 trace 的函数签名，也就是输入输出。</p>
+</li>
+<li>
+<p>由 <code>user/trace.c</code> 第 17 行处可知，trace 输入输出均为 int，此时在 <code>user/user.h</code> 第26行处添加代码 <code>int trace(int);</code> 接下来在 <code>kernel/syscall.h</code> 中添加syscall编号。 </p>
+</li>
+<li>
+<p>在<code>user/usys.pl</code>中添加 <code>entry(&quot;trace&quot;);</code> 原因是 Makefile 调用 perl 脚本 <code>user/usys.pl</code>，产生<code>user/usys.S</code> 。 RISC-V 的 ecall 过渡到内核。(Makefile =&gt; <code>user/usys.pl</code> =&gt; <code>user/usys.S</code>)</p>
+</li>
+<li>
+<p>此时 <code>make qemu</code> 就可以启动了。</p>
+</li>
+<li>
+<p>此时再运行 <code>trace 32 grep hello README</code> 依旧失败，因为还未在内核中实现。</p>
+</li>
+<li>
+<p>在 <code>kernel/sysproc.c</code> 中增加一个 sys_trace() 函数，在用户态执行 trace 函数后经过汇编代码最终切换到内核态后将会执行该函数(sys_trace())。这个函数的实现是照着上面代码改的，例如 <code>sys_exit()</code> 。其中 argint() 函数是拿到用户态输入的参数，将其保存到 n 中，其实就是掩码，将掩码保存到当前进程中，那么就需要在当前进程中加一个参数了。myproc() 表示当前进程，</p>
+</li>
+</ul>
+<pre><code class="language-cpp">uint64
+sys_trace(void){
+  int n;
+  if(argint(0, &amp;n) &lt; 0) {
+    return -1;
+  }
+  myproc()-&gt;trace_mask = n;
+  return 0;
+}
+</code></pre>
+<ul>
+<li>在进程 <code>kernel/proc.h</code> 第 106 行添加 <code>int trace_mask; </code> 用于记录掩码。</li>
+<li>接下来是修改 <code>kernel/syscall.c</code> 中的 <code>syscall()</code> 函数以打印跟踪输出。</li>
+<li>先将在头部添加 <code>extern uint64 sys_trace(void); </code>方便别的文件引用。</li>
+<li>接下来在 <code>static uint64 (*syscalls[])(void)</code> 添加相应内容 <code>[SYS_trace]   sys_trace,</code></li>
+<li>因为要打印系统调用名称，但是缺少系统调用号和名称之间的映射，需要建立二者的映射。</li>
+</ul>
+<pre><code class="language-cpp">static char* syscall_names[] = {
+  [SYS_fork]    &quot;fork&quot;,
+  [SYS_exit]    &quot;exit&quot;,
+  [SYS_wait]    &quot;wait&quot;,
+  [SYS_pipe]    &quot;pipe&quot;,
+  [SYS_read]    &quot;read&quot;,
+  [SYS_kill]    &quot;kill&quot;,
+  [SYS_exec]    &quot;exec&quot;,
+  [SYS_fstat]   &quot;fstat&quot;,
+  [SYS_chdir]   &quot;chdir&quot;,
+  [SYS_dup]     &quot;dup&quot;,
+  [SYS_getpid]  &quot;getpid&quot;,
+  [SYS_sbrk]    &quot;sbrk&quot;,
+  [SYS_sleep]   &quot;sleep&quot;,
+  [SYS_uptime]  &quot;uptime&quot;,
+  [SYS_open]    &quot;open&quot;,
+  [SYS_write]   &quot;write&quot;,
+  [SYS_mknod]   &quot;mknod&quot;,
+  [SYS_unlink]  &quot;unlink&quot;,
+  [SYS_link]    &quot;link&quot;,
+  [SYS_mkdir]   &quot;mkdir&quot;,
+  [SYS_close]   &quot;close&quot;,
+  [SYS_trace]   &quot;trace&quot;,
+};
+
+void
+syscall(void)
+{
+  int num;
+  struct proc *p = myproc();
+
+  num = p-&gt;trapframe-&gt;a7;
+  if(num &gt; 0 &amp;&amp; num &lt; NELEM(syscalls) &amp;&amp; syscalls[num]) {
+    p-&gt;trapframe-&gt;a0 = syscalls[num]();
+    if ((p-&gt;trace_mask &amp; (1 &lt;&lt; num)) != 0) {                                  
+        printf(&quot;%d: syscall %s -&gt; %d \n&quot;, p-&gt;pid, syscall_names[num], p-&gt;trapframe-&gt;a0);
+    }
+  } else {
+    printf(&quot;%d %s: unknown sys call %d\n&quot;,
+            p-&gt;pid, p-&gt;name, num);
+    p-&gt;trapframe-&gt;a0 = -1;
+  }
+}
+
+</code></pre>
+<p>主要关注 if 内，判断当前所执行进程的参数是否命中掩码，如果命中就打印。</p>
+<pre><code class="language-sh">    if ((p-&gt;trace_mask &amp; (1 &lt;&lt; num)) != 0) {                                  
+        printf(&quot;%d: syscall %s -&gt; %d \n&quot;, p-&gt;pid, syscall_names[num], p-&gt;trapframe-&gt;a0);
+    }
+</code></pre>
+<p>修改 fork()(见kernel/proc.c)，将跟踪掩码从父进程复制到子进程，方便跟踪子进程的执行。添加 <code>np-&gt;trace_mask = p-&gt;trace_mask;</code> 即可。</p>
+<p>注意修改 kernel/proc.c 中的 <code>freeproc()</code> 函数，将 <code>p-&gt;trace_mask = 0;</code> 释放进程的时候要重置相应内容。</p>
+<h3 id="sysinfo-moderate"><a class="header" href="#sysinfo-moderate">Sysinfo (moderate)</a></h3>
+<p>任务是添加一个系统调用函数 sysinfo ，先把用户态下的执行流程设置好。</p>
+<ul>
+<li>将 <code>$U/_sysinfotest</code> 添加到 Makefile 的 UPROGS 中。接下来执行 make qemu 后发现报错：</li>
+<li>添加系统调用 sysinfo，步骤与 trace 相同。（如果这里卡住就回头仔细搞明白 trace 的执行流程再往下研究）。</li>
+<li>sysinfo 需要将 struct sysinfo 拷贝回用户空间；参见 sys_fstat() (kernel/sysfile.c)和 filestat() (kernel/file.c)，了解如何使用 copyout() 进行拷贝。</li>
+</ul>
+<p>在 kernel/kalloc.c 中添加一个函数，统计自由内存的数量。</p>
+<p>在 kernel/proc.c中加入一个函数，统计进程的数量。</p>
+
+                    <div id="giscus-container"></div>
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+                    <a rel="prev" href="../6.S081/1-lab1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../6.S081/3-lab3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            <a rel="prev" href="../6.S081/1-lab1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+            <a rel="next" href="../6.S081/3-lab3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </nav>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        window.playground_copyable = true;
+    </script>
+
+    <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var pagePath = "6.S081/2-lab2.md"
+    </script>
+
+
+    <!-- Custom JS scripts -->
+
+
+</body>
+</html>

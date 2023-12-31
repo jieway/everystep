@@ -1,0 +1,482 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="sidebar-visible no-js light">
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>Lab 4 - everystep</title>
+
+
+    <!-- Custom HTML head -->
+    
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" href="../favicon.svg">
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/chrome.css">
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="../highlight.css">
+    <link rel="stylesheet" href="../tomorrow-night.css">
+    <link rel="stylesheet" href="../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+    <link rel="stylesheet" href="../theme/style.css">
+
+
+</head>
+<body>
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "../";
+        var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        var html = document.querySelector('html');
+        html.classList.remove('no-js')
+        html.classList.remove('light')
+        html.classList.add(theme);
+        html.classList.add('js');
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="sidebar-scrollbox">
+            <ol class="chapter"><li class="chapter-item affix "><a href="../index.html">简介</a></li><li class="chapter-item affix "><li class="part-title">🐷 造轮子</li><li class="spacer"></li><li class="chapter-item "><a href="../bitcask/index.html"><strong aria-hidden="true">1.</strong> 从零实现 Bitcask 存储引擎</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.1.</strong> Bitcask 简介</a></li><li class="chapter-item "><a href="../bitcask/p2.html"><strong aria-hidden="true">1.2.</strong> 创建 C++ 项目</a></li><li class="chapter-item "><a href="../bitcask/p3.html"><strong aria-hidden="true">1.3.</strong> 数据在内存中</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.4.</strong> 数据在磁盘上</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.5.</strong> BenchMark</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.6.</strong> 实现合并</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.7.</strong> 实现垃圾回收</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.8.</strong> hintfile 实现</a></li><li class="chapter-item "><a href="../bitcask/p1.html"><strong aria-hidden="true">1.9.</strong> 哈希表优化为多线程</a></li><li class="chapter-item "><a href="../bitcask/ch1.html"><strong aria-hidden="true">1.10.</strong> 数据在磁盘上如何存放？</a></li><li class="chapter-item "><a href="../bitcask/ch2.html"><strong aria-hidden="true">1.11.</strong> 存储引擎的接口设计</a></li><li class="chapter-item "><a href="../bitcask/ch3.html"><strong aria-hidden="true">1.12.</strong> 实现 Set、Get</a></li><li class="chapter-item "><a href="../bitcask/ch4.html"><strong aria-hidden="true">1.13.</strong> 删除逻辑和 Compact </a></li></ol></li><li class="chapter-item "><li class="part-title">🍭 操作系统</li><li class="spacer"></li><li class="chapter-item expanded "><a href="../6.S081/0-summary.html"><strong aria-hidden="true">2.</strong> 6.S081</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.S081/1-lab1.html"><strong aria-hidden="true">2.1.</strong> Lab 1</a></li><li class="chapter-item "><a href="../6.S081/2-lab2.html"><strong aria-hidden="true">2.2.</strong> Lab 2</a></li><li class="chapter-item "><a href="../6.S081/3-lab3.html"><strong aria-hidden="true">2.3.</strong> Lab 3</a></li><li class="chapter-item expanded "><a href="../6.S081/4-lab4.html" class="active"><strong aria-hidden="true">2.4.</strong> Lab 4</a></li><li class="chapter-item "><a href="../6.S081/5-lab5.html"><strong aria-hidden="true">2.5.</strong> Lab 5</a></li><li class="chapter-item "><a href="../6.S081/6-lab6.html"><strong aria-hidden="true">2.6.</strong> Lab 6</a></li><li class="chapter-item "><a href="../6.S081/7-lab7.html"><strong aria-hidden="true">2.7.</strong> Lab 7</a></li><li class="chapter-item "><a href="../6.S081/8-lab8.html"><strong aria-hidden="true">2.8.</strong> Lab 8</a></li><li class="chapter-item "><a href="../6.S081/9-lab9.html"><strong aria-hidden="true">2.9.</strong> Lab 9</a></li><li class="chapter-item "><a href="../6.S081/10-lab10.html"><strong aria-hidden="true">2.10.</strong> Lab 10</a></li><li class="chapter-item "><a href="../6.S081/11-lab11.html"><strong aria-hidden="true">2.11.</strong> Lab 11</a></li></ol></li><li class="chapter-item "><li class="part-title">🚀 数据库</li><li class="chapter-item "><a href="../abyssdb/p0.html"><strong aria-hidden="true">3.</strong> 从零实现关系型数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../abyssdb/p1.html"><strong aria-hidden="true">3.1.</strong> 从 Table 开始</a></li><li class="chapter-item "><a href="../abyssdb/p2.html"><strong aria-hidden="true">3.2.</strong> Part 2. 实现 Tuple</a></li><li class="chapter-item "><a href="../abyssdb/p3.html"><strong aria-hidden="true">3.3.</strong> Part 3. 实现 Page</a></li><li class="chapter-item "><a href="../abyssdb/p4.html"><strong aria-hidden="true">3.4.</strong> Part 4. 实现 HeapFile</a></li><li class="chapter-item "><a href="../abyssdb/p5.html"><strong aria-hidden="true">3.5.</strong> Part 5. 实现 BufferPool</a></li><li class="chapter-item "><a href="../abyssdb/p6.html"><strong aria-hidden="true">3.6.</strong> Part 6. 支持 int 和 string 等数据类型。</a></li><li class="chapter-item "><a href="../abyssdb/p7.html"><strong aria-hidden="true">3.7.</strong> Part 7. 实现 Catalog</a></li></ol></li><li class="chapter-item "><a href="../6.830/1-lab0.html"><strong aria-hidden="true">4.</strong> 6.830</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.830/ans/2-lab1-ans.html"><strong aria-hidden="true">4.1.</strong> Lab 1 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/3-lab2-ans.html"><strong aria-hidden="true">4.2.</strong> Lab 2 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/4-lab3-ans.html"><strong aria-hidden="true">4.3.</strong> Lab 3 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/5-lab4-ans.html"><strong aria-hidden="true">4.4.</strong> Lab 4 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/6-lab5-ans.html"><strong aria-hidden="true">4.5.</strong> Lab 5 Answers</a></li><li class="chapter-item "><a href="../6.830/ans/7-lab6-ans.html"><strong aria-hidden="true">4.6.</strong> Lab 6 Answers</a></li><li class="chapter-item "><a href="../6.830/cn/2-lab1.html"><strong aria-hidden="true">4.7.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/3-lab2.html"><strong aria-hidden="true">4.8.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/4-lab3.html"><strong aria-hidden="true">4.9.</strong> Lab 3 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/5-lab4.html"><strong aria-hidden="true">4.10.</strong> Lab 4 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/6-lab5.html"><strong aria-hidden="true">4.11.</strong> Lab 5 (Chinese)</a></li><li class="chapter-item "><a href="../6.830/cn/7-lab6.html"><strong aria-hidden="true">4.12.</strong> Lab 6 (Chinese)</a></li></ol></li><li class="chapter-item "><li class="part-title">🧊 分布式</li><li class="spacer"></li><li class="chapter-item "><a href="../6.824/0-lab0.html"><strong aria-hidden="true">5.</strong> 6.824</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6.824/1-lab1-cn.html"><strong aria-hidden="true">5.1.</strong> Lab 1 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/1-lab1.html"><strong aria-hidden="true">5.2.</strong> Lab 1</a></li><li class="chapter-item "><a href="../6.824/2-lab2-cn.html"><strong aria-hidden="true">5.3.</strong> Lab 2 (Chinese)</a></li><li class="chapter-item "><a href="../6.824/2-lab2.html"><strong aria-hidden="true">5.4.</strong> Lab 2</a></li></ol></li></ol>
+        </div>
+        <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+                        <div id="menu-bar-hover-placeholder"></div>
+            <div id="menu-bar" class="menu-bar sticky bordered">
+                <div class="left-buttons">
+                    <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="fa fa-paint-brush"></i>
+                    </button>
+                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                        <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                    </ul>
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <h1 class="menu-title">everystep</h1>
+
+                <div class="right-buttons">
+                    <a href="../print.html" title="Print this book" aria-label="Print this book">
+                        <i id="print-button" class="fa fa-print"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep" title="Git repository" aria-label="Git repository">
+                        <i id="git-repository-button" class="fa fa-github"></i>
+                    </a>
+                    <a href="https://github.com/weijiew/everystep/edit/master/src/6.S081/4-lab4.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <i id="git-edit-button" class="fa fa-edit"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+            <script type="text/javascript">
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+
+                // Get viewed page store
+                var viewed_key = 'mdbook-viewed';
+                var viewed_map = {};
+                try {
+                    var viewed_storage = localStorage.getItem(viewed_key);
+                    if (viewed_storage) {
+                        viewed_map = JSON.parse(viewed_storage)
+                    }
+                } catch (e) { }
+
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+
+                    // Apply viewed style
+                    if (viewed_map[link.pathname]) {
+                        link.classList.add('md-viewed')
+                    }
+                }); 
+
+                // Mark viewed after 30s
+                setTimeout(function() {
+                    viewed_map[location.pathname] = 1;
+                    localStorage.setItem(viewed_key, JSON.stringify(viewed_map));
+                }, 30000)
+            </script>
+
+            <div id="content" class="content">
+                <!-- Page table of contents -->
+                <div class="sidetoc"><nav class="pagetoc"></nav></div>
+                <main>
+                    <h1 id="lab-trap"><a class="header" href="#lab-trap">Lab trap</a></h1>
+<ul>
+<li>
+<p>实验手册：https://pdos.csail.mit.edu/6.S081/2020/labs/traps.html</p>
+</li>
+<li>
+<p>中文版：http://xv6.dgs.zone/labs/requirements/lab4.html</p>
+</li>
+<li>
+<p><a href="https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081/lec06-isolation-and-system-call-entry-exit-robert">lec6</a></p>
+</li>
+<li>
+<p>https://www.bilibili.com/video/BV19k4y1C7kA?p=4</p>
+</li>
+<li>
+<p>https://www.bilibili.com/video/BV19k4y1C7kA?p=5</p>
+</li>
+<li>
+<p>视频解析：https://www.bilibili.com/video/BV1FT4y127WW/?spm_id_from=pageDriver</p>
+</li>
+</ul>
+<h2 id="总结"><a class="header" href="#总结">总结</a></h2>
+<p>指令在执行的时候是会暂停的，以下三种情况下会暂停普通指令的执行：</p>
+<ol>
+<li>系统调用。例如系统执行 ecall 指令。</li>
+<li>异常。例如除零或使用无效地址。</li>
+<li>中断。例如设备发出读写请求。</li>
+</ol>
+<p>以上三种情况统称为 trap 。trap 是透明的，也就是被执行的代码感知不到 trap 的存在。</p>
+<p>trap 的大致流程如下：</p>
+<ol>
+<li>控制权交给内核。</li>
+<li>内核保存寄存器状态方便日后恢复。</li>
+<li>内核执行相应代码。</li>
+<li>内核恢复状态并从 trap 中返回。</li>
+<li>代码回到原来的地方。</li>
+</ol>
+<p>在切换的过程中需要修改寄存器的状态，以下是一些重要寄存器的介绍。</p>
+<ul>
+<li>程序计数器(Program Counter Register) ，指向了当前正在指向的下一条指令。</li>
+<li>mode ，表明当前mode的标志位，这个标志位表明了当前是supervisor mode还是user mode。当我们在运行Shell的时候，自然是在user mode。</li>
+<li>SATP（Supervisor Address Translation and Protection） 指向page table的物理内存地址。</li>
+<li>STVEC（Supervisor Trap Vector Base Address Register）指向了内核中处理trap的指令的起始地址。</li>
+<li>SEPC（Supervisor Exception Program Counter）在trap的过程中保存程序计数器的值。</li>
+<li>SSRATCH（Supervisor Scratch Register）寄存器，这也是个非常重要的寄存器（详见6.5）。</li>
+</ul>
+<p>这些寄存器表明了执行系统调用时计算机的状态。</p>
+<p>trap 流程</p>
+<ol>
+<li>保存 32 个用户寄存器。</li>
+<li>保存程序计数器 CP ，中断完成后通过之前的 PC 继续执行。</li>
+<li>将 mode 改成 supervisor mode 。</li>
+<li>将 SATP 指向 kernel page table 。</li>
+<li>将堆栈寄存器指向位于内核的一个地址，因为我们需要一个堆栈来调用内核的C函数。</li>
+<li>设置好后跳入内核的C代码。</li>
+</ol>
+<p>这一节的重点是如何从将程序执行从用户空间切换到内核的一个位置。</p>
+<p>用户代码不能接入到 user/kernel 切换，因为会破坏安全性，所以trap中涉及到的硬件和内核机制不能依赖任何来自用户空间东西。例如我们不能依赖32个用户寄存器，它们可能保存的是恶意的数据，所以，XV6的trap机制不会查看这些寄存器，而只是将它们保存起来。</p>
+<p>trap 机制对用户代码是透明的。也就是用户代码察觉不到 trap 的执行。</p>
+<p>可以在supervisor mode完成，但是不能在user mode完成的工作：读写SATP寄存器，也就是page table的指针；STVEC，也就是处理trap的内核指令地址；SEPC，保存当发生trap时的程序计数器；SSCRATCH等等。</p>
+<p>在 supervisor mode 下可以使用PTE_U标志位为0的PTE。当PTE_U标志位为1的时候，表明用户代码可以使用这个页表；</p>
+<p>supervisor mode 中的代码并不能读写任意物理地址。在supervisor mode中，就像普通的用户代码一样，也需要通过page table来访问内存。如果一个虚拟地址并不在当前由SATP指向的page table中，又或者SATP指向的page table中PTE_U=1，那么supervisor mode不能使用那个地址。所以，即使我们在supervisor mode，我们还是受限于当前page table设置的虚拟地址。</p>
+<p>如何通过trap进入到内核空间：</p>
+<ol>
+<li>write 通过执行 ECALL 指令来执行系统调用。</li>
+<li>ECALL指令会切换到具有supervisor mode的内核中。ecall 具体干了三件事情：
+<ol>
+<li>将代码从user mode改到supervisor mode。</li>
+<li>将程序计数器的值保存在了SEPC寄存器。</li>
+<li>ecall会跳转到STVEC寄存器指向的指令。</li>
+</ol>
+</li>
+<li>在内核中执行的第一个指令是一个由汇编语言写的函数，叫做 uservec ，位于 trampoline.s 中。
+<ol>
+<li>保存现场，也就是保存 32 个通用寄存器中的数据。</li>
+<li>切换到内核页表，内核栈，将当前进程的 CPUid 加载到寄存器中。</li>
+<li>跳转到 usertrap() 。</li>
+</ol>
+</li>
+<li>之后跳转到 trap.c 中的 usertrap() 中。
+<ol>
+<li>更改STVEC寄存器。(从用户态到内核态，如果已经在内核中了那么很多操作将会省去)</li>
+<li>通过 myproc 函数获取当前正在执行的进行。</li>
+<li>保存当前进程的SEPC寄存器到一个与该进程关联的内存中(trapframe)，因为中间如果发生进程切换可能会导致数据被覆盖。</li>
+<li>分析为什么执行 usertrap() 调用，8 表示因为系统调用而执行 usertrap() 函数。</li>
+<li>判断当前进程是否已被杀掉。</li>
+<li>之前保存的 PC + 4，指向返回地址。</li>
+<li>执行 syscall 前开启中断。此时是可以被中断的。</li>
+</ol>
+</li>
+<li>在 usertrap 中，执行 syscall 函数。
+<ol>
+<li>根据传入的代表系统调用的数字进行查找，并在内核中执行具体实现了系统调用功能的函数。此时就是sys_write。</li>
+<li>sys_write 将要显示数据输出到console上，完成后会返回给 syscall 函数。</li>
+</ol>
+</li>
+<li>usertrap 最终调用了 trap.c 中的 usertrapret() 函数，该函数实现了在C代码中实现的返回到用户空间的工作。
+<ol>
+<li>首先关闭中断，更新STVEC寄存器来指向用户空间的trap处理代码，将STVEC更新到指向用户空间的trap处理代码时。</li>
+<li>存储了内核页表，内核栈的指针。</li>
+<li>存储了usertrap函数的指针，这样trampoline代码才能跳转到这个函数（注，详见6.5中 ld t0 (16)a0 指令）。</li>
+<li>从tp寄存器中读取当前的CPU核编号，并存储在trapframe中，这样trampoline代码才能恢复这个数字，因为用户代码可能会修改这个数字。</li>
+</ol>
+</li>
+<li>此时又回到 trampoline.s 中，执行 userret 完成的了一些细节。调用机器指令返回到用户空间并恢复ECALL之后的用户程序的执行。
+<ol>
+<li>切换page table 。</li>
+</ol>
+</li>
+</ol>
+<p>trampoline page 中包含了内核的trap处理代码。</p>
+<p>ecall尽量的简单可以提升软件设计的灵活性。</p>
+<h2 id="调试"><a class="header" href="#调试">调试</a></h2>
+<p>使用 <code>make fs.img</code> 编译文件 <code>user/call.c</code> 生成 <code>user/call.asm</code> 阅读该文件。</p>
+<p><code>sudo apt-get install tmux</code> 下载 tmux 。</p>
+<p>输入 <code>$ tmux</code> 启动。</p>
+<p>ctrl +b 方向键 可以调整选中的窗口。例如 ctrl +b ⬆ 会把光标移动到上方的窗格。</p>
+<p>一个窗口运行 <code>make qemu-gdb</code> 指定一个 CPU 会更好。</p>
+<p>在另一个窗口执行：</p>
+<pre><code class="language-cpp">gdb-multiarch kernel/kernel
+
+# (gdb) 进入gdb后执行
+set confirm off
+set architecture riscv:rv64
+set riscv use-compressed-breakpoints yes
+target remote localhost:26000 
+</code></pre>
+<p><code>file user/_call</code> 调试用户态下的程序。</p>
+<p><code>b main</code> 在 main 处打一个断点。</p>
+<p>在第一个窗口中执行 call 命令。（没有特殊说明其他命令都是在第二个窗口中执行）</p>
+<p><code>layout split</code> 开启更多窗口，提供更多信息。</p>
+<p>gdb 常用命令。</p>
+<pre><code class="language-sh">b # 打断点 (e.g.     b main | b *0x30)
+c # continue
+
+layout split # view src-code &amp; asm-code
+
+ni # 单步执行汇编(不进函数)
+si # 单步执行汇编(有函数则进入函数)
+n # 单步执行源码
+s # 单步执行源码
+
+p # print
+p $a0 # 打印a0寄存器的值
+p/x 1536 # 以16进制的格式打印1536
+i r a0 # info registers a0
+x/i 0x630 # 查看0x630地址处的指令
+</code></pre>
+<h2 id="risc-v-assembly-easy"><a class="header" href="#risc-v-assembly-easy">RISC-V assembly (easy)</a></h2>
+<ol>
+<li>Which registers contain arguments to functions? For example, which register holds 13 in main's call to printf?</li>
+</ol>
+<p>a0 a2-a7 其中 a2 保存 13</p>
+<ol start="2">
+<li>Where is the call to function f in the assembly code for main? Where is the call to g? (Hint: the compiler may inline functions.)</li>
+</ol>
+<p>函数调用已经被内联了。</p>
+<ol start="3">
+<li>At what address is the function printf located?</li>
+</ol>
+<p>0000000000000630</p>
+<ol start="4">
+<li>What value is in the register ra just after the jalr to printf in main?</li>
+</ol>
+<p>经过 jalr 跳转后 ra 的值是 0x38 其中 ra 是 return adddress 的缩写。</p>
+<p>跳转之前打印 ra 中的数据</p>
+<p><code>jalr	1536(ra)</code> 表示跳转到 ra 寄存器中的值加上 1536 所在地址。
+其中 1536 在 16 进制下是 0x600 ，此时 ra 寄存器中的值是 0x30 。所以将会跳转到 0x630 处。
+此外 ra 的值将会变为 pc + 4 即 0x38. 也就是 return address 。执行完函数之后通过 ra 返回。</p>
+<ol start="4">
+<li>
+<p>Q: Run the following code.</p>
+<p>unsigned int i = 0x00646c72;
+printf(&quot;H%x Wo%s&quot;, 57616, &amp;i);</p>
+</li>
+</ol>
+<p>What is the output?
+If the RISC-V were instead big-endian what would you set i to in order to yield the same output?
+Would you need to change 57616 to a different value?
+A: &quot;He110 World&quot;; 0x726c6400; no, 57616 is 110 in hex regardless of endianness.</p>
+<p>%X 表示无符号以十六进制表示的整数。%s 表示输出字符串。</p>
+<p>其中 57616 在 16 进制下是 E110 。 </p>
+<p>其中 72:r 6c:l 64:d 符合 Risc-V 小段的输出，如果是大端的话需要将 i 修改为 0x726c6400 。</p>
+<ol start="5">
+<li>
+<p>In the following code, what is going to be printed after 'y='? (note: the answer is not a specific value.) Why does this happen?</p>
+<p>printf(&quot;x=%d y=%d&quot;, 3);</p>
+<p>$ call
+x=3 y=5221</p>
+</li>
+</ol>
+<ul>
+<li><a href="https://github.com/weijiew/6.S081-2020/commit/a3894ff5e3b7e9a3e08a0a1ea1697ff3bac9bb87">详细代码</a></li>
+</ul>
+<h2 id="backtrace-moderate"><a class="header" href="#backtrace-moderate">Backtrace (moderate)</a></h2>
+<p>建议阅读《程序员的自我修养》第十章。</p>
+<p>bttest 将会调用 sys_sleep，在 sys_sleep 中插入 backtrace() 。</p>
+<p>在 kernel/defs.h 中添加 backtrace() 并在 kernel/printf.c 中实现。</p>
+<p>在 kernel/riscv.h 添加获取 frame pointer 的代码，代码如下：</p>
+<pre><code class="language-c">static inline uint64
+r_fp()
+{
+  uint64 x;
+  asm volatile(&quot;mv %0, s0&quot; : &quot;=r&quot; (x) );
+  return x;
+}
+</code></pre>
+<p>其中 s0 中存储了 frame pointer 。在 backtrace 中将会调用该函数。</p>
+<p>将 backtrace() 加入 panic 中，当跳转到 panic 时将会打印调用函数的信息。</p>
+<p>栈指针 sp (stack pointer)。 指向栈的最高处。</p>
+<p>栈帧指针 fp (frame pointer)。指向栈帧(stack frame)的最高处。</p>
+<p>可以简单的理解为 sp 是当前函数在栈中地址上界，而 fp 则是当前具体执行到那一步了。</p>
+<p>fp - 8 表示返回地址， fp - 16 表示上一个 fp 的地址。</p>
+<p>fp 保存在寄存器 s0 中，每个函数调用栈</p>
+<p>通过循环，不断打印 ra ，通过 pre fp 拿到父函数的地址再打印 ra 即可。</p>
+<ul>
+<li><a href="https://github.com/weijiew/6.S081-2020/commit/102e77e9b3324df1062b8812b578f0d5b95d1a71">详细代码</a></li>
+</ul>
+<h2 id="alarm-hard"><a class="header" href="#alarm-hard">Alarm (hard)</a></h2>
+<p>实现一个进程使用 CPU time 时周期性的发出警告的功能。例如周期性的检查中断/异常需要用到这个功能。</p>
+<p>增加一个系统调用 sigalarm(interval, handler)，其中 handler 是一个函数，interval 是一个整数，表示经过的时间。sigalarm 的功能是经过 interval 个 CPU ticks ，调用 handler 函数。如果 sigalarm(0, 0) 内核将会停止周期性调用。</p>
+<p>proc 中需要保存 interval ，还需要一个字段表示当前时间 n ，每次调用 n-- 。当 n = 0 时执行函数并更新状态。</p>
+<p>如果有 handler 函数正在执行那么就不能执行别的 handler 函数，需要加一个字段判断一下。</p>
+<p>最后注意恢复。</p>
+<pre><code>== Test answers-traps.txt == answers-traps.txt: OK 
+== Test backtrace test == 
+$ make qemu-gdb
+backtrace test: OK (12.1s) 
+== Test running alarmtest == 
+$ make qemu-gdb
+(4.5s) 
+== Test   alarmtest: test0 == 
+alarmtest: test0: OK 
+== Test   alarmtest: test1 == 
+alarmtest: test1: OK 
+== Test   alarmtest: test2 == 
+alarmtest: test2: OK 
+== Test usertests == 
+$ make qemu-gdb
+usertests: OK (116.5s) 
+== Test time == 
+time: OK 
+Score: 85/85
+</code></pre>
+<ul>
+<li><a href="https://github.com/weijiew/6.S081-2020/commit/bddcd70db9d2f61749c8bd58b8100f49217a122d">详细代码</a></li>
+</ul>
+
+                    <div id="giscus-container"></div>
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+                    <a rel="prev" href="../6.S081/3-lab3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../6.S081/5-lab5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            <a rel="prev" href="../6.S081/3-lab3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+            <a rel="next" href="../6.S081/5-lab5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </nav>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        window.playground_copyable = true;
+    </script>
+
+    <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var pagePath = "6.S081/4-lab4.md"
+    </script>
+
+
+    <!-- Custom JS scripts -->
+
+
+</body>
+</html>
