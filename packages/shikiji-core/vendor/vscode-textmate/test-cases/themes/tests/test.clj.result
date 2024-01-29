@@ -1,0 +1,7418 @@
+{
+	"abyss": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#223355"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "require",
+			"color": "#225588"
+		},
+		{
+			"content": " '[clojure.string :as str])",
+			"color": "#6688CC"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "def",
+			"color": "#225588"
+		},
+		{
+			"content": " the-answer ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "42",
+			"color": "#F280D0"
+		},
+		{
+			"content": ")",
+			"color": "#6688CC"
+		},
+		{
+			"content": "[",
+			"color": "#6688CC"
+		},
+		{
+			"content": "1",
+			"color": "#F280D0"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "2",
+			"color": "#F280D0"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "3",
+			"color": "#F280D0"
+		},
+		{
+			"content": "]            ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "; A vector",
+			"color": "#223355"
+		},
+		{
+			"content": "[",
+			"color": "#6688CC"
+		},
+		{
+			"content": "1",
+			"color": "#F280D0"
+		},
+		{
+			"content": " :two ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"three\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "]",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{:a ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "1",
+			"color": "#F280D0"
+		},
+		{
+			"content": " :b ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "2",
+			"color": "#F280D0"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "#{:a :b :c}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "1",
+			"color": "#F280D0"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "2",
+			"color": "#F280D0"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "3",
+			"color": "#F280D0"
+		},
+		{
+			"content": ")",
+			"color": "#6688CC"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "def",
+			"color": "#225588"
+		},
+		{
+			"content": " my-stuff [",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"shirt\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"coat\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"hat\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "])   ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#223355"
+		},
+		{
+			"content": "(my-func (my-func2 arg1",
+			"color": "#6688CC"
+		},
+		{
+			"content": "                   arg2)",
+			"color": "#6688CC"
+		},
+		{
+			"content": "         (other-func arg-a",
+			"color": "#6688CC"
+		},
+		{
+			"content": "                     (foo-bar arg-x",
+			"color": "#6688CC"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#6688CC"
+		},
+		{
+			"content": "                              (+ arg-xx",
+			"color": "#6688CC"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#6688CC"
+		},
+		{
+			"content": "                                 arg-zz))",
+			"color": "#6688CC"
+		},
+		{
+			"content": "                     arg-b))",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'(+ ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "1",
+			"color": "#F280D0"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "2",
+			"color": "#F280D0"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "3",
+			"color": "#F280D0"
+		},
+		{
+			"content": ")",
+			"color": "#6688CC"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#223355"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "let",
+			"color": "#225588"
+		},
+		{
+			"content": " [width     ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "10",
+			"color": "#F280D0"
+		},
+		{
+			"content": "      height    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "20",
+			"color": "#F280D0"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "2",
+			"color": "#F280D0"
+		},
+		{
+			"content": "]",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  (println ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"hello from inside the `let`.\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ")",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  (* width",
+			"color": "#6688CC"
+		},
+		{
+			"content": "     height",
+			"color": "#6688CC"
+		},
+		{
+			"content": "     thickness))",
+			"color": "#6688CC"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#223355"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "def",
+			"color": "#225588"
+		},
+		{
+			"content": " v   [:a :b :c])",
+			"color": "#6688CC"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "def",
+			"color": "#225588"
+		},
+		{
+			"content": " li '(:a :b :c))",
+			"color": "#6688CC"
+		},
+		{
+			"content": "(conj v  :d)          ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#223355"
+		},
+		{
+			"content": "(conj li :d)          ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#223355"
+		},
+		{
+			"content": "v   ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#223355"
+		},
+		{
+			"content": "li  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#223355"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#223355"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "def",
+			"color": "#225588"
+		},
+		{
+			"content": " m {:a ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "1",
+			"color": "#F280D0"
+		},
+		{
+			"content": " :b ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "2",
+			"color": "#F280D0"
+		},
+		{
+			"content": "})",
+			"color": "#6688CC"
+		},
+		{
+			"content": "(assoc m :c ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "3",
+			"color": "#F280D0"
+		},
+		{
+			"content": ")        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#223355"
+		},
+		{
+			"content": "(dissoc m :b)         ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#223355"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "def",
+			"color": "#225588"
+		},
+		{
+			"content": " my-atom (atom {:foo ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "1",
+			"color": "#F280D0"
+		},
+		{
+			"content": "}))",
+			"color": "#6688CC"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#223355"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#6688CC"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#223355"
+		},
+		{
+			"content": "(swap! my-atom update-in [:foo] inc)",
+			"color": "#6688CC"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#223355"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#6688CC"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#223355"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "require",
+			"color": "#569CD6"
+		},
+		{
+			"content": " '[clojure.string :as str])",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "def",
+			"color": "#569CD6"
+		},
+		{
+			"content": " the-answer ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "42",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "]            ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; A vector",
+			"color": "#608B4E"
+		},
+		{
+			"content": "[",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " :two ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"three\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "]",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{:a ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " :b ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "#{:a :b :c}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "def",
+			"color": "#569CD6"
+		},
+		{
+			"content": " my-stuff [",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"shirt\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"coat\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"hat\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "])   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(my-func (my-func2 arg1",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                   arg2)",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "         (other-func arg-a",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                     (foo-bar arg-x",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                              (+ arg-xx",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                                 arg-zz))",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                     arg-b))",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'(+ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "let",
+			"color": "#569CD6"
+		},
+		{
+			"content": " [width     ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "10",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "      height    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "20",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "]",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  (println ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"hello from inside the `let`.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  (* width",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "     height",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "     thickness))",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "def",
+			"color": "#569CD6"
+		},
+		{
+			"content": " v   [:a :b :c])",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "def",
+			"color": "#569CD6"
+		},
+		{
+			"content": " li '(:a :b :c))",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(conj v  :d)          ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(conj li :d)          ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#608B4E"
+		},
+		{
+			"content": "v   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#608B4E"
+		},
+		{
+			"content": "li  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#608B4E"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "def",
+			"color": "#569CD6"
+		},
+		{
+			"content": " m {:a ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " :b ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "})",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(assoc m :c ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ")        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(dissoc m :b)         ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "def",
+			"color": "#569CD6"
+		},
+		{
+			"content": " my-atom (atom {:foo ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "}))",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#608B4E"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(swap! my-atom update-in [:foo] inc)",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#608B4E"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#608B4E"
+		}
+	],
+	"light_vs": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#008000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "require",
+			"color": "#0000FF"
+		},
+		{
+			"content": " '[clojure.string :as str])",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "def",
+			"color": "#0000FF"
+		},
+		{
+			"content": " the-answer ",
+			"color": "#000000"
+		},
+		{
+			"content": "42",
+			"color": "#09885A"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": "[",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "3",
+			"color": "#09885A"
+		},
+		{
+			"content": "]            ",
+			"color": "#000000"
+		},
+		{
+			"content": "; A vector",
+			"color": "#008000"
+		},
+		{
+			"content": "[",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": " :two ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"three\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "]",
+			"color": "#000000"
+		},
+		{
+			"content": "{:a ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": " :b ",
+			"color": "#000000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "#{:a :b :c}",
+			"color": "#000000"
+		},
+		{
+			"content": "'(",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "3",
+			"color": "#09885A"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "def",
+			"color": "#0000FF"
+		},
+		{
+			"content": " my-stuff [",
+			"color": "#000000"
+		},
+		{
+			"content": "\"shirt\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"coat\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"hat\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "])   ",
+			"color": "#000000"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#008000"
+		},
+		{
+			"content": "(my-func (my-func2 arg1",
+			"color": "#000000"
+		},
+		{
+			"content": "                   arg2)",
+			"color": "#000000"
+		},
+		{
+			"content": "         (other-func arg-a",
+			"color": "#000000"
+		},
+		{
+			"content": "                     (foo-bar arg-x",
+			"color": "#000000"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#000000"
+		},
+		{
+			"content": "                              (+ arg-xx",
+			"color": "#000000"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#000000"
+		},
+		{
+			"content": "                                 arg-zz))",
+			"color": "#000000"
+		},
+		{
+			"content": "                     arg-b))",
+			"color": "#000000"
+		},
+		{
+			"content": "'(+ ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "3",
+			"color": "#09885A"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#008000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "let",
+			"color": "#0000FF"
+		},
+		{
+			"content": " [width     ",
+			"color": "#000000"
+		},
+		{
+			"content": "10",
+			"color": "#09885A"
+		},
+		{
+			"content": "      height    ",
+			"color": "#000000"
+		},
+		{
+			"content": "20",
+			"color": "#09885A"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#000000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": "]",
+			"color": "#000000"
+		},
+		{
+			"content": "  (println ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"hello from inside the `let`.\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": "  (* width",
+			"color": "#000000"
+		},
+		{
+			"content": "     height",
+			"color": "#000000"
+		},
+		{
+			"content": "     thickness))",
+			"color": "#000000"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#008000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "def",
+			"color": "#0000FF"
+		},
+		{
+			"content": " v   [:a :b :c])",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "def",
+			"color": "#0000FF"
+		},
+		{
+			"content": " li '(:a :b :c))",
+			"color": "#000000"
+		},
+		{
+			"content": "(conj v  :d)          ",
+			"color": "#000000"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#008000"
+		},
+		{
+			"content": "(conj li :d)          ",
+			"color": "#000000"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#008000"
+		},
+		{
+			"content": "v   ",
+			"color": "#000000"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#008000"
+		},
+		{
+			"content": "li  ",
+			"color": "#000000"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#008000"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#008000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "def",
+			"color": "#0000FF"
+		},
+		{
+			"content": " m {:a ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": " :b ",
+			"color": "#000000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": "})",
+			"color": "#000000"
+		},
+		{
+			"content": "(assoc m :c ",
+			"color": "#000000"
+		},
+		{
+			"content": "3",
+			"color": "#09885A"
+		},
+		{
+			"content": ")        ",
+			"color": "#000000"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#008000"
+		},
+		{
+			"content": "(dissoc m :b)         ",
+			"color": "#000000"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#008000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "def",
+			"color": "#0000FF"
+		},
+		{
+			"content": " my-atom (atom {:foo ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": "}))",
+			"color": "#000000"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#008000"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#000000"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#008000"
+		},
+		{
+			"content": "(swap! my-atom update-in [:foo] inc)",
+			"color": "#000000"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#008000"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#000000"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#008000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#7CA668"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "require",
+			"color": "#569CD6"
+		},
+		{
+			"content": " '[clojure.string :as str])",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "def",
+			"color": "#569CD6"
+		},
+		{
+			"content": " the-answer ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "42",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "[",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "]            ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; A vector",
+			"color": "#7CA668"
+		},
+		{
+			"content": "[",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " :two ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"three\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "]",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{:a ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " :b ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "#{:a :b :c}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "def",
+			"color": "#569CD6"
+		},
+		{
+			"content": " my-stuff [",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"shirt\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"coat\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"hat\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "])   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#7CA668"
+		},
+		{
+			"content": "(my-func (my-func2 arg1",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                   arg2)",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "         (other-func arg-a",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                     (foo-bar arg-x",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                              (+ arg-xx",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                                 arg-zz))",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                     arg-b))",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'(+ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#7CA668"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "let",
+			"color": "#569CD6"
+		},
+		{
+			"content": " [width     ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "10",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "      height    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "20",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "]",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  (println ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"hello from inside the `let`.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  (* width",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "     height",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "     thickness))",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#7CA668"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "def",
+			"color": "#569CD6"
+		},
+		{
+			"content": " v   [:a :b :c])",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "def",
+			"color": "#569CD6"
+		},
+		{
+			"content": " li '(:a :b :c))",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(conj v  :d)          ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#7CA668"
+		},
+		{
+			"content": "(conj li :d)          ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#7CA668"
+		},
+		{
+			"content": "v   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#7CA668"
+		},
+		{
+			"content": "li  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#7CA668"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#7CA668"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "def",
+			"color": "#569CD6"
+		},
+		{
+			"content": " m {:a ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " :b ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "})",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(assoc m :c ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ")        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#7CA668"
+		},
+		{
+			"content": "(dissoc m :b)         ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#7CA668"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "def",
+			"color": "#569CD6"
+		},
+		{
+			"content": " my-atom (atom {:foo ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "}))",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#7CA668"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#7CA668"
+		},
+		{
+			"content": "(swap! my-atom update-in [:foo] inc)",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#7CA668"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#7CA668"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "require",
+			"color": "#C586C0"
+		},
+		{
+			"content": " '[clojure.string :as str])",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "def",
+			"color": "#C586C0"
+		},
+		{
+			"content": " the-answer ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "42",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "]            ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; A vector",
+			"color": "#608B4E"
+		},
+		{
+			"content": "[",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " :two ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"three\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "]",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{:a ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " :b ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "#{:a :b :c}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "def",
+			"color": "#C586C0"
+		},
+		{
+			"content": " my-stuff [",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"shirt\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"coat\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"hat\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "])   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(my-func (my-func2 arg1",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                   arg2)",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "         (other-func arg-a",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                     (foo-bar arg-x",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                              (+ arg-xx",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                                 arg-zz))",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                     arg-b))",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'(+ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "let",
+			"color": "#569CD6"
+		},
+		{
+			"content": " [width     ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "10",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "      height    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "20",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "]",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  (println ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"hello from inside the `let`.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  (* width",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "     height",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "     thickness))",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "def",
+			"color": "#C586C0"
+		},
+		{
+			"content": " v   [:a :b :c])",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "def",
+			"color": "#C586C0"
+		},
+		{
+			"content": " li '(:a :b :c))",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(conj v  :d)          ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(conj li :d)          ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#608B4E"
+		},
+		{
+			"content": "v   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#608B4E"
+		},
+		{
+			"content": "li  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#608B4E"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "def",
+			"color": "#C586C0"
+		},
+		{
+			"content": " m {:a ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " :b ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "})",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(assoc m :c ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ")        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(dissoc m :b)         ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "def",
+			"color": "#C586C0"
+		},
+		{
+			"content": " my-atom (atom {:foo ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "}))",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#608B4E"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#608B4E"
+		},
+		{
+			"content": "(swap! my-atom update-in [:foo] inc)",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#608B4E"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#608B4E"
+		}
+	],
+	"light_plus": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#008000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "require",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " '[clojure.string :as str])",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "def",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " the-answer ",
+			"color": "#000000"
+		},
+		{
+			"content": "42",
+			"color": "#09885A"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": "[",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "3",
+			"color": "#09885A"
+		},
+		{
+			"content": "]            ",
+			"color": "#000000"
+		},
+		{
+			"content": "; A vector",
+			"color": "#008000"
+		},
+		{
+			"content": "[",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": " :two ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"three\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "]",
+			"color": "#000000"
+		},
+		{
+			"content": "{:a ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": " :b ",
+			"color": "#000000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "#{:a :b :c}",
+			"color": "#000000"
+		},
+		{
+			"content": "'(",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "3",
+			"color": "#09885A"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "def",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " my-stuff [",
+			"color": "#000000"
+		},
+		{
+			"content": "\"shirt\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"coat\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"hat\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "])   ",
+			"color": "#000000"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#008000"
+		},
+		{
+			"content": "(my-func (my-func2 arg1",
+			"color": "#000000"
+		},
+		{
+			"content": "                   arg2)",
+			"color": "#000000"
+		},
+		{
+			"content": "         (other-func arg-a",
+			"color": "#000000"
+		},
+		{
+			"content": "                     (foo-bar arg-x",
+			"color": "#000000"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#000000"
+		},
+		{
+			"content": "                              (+ arg-xx",
+			"color": "#000000"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#000000"
+		},
+		{
+			"content": "                                 arg-zz))",
+			"color": "#000000"
+		},
+		{
+			"content": "                     arg-b))",
+			"color": "#000000"
+		},
+		{
+			"content": "'(+ ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "3",
+			"color": "#09885A"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#008000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "let",
+			"color": "#0000FF"
+		},
+		{
+			"content": " [width     ",
+			"color": "#000000"
+		},
+		{
+			"content": "10",
+			"color": "#09885A"
+		},
+		{
+			"content": "      height    ",
+			"color": "#000000"
+		},
+		{
+			"content": "20",
+			"color": "#09885A"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#000000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": "]",
+			"color": "#000000"
+		},
+		{
+			"content": "  (println ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"hello from inside the `let`.\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": "  (* width",
+			"color": "#000000"
+		},
+		{
+			"content": "     height",
+			"color": "#000000"
+		},
+		{
+			"content": "     thickness))",
+			"color": "#000000"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#008000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "def",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " v   [:a :b :c])",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "def",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " li '(:a :b :c))",
+			"color": "#000000"
+		},
+		{
+			"content": "(conj v  :d)          ",
+			"color": "#000000"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#008000"
+		},
+		{
+			"content": "(conj li :d)          ",
+			"color": "#000000"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#008000"
+		},
+		{
+			"content": "v   ",
+			"color": "#000000"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#008000"
+		},
+		{
+			"content": "li  ",
+			"color": "#000000"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#008000"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#008000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "def",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " m {:a ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": " :b ",
+			"color": "#000000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": "})",
+			"color": "#000000"
+		},
+		{
+			"content": "(assoc m :c ",
+			"color": "#000000"
+		},
+		{
+			"content": "3",
+			"color": "#09885A"
+		},
+		{
+			"content": ")        ",
+			"color": "#000000"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#008000"
+		},
+		{
+			"content": "(dissoc m :b)         ",
+			"color": "#000000"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#008000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "def",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " my-atom (atom {:foo ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": "}))",
+			"color": "#000000"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#008000"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#000000"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#008000"
+		},
+		{
+			"content": "(swap! my-atom update-in [:foo] inc)",
+			"color": "#000000"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#008000"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#000000"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#008000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "require",
+			"color": "#98676A"
+		},
+		{
+			"content": " '[clojure.string ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":as",
+			"color": "#F79A32"
+		},
+		{
+			"content": " str])",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "def",
+			"color": "#98676A"
+		},
+		{
+			"content": " the-answer ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "42",
+			"color": "#F79A32"
+		},
+		{
+			"content": ")",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "[",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "2",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "3",
+			"color": "#F79A32"
+		},
+		{
+			"content": "]            ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "; A vector",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "[",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":two",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "three",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "]",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":a",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":b",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "2",
+			"color": "#F79A32"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "#{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":a",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":b",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":c",
+			"color": "#F79A32"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "2",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "3",
+			"color": "#F79A32"
+		},
+		{
+			"content": ")",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "def",
+			"color": "#98676A"
+		},
+		{
+			"content": " my-stuff [",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "shirt",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "coat",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "hat",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "])   ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "(my-func (my-func2 arg1",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "                   arg2)",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "         (other-func arg-a",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "                     (foo-bar arg-x",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "                              (+ arg-xx",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "                                 arg-zz))",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "                     arg-b))",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'(+ ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "2",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "3",
+			"color": "#F79A32"
+		},
+		{
+			"content": ")",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "let",
+			"color": "#98676A"
+		},
+		{
+			"content": " [width     ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "10",
+			"color": "#F79A32"
+		},
+		{
+			"content": "      height    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "20",
+			"color": "#F79A32"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "2",
+			"color": "#F79A32"
+		},
+		{
+			"content": "]",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  (println ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "hello from inside the `let`.",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ")",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  (* width",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "     height",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "     thickness))",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "def",
+			"color": "#98676A"
+		},
+		{
+			"content": " v   [",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":a",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":b",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":c",
+			"color": "#F79A32"
+		},
+		{
+			"content": "])",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "def",
+			"color": "#98676A"
+		},
+		{
+			"content": " li '(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":a",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":b",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":c",
+			"color": "#F79A32"
+		},
+		{
+			"content": "))",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "(conj v  ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":d",
+			"color": "#F79A32"
+		},
+		{
+			"content": ")          ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "(conj li ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":d",
+			"color": "#F79A32"
+		},
+		{
+			"content": ")          ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "v   ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "li  ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#A57A4C"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "def",
+			"color": "#98676A"
+		},
+		{
+			"content": " m {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":a",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":b",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "2",
+			"color": "#F79A32"
+		},
+		{
+			"content": "})",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "(assoc m ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":c",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "3",
+			"color": "#F79A32"
+		},
+		{
+			"content": ")        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "(dissoc m ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":b",
+			"color": "#F79A32"
+		},
+		{
+			"content": ")         ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "def",
+			"color": "#98676A"
+		},
+		{
+			"content": " my-atom (atom {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":foo",
+			"color": "#F79A32"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#F79A32"
+		},
+		{
+			"content": "}))",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "(swap! my-atom update-in [",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":foo",
+			"color": "#F79A32"
+		},
+		{
+			"content": "] inc)",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#A57A4C"
+		}
+	],
+	"monokai": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#75715E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "require",
+			"color": "#F92672"
+		},
+		{
+			"content": " '[clojure.string :as str])",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "def",
+			"color": "#F92672"
+		},
+		{
+			"content": " the-answer ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "42",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "[",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "1",
+			"color": "#AE81FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "2",
+			"color": "#AE81FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "3",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "]            ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "; A vector",
+			"color": "#75715E"
+		},
+		{
+			"content": "[",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "1",
+			"color": "#AE81FF"
+		},
+		{
+			"content": " :two ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"three\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "]",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{:a ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "1",
+			"color": "#AE81FF"
+		},
+		{
+			"content": " :b ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "2",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "#{:a :b :c}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "1",
+			"color": "#AE81FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "2",
+			"color": "#AE81FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "3",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "def",
+			"color": "#F92672"
+		},
+		{
+			"content": " my-stuff [",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"shirt\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"coat\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"hat\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "])   ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#75715E"
+		},
+		{
+			"content": "(my-func (my-func2 arg1",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "                   arg2)",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "         (other-func arg-a",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "                     (foo-bar arg-x",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "                              (+ arg-xx",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "                                 arg-zz))",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "                     arg-b))",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'(+ ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "1",
+			"color": "#AE81FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "2",
+			"color": "#AE81FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "3",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#75715E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "let",
+			"color": "#F92672"
+		},
+		{
+			"content": " [width     ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "10",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "      height    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "20",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "2",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "]",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  (println ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"hello from inside the `let`.\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  (* width",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "     height",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "     thickness))",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#75715E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "def",
+			"color": "#F92672"
+		},
+		{
+			"content": " v   [:a :b :c])",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "def",
+			"color": "#F92672"
+		},
+		{
+			"content": " li '(:a :b :c))",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "(conj v  :d)          ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#75715E"
+		},
+		{
+			"content": "(conj li :d)          ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#75715E"
+		},
+		{
+			"content": "v   ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#75715E"
+		},
+		{
+			"content": "li  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#75715E"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#75715E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "def",
+			"color": "#F92672"
+		},
+		{
+			"content": " m {:a ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "1",
+			"color": "#AE81FF"
+		},
+		{
+			"content": " :b ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "2",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "})",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "(assoc m :c ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "3",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ")        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#75715E"
+		},
+		{
+			"content": "(dissoc m :b)         ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#75715E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "def",
+			"color": "#F92672"
+		},
+		{
+			"content": " my-atom (atom {:foo ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "1",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "}))",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#75715E"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#75715E"
+		},
+		{
+			"content": "(swap! my-atom update-in [:foo] inc)",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#75715E"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#75715E"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "require",
+			"color": "#9872A2"
+		},
+		{
+			"content": " '[clojure.string :as str])",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "def",
+			"color": "#9872A2"
+		},
+		{
+			"content": " the-answer ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "42",
+			"color": "#6089B4"
+		},
+		{
+			"content": ")",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "[",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "1",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "2",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "3",
+			"color": "#6089B4"
+		},
+		{
+			"content": "]            ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "; A vector",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "[",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "1",
+			"color": "#6089B4"
+		},
+		{
+			"content": " :two ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"three\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "]",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{:a ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "1",
+			"color": "#6089B4"
+		},
+		{
+			"content": " :b ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "2",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "#{:a :b :c}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "1",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "2",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "3",
+			"color": "#6089B4"
+		},
+		{
+			"content": ")",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "def",
+			"color": "#9872A2"
+		},
+		{
+			"content": " my-stuff [",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"shirt\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"coat\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"hat\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "])   ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "(my-func (my-func2 arg1",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "                   arg2)",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "         (other-func arg-a",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "                     (foo-bar arg-x",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "                              (+ arg-xx",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "                                 arg-zz))",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "                     arg-b))",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'(+ ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "1",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "2",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "3",
+			"color": "#6089B4"
+		},
+		{
+			"content": ")",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "let",
+			"color": "#9872A2"
+		},
+		{
+			"content": " [width     ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "10",
+			"color": "#6089B4"
+		},
+		{
+			"content": "      height    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "20",
+			"color": "#6089B4"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "2",
+			"color": "#6089B4"
+		},
+		{
+			"content": "]",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  (println ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"hello from inside the `let`.\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ")",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  (* width",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "     height",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "     thickness))",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "def",
+			"color": "#9872A2"
+		},
+		{
+			"content": " v   [:a :b :c])",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "def",
+			"color": "#9872A2"
+		},
+		{
+			"content": " li '(:a :b :c))",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "(conj v  :d)          ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "(conj li :d)          ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "v   ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "li  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#9A9B99"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "def",
+			"color": "#9872A2"
+		},
+		{
+			"content": " m {:a ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "1",
+			"color": "#6089B4"
+		},
+		{
+			"content": " :b ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "2",
+			"color": "#6089B4"
+		},
+		{
+			"content": "})",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "(assoc m :c ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "3",
+			"color": "#6089B4"
+		},
+		{
+			"content": ")        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "(dissoc m :b)         ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "def",
+			"color": "#9872A2"
+		},
+		{
+			"content": " my-atom (atom {:foo ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "1",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}))",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "(swap! my-atom update-in [:foo] inc)",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#9A9B99"
+		}
+	],
+	"quietlight": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "require",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " '[clojure.string ",
+			"color": "#333333"
+		},
+		{
+			"content": ":as",
+			"color": "#AB6526"
+		},
+		{
+			"content": " str]",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "def",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " the-answer ",
+			"color": "#333333"
+		},
+		{
+			"content": "42",
+			"color": "#AB6526"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "[",
+			"color": "#333333"
+		},
+		{
+			"content": "1",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "2",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "3",
+			"color": "#AB6526"
+		},
+		{
+			"content": "]            ",
+			"color": "#333333"
+		},
+		{
+			"content": "; A vector",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "[",
+			"color": "#333333"
+		},
+		{
+			"content": "1",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": ":two",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "three",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "]",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#333333"
+		},
+		{
+			"content": ":a",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "1",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": ":b",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "2",
+			"color": "#AB6526"
+		},
+		{
+			"content": "}",
+			"color": "#333333"
+		},
+		{
+			"content": "#{",
+			"color": "#333333"
+		},
+		{
+			"content": ":a",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": ":b",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": ":c",
+			"color": "#AB6526"
+		},
+		{
+			"content": "}",
+			"color": "#333333"
+		},
+		{
+			"content": "'(",
+			"color": "#777777"
+		},
+		{
+			"content": "1",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "2",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "3",
+			"color": "#AB6526"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "def",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " my-stuff [",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "shirt",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "coat",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "hat",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "]",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "   ",
+			"color": "#333333"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "my-func ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "my-func2 arg1",
+			"color": "#333333"
+		},
+		{
+			"content": "                   arg2",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "         ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "other-func arg-a",
+			"color": "#333333"
+		},
+		{
+			"content": "                     ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "foo-bar arg-x",
+			"color": "#333333"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#333333"
+		},
+		{
+			"content": "                              ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "+ arg-xx",
+			"color": "#333333"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#333333"
+		},
+		{
+			"content": "                                 arg-zz",
+			"color": "#333333"
+		},
+		{
+			"content": "))",
+			"color": "#777777"
+		},
+		{
+			"content": "                     arg-b",
+			"color": "#333333"
+		},
+		{
+			"content": "))",
+			"color": "#777777"
+		},
+		{
+			"content": "'(",
+			"color": "#777777"
+		},
+		{
+			"content": "+ ",
+			"color": "#333333"
+		},
+		{
+			"content": "1",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "2",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "3",
+			"color": "#AB6526"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "let",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " [width     ",
+			"color": "#333333"
+		},
+		{
+			"content": "10",
+			"color": "#AB6526"
+		},
+		{
+			"content": "      height    ",
+			"color": "#333333"
+		},
+		{
+			"content": "20",
+			"color": "#AB6526"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#333333"
+		},
+		{
+			"content": "2",
+			"color": "#AB6526"
+		},
+		{
+			"content": "]",
+			"color": "#333333"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "println ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "hello from inside the `let`.",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "* width",
+			"color": "#333333"
+		},
+		{
+			"content": "     height",
+			"color": "#333333"
+		},
+		{
+			"content": "     thickness",
+			"color": "#333333"
+		},
+		{
+			"content": "))",
+			"color": "#777777"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "def",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " v   [",
+			"color": "#333333"
+		},
+		{
+			"content": ":a",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": ":b",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": ":c",
+			"color": "#AB6526"
+		},
+		{
+			"content": "]",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "def",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " li ",
+			"color": "#333333"
+		},
+		{
+			"content": "'(",
+			"color": "#777777"
+		},
+		{
+			"content": ":a",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": ":b",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": ":c",
+			"color": "#AB6526"
+		},
+		{
+			"content": "))",
+			"color": "#777777"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "conj v  ",
+			"color": "#333333"
+		},
+		{
+			"content": ":d",
+			"color": "#AB6526"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "          ",
+			"color": "#333333"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "conj li ",
+			"color": "#333333"
+		},
+		{
+			"content": ":d",
+			"color": "#AB6526"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "          ",
+			"color": "#333333"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "v   ",
+			"color": "#333333"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "li  ",
+			"color": "#333333"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "def",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " m {",
+			"color": "#333333"
+		},
+		{
+			"content": ":a",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "1",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": ":b",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "2",
+			"color": "#AB6526"
+		},
+		{
+			"content": "}",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "assoc m ",
+			"color": "#333333"
+		},
+		{
+			"content": ":c",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "3",
+			"color": "#AB6526"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "dissoc m ",
+			"color": "#333333"
+		},
+		{
+			"content": ":b",
+			"color": "#AB6526"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "         ",
+			"color": "#333333"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "def",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " my-atom ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "atom {",
+			"color": "#333333"
+		},
+		{
+			"content": ":foo",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "1",
+			"color": "#AB6526"
+		},
+		{
+			"content": "}",
+			"color": "#333333"
+		},
+		{
+			"content": "))",
+			"color": "#777777"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#333333"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "swap! my-atom update-in [",
+			"color": "#333333"
+		},
+		{
+			"content": ":foo",
+			"color": "#AB6526"
+		},
+		{
+			"content": "] inc",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#333333"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#AAAAAA"
+		}
+	],
+	"red": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "require",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " '[clojure.string ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":as",
+			"color": "#994646FF"
+		},
+		{
+			"content": " str])",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "def",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "the-answer",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "42",
+			"color": "#994646FF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "[",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "1",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "2",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "3",
+			"color": "#994646FF"
+		},
+		{
+			"content": "]            ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "; A vector",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "[",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "1",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":two",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"three\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "]",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":a",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "1",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":b",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "2",
+			"color": "#994646FF"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "#{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":a",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":b",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":c",
+			"color": "#994646FF"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "1",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "2",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "3",
+			"color": "#994646FF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "def",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "my-stuff",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " [",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"shirt\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"coat\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"hat\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "])   ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "(my-func (my-func2 arg1",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "                   arg2)",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "         (other-func arg-a",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "                     (foo-bar arg-x",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "                              (+ arg-xx",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "                                 arg-zz))",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "                     arg-b))",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'(+ ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "1",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "2",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "3",
+			"color": "#994646FF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "let",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " [width     ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "10",
+			"color": "#994646FF"
+		},
+		{
+			"content": "      height    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "20",
+			"color": "#994646FF"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "2",
+			"color": "#994646FF"
+		},
+		{
+			"content": "]",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  (println ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"hello from inside the `let`.\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  (* width",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "     height",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "     thickness))",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "def",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "v",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "   [",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":a",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":b",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":c",
+			"color": "#994646FF"
+		},
+		{
+			"content": "])",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "def",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "li",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " '(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":a",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":b",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":c",
+			"color": "#994646FF"
+		},
+		{
+			"content": "))",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "(conj v  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":d",
+			"color": "#994646FF"
+		},
+		{
+			"content": ")          ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "(conj li ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":d",
+			"color": "#994646FF"
+		},
+		{
+			"content": ")          ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "v   ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "li  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "def",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "m",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":a",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "1",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":b",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "2",
+			"color": "#994646FF"
+		},
+		{
+			"content": "})",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "(assoc m ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":c",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "3",
+			"color": "#994646FF"
+		},
+		{
+			"content": ")        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "(dissoc m ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":b",
+			"color": "#994646FF"
+		},
+		{
+			"content": ")         ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "def",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "my-atom",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " (atom {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":foo",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "1",
+			"color": "#994646FF"
+		},
+		{
+			"content": "}))",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "(swap! my-atom update-in [",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":foo",
+			"color": "#994646FF"
+		},
+		{
+			"content": "] inc)",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#E7C0C0FF"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#657B83"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "require",
+			"color": "#859900"
+		},
+		{
+			"content": " '[clojure.string :as str])",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "def",
+			"color": "#859900"
+		},
+		{
+			"content": " the-answer ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "42",
+			"color": "#D33682"
+		},
+		{
+			"content": ")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "3",
+			"color": "#D33682"
+		},
+		{
+			"content": "]            ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "; A vector",
+			"color": "#657B83"
+		},
+		{
+			"content": "[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": " :two ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"three\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "{:a ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": " :b ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "#{:a :b :c}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "3",
+			"color": "#D33682"
+		},
+		{
+			"content": ")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "def",
+			"color": "#859900"
+		},
+		{
+			"content": " my-stuff [",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"shirt\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"coat\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"hat\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "])   ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#657B83"
+		},
+		{
+			"content": "(my-func (my-func2 arg1",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "                   arg2)",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "         (other-func arg-a",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "                     (foo-bar arg-x",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "                              (+ arg-xx",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "                                 arg-zz))",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "                     arg-b))",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'(+ ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "3",
+			"color": "#D33682"
+		},
+		{
+			"content": ")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#657B83"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "let",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " [width     ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "10",
+			"color": "#D33682"
+		},
+		{
+			"content": "      height    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "20",
+			"color": "#D33682"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": "]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  (println ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"hello from inside the `let`.\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  (* width",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "     height",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "     thickness))",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#657B83"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "def",
+			"color": "#859900"
+		},
+		{
+			"content": " v   [:a :b :c])",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "def",
+			"color": "#859900"
+		},
+		{
+			"content": " li '(:a :b :c))",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(conj v  :d)          ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#657B83"
+		},
+		{
+			"content": "(conj li :d)          ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#657B83"
+		},
+		{
+			"content": "v   ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#657B83"
+		},
+		{
+			"content": "li  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#657B83"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#657B83"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "def",
+			"color": "#859900"
+		},
+		{
+			"content": " m {:a ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": " :b ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": "})",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(assoc m :c ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "3",
+			"color": "#D33682"
+		},
+		{
+			"content": ")        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#657B83"
+		},
+		{
+			"content": "(dissoc m :b)         ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#657B83"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "def",
+			"color": "#859900"
+		},
+		{
+			"content": " my-atom (atom {:foo ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": "}))",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#657B83"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#657B83"
+		},
+		{
+			"content": "(swap! my-atom update-in [:foo] inc)",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#657B83"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#657B83"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "require",
+			"color": "#859900"
+		},
+		{
+			"content": " '[clojure.string :as str])",
+			"color": "#586E75"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "def",
+			"color": "#859900"
+		},
+		{
+			"content": " the-answer ",
+			"color": "#586E75"
+		},
+		{
+			"content": "42",
+			"color": "#D33682"
+		},
+		{
+			"content": ")",
+			"color": "#586E75"
+		},
+		{
+			"content": "[",
+			"color": "#586E75"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "3",
+			"color": "#D33682"
+		},
+		{
+			"content": "]            ",
+			"color": "#586E75"
+		},
+		{
+			"content": "; A vector",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "[",
+			"color": "#586E75"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": " :two ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"three\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "]",
+			"color": "#586E75"
+		},
+		{
+			"content": "{:a ",
+			"color": "#586E75"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": " :b ",
+			"color": "#586E75"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		},
+		{
+			"content": "#{:a :b :c}",
+			"color": "#586E75"
+		},
+		{
+			"content": "'(",
+			"color": "#586E75"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "3",
+			"color": "#D33682"
+		},
+		{
+			"content": ")",
+			"color": "#586E75"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "def",
+			"color": "#859900"
+		},
+		{
+			"content": " my-stuff [",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"shirt\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"coat\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"hat\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "])   ",
+			"color": "#586E75"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(my-func (my-func2 arg1",
+			"color": "#586E75"
+		},
+		{
+			"content": "                   arg2)",
+			"color": "#586E75"
+		},
+		{
+			"content": "         (other-func arg-a",
+			"color": "#586E75"
+		},
+		{
+			"content": "                     (foo-bar arg-x",
+			"color": "#586E75"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#586E75"
+		},
+		{
+			"content": "                              (+ arg-xx",
+			"color": "#586E75"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#586E75"
+		},
+		{
+			"content": "                                 arg-zz))",
+			"color": "#586E75"
+		},
+		{
+			"content": "                     arg-b))",
+			"color": "#586E75"
+		},
+		{
+			"content": "'(+ ",
+			"color": "#586E75"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "3",
+			"color": "#D33682"
+		},
+		{
+			"content": ")",
+			"color": "#586E75"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "let",
+			"color": "#073642"
+		},
+		{
+			"content": " [width     ",
+			"color": "#586E75"
+		},
+		{
+			"content": "10",
+			"color": "#D33682"
+		},
+		{
+			"content": "      height    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "20",
+			"color": "#D33682"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#586E75"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": "]",
+			"color": "#586E75"
+		},
+		{
+			"content": "  (println ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"hello from inside the `let`.\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ")",
+			"color": "#586E75"
+		},
+		{
+			"content": "  (* width",
+			"color": "#586E75"
+		},
+		{
+			"content": "     height",
+			"color": "#586E75"
+		},
+		{
+			"content": "     thickness))",
+			"color": "#586E75"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "def",
+			"color": "#859900"
+		},
+		{
+			"content": " v   [:a :b :c])",
+			"color": "#586E75"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "def",
+			"color": "#859900"
+		},
+		{
+			"content": " li '(:a :b :c))",
+			"color": "#586E75"
+		},
+		{
+			"content": "(conj v  :d)          ",
+			"color": "#586E75"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(conj li :d)          ",
+			"color": "#586E75"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "v   ",
+			"color": "#586E75"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "li  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "def",
+			"color": "#859900"
+		},
+		{
+			"content": " m {:a ",
+			"color": "#586E75"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": " :b ",
+			"color": "#586E75"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": "})",
+			"color": "#586E75"
+		},
+		{
+			"content": "(assoc m :c ",
+			"color": "#586E75"
+		},
+		{
+			"content": "3",
+			"color": "#D33682"
+		},
+		{
+			"content": ")        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(dissoc m :b)         ",
+			"color": "#586E75"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "def",
+			"color": "#859900"
+		},
+		{
+			"content": " my-atom (atom {:foo ",
+			"color": "#586E75"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": "}))",
+			"color": "#586E75"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#586E75"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(swap! my-atom update-in [:foo] inc)",
+			"color": "#586E75"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#586E75"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#93A1A1"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": ";; from http://clojure-doc.org/articles/tutorials/introduction.html",
+			"color": "#7285B7"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "require",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " '[clojure.string :as str])",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "def",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " the-answer ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "42",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "[",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "2",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "3",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "]            ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; A vector",
+			"color": "#7285B7"
+		},
+		{
+			"content": "[",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " :two ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"three\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "]",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{:a ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " :b ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "2",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "#{:a :b :c}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "2",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "3",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "def",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " my-stuff [",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"shirt\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"coat\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"hat\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "])   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; this is more typical usage.",
+			"color": "#7285B7"
+		},
+		{
+			"content": "(my-func (my-func2 arg1",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                   arg2)",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "         (other-func arg-a",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                     (foo-bar arg-x",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                              arg-y",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                              (+ arg-xx",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                                 arg-yy",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                                 arg-zz))",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                     arg-b))",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'(+ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "2",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "3",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";; ⇒ (+ 1 2 3)",
+			"color": "#7285B7"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "let",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " [width     ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "10",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "      height    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "20",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "      thickness ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "2",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "]",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  (println ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"hello from inside the `let`.\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  (* width",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "     height",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "     thickness))",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";; Vectors",
+			"color": "#7285B7"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "def",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " v   [:a :b :c])",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "def",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " li '(:a :b :c))",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(conj v  :d)          ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; ⇒ [:a :b :c :d]",
+			"color": "#7285B7"
+		},
+		{
+			"content": "(conj li :d)          ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; ⇒ (:d :a :b :c)",
+			"color": "#7285B7"
+		},
+		{
+			"content": "v   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; ⇒ is still [:a :b :c]",
+			"color": "#7285B7"
+		},
+		{
+			"content": "li  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; ⇒ is still (:a :b :c)",
+			"color": "#7285B7"
+		},
+		{
+			"content": ";; Maps",
+			"color": "#7285B7"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "def",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " m {:a ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " :b ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "2",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "})",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(assoc m :c ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "3",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ")        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; ⇒ {:a 1 :c 3 :b 2}",
+			"color": "#7285B7"
+		},
+		{
+			"content": "(dissoc m :b)         ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "; ⇒ {:a 1}",
+			"color": "#7285B7"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "def",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " my-atom (atom {:foo ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "}))",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";; ⇒ #'user/my-atom",
+			"color": "#7285B7"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";; ⇒ {:foo 1}",
+			"color": "#7285B7"
+		},
+		{
+			"content": "(swap! my-atom update-in [:foo] inc)",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#7285B7"
+		},
+		{
+			"content": "@my-atom",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";; ⇒ {:foo 2}",
+			"color": "#7285B7"
+		}
+	]
+}

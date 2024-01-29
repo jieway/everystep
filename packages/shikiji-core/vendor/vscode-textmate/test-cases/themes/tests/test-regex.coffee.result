@@ -1,0 +1,2054 @@
+{
+	"abyss": [
+		{
+			"content": "regex ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "/Hello (",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\\d",
+			"color": "#F280D0"
+		},
+		{
+			"content": "+",
+			"color": "#225588"
+		},
+		{
+			"content": ") #{user}/g",
+			"color": "#22AA44"
+		},
+		{
+			"content": "2",
+			"color": "#F280D0"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "/",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "3",
+			"color": "#F280D0"
+		},
+		{
+			"content": "2",
+			"color": "#F280D0"
+		},
+		{
+			"content": "/3",
+			"color": "#22AA44"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#22AA44"
+		},
+		{
+			"content": "+",
+			"color": "#225588"
+		},
+		{
+			"content": " d/g",
+			"color": "#22AA44"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#6688CC"
+		},
+		{
+			"content": "name",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": "\"hello\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "test",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": "/// ",
+			"color": "#22AA44"
+		},
+		{
+			"content": "#{name}",
+			"color": "#22AA44"
+		},
+		{
+			"content": "fancyRegExp = ///",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#6688CC"
+		},
+		{
+			"content": "+",
+			"color": "#225588"
+		},
+		{
+			"content": ")\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "# numbers",
+			"color": "#223355"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#6688CC"
+		},
+		{
+			"content": "*",
+			"color": "#225588"
+		},
+		{
+			"content": ")\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "# letters",
+			"color": "#223355"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "# the end",
+			"color": "#223355"
+		},
+		{
+			"content": "///",
+			"color": "#22AA44"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "regex = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/Hello (\\d",
+			"color": "#D16969"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ") #{user}/g",
+			"color": "#D16969"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " / ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "/3",
+			"color": "#D16969"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#D16969"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " d/g",
+			"color": "#D16969"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "name=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"hello\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "test=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/// ",
+			"color": "#D16969"
+		},
+		{
+			"content": "#{name}",
+			"color": "#D16969"
+		},
+		{
+			"content": "fancyRegExp = ///",
+			"color": "#D16969"
+		},
+		{
+			"content": "\t(\\d+)\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "# numbers",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t(\\w*)\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "# letters",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "# the end",
+			"color": "#608B4E"
+		},
+		{
+			"content": "///",
+			"color": "#D16969"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "regex = ",
+			"color": "#000000"
+		},
+		{
+			"content": "/Hello (\\d",
+			"color": "#811F3F"
+		},
+		{
+			"content": "+",
+			"color": "#000000"
+		},
+		{
+			"content": ") #{user}/g",
+			"color": "#811F3F"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": " / ",
+			"color": "#000000"
+		},
+		{
+			"content": "3",
+			"color": "#09885A"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": "/3",
+			"color": "#811F3F"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#811F3F"
+		},
+		{
+			"content": "+",
+			"color": "#000000"
+		},
+		{
+			"content": " d/g",
+			"color": "#811F3F"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#000000"
+		},
+		{
+			"content": "name=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"hello\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "test=",
+			"color": "#000000"
+		},
+		{
+			"content": "/// ",
+			"color": "#811F3F"
+		},
+		{
+			"content": "#{name}",
+			"color": "#811F3F"
+		},
+		{
+			"content": "fancyRegExp = ///",
+			"color": "#811F3F"
+		},
+		{
+			"content": "\t(\\d+)\t",
+			"color": "#000000"
+		},
+		{
+			"content": "# numbers",
+			"color": "#008000"
+		},
+		{
+			"content": "\t(\\w*)\t",
+			"color": "#000000"
+		},
+		{
+			"content": "# letters",
+			"color": "#008000"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "# the end",
+			"color": "#008000"
+		},
+		{
+			"content": "///",
+			"color": "#811F3F"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "regex ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/Hello (\\d",
+			"color": "#D16969"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ") #{user}/g",
+			"color": "#D16969"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "/3",
+			"color": "#D16969"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#D16969"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " d/g",
+			"color": "#D16969"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "name",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"hello\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "test",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/// ",
+			"color": "#D16969"
+		},
+		{
+			"content": "#{name}",
+			"color": "#D16969"
+		},
+		{
+			"content": "fancyRegExp = ///",
+			"color": "#D16969"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ")\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "# numbers",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "*",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ")\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "# letters",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "# the end",
+			"color": "#7CA668"
+		},
+		{
+			"content": "///",
+			"color": "#D16969"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "regex",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/Hello (\\d",
+			"color": "#D16969"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ") #{user}/g",
+			"color": "#D16969"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " / ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "/3",
+			"color": "#D16969"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#D16969"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " d/g",
+			"color": "#D16969"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "name",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"hello\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "test",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/// ",
+			"color": "#D16969"
+		},
+		{
+			"content": "#{name}",
+			"color": "#D16969"
+		},
+		{
+			"content": "fancyRegExp = ///",
+			"color": "#D16969"
+		},
+		{
+			"content": "\t(\\d+)\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "# numbers",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t(\\w*)\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "# letters",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "# the end",
+			"color": "#608B4E"
+		},
+		{
+			"content": "///",
+			"color": "#D16969"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "regex",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "/Hello (\\d",
+			"color": "#811F3F"
+		},
+		{
+			"content": "+",
+			"color": "#000000"
+		},
+		{
+			"content": ") #{user}/g",
+			"color": "#811F3F"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": " / ",
+			"color": "#000000"
+		},
+		{
+			"content": "3",
+			"color": "#09885A"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": "/3",
+			"color": "#811F3F"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#811F3F"
+		},
+		{
+			"content": "+",
+			"color": "#000000"
+		},
+		{
+			"content": " d/g",
+			"color": "#811F3F"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#000000"
+		},
+		{
+			"content": "name",
+			"color": "#001080"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"hello\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "test",
+			"color": "#001080"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "/// ",
+			"color": "#811F3F"
+		},
+		{
+			"content": "#{name}",
+			"color": "#811F3F"
+		},
+		{
+			"content": "fancyRegExp = ///",
+			"color": "#811F3F"
+		},
+		{
+			"content": "\t(\\d+)\t",
+			"color": "#000000"
+		},
+		{
+			"content": "# numbers",
+			"color": "#008000"
+		},
+		{
+			"content": "\t(\\w*)\t",
+			"color": "#000000"
+		},
+		{
+			"content": "# letters",
+			"color": "#008000"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "# the end",
+			"color": "#008000"
+		},
+		{
+			"content": "///",
+			"color": "#811F3F"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "regex",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "/",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Hello (",
+			"color": "#7E602C"
+		},
+		{
+			"content": "\\d",
+			"color": "#F79A32"
+		},
+		{
+			"content": "+",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ") #{user}",
+			"color": "#7E602C"
+		},
+		{
+			"content": "/",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "g",
+			"color": "#7E602C"
+		},
+		{
+			"content": "2",
+			"color": "#F79A32"
+		},
+		{
+			"content": " / ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "3",
+			"color": "#F79A32"
+		},
+		{
+			"content": "2",
+			"color": "#F79A32"
+		},
+		{
+			"content": "/",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "3",
+			"color": "#7E602C"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#7E602C"
+		},
+		{
+			"content": "+",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " d",
+			"color": "#7E602C"
+		},
+		{
+			"content": "/",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "g",
+			"color": "#7E602C"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "name",
+			"color": "#DC3958"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "hello",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "test",
+			"color": "#DC3958"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "///",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#7E602C"
+		},
+		{
+			"content": "#{",
+			"color": "#18401E"
+		},
+		{
+			"content": "name",
+			"color": "#7E602C"
+		},
+		{
+			"content": "}",
+			"color": "#18401E"
+		},
+		{
+			"content": "fancyRegExp = ",
+			"color": "#7E602C"
+		},
+		{
+			"content": "///",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t(\\d+)\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "# numbers",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t(\\w*)\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "# letters",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "# the end",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "///",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "regex ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "/Hello (",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\\d",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "+",
+			"color": "#F92672"
+		},
+		{
+			"content": ") #{user}/g",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "2",
+			"color": "#AE81FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "/",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "3",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "2",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "/3",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "+",
+			"color": "#F92672"
+		},
+		{
+			"content": " d/g",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "name",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": "\"hello\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "test",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": "/// ",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "#{name}",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "fancyRegExp = ///",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "+",
+			"color": "#F92672"
+		},
+		{
+			"content": ")\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "# numbers",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "*",
+			"color": "#F92672"
+		},
+		{
+			"content": ")\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "# letters",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "# the end",
+			"color": "#75715E"
+		},
+		{
+			"content": "///",
+			"color": "#E6DB74"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "regex",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "/Hello (",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\\d",
+			"color": "#8080FF"
+		},
+		{
+			"content": "+",
+			"color": "#676867"
+		},
+		{
+			"content": ") #{user}/g",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "2",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "/",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "3",
+			"color": "#6089B4"
+		},
+		{
+			"content": "2",
+			"color": "#6089B4"
+		},
+		{
+			"content": "/3",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "+",
+			"color": "#676867"
+		},
+		{
+			"content": " d/g",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "name",
+			"color": "#6089B4"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": "\"hello\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "test",
+			"color": "#6089B4"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": "/// ",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "#{",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "name}",
+			"color": "#D08442"
+		},
+		{
+			"content": "fancyRegExp = ///",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "+",
+			"color": "#676867"
+		},
+		{
+			"content": ")\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "# numbers",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "*",
+			"color": "#676867"
+		},
+		{
+			"content": ")\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "# letters",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "# the end",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "///",
+			"color": "#9AA83A"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "regex",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": "Hello ",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "\\d",
+			"color": "#AB6526"
+		},
+		{
+			"content": "+)",
+			"color": "#777777"
+		},
+		{
+			"content": " #{user}",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": "g",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "2",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "3",
+			"color": "#AB6526"
+		},
+		{
+			"content": "2",
+			"color": "#AB6526"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": "3",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "+",
+			"color": "#777777"
+		},
+		{
+			"content": " d",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": "g",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#333333"
+		},
+		{
+			"content": "name",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "hello",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "test",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": "///",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "#{",
+			"color": "#777777"
+		},
+		{
+			"content": "name",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "fancyRegExp = ",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "///",
+			"color": "#777777"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#333333"
+		},
+		{
+			"content": "+",
+			"color": "#777777"
+		},
+		{
+			"content": ")\t",
+			"color": "#333333"
+		},
+		{
+			"content": "# numbers",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#333333"
+		},
+		{
+			"content": "*",
+			"color": "#777777"
+		},
+		{
+			"content": ")\t",
+			"color": "#333333"
+		},
+		{
+			"content": "# letters",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "# the end",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "///",
+			"color": "#777777"
+		}
+	],
+	"red": [
+		{
+			"content": "regex",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "/Hello (",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "\\d",
+			"color": "#FFE862FF"
+		},
+		{
+			"content": "+",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ") #{user}/g",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "2",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "/",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "3",
+			"color": "#994646FF"
+		},
+		{
+			"content": "2",
+			"color": "#994646FF"
+		},
+		{
+			"content": "/3",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "+",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " d/g",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "name",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "\"hello\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "test",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "/// ",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "#{name}",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "fancyRegExp = ///",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "+",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ")\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "# numbers",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "*",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ")\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "# letters",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "# the end",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "///",
+			"color": "#FFB454FF"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "regex",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "/Hello (",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\d",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": ") #{user}/g",
+			"color": "#D30102"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "/",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "3",
+			"color": "#D33682"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": "/3",
+			"color": "#D30102"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#D30102"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": " d/g",
+			"color": "#D30102"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "name",
+			"color": "#268BD2"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "\"hello\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "test",
+			"color": "#268BD2"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "/// ",
+			"color": "#D30102"
+		},
+		{
+			"content": "#{name}",
+			"color": "#D30102"
+		},
+		{
+			"content": "fancyRegExp = ///",
+			"color": "#D30102"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": ")\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "# numbers",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "*",
+			"color": "#859900"
+		},
+		{
+			"content": ")\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "# letters",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "# the end",
+			"color": "#657B83"
+		},
+		{
+			"content": "///",
+			"color": "#D30102"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "regex",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "/Hello (",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\d",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": ") #{user}/g",
+			"color": "#D30102"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "/",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "3",
+			"color": "#D33682"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": "/3",
+			"color": "#D30102"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#D30102"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": " d/g",
+			"color": "#D30102"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#586E75"
+		},
+		{
+			"content": "name",
+			"color": "#268BD2"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "\"hello\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "test",
+			"color": "#268BD2"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "/// ",
+			"color": "#D30102"
+		},
+		{
+			"content": "#{name}",
+			"color": "#D30102"
+		},
+		{
+			"content": "fancyRegExp = ///",
+			"color": "#D30102"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#586E75"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": ")\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "# numbers",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#586E75"
+		},
+		{
+			"content": "*",
+			"color": "#859900"
+		},
+		{
+			"content": ")\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "# letters",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "# the end",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "///",
+			"color": "#D30102"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "regex",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/Hello (",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\\d",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "+",
+			"color": "#99FFFF"
+		},
+		{
+			"content": ") #{user}/g",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "2",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "3",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "2",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "/3",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "a = b/c ",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "+",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " d/g",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "someOtherStuff",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "name",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "\"hello\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "test",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "/// ",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "#{",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "name",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "fancyRegExp = ///",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "+",
+			"color": "#99FFFF"
+		},
+		{
+			"content": ")\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "# numbers",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "*",
+			"color": "#99FFFF"
+		},
+		{
+			"content": ")\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "# letters",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "# the end",
+			"color": "#7285B7"
+		},
+		{
+			"content": "///",
+			"color": "#FF9DA4"
+		}
+	]
+}

@@ -1,0 +1,1898 @@
+{
+	"abyss": [
+		{
+			"content": "var",
+			"color": "#225588"
+		},
+		{
+			"content": " teamScore ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "0",
+			"color": "#F280D0"
+		},
+		{
+			"content": "var",
+			"color": "#225588"
+		},
+		{
+			"content": " greeting ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Hello!\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "func",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "hasAnyMatches",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(list: [Int], condition: (Int) -> ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Bool) -> Bool ",
+			"color": "#FFEEBB"
+		},
+		{
+			"content": "{",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#225588"
+		},
+		{
+			"content": " item ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "in",
+			"color": "#225588"
+		},
+		{
+			"content": " list {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "if",
+			"color": "#225588"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "            ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "return",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "true",
+			"color": "#225588"
+		},
+		{
+			"content": "        }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "return",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "false",
+			"color": "#225588"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " teamScore = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " greeting = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Hello!\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "func",
+			"color": "#569CD6"
+		},
+		{
+			"content": " hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " item ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "in",
+			"color": "#569CD6"
+		},
+		{
+			"content": " list {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "            ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": "        }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "false",
+			"color": "#569CD6"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " teamScore = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " greeting = ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Hello!\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "func",
+			"color": "#0000FF"
+		},
+		{
+			"content": " hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": " item ",
+			"color": "#000000"
+		},
+		{
+			"content": "in",
+			"color": "#0000FF"
+		},
+		{
+			"content": " list {",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#0000FF"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#000000"
+		},
+		{
+			"content": "            ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "true",
+			"color": "#0000FF"
+		},
+		{
+			"content": "        }",
+			"color": "#000000"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "false",
+			"color": "#0000FF"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " teamScore ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " greeting ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Hello!\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "func",
+			"color": "#569CD6"
+		},
+		{
+			"content": " hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " item ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "in",
+			"color": "#569CD6"
+		},
+		{
+			"content": " list {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "            ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": "        }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "false",
+			"color": "#569CD6"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " teamScore = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " greeting = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Hello!\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "func",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "hasAnyMatches",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(list: [Int], condition: (Int) ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "-> Bool) -> Bool ",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": "{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " item ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "in",
+			"color": "#569CD6"
+		},
+		{
+			"content": " list {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "            ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": "        }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "false",
+			"color": "#569CD6"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " teamScore = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " greeting = ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Hello!\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "func",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "hasAnyMatches",
+			"color": "#795E26"
+		},
+		{
+			"content": "(list: [Int], condition: (Int) ",
+			"color": "#000000"
+		},
+		{
+			"content": "-> Bool) -> Bool ",
+			"color": "#267F99"
+		},
+		{
+			"content": "{",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": " item ",
+			"color": "#000000"
+		},
+		{
+			"content": "in",
+			"color": "#0000FF"
+		},
+		{
+			"content": " list {",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#0000FF"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#000000"
+		},
+		{
+			"content": "            ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "true",
+			"color": "#0000FF"
+		},
+		{
+			"content": "        }",
+			"color": "#000000"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "false",
+			"color": "#0000FF"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " teamScore = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "0",
+			"color": "#F79A32"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " greeting = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Hello!",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "func",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "hasAnyMatches",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(list: [Int], condition: (Int) -> ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Bool) -> Bool ",
+			"color": "#F06431"
+		},
+		{
+			"content": "{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#98676A"
+		},
+		{
+			"content": " item ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "in",
+			"color": "#98676A"
+		},
+		{
+			"content": " list {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "if",
+			"color": "#98676A"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "            ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "return",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "true",
+			"color": "#98676A"
+		},
+		{
+			"content": "        }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "return",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "false",
+			"color": "#98676A"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "var",
+			"color": "#F92672"
+		},
+		{
+			"content": " teamScore ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "0",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "var",
+			"color": "#F92672"
+		},
+		{
+			"content": " greeting ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Hello!\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "func",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "hasAnyMatches",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(list: [Int], condition: (Int) -> ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Bool) -> Bool ",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#F92672"
+		},
+		{
+			"content": " item ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "in",
+			"color": "#F92672"
+		},
+		{
+			"content": " list {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "if",
+			"color": "#F92672"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "            ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "return",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "true",
+			"color": "#F92672"
+		},
+		{
+			"content": "        }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "return",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "false",
+			"color": "#F92672"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "var",
+			"color": "#676867"
+		},
+		{
+			"content": " teamScore ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "0",
+			"color": "#6089B4"
+		},
+		{
+			"content": "var",
+			"color": "#676867"
+		},
+		{
+			"content": " greeting ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Hello!\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "func",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "hasAnyMatches",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(list: [Int], condition: (Int) -> ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Bool) -> Bool ",
+			"color": "#9B0000"
+		},
+		{
+			"content": "{",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "for",
+			"color": "#676867"
+		},
+		{
+			"content": " item ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "in",
+			"color": "#676867"
+		},
+		{
+			"content": " list {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "if",
+			"color": "#676867"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "            ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "return",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "true",
+			"color": "#676867"
+		},
+		{
+			"content": "        }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "return",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "false",
+			"color": "#676867"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "var",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " teamScore ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "0",
+			"color": "#AB6526"
+		},
+		{
+			"content": "var",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " greeting ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "Hello!",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "func",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "hasAnyMatches",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "list: [Int], condition: (Int",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "->",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Bool) -> Bool ",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "{",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "for",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " item ",
+			"color": "#333333"
+		},
+		{
+			"content": "in",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " list {",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "if",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#333333"
+		},
+		{
+			"content": "            ",
+			"color": "#333333"
+		},
+		{
+			"content": "return",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "true",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "        }",
+			"color": "#333333"
+		},
+		{
+			"content": "    }",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "return",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "false",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "}",
+			"color": "#333333"
+		}
+	],
+	"red": [
+		{
+			"content": "var",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " teamScore ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "0",
+			"color": "#994646FF"
+		},
+		{
+			"content": "var",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " greeting ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Hello!\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "func",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "hasAnyMatches",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(list: [Int], condition: (Int) -> ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Bool) -> Bool ",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "for",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " item ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "in",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " list {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "if",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "            ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "return",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "true",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "        }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "return",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "false",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "var",
+			"color": "#859900"
+		},
+		{
+			"content": " teamScore ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": "var",
+			"color": "#859900"
+		},
+		{
+			"content": " greeting ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Hello!\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "func",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "hasAnyMatches",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(list: [Int], condition: (Int) -> ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Bool) -> Bool ",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "{",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " item ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "in",
+			"color": "#859900"
+		},
+		{
+			"content": " list {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "            ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "true",
+			"color": "#859900"
+		},
+		{
+			"content": "        }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "false",
+			"color": "#859900"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "var",
+			"color": "#859900"
+		},
+		{
+			"content": " teamScore ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": "var",
+			"color": "#859900"
+		},
+		{
+			"content": " greeting ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Hello!\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "func",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "hasAnyMatches",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(list: [Int], condition: (Int) -> ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Bool) -> Bool ",
+			"color": "#268BD2"
+		},
+		{
+			"content": "{",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " item ",
+			"color": "#586E75"
+		},
+		{
+			"content": "in",
+			"color": "#859900"
+		},
+		{
+			"content": " list {",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#586E75"
+		},
+		{
+			"content": "            ",
+			"color": "#586E75"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "true",
+			"color": "#859900"
+		},
+		{
+			"content": "        }",
+			"color": "#586E75"
+		},
+		{
+			"content": "    }",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "false",
+			"color": "#859900"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " teamScore ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " greeting ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Hello!\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "func",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "hasAnyMatches",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(list: [Int], condition: (Int) -> ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Bool) -> Bool ",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " item ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "in",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " list {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " condition(item) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "            ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "true",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "        }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "false",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	]
+}

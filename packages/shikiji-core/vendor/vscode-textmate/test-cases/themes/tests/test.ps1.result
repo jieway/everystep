@@ -1,0 +1,10706 @@
+{
+	"abyss": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#223355"
+		},
+		{
+			"content": "function",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "() {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "try",
+			"color": "#225588"
+		},
+		{
+			"content": " {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "identity ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "[Security.Principal.WindowsIdentity]",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "::GetCurrent",
+			"color": "#6688CC"
+		},
+		{
+			"content": "()",
+			"color": "#225588"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "principal ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "New-Object",
+			"color": "#9966B8"
+		},
+		{
+			"content": " Security.Principal.WindowsPrincipal ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-",
+			"color": "#225588"
+		},
+		{
+			"content": "ArgumentList ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "identity",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "return",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "principal",
+			"color": "#6688CC"
+		},
+		{
+			"content": ".IsInRole",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "[Security.Principal.WindowsBuiltInRole]",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "::Administrator ",
+			"color": "#6688CC"
+		},
+		{
+			"content": ")",
+			"color": "#225588"
+		},
+		{
+			"content": "    } ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "catch",
+			"color": "#225588"
+		},
+		{
+			"content": " {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "throw",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-f",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "_",
+			"color": "#9966B8"
+		},
+		{
+			"content": "    }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "function",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "()",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "param",
+			"color": "#225588"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "(",
+			"color": "#225588"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "[Parameter",
+			"color": "#225588"
+		},
+		{
+			"content": "(",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "Mandatory",
+			"color": "#F280D0"
+		},
+		{
+			"content": "=1)",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "]",
+			"color": "#225588"
+		},
+		{
+			"content": "[string]",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "Command",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": ")",
+			"color": "#225588"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "foreach($",
+			"color": "#225588"
+		},
+		{
+			"content": "_",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "in",
+			"color": "#225588"
+		},
+		{
+			"content": " cmd ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "/",
+			"color": "#225588"
+		},
+		{
+			"content": "c ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "Command  2>&1 & set\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ")",
+			"color": "#225588"
+		},
+		{
+			"content": " {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "if",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "($",
+			"color": "#225588"
+		},
+		{
+			"content": "_",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-match",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ")",
+			"color": "#225588"
+		},
+		{
+			"content": " {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "            ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "[System.Environment]",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "::SetEnvironmentVariable",
+			"color": "#6688CC"
+		},
+		{
+			"content": "($",
+			"color": "#225588"
+		},
+		{
+			"content": "matches",
+			"color": "#9966B8"
+		},
+		{
+			"content": "[",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "1",
+			"color": "#9966B8"
+		},
+		{
+			"content": "]",
+			"color": "#DDBB88"
+		},
+		{
+			"content": ",",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "matches",
+			"color": "#9966B8"
+		},
+		{
+			"content": "[",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "2",
+			"color": "#9966B8"
+		},
+		{
+			"content": "]",
+			"color": "#DDBB88"
+		},
+		{
+			"content": ")",
+			"color": "#225588"
+		},
+		{
+			"content": "        }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-",
+			"color": "#225588"
+		},
+		{
+			"content": "Object ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ";",
+			"color": "#225588"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#223355"
+		},
+		{
+			"content": "if",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "(!(",
+			"color": "#225588"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#9966B8"
+		},
+		{
+			"content": "))",
+			"color": "#225588"
+		},
+		{
+			"content": "{",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-",
+			"color": "#225588"
+		},
+		{
+			"content": "Object ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-",
+			"color": "#225588"
+		},
+		{
+			"content": "ForegroundColor Red",
+			"color": "#6688CC"
+		},
+		{
+			"content": ";",
+			"color": "#225588"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "env:AzurePSRoot ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Split-Path",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-",
+			"color": "#225588"
+		},
+		{
+			"content": "Parent ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-",
+			"color": "#225588"
+		},
+		{
+			"content": "Path ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "env:AzurePSRoot",
+			"color": "#6688CC"
+		},
+		{
+			"content": ";",
+			"color": "#225588"
+		},
+		{
+			"content": "if",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "(",
+			"color": "#225588"
+		},
+		{
+			"content": "Test-Path",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-",
+			"color": "#225588"
+		},
+		{
+			"content": "Path ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles\\Microsoft Visual Studio 12.0\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ")",
+			"color": "#225588"
+		},
+		{
+			"content": " {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "} ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "else",
+			"color": "#225588"
+		},
+		{
+			"content": " {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "setVSEnv ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-f",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles",
+			"color": "#6688CC"
+		},
+		{
+			"content": ",",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#6688CC"
+		},
+		{
+			"content": ";",
+			"color": "#225588"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-",
+			"color": "#225588"
+		},
+		{
+			"content": "Command ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#6688CC"
+		},
+		{
+			"content": ";",
+			"color": "#225588"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#608B4E"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Test-IsAdmin() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "try",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "identity = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[Security.Principal.WindowsIdentity]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "::GetCurrent",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "()",
+			"color": "#569CD6"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "principal = New-Object Security.Principal.WindowsPrincipal -ArgumentList ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "identity",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "principal.IsInRole",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[Security.Principal.WindowsBuiltInRole]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "::Administrator ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    } ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "catch",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "throw",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "-f",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "_",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Invoke-Environment()",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "param",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[Parameter",
+			"color": "#569CD6"
+		},
+		{
+			"content": "(",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "Mandatory",
+			"color": "#569CD6"
+		},
+		{
+			"content": "=1)",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "]",
+			"color": "#569CD6"
+		},
+		{
+			"content": "[string]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Command",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "foreach($",
+			"color": "#569CD6"
+		},
+		{
+			"content": "_ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "in",
+			"color": "#569CD6"
+		},
+		{
+			"content": " cmd /c ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Command  2>&1 & set\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "($",
+			"color": "#569CD6"
+		},
+		{
+			"content": "_ -match ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "            ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[System.Environment]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "::SetEnvironmentVariable",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "($",
+			"color": "#569CD6"
+		},
+		{
+			"content": "matches",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "matches",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": "        }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Write-Host -Object ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#608B4E"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": "!",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "))",
+			"color": "#569CD6"
+		},
+		{
+			"content": "{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    Write-Host -Object ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " -ForegroundColor Red",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "env:AzurePSRoot = Split-Path -Parent -Path ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "env:AzurePSRoot",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Test-Path -Path ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles\\Microsoft Visual Studio 12.0\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "vsVersion=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "} ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "else",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "vsVersion=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "setVSEnv = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "-f",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles, ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Invoke-Environment -Command ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#008000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Test-IsAdmin() {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "try",
+			"color": "#0000FF"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "identity = ",
+			"color": "#000000"
+		},
+		{
+			"content": "[Security.Principal.WindowsIdentity]",
+			"color": "#FF0000"
+		},
+		{
+			"content": "::GetCurrent",
+			"color": "#000000"
+		},
+		{
+			"content": "()",
+			"color": "#0000FF"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "principal = New-Object Security.Principal.WindowsPrincipal -ArgumentList ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "identity",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "principal.IsInRole",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "[Security.Principal.WindowsBuiltInRole]",
+			"color": "#FF0000"
+		},
+		{
+			"content": "::Administrator ",
+			"color": "#000000"
+		},
+		{
+			"content": ")",
+			"color": "#0000FF"
+		},
+		{
+			"content": "    } ",
+			"color": "#000000"
+		},
+		{
+			"content": "catch",
+			"color": "#0000FF"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "throw",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "-f",
+			"color": "#000000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "_",
+			"color": "#000000"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Invoke-Environment()",
+			"color": "#000000"
+		},
+		{
+			"content": "{",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "param",
+			"color": "#0000FF"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#0000FF"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "[Parameter",
+			"color": "#800000"
+		},
+		{
+			"content": "(",
+			"color": "#FF0000"
+		},
+		{
+			"content": "Mandatory",
+			"color": "#0000FF"
+		},
+		{
+			"content": "=1)",
+			"color": "#FF0000"
+		},
+		{
+			"content": "]",
+			"color": "#800000"
+		},
+		{
+			"content": "[string]",
+			"color": "#FF0000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "Command",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": ")",
+			"color": "#0000FF"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "foreach($",
+			"color": "#0000FF"
+		},
+		{
+			"content": "_ ",
+			"color": "#000000"
+		},
+		{
+			"content": "in",
+			"color": "#0000FF"
+		},
+		{
+			"content": " cmd /c ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "Command  2>&1 & set\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ")",
+			"color": "#0000FF"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "($",
+			"color": "#0000FF"
+		},
+		{
+			"content": "_ -match ",
+			"color": "#000000"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#A31515"
+		},
+		{
+			"content": ")",
+			"color": "#0000FF"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "            ",
+			"color": "#000000"
+		},
+		{
+			"content": "[System.Environment]",
+			"color": "#FF0000"
+		},
+		{
+			"content": "::SetEnvironmentVariable",
+			"color": "#000000"
+		},
+		{
+			"content": "($",
+			"color": "#0000FF"
+		},
+		{
+			"content": "matches",
+			"color": "#000000"
+		},
+		{
+			"content": "[",
+			"color": "#FF0000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": "]",
+			"color": "#FF0000"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "matches",
+			"color": "#000000"
+		},
+		{
+			"content": "[",
+			"color": "#FF0000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": "]",
+			"color": "#FF0000"
+		},
+		{
+			"content": ")",
+			"color": "#0000FF"
+		},
+		{
+			"content": "        }",
+			"color": "#000000"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "Write-Host -Object ",
+			"color": "#000000"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#A31515"
+		},
+		{
+			"content": ";",
+			"color": "#0000FF"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#008000"
+		},
+		{
+			"content": "if",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#0000FF"
+		},
+		{
+			"content": "!",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#0000FF"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#000000"
+		},
+		{
+			"content": "))",
+			"color": "#0000FF"
+		},
+		{
+			"content": "{",
+			"color": "#000000"
+		},
+		{
+			"content": "    Write-Host -Object ",
+			"color": "#000000"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#A31515"
+		},
+		{
+			"content": " -ForegroundColor Red",
+			"color": "#000000"
+		},
+		{
+			"content": ";",
+			"color": "#0000FF"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "env:AzurePSRoot = Split-Path -Parent -Path ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "env:AzurePSRoot",
+			"color": "#000000"
+		},
+		{
+			"content": ";",
+			"color": "#0000FF"
+		},
+		{
+			"content": "if",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#0000FF"
+		},
+		{
+			"content": "Test-Path -Path ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles\\Microsoft Visual Studio 12.0\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ")",
+			"color": "#0000FF"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "vsVersion=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "} ",
+			"color": "#000000"
+		},
+		{
+			"content": "else",
+			"color": "#0000FF"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "vsVersion=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "setVSEnv = ",
+			"color": "#000000"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "-f",
+			"color": "#000000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles, ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#000000"
+		},
+		{
+			"content": ";",
+			"color": "#0000FF"
+		},
+		{
+			"content": "Invoke-Environment -Command ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#000000"
+		},
+		{
+			"content": ";",
+			"color": "#0000FF"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#7CA668"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Test-IsAdmin() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "try",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "identity ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "[Security.Principal.WindowsIdentity]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "::GetCurrent",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "()",
+			"color": "#569CD6"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "principal ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " New-Object Security.Principal.WindowsPrincipal ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "ArgumentList ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "identity",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "principal.IsInRole",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "[Security.Principal.WindowsBuiltInRole]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "::Administrator ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    } ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "catch",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "throw",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-f",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "_",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Invoke-Environment()",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "param",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "[Parameter",
+			"color": "#569CD6"
+		},
+		{
+			"content": "(",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "Mandatory",
+			"color": "#569CD6"
+		},
+		{
+			"content": "=1)",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "]",
+			"color": "#569CD6"
+		},
+		{
+			"content": "[string]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Command",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "foreach($",
+			"color": "#569CD6"
+		},
+		{
+			"content": "_ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "in",
+			"color": "#569CD6"
+		},
+		{
+			"content": " cmd ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "c ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Command  2>&1 & set\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "($",
+			"color": "#569CD6"
+		},
+		{
+			"content": "_ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-match",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "            ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "[System.Environment]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "::SetEnvironmentVariable",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "($",
+			"color": "#569CD6"
+		},
+		{
+			"content": "matches",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "[",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "matches",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "[",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": "        }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Write-Host ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Object ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#7CA668"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": "!",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "))",
+			"color": "#569CD6"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    Write-Host ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Object ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "ForegroundColor Red",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "env:AzurePSRoot ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " Split-Path ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Parent ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Path ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "env:AzurePSRoot",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Test-Path ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Path ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles\\Microsoft Visual Studio 12.0\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "} ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "else",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "setVSEnv ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-f",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Invoke-Environment ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Command ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#608B4E"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "try",
+			"color": "#C586C0"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "identity",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[Security.Principal.WindowsIdentity]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "::GetCurrent",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "()",
+			"color": "#569CD6"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "principal",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "New-Object",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " Security.Principal.WindowsPrincipal -ArgumentList ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "identity",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "principal",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".IsInRole",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[Security.Principal.WindowsBuiltInRole]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "::Administrator ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    } ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "catch",
+			"color": "#C586C0"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "throw",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "-f",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "_",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "()",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "param",
+			"color": "#C586C0"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[Parameter",
+			"color": "#569CD6"
+		},
+		{
+			"content": "(",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "Mandatory",
+			"color": "#569CD6"
+		},
+		{
+			"content": "=1)",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "]",
+			"color": "#569CD6"
+		},
+		{
+			"content": "[string]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Command",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "foreach",
+			"color": "#C586C0"
+		},
+		{
+			"content": "($",
+			"color": "#569CD6"
+		},
+		{
+			"content": "_ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "in",
+			"color": "#C586C0"
+		},
+		{
+			"content": " cmd /c ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Command",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "  2>&1 & set\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "($",
+			"color": "#569CD6"
+		},
+		{
+			"content": "_ -match ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "            ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[System.Environment]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "::SetEnvironmentVariable",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "($",
+			"color": "#569CD6"
+		},
+		{
+			"content": "matches",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "matches",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "[",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "2",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "]",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": "        }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " -Object ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#608B4E"
+		},
+		{
+			"content": "if",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": "!",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "))",
+			"color": "#569CD6"
+		},
+		{
+			"content": "{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " -Object ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " -ForegroundColor Red",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "env:AzurePSRoot",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Split-Path",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " -Parent -Path ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "env:AzurePSRoot",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		},
+		{
+			"content": "if",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "(",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Test-Path",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " -Path ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\\Microsoft Visual Studio 12.0\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "} ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "else",
+			"color": "#C586C0"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "-f",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " -Command ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ";",
+			"color": "#569CD6"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#008000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#795E26"
+		},
+		{
+			"content": "() {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "try",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "identity",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "[Security.Principal.WindowsIdentity]",
+			"color": "#FF0000"
+		},
+		{
+			"content": "::GetCurrent",
+			"color": "#000000"
+		},
+		{
+			"content": "()",
+			"color": "#0000FF"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "principal",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "New-Object",
+			"color": "#795E26"
+		},
+		{
+			"content": " Security.Principal.WindowsPrincipal -ArgumentList ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "identity",
+			"color": "#001080"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "principal",
+			"color": "#001080"
+		},
+		{
+			"content": ".IsInRole",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "[Security.Principal.WindowsBuiltInRole]",
+			"color": "#FF0000"
+		},
+		{
+			"content": "::Administrator ",
+			"color": "#000000"
+		},
+		{
+			"content": ")",
+			"color": "#0000FF"
+		},
+		{
+			"content": "    } ",
+			"color": "#000000"
+		},
+		{
+			"content": "catch",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "throw",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "-f",
+			"color": "#000000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "_",
+			"color": "#000000"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#795E26"
+		},
+		{
+			"content": "()",
+			"color": "#000000"
+		},
+		{
+			"content": "{",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "param",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#0000FF"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "[Parameter",
+			"color": "#800000"
+		},
+		{
+			"content": "(",
+			"color": "#FF0000"
+		},
+		{
+			"content": "Mandatory",
+			"color": "#0000FF"
+		},
+		{
+			"content": "=",
+			"color": "#FF0000"
+		},
+		{
+			"content": "1",
+			"color": "#001080"
+		},
+		{
+			"content": ")",
+			"color": "#FF0000"
+		},
+		{
+			"content": "]",
+			"color": "#800000"
+		},
+		{
+			"content": "[string]",
+			"color": "#FF0000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "Command",
+			"color": "#001080"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": ")",
+			"color": "#0000FF"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "foreach",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "($",
+			"color": "#0000FF"
+		},
+		{
+			"content": "_ ",
+			"color": "#000000"
+		},
+		{
+			"content": "in",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " cmd /c ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "Command",
+			"color": "#001080"
+		},
+		{
+			"content": "  2>&1 & set\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ")",
+			"color": "#0000FF"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "($",
+			"color": "#0000FF"
+		},
+		{
+			"content": "_ -match ",
+			"color": "#000000"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#A31515"
+		},
+		{
+			"content": ")",
+			"color": "#0000FF"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "            ",
+			"color": "#000000"
+		},
+		{
+			"content": "[System.Environment]",
+			"color": "#FF0000"
+		},
+		{
+			"content": "::SetEnvironmentVariable",
+			"color": "#000000"
+		},
+		{
+			"content": "($",
+			"color": "#0000FF"
+		},
+		{
+			"content": "matches",
+			"color": "#000000"
+		},
+		{
+			"content": "[",
+			"color": "#FF0000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": "]",
+			"color": "#FF0000"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "matches",
+			"color": "#000000"
+		},
+		{
+			"content": "[",
+			"color": "#FF0000"
+		},
+		{
+			"content": "2",
+			"color": "#09885A"
+		},
+		{
+			"content": "]",
+			"color": "#FF0000"
+		},
+		{
+			"content": ")",
+			"color": "#0000FF"
+		},
+		{
+			"content": "        }",
+			"color": "#000000"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#795E26"
+		},
+		{
+			"content": " -Object ",
+			"color": "#000000"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#A31515"
+		},
+		{
+			"content": ";",
+			"color": "#0000FF"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#008000"
+		},
+		{
+			"content": "if",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#0000FF"
+		},
+		{
+			"content": "!",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#0000FF"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#795E26"
+		},
+		{
+			"content": "))",
+			"color": "#0000FF"
+		},
+		{
+			"content": "{",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#795E26"
+		},
+		{
+			"content": " -Object ",
+			"color": "#000000"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#A31515"
+		},
+		{
+			"content": " -ForegroundColor Red",
+			"color": "#000000"
+		},
+		{
+			"content": ";",
+			"color": "#0000FF"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "env:AzurePSRoot",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "Split-Path",
+			"color": "#795E26"
+		},
+		{
+			"content": " -Parent -Path ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "env:AzurePSRoot",
+			"color": "#001080"
+		},
+		{
+			"content": ";",
+			"color": "#0000FF"
+		},
+		{
+			"content": "if",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "(",
+			"color": "#0000FF"
+		},
+		{
+			"content": "Test-Path",
+			"color": "#795E26"
+		},
+		{
+			"content": " -Path ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles",
+			"color": "#001080"
+		},
+		{
+			"content": "\\Microsoft Visual Studio 12.0\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ")",
+			"color": "#0000FF"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#001080"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "} ",
+			"color": "#000000"
+		},
+		{
+			"content": "else",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#001080"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "-f",
+			"color": "#000000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles",
+			"color": "#001080"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#001080"
+		},
+		{
+			"content": ";",
+			"color": "#0000FF"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#795E26"
+		},
+		{
+			"content": " -Command ",
+			"color": "#000000"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#001080"
+		},
+		{
+			"content": ";",
+			"color": "#0000FF"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "function",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "() {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "try",
+			"color": "#98676A"
+		},
+		{
+			"content": " {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "identity",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "[Security.Principal.WindowsIdentity]",
+			"color": "#F79A32"
+		},
+		{
+			"content": "::GetCurrent",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "()",
+			"color": "#98676A"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "principal",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "New-Object",
+			"color": "#7E602C"
+		},
+		{
+			"content": " Security.Principal.WindowsPrincipal -ArgumentList ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "identity",
+			"color": "#DC3958"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "return",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "principal",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".IsInRole",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "[Security.Principal.WindowsBuiltInRole]",
+			"color": "#F79A32"
+		},
+		{
+			"content": "::Administrator ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ")",
+			"color": "#98676A"
+		},
+		{
+			"content": "    } ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "catch",
+			"color": "#98676A"
+		},
+		{
+			"content": " {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "throw",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#889B4A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "-f",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "_",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "function",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "()",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "param",
+			"color": "#98676A"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "(",
+			"color": "#98676A"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "[Parameter",
+			"color": "#DC3958"
+		},
+		{
+			"content": "(Mandatory=",
+			"color": "#F79A32"
+		},
+		{
+			"content": "1",
+			"color": "#DC3958"
+		},
+		{
+			"content": ")",
+			"color": "#F79A32"
+		},
+		{
+			"content": "]",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[string]",
+			"color": "#F79A32"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "Command",
+			"color": "#DC3958"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ")",
+			"color": "#98676A"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "foreach($",
+			"color": "#98676A"
+		},
+		{
+			"content": "_ ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "in",
+			"color": "#98676A"
+		},
+		{
+			"content": " cmd /c ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "Command",
+			"color": "#DC3958"
+		},
+		{
+			"content": "  2>&1 & set\"",
+			"color": "#889B4A"
+		},
+		{
+			"content": ")",
+			"color": "#98676A"
+		},
+		{
+			"content": " {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "if",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "($",
+			"color": "#98676A"
+		},
+		{
+			"content": "_ -match ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#889B4A"
+		},
+		{
+			"content": ")",
+			"color": "#98676A"
+		},
+		{
+			"content": " {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "            ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "[System.Environment]",
+			"color": "#F79A32"
+		},
+		{
+			"content": "::SetEnvironmentVariable",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "($",
+			"color": "#98676A"
+		},
+		{
+			"content": "matches",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "[1]",
+			"color": "#F79A32"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "matches",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "[2]",
+			"color": "#F79A32"
+		},
+		{
+			"content": ")",
+			"color": "#98676A"
+		},
+		{
+			"content": "        }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#7E602C"
+		},
+		{
+			"content": " -Object ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#889B4A"
+		},
+		{
+			"content": ";",
+			"color": "#98676A"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "if",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "(",
+			"color": "#98676A"
+		},
+		{
+			"content": "!",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "(",
+			"color": "#98676A"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#7E602C"
+		},
+		{
+			"content": "))",
+			"color": "#98676A"
+		},
+		{
+			"content": "{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#7E602C"
+		},
+		{
+			"content": " -Object ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#889B4A"
+		},
+		{
+			"content": " -ForegroundColor Red",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ";",
+			"color": "#98676A"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "env:",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "AzurePSRoot",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Split-Path",
+			"color": "#7E602C"
+		},
+		{
+			"content": " -Parent -Path ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "env:",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "AzurePSRoot",
+			"color": "#DC3958"
+		},
+		{
+			"content": ";",
+			"color": "#98676A"
+		},
+		{
+			"content": "if",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "(",
+			"color": "#98676A"
+		},
+		{
+			"content": "Test-Path",
+			"color": "#7E602C"
+		},
+		{
+			"content": " -Path ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "env:",
+			"color": "#889B4A"
+		},
+		{
+			"content": "ADXSDKProgramFiles",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\\Microsoft Visual Studio 12.0\"",
+			"color": "#889B4A"
+		},
+		{
+			"content": ")",
+			"color": "#98676A"
+		},
+		{
+			"content": " {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#DC3958"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#889B4A"
+		},
+		{
+			"content": "} ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "else",
+			"color": "#98676A"
+		},
+		{
+			"content": " {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#DC3958"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#889B4A"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#889B4A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "-f",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "env:",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "ADXSDKProgramFiles",
+			"color": "#DC3958"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#DC3958"
+		},
+		{
+			"content": ";",
+			"color": "#98676A"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#7E602C"
+		},
+		{
+			"content": " -Command ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#DC3958"
+		},
+		{
+			"content": ";",
+			"color": "#98676A"
+		}
+	],
+	"monokai": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#75715E"
+		},
+		{
+			"content": "function",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "try",
+			"color": "#F92672"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "identity ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "[Security.Principal.WindowsIdentity]",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "::GetCurrent",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "()",
+			"color": "#F92672"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "principal ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "New-Object",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " Security.Principal.WindowsPrincipal ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "-",
+			"color": "#F92672"
+		},
+		{
+			"content": "ArgumentList ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "identity",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "return",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "principal",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ".IsInRole",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "[Security.Principal.WindowsBuiltInRole]",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "::Administrator ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ")",
+			"color": "#F92672"
+		},
+		{
+			"content": "    } ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "catch",
+			"color": "#F92672"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "throw",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "-f",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "_",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "function",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "()",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "param",
+			"color": "#F92672"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "(",
+			"color": "#F92672"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "[Parameter",
+			"color": "#F92672"
+		},
+		{
+			"content": "(",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "Mandatory",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "=1)",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "]",
+			"color": "#F92672"
+		},
+		{
+			"content": "[string]",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "Command",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ")",
+			"color": "#F92672"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "foreach($",
+			"color": "#F92672"
+		},
+		{
+			"content": "_",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "in",
+			"color": "#F92672"
+		},
+		{
+			"content": " cmd ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "/",
+			"color": "#F92672"
+		},
+		{
+			"content": "c ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "Command  2>&1 & set\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ")",
+			"color": "#F92672"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "if",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "($",
+			"color": "#F92672"
+		},
+		{
+			"content": "_",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "-match",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ")",
+			"color": "#F92672"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "            ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "[System.Environment]",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "::SetEnvironmentVariable",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "($",
+			"color": "#F92672"
+		},
+		{
+			"content": "matches",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "[",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "1",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "]",
+			"color": "#A6E22E"
+		},
+		{
+			"content": ",",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "matches",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "[",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "2",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "]",
+			"color": "#A6E22E"
+		},
+		{
+			"content": ")",
+			"color": "#F92672"
+		},
+		{
+			"content": "        }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "-",
+			"color": "#F92672"
+		},
+		{
+			"content": "Object ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ";",
+			"color": "#F92672"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#75715E"
+		},
+		{
+			"content": "if",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "(!(",
+			"color": "#F92672"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "))",
+			"color": "#F92672"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "-",
+			"color": "#F92672"
+		},
+		{
+			"content": "Object ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "-",
+			"color": "#F92672"
+		},
+		{
+			"content": "ForegroundColor Red",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ";",
+			"color": "#F92672"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "env:AzurePSRoot ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Split-Path",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "-",
+			"color": "#F92672"
+		},
+		{
+			"content": "Parent ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "-",
+			"color": "#F92672"
+		},
+		{
+			"content": "Path ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "env:AzurePSRoot",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ";",
+			"color": "#F92672"
+		},
+		{
+			"content": "if",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "(",
+			"color": "#F92672"
+		},
+		{
+			"content": "Test-Path",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "-",
+			"color": "#F92672"
+		},
+		{
+			"content": "Path ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles\\Microsoft Visual Studio 12.0\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ")",
+			"color": "#F92672"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "} ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "else",
+			"color": "#F92672"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "setVSEnv ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "-f",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ",",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ";",
+			"color": "#F92672"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "-",
+			"color": "#F92672"
+		},
+		{
+			"content": "Command ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ";",
+			"color": "#F92672"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "function",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#CE6700"
+		},
+		{
+			"content": "() {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "try",
+			"color": "#9872A2"
+		},
+		{
+			"content": " {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "identity",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "[Security.Principal.WindowsIdentity]",
+			"color": "#D0B344"
+		},
+		{
+			"content": "::GetCurrent",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "()",
+			"color": "#676867"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "principal",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "New-Object",
+			"color": "#9872A2"
+		},
+		{
+			"content": " Security.Principal.WindowsPrincipal ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-",
+			"color": "#676867"
+		},
+		{
+			"content": "ArgumentList ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "identity",
+			"color": "#6089B4"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "return",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "principal",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".IsInRole",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "[Security.Principal.WindowsBuiltInRole]",
+			"color": "#D0B344"
+		},
+		{
+			"content": "::Administrator ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ")",
+			"color": "#676867"
+		},
+		{
+			"content": "    } ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "catch",
+			"color": "#9872A2"
+		},
+		{
+			"content": " {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "throw",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-f",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "_",
+			"color": "#C7444A"
+		},
+		{
+			"content": "    }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "function",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#CE6700"
+		},
+		{
+			"content": "()",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "param",
+			"color": "#9872A2"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "(",
+			"color": "#676867"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "[Parameter",
+			"color": "#6089B4"
+		},
+		{
+			"content": "(",
+			"color": "#D0B344"
+		},
+		{
+			"content": "Mandatory",
+			"color": "#FF0080"
+		},
+		{
+			"content": "=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "1",
+			"color": "#6089B4"
+		},
+		{
+			"content": ")",
+			"color": "#D0B344"
+		},
+		{
+			"content": "]",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[string]",
+			"color": "#D0B344"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "Command",
+			"color": "#6089B4"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ")",
+			"color": "#676867"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "foreach",
+			"color": "#9872A2"
+		},
+		{
+			"content": "($",
+			"color": "#676867"
+		},
+		{
+			"content": "_",
+			"color": "#C7444A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "in",
+			"color": "#9872A2"
+		},
+		{
+			"content": " cmd ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "/",
+			"color": "#676867"
+		},
+		{
+			"content": "c ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "Command",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  2>&1 & set\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ")",
+			"color": "#676867"
+		},
+		{
+			"content": " {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "if",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "($",
+			"color": "#676867"
+		},
+		{
+			"content": "_",
+			"color": "#C7444A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-match",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ")",
+			"color": "#676867"
+		},
+		{
+			"content": " {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "            ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "[System.Environment]",
+			"color": "#D0B344"
+		},
+		{
+			"content": "::SetEnvironmentVariable",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "($",
+			"color": "#676867"
+		},
+		{
+			"content": "matches",
+			"color": "#C7444A"
+		},
+		{
+			"content": "[",
+			"color": "#D0B344"
+		},
+		{
+			"content": "1",
+			"color": "#C7444A"
+		},
+		{
+			"content": "]",
+			"color": "#D0B344"
+		},
+		{
+			"content": ",",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "matches",
+			"color": "#C7444A"
+		},
+		{
+			"content": "[",
+			"color": "#D0B344"
+		},
+		{
+			"content": "2",
+			"color": "#C7444A"
+		},
+		{
+			"content": "]",
+			"color": "#D0B344"
+		},
+		{
+			"content": ")",
+			"color": "#676867"
+		},
+		{
+			"content": "        }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-",
+			"color": "#676867"
+		},
+		{
+			"content": "Object ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ";",
+			"color": "#676867"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "if",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "(!(",
+			"color": "#676867"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#9872A2"
+		},
+		{
+			"content": "))",
+			"color": "#676867"
+		},
+		{
+			"content": "{",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-",
+			"color": "#676867"
+		},
+		{
+			"content": "Object ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-",
+			"color": "#676867"
+		},
+		{
+			"content": "ForegroundColor Red",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ";",
+			"color": "#676867"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "env:",
+			"color": "#C7444A"
+		},
+		{
+			"content": "AzurePSRoot",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Split-Path",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-",
+			"color": "#676867"
+		},
+		{
+			"content": "Parent ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-",
+			"color": "#676867"
+		},
+		{
+			"content": "Path ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "env:",
+			"color": "#C7444A"
+		},
+		{
+			"content": "AzurePSRoot",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#676867"
+		},
+		{
+			"content": "if",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "(",
+			"color": "#676867"
+		},
+		{
+			"content": "Test-Path",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-",
+			"color": "#676867"
+		},
+		{
+			"content": "Path ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "env:",
+			"color": "#C7444A"
+		},
+		{
+			"content": "ADXSDKProgramFiles",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\\Microsoft Visual Studio 12.0\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ")",
+			"color": "#676867"
+		},
+		{
+			"content": " {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#6089B4"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "} ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "else",
+			"color": "#9872A2"
+		},
+		{
+			"content": " {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#6089B4"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-f",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "env:",
+			"color": "#C7444A"
+		},
+		{
+			"content": "ADXSDKProgramFiles",
+			"color": "#6089B4"
+		},
+		{
+			"content": ",",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#676867"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-",
+			"color": "#676867"
+		},
+		{
+			"content": "Command ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$",
+			"color": "#676867"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#676867"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "function",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#AA3731"
+		},
+		{
+			"content": "() {",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "try",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " {",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "identity",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " [Security.Principal.WindowsIdentity]::GetCurrent",
+			"color": "#333333"
+		},
+		{
+			"content": "()",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "principal",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "New-Object",
+			"color": "#AA3731"
+		},
+		{
+			"content": " Security.Principal.WindowsPrincipal ",
+			"color": "#333333"
+		},
+		{
+			"content": "-",
+			"color": "#777777"
+		},
+		{
+			"content": "ArgumentList ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "identity",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "return",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "principal",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".IsInRole",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " [Security.Principal.WindowsBuiltInRole]::Administrator ",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "    } ",
+			"color": "#333333"
+		},
+		{
+			"content": "catch",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " {",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "throw",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#448C27"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "-f",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "_",
+			"color": "#AB6526"
+		},
+		{
+			"content": "    }",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#333333"
+		},
+		{
+			"content": "function",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#AA3731"
+		},
+		{
+			"content": "()",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "param",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "[Parameter",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "Mandatory",
+			"color": "#AB6526"
+		},
+		{
+			"content": "=",
+			"color": "#333333"
+		},
+		{
+			"content": "1",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": "]",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "[string]",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "Command",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "foreach($",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "_",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "in",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " cmd ",
+			"color": "#333333"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": "c ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#448C27"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "Command",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "  2>&1 & set\"",
+			"color": "#448C27"
+		},
+		{
+			"content": ")",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " {",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "if",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "($",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "_",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "-match",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#448C27"
+		},
+		{
+			"content": ")",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " {",
+			"color": "#333333"
+		},
+		{
+			"content": "            [System.Environment]::SetEnvironmentVariable",
+			"color": "#333333"
+		},
+		{
+			"content": "($",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "matches",
+			"color": "#AB6526"
+		},
+		{
+			"content": "[",
+			"color": "#333333"
+		},
+		{
+			"content": "1",
+			"color": "#AB6526"
+		},
+		{
+			"content": "]",
+			"color": "#333333"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "matches",
+			"color": "#AB6526"
+		},
+		{
+			"content": "[",
+			"color": "#333333"
+		},
+		{
+			"content": "2",
+			"color": "#AB6526"
+		},
+		{
+			"content": "]",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "        }",
+			"color": "#333333"
+		},
+		{
+			"content": "    }",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#333333"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "-",
+			"color": "#777777"
+		},
+		{
+			"content": "Object ",
+			"color": "#333333"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#448C27"
+		},
+		{
+			"content": ";",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "if",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "!",
+			"color": "#777777"
+		},
+		{
+			"content": "(",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#AA3731"
+		},
+		{
+			"content": "))",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "{",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "-",
+			"color": "#777777"
+		},
+		{
+			"content": "Object ",
+			"color": "#333333"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#448C27"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "-",
+			"color": "#777777"
+		},
+		{
+			"content": "ForegroundColor Red",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "}",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "env:AzurePSRoot",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Split-Path",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "-",
+			"color": "#777777"
+		},
+		{
+			"content": "Parent ",
+			"color": "#333333"
+		},
+		{
+			"content": "-",
+			"color": "#777777"
+		},
+		{
+			"content": "Path ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "env:AzurePSRoot",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ";",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "if",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "Test-Path",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "-",
+			"color": "#777777"
+		},
+		{
+			"content": "Path ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#448C27"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\\Microsoft Visual Studio 12.0\"",
+			"color": "#448C27"
+		},
+		{
+			"content": ")",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " {",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#448C27"
+		},
+		{
+			"content": "} ",
+			"color": "#333333"
+		},
+		{
+			"content": "else",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " {",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#448C27"
+		},
+		{
+			"content": "}",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#448C27"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "-f",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "env:ADXSDKProgramFiles",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ";",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "-",
+			"color": "#777777"
+		},
+		{
+			"content": "Command ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ";",
+			"color": "#4B83CD"
+		}
+	],
+	"red": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "function",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "try",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "identity",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "[Security.Principal.WindowsIdentity]",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "::GetCurrent",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "()",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "principal",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "New-Object",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " Security.Principal.WindowsPrincipal ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "-",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "ArgumentList ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "identity",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "return",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "principal",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".IsInRole",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "[Security.Principal.WindowsBuiltInRole]",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "::Administrator ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ")",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "    } ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "catch",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "throw",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "-f",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "_",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "function",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "()",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "param",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "(",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "[Parameter(",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "Mandatory",
+			"color": "#994646FF"
+		},
+		{
+			"content": "=",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "1",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ")][string]",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "Command",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ")",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "foreach($",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "_",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "in",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " cmd ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "/",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "c ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "Command",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "  2>&1 & set\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ")",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "if",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "($",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "_",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "-match",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ")",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "            ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "[System.Environment]",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "::SetEnvironmentVariable",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "($",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "matches",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "[",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "1",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "]",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": ",",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "matches",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "[",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "2",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "]",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": ")",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "        }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "-",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "Object ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ";",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "if",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "(!(",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "))",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "-",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "Object ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "-",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "ForegroundColor Red",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ";",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "env:",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": "AzurePSRoot",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Split-Path",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "-",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "Parent ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "-",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "Path ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "env:",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": "AzurePSRoot",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ";",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "if",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "(",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "Test-Path",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "-",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "Path ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "env:",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": "ADXSDKProgramFiles",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\\Microsoft Visual Studio 12.0\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ")",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "} ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "else",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "-f",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "env:",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": "ADXSDKProgramFiles",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ",",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ";",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "-",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "Command ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ";",
+			"color": "#F12727FF"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#657B83"
+		},
+		{
+			"content": "function",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "try",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "identity",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " [Security.Principal.WindowsIdentity]::GetCurrent",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "()",
+			"color": "#859900"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "principal",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "New-Object",
+			"color": "#268BD2"
+		},
+		{
+			"content": " Security.Principal.WindowsPrincipal ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "ArgumentList ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "identity",
+			"color": "#268BD2"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "principal.IsInRole",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#859900"
+		},
+		{
+			"content": " [Security.Principal.WindowsBuiltInRole]::Administrator ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ")",
+			"color": "#859900"
+		},
+		{
+			"content": "    } ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "catch",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "throw",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-f",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "function",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#268BD2"
+		},
+		{
+			"content": "()",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "{",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "param",
+			"color": "#859900"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(",
+			"color": "#859900"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "[Parameter",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Mandatory",
+			"color": "#B58900"
+		},
+		{
+			"content": "=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "]",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[string]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "Command",
+			"color": "#268BD2"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ")",
+			"color": "#859900"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "foreach($",
+			"color": "#859900"
+		},
+		{
+			"content": "_ ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "in",
+			"color": "#859900"
+		},
+		{
+			"content": " cmd ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "/",
+			"color": "#859900"
+		},
+		{
+			"content": "c ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "Command",
+			"color": "#268BD2"
+		},
+		{
+			"content": "  2>&1 & set\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ")",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "($",
+			"color": "#859900"
+		},
+		{
+			"content": "_ ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-match",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ")",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "            [System.Environment]::SetEnvironmentVariable",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "($",
+			"color": "#859900"
+		},
+		{
+			"content": "matches[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": "]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ",",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "matches[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": "]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ")",
+			"color": "#859900"
+		},
+		{
+			"content": "        }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "Object ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#657B83"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(!(",
+			"color": "#859900"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#268BD2"
+		},
+		{
+			"content": "))",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "Object ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "ForegroundColor Red",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "env:",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "AzurePSRoot",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Split-Path",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "Parent ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "Path ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "env:",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "AzurePSRoot",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(",
+			"color": "#859900"
+		},
+		{
+			"content": "Test-Path",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "Path ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "env:",
+			"color": "#2AA198"
+		},
+		{
+			"content": "ADXSDKProgramFiles",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\\Microsoft Visual Studio 12.0\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ")",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#268BD2"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "} ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "else",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#268BD2"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-f",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "env:",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "ADXSDKProgramFiles",
+			"color": "#268BD2"
+		},
+		{
+			"content": ",",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "Command ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "function",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() {",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "try",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "identity",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "[Security.Principal.WindowsIdentity]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "::GetCurrent",
+			"color": "#586E75"
+		},
+		{
+			"content": "()",
+			"color": "#859900"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "principal",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "New-Object",
+			"color": "#268BD2"
+		},
+		{
+			"content": " Security.Principal.WindowsPrincipal ",
+			"color": "#586E75"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "ArgumentList ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "identity",
+			"color": "#268BD2"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "principal.IsInRole",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "[Security.Principal.WindowsBuiltInRole]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "::Administrator ",
+			"color": "#586E75"
+		},
+		{
+			"content": ")",
+			"color": "#859900"
+		},
+		{
+			"content": "    } ",
+			"color": "#586E75"
+		},
+		{
+			"content": "catch",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "throw",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "-f",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#586E75"
+		},
+		{
+			"content": "    }",
+			"color": "#586E75"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		},
+		{
+			"content": "function",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#268BD2"
+		},
+		{
+			"content": "()",
+			"color": "#586E75"
+		},
+		{
+			"content": "{",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "param",
+			"color": "#859900"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "(",
+			"color": "#859900"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "[Parameter",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Mandatory",
+			"color": "#B58900"
+		},
+		{
+			"content": "=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "]",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[string]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "Command",
+			"color": "#268BD2"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": ")",
+			"color": "#859900"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "foreach($",
+			"color": "#859900"
+		},
+		{
+			"content": "_ ",
+			"color": "#586E75"
+		},
+		{
+			"content": "in",
+			"color": "#859900"
+		},
+		{
+			"content": " cmd ",
+			"color": "#586E75"
+		},
+		{
+			"content": "/",
+			"color": "#859900"
+		},
+		{
+			"content": "c ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "Command",
+			"color": "#268BD2"
+		},
+		{
+			"content": "  2>&1 & set\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ")",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "($",
+			"color": "#859900"
+		},
+		{
+			"content": "_ ",
+			"color": "#586E75"
+		},
+		{
+			"content": "-match",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ")",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#586E75"
+		},
+		{
+			"content": "            ",
+			"color": "#586E75"
+		},
+		{
+			"content": "[System.Environment]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "::SetEnvironmentVariable",
+			"color": "#586E75"
+		},
+		{
+			"content": "($",
+			"color": "#859900"
+		},
+		{
+			"content": "matches",
+			"color": "#586E75"
+		},
+		{
+			"content": "[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": "]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ",",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "matches",
+			"color": "#586E75"
+		},
+		{
+			"content": "[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "2",
+			"color": "#D33682"
+		},
+		{
+			"content": "]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ")",
+			"color": "#859900"
+		},
+		{
+			"content": "        }",
+			"color": "#586E75"
+		},
+		{
+			"content": "    }",
+			"color": "#586E75"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "Object ",
+			"color": "#586E75"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "(!(",
+			"color": "#859900"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#268BD2"
+		},
+		{
+			"content": "))",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "Object ",
+			"color": "#586E75"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "ForegroundColor Red",
+			"color": "#586E75"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "env:",
+			"color": "#586E75"
+		},
+		{
+			"content": "AzurePSRoot",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Split-Path",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "Parent ",
+			"color": "#586E75"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "Path ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "env:",
+			"color": "#586E75"
+		},
+		{
+			"content": "AzurePSRoot",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "(",
+			"color": "#859900"
+		},
+		{
+			"content": "Test-Path",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "Path ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "env:",
+			"color": "#2AA198"
+		},
+		{
+			"content": "ADXSDKProgramFiles",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\\Microsoft Visual Studio 12.0\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ")",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#268BD2"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "} ",
+			"color": "#586E75"
+		},
+		{
+			"content": "else",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#268BD2"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "-f",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "env:",
+			"color": "#586E75"
+		},
+		{
+			"content": "ADXSDKProgramFiles",
+			"color": "#268BD2"
+		},
+		{
+			"content": ",",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "-",
+			"color": "#859900"
+		},
+		{
+			"content": "Command ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "# Copyright Microsoft Corporation",
+			"color": "#7285B7"
+		},
+		{
+			"content": "function",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "try",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "identity",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "[Security.Principal.WindowsIdentity]",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "::GetCurrent",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "()",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "principal",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "New-Object",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " Security.Principal.WindowsPrincipal ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "ArgumentList ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "identity",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "principal",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".IsInRole",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "[Security.Principal.WindowsBuiltInRole]",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "::Administrator ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ")",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "    } ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "catch",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "throw",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Failed to determine if the current user has elevated privileges. The error was: '{0}'.\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-f",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "_",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "()",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "param",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "[Parameter(",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "Mandatory",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "=1)][string]",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "Command",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ")",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "foreach($",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "_",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "in",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " cmd ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "c ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "Command",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  2>&1 & set\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ")",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "($",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "_",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-match",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'^([^=]+)=(.*)'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ")",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "            ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "[System.Environment]",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "::SetEnvironmentVariable",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "($",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "matches",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "[",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "1",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "]",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ",",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "matches",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "[",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "2",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "]",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ")",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "        }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "Object ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'Initializing Azure PowerShell environment...'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ";",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "# PowerShell commands need elevation for dependencies installation and running tests",
+			"color": "#7285B7"
+		},
+		{
+			"content": "if",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "!",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "(",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "Test-IsAdmin",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "))",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Write-Host",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "Object ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'Please launch command under administrator account. It is needed for environment setting up and unit test.'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "ForegroundColor Red",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "env:",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "AzurePSRoot",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Split-Path",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "Parent ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "Path ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "env:",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "AzurePSRoot",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ";",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "if",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "(",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "Test-Path",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "Path ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "env:",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "ADXSDKProgramFiles",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\\Microsoft Visual Studio 12.0\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ")",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "\"12.0\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "} ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "else",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "\"11.0\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'\"{0}\\Microsoft Visual Studio {1}\\VC\\vcvarsall.bat\" x64'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-f",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "env:",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "ADXSDKProgramFiles",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ",",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "vsVersion",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ";",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "Invoke-Environment",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "Command ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "setVSEnv",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ";",
+			"color": "#EBBBFF"
+		}
+	]
+}

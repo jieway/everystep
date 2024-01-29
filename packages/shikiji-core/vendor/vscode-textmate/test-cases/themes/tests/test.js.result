@@ -1,0 +1,11294 @@
+{
+	"abyss": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#223355"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#223355"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#223355"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#223355"
+		},
+		{
+			"content": "var",
+			"color": "#9966B8"
+		},
+		{
+			"content": " gulp ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "require",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'gulp'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "var",
+			"color": "#9966B8"
+		},
+		{
+			"content": " tsb ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "require",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'gulp-tsb'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "var",
+			"color": "#9966B8"
+		},
+		{
+			"content": " util ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "require",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'./lib/util'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "var",
+			"color": "#9966B8"
+		},
+		{
+			"content": " watcher ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "require",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'./lib/watch'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "var",
+			"color": "#9966B8"
+		},
+		{
+			"content": " assign ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "require",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'object-assign'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "var",
+			"color": "#9966B8"
+		},
+		{
+			"content": " compilation ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " tsb.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "create",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "assign",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "({ verbose: ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "true",
+			"color": "#F280D0"
+		},
+		{
+			"content": " }, ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "require",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'./tsconfig.json'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ").compilerOptions));",
+			"color": "#6688CC"
+		},
+		{
+			"content": "gulp.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "task",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'compile'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "function",
+			"color": "#9966B8"
+		},
+		{
+			"content": "() {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "return",
+			"color": "#225588"
+		},
+		{
+			"content": " gulp.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "src",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'.'",
+			"color": "#22AA44"
+		},
+		{
+			"content": " })",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "pipe",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "compilation",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "())",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "pipe",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(gulp.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "dest",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "''",
+			"color": "#22AA44"
+		},
+		{
+			"content": "));",
+			"color": "#6688CC"
+		},
+		{
+			"content": "});",
+			"color": "#6688CC"
+		},
+		{
+			"content": "gulp.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "task",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'watch'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "function",
+			"color": "#9966B8"
+		},
+		{
+			"content": "() {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "var",
+			"color": "#9966B8"
+		},
+		{
+			"content": " src ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " gulp.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "src",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'.'",
+			"color": "#22AA44"
+		},
+		{
+			"content": " });",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "return",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "watcher",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'.'",
+			"color": "#22AA44"
+		},
+		{
+			"content": " })",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "pipe",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(util.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "incremental",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(compilation, src))",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "pipe",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(gulp.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "dest",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "''",
+			"color": "#22AA44"
+		},
+		{
+			"content": "));",
+			"color": "#6688CC"
+		},
+		{
+			"content": "});",
+			"color": "#6688CC"
+		},
+		{
+			"content": "gulp.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "task",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'default'",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", [",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'compile'",
+			"color": "#22AA44"
+		},
+		{
+			"content": "]);",
+			"color": "#6688CC"
+		},
+		{
+			"content": "function",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "cloneArray",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "arr",
+			"color": "#2277FF"
+		},
+		{
+			"content": ") {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    _.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "foo",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "();",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "var",
+			"color": "#9966B8"
+		},
+		{
+			"content": " r ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " [];",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#225588"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "var",
+			"color": "#9966B8"
+		},
+		{
+			"content": " i ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "0",
+			"color": "#F280D0"
+		},
+		{
+			"content": ", len ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " arr.length; i ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#225588"
+		},
+		{
+			"content": " len; i",
+			"color": "#6688CC"
+		},
+		{
+			"content": "++",
+			"color": "#225588"
+		},
+		{
+			"content": ") {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        r[i] ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "doClone",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(arr[i]);",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "return",
+			"color": "#225588"
+		},
+		{
+			"content": " r;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#608B4E"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#608B4E"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#608B4E"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#608B4E"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " gulp = require(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'gulp'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " tsb = require(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'gulp-tsb'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " util = require(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'./lib/util'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " watcher = require(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'./lib/watch'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " assign = require(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'object-assign'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " compilation = tsb.create(assign({ verbose: ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": " }, require(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'./tsconfig.json'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ").compilerOptions));",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "gulp.task(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'compile'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": "() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " gulp.src(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'.'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " })",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t.pipe(compilation())",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t.pipe(gulp.dest(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "''",
+			"color": "#CE9178"
+		},
+		{
+			"content": "));",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "});",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "gulp.task(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'watch'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": "() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " src = gulp.src(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'.'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " });",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " watcher(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'.'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " })",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t.pipe(util.incremental(compilation, src))",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t.pipe(gulp.dest(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "''",
+			"color": "#CE9178"
+		},
+		{
+			"content": "));",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "});",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "gulp.task(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'default'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", [",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'compile'",
+			"color": "#CE9178"
+		},
+		{
+			"content": "]);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " cloneArray(arr) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    _.foo();",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " r = [];",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " i = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ", len = arr.length; i < len; i++) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        r[i] = doClone(arr[i]);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " r;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#008000"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#008000"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#008000"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#008000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " gulp = require(",
+			"color": "#000000"
+		},
+		{
+			"content": "'gulp'",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " tsb = require(",
+			"color": "#000000"
+		},
+		{
+			"content": "'gulp-tsb'",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " util = require(",
+			"color": "#000000"
+		},
+		{
+			"content": "'./lib/util'",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " watcher = require(",
+			"color": "#000000"
+		},
+		{
+			"content": "'./lib/watch'",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " assign = require(",
+			"color": "#000000"
+		},
+		{
+			"content": "'object-assign'",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " compilation = tsb.create(assign({ verbose: ",
+			"color": "#000000"
+		},
+		{
+			"content": "true",
+			"color": "#0000FF"
+		},
+		{
+			"content": " }, require(",
+			"color": "#000000"
+		},
+		{
+			"content": "'./tsconfig.json'",
+			"color": "#A31515"
+		},
+		{
+			"content": ").compilerOptions));",
+			"color": "#000000"
+		},
+		{
+			"content": "gulp.task(",
+			"color": "#000000"
+		},
+		{
+			"content": "'compile'",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": "() {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " gulp.src(",
+			"color": "#000000"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#A31515"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#000000"
+		},
+		{
+			"content": "'.'",
+			"color": "#A31515"
+		},
+		{
+			"content": " })",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t.pipe(compilation())",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t.pipe(gulp.dest(",
+			"color": "#000000"
+		},
+		{
+			"content": "''",
+			"color": "#A31515"
+		},
+		{
+			"content": "));",
+			"color": "#000000"
+		},
+		{
+			"content": "});",
+			"color": "#000000"
+		},
+		{
+			"content": "gulp.task(",
+			"color": "#000000"
+		},
+		{
+			"content": "'watch'",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": "() {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " src = gulp.src(",
+			"color": "#000000"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#A31515"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#000000"
+		},
+		{
+			"content": "'.'",
+			"color": "#A31515"
+		},
+		{
+			"content": " });",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " watcher(",
+			"color": "#000000"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#A31515"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#000000"
+		},
+		{
+			"content": "'.'",
+			"color": "#A31515"
+		},
+		{
+			"content": " })",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t.pipe(util.incremental(compilation, src))",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t.pipe(gulp.dest(",
+			"color": "#000000"
+		},
+		{
+			"content": "''",
+			"color": "#A31515"
+		},
+		{
+			"content": "));",
+			"color": "#000000"
+		},
+		{
+			"content": "});",
+			"color": "#000000"
+		},
+		{
+			"content": "gulp.task(",
+			"color": "#000000"
+		},
+		{
+			"content": "'default'",
+			"color": "#A31515"
+		},
+		{
+			"content": ", [",
+			"color": "#000000"
+		},
+		{
+			"content": "'compile'",
+			"color": "#A31515"
+		},
+		{
+			"content": "]);",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " cloneArray(arr) {",
+			"color": "#000000"
+		},
+		{
+			"content": "    _.foo();",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " r = [];",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " i = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": ", len = arr.length; i < len; i++) {",
+			"color": "#000000"
+		},
+		{
+			"content": "        r[i] = doClone(arr[i]);",
+			"color": "#000000"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " r;",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#7CA668"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#7CA668"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#7CA668"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#7CA668"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " gulp ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " require(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'gulp'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " tsb ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " require(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'gulp-tsb'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " util ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " require(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'./lib/util'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " watcher ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " require(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'./lib/watch'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " assign ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " require(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'object-assign'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " compilation ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " tsb.create(assign({ verbose: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": " }, require(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'./tsconfig.json'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ").compilerOptions));",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "gulp.task(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'compile'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": "() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " gulp.src(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'.'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " })",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t.pipe(compilation())",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t.pipe(gulp.dest(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "''",
+			"color": "#CE9178"
+		},
+		{
+			"content": "));",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "});",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "gulp.task(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'watch'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": "() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " src ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " gulp.src(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'.'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " });",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " watcher(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'.'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " })",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t.pipe(util.incremental(compilation, src))",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t.pipe(gulp.dest(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "''",
+			"color": "#CE9178"
+		},
+		{
+			"content": "));",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "});",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "gulp.task(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'default'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", [",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'compile'",
+			"color": "#CE9178"
+		},
+		{
+			"content": "]);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " cloneArray(arr) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    _.foo();",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " r ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " [];",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " i ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ", len ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " arr.length; i ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " len; i",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "++",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        r[i] ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " doClone(arr[i]);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " r;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#608B4E"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#608B4E"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#608B4E"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#608B4E"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "gulp",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "require",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'gulp'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "tsb",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "require",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'gulp-tsb'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "util",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "require",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'./lib/util'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "watcher",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "require",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'./lib/watch'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "assign",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "require",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'object-assign'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "compilation",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "tsb",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "create",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "assign",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "({ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "verbose:",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": " }, ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "require",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'./tsconfig.json'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ").",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "compilerOptions",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "));",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "gulp",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "task",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'compile'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": "() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "gulp",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "src",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", { ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "base:",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'.'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " })",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "pipe",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "compilation",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "())",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "pipe",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "gulp",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "dest",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "''",
+			"color": "#CE9178"
+		},
+		{
+			"content": "));",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "});",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "gulp",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "task",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'watch'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": "() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "src",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "gulp",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "src",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", { ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "base:",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'.'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " });",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "watcher",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", { ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "base:",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'.'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " })",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "pipe",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(util.",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "incremental",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "compilation",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "src",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "))",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "pipe",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "gulp",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "dest",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "''",
+			"color": "#CE9178"
+		},
+		{
+			"content": "));",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "});",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "gulp",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "task",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'default'",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", [",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'compile'",
+			"color": "#CE9178"
+		},
+		{
+			"content": "]);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "cloneArray",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "arr",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ") {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "_",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "foo",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "();",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "r",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = [];",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "i",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "len",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "arr",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "length",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "; ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "i",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " < ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "len",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "; ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "i",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "++) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "r",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "[",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "i",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "] = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "doClone",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "arr",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "[",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "i",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "]);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "r",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#008000"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#008000"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#008000"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#008000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "gulp",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "require",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "'gulp'",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "tsb",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "require",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "'gulp-tsb'",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "util",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "require",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "'./lib/util'",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "watcher",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "require",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "'./lib/watch'",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "assign",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "require",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "'object-assign'",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "compilation",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "tsb",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "create",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "assign",
+			"color": "#795E26"
+		},
+		{
+			"content": "({ ",
+			"color": "#000000"
+		},
+		{
+			"content": "verbose:",
+			"color": "#001080"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "true",
+			"color": "#0000FF"
+		},
+		{
+			"content": " }, ",
+			"color": "#000000"
+		},
+		{
+			"content": "require",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "'./tsconfig.json'",
+			"color": "#A31515"
+		},
+		{
+			"content": ").",
+			"color": "#000000"
+		},
+		{
+			"content": "compilerOptions",
+			"color": "#001080"
+		},
+		{
+			"content": "));",
+			"color": "#000000"
+		},
+		{
+			"content": "gulp",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "task",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "'compile'",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": "() {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "gulp",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "src",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#A31515"
+		},
+		{
+			"content": ", { ",
+			"color": "#000000"
+		},
+		{
+			"content": "base:",
+			"color": "#001080"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "'.'",
+			"color": "#A31515"
+		},
+		{
+			"content": " })",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#000000"
+		},
+		{
+			"content": "pipe",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "compilation",
+			"color": "#795E26"
+		},
+		{
+			"content": "())",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#000000"
+		},
+		{
+			"content": "pipe",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "gulp",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "dest",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "''",
+			"color": "#A31515"
+		},
+		{
+			"content": "));",
+			"color": "#000000"
+		},
+		{
+			"content": "});",
+			"color": "#000000"
+		},
+		{
+			"content": "gulp",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "task",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "'watch'",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": "() {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "src",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "gulp",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "src",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#A31515"
+		},
+		{
+			"content": ", { ",
+			"color": "#000000"
+		},
+		{
+			"content": "base:",
+			"color": "#001080"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "'.'",
+			"color": "#A31515"
+		},
+		{
+			"content": " });",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "watcher",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#A31515"
+		},
+		{
+			"content": ", { ",
+			"color": "#000000"
+		},
+		{
+			"content": "base:",
+			"color": "#001080"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "'.'",
+			"color": "#A31515"
+		},
+		{
+			"content": " })",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#000000"
+		},
+		{
+			"content": "pipe",
+			"color": "#795E26"
+		},
+		{
+			"content": "(util.",
+			"color": "#000000"
+		},
+		{
+			"content": "incremental",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "compilation",
+			"color": "#001080"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "src",
+			"color": "#001080"
+		},
+		{
+			"content": "))",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#000000"
+		},
+		{
+			"content": "pipe",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "gulp",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "dest",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "''",
+			"color": "#A31515"
+		},
+		{
+			"content": "));",
+			"color": "#000000"
+		},
+		{
+			"content": "});",
+			"color": "#000000"
+		},
+		{
+			"content": "gulp",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "task",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "'default'",
+			"color": "#A31515"
+		},
+		{
+			"content": ", [",
+			"color": "#000000"
+		},
+		{
+			"content": "'compile'",
+			"color": "#A31515"
+		},
+		{
+			"content": "]);",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "cloneArray",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "arr",
+			"color": "#001080"
+		},
+		{
+			"content": ") {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "_",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "foo",
+			"color": "#795E26"
+		},
+		{
+			"content": "();",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "r",
+			"color": "#001080"
+		},
+		{
+			"content": " = [];",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "i",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "len",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "arr",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "length",
+			"color": "#001080"
+		},
+		{
+			"content": "; ",
+			"color": "#000000"
+		},
+		{
+			"content": "i",
+			"color": "#001080"
+		},
+		{
+			"content": " < ",
+			"color": "#000000"
+		},
+		{
+			"content": "len",
+			"color": "#001080"
+		},
+		{
+			"content": "; ",
+			"color": "#000000"
+		},
+		{
+			"content": "i",
+			"color": "#001080"
+		},
+		{
+			"content": "++) {",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "r",
+			"color": "#001080"
+		},
+		{
+			"content": "[",
+			"color": "#000000"
+		},
+		{
+			"content": "i",
+			"color": "#001080"
+		},
+		{
+			"content": "] = ",
+			"color": "#000000"
+		},
+		{
+			"content": "doClone",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "arr",
+			"color": "#001080"
+		},
+		{
+			"content": "[",
+			"color": "#000000"
+		},
+		{
+			"content": "i",
+			"color": "#001080"
+		},
+		{
+			"content": "]);",
+			"color": "#000000"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "r",
+			"color": "#001080"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#A57A4C"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#A57A4C"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#A57A4C"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "gulp",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "require",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "gulp",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "tsb",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "require",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "gulp-tsb",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "util",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "require",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "./lib/util",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "watcher",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "require",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "./lib/watch",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "assign",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "require",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "object-assign",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "compilation",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "tsb",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "create",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "assign",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "({ verbose: ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "true",
+			"color": "#F79A32"
+		},
+		{
+			"content": " }, ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "require",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "./tsconfig.json",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ").",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "compilerOptions",
+			"color": "#DC3958"
+		},
+		{
+			"content": "));",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "gulp",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "task",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "compile",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "function",
+			"color": "#98676A"
+		},
+		{
+			"content": "() {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "return",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "gulp",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "src",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "**/*.ts",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ".",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " })",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "pipe",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "compilation",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "())",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "pipe",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "gulp",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "dest",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "''",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "));",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "});",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "gulp",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "task",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "watch",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "function",
+			"color": "#98676A"
+		},
+		{
+			"content": "() {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "src",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "gulp",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "src",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "**/*.ts",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ".",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " });",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "return",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "watcher",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "**/*.ts",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ".",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " })",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "pipe",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(util.",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "incremental",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "compilation",
+			"color": "#DC3958"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "src",
+			"color": "#DC3958"
+		},
+		{
+			"content": "))",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "pipe",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "gulp",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "dest",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "''",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "));",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "});",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "gulp",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "task",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "default",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", [",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "compile",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "]);",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "function",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "cloneArray",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "arr",
+			"color": "#DC3958"
+		},
+		{
+			"content": ") {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "_",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "foo",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "();",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "r",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = [];",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#98676A"
+		},
+		{
+			"content": " (",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "i",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "0",
+			"color": "#F79A32"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "len",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "arr",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".length; ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "i",
+			"color": "#DC3958"
+		},
+		{
+			"content": " < ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "len",
+			"color": "#DC3958"
+		},
+		{
+			"content": "; ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "i",
+			"color": "#DC3958"
+		},
+		{
+			"content": "++) {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "r",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "i",
+			"color": "#DC3958"
+		},
+		{
+			"content": "] = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "doClone",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "arr",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "i",
+			"color": "#DC3958"
+		},
+		{
+			"content": "]);",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "return",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "r",
+			"color": "#DC3958"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#75715E"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#75715E"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#75715E"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#75715E"
+		},
+		{
+			"content": "var",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " gulp ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "require",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'gulp'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "var",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " tsb ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "require",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'gulp-tsb'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "var",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " util ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "require",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'./lib/util'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "var",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " watcher ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "require",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'./lib/watch'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "var",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " assign ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "require",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'object-assign'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "var",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " compilation ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " tsb.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "create",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "assign",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "({ verbose: ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "true",
+			"color": "#AE81FF"
+		},
+		{
+			"content": " }, ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "require",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'./tsconfig.json'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ").compilerOptions));",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "gulp.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "task",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'compile'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "function",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "return",
+			"color": "#F92672"
+		},
+		{
+			"content": " gulp.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "src",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'.'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " })",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "pipe",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "compilation",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "())",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "pipe",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(gulp.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "dest",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "''",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "));",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "});",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "gulp.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "task",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'watch'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "function",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "var",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " src ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " gulp.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "src",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'.'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " });",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "return",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "watcher",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'.'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " })",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "pipe",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(util.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "incremental",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(compilation, src))",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "pipe",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(gulp.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "dest",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "''",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "));",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "});",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "gulp.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "task",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'default'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", [",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'compile'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "]);",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "function",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "cloneArray",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "arr",
+			"color": "#FD971F"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    _.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "foo",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "();",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "var",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " r ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " [];",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#F92672"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "var",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " i ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "0",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ", len ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " arr.length; i ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F92672"
+		},
+		{
+			"content": " len; i",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "++",
+			"color": "#F92672"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        r[i] ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "doClone",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(arr[i]);",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "return",
+			"color": "#F92672"
+		},
+		{
+			"content": " r;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#9A9B99"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#9A9B99"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#9A9B99"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "gulp",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "require",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'gulp'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "tsb",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "require",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'gulp-tsb'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "util",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "require",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'./lib/util'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "watcher",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "require",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'./lib/watch'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "assign",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "require",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'object-assign'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "compilation",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "tsb",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "create",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "assign",
+			"color": "#CE6700"
+		},
+		{
+			"content": "({ verbose: ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "true",
+			"color": "#FF0080"
+		},
+		{
+			"content": " }, ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "require",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'./tsconfig.json'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ").",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "compilerOptions",
+			"color": "#9872A2"
+		},
+		{
+			"content": "));",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "gulp",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "task",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'compile'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "function",
+			"color": "#9872A2"
+		},
+		{
+			"content": "() {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "return",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "gulp",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "src",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'.'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " })",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "pipe",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "compilation",
+			"color": "#CE6700"
+		},
+		{
+			"content": "())",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "pipe",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "gulp",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "dest",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "''",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "));",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "});",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "gulp",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "task",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'watch'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "function",
+			"color": "#9872A2"
+		},
+		{
+			"content": "() {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "src",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "gulp",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "src",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'.'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " });",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "return",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "watcher",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'.'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " })",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "pipe",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "util",
+			"color": "#C7444A"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "incremental",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "compilation",
+			"color": "#6089B4"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "src",
+			"color": "#6089B4"
+		},
+		{
+			"content": "))",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "pipe",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "gulp",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "dest",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "''",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "));",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "});",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "gulp",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "task",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'default'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", [",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'compile'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "]);",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "function",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "cloneArray",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "arr",
+			"color": "#6089B4"
+		},
+		{
+			"content": ") {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "_",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "foo",
+			"color": "#CE6700"
+		},
+		{
+			"content": "();",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "r",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " [];",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "for",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "i",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "0",
+			"color": "#6089B4"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "len",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "arr",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "length",
+			"color": "#C7444A"
+		},
+		{
+			"content": "; ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "i",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "len",
+			"color": "#6089B4"
+		},
+		{
+			"content": "; ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "i",
+			"color": "#6089B4"
+		},
+		{
+			"content": "++",
+			"color": "#676867"
+		},
+		{
+			"content": ") {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "r",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "i",
+			"color": "#6089B4"
+		},
+		{
+			"content": "] ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "doClone",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "arr",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "i",
+			"color": "#6089B4"
+		},
+		{
+			"content": "]);",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "return",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "r",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "var",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "gulp",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "require",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "gulp",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "var",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "tsb",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "require",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "gulp-tsb",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "var",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "util",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "require",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "./lib/util",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "var",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "watcher",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "require",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "./lib/watch",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "var",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "assign",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "require",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "object-assign",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "var",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "compilation",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "tsb",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "create",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "assign",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": " verbose",
+			"color": "#333333"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "true",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "},",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "require",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "./tsconfig.json",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "compilerOptions",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "))",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "gulp",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "task",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "compile",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "function",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "()",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "return",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "gulp",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "src",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "**/*.ts",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": " base",
+			"color": "#333333"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ".",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "pipe",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "compilation",
+			"color": "#AA3731"
+		},
+		{
+			"content": "())",
+			"color": "#333333"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "pipe",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "gulp",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "dest",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "''",
+			"color": "#777777"
+		},
+		{
+			"content": "))",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "gulp",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "task",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "watch",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "function",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "()",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "var",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "src",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "gulp",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "src",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "**/*.ts",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": " base",
+			"color": "#333333"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ".",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "return",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "watcher",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "**/*.ts",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": " base",
+			"color": "#333333"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ".",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "pipe",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(util",
+			"color": "#333333"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "incremental",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "compilation",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "src",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "))",
+			"color": "#333333"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "pipe",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "gulp",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "dest",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "''",
+			"color": "#777777"
+		},
+		{
+			"content": "))",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "gulp",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "task",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "default",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " [",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "compile",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "])",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "function",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "cloneArray",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "arr",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "_",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "foo",
+			"color": "#AA3731"
+		},
+		{
+			"content": "()",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "var",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "r",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " []",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "for",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "var",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "i",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "0",
+			"color": "#AB6526"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "len",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "arr",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "length",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "i",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "len",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "i",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "++",
+			"color": "#777777"
+		},
+		{
+			"content": ") ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "r",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "[",
+			"color": "#333333"
+		},
+		{
+			"content": "i",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "] ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "doClone",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "arr",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "[",
+			"color": "#333333"
+		},
+		{
+			"content": "i",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "])",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "return",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "r",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		}
+	],
+	"red": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "var",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "gulp",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "require",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'gulp'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "var",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "tsb",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "require",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'gulp-tsb'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "var",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "util",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "require",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'./lib/util'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "var",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "watcher",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "require",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'./lib/watch'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "var",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "assign",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "require",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'object-assign'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "var",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "compilation",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "tsb",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "create",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "assign",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "({ verbose: ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "true",
+			"color": "#994646FF"
+		},
+		{
+			"content": " }, ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "require",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'./tsconfig.json'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ").",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "compilerOptions",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "));",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "gulp",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "task",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'compile'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "function",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "return",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "gulp",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "src",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'.'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " })",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "pipe",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "compilation",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "())",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "pipe",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "gulp",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "dest",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "''",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "));",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "});",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "gulp",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "task",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'watch'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "function",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "var",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "src",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "gulp",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "src",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'.'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " });",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "return",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "watcher",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'.'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " })",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "pipe",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "util",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "incremental",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "compilation",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "src",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "))",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "pipe",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "gulp",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "dest",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "''",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "));",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "});",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "gulp",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "task",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'default'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", [",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'compile'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "]);",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "function",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "cloneArray",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "arr",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "_",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "foo",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "();",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "var",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "r",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " [];",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "for",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "var",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "i",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "0",
+			"color": "#994646FF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "len",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "arr",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "length",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": "; ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "i",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "len",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "; ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "i",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "++",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "r",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "[",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "i",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "] ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "doClone",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "arr",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "[",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "i",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "]);",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "return",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "r",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#657B83"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#657B83"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#657B83"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#657B83"
+		},
+		{
+			"content": "var",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "require",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'gulp'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "tsb",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "require",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'gulp-tsb'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "util",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "require",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'./lib/util'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "watcher",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "require",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'./lib/watch'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "assign",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "require",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'object-assign'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "compilation",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "tsb",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "create",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "assign",
+			"color": "#268BD2"
+		},
+		{
+			"content": "({ verbose: ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "true",
+			"color": "#B58900"
+		},
+		{
+			"content": " }, ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "require",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'./tsconfig.json'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ").",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "compilerOptions",
+			"color": "#268BD2"
+		},
+		{
+			"content": "));",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "task",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'compile'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "function",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "() {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "src",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'.'",
+			"color": "#2AA198"
+		},
+		{
+			"content": " })",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "pipe",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "compilation",
+			"color": "#268BD2"
+		},
+		{
+			"content": "())",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "pipe",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "dest",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "''",
+			"color": "#2AA198"
+		},
+		{
+			"content": "));",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "});",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "task",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'watch'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "function",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "() {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "src",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "src",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'.'",
+			"color": "#2AA198"
+		},
+		{
+			"content": " });",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "watcher",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'.'",
+			"color": "#2AA198"
+		},
+		{
+			"content": " })",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "pipe",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(util.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "incremental",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "compilation",
+			"color": "#268BD2"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "src",
+			"color": "#268BD2"
+		},
+		{
+			"content": "))",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "pipe",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "dest",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "''",
+			"color": "#2AA198"
+		},
+		{
+			"content": "));",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "});",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "task",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'default'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", [",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'compile'",
+			"color": "#2AA198"
+		},
+		{
+			"content": "]);",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "function",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "cloneArray",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(arr) {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "foo",
+			"color": "#268BD2"
+		},
+		{
+			"content": "();",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "r",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " [];",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "len",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "arr",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".length; ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "len",
+			"color": "#268BD2"
+		},
+		{
+			"content": "; ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++",
+			"color": "#859900"
+		},
+		{
+			"content": ") {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "r",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": "] ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "doClone",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "arr",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": "]);",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "r",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "require",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "'gulp'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "var",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "tsb",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "require",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "'gulp-tsb'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "var",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "util",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "require",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "'./lib/util'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "var",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "watcher",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "require",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "'./lib/watch'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "var",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "assign",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "require",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "'object-assign'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "var",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "compilation",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "tsb",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "create",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "assign",
+			"color": "#268BD2"
+		},
+		{
+			"content": "({ verbose: ",
+			"color": "#586E75"
+		},
+		{
+			"content": "true",
+			"color": "#B58900"
+		},
+		{
+			"content": " }, ",
+			"color": "#586E75"
+		},
+		{
+			"content": "require",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "'./tsconfig.json'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ").",
+			"color": "#586E75"
+		},
+		{
+			"content": "compilerOptions",
+			"color": "#268BD2"
+		},
+		{
+			"content": "));",
+			"color": "#586E75"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "task",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "'compile'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "function",
+			"color": "#073642"
+		},
+		{
+			"content": "() {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "src",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#586E75"
+		},
+		{
+			"content": "'.'",
+			"color": "#2AA198"
+		},
+		{
+			"content": " })",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#586E75"
+		},
+		{
+			"content": "pipe",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "compilation",
+			"color": "#268BD2"
+		},
+		{
+			"content": "())",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#586E75"
+		},
+		{
+			"content": "pipe",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "dest",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "''",
+			"color": "#2AA198"
+		},
+		{
+			"content": "));",
+			"color": "#586E75"
+		},
+		{
+			"content": "});",
+			"color": "#586E75"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "task",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "'watch'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "function",
+			"color": "#073642"
+		},
+		{
+			"content": "() {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "var",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "src",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "src",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#586E75"
+		},
+		{
+			"content": "'.'",
+			"color": "#2AA198"
+		},
+		{
+			"content": " });",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "watcher",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#586E75"
+		},
+		{
+			"content": "'.'",
+			"color": "#2AA198"
+		},
+		{
+			"content": " })",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#586E75"
+		},
+		{
+			"content": "pipe",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(util.",
+			"color": "#586E75"
+		},
+		{
+			"content": "incremental",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "compilation",
+			"color": "#268BD2"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "src",
+			"color": "#268BD2"
+		},
+		{
+			"content": "))",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#586E75"
+		},
+		{
+			"content": "pipe",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "dest",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "''",
+			"color": "#2AA198"
+		},
+		{
+			"content": "));",
+			"color": "#586E75"
+		},
+		{
+			"content": "});",
+			"color": "#586E75"
+		},
+		{
+			"content": "gulp",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "task",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "'default'",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", [",
+			"color": "#586E75"
+		},
+		{
+			"content": "'compile'",
+			"color": "#2AA198"
+		},
+		{
+			"content": "]);",
+			"color": "#586E75"
+		},
+		{
+			"content": "function",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "cloneArray",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(arr) {",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "foo",
+			"color": "#268BD2"
+		},
+		{
+			"content": "();",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "var",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "r",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " [];",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "var",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "len",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "arr",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".length; ",
+			"color": "#586E75"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "len",
+			"color": "#268BD2"
+		},
+		{
+			"content": "; ",
+			"color": "#586E75"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++",
+			"color": "#859900"
+		},
+		{
+			"content": ") {",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "r",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#586E75"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": "] ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "doClone",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "arr",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#586E75"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": "]);",
+			"color": "#586E75"
+		},
+		{
+			"content": "    }",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "r",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "/*---------------------------------------------------------------------------------------------",
+			"color": "#7285B7"
+		},
+		{
+			"content": " *  Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#7285B7"
+		},
+		{
+			"content": " *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			"color": "#7285B7"
+		},
+		{
+			"content": " *--------------------------------------------------------------------------------------------*/",
+			"color": "#7285B7"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "gulp",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "require",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'gulp'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "tsb",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "require",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'gulp-tsb'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "util",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "require",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'./lib/util'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "watcher",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "require",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'./lib/watch'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "assign",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "require",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'object-assign'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "compilation",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "tsb",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "create",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "assign",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "({ verbose: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "true",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " }, ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "require",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'./tsconfig.json'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ").",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "compilerOptions",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "));",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "gulp",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "task",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'compile'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "gulp",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "src",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'.'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " })",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "pipe",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "compilation",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "())",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "pipe",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "gulp",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "dest",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "''",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "));",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "});",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "gulp",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "task",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'watch'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "src",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "gulp",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "src",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'.'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " });",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "watcher",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'**/*.ts'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", { base: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'.'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " })",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "pipe",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(util.",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "incremental",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "compilation",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "src",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "))",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t.",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "pipe",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "gulp",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "dest",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "''",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "));",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "});",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "gulp",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "task",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'default'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", [",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'compile'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "]);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "cloneArray",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "arr",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "_",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "foo",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "();",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "r",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " [];",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "i",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "len",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "arr",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".length; ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "i",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "len",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "; ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "i",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "++",
+			"color": "#99FFFF"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "r",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "[",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "i",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "] ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "doClone",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "arr",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "[",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "i",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "]);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "r",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	]
+}

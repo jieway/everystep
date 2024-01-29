@@ -1,0 +1,5130 @@
+{
+	"abyss": [
+		{
+			"content": "#if",
+			"color": "#225588"
+		},
+		{
+			"content": " B4G_DEBUG_CHECK",
+			"color": "#6688CC"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "fprintf",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"num_candidate_ret=%d:\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", num_candidate);",
+			"color": "#6688CC"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#225588"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "int",
+			"color": "#9966B8"
+		},
+		{
+			"content": " i",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": "0",
+			"color": "#F280D0"
+		},
+		{
+			"content": ";i",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#225588"
+		},
+		{
+			"content": "num_candidate;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "++",
+			"color": "#225588"
+		},
+		{
+			"content": "i)",
+			"color": "#6688CC"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "fprintf",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"%d,\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ",user_candidate[i]);",
+			"color": "#6688CC"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "fprintf",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\";\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "#endif",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "void",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "main",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(O obj) {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"not hilighted as string\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(obj ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<<",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\", even worse; \"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<<",
+			"color": "#225588"
+		},
+		{
+			"content": " obj.x ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<<",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\" check this out.\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#223355"
+		},
+		{
+			"content": "    O x;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    std::unique_ptr",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#225588"
+		},
+		{
+			"content": "O",
+			"color": "#6688CC"
+		},
+		{
+			"content": ">",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "o",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "new",
+			"color": "#225588"
+		},
+		{
+			"content": " O);",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#223355"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "sprintf",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(options, ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"STYLE=Keramik;TITLE=%s;THEME=%s\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", ...);",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "int",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "main2",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "() {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "printf",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\";\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#223355"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "asm",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"movw $0x38, %ax; ltr %ax\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "fn",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"{};\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#223355"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "#if B4G_DEBUG_CHECK",
+			"color": "#569CD6"
+		},
+		{
+			"content": " fprintf(stderr,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"num_candidate_ret=%d:\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", num_candidate);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " i=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";i<num_candidate;++i)",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " fprintf(stderr,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"%d,\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ",user_candidate[i]);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " fprintf(stderr,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\";\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "#endif",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " main(O obj) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    LOG_INFO(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"not hilighted as string\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    LOG_INFO(obj << ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\", even worse; \"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " << obj.x << ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\" check this out.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    O x;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    std::unique_ptr<O> o(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "new",
+			"color": "#569CD6"
+		},
+		{
+			"content": " O);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    sprintf(options, ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"STYLE=Keramik;TITLE=%s;THEME=%s\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ...);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " main2() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    printf(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\";\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    asm(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"movw $0x38, %ax; ltr %ax\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    fn(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"{};\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#608B4E"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "#if B4G_DEBUG_CHECK",
+			"color": "#0000FF"
+		},
+		{
+			"content": " fprintf(stderr,",
+			"color": "#000000"
+		},
+		{
+			"content": "\"num_candidate_ret=%d:\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", num_candidate);",
+			"color": "#000000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " i=",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": ";i<num_candidate;++i)",
+			"color": "#000000"
+		},
+		{
+			"content": " fprintf(stderr,",
+			"color": "#000000"
+		},
+		{
+			"content": "\"%d,\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ",user_candidate[i]);",
+			"color": "#000000"
+		},
+		{
+			"content": " fprintf(stderr,",
+			"color": "#000000"
+		},
+		{
+			"content": "\";\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "#endif",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "void",
+			"color": "#0000FF"
+		},
+		{
+			"content": " main(O obj) {",
+			"color": "#000000"
+		},
+		{
+			"content": "    LOG_INFO(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"not hilighted as string\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "    LOG_INFO(obj << ",
+			"color": "#000000"
+		},
+		{
+			"content": "\", even worse; \"",
+			"color": "#A31515"
+		},
+		{
+			"content": " << obj.x << ",
+			"color": "#000000"
+		},
+		{
+			"content": "\" check this out.\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#008000"
+		},
+		{
+			"content": "    O x;",
+			"color": "#000000"
+		},
+		{
+			"content": "    std::unique_ptr<O> o(",
+			"color": "#000000"
+		},
+		{
+			"content": "new",
+			"color": "#0000FF"
+		},
+		{
+			"content": " O);",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#008000"
+		},
+		{
+			"content": "    sprintf(options, ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"STYLE=Keramik;TITLE=%s;THEME=%s\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ...);",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " main2() {",
+			"color": "#000000"
+		},
+		{
+			"content": "    printf(",
+			"color": "#000000"
+		},
+		{
+			"content": "\";\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#008000"
+		},
+		{
+			"content": "    asm(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"movw $0x38, %ax; ltr %ax\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "    fn(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"{};\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#008000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "#if B4G_DEBUG_CHECK",
+			"color": "#569CD6"
+		},
+		{
+			"content": " fprintf(stderr,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"num_candidate_ret=%d:\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", num_candidate);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " i",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";i",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "num_candidate;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "++",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "i)",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " fprintf(stderr,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"%d,\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ",user_candidate[i]);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " fprintf(stderr,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\";\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "#endif",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " main(O obj) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    LOG_INFO(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"not hilighted as string\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    LOG_INFO(obj ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<<",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\", even worse; \"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<<",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " obj.x ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<<",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\" check this out.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#7CA668"
+		},
+		{
+			"content": "    O x;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    std::unique_ptr",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "O",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ">",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " o(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "new",
+			"color": "#569CD6"
+		},
+		{
+			"content": " O);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#7CA668"
+		},
+		{
+			"content": "    sprintf(options, ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"STYLE=Keramik;TITLE=%s;THEME=%s\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ...);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " main2() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    printf(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\";\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#7CA668"
+		},
+		{
+			"content": "    asm(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"movw $0x38, %ax; ltr %ax\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    fn(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"{};\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#7CA668"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "#if",
+			"color": "#C586C0"
+		},
+		{
+			"content": " B4G_DEBUG_CHECK",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "fprintf",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"num_candidate_ret=%d:\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", num_candidate);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#C586C0"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " i=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";i<num_candidate;++i)",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "fprintf",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"%d,\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ",user_candidate[i]);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "fprintf",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\";\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "#endif",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "main",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(O obj) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"not hilighted as string\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(obj << ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\", even worse; \"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " << obj.",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "x",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " << ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\" check this out.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    O x;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    std::unique_ptr<O> ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "o",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "new",
+			"color": "#C586C0"
+		},
+		{
+			"content": " O);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "sprintf",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(options, ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"STYLE=Keramik;TITLE=%s;THEME=%s\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ...);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "main2",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "printf",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\";\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "asm",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"movw $0x38, %ax; ltr %ax\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "fn",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"{};\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#608B4E"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "#if",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " B4G_DEBUG_CHECK",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "fprintf",
+			"color": "#795E26"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#000000"
+		},
+		{
+			"content": "\"num_candidate_ret=%d:\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", num_candidate);",
+			"color": "#000000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " i=",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": ";i<num_candidate;++i)",
+			"color": "#000000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "fprintf",
+			"color": "#795E26"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#000000"
+		},
+		{
+			"content": "\"%d,\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ",user_candidate[i]);",
+			"color": "#000000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "fprintf",
+			"color": "#795E26"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#000000"
+		},
+		{
+			"content": "\";\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "#endif",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "void",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "main",
+			"color": "#795E26"
+		},
+		{
+			"content": "(O obj) {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"not hilighted as string\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#795E26"
+		},
+		{
+			"content": "(obj << ",
+			"color": "#000000"
+		},
+		{
+			"content": "\", even worse; \"",
+			"color": "#A31515"
+		},
+		{
+			"content": " << obj.",
+			"color": "#000000"
+		},
+		{
+			"content": "x",
+			"color": "#001080"
+		},
+		{
+			"content": " << ",
+			"color": "#000000"
+		},
+		{
+			"content": "\" check this out.\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#008000"
+		},
+		{
+			"content": "    O x;",
+			"color": "#000000"
+		},
+		{
+			"content": "    std::unique_ptr<O> ",
+			"color": "#000000"
+		},
+		{
+			"content": "o",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "new",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " O);",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#008000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "sprintf",
+			"color": "#795E26"
+		},
+		{
+			"content": "(options, ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"STYLE=Keramik;TITLE=%s;THEME=%s\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ...);",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "main2",
+			"color": "#795E26"
+		},
+		{
+			"content": "() {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "printf",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "\";\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#008000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "asm",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"movw $0x38, %ax; ltr %ax\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "fn",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"{};\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#008000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "#if",
+			"color": "#98676A"
+		},
+		{
+			"content": " B4G_DEBUG_CHECK",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "fprintf",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "num_candidate_ret=%d:",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", num_candidate);",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#98676A"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "int",
+			"color": "#98676A"
+		},
+		{
+			"content": " i=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "0",
+			"color": "#F79A32"
+		},
+		{
+			"content": ";i<num_candidate;++i)",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "fprintf",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "%d,",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ",user_candidate[i]);",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "fprintf",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ";",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "#endif",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "void",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "main",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(O obj) {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "not hilighted as string",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(obj << ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", even worse; ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " << obj.",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "x",
+			"color": "#DC3958"
+		},
+		{
+			"content": " << ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " check this out.",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "    O x;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    std::unique_ptr<O> ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "o",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "new",
+			"color": "#98676A"
+		},
+		{
+			"content": " O);",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "sprintf",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(options, ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "STYLE=Keramik;TITLE=%s;THEME=%s",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", ...);",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "int",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "main2",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "() {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "printf",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ";",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "asm",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "movw $0x38, %ax; ltr %ax",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "fn",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "{};",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "#if",
+			"color": "#F92672"
+		},
+		{
+			"content": " B4G_DEBUG_CHECK",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "fprintf",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"num_candidate_ret=%d:\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", num_candidate);",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#F92672"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "int",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " i",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": "0",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ";i",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F92672"
+		},
+		{
+			"content": "num_candidate;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "++",
+			"color": "#F92672"
+		},
+		{
+			"content": "i)",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "fprintf",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"%d,\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ",user_candidate[i]);",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "fprintf",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\";\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "#endif",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "void",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "main",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(O obj) {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"not hilighted as string\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(obj ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<<",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\", even worse; \"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<<",
+			"color": "#F92672"
+		},
+		{
+			"content": " obj.x ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<<",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\" check this out.\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#75715E"
+		},
+		{
+			"content": "    O x;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    std::unique_ptr",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F92672"
+		},
+		{
+			"content": "O",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ">",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "o",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "new",
+			"color": "#F92672"
+		},
+		{
+			"content": " O);",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#75715E"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "sprintf",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(options, ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"STYLE=Keramik;TITLE=%s;THEME=%s\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", ...);",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "int",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "main2",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "printf",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\";\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#75715E"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "asm",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"movw $0x38, %ax; ltr %ax\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "fn",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"{};\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#75715E"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "#if",
+			"color": "#9872A2"
+		},
+		{
+			"content": " B4G_DEBUG_CHECK",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "fprintf",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"num_candidate_ret=%d:\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", num_candidate);",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "for",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "int",
+			"color": "#9872A2"
+		},
+		{
+			"content": " i",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": "0",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";i",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<",
+			"color": "#676867"
+		},
+		{
+			"content": "num_candidate;",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "++",
+			"color": "#676867"
+		},
+		{
+			"content": "i)",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "fprintf",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"%d,\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ",user_candidate[i]);",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "fprintf",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\";\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "#endif",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "void",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "main",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(O obj) {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#0080FF"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#0080FF"
+		},
+		{
+			"content": "\"not hilighted as string\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#0080FF"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#0080FF"
+		},
+		{
+			"content": "obj ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<<",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\", even worse; \"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<<",
+			"color": "#676867"
+		},
+		{
+			"content": " obj.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "x",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<<",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\" check this out.\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "    O x;",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    std::unique_ptr",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<",
+			"color": "#676867"
+		},
+		{
+			"content": "O",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ">",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#0080FF"
+		},
+		{
+			"content": "o",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#0080FF"
+		},
+		{
+			"content": "new",
+			"color": "#9872A2"
+		},
+		{
+			"content": " O);",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "sprintf",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(options, ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"STYLE=Keramik;TITLE=%s;THEME=%s\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", ...);",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "int",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "main2",
+			"color": "#CE6700"
+		},
+		{
+			"content": "() {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "printf",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\";\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "    ",
+			"color": "#0080FF"
+		},
+		{
+			"content": "asm",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#0080FF"
+		},
+		{
+			"content": "\"movw $0x38, %ax; ltr %ax\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#0080FF"
+		},
+		{
+			"content": "fn",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#0080FF"
+		},
+		{
+			"content": "\"{};\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "#",
+			"color": "#777777"
+		},
+		{
+			"content": "if",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " B4G_DEBUG_CHECK",
+			"color": "#333333"
+		},
+		{
+			"content": " ",
+			"color": "#777777"
+		},
+		{
+			"content": "fprintf",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "stderr,",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "num_candidate_ret=%d:",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ", num_candidate",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "for",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "int",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " i",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": "0",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";i",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#777777"
+		},
+		{
+			"content": "num_candidate;",
+			"color": "#333333"
+		},
+		{
+			"content": "++",
+			"color": "#777777"
+		},
+		{
+			"content": "i)",
+			"color": "#333333"
+		},
+		{
+			"content": " ",
+			"color": "#777777"
+		},
+		{
+			"content": "fprintf",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "stderr,",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "%d,",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ",user_candidate[i]",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": " ",
+			"color": "#777777"
+		},
+		{
+			"content": "fprintf",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "stderr,",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ";",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": "#",
+			"color": "#777777"
+		},
+		{
+			"content": "endif",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "void",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#777777"
+		},
+		{
+			"content": "main",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "O obj",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "not hilighted as string",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ");",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "obj ",
+			"color": "#333333"
+		},
+		{
+			"content": "<<",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ", even worse; ",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "<<",
+			"color": "#777777"
+		},
+		{
+			"content": " obj",
+			"color": "#333333"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "x",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "<<",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " check this out.",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ");",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "    O x;",
+			"color": "#333333"
+		},
+		{
+			"content": "    std::unique_ptr",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#777777"
+		},
+		{
+			"content": "O",
+			"color": "#333333"
+		},
+		{
+			"content": "> ",
+			"color": "#777777"
+		},
+		{
+			"content": "o",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "new",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " O);",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "sprintf",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(options, ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "STYLE=Keramik;TITLE=%s;THEME=%s",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ", ...);",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "int",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#777777"
+		},
+		{
+			"content": "main2",
+			"color": "#AA3731"
+		},
+		{
+			"content": "()",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "printf",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ";",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ");",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "asm",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "movw $0x38, %ax; ltr %ax",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ");",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "fn",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "{};",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ");",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		}
+	],
+	"red": [
+		{
+			"content": "#if",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " B4G_DEBUG_CHECK",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "fprintf",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"num_candidate_ret=%d:\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", num_candidate);",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "for",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "int",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " i",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "0",
+			"color": "#994646FF"
+		},
+		{
+			"content": ";i",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "num_candidate;",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "++",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "i)",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "fprintf",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"%d,\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ",user_candidate[i]);",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "fprintf",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\";\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "#endif",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "void",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "main",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(O obj) {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"not hilighted as string\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(obj ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<<",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\", even worse; \"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<<",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " obj.",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "x",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<<",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\" check this out.\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "    O x;",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    std::unique_ptr",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "O",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ">",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "o",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "new",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " O);",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "sprintf",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(options, ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"STYLE=Keramik;TITLE=%s;THEME=%s\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", ...);",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "int",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "main2",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "printf",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\";\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "asm",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"movw $0x38, %ax; ltr %ax\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "fn",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"{};\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "#if",
+			"color": "#859900"
+		},
+		{
+			"content": " B4G_DEBUG_CHECK",
+			"color": "#B58900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "fprintf",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"num_candidate_ret=%d:\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", num_candidate);",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "int",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " i",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": ";i",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": "num_candidate;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "++",
+			"color": "#859900"
+		},
+		{
+			"content": "i)",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "fprintf",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"%d,\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ",user_candidate[i]);",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "fprintf",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\";\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "#endif",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "void",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "main",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(O obj) {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"not hilighted as string\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(obj ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\", even worse; \"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<<",
+			"color": "#859900"
+		},
+		{
+			"content": " obj.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "x",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\" check this out.\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#657B83"
+		},
+		{
+			"content": "    O x;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    std::unique_ptr",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": "O",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ">",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "o",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "new",
+			"color": "#859900"
+		},
+		{
+			"content": " O);",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "sprintf",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(options, ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"STYLE=Keramik;TITLE=%s;THEME=%s\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ...);",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "int",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "main2",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "printf",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\";\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "asm",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"movw $0x38, %ax; ltr %ax\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "fn",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"{};\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#657B83"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "#if",
+			"color": "#859900"
+		},
+		{
+			"content": " B4G_DEBUG_CHECK",
+			"color": "#B58900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "fprintf",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"num_candidate_ret=%d:\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", num_candidate);",
+			"color": "#586E75"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "int",
+			"color": "#073642"
+		},
+		{
+			"content": " i",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": ";i",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": "num_candidate;",
+			"color": "#586E75"
+		},
+		{
+			"content": "++",
+			"color": "#859900"
+		},
+		{
+			"content": "i)",
+			"color": "#586E75"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "fprintf",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"%d,\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ",user_candidate[i]);",
+			"color": "#586E75"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "fprintf",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#586E75"
+		},
+		{
+			"content": "\";\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "#endif",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "void",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "main",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(O obj) {",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"not hilighted as string\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "LOG_INFO",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(obj ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\", even worse; \"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<<",
+			"color": "#859900"
+		},
+		{
+			"content": " obj.",
+			"color": "#586E75"
+		},
+		{
+			"content": "x",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\" check this out.\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    O x;",
+			"color": "#586E75"
+		},
+		{
+			"content": "    std::unique_ptr",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": "O",
+			"color": "#586E75"
+		},
+		{
+			"content": ">",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "o",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "new",
+			"color": "#859900"
+		},
+		{
+			"content": " O);",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "sprintf",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(options, ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"STYLE=Keramik;TITLE=%s;THEME=%s\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ...);",
+			"color": "#586E75"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		},
+		{
+			"content": "int",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "main2",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() {",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "printf",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "\";\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "asm",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"movw $0x38, %ax; ltr %ax\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "fn",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"{};\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "#if",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " B4G_DEBUG_CHECK",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "fprintf",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"num_candidate_ret=%d:\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", num_candidate);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " i",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "0",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ";i",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "num_candidate;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "++",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "i)",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "fprintf",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"%d,\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ",user_candidate[i]);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "fprintf",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(stderr,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\";\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "#endif",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "void",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "main",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(O obj) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    LOG_INFO(",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "\"not hilighted as string\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    LOG_INFO(",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "obj ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<<",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\", even worse; \"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<<",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " obj.",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "x",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<<",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\" check this out.\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// everything from this point on is interpeted as a string literal...",
+			"color": "#7285B7"
+		},
+		{
+			"content": "    O x;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    std::unique_ptr",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "O",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ">",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " o(",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "new",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " O);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// sadness.",
+			"color": "#7285B7"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "sprintf",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(options, ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"STYLE=Keramik;TITLE=%s;THEME=%s\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", ...);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "main2",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "printf",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\";\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#7285B7"
+		},
+		{
+			"content": "    asm(",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "\"movw $0x38, %ax; ltr %ax\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    fn(",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "\"{};\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// the rest of",
+			"color": "#7285B7"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	]
+}

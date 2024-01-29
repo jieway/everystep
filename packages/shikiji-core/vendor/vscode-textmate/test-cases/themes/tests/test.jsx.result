@@ -1,0 +1,7510 @@
+{
+	"abyss": [
+		{
+			"content": "var",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ToggleText ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " React.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "createClass",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "({",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "getInitialState",
+			"color": "#DDBB88"
+		},
+		{
+			"content": ": ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "function",
+			"color": "#9966B8"
+		},
+		{
+			"content": " () {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "return",
+			"color": "#225588"
+		},
+		{
+			"content": " {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "      showDefault: ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "true",
+			"color": "#F280D0"
+		},
+		{
+			"content": "    }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  },",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "toggle",
+			"color": "#DDBB88"
+		},
+		{
+			"content": ": ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "function",
+			"color": "#9966B8"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "e",
+			"color": "#2277FF"
+		},
+		{
+			"content": ") {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#223355"
+		},
+		{
+			"content": "    e.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "preventDefault",
+			"color": "#9966B8"
+		},
+		{
+			"content": "();",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#223355"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#223355"
+		},
+		{
+			"content": "    this.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "setState",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "({ showDefault: ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "!",
+			"color": "#225588"
+		},
+		{
+			"content": "this.state.showDefault })",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  },",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "render",
+			"color": "#DDBB88"
+		},
+		{
+			"content": ": ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "function",
+			"color": "#9966B8"
+		},
+		{
+			"content": " () {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#223355"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "var",
+			"color": "#9966B8"
+		},
+		{
+			"content": " message ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " this.props.default;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#223355"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "if",
+			"color": "#225588"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "!",
+			"color": "#225588"
+		},
+		{
+			"content": "this.state.showDefault) {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "      message ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " this.props.alt;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "return",
+			"color": "#225588"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "      <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "div",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "h1",
+			"color": "#225588"
+		},
+		{
+			"content": ">Hello {message}!</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "h1",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "a",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "href",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": "\"\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "onClick",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": "{this.toggle}>Toggle</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "a",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "      </",
+			"color": "#6688CC"
+		},
+		{
+			"content": "div",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    );",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "});",
+			"color": "#6688CC"
+		},
+		{
+			"content": "React.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "render",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(<",
+			"color": "#6688CC"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "default",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": "\"World\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "alt",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": "\"Mars\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " />, document.body);",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ToggleText = React.createClass({",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  getInitialState: ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " () {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      showDefault: ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  },",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  toggle: ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (e) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    e.preventDefault();",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".setState({ showDefault: !",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".state.showDefault })",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  },",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  render: ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " () {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " message = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".props.default;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (!",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".state.showDefault) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      message = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".props.alt;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Hello {message}!",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "a",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "href",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "onClick",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "={",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".toggle}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Toggle",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "a",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    );",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "});",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "React.render(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "default",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"World\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "alt",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Mars\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/>",
+			"color": "#808080"
+		},
+		{
+			"content": ", document.body);",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ToggleText = React.createClass({",
+			"color": "#000000"
+		},
+		{
+			"content": "  getInitialState: ",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " () {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "      showDefault: ",
+			"color": "#000000"
+		},
+		{
+			"content": "true",
+			"color": "#0000FF"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "  },",
+			"color": "#000000"
+		},
+		{
+			"content": "  toggle: ",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " (e) {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#008000"
+		},
+		{
+			"content": "    e.preventDefault();",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#008000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#008000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".setState({ showDefault: !",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".state.showDefault })",
+			"color": "#000000"
+		},
+		{
+			"content": "  },",
+			"color": "#000000"
+		},
+		{
+			"content": "  render: ",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " () {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#008000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " message = ",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".props.default;",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#008000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#0000FF"
+		},
+		{
+			"content": " (!",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".state.showDefault) {",
+			"color": "#000000"
+		},
+		{
+			"content": "      message = ",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".props.alt;",
+			"color": "#000000"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "<div>",
+			"color": "#800000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "<h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "Hello {message}!",
+			"color": "#000000"
+		},
+		{
+			"content": "</h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "<a",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "href",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "onClick",
+			"color": "#FF0000"
+		},
+		{
+			"content": "={",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".toggle}",
+			"color": "#000000"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "Toggle",
+			"color": "#000000"
+		},
+		{
+			"content": "</a>",
+			"color": "#800000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "</div>",
+			"color": "#800000"
+		},
+		{
+			"content": "    );",
+			"color": "#000000"
+		},
+		{
+			"content": "  }",
+			"color": "#000000"
+		},
+		{
+			"content": "});",
+			"color": "#000000"
+		},
+		{
+			"content": "React.render(",
+			"color": "#000000"
+		},
+		{
+			"content": "<ToggleText",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "default",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"World\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "alt",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Mars\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "/>",
+			"color": "#800000"
+		},
+		{
+			"content": ", document.body);",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ToggleText ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " React.createClass({",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  getInitialState: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " () {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      showDefault: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  },",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  toggle: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (e) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#7CA668"
+		},
+		{
+			"content": "    e.preventDefault();",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#7CA668"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#7CA668"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".setState({ showDefault: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "!",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".state.showDefault })",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  },",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  render: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " () {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#7CA668"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " message ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".props.default;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#7CA668"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "!",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".state.showDefault) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      message ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".props.alt;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Hello {message}!",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "a",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "href",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "onClick",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".toggle}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Toggle",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "a",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    );",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "});",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "React.render(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "default",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"World\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "alt",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Mars\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/>",
+			"color": "#808080"
+		},
+		{
+			"content": ", document.body);",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "React",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "createClass",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "({",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "getInitialState:",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " () {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#C586C0"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "showDefault:",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  },",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "toggle:",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "e",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ") {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "e",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "preventDefault",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "();",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "setState",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "({ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "showDefault:",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " !",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "state",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "showDefault",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " })",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  },",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "render:",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " () {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "message",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "props",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "default",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (!",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "state",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "showDefault",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ") {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "message",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "props",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "alt",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Hello {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "message",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}!",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "a",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "href",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "onClick",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "={",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "toggle",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Toggle",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "a",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    );",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "});",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "React",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "render",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "default",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"World\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "alt",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Mars\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/>",
+			"color": "#808080"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "document",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "body",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "React",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "createClass",
+			"color": "#795E26"
+		},
+		{
+			"content": "({",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "getInitialState:",
+			"color": "#001080"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " () {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "showDefault:",
+			"color": "#001080"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "true",
+			"color": "#0000FF"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "  },",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "toggle:",
+			"color": "#001080"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "e",
+			"color": "#001080"
+		},
+		{
+			"content": ") {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#008000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "e",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "preventDefault",
+			"color": "#795E26"
+		},
+		{
+			"content": "();",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#008000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#008000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "setState",
+			"color": "#795E26"
+		},
+		{
+			"content": "({ ",
+			"color": "#000000"
+		},
+		{
+			"content": "showDefault:",
+			"color": "#001080"
+		},
+		{
+			"content": " !",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "state",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "showDefault",
+			"color": "#001080"
+		},
+		{
+			"content": " })",
+			"color": "#000000"
+		},
+		{
+			"content": "  },",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "render:",
+			"color": "#001080"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " () {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#008000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "message",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "props",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "default",
+			"color": "#001080"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#008000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (!",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "state",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "showDefault",
+			"color": "#001080"
+		},
+		{
+			"content": ") {",
+			"color": "#000000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "message",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "props",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "alt",
+			"color": "#001080"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "<div>",
+			"color": "#800000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "<h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "Hello {",
+			"color": "#000000"
+		},
+		{
+			"content": "message",
+			"color": "#001080"
+		},
+		{
+			"content": "}!",
+			"color": "#000000"
+		},
+		{
+			"content": "</h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "<a",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "href",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "onClick",
+			"color": "#FF0000"
+		},
+		{
+			"content": "={",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "toggle",
+			"color": "#001080"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "Toggle",
+			"color": "#000000"
+		},
+		{
+			"content": "</a>",
+			"color": "#800000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "</div>",
+			"color": "#800000"
+		},
+		{
+			"content": "    );",
+			"color": "#000000"
+		},
+		{
+			"content": "  }",
+			"color": "#000000"
+		},
+		{
+			"content": "});",
+			"color": "#000000"
+		},
+		{
+			"content": "React",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "render",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "<ToggleText",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "default",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"World\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "alt",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Mars\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "/>",
+			"color": "#800000"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "document",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "body",
+			"color": "#001080"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "React",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "createClass",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "({",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "getInitialState",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": ": ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "function",
+			"color": "#98676A"
+		},
+		{
+			"content": " () {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "return",
+			"color": "#98676A"
+		},
+		{
+			"content": " {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "      showDefault: ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "true",
+			"color": "#F79A32"
+		},
+		{
+			"content": "    }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  },",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "toggle",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": ": ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "function",
+			"color": "#98676A"
+		},
+		{
+			"content": " (",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "e",
+			"color": "#DC3958"
+		},
+		{
+			"content": ") {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "e",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "preventDefault",
+			"color": "#7E602C"
+		},
+		{
+			"content": "();",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "this",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "setState",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "({ showDefault: !",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "this",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "state",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "showDefault",
+			"color": "#DC3958"
+		},
+		{
+			"content": " })",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  },",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "render",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": ": ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "function",
+			"color": "#98676A"
+		},
+		{
+			"content": " () {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "message",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "this",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "props",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "default",
+			"color": "#DC3958"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "if",
+			"color": "#98676A"
+		},
+		{
+			"content": " (!",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "this",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "state",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "showDefault",
+			"color": "#DC3958"
+		},
+		{
+			"content": ") {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "      ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "message",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "this",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "props",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".alt;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "return",
+			"color": "#98676A"
+		},
+		{
+			"content": " (",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "      <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "div",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "h1",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">Hello ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "{",
+			"color": "#18401E"
+		},
+		{
+			"content": "message",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}",
+			"color": "#18401E"
+		},
+		{
+			"content": "!</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "h1",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "a",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "href",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "onClick",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "{",
+			"color": "#18401E"
+		},
+		{
+			"content": "this",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "toggle",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}",
+			"color": "#18401E"
+		},
+		{
+			"content": ">Toggle</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "a",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "      </",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "div",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    );",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "});",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "React",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "render",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "default",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "World",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "alt",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Mars",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " />, document.body);",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "var",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ToggleText ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " React.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "createClass",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "({",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "getInitialState",
+			"color": "#A6E22E"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "function",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " () {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "return",
+			"color": "#F92672"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "      showDefault: ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "true",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  },",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "toggle",
+			"color": "#A6E22E"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "function",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "e",
+			"color": "#FD971F"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#75715E"
+		},
+		{
+			"content": "    e.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "preventDefault",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "();",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#75715E"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#75715E"
+		},
+		{
+			"content": "    this.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "setState",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "({ showDefault: ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "!",
+			"color": "#F92672"
+		},
+		{
+			"content": "this.state.showDefault })",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  },",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "render",
+			"color": "#A6E22E"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "function",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " () {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#75715E"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "var",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " message ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " this.props.default;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#75715E"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "if",
+			"color": "#F92672"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "!",
+			"color": "#F92672"
+		},
+		{
+			"content": "this.state.showDefault) {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "      message ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " this.props.alt;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "return",
+			"color": "#F92672"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "      <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "div",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "h1",
+			"color": "#F92672"
+		},
+		{
+			"content": ">Hello {message}!</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "h1",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "a",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "href",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": "\"\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "onClick",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": "{this.toggle}>Toggle</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "a",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "      </",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "div",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    );",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "});",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "React.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "render",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(<",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "default",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": "\"World\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "alt",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": "\"Mars\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " />, document.body);",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "React",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "createClass",
+			"color": "#CE6700"
+		},
+		{
+			"content": "({",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "getInitialState",
+			"color": "#CE6700"
+		},
+		{
+			"content": ": ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "function",
+			"color": "#9872A2"
+		},
+		{
+			"content": " () {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "return",
+			"color": "#9872A2"
+		},
+		{
+			"content": " {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "      showDefault: ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "true",
+			"color": "#FF0080"
+		},
+		{
+			"content": "    }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  },",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "toggle",
+			"color": "#CE6700"
+		},
+		{
+			"content": ": ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "function",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "e",
+			"color": "#6089B4"
+		},
+		{
+			"content": ") {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "e",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "preventDefault",
+			"color": "#9872A2"
+		},
+		{
+			"content": "();",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "    this.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "setState",
+			"color": "#CE6700"
+		},
+		{
+			"content": "({ showDefault: ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "!",
+			"color": "#676867"
+		},
+		{
+			"content": "this.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "state",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "showDefault",
+			"color": "#9872A2"
+		},
+		{
+			"content": " })",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  },",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "render",
+			"color": "#CE6700"
+		},
+		{
+			"content": ": ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "function",
+			"color": "#9872A2"
+		},
+		{
+			"content": " () {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "message",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " this.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "props",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "default",
+			"color": "#9872A2"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "if",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "!",
+			"color": "#676867"
+		},
+		{
+			"content": "this.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "state",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "showDefault",
+			"color": "#9872A2"
+		},
+		{
+			"content": ") {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "      ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "message",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " this.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "props",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "alt",
+			"color": "#C7444A"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "return",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "      ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<div>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "        ",
+			"color": "#D0B344"
+		},
+		{
+			"content": "<h1>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "Hello {",
+			"color": "#D0B344"
+		},
+		{
+			"content": "message",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}!",
+			"color": "#D0B344"
+		},
+		{
+			"content": "</h1>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "        ",
+			"color": "#D0B344"
+		},
+		{
+			"content": "<a",
+			"color": "#6089B4"
+		},
+		{
+			"content": " href",
+			"color": "#D0B344"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": "\"\"",
+			"color": "#D0B344"
+		},
+		{
+			"content": " onClick",
+			"color": "#D0B344"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": "{this.",
+			"color": "#D0B344"
+		},
+		{
+			"content": "toggle",
+			"color": "#9872A2"
+		},
+		{
+			"content": "}",
+			"color": "#D0B344"
+		},
+		{
+			"content": ">",
+			"color": "#6089B4"
+		},
+		{
+			"content": "Toggle",
+			"color": "#D0B344"
+		},
+		{
+			"content": "</a>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "      ",
+			"color": "#D0B344"
+		},
+		{
+			"content": "</div>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "    );",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "});",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "React",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "render",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<ToggleText",
+			"color": "#6089B4"
+		},
+		{
+			"content": " default",
+			"color": "#D0B344"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": "\"",
+			"color": "#D0B344"
+		},
+		{
+			"content": "World",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\"",
+			"color": "#D0B344"
+		},
+		{
+			"content": " alt",
+			"color": "#D0B344"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": "\"",
+			"color": "#D0B344"
+		},
+		{
+			"content": "Mars",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\"",
+			"color": "#D0B344"
+		},
+		{
+			"content": " ",
+			"color": "#D0B344"
+		},
+		{
+			"content": "/>",
+			"color": "#6089B4"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "document",
+			"color": "#C7444A"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "body",
+			"color": "#C7444A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "var",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "React",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "createClass",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "getInitialState",
+			"color": "#AA3731"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "function",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "()",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "return",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "      showDefault",
+			"color": "#333333"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "true",
+			"color": "#AB6526"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "},",
+			"color": "#777777"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "toggle",
+			"color": "#AA3731"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "function",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "e",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "e",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "preventDefault",
+			"color": "#AA3731"
+		},
+		{
+			"content": "()",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "this",
+			"color": "#AB6526"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "setState",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": " showDefault",
+			"color": "#333333"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "!",
+			"color": "#777777"
+		},
+		{
+			"content": "this",
+			"color": "#AB6526"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "state",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "showDefault",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "},",
+			"color": "#777777"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "render",
+			"color": "#AA3731"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "function",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "()",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "var",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "message",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "this",
+			"color": "#AB6526"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "props",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "default",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "if",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "!",
+			"color": "#777777"
+		},
+		{
+			"content": "this",
+			"color": "#AB6526"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "state",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "showDefault",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ") ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "      ",
+			"color": "#333333"
+		},
+		{
+			"content": "message",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "this",
+			"color": "#AB6526"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "props",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "alt",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "return",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "      ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#777777"
+		},
+		{
+			"content": "div",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#777777"
+		},
+		{
+			"content": "        ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "<",
+			"color": "#777777"
+		},
+		{
+			"content": "h1",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#777777"
+		},
+		{
+			"content": "Hello ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "message",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "!",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "</",
+			"color": "#777777"
+		},
+		{
+			"content": "h1",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#777777"
+		},
+		{
+			"content": "        ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "<",
+			"color": "#777777"
+		},
+		{
+			"content": "a",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "href",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": "\"\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "onClick",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "={",
+			"color": "#777777"
+		},
+		{
+			"content": "this",
+			"color": "#AB6526"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "toggle",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}>",
+			"color": "#777777"
+		},
+		{
+			"content": "Toggle",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "</",
+			"color": "#777777"
+		},
+		{
+			"content": "a",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#777777"
+		},
+		{
+			"content": "      ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "</",
+			"color": "#777777"
+		},
+		{
+			"content": "div",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#777777"
+		},
+		{
+			"content": "    )",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "React",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "render",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#777777"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "default",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "World",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "alt",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "Mars",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "/>,",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "document",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "body",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		}
+	],
+	"red": [
+		{
+			"content": "var",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "React",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "createClass",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "({",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "getInitialState",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "function",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " () {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "return",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "      showDefault: ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "true",
+			"color": "#994646FF"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  },",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "toggle",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "function",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "e",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "e",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "preventDefault",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "();",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "this",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "setState",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "({ showDefault: ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "!",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "this",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "state",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "showDefault",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " })",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  },",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "render",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "function",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " () {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "var",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "message",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "this",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "props",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "default",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "if",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "!",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "this",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "state",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "showDefault",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "message",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "this",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "props",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "alt",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "return",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<div>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "        <h1>Hello {",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "message",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "}!</h1>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "        <a href",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " onClick",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "{",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "this",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "toggle",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "}>Toggle</a>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "      </div>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "    );",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "});",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "React",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "render",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<ToggleText default",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "\"World\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " alt",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "\"Mars\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " />",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "document",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "body",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "var",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "React",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "createClass",
+			"color": "#268BD2"
+		},
+		{
+			"content": "({",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "getInitialState",
+			"color": "#268BD2"
+		},
+		{
+			"content": ": ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "function",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " () {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      showDefault: ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "true",
+			"color": "#B58900"
+		},
+		{
+			"content": "    }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  },",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "toggle",
+			"color": "#268BD2"
+		},
+		{
+			"content": ": ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "function",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " (e) {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "e",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "preventDefault",
+			"color": "#268BD2"
+		},
+		{
+			"content": "();",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "setState",
+			"color": "#268BD2"
+		},
+		{
+			"content": "({ showDefault: ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "!",
+			"color": "#859900"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "state",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "showDefault",
+			"color": "#268BD2"
+		},
+		{
+			"content": " })",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  },",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "render",
+			"color": "#268BD2"
+		},
+		{
+			"content": ": ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "function",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " () {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "message",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "props",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "default",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "!",
+			"color": "#859900"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "state",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "showDefault",
+			"color": "#268BD2"
+		},
+		{
+			"content": ") {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "message",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "props",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".alt;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "Hello ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "{",
+			"color": "#D30102"
+		},
+		{
+			"content": "message",
+			"color": "#268BD2"
+		},
+		{
+			"content": "}",
+			"color": "#D30102"
+		},
+		{
+			"content": "!",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "a",
+			"color": "#268BD2"
+		},
+		{
+			"content": " href",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " onClick",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#D30102"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "toggle",
+			"color": "#268BD2"
+		},
+		{
+			"content": "}",
+			"color": "#D30102"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "Toggle",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "a",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "      ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "    );",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "});",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "React",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "render",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#268BD2"
+		},
+		{
+			"content": " default",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "\"World\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " alt",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "\"Mars\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "/>",
+			"color": "#657B83"
+		},
+		{
+			"content": ", document.body);",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "var",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "React",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "createClass",
+			"color": "#268BD2"
+		},
+		{
+			"content": "({",
+			"color": "#586E75"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "getInitialState",
+			"color": "#268BD2"
+		},
+		{
+			"content": ": ",
+			"color": "#586E75"
+		},
+		{
+			"content": "function",
+			"color": "#073642"
+		},
+		{
+			"content": " () {",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#586E75"
+		},
+		{
+			"content": "      showDefault: ",
+			"color": "#586E75"
+		},
+		{
+			"content": "true",
+			"color": "#B58900"
+		},
+		{
+			"content": "    }",
+			"color": "#586E75"
+		},
+		{
+			"content": "  },",
+			"color": "#586E75"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "toggle",
+			"color": "#268BD2"
+		},
+		{
+			"content": ": ",
+			"color": "#586E75"
+		},
+		{
+			"content": "function",
+			"color": "#073642"
+		},
+		{
+			"content": " (e) {",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "e",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "preventDefault",
+			"color": "#268BD2"
+		},
+		{
+			"content": "();",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "setState",
+			"color": "#268BD2"
+		},
+		{
+			"content": "({ showDefault: ",
+			"color": "#586E75"
+		},
+		{
+			"content": "!",
+			"color": "#859900"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "state",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "showDefault",
+			"color": "#268BD2"
+		},
+		{
+			"content": " })",
+			"color": "#586E75"
+		},
+		{
+			"content": "  },",
+			"color": "#586E75"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "render",
+			"color": "#268BD2"
+		},
+		{
+			"content": ": ",
+			"color": "#586E75"
+		},
+		{
+			"content": "function",
+			"color": "#073642"
+		},
+		{
+			"content": " () {",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "var",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "message",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "props",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "default",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "!",
+			"color": "#859900"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "state",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "showDefault",
+			"color": "#268BD2"
+		},
+		{
+			"content": ") {",
+			"color": "#586E75"
+		},
+		{
+			"content": "      ",
+			"color": "#586E75"
+		},
+		{
+			"content": "message",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "props",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".alt;",
+			"color": "#586E75"
+		},
+		{
+			"content": "    }",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "      ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Hello ",
+			"color": "#586E75"
+		},
+		{
+			"content": "{",
+			"color": "#D30102"
+		},
+		{
+			"content": "message",
+			"color": "#268BD2"
+		},
+		{
+			"content": "}",
+			"color": "#D30102"
+		},
+		{
+			"content": "!",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "a",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "href",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "onClick",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#D30102"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "toggle",
+			"color": "#268BD2"
+		},
+		{
+			"content": "}",
+			"color": "#D30102"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Toggle",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "a",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      ",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    );",
+			"color": "#586E75"
+		},
+		{
+			"content": "  }",
+			"color": "#586E75"
+		},
+		{
+			"content": "});",
+			"color": "#586E75"
+		},
+		{
+			"content": "React",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "render",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "default",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "\"World\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "alt",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": "\"Mars\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "/>",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ", document.body);",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "ToggleText",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "React",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "createClass",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "({",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "getInitialState",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " () {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      showDefault: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "true",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  },",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "toggle",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "e",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// Prevent following the link.",
+			"color": "#7285B7"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "e",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "preventDefault",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "();",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// Invert the chosen default.",
+			"color": "#7285B7"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// This will trigger an intelligent re-render of the component.",
+			"color": "#7285B7"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "this",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "setState",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "({ showDefault: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "!",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "this",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "state",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "showDefault",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " })",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  },",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "render",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " () {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// Default to the default message.",
+			"color": "#7285B7"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "message",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "this",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "props",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "default",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// If toggled, show the alternate message.",
+			"color": "#7285B7"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "!",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "this",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "state",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "showDefault",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "message",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "this",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "props",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".alt;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<div>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "        <h1>Hello ",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "{",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "message",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "!</h1>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "        <a href",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "\"\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " onClick",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "{",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "this.toggle",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ">Toggle</a>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "      </div>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "    );",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "});",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "React",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "render",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<ToggleText default",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "\"World\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " alt",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "\"Mars\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " />",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ", document.body);",
+			"color": "#FFFFFF"
+		}
+	]
+}

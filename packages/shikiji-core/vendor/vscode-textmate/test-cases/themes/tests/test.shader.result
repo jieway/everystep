@@ -1,0 +1,2438 @@
+{
+	"abyss": [
+		{
+			"content": "Shader",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "SubShader",
+			"color": "#9966B8"
+		},
+		{
+			"content": " {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "      ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Tags",
+			"color": "#9966B8"
+		},
+		{
+			"content": " { ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " = ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "      ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "CGPROGRAM",
+			"color": "#9966B8"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#225588"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#6688CC"
+		},
+		{
+			"content": "      ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "struct",
+			"color": "#9966B8"
+		},
+		{
+			"content": " Input {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "          ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "float4",
+			"color": "#9966B8"
+		},
+		{
+			"content": " color : COLOR;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "      };",
+			"color": "#6688CC"
+		},
+		{
+			"content": "      ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "void",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "surf",
+			"color": "#9966B8"
+		},
+		{
+			"content": " (Input IN, ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "inout",
+			"color": "#225588"
+		},
+		{
+			"content": " SurfaceOutput o) {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "          o.Albedo = ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "1",
+			"color": "#F280D0"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "      }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "      ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "ENDCG",
+			"color": "#9966B8"
+		},
+		{
+			"content": "    }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    Fallback ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "  }",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "Shader ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    SubShader {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      Tags { ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      CGPROGRAM",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#569CD6"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "struct",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Input {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "          ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "float4",
+			"color": "#569CD6"
+		},
+		{
+			"content": " color : COLOR;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      };",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " surf (Input IN, ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "inout",
+			"color": "#569CD6"
+		},
+		{
+			"content": " SurfaceOutput o) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "          o.Albedo = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      ENDCG",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    Fallback ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "  }",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "Shader ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "    SubShader {",
+			"color": "#000000"
+		},
+		{
+			"content": "      Tags { ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " }",
+			"color": "#000000"
+		},
+		{
+			"content": "      CGPROGRAM",
+			"color": "#000000"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#0000FF"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#000000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "struct",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Input {",
+			"color": "#000000"
+		},
+		{
+			"content": "          ",
+			"color": "#000000"
+		},
+		{
+			"content": "float4",
+			"color": "#0000FF"
+		},
+		{
+			"content": " color : COLOR;",
+			"color": "#000000"
+		},
+		{
+			"content": "      };",
+			"color": "#000000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "void",
+			"color": "#0000FF"
+		},
+		{
+			"content": " surf (Input IN, ",
+			"color": "#000000"
+		},
+		{
+			"content": "inout",
+			"color": "#0000FF"
+		},
+		{
+			"content": " SurfaceOutput o) {",
+			"color": "#000000"
+		},
+		{
+			"content": "          o.Albedo = ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "      }",
+			"color": "#000000"
+		},
+		{
+			"content": "      ENDCG",
+			"color": "#000000"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "    Fallback ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "  }",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "Shader ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    SubShader {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      Tags { ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " = ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      CGPROGRAM",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#569CD6"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "struct",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Input {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "          ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "float4",
+			"color": "#569CD6"
+		},
+		{
+			"content": " color : COLOR;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      };",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " surf (Input IN, ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "inout",
+			"color": "#569CD6"
+		},
+		{
+			"content": " SurfaceOutput o) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "          o.Albedo = ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      ENDCG",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    Fallback ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "  }",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "Shader",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "SubShader",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Tags",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " { ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "CGPROGRAM",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#C586C0"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "struct",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Input {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "          ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "float4",
+			"color": "#569CD6"
+		},
+		{
+			"content": " color : ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "COLOR",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      };",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "surf",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " (Input IN, ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "inout",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "SurfaceOutput",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " o) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "          o.",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Albedo",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "ENDCG",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Fallback",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "  }",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "Shader",
+			"color": "#267F99"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "SubShader",
+			"color": "#267F99"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "Tags",
+			"color": "#267F99"
+		},
+		{
+			"content": " { ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " }",
+			"color": "#000000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "CGPROGRAM",
+			"color": "#267F99"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#000000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "struct",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Input {",
+			"color": "#000000"
+		},
+		{
+			"content": "          ",
+			"color": "#000000"
+		},
+		{
+			"content": "float4",
+			"color": "#0000FF"
+		},
+		{
+			"content": " color : ",
+			"color": "#000000"
+		},
+		{
+			"content": "COLOR",
+			"color": "#001080"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "      };",
+			"color": "#000000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "void",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "surf",
+			"color": "#795E26"
+		},
+		{
+			"content": " (Input IN, ",
+			"color": "#000000"
+		},
+		{
+			"content": "inout",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "SurfaceOutput",
+			"color": "#001080"
+		},
+		{
+			"content": " o) {",
+			"color": "#000000"
+		},
+		{
+			"content": "          o.",
+			"color": "#000000"
+		},
+		{
+			"content": "Albedo",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "      }",
+			"color": "#000000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "ENDCG",
+			"color": "#267F99"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "Fallback",
+			"color": "#001080"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "  }",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "Shader",
+			"color": "#F06431"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#889B4A"
+		},
+		{
+			"content": " {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "SubShader",
+			"color": "#F06431"
+		},
+		{
+			"content": " {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "      ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Tags",
+			"color": "#F06431"
+		},
+		{
+			"content": " { ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#889B4A"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#889B4A"
+		},
+		{
+			"content": " }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "      ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "CGPROGRAM",
+			"color": "#F06431"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#98676A"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "      ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "struct",
+			"color": "#98676A"
+		},
+		{
+			"content": " Input {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "          ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "float4",
+			"color": "#98676A"
+		},
+		{
+			"content": " color : COLOR;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "      };",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "      ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "void",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "surf",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": " (Input IN, ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "inout",
+			"color": "#98676A"
+		},
+		{
+			"content": " SurfaceOutput o) {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "          o.Albedo = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#F79A32"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "      }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "      ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "ENDCG",
+			"color": "#F06431"
+		},
+		{
+			"content": "    }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    Fallback ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#889B4A"
+		},
+		{
+			"content": "  }",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "Shader",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "SubShader",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Tags",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " { ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " = ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "CGPROGRAM",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#F92672"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "struct",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " Input {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "          ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "float4",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " color : COLOR;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "      };",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "void",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "surf",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " (Input IN, ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "inout",
+			"color": "#F92672"
+		},
+		{
+			"content": " SurfaceOutput o) {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "          o.Albedo = ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "1",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "      }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "ENDCG",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    Fallback ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "  }",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "Shader",
+			"color": "#C7444A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "SubShader",
+			"color": "#C7444A"
+		},
+		{
+			"content": " {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "      ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Tags",
+			"color": "#C7444A"
+		},
+		{
+			"content": " { ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " = ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "      ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "CGPROGRAM",
+			"color": "#C7444A"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#9872A2"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "      ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "struct",
+			"color": "#9872A2"
+		},
+		{
+			"content": " Input {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "          ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "float4",
+			"color": "#9872A2"
+		},
+		{
+			"content": " color : ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "COLOR",
+			"color": "#C7444A"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "      };",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "      ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "void",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "surf",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#0080FF"
+		},
+		{
+			"content": "Input IN, ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "inout",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "SurfaceOutput",
+			"color": "#C7444A"
+		},
+		{
+			"content": " o) {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "          o.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Albedo",
+			"color": "#C7444A"
+		},
+		{
+			"content": " = ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "1",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "      }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "      ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "ENDCG",
+			"color": "#C7444A"
+		},
+		{
+			"content": "    }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Fallback",
+			"color": "#C7444A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "  }",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "Shader",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#448C27"
+		},
+		{
+			"content": " {",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "SubShader",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " {",
+			"color": "#333333"
+		},
+		{
+			"content": "      ",
+			"color": "#333333"
+		},
+		{
+			"content": "Tags",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " { ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#448C27"
+		},
+		{
+			"content": " = ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#448C27"
+		},
+		{
+			"content": " }",
+			"color": "#333333"
+		},
+		{
+			"content": "      ",
+			"color": "#333333"
+		},
+		{
+			"content": "CGPROGRAM",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#333333"
+		},
+		{
+			"content": "      ",
+			"color": "#333333"
+		},
+		{
+			"content": "struct",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " Input {",
+			"color": "#333333"
+		},
+		{
+			"content": "          ",
+			"color": "#333333"
+		},
+		{
+			"content": "float4",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " color : ",
+			"color": "#333333"
+		},
+		{
+			"content": "COLOR",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": "      };",
+			"color": "#333333"
+		},
+		{
+			"content": "      ",
+			"color": "#333333"
+		},
+		{
+			"content": "void",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "surf",
+			"color": "#AA3731"
+		},
+		{
+			"content": " (Input IN, ",
+			"color": "#333333"
+		},
+		{
+			"content": "inout",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "SurfaceOutput",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " o) {",
+			"color": "#333333"
+		},
+		{
+			"content": "          o.",
+			"color": "#333333"
+		},
+		{
+			"content": "Albedo",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " = ",
+			"color": "#333333"
+		},
+		{
+			"content": "1",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": "      }",
+			"color": "#333333"
+		},
+		{
+			"content": "      ",
+			"color": "#333333"
+		},
+		{
+			"content": "ENDCG",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "    }",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "Fallback",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#448C27"
+		},
+		{
+			"content": "  }",
+			"color": "#333333"
+		}
+	],
+	"red": [
+		{
+			"content": "Shader",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "SubShader",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Tags",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": " { ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " = ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "CGPROGRAM",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "struct",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " Input {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "          ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "float4",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " color : ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "COLOR",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "      };",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "void",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "surf",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " (Input IN, ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "inout",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "SurfaceOutput",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": " o) {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "          o.",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Albedo",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": " = ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "1",
+			"color": "#994646FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "      }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "ENDCG",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Fallback",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "  }",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "Shader",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "SubShader",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Tags",
+			"color": "#859900"
+		},
+		{
+			"content": " { ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " = ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "CGPROGRAM",
+			"color": "#859900"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#859900"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "struct",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " Input {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "          ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "float4",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " color : COLOR;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      };",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "void",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "surf",
+			"color": "#268BD2"
+		},
+		{
+			"content": " (Input IN, ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "inout",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " SurfaceOutput o) {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "          o.Albedo = ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "ENDCG",
+			"color": "#859900"
+		},
+		{
+			"content": "    }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    Fallback ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "  }",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "Shader",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " {",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "SubShader",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#586E75"
+		},
+		{
+			"content": "      ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Tags",
+			"color": "#859900"
+		},
+		{
+			"content": " { ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " = ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " }",
+			"color": "#586E75"
+		},
+		{
+			"content": "      ",
+			"color": "#586E75"
+		},
+		{
+			"content": "CGPROGRAM",
+			"color": "#859900"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#859900"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#586E75"
+		},
+		{
+			"content": "      ",
+			"color": "#586E75"
+		},
+		{
+			"content": "struct",
+			"color": "#073642"
+		},
+		{
+			"content": " Input {",
+			"color": "#586E75"
+		},
+		{
+			"content": "          ",
+			"color": "#586E75"
+		},
+		{
+			"content": "float4",
+			"color": "#073642"
+		},
+		{
+			"content": " color : COLOR;",
+			"color": "#586E75"
+		},
+		{
+			"content": "      };",
+			"color": "#586E75"
+		},
+		{
+			"content": "      ",
+			"color": "#586E75"
+		},
+		{
+			"content": "void",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "surf",
+			"color": "#268BD2"
+		},
+		{
+			"content": " (Input IN, ",
+			"color": "#586E75"
+		},
+		{
+			"content": "inout",
+			"color": "#073642"
+		},
+		{
+			"content": " SurfaceOutput o) {",
+			"color": "#586E75"
+		},
+		{
+			"content": "          o.Albedo = ",
+			"color": "#586E75"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "      }",
+			"color": "#586E75"
+		},
+		{
+			"content": "      ",
+			"color": "#586E75"
+		},
+		{
+			"content": "ENDCG",
+			"color": "#859900"
+		},
+		{
+			"content": "    }",
+			"color": "#586E75"
+		},
+		{
+			"content": "    Fallback ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "  }",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "Shader",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Example/Diffuse Simple\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "SubShader",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Tags",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": " { ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"RenderType\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " = ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Opaque\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "CGPROGRAM",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": "      #pragma",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " surface surf Lambert",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "struct",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " Input {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "          ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "float4",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " color : COLOR;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      };",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "void",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "surf (",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "Input IN, ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "inout",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " SurfaceOutput o) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "          o.Albedo = ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "ENDCG",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    Fallback ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Diffuse\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "  }",
+			"color": "#FFFFFF"
+		}
+	]
+}

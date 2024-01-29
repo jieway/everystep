@@ -1,0 +1,10242 @@
+{
+	"abyss": [
+		{
+			"content": "die",
+			"color": "#225588"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"[$sheet->{label}] Unexpected sheet format.\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ") ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "unless",
+			"color": "#225588"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        $sheet",
+			"color": "#6688CC"
+		},
+		{
+			"content": "->",
+			"color": "#225588"
+		},
+		{
+			"content": "{",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"$date_col$row\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "/CALL_DATE/",
+			"color": "#22AA44"
+		},
+		{
+			"content": "i",
+			"color": "#225588"
+		},
+		{
+			"content": " &&",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        $sheet",
+			"color": "#6688CC"
+		},
+		{
+			"content": "->",
+			"color": "#225588"
+		},
+		{
+			"content": "{",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"$pixel_cols[4]$row\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "/Home_Bind_Count/",
+			"color": "#22AA44"
+		},
+		{
+			"content": "i",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    );",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    $row++;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "while",
+			"color": "#225588"
+		},
+		{
+			"content": " ($row < $sheet",
+			"color": "#6688CC"
+		},
+		{
+			"content": "->",
+			"color": "#225588"
+		},
+		{
+			"content": "{",
+			"color": "#6688CC"
+		},
+		{
+			"content": "maxrow",
+			"color": "#F280D0"
+		},
+		{
+			"content": "}) {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        $row++;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        $total_lines++;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "my",
+			"color": "#225588"
+		},
+		{
+			"content": " $date = $sheet",
+			"color": "#6688CC"
+		},
+		{
+			"content": "->",
+			"color": "#225588"
+		},
+		{
+			"content": "{",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"$date_col$row\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "};",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "next",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "unless",
+			"color": "#225588"
+		},
+		{
+			"content": " $date;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Unexpected date format: '$date'\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "), ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "next",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "unless",
+			"color": "#225588"
+		},
+		{
+			"content": " ($date =~ ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "/^2",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\\d\\d\\d",
+			"color": "#F280D0"
+		},
+		{
+			"content": "-",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#F280D0"
+		},
+		{
+			"content": "-",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#F280D0"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "/",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "my",
+			"color": "#225588"
+		},
+		{
+			"content": " $phone = trim($sheet",
+			"color": "#6688CC"
+		},
+		{
+			"content": "->",
+			"color": "#225588"
+		},
+		{
+			"content": "{",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"$phone_col$row\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "});",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Unexpected phone format: '$phone'.\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "), ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "next",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "unless",
+			"color": "#225588"
+		},
+		{
+			"content": " ($phone =~ ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "/^",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\\d",
+			"color": "#F280D0"
+		},
+		{
+			"content": "{10}",
+			"color": "#22AA44"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "/",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        info $phone;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "next",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "if",
+			"color": "#225588"
+		},
+		{
+			"content": " ($date ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "gt",
+			"color": "#9966B8"
+		},
+		{
+			"content": " $date_to || $date ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "lt",
+			"color": "#9966B8"
+		},
+		{
+			"content": " $date_from);",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "my",
+			"color": "#225588"
+		},
+		{
+			"content": " @pixels = (0) ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "x",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "5",
+			"color": "#DDBB88"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#225588"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "            $pixels[$_] = trim($sheet",
+			"color": "#6688CC"
+		},
+		{
+			"content": "->",
+			"color": "#225588"
+		},
+		{
+			"content": "{",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"$pixel_cols[4]$row\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "});",
+			"color": "#6688CC"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Pixel $_ is not a number in the row # $row.\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "), ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "next",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "unless",
+			"color": "#225588"
+		},
+		{
+			"content": " looks_like_number($pixels[$_]);",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        };",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#225588"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "            add_phone_activity($date, $phone, ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"pixel-$_\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", $pixels[$_]) ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "if",
+			"color": "#225588"
+		},
+		{
+			"content": " $pixels[$_];",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        };",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        $parsed_lines++;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    };",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "die",
+			"color": "#569CD6"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"[$sheet->{label}] Unexpected sheet format.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ") ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "unless",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        $sheet->{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"$date_col$row\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/CALL_DATE/",
+			"color": "#D16969"
+		},
+		{
+			"content": "i",
+			"color": "#569CD6"
+		},
+		{
+			"content": " &&",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        $sheet->{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"$pixel_cols[4]$row\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/Home_Bind_Count/",
+			"color": "#D16969"
+		},
+		{
+			"content": "i",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    );",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    $row++;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "while",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ($row < $sheet->{maxrow}) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        $row++;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        $total_lines++;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "my",
+			"color": "#569CD6"
+		},
+		{
+			"content": " $date = $sheet->{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"$date_col$row\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "};",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "next",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "unless",
+			"color": "#569CD6"
+		},
+		{
+			"content": " $date;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Unexpected date format: '$date'\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "), ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "next",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "unless",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ($date =~ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/^2\\d\\d\\d-\\d\\d-\\d\\d",
+			"color": "#D16969"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "/",
+			"color": "#D16969"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "my",
+			"color": "#569CD6"
+		},
+		{
+			"content": " $phone = trim($sheet->{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"$phone_col$row\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "});",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Unexpected phone format: '$phone'.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "), ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "next",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "unless",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ($phone =~ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/^\\d{10}",
+			"color": "#D16969"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "/",
+			"color": "#D16969"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        info $phone;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "next",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ($date gt $date_to || $date lt $date_from);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "my",
+			"color": "#569CD6"
+		},
+		{
+			"content": " @pixels = (0) x 5;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "            $pixels[$_] = trim($sheet->{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"$pixel_cols[4]$row\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "});",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Pixel $_ is not a number in the row # $row.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "), ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "next",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "unless",
+			"color": "#569CD6"
+		},
+		{
+			"content": " looks_like_number($pixels[$_]);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        };",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "            add_phone_activity($date, $phone, ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"pixel-$_\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", $pixels[$_]) ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " $pixels[$_];",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        };",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        $parsed_lines++;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    };",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "die",
+			"color": "#0000FF"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"[$sheet->{label}] Unexpected sheet format.\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ") ",
+			"color": "#000000"
+		},
+		{
+			"content": "unless",
+			"color": "#0000FF"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "        $sheet->{",
+			"color": "#000000"
+		},
+		{
+			"content": "\"$date_col$row\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#000000"
+		},
+		{
+			"content": "/CALL_DATE/",
+			"color": "#811F3F"
+		},
+		{
+			"content": "i",
+			"color": "#0000FF"
+		},
+		{
+			"content": " &&",
+			"color": "#000000"
+		},
+		{
+			"content": "        $sheet->{",
+			"color": "#000000"
+		},
+		{
+			"content": "\"$pixel_cols[4]$row\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#000000"
+		},
+		{
+			"content": "/Home_Bind_Count/",
+			"color": "#811F3F"
+		},
+		{
+			"content": "i",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "    );",
+			"color": "#000000"
+		},
+		{
+			"content": "    $row++;",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "while",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ($row < $sheet->{maxrow}) {",
+			"color": "#000000"
+		},
+		{
+			"content": "        $row++;",
+			"color": "#000000"
+		},
+		{
+			"content": "        $total_lines++;",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "my",
+			"color": "#0000FF"
+		},
+		{
+			"content": " $date = $sheet->{",
+			"color": "#000000"
+		},
+		{
+			"content": "\"$date_col$row\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "};",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "next",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "unless",
+			"color": "#0000FF"
+		},
+		{
+			"content": " $date;",
+			"color": "#000000"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Unexpected date format: '$date'\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "), ",
+			"color": "#000000"
+		},
+		{
+			"content": "next",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "unless",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ($date =~ ",
+			"color": "#000000"
+		},
+		{
+			"content": "/^2\\d\\d\\d-\\d\\d-\\d\\d",
+			"color": "#811F3F"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "/",
+			"color": "#811F3F"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "my",
+			"color": "#0000FF"
+		},
+		{
+			"content": " $phone = trim($sheet->{",
+			"color": "#000000"
+		},
+		{
+			"content": "\"$phone_col$row\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "});",
+			"color": "#000000"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Unexpected phone format: '$phone'.\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "), ",
+			"color": "#000000"
+		},
+		{
+			"content": "next",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "unless",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ($phone =~ ",
+			"color": "#000000"
+		},
+		{
+			"content": "/^\\d{10}",
+			"color": "#811F3F"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "/",
+			"color": "#811F3F"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "        info $phone;",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "next",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ($date gt $date_to || $date lt $date_from);",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "my",
+			"color": "#0000FF"
+		},
+		{
+			"content": " @pixels = (0) x 5;",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#000000"
+		},
+		{
+			"content": "            $pixels[$_] = trim($sheet->{",
+			"color": "#000000"
+		},
+		{
+			"content": "\"$pixel_cols[4]$row\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "});",
+			"color": "#000000"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Pixel $_ is not a number in the row # $row.\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "), ",
+			"color": "#000000"
+		},
+		{
+			"content": "next",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "unless",
+			"color": "#0000FF"
+		},
+		{
+			"content": " looks_like_number($pixels[$_]);",
+			"color": "#000000"
+		},
+		{
+			"content": "        };",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#000000"
+		},
+		{
+			"content": "            add_phone_activity($date, $phone, ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"pixel-$_\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", $pixels[$_]) ",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#0000FF"
+		},
+		{
+			"content": " $pixels[$_];",
+			"color": "#000000"
+		},
+		{
+			"content": "        };",
+			"color": "#000000"
+		},
+		{
+			"content": "        $parsed_lines++;",
+			"color": "#000000"
+		},
+		{
+			"content": "    };",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "die",
+			"color": "#569CD6"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"[$sheet->{label}] Unexpected sheet format.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ") ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "unless",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        $sheet",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "->",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"$date_col$row\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/CALL_DATE/",
+			"color": "#D16969"
+		},
+		{
+			"content": "i",
+			"color": "#569CD6"
+		},
+		{
+			"content": " &&",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        $sheet",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "->",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"$pixel_cols[4]$row\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/Home_Bind_Count/",
+			"color": "#D16969"
+		},
+		{
+			"content": "i",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    );",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    $row++;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "while",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ($row < $sheet",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "->",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{maxrow}) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        $row++;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        $total_lines++;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "my",
+			"color": "#569CD6"
+		},
+		{
+			"content": " $date = $sheet",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "->",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"$date_col$row\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "};",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "next",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "unless",
+			"color": "#569CD6"
+		},
+		{
+			"content": " $date;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Unexpected date format: '$date'\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "), ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "next",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "unless",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ($date =~ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/^2\\d\\d\\d-\\d\\d-\\d\\d",
+			"color": "#D16969"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "/",
+			"color": "#D16969"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "my",
+			"color": "#569CD6"
+		},
+		{
+			"content": " $phone = trim($sheet",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "->",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"$phone_col$row\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "});",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Unexpected phone format: '$phone'.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "), ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "next",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "unless",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ($phone =~ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/^\\d{10}",
+			"color": "#D16969"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "/",
+			"color": "#D16969"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        info $phone;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "next",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ($date gt $date_to || $date lt $date_from);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "my",
+			"color": "#569CD6"
+		},
+		{
+			"content": " @pixels = (0) x 5;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "            $pixels[$_] = trim($sheet",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "->",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"$pixel_cols[4]$row\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "});",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Pixel $_ is not a number in the row # $row.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "), ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "next",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "unless",
+			"color": "#569CD6"
+		},
+		{
+			"content": " looks_like_number($pixels[$_]);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        };",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "            add_phone_activity($date, $phone, ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"pixel-$_\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", $pixels[$_]) ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " $pixels[$_];",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        };",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        $parsed_lines++;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    };",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "die",
+			"color": "#C586C0"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"[",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$sheet",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "->{label}] Unexpected sheet format.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ") ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "unless",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$sheet",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "->{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$date_col$row",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/CALL_DATE/",
+			"color": "#D16969"
+		},
+		{
+			"content": "i",
+			"color": "#C586C0"
+		},
+		{
+			"content": " &&",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$sheet",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "->{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$pixel_cols",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "[4]",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$row",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/Home_Bind_Count/",
+			"color": "#D16969"
+		},
+		{
+			"content": "i",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    );",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$row",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "++;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "while",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$row",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " < ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$sheet",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "->{maxrow}) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$row",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "++;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$total_lines",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "++;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "my",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$date",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$sheet",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "->{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$date_col$row",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "};",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "next",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "unless",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$date",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Unexpected date format: '",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$date",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "'\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "), ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "next",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "unless",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$date",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " =~ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/^2\\d\\d\\d-\\d\\d-\\d\\d",
+			"color": "#D16969"
+		},
+		{
+			"content": "$",
+			"color": "#C586C0"
+		},
+		{
+			"content": "/",
+			"color": "#D16969"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "my",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$phone",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = trim(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$sheet",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "->{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$phone_col$row",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "});",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Unexpected phone format: '",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$phone",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "'.\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "), ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "next",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "unless",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$phone",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " =~ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/^\\d{10}",
+			"color": "#D16969"
+		},
+		{
+			"content": "$",
+			"color": "#C586C0"
+		},
+		{
+			"content": "/",
+			"color": "#D16969"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        info ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$phone",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "next",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$date",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "gt",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$date_to",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " || ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$date",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "lt",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$date_from",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "my",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@pixels",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = (0) ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "x",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "5",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "            ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$pixels",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "[",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$_",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "] = trim(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$sheet",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "->{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$pixel_cols",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "[4]",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$row",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "});",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Pixel ",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$_",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " is not a number in the row # ",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$row",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "), ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "next",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "unless",
+			"color": "#C586C0"
+		},
+		{
+			"content": " looks_like_number(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$pixels",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "[",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$_",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "]);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        };",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "            add_phone_activity(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$date",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$phone",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"pixel-",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$_",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$pixels",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "[",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$_",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "]) ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$pixels",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "[",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$_",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "];",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        };",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$parsed_lines",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "++;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    };",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "die",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"[",
+			"color": "#A31515"
+		},
+		{
+			"content": "$sheet",
+			"color": "#001080"
+		},
+		{
+			"content": "->{label}] Unexpected sheet format.\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ") ",
+			"color": "#000000"
+		},
+		{
+			"content": "unless",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "$sheet",
+			"color": "#001080"
+		},
+		{
+			"content": "->{",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$date_col$row",
+			"color": "#001080"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#000000"
+		},
+		{
+			"content": "/CALL_DATE/",
+			"color": "#811F3F"
+		},
+		{
+			"content": "i",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " &&",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "$sheet",
+			"color": "#001080"
+		},
+		{
+			"content": "->{",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$pixel_cols",
+			"color": "#001080"
+		},
+		{
+			"content": "[4]",
+			"color": "#A31515"
+		},
+		{
+			"content": "$row",
+			"color": "#001080"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#000000"
+		},
+		{
+			"content": "/Home_Bind_Count/",
+			"color": "#811F3F"
+		},
+		{
+			"content": "i",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "    );",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "$row",
+			"color": "#001080"
+		},
+		{
+			"content": "++;",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "while",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "$row",
+			"color": "#001080"
+		},
+		{
+			"content": " < ",
+			"color": "#000000"
+		},
+		{
+			"content": "$sheet",
+			"color": "#001080"
+		},
+		{
+			"content": "->{maxrow}) {",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "$row",
+			"color": "#001080"
+		},
+		{
+			"content": "++;",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "$total_lines",
+			"color": "#001080"
+		},
+		{
+			"content": "++;",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "my",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "$date",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "$sheet",
+			"color": "#001080"
+		},
+		{
+			"content": "->{",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$date_col$row",
+			"color": "#001080"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "};",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "next",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "unless",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "$date",
+			"color": "#001080"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Unexpected date format: '",
+			"color": "#A31515"
+		},
+		{
+			"content": "$date",
+			"color": "#001080"
+		},
+		{
+			"content": "'\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "), ",
+			"color": "#000000"
+		},
+		{
+			"content": "next",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "unless",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "$date",
+			"color": "#001080"
+		},
+		{
+			"content": " =~ ",
+			"color": "#000000"
+		},
+		{
+			"content": "/^2\\d\\d\\d-\\d\\d-\\d\\d",
+			"color": "#811F3F"
+		},
+		{
+			"content": "$",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "/",
+			"color": "#811F3F"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "my",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "$phone",
+			"color": "#001080"
+		},
+		{
+			"content": " = trim(",
+			"color": "#000000"
+		},
+		{
+			"content": "$sheet",
+			"color": "#001080"
+		},
+		{
+			"content": "->{",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$phone_col$row",
+			"color": "#001080"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "});",
+			"color": "#000000"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Unexpected phone format: '",
+			"color": "#A31515"
+		},
+		{
+			"content": "$phone",
+			"color": "#001080"
+		},
+		{
+			"content": "'.\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "), ",
+			"color": "#000000"
+		},
+		{
+			"content": "next",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "unless",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "$phone",
+			"color": "#001080"
+		},
+		{
+			"content": " =~ ",
+			"color": "#000000"
+		},
+		{
+			"content": "/^\\d{10}",
+			"color": "#811F3F"
+		},
+		{
+			"content": "$",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "/",
+			"color": "#811F3F"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "        info ",
+			"color": "#000000"
+		},
+		{
+			"content": "$phone",
+			"color": "#001080"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "next",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "$date",
+			"color": "#001080"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "gt",
+			"color": "#795E26"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "$date_to",
+			"color": "#001080"
+		},
+		{
+			"content": " || ",
+			"color": "#000000"
+		},
+		{
+			"content": "$date",
+			"color": "#001080"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "lt",
+			"color": "#795E26"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "$date_from",
+			"color": "#001080"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "my",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "@pixels",
+			"color": "#001080"
+		},
+		{
+			"content": " = (0) ",
+			"color": "#000000"
+		},
+		{
+			"content": "x",
+			"color": "#795E26"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "5",
+			"color": "#795E26"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#000000"
+		},
+		{
+			"content": "            ",
+			"color": "#000000"
+		},
+		{
+			"content": "$pixels",
+			"color": "#001080"
+		},
+		{
+			"content": "[",
+			"color": "#000000"
+		},
+		{
+			"content": "$_",
+			"color": "#001080"
+		},
+		{
+			"content": "] = trim(",
+			"color": "#000000"
+		},
+		{
+			"content": "$sheet",
+			"color": "#001080"
+		},
+		{
+			"content": "->{",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$pixel_cols",
+			"color": "#001080"
+		},
+		{
+			"content": "[4]",
+			"color": "#A31515"
+		},
+		{
+			"content": "$row",
+			"color": "#001080"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "});",
+			"color": "#000000"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Pixel ",
+			"color": "#A31515"
+		},
+		{
+			"content": "$_",
+			"color": "#001080"
+		},
+		{
+			"content": " is not a number in the row # ",
+			"color": "#A31515"
+		},
+		{
+			"content": "$row",
+			"color": "#001080"
+		},
+		{
+			"content": ".\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "), ",
+			"color": "#000000"
+		},
+		{
+			"content": "next",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "unless",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " looks_like_number(",
+			"color": "#000000"
+		},
+		{
+			"content": "$pixels",
+			"color": "#001080"
+		},
+		{
+			"content": "[",
+			"color": "#000000"
+		},
+		{
+			"content": "$_",
+			"color": "#001080"
+		},
+		{
+			"content": "]);",
+			"color": "#000000"
+		},
+		{
+			"content": "        };",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#000000"
+		},
+		{
+			"content": "            add_phone_activity(",
+			"color": "#000000"
+		},
+		{
+			"content": "$date",
+			"color": "#001080"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "$phone",
+			"color": "#001080"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"pixel-",
+			"color": "#A31515"
+		},
+		{
+			"content": "$_",
+			"color": "#001080"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "$pixels",
+			"color": "#001080"
+		},
+		{
+			"content": "[",
+			"color": "#000000"
+		},
+		{
+			"content": "$_",
+			"color": "#001080"
+		},
+		{
+			"content": "]) ",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "$pixels",
+			"color": "#001080"
+		},
+		{
+			"content": "[",
+			"color": "#000000"
+		},
+		{
+			"content": "$_",
+			"color": "#001080"
+		},
+		{
+			"content": "];",
+			"color": "#000000"
+		},
+		{
+			"content": "        };",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "$parsed_lines",
+			"color": "#001080"
+		},
+		{
+			"content": "++;",
+			"color": "#000000"
+		},
+		{
+			"content": "    };",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "die",
+			"color": "#98676A"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "[",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "sheet",
+			"color": "#DC3958"
+		},
+		{
+			"content": "->{label}] Unexpected sheet format.",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ") ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "unless",
+			"color": "#98676A"
+		},
+		{
+			"content": " (",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "sheet",
+			"color": "#DC3958"
+		},
+		{
+			"content": "->{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "date_col$row",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "/",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "CALL_DATE",
+			"color": "#7E602C"
+		},
+		{
+			"content": "/",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "i",
+			"color": "#98676A"
+		},
+		{
+			"content": " &&",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "sheet",
+			"color": "#DC3958"
+		},
+		{
+			"content": "->{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "pixel_cols",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[4]",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "row",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "/",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Home_Bind_Count",
+			"color": "#7E602C"
+		},
+		{
+			"content": "/",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "i",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    );",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "row",
+			"color": "#DC3958"
+		},
+		{
+			"content": "++;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "while",
+			"color": "#98676A"
+		},
+		{
+			"content": " ($",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "row",
+			"color": "#DC3958"
+		},
+		{
+			"content": " < $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "sheet",
+			"color": "#DC3958"
+		},
+		{
+			"content": "->{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "maxrow",
+			"color": "#F79A32"
+		},
+		{
+			"content": "}) {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "row",
+			"color": "#DC3958"
+		},
+		{
+			"content": "++;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "total_lines",
+			"color": "#DC3958"
+		},
+		{
+			"content": "++;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "my",
+			"color": "#98676A"
+		},
+		{
+			"content": " $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "date",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "sheet",
+			"color": "#DC3958"
+		},
+		{
+			"content": "->{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "date_col$row",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "};",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "next",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "unless",
+			"color": "#98676A"
+		},
+		{
+			"content": " $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "date",
+			"color": "#DC3958"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Unexpected date format: '",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "date",
+			"color": "#DC3958"
+		},
+		{
+			"content": "'",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "), ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "next",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "unless",
+			"color": "#98676A"
+		},
+		{
+			"content": " ($",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "date",
+			"color": "#DC3958"
+		},
+		{
+			"content": " =~ ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "/",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "^2\\d\\d\\d-\\d\\d-\\d\\d",
+			"color": "#7E602C"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "/",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "my",
+			"color": "#98676A"
+		},
+		{
+			"content": " $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "phone",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = trim($",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "sheet",
+			"color": "#DC3958"
+		},
+		{
+			"content": "->{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "phone_col$row",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "});",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Unexpected phone format: '",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "phone",
+			"color": "#DC3958"
+		},
+		{
+			"content": "'.",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "), ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "next",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "unless",
+			"color": "#98676A"
+		},
+		{
+			"content": " ($",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "phone",
+			"color": "#DC3958"
+		},
+		{
+			"content": " =~ ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "/",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "^\\d{10}",
+			"color": "#7E602C"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "/",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        info $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "phone",
+			"color": "#DC3958"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "next",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "if",
+			"color": "#98676A"
+		},
+		{
+			"content": " ($",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "date",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "gt",
+			"color": "#7E602C"
+		},
+		{
+			"content": " $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "date_to",
+			"color": "#DC3958"
+		},
+		{
+			"content": " || $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "date",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "lt",
+			"color": "#7E602C"
+		},
+		{
+			"content": " $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "date_from",
+			"color": "#DC3958"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "my",
+			"color": "#98676A"
+		},
+		{
+			"content": " @",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "pixels",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = (0) ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "x",
+			"color": "#7E602C"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "5",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#98676A"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "            $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "pixels",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "_",
+			"color": "#DC3958"
+		},
+		{
+			"content": "] = trim($",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "sheet",
+			"color": "#DC3958"
+		},
+		{
+			"content": "->{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "pixel_cols",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[4]",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "row",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "});",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Pixel ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "_",
+			"color": "#DC3958"
+		},
+		{
+			"content": " is not a number in the row # ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "row",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "), ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "next",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "unless",
+			"color": "#98676A"
+		},
+		{
+			"content": " looks_like_number($",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "pixels",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "_",
+			"color": "#DC3958"
+		},
+		{
+			"content": "]);",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        };",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#98676A"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "            add_phone_activity($",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "date",
+			"color": "#DC3958"
+		},
+		{
+			"content": ", $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "phone",
+			"color": "#DC3958"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "pixel-",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "_",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "pixels",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "_",
+			"color": "#DC3958"
+		},
+		{
+			"content": "]) ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "if",
+			"color": "#98676A"
+		},
+		{
+			"content": " $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "pixels",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "_",
+			"color": "#DC3958"
+		},
+		{
+			"content": "];",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        };",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "parsed_lines",
+			"color": "#DC3958"
+		},
+		{
+			"content": "++;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    };",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "die",
+			"color": "#F92672"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"[$sheet->{label}] Unexpected sheet format.\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ") ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "unless",
+			"color": "#F92672"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        $sheet",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "->",
+			"color": "#F92672"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"$date_col$row\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "/CALL_DATE/",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "i",
+			"color": "#F92672"
+		},
+		{
+			"content": " &&",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        $sheet",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "->",
+			"color": "#F92672"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"$pixel_cols[4]$row\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "/Home_Bind_Count/",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "i",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    );",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    $row++;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "while",
+			"color": "#F92672"
+		},
+		{
+			"content": " ($row < $sheet",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "->",
+			"color": "#F92672"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "maxrow",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "}) {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        $row++;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        $total_lines++;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "my",
+			"color": "#F92672"
+		},
+		{
+			"content": " $date = $sheet",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "->",
+			"color": "#F92672"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"$date_col$row\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "};",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "next",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "unless",
+			"color": "#F92672"
+		},
+		{
+			"content": " $date;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Unexpected date format: '$date'\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "), ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "next",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "unless",
+			"color": "#F92672"
+		},
+		{
+			"content": " ($date =~ ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "/^2",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\\d\\d\\d",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "-",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "-",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "/",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "my",
+			"color": "#F92672"
+		},
+		{
+			"content": " $phone = trim($sheet",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "->",
+			"color": "#F92672"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"$phone_col$row\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "});",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Unexpected phone format: '$phone'.\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "), ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "next",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "unless",
+			"color": "#F92672"
+		},
+		{
+			"content": " ($phone =~ ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "/^",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\\d",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "{10}",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "/",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        info $phone;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "next",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "if",
+			"color": "#F92672"
+		},
+		{
+			"content": " ($date ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "gt",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " $date_to || $date ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "lt",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " $date_from);",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "my",
+			"color": "#F92672"
+		},
+		{
+			"content": " @pixels = (0) ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "x",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "5",
+			"color": "#A6E22E"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#F92672"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "            $pixels[$_] = trim($sheet",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "->",
+			"color": "#F92672"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"$pixel_cols[4]$row\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "});",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Pixel $_ is not a number in the row # $row.\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "), ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "next",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "unless",
+			"color": "#F92672"
+		},
+		{
+			"content": " looks_like_number($pixels[$_]);",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        };",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#F92672"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "            add_phone_activity($date, $phone, ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"pixel-$_\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", $pixels[$_]) ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "if",
+			"color": "#F92672"
+		},
+		{
+			"content": " $pixels[$_];",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        };",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        $parsed_lines++;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    };",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "die",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"[",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$sheet",
+			"color": "#6089B4"
+		},
+		{
+			"content": "->{label}] Unexpected sheet format.\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ") ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "unless",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$sheet",
+			"color": "#6089B4"
+		},
+		{
+			"content": "->",
+			"color": "#676867"
+		},
+		{
+			"content": "{",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$date_col$row",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "/CALL_DATE/",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "i",
+			"color": "#9872A2"
+		},
+		{
+			"content": " &&",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$sheet",
+			"color": "#6089B4"
+		},
+		{
+			"content": "->",
+			"color": "#676867"
+		},
+		{
+			"content": "{",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$pixel_cols",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[4]",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$row",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "/Home_Bind_Count/",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "i",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    );",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$row",
+			"color": "#6089B4"
+		},
+		{
+			"content": "++;",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "while",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$row",
+			"color": "#6089B4"
+		},
+		{
+			"content": " < ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$sheet",
+			"color": "#6089B4"
+		},
+		{
+			"content": "->",
+			"color": "#676867"
+		},
+		{
+			"content": "{",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "maxrow",
+			"color": "#8080FF"
+		},
+		{
+			"content": "}) {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$row",
+			"color": "#6089B4"
+		},
+		{
+			"content": "++;",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$total_lines",
+			"color": "#6089B4"
+		},
+		{
+			"content": "++;",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "my",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$date",
+			"color": "#6089B4"
+		},
+		{
+			"content": " = ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$sheet",
+			"color": "#6089B4"
+		},
+		{
+			"content": "->",
+			"color": "#676867"
+		},
+		{
+			"content": "{",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$date_col$row",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "};",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "next",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "unless",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$date",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Unexpected date format: '",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$date",
+			"color": "#6089B4"
+		},
+		{
+			"content": "'\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "), ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "next",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "unless",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$date",
+			"color": "#6089B4"
+		},
+		{
+			"content": " =~ ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "/^2",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\\d\\d\\d",
+			"color": "#8080FF"
+		},
+		{
+			"content": "-",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#8080FF"
+		},
+		{
+			"content": "-",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#8080FF"
+		},
+		{
+			"content": "$",
+			"color": "#9872A2"
+		},
+		{
+			"content": "/",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "my",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$phone",
+			"color": "#6089B4"
+		},
+		{
+			"content": " = trim(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$sheet",
+			"color": "#6089B4"
+		},
+		{
+			"content": "->",
+			"color": "#676867"
+		},
+		{
+			"content": "{",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$phone_col$row",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "});",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Unexpected phone format: '",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$phone",
+			"color": "#6089B4"
+		},
+		{
+			"content": "'.\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "), ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "next",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "unless",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$phone",
+			"color": "#6089B4"
+		},
+		{
+			"content": " =~ ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "/^",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\\d",
+			"color": "#8080FF"
+		},
+		{
+			"content": "{10}",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$",
+			"color": "#9872A2"
+		},
+		{
+			"content": "/",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        info ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$phone",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "next",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "if",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$date",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "gt",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$date_to",
+			"color": "#6089B4"
+		},
+		{
+			"content": " || ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$date",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "lt",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$date_from",
+			"color": "#6089B4"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "my",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "@pixels",
+			"color": "#6089B4"
+		},
+		{
+			"content": " = (0) ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "x",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "5",
+			"color": "#CE6700"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "for",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "            ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$pixels",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$_",
+			"color": "#6089B4"
+		},
+		{
+			"content": "] = trim(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$sheet",
+			"color": "#6089B4"
+		},
+		{
+			"content": "->",
+			"color": "#676867"
+		},
+		{
+			"content": "{",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$pixel_cols",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[4]",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$row",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "});",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Pixel ",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$_",
+			"color": "#6089B4"
+		},
+		{
+			"content": " is not a number in the row # ",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$row",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "), ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "next",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "unless",
+			"color": "#9872A2"
+		},
+		{
+			"content": " looks_like_number(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$pixels",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$_",
+			"color": "#6089B4"
+		},
+		{
+			"content": "]);",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        };",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "for",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "            add_phone_activity(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$date",
+			"color": "#6089B4"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$phone",
+			"color": "#6089B4"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"pixel-",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$_",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$pixels",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$_",
+			"color": "#6089B4"
+		},
+		{
+			"content": "]) ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "if",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$pixels",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$_",
+			"color": "#6089B4"
+		},
+		{
+			"content": "];",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        };",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$parsed_lines",
+			"color": "#6089B4"
+		},
+		{
+			"content": "++;",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    };",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "die",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "[",
+			"color": "#448C27"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "sheet",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "->{label}] Unexpected sheet format.",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ") ",
+			"color": "#333333"
+		},
+		{
+			"content": "unless",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "sheet",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "->",
+			"color": "#777777"
+		},
+		{
+			"content": "{",
+			"color": "#333333"
+		},
+		{
+			"content": "\"$",
+			"color": "#777777"
+		},
+		{
+			"content": "date_col$row",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#333333"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": "CALL_DATE",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": "i",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " &&",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "sheet",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "->",
+			"color": "#777777"
+		},
+		{
+			"content": "{",
+			"color": "#333333"
+		},
+		{
+			"content": "\"$",
+			"color": "#777777"
+		},
+		{
+			"content": "pixel_cols",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "[4]",
+			"color": "#448C27"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "row",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#333333"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": "Home_Bind_Count",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": "i",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "    );",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "row",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "++;",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "while",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "row",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " < ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "sheet",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "->",
+			"color": "#777777"
+		},
+		{
+			"content": "{",
+			"color": "#333333"
+		},
+		{
+			"content": "maxrow",
+			"color": "#AB6526"
+		},
+		{
+			"content": "}) {",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "row",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "++;",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "total_lines",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "++;",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "my",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "date",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " = ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "sheet",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "->",
+			"color": "#777777"
+		},
+		{
+			"content": "{",
+			"color": "#333333"
+		},
+		{
+			"content": "\"$",
+			"color": "#777777"
+		},
+		{
+			"content": "date_col$row",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "};",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "next",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "unless",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "date",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "Unexpected date format: '",
+			"color": "#448C27"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "date",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "'",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "), ",
+			"color": "#333333"
+		},
+		{
+			"content": "next",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "unless",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "date",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " =~ ",
+			"color": "#333333"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": "^2",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "\\d\\d\\d",
+			"color": "#777777"
+		},
+		{
+			"content": "-",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#777777"
+		},
+		{
+			"content": "-",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#777777"
+		},
+		{
+			"content": "$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": ");",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "my",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "phone",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " = trim(",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "sheet",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "->",
+			"color": "#777777"
+		},
+		{
+			"content": "{",
+			"color": "#333333"
+		},
+		{
+			"content": "\"$",
+			"color": "#777777"
+		},
+		{
+			"content": "phone_col$row",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "});",
+			"color": "#333333"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "Unexpected phone format: '",
+			"color": "#448C27"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "phone",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "'.",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "), ",
+			"color": "#333333"
+		},
+		{
+			"content": "next",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "unless",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "phone",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " =~ ",
+			"color": "#333333"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": "^",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "\\d",
+			"color": "#777777"
+		},
+		{
+			"content": "{10}$",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "/",
+			"color": "#777777"
+		},
+		{
+			"content": ");",
+			"color": "#333333"
+		},
+		{
+			"content": "        info ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "phone",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "next",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "if",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "date",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "gt",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "date_to",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " || ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "date",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "lt",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "date_from",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ");",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "my",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "@",
+			"color": "#777777"
+		},
+		{
+			"content": "pixels",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " = (0) ",
+			"color": "#333333"
+		},
+		{
+			"content": "x",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "5",
+			"color": "#AA3731"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "for",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#333333"
+		},
+		{
+			"content": "            ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "pixels",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "[",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "_",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "] = trim(",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "sheet",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "->",
+			"color": "#777777"
+		},
+		{
+			"content": "{",
+			"color": "#333333"
+		},
+		{
+			"content": "\"$",
+			"color": "#777777"
+		},
+		{
+			"content": "pixel_cols",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "[4]",
+			"color": "#448C27"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "row",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "});",
+			"color": "#333333"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "Pixel ",
+			"color": "#448C27"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "_",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " is not a number in the row # ",
+			"color": "#448C27"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "row",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "), ",
+			"color": "#333333"
+		},
+		{
+			"content": "next",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "unless",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " looks_like_number(",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "pixels",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "[",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "_",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "]);",
+			"color": "#333333"
+		},
+		{
+			"content": "        };",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "for",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#333333"
+		},
+		{
+			"content": "            add_phone_activity(",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "date",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ", ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "phone",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ", ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "pixel-",
+			"color": "#448C27"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "_",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ", ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "pixels",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "[",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "_",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "]) ",
+			"color": "#333333"
+		},
+		{
+			"content": "if",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "pixels",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "[",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "_",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "];",
+			"color": "#333333"
+		},
+		{
+			"content": "        };",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "parsed_lines",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "++;",
+			"color": "#333333"
+		},
+		{
+			"content": "    };",
+			"color": "#333333"
+		}
+	],
+	"red": [
+		{
+			"content": "die",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"[",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$sheet",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "->{label}] Unexpected sheet format.\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ") ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "unless",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$sheet",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "->",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$date_col$row",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "/CALL_DATE/",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "i",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " &&",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$sheet",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "->",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$pixel_cols",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "[4]",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$row",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "/Home_Bind_Count/",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "i",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    );",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$row",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "++;",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "while",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$row",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " < ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$sheet",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "->",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "maxrow",
+			"color": "#994646FF"
+		},
+		{
+			"content": "}) {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$row",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "++;",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$total_lines",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "++;",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "my",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$date",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " = ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$sheet",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "->",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$date_col$row",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "};",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "next",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "unless",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$date",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Unexpected date format: '",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$date",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "'\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "), ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "next",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "unless",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$date",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " =~ ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "/^2",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "\\d\\d\\d",
+			"color": "#FFE862FF"
+		},
+		{
+			"content": "-",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#FFE862FF"
+		},
+		{
+			"content": "-",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#FFE862FF"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "/",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "my",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$phone",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " = trim(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$sheet",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "->",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$phone_col$row",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "});",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Unexpected phone format: '",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$phone",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "'.\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "), ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "next",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "unless",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$phone",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " =~ ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "/^",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "\\d",
+			"color": "#FFE862FF"
+		},
+		{
+			"content": "{10}",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "/",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        info ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$phone",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "next",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "if",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$date",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "gt",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$date_to",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " || ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$date",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "lt",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$date_from",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "my",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "@pixels",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " = (0) ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "x",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "5",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "for",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "            ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$pixels",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "[",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$_",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "] = trim(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$sheet",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "->",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$pixel_cols",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "[4]",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$row",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "});",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Pixel ",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$_",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": " is not a number in the row # ",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$row",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": ".\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "), ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "next",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "unless",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " looks_like_number(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$pixels",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "[",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$_",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "]);",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        };",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "for",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "            add_phone_activity(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$date",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$phone",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"pixel-",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$_",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$pixels",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "[",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$_",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "]) ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "if",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$pixels",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "[",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$_",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "];",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        };",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$parsed_lines",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "++;",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    };",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "die",
+			"color": "#859900"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"[",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->{label}] Unexpected sheet format.\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ") ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "unless",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date_col$row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "/CALL_DATE/",
+			"color": "#D30102"
+		},
+		{
+			"content": "i",
+			"color": "#859900"
+		},
+		{
+			"content": " &&",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "pixel_cols",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[4]",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "/Home_Bind_Count/",
+			"color": "#D30102"
+		},
+		{
+			"content": "i",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    );",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "while",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": " < ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "maxrow",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "}) {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "total_lines",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "my",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": " = ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date_col$row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "};",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "next",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "unless",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Unexpected date format: '",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": "'\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "), ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "next",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "unless",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": " =~ ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "/^2",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\d\\d\\d",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "-",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "-",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "/",
+			"color": "#D30102"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "my",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "phone",
+			"color": "#268BD2"
+		},
+		{
+			"content": " = trim(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "phone_col$row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "});",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Unexpected phone format: '",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "phone",
+			"color": "#268BD2"
+		},
+		{
+			"content": "'.\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "), ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "next",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "unless",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "phone",
+			"color": "#268BD2"
+		},
+		{
+			"content": " =~ ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "/^",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\d",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "{10}",
+			"color": "#D30102"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "/",
+			"color": "#D30102"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        info ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "phone",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "next",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "gt",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date_to",
+			"color": "#268BD2"
+		},
+		{
+			"content": " || ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "lt",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date_from",
+			"color": "#268BD2"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "my",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "@",
+			"color": "#859900"
+		},
+		{
+			"content": "pixels",
+			"color": "#268BD2"
+		},
+		{
+			"content": " = (0) ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "x",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "5",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "            ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "pixels",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": "] = trim(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "pixel_cols",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[4]",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "});",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Pixel ",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": " is not a number in the row # ",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "), ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "next",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "unless",
+			"color": "#859900"
+		},
+		{
+			"content": " looks_like_number(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "pixels",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": "]);",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        };",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "            add_phone_activity(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "phone",
+			"color": "#268BD2"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"pixel-",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "pixels",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": "]) ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "pixels",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": "];",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        };",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "parsed_lines",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    };",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "die",
+			"color": "#859900"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"[",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->{label}] Unexpected sheet format.\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ") ",
+			"color": "#586E75"
+		},
+		{
+			"content": "unless",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date_col$row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#586E75"
+		},
+		{
+			"content": "/CALL_DATE/",
+			"color": "#D30102"
+		},
+		{
+			"content": "i",
+			"color": "#859900"
+		},
+		{
+			"content": " &&",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "pixel_cols",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[4]",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#586E75"
+		},
+		{
+			"content": "/Home_Bind_Count/",
+			"color": "#D30102"
+		},
+		{
+			"content": "i",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "    );",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++;",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "while",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": " < ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#586E75"
+		},
+		{
+			"content": "maxrow",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "}) {",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++;",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "total_lines",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++;",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "my",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": " = ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date_col$row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "};",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "next",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "unless",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Unexpected date format: '",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": "'\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "), ",
+			"color": "#586E75"
+		},
+		{
+			"content": "next",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "unless",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": " =~ ",
+			"color": "#586E75"
+		},
+		{
+			"content": "/^2",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\d\\d\\d",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "-",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "-",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "/",
+			"color": "#D30102"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "my",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "phone",
+			"color": "#268BD2"
+		},
+		{
+			"content": " = trim(",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "phone_col$row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "});",
+			"color": "#586E75"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Unexpected phone format: '",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "phone",
+			"color": "#268BD2"
+		},
+		{
+			"content": "'.\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "), ",
+			"color": "#586E75"
+		},
+		{
+			"content": "next",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "unless",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "phone",
+			"color": "#268BD2"
+		},
+		{
+			"content": " =~ ",
+			"color": "#586E75"
+		},
+		{
+			"content": "/^",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\d",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "{10}",
+			"color": "#D30102"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "/",
+			"color": "#D30102"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "        info ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "phone",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "next",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "gt",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date_to",
+			"color": "#268BD2"
+		},
+		{
+			"content": " || ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "lt",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date_from",
+			"color": "#268BD2"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "my",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "@",
+			"color": "#859900"
+		},
+		{
+			"content": "pixels",
+			"color": "#268BD2"
+		},
+		{
+			"content": " = (0) ",
+			"color": "#586E75"
+		},
+		{
+			"content": "x",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "5",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#586E75"
+		},
+		{
+			"content": "            ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "pixels",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": "] = trim(",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "sheet",
+			"color": "#268BD2"
+		},
+		{
+			"content": "->",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "pixel_cols",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[4]",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "});",
+			"color": "#586E75"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Pixel ",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": " is not a number in the row # ",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "), ",
+			"color": "#586E75"
+		},
+		{
+			"content": "next",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "unless",
+			"color": "#859900"
+		},
+		{
+			"content": " looks_like_number(",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "pixels",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": "]);",
+			"color": "#586E75"
+		},
+		{
+			"content": "        };",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#586E75"
+		},
+		{
+			"content": "            add_phone_activity(",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "date",
+			"color": "#268BD2"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "phone",
+			"color": "#268BD2"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"pixel-",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "pixels",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": "]) ",
+			"color": "#586E75"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "pixels",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "_",
+			"color": "#268BD2"
+		},
+		{
+			"content": "];",
+			"color": "#586E75"
+		},
+		{
+			"content": "        };",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "parsed_lines",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++;",
+			"color": "#586E75"
+		},
+		{
+			"content": "    };",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "die",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"[",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$sheet",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "->{label}] Unexpected sheet format.\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ") ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "unless",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$sheet",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "->",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$date_col$row",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/CALL_DATE/",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "i",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " &&",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$sheet",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "->",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$pixel_cols",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "[4]",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$row",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "} =~ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/Home_Bind_Count/",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "i",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    );",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$row",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "++;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "while",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$row",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " < ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$sheet",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "->",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "{maxrow}) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$row",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "++;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$total_lines",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "++;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "my",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$date",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " = ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$sheet",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "->",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$date_col$row",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "};",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "next",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "unless",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$date",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Unexpected date format: '",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$date",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "'\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "), ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "next",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "unless",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$date",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " =~ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/^2",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\\d\\d\\d",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "-",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "-",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\\d\\d",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "/",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "my",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$phone",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " = trim(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$sheet",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "->",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$phone_col$row",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "});",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        (warning ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Unexpected phone format: '",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$phone",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "'.\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "), ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "next",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "unless",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$phone",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " =~ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/^",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\\d",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "{10}",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "/",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        info ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$phone",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "next",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$date",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "gt",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$date_to",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " || ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$date",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "lt",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$date_from",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "my",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@pixels",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " = (0) ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "x",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "5",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "            ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$pixels",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "[",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$_",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "] = trim(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$sheet",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "->",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$pixel_cols",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "[4]",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$row",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "});",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "            (warning ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Pixel ",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$_",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " is not a number in the row # ",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$row",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "), ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "next",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "unless",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " looks_like_number(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$pixels",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "[",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$_",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "]);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        };",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (1..4) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "            add_phone_activity(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$date",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$phone",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"pixel-",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$_",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$pixels",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "[",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$_",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "]) ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$pixels",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "[",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$_",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "];",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        };",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$parsed_lines",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "++;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    };",
+			"color": "#FFFFFF"
+		}
+	]
+}

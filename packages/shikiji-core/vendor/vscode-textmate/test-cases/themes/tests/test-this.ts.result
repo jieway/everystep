@@ -1,0 +1,542 @@
+{
+	"abyss": [
+		{
+			"content": "{",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\tthis.foo ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "9",
+			"color": "#F280D0"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".foo = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "9",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "{",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".foo = ",
+			"color": "#000000"
+		},
+		{
+			"content": "9",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".foo ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "9",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "foo",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "9",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "{",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "this",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "foo",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "9",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "this",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "foo",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "9",
+			"color": "#F79A32"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "{",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\tthis.foo ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "9",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "{",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\tthis.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "foo",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "9",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "this",
+			"color": "#AB6526"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "foo",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "9",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		}
+	],
+	"red": [
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "this",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "foo",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "9",
+			"color": "#994646FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "{",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "foo",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "9",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "{",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "this",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "foo",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "9",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "this",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "foo",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "9",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	]
+}

@@ -1,0 +1,5554 @@
+{
+	"abyss": [
+		{
+			"content": "\"\"\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "class",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#FFEEBB"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "constructor",
+			"color": "#DDBB88"
+		},
+		{
+			"content": ":",
+			"color": "#225588"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "@name",
+			"color": "#2277FF"
+		},
+		{
+			"content": ") ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=>",
+			"color": "#9966B8"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "drive",
+			"color": "#DDBB88"
+		},
+		{
+			"content": ":",
+			"color": "#225588"
+		},
+		{
+			"content": " () ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=>",
+			"color": "#9966B8"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "alert",
+			"color": "#DDBB88"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Drive ",
+			"color": "#22AA44"
+		},
+		{
+			"content": "#{@name}",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "class",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Car",
+			"color": "#FFEEBB"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "extends",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "drive",
+			"color": "#DDBB88"
+		},
+		{
+			"content": ":",
+			"color": "#225588"
+		},
+		{
+			"content": " () ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=>",
+			"color": "#9966B8"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "alert",
+			"color": "#DDBB88"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Driving ",
+			"color": "#22AA44"
+		},
+		{
+			"content": "#{@name}",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "c ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "new",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Car",
+			"color": "#FFEEBB"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Volvo\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "while",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "onTheRoad",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "()",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  c.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "drive",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "()",
+			"color": "#6688CC"
+		},
+		{
+			"content": "vehicles ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "new",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Car",
+			"color": "#FFEEBB"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#225588"
+		},
+		{
+			"content": " i ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "in",
+			"color": "#225588"
+		},
+		{
+			"content": " [",
+			"color": "#6688CC"
+		},
+		{
+			"content": "1",
+			"color": "#F280D0"
+		},
+		{
+			"content": "..",
+			"color": "#225588"
+		},
+		{
+			"content": "100",
+			"color": "#F280D0"
+		},
+		{
+			"content": "])",
+			"color": "#6688CC"
+		},
+		{
+			"content": "startRace ",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "vehicles",
+			"color": "#2277FF"
+		},
+		{
+			"content": ") ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "->",
+			"color": "#9966B8"
+		},
+		{
+			"content": " [vehicle.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "drive",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "() ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#225588"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "in",
+			"color": "#225588"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#6688CC"
+		},
+		{
+			"content": "fancyRegExp ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "///",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\t(",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\\d",
+			"color": "#F280D0"
+		},
+		{
+			"content": "+",
+			"color": "#225588"
+		},
+		{
+			"content": ")\t",
+			"color": "#22AA44"
+		},
+		{
+			"content": "# numbers",
+			"color": "#223355"
+		},
+		{
+			"content": "\t(",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\\w",
+			"color": "#F280D0"
+		},
+		{
+			"content": "*",
+			"color": "#225588"
+		},
+		{
+			"content": ")\t",
+			"color": "#22AA44"
+		},
+		{
+			"content": "# letters",
+			"color": "#223355"
+		},
+		{
+			"content": "\t",
+			"color": "#22AA44"
+		},
+		{
+			"content": "$",
+			"color": "#225588"
+		},
+		{
+			"content": "\t\t",
+			"color": "#22AA44"
+		},
+		{
+			"content": "# the end",
+			"color": "#223355"
+		},
+		{
+			"content": "///",
+			"color": "#22AA44"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "\"\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "class",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Vehicle",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  constructor: (@name) ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "=>",
+			"color": "#569CD6"
+		},
+		{
+			"content": "  drive: () ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "=>",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    alert ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Drive ",
+			"color": "#CE9178"
+		},
+		{
+			"content": "#{@name}",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "class",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Car ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "extends",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Vehicle",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  drive: () ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "=>",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    alert ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Driving ",
+			"color": "#CE9178"
+		},
+		{
+			"content": "#{@name}",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "c = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "new",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Car ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Volvo\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "while",
+			"color": "#569CD6"
+		},
+		{
+			"content": " onTheRoad()",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  c.drive()",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "vehicles = (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "new",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Car ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " i ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "in",
+			"color": "#569CD6"
+		},
+		{
+			"content": " [",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "..",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "100",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "])",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "startRace = (vehicles) ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "->",
+			"color": "#569CD6"
+		},
+		{
+			"content": " [vehicle.drive() ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "in",
+			"color": "#569CD6"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "fancyRegExp = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "///",
+			"color": "#D16969"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#D16969"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ")\t",
+			"color": "#D16969"
+		},
+		{
+			"content": "# numbers",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#D16969"
+		},
+		{
+			"content": "*",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ")\t",
+			"color": "#D16969"
+		},
+		{
+			"content": "# letters",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D16969"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D16969"
+		},
+		{
+			"content": "# the end",
+			"color": "#608B4E"
+		},
+		{
+			"content": "///",
+			"color": "#D16969"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "\"\"\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#A31515"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "class",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Vehicle",
+			"color": "#000000"
+		},
+		{
+			"content": "  constructor: (@name) ",
+			"color": "#000000"
+		},
+		{
+			"content": "=>",
+			"color": "#0000FF"
+		},
+		{
+			"content": "  drive: () ",
+			"color": "#000000"
+		},
+		{
+			"content": "=>",
+			"color": "#0000FF"
+		},
+		{
+			"content": "    alert ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Drive ",
+			"color": "#A31515"
+		},
+		{
+			"content": "#{@name}",
+			"color": "#A31515"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "class",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Car ",
+			"color": "#000000"
+		},
+		{
+			"content": "extends",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Vehicle",
+			"color": "#000000"
+		},
+		{
+			"content": "  drive: () ",
+			"color": "#000000"
+		},
+		{
+			"content": "=>",
+			"color": "#0000FF"
+		},
+		{
+			"content": "    alert ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Driving ",
+			"color": "#A31515"
+		},
+		{
+			"content": "#{@name}",
+			"color": "#A31515"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "c = ",
+			"color": "#000000"
+		},
+		{
+			"content": "new",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Car ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Volvo\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "while",
+			"color": "#0000FF"
+		},
+		{
+			"content": " onTheRoad()",
+			"color": "#000000"
+		},
+		{
+			"content": "  c.drive()",
+			"color": "#000000"
+		},
+		{
+			"content": "vehicles = (",
+			"color": "#000000"
+		},
+		{
+			"content": "new",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Car ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": " i ",
+			"color": "#000000"
+		},
+		{
+			"content": "in",
+			"color": "#0000FF"
+		},
+		{
+			"content": " [",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": "..",
+			"color": "#000000"
+		},
+		{
+			"content": "100",
+			"color": "#09885A"
+		},
+		{
+			"content": "])",
+			"color": "#000000"
+		},
+		{
+			"content": "startRace = (vehicles) ",
+			"color": "#000000"
+		},
+		{
+			"content": "->",
+			"color": "#0000FF"
+		},
+		{
+			"content": " [vehicle.drive() ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#000000"
+		},
+		{
+			"content": "in",
+			"color": "#0000FF"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#000000"
+		},
+		{
+			"content": "fancyRegExp = ",
+			"color": "#000000"
+		},
+		{
+			"content": "///",
+			"color": "#811F3F"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#811F3F"
+		},
+		{
+			"content": "+",
+			"color": "#000000"
+		},
+		{
+			"content": ")\t",
+			"color": "#811F3F"
+		},
+		{
+			"content": "# numbers",
+			"color": "#008000"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#811F3F"
+		},
+		{
+			"content": "*",
+			"color": "#000000"
+		},
+		{
+			"content": ")\t",
+			"color": "#811F3F"
+		},
+		{
+			"content": "# letters",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#811F3F"
+		},
+		{
+			"content": "$",
+			"color": "#0000FF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#811F3F"
+		},
+		{
+			"content": "# the end",
+			"color": "#008000"
+		},
+		{
+			"content": "///",
+			"color": "#811F3F"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "\"\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "class",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Vehicle",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  constructor",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " (@name) ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=>",
+			"color": "#569CD6"
+		},
+		{
+			"content": "  drive",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " () ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=>",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    alert ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Drive ",
+			"color": "#CE9178"
+		},
+		{
+			"content": "#{@name}",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "class",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Car ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "extends",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Vehicle",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  drive",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " () ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=>",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    alert ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Driving ",
+			"color": "#CE9178"
+		},
+		{
+			"content": "#{@name}",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "c ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "new",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Car ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Volvo\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "while",
+			"color": "#569CD6"
+		},
+		{
+			"content": " onTheRoad()",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  c.drive()",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "vehicles ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "new",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Car ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " i ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "in",
+			"color": "#569CD6"
+		},
+		{
+			"content": " [",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "..",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "100",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "])",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "startRace ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " (vehicles) ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "->",
+			"color": "#569CD6"
+		},
+		{
+			"content": " [vehicle.drive() ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "in",
+			"color": "#569CD6"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "fancyRegExp ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "///",
+			"color": "#D16969"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#D16969"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ")\t",
+			"color": "#D16969"
+		},
+		{
+			"content": "# numbers",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#D16969"
+		},
+		{
+			"content": "*",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ")\t",
+			"color": "#D16969"
+		},
+		{
+			"content": "# letters",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t",
+			"color": "#D16969"
+		},
+		{
+			"content": "$",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D16969"
+		},
+		{
+			"content": "# the end",
+			"color": "#7CA668"
+		},
+		{
+			"content": "///",
+			"color": "#D16969"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "\"\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "class",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "constructor",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": ": (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@name",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ") ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "=>",
+			"color": "#569CD6"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "drive",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": ": () ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "=>",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "alert",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Drive ",
+			"color": "#CE9178"
+		},
+		{
+			"content": "#{",
+			"color": "#CE9178"
+		},
+		{
+			"content": "@name",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "class",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Car",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "extends",
+			"color": "#C586C0"
+		},
+		{
+			"content": " Vehicle",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "drive",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": ": () ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "=>",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "alert",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Driving ",
+			"color": "#CE9178"
+		},
+		{
+			"content": "#{",
+			"color": "#CE9178"
+		},
+		{
+			"content": "@name",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "c",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "new",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Car",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Volvo\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "while",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "onTheRoad",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "()",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  c.",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "drive",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "()",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "vehicles",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "new",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Car",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#C586C0"
+		},
+		{
+			"content": " i ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "in",
+			"color": "#C586C0"
+		},
+		{
+			"content": " [",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "..",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "100",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "])",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "startRace ",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "= (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "vehicles",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ") ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "->",
+			"color": "#569CD6"
+		},
+		{
+			"content": " [vehicle.",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "drive",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "() ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#C586C0"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "in",
+			"color": "#C586C0"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "fancyRegExp",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "///",
+			"color": "#D16969"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#D16969"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ")\t",
+			"color": "#D16969"
+		},
+		{
+			"content": "# numbers",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#D16969"
+		},
+		{
+			"content": "*",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ")\t",
+			"color": "#D16969"
+		},
+		{
+			"content": "# letters",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D16969"
+		},
+		{
+			"content": "$",
+			"color": "#C586C0"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D16969"
+		},
+		{
+			"content": "# the end",
+			"color": "#608B4E"
+		},
+		{
+			"content": "///",
+			"color": "#D16969"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "\"\"\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#A31515"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "class",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#267F99"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "constructor",
+			"color": "#795E26"
+		},
+		{
+			"content": ": (",
+			"color": "#000000"
+		},
+		{
+			"content": "@name",
+			"color": "#001080"
+		},
+		{
+			"content": ") ",
+			"color": "#000000"
+		},
+		{
+			"content": "=>",
+			"color": "#0000FF"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "drive",
+			"color": "#795E26"
+		},
+		{
+			"content": ": () ",
+			"color": "#000000"
+		},
+		{
+			"content": "=>",
+			"color": "#0000FF"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "alert",
+			"color": "#795E26"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Drive ",
+			"color": "#A31515"
+		},
+		{
+			"content": "#{",
+			"color": "#A31515"
+		},
+		{
+			"content": "@name",
+			"color": "#001080"
+		},
+		{
+			"content": "}",
+			"color": "#A31515"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "class",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Car",
+			"color": "#267F99"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "extends",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " Vehicle",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "drive",
+			"color": "#795E26"
+		},
+		{
+			"content": ": () ",
+			"color": "#000000"
+		},
+		{
+			"content": "=>",
+			"color": "#0000FF"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "alert",
+			"color": "#795E26"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Driving ",
+			"color": "#A31515"
+		},
+		{
+			"content": "#{",
+			"color": "#A31515"
+		},
+		{
+			"content": "@name",
+			"color": "#001080"
+		},
+		{
+			"content": "}",
+			"color": "#A31515"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "c",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "new",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Car",
+			"color": "#267F99"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Volvo\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "while",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "onTheRoad",
+			"color": "#795E26"
+		},
+		{
+			"content": "()",
+			"color": "#000000"
+		},
+		{
+			"content": "  c.",
+			"color": "#000000"
+		},
+		{
+			"content": "drive",
+			"color": "#795E26"
+		},
+		{
+			"content": "()",
+			"color": "#000000"
+		},
+		{
+			"content": "vehicles",
+			"color": "#001080"
+		},
+		{
+			"content": " = (",
+			"color": "#000000"
+		},
+		{
+			"content": "new",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Car",
+			"color": "#267F99"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " i ",
+			"color": "#000000"
+		},
+		{
+			"content": "in",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " [",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": "..",
+			"color": "#000000"
+		},
+		{
+			"content": "100",
+			"color": "#09885A"
+		},
+		{
+			"content": "])",
+			"color": "#000000"
+		},
+		{
+			"content": "startRace ",
+			"color": "#795E26"
+		},
+		{
+			"content": "= (",
+			"color": "#000000"
+		},
+		{
+			"content": "vehicles",
+			"color": "#001080"
+		},
+		{
+			"content": ") ",
+			"color": "#000000"
+		},
+		{
+			"content": "->",
+			"color": "#0000FF"
+		},
+		{
+			"content": " [vehicle.",
+			"color": "#000000"
+		},
+		{
+			"content": "drive",
+			"color": "#795E26"
+		},
+		{
+			"content": "() ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#000000"
+		},
+		{
+			"content": "in",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#000000"
+		},
+		{
+			"content": "fancyRegExp",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "///",
+			"color": "#811F3F"
+		},
+		{
+			"content": "\t(\\d",
+			"color": "#811F3F"
+		},
+		{
+			"content": "+",
+			"color": "#000000"
+		},
+		{
+			"content": ")\t",
+			"color": "#811F3F"
+		},
+		{
+			"content": "# numbers",
+			"color": "#008000"
+		},
+		{
+			"content": "\t(\\w",
+			"color": "#811F3F"
+		},
+		{
+			"content": "*",
+			"color": "#000000"
+		},
+		{
+			"content": ")\t",
+			"color": "#811F3F"
+		},
+		{
+			"content": "# letters",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#811F3F"
+		},
+		{
+			"content": "$",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "\t\t",
+			"color": "#811F3F"
+		},
+		{
+			"content": "# the end",
+			"color": "#008000"
+		},
+		{
+			"content": "///",
+			"color": "#811F3F"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "\"\"\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "class",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#F06431"
+		},
+		{
+			"content": "  ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "constructor",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": ": (@name) ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "=>",
+			"color": "#98676A"
+		},
+		{
+			"content": "  ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "drive",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": ": () ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "=>",
+			"color": "#98676A"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "alert",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Drive ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "#{",
+			"color": "#18401E"
+		},
+		{
+			"content": "@",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "name",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}",
+			"color": "#18401E"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "class",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Car",
+			"color": "#F06431"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "extends",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#889B4A"
+		},
+		{
+			"content": "  ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "drive",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": ": () ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "=>",
+			"color": "#98676A"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "alert",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Driving ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "#{",
+			"color": "#18401E"
+		},
+		{
+			"content": "@",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "name",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}",
+			"color": "#18401E"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "c",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = new ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Car",
+			"color": "#F06431"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Volvo",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "while",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "onTheRoad",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "()",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  c.",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "drive",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "()",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "vehicles",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = (new ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Car",
+			"color": "#F06431"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#98676A"
+		},
+		{
+			"content": " i ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "in",
+			"color": "#98676A"
+		},
+		{
+			"content": " [",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#F79A32"
+		},
+		{
+			"content": "..",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "100",
+			"color": "#F79A32"
+		},
+		{
+			"content": "])",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "startRace ",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "= (vehicles) ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "->",
+			"color": "#98676A"
+		},
+		{
+			"content": " [vehicle.",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "drive",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "() ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#98676A"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "in",
+			"color": "#98676A"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "fancyRegExp",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "///",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t(",
+			"color": "#7E602C"
+		},
+		{
+			"content": "\\d",
+			"color": "#F79A32"
+		},
+		{
+			"content": "+",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ")\t",
+			"color": "#7E602C"
+		},
+		{
+			"content": "# numbers",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t(",
+			"color": "#7E602C"
+		},
+		{
+			"content": "\\w",
+			"color": "#F79A32"
+		},
+		{
+			"content": "*",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ")\t",
+			"color": "#7E602C"
+		},
+		{
+			"content": "# letters",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t",
+			"color": "#7E602C"
+		},
+		{
+			"content": "$",
+			"color": "#98676A"
+		},
+		{
+			"content": "\t\t",
+			"color": "#7E602C"
+		},
+		{
+			"content": "# the end",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "///",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "\"\"\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "class",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "constructor",
+			"color": "#A6E22E"
+		},
+		{
+			"content": ":",
+			"color": "#F92672"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "@name",
+			"color": "#FD971F"
+		},
+		{
+			"content": ") ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=>",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "drive",
+			"color": "#A6E22E"
+		},
+		{
+			"content": ":",
+			"color": "#F92672"
+		},
+		{
+			"content": " () ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=>",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "alert",
+			"color": "#A6E22E"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Drive ",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "#{@name}",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "class",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Car",
+			"color": "#A6E22E"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "extends",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "drive",
+			"color": "#A6E22E"
+		},
+		{
+			"content": ":",
+			"color": "#F92672"
+		},
+		{
+			"content": " () ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=>",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "alert",
+			"color": "#A6E22E"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Driving ",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "#{@name}",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "c ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "new",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Car",
+			"color": "#A6E22E"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Volvo\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "while",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "onTheRoad",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "()",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  c.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "drive",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "()",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "vehicles ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "new",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Car",
+			"color": "#A6E22E"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#F92672"
+		},
+		{
+			"content": " i ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "in",
+			"color": "#F92672"
+		},
+		{
+			"content": " [",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "1",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "..",
+			"color": "#F92672"
+		},
+		{
+			"content": "100",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "])",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "startRace ",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "vehicles",
+			"color": "#FD971F"
+		},
+		{
+			"content": ") ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "->",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " [vehicle.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "drive",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "() ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#F92672"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "in",
+			"color": "#F92672"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "fancyRegExp ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "///",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\t(",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\\d",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "+",
+			"color": "#F92672"
+		},
+		{
+			"content": ")\t",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "# numbers",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t(",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\\w",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "*",
+			"color": "#F92672"
+		},
+		{
+			"content": ")\t",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "# letters",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "$",
+			"color": "#F92672"
+		},
+		{
+			"content": "\t\t",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "# the end",
+			"color": "#75715E"
+		},
+		{
+			"content": "///",
+			"color": "#E6DB74"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "\"\"\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "class",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#9B0000"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "constructor",
+			"color": "#CE6700"
+		},
+		{
+			"content": ":",
+			"color": "#676867"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "@name",
+			"color": "#6089B4"
+		},
+		{
+			"content": ") ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=>",
+			"color": "#9872A2"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "drive",
+			"color": "#CE6700"
+		},
+		{
+			"content": ":",
+			"color": "#676867"
+		},
+		{
+			"content": " () ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=>",
+			"color": "#9872A2"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "alert",
+			"color": "#CE6700"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Drive ",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "#{",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "@name",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}",
+			"color": "#D08442"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "class",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Car",
+			"color": "#9B0000"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "extends",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#C7444A"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "drive",
+			"color": "#CE6700"
+		},
+		{
+			"content": ":",
+			"color": "#676867"
+		},
+		{
+			"content": " () ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=>",
+			"color": "#9872A2"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "alert",
+			"color": "#CE6700"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Driving ",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "#{",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "@name",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}",
+			"color": "#D08442"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "c",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "new",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Car",
+			"color": "#9B0000"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Volvo\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "while",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "onTheRoad",
+			"color": "#CE6700"
+		},
+		{
+			"content": "()",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  c.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "drive",
+			"color": "#CE6700"
+		},
+		{
+			"content": "()",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "vehicles",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "new",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Car",
+			"color": "#9B0000"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "for",
+			"color": "#9872A2"
+		},
+		{
+			"content": " i ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "in",
+			"color": "#9872A2"
+		},
+		{
+			"content": " [",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "1",
+			"color": "#6089B4"
+		},
+		{
+			"content": "..",
+			"color": "#676867"
+		},
+		{
+			"content": "100",
+			"color": "#6089B4"
+		},
+		{
+			"content": "])",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "startRace ",
+			"color": "#CE6700"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "vehicles",
+			"color": "#6089B4"
+		},
+		{
+			"content": ") ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "->",
+			"color": "#9872A2"
+		},
+		{
+			"content": " [vehicle.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "drive",
+			"color": "#CE6700"
+		},
+		{
+			"content": "() ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "for",
+			"color": "#9872A2"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "in",
+			"color": "#9872A2"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "fancyRegExp",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "///",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\t(",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\\d",
+			"color": "#8080FF"
+		},
+		{
+			"content": "+",
+			"color": "#676867"
+		},
+		{
+			"content": ")\t",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "# numbers",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t(",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\\w",
+			"color": "#8080FF"
+		},
+		{
+			"content": "*",
+			"color": "#676867"
+		},
+		{
+			"content": ")\t",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "# letters",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$",
+			"color": "#9872A2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "# the end",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "///",
+			"color": "#9AA83A"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "\"\"\"",
+			"color": "#777777"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#777777"
+		},
+		{
+			"content": "class",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "constructor",
+			"color": "#AA3731"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "@name",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=>",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "drive",
+			"color": "#AA3731"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "()",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=>",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "alert",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "Drive ",
+			"color": "#448C27"
+		},
+		{
+			"content": "#{",
+			"color": "#777777"
+		},
+		{
+			"content": "@",
+			"color": "#777777"
+		},
+		{
+			"content": "name",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "class",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Car",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "extends",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "drive",
+			"color": "#AA3731"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "()",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=>",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "alert",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "Driving ",
+			"color": "#448C27"
+		},
+		{
+			"content": "#{",
+			"color": "#777777"
+		},
+		{
+			"content": "@",
+			"color": "#777777"
+		},
+		{
+			"content": "name",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "c",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "new",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Car",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "Volvo",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "while",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "onTheRoad",
+			"color": "#AA3731"
+		},
+		{
+			"content": "()",
+			"color": "#333333"
+		},
+		{
+			"content": "  c.",
+			"color": "#333333"
+		},
+		{
+			"content": "drive",
+			"color": "#AA3731"
+		},
+		{
+			"content": "()",
+			"color": "#333333"
+		},
+		{
+			"content": "vehicles",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "new",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Car",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "for",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " i ",
+			"color": "#333333"
+		},
+		{
+			"content": "in",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " [",
+			"color": "#333333"
+		},
+		{
+			"content": "1",
+			"color": "#AB6526"
+		},
+		{
+			"content": "..",
+			"color": "#777777"
+		},
+		{
+			"content": "100",
+			"color": "#AB6526"
+		},
+		{
+			"content": "])",
+			"color": "#333333"
+		},
+		{
+			"content": "startRace ",
+			"color": "#AA3731"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "vehicles",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "->",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " [vehicle.",
+			"color": "#333333"
+		},
+		{
+			"content": "drive",
+			"color": "#AA3731"
+		},
+		{
+			"content": "() ",
+			"color": "#333333"
+		},
+		{
+			"content": "for",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#333333"
+		},
+		{
+			"content": "in",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#333333"
+		},
+		{
+			"content": "fancyRegExp",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "///",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "\\d",
+			"color": "#AB6526"
+		},
+		{
+			"content": "+)",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "# numbers",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "\\w",
+			"color": "#AB6526"
+		},
+		{
+			"content": "*)",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "# letters",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t$\t\t",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "# the end",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "///",
+			"color": "#777777"
+		}
+	],
+	"red": [
+		{
+			"content": "\"\"\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "class",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "constructor",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": ":",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "@name",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ") ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=>",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "drive",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": ":",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " () ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=>",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "alert",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Drive ",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "#{",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "@name",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "}",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "class",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Car",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "extends",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#AA5507FF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "drive",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": ":",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " () ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=>",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "alert",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Driving ",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "#{",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "@name",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "}",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "c",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "new",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Car",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Volvo\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "while",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "onTheRoad",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "()",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  c.",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "drive",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "()",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "vehicles",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "new",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Car",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "for",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " i ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "in",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " [",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "1",
+			"color": "#994646FF"
+		},
+		{
+			"content": "..",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "100",
+			"color": "#994646FF"
+		},
+		{
+			"content": "])",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "startRace ",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "vehicles",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ") ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "->",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " [vehicle.",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "drive",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "() ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "for",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "in",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "fancyRegExp",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "///",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "\t(",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "\\d",
+			"color": "#FFE862FF"
+		},
+		{
+			"content": "+",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ")\t",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "# numbers",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t(",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "\\w",
+			"color": "#FFE862FF"
+		},
+		{
+			"content": "*",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ")\t",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "# letters",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "$",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "# the end",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "///",
+			"color": "#FFB454FF"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "\"\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#2AA198"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "class",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "constructor",
+			"color": "#268BD2"
+		},
+		{
+			"content": ":",
+			"color": "#859900"
+		},
+		{
+			"content": " (@name) ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=>",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "drive",
+			"color": "#268BD2"
+		},
+		{
+			"content": ":",
+			"color": "#859900"
+		},
+		{
+			"content": " () ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=>",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "alert",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Drive ",
+			"color": "#2AA198"
+		},
+		{
+			"content": "#{",
+			"color": "#D30102"
+		},
+		{
+			"content": "@",
+			"color": "#859900"
+		},
+		{
+			"content": "name",
+			"color": "#268BD2"
+		},
+		{
+			"content": "}",
+			"color": "#D30102"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "class",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Car",
+			"color": "#CB4B16"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "extends",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#6C71C4"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "drive",
+			"color": "#268BD2"
+		},
+		{
+			"content": ":",
+			"color": "#859900"
+		},
+		{
+			"content": " () ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=>",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "alert",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Driving ",
+			"color": "#2AA198"
+		},
+		{
+			"content": "#{",
+			"color": "#D30102"
+		},
+		{
+			"content": "@",
+			"color": "#859900"
+		},
+		{
+			"content": "name",
+			"color": "#268BD2"
+		},
+		{
+			"content": "}",
+			"color": "#D30102"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "c",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "new",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Car",
+			"color": "#CB4B16"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Volvo\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "while",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "onTheRoad",
+			"color": "#268BD2"
+		},
+		{
+			"content": "()",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  c.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "drive",
+			"color": "#268BD2"
+		},
+		{
+			"content": "()",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "vehicles",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "new",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Car",
+			"color": "#CB4B16"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " i ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "in",
+			"color": "#859900"
+		},
+		{
+			"content": " [",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": "..",
+			"color": "#859900"
+		},
+		{
+			"content": "100",
+			"color": "#D33682"
+		},
+		{
+			"content": "])",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "startRace ",
+			"color": "#268BD2"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " (vehicles) ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "->",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " [vehicle.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "drive",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "in",
+			"color": "#859900"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "fancyRegExp",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "///",
+			"color": "#D30102"
+		},
+		{
+			"content": "\t(",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\d",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": ")\t",
+			"color": "#D30102"
+		},
+		{
+			"content": "# numbers",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t(",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\w",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "*",
+			"color": "#859900"
+		},
+		{
+			"content": ")\t",
+			"color": "#D30102"
+		},
+		{
+			"content": "# letters",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t",
+			"color": "#D30102"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D30102"
+		},
+		{
+			"content": "# the end",
+			"color": "#657B83"
+		},
+		{
+			"content": "///",
+			"color": "#D30102"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "\"\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#2AA198"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "class",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#268BD2"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "constructor",
+			"color": "#268BD2"
+		},
+		{
+			"content": ":",
+			"color": "#859900"
+		},
+		{
+			"content": " (@name) ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=>",
+			"color": "#073642"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "drive",
+			"color": "#268BD2"
+		},
+		{
+			"content": ":",
+			"color": "#859900"
+		},
+		{
+			"content": " () ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=>",
+			"color": "#073642"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "alert",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Drive ",
+			"color": "#2AA198"
+		},
+		{
+			"content": "#{",
+			"color": "#D30102"
+		},
+		{
+			"content": "@",
+			"color": "#859900"
+		},
+		{
+			"content": "name",
+			"color": "#268BD2"
+		},
+		{
+			"content": "}",
+			"color": "#D30102"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "class",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Car",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "extends",
+			"color": "#859900"
+		},
+		{
+			"content": " Vehicle",
+			"color": "#586E75"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "drive",
+			"color": "#268BD2"
+		},
+		{
+			"content": ":",
+			"color": "#859900"
+		},
+		{
+			"content": " () ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=>",
+			"color": "#073642"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "alert",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Driving ",
+			"color": "#2AA198"
+		},
+		{
+			"content": "#{",
+			"color": "#D30102"
+		},
+		{
+			"content": "@",
+			"color": "#859900"
+		},
+		{
+			"content": "name",
+			"color": "#268BD2"
+		},
+		{
+			"content": "}",
+			"color": "#D30102"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "c",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "new",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Car",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Volvo\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "while",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "onTheRoad",
+			"color": "#268BD2"
+		},
+		{
+			"content": "()",
+			"color": "#586E75"
+		},
+		{
+			"content": "  c.",
+			"color": "#586E75"
+		},
+		{
+			"content": "drive",
+			"color": "#268BD2"
+		},
+		{
+			"content": "()",
+			"color": "#586E75"
+		},
+		{
+			"content": "vehicles",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "new",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Car",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " i ",
+			"color": "#586E75"
+		},
+		{
+			"content": "in",
+			"color": "#859900"
+		},
+		{
+			"content": " [",
+			"color": "#586E75"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": "..",
+			"color": "#859900"
+		},
+		{
+			"content": "100",
+			"color": "#D33682"
+		},
+		{
+			"content": "])",
+			"color": "#586E75"
+		},
+		{
+			"content": "startRace ",
+			"color": "#268BD2"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " (vehicles) ",
+			"color": "#586E75"
+		},
+		{
+			"content": "->",
+			"color": "#073642"
+		},
+		{
+			"content": " [vehicle.",
+			"color": "#586E75"
+		},
+		{
+			"content": "drive",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() ",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#586E75"
+		},
+		{
+			"content": "in",
+			"color": "#859900"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#586E75"
+		},
+		{
+			"content": "fancyRegExp",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "///",
+			"color": "#D30102"
+		},
+		{
+			"content": "\t(",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\d",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": ")\t",
+			"color": "#D30102"
+		},
+		{
+			"content": "# numbers",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t(",
+			"color": "#D30102"
+		},
+		{
+			"content": "\\w",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "*",
+			"color": "#859900"
+		},
+		{
+			"content": ")\t",
+			"color": "#D30102"
+		},
+		{
+			"content": "# letters",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#D30102"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D30102"
+		},
+		{
+			"content": "# the end",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "///",
+			"color": "#D30102"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "\"\"\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "A CoffeeScript sample.",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "\"\"\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "class",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "constructor",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": ":",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@name",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ") ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=>",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "drive",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": ":",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " () ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=>",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "alert",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Drive ",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "#{",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "@name",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "class",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Car",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "extends",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Vehicle",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "drive",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": ":",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " () ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=>",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "alert",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Driving ",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "#{",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "@name",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "c",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "new",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Car",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Volvo\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "while",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "onTheRoad",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "()",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  c.",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "drive",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "()",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "vehicles",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "new",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Car",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " i ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "in",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " [",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "..",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "100",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "])",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "startRace ",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "vehicles",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ") ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "->",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " [vehicle.",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "drive",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "() ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " vehicle ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "in",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " vehicles]",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "fancyRegExp",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "///",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\t(",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\\d",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "+",
+			"color": "#99FFFF"
+		},
+		{
+			"content": ")\t",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "# numbers",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t(",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\\w",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "*",
+			"color": "#99FFFF"
+		},
+		{
+			"content": ")\t",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "# letters",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "$",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "# the end",
+			"color": "#7285B7"
+		},
+		{
+			"content": "///",
+			"color": "#FF9DA4"
+		}
+	]
+}

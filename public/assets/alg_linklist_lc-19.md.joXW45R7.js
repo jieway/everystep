@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./chunks/framework.2bglP9T5.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"alg/linklist/lc-19.md","filePath":"alg/linklist/lc-19.md"}'),l={name:"alg/linklist/lc-19.md"};function c(s,n,r,o,i,p){return a(),e("div")}const m=t(l,[["render",c]]);export{d as __pageData,m as default};

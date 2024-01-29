@@ -1,0 +1,6102 @@
+{
+	"abyss": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#223355"
+		},
+		{
+			"content": "if",
+			"color": "#225588"
+		},
+		{
+			"content": " [[ ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"$OSTYPE\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "==",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "*",
+			"color": "#225588"
+		},
+		{
+			"content": " ]]",
+			"color": "#6688CC"
+		},
+		{
+			"content": ";",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "then",
+			"color": "#225588"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "realpath",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "() { [[ $1 ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " /",
+			"color": "#6688CC"
+		},
+		{
+			"content": "*",
+			"color": "#225588"
+		},
+		{
+			"content": " ]] ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "&&",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "echo",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"$1\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "||",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "echo",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"$PWD/${1",
+			"color": "#22AA44"
+		},
+		{
+			"content": "#",
+			"color": "#225588"
+		},
+		{
+			"content": ".",
+			"color": "#22AA44"
+		},
+		{
+			"content": "/",
+			"color": "#225588"
+		},
+		{
+			"content": "}\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ";",
+			"color": "#225588"
+		},
+		{
+			"content": " }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$(dirname $(dirname $(realpath \"$0\")))",
+			"color": "#22AA44"
+		},
+		{
+			"content": "else",
+			"color": "#225588"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$(dirname $(dirname $(readlink -f $0)))",
+			"color": "#22AA44"
+		},
+		{
+			"content": "fi",
+			"color": "#225588"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$(xcode-select -print-path)",
+			"color": "#22AA44"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "$(xcrun -sdk iphoneos -find lipo)",
+			"color": "#22AA44"
+		},
+		{
+			"content": "function",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "code",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "() {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "cd",
+			"color": "#9966B8"
+		},
+		{
+			"content": " $ROOT",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#223355"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "test",
+			"color": "#9966B8"
+		},
+		{
+			"content": " -d node_modules ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "||",
+			"color": "#225588"
+		},
+		{
+			"content": " ./scripts/npm.sh install",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#223355"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "export",
+			"color": "#225588"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#223355"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "if",
+			"color": "#225588"
+		},
+		{
+			"content": " [[ ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"$OSTYPE\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "==",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "*",
+			"color": "#225588"
+		},
+		{
+			"content": " ]]",
+			"color": "#6688CC"
+		},
+		{
+			"content": ";",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "then",
+			"color": "#225588"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "exec",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ./.build/electron/Electron.app/Contents/MacOS/Electron ",
+			"color": "#6688CC"
+		},
+		{
+			"content": ".",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "else",
+			"color": "#225588"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "exec",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ./.build/electron/electron ",
+			"color": "#6688CC"
+		},
+		{
+			"content": ".",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "fi",
+			"color": "#225588"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "code ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#22AA44"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#608B4E"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " [[ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"$OSTYPE\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " == ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "* ]]; ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "then",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\trealpath() { [[ $1 = /* ]] && echo ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"$1\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " || echo ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"$PWD/${1",
+			"color": "#CE9178"
+		},
+		{
+			"content": "#",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ".",
+			"color": "#CE9178"
+		},
+		{
+			"content": "/",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "; }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$(dirname $(dirname $(realpath \"$0\")))",
+			"color": "#CE9178"
+		},
+		{
+			"content": "else",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$(dirname $(dirname $(readlink -f $0)))",
+			"color": "#CE9178"
+		},
+		{
+			"content": "fi",
+			"color": "#569CD6"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$(xcode-select -print-path)",
+			"color": "#CE9178"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$(xcrun -sdk iphoneos -find lipo)",
+			"color": "#CE9178"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " code() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\tcd $ROOT",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\ttest -d node_modules || ./scripts/npm.sh install",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "export",
+			"color": "#569CD6"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " [[ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"$OSTYPE\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " == ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "* ]]; ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "then",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\t\texec ./.build/electron/Electron.app/Contents/MacOS/Electron . ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "else",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\t\texec ./.build/electron/electron . ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "fi",
+			"color": "#569CD6"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "code ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#CE9178"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#008000"
+		},
+		{
+			"content": "if",
+			"color": "#0000FF"
+		},
+		{
+			"content": " [[ ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"$OSTYPE\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " == ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "* ]]; ",
+			"color": "#000000"
+		},
+		{
+			"content": "then",
+			"color": "#0000FF"
+		},
+		{
+			"content": "\trealpath() { [[ $1 = /* ]] && echo ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"$1\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " || echo ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"$PWD/${1",
+			"color": "#A31515"
+		},
+		{
+			"content": "#",
+			"color": "#000000"
+		},
+		{
+			"content": ".",
+			"color": "#A31515"
+		},
+		{
+			"content": "/",
+			"color": "#000000"
+		},
+		{
+			"content": "}\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "; }",
+			"color": "#000000"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#000000"
+		},
+		{
+			"content": "$(dirname $(dirname $(realpath \"$0\")))",
+			"color": "#A31515"
+		},
+		{
+			"content": "else",
+			"color": "#0000FF"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#000000"
+		},
+		{
+			"content": "$(dirname $(dirname $(readlink -f $0)))",
+			"color": "#A31515"
+		},
+		{
+			"content": "fi",
+			"color": "#0000FF"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#000000"
+		},
+		{
+			"content": "$(xcode-select -print-path)",
+			"color": "#A31515"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#000000"
+		},
+		{
+			"content": "$(xcrun -sdk iphoneos -find lipo)",
+			"color": "#A31515"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " code() {",
+			"color": "#000000"
+		},
+		{
+			"content": "\tcd $ROOT",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#008000"
+		},
+		{
+			"content": "\ttest -d node_modules || ./scripts/npm.sh install",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "export",
+			"color": "#0000FF"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#0000FF"
+		},
+		{
+			"content": " [[ ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"$OSTYPE\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " == ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "* ]]; ",
+			"color": "#000000"
+		},
+		{
+			"content": "then",
+			"color": "#0000FF"
+		},
+		{
+			"content": "\t\texec ./.build/electron/Electron.app/Contents/MacOS/Electron . ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "else",
+			"color": "#0000FF"
+		},
+		{
+			"content": "\t\texec ./.build/electron/electron . ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "fi",
+			"color": "#0000FF"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "code ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#A31515"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#7CA668"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " [[ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"$OSTYPE\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "==",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "*",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ]]",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "then",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\trealpath() { [[ $1 ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " /",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "*",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ]] ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "&&",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " echo ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"$1\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "||",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " echo ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"$PWD/${1",
+			"color": "#CE9178"
+		},
+		{
+			"content": "#",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ".",
+			"color": "#CE9178"
+		},
+		{
+			"content": "/",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$(dirname $(dirname $(realpath \"$0\")))",
+			"color": "#CE9178"
+		},
+		{
+			"content": "else",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$(dirname $(dirname $(readlink -f $0)))",
+			"color": "#CE9178"
+		},
+		{
+			"content": "fi",
+			"color": "#569CD6"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$(xcode-select -print-path)",
+			"color": "#CE9178"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$(xcrun -sdk iphoneos -find lipo)",
+			"color": "#CE9178"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " code() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\tcd $ROOT",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\ttest -d node_modules ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "||",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ./scripts/npm.sh install",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "export",
+			"color": "#569CD6"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " [[ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"$OSTYPE\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "==",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "*",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ]]",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "then",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\t\texec ./.build/electron/Electron.app/Contents/MacOS/Electron . ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "else",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\t\texec ./.build/electron/electron . ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "fi",
+			"color": "#569CD6"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "code ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#CE9178"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#608B4E"
+		},
+		{
+			"content": "if",
+			"color": "#C586C0"
+		},
+		{
+			"content": " [[ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$OSTYPE",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " == ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "* ]]; ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "then",
+			"color": "#C586C0"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "realpath",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "() { [[ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$1",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = /* ]] && ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "echo",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$1",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " || ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "echo",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$PWD",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "/",
+			"color": "#CE9178"
+		},
+		{
+			"content": "${1",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "#",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ".",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "/",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "; }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$(dirname $(dirname $(realpath \"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$0",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\")))",
+			"color": "#CE9178"
+		},
+		{
+			"content": "else",
+			"color": "#C586C0"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$(dirname $(dirname $(readlink -f ",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$0",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ")))",
+			"color": "#CE9178"
+		},
+		{
+			"content": "fi",
+			"color": "#C586C0"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$(xcode-select -print-path)",
+			"color": "#CE9178"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$(xcrun -sdk iphoneos -find lipo)",
+			"color": "#CE9178"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "code",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "cd",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$ROOT",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "test",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " -d node_modules || ./scripts/npm.sh install",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "export",
+			"color": "#569CD6"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#C586C0"
+		},
+		{
+			"content": " [[ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$OSTYPE",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " == ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "* ]]; ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "then",
+			"color": "#C586C0"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "exec",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " ./.build/electron/Electron.app/Contents/MacOS/Electron ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ".",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$@",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "else",
+			"color": "#C586C0"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "exec",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " ./.build/electron/electron ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ".",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$@",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "fi",
+			"color": "#C586C0"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "code ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$@",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"",
+			"color": "#CE9178"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#008000"
+		},
+		{
+			"content": "if",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " [[ ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$OSTYPE",
+			"color": "#001080"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " == ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "* ]]; ",
+			"color": "#000000"
+		},
+		{
+			"content": "then",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "realpath",
+			"color": "#795E26"
+		},
+		{
+			"content": "() { [[ ",
+			"color": "#000000"
+		},
+		{
+			"content": "$1",
+			"color": "#001080"
+		},
+		{
+			"content": " = /* ]] && ",
+			"color": "#000000"
+		},
+		{
+			"content": "echo",
+			"color": "#795E26"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$1",
+			"color": "#001080"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " || ",
+			"color": "#000000"
+		},
+		{
+			"content": "echo",
+			"color": "#795E26"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$PWD",
+			"color": "#001080"
+		},
+		{
+			"content": "/",
+			"color": "#A31515"
+		},
+		{
+			"content": "${1",
+			"color": "#001080"
+		},
+		{
+			"content": "#",
+			"color": "#000000"
+		},
+		{
+			"content": ".",
+			"color": "#001080"
+		},
+		{
+			"content": "/",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#001080"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "; }",
+			"color": "#000000"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#000000"
+		},
+		{
+			"content": "$(dirname $(dirname $(realpath \"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$0",
+			"color": "#001080"
+		},
+		{
+			"content": "\")))",
+			"color": "#A31515"
+		},
+		{
+			"content": "else",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#000000"
+		},
+		{
+			"content": "$(dirname $(dirname $(readlink -f ",
+			"color": "#A31515"
+		},
+		{
+			"content": "$0",
+			"color": "#001080"
+		},
+		{
+			"content": ")))",
+			"color": "#A31515"
+		},
+		{
+			"content": "fi",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#000000"
+		},
+		{
+			"content": "$(xcode-select -print-path)",
+			"color": "#A31515"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#000000"
+		},
+		{
+			"content": "$(xcrun -sdk iphoneos -find lipo)",
+			"color": "#A31515"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "code",
+			"color": "#795E26"
+		},
+		{
+			"content": "() {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "cd",
+			"color": "#795E26"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "$ROOT",
+			"color": "#001080"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "test",
+			"color": "#795E26"
+		},
+		{
+			"content": " -d node_modules || ./scripts/npm.sh install",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "export",
+			"color": "#0000FF"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " [[ ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$OSTYPE",
+			"color": "#001080"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " == ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "* ]]; ",
+			"color": "#000000"
+		},
+		{
+			"content": "then",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "exec",
+			"color": "#795E26"
+		},
+		{
+			"content": " ./.build/electron/Electron.app/Contents/MacOS/Electron ",
+			"color": "#000000"
+		},
+		{
+			"content": ".",
+			"color": "#795E26"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$@",
+			"color": "#001080"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "else",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "exec",
+			"color": "#795E26"
+		},
+		{
+			"content": " ./.build/electron/electron ",
+			"color": "#000000"
+		},
+		{
+			"content": ".",
+			"color": "#795E26"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$@",
+			"color": "#001080"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "fi",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "code ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "$@",
+			"color": "#001080"
+		},
+		{
+			"content": "\"",
+			"color": "#A31515"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "if",
+			"color": "#98676A"
+		},
+		{
+			"content": " [[ ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "OSTYPE",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " == ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "darwin",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "* ]]; ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "then",
+			"color": "#98676A"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "realpath",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "() { [[ $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = /* ]] && ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "echo",
+			"color": "#7E602C"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " || ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "echo",
+			"color": "#7E602C"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "PWD",
+			"color": "#DC3958"
+		},
+		{
+			"content": "/",
+			"color": "#889B4A"
+		},
+		{
+			"content": "${",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#DC3958"
+		},
+		{
+			"content": "#",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ".",
+			"color": "#DC3958"
+		},
+		{
+			"content": "/}\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "; }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "dirname ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "dirname ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "realpath ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "0",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\")))",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "else",
+			"color": "#98676A"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "dirname ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "dirname ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "readlink -f ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "0",
+			"color": "#DC3958"
+		},
+		{
+			"content": ")))",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "fi",
+			"color": "#98676A"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "xcode-select -print-path",
+			"color": "#889B4A"
+		},
+		{
+			"content": ")",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "$(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "xcrun -sdk iphoneos -find lipo",
+			"color": "#889B4A"
+		},
+		{
+			"content": ")",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "function",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "code",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "() {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "cd",
+			"color": "#7E602C"
+		},
+		{
+			"content": " $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "ROOT",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "test",
+			"color": "#7E602C"
+		},
+		{
+			"content": " -d node_modules || ./scripts/npm.sh install",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "export",
+			"color": "#98676A"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "if",
+			"color": "#98676A"
+		},
+		{
+			"content": " [[ ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "OSTYPE",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " == ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "darwin",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "* ]]; ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "then",
+			"color": "#98676A"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "exec",
+			"color": "#7E602C"
+		},
+		{
+			"content": " ./.build/electron/Electron.app/Contents/MacOS/Electron ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ".",
+			"color": "#7E602C"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "@",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "else",
+			"color": "#98676A"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "exec",
+			"color": "#7E602C"
+		},
+		{
+			"content": " ./.build/electron/electron ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ".",
+			"color": "#7E602C"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "@",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "fi",
+			"color": "#98676A"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "code ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "@",
+			"color": "#DC3958"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#75715E"
+		},
+		{
+			"content": "if",
+			"color": "#F92672"
+		},
+		{
+			"content": " [[ ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"$OSTYPE\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "==",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "*",
+			"color": "#F92672"
+		},
+		{
+			"content": " ]]",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ";",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "then",
+			"color": "#F92672"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "realpath",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "() { [[ $1 ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " /",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "*",
+			"color": "#F92672"
+		},
+		{
+			"content": " ]] ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "&&",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "echo",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"$1\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "||",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "echo",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"$PWD/${1",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "#",
+			"color": "#F92672"
+		},
+		{
+			"content": ".",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "/",
+			"color": "#F92672"
+		},
+		{
+			"content": "}\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ";",
+			"color": "#F92672"
+		},
+		{
+			"content": " }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$(dirname $(dirname $(realpath \"$0\")))",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "else",
+			"color": "#F92672"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$(dirname $(dirname $(readlink -f $0)))",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "fi",
+			"color": "#F92672"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$(xcode-select -print-path)",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "$(xcrun -sdk iphoneos -find lipo)",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "function",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "code",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "cd",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " $ROOT",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "test",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " -d node_modules ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "||",
+			"color": "#F92672"
+		},
+		{
+			"content": " ./scripts/npm.sh install",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "export",
+			"color": "#F92672"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "if",
+			"color": "#F92672"
+		},
+		{
+			"content": " [[ ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"$OSTYPE\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "==",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "*",
+			"color": "#F92672"
+		},
+		{
+			"content": " ]]",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ";",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "then",
+			"color": "#F92672"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "exec",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ./.build/electron/Electron.app/Contents/MacOS/Electron ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ".",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "else",
+			"color": "#F92672"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "exec",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ./.build/electron/electron ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ".",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "fi",
+			"color": "#F92672"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "code ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"$@\"",
+			"color": "#E6DB74"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "if",
+			"color": "#9872A2"
+		},
+		{
+			"content": " [[ ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$OSTYPE",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "==",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "*",
+			"color": "#676867"
+		},
+		{
+			"content": " ]]",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ";",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "then",
+			"color": "#9872A2"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "realpath",
+			"color": "#CE6700"
+		},
+		{
+			"content": "() { [[ ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$1",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " /",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "*",
+			"color": "#676867"
+		},
+		{
+			"content": " ]] ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "&&",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "echo",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$1",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "||",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "echo",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$PWD",
+			"color": "#6089B4"
+		},
+		{
+			"content": "/",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "${1",
+			"color": "#6089B4"
+		},
+		{
+			"content": "#",
+			"color": "#676867"
+		},
+		{
+			"content": ".",
+			"color": "#6089B4"
+		},
+		{
+			"content": "/",
+			"color": "#676867"
+		},
+		{
+			"content": "}",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ";",
+			"color": "#676867"
+		},
+		{
+			"content": " }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$(dirname $(dirname $(realpath \"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$0",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\")))",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "else",
+			"color": "#9872A2"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$(dirname $(dirname $(readlink -f ",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$0",
+			"color": "#6089B4"
+		},
+		{
+			"content": ")))",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "fi",
+			"color": "#9872A2"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$(xcode-select -print-path)",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$(xcrun -sdk iphoneos -find lipo)",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "function",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "code",
+			"color": "#CE6700"
+		},
+		{
+			"content": "() {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "cd",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$ROOT",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "test",
+			"color": "#9872A2"
+		},
+		{
+			"content": " -d node_modules ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "||",
+			"color": "#676867"
+		},
+		{
+			"content": " ./scripts/npm.sh install",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "export",
+			"color": "#9872A2"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "if",
+			"color": "#9872A2"
+		},
+		{
+			"content": " [[ ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$OSTYPE",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "==",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "*",
+			"color": "#676867"
+		},
+		{
+			"content": " ]]",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ";",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "then",
+			"color": "#9872A2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "exec",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ./.build/electron/Electron.app/Contents/MacOS/Electron ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ".",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$@",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "else",
+			"color": "#9872A2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "exec",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ./.build/electron/electron ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ".",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$@",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "fi",
+			"color": "#9872A2"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "code ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$@",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "if",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "[[",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"$",
+			"color": "#777777"
+		},
+		{
+			"content": "OSTYPE",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "==",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "darwin",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "*",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "]];",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "then",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "realpath",
+			"color": "#AA3731"
+		},
+		{
+			"content": "()",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "[[",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "1",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " /",
+			"color": "#333333"
+		},
+		{
+			"content": "*",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "]]",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "&&",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "echo",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"$",
+			"color": "#777777"
+		},
+		{
+			"content": "1",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "||",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "echo",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"$",
+			"color": "#777777"
+		},
+		{
+			"content": "PWD",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "/",
+			"color": "#448C27"
+		},
+		{
+			"content": "${",
+			"color": "#777777"
+		},
+		{
+			"content": "1",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "#",
+			"color": "#777777"
+		},
+		{
+			"content": ".",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "/}\"",
+			"color": "#777777"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#333333"
+		},
+		{
+			"content": "$(",
+			"color": "#777777"
+		},
+		{
+			"content": "dirname ",
+			"color": "#448C27"
+		},
+		{
+			"content": "$(",
+			"color": "#777777"
+		},
+		{
+			"content": "dirname ",
+			"color": "#448C27"
+		},
+		{
+			"content": "$(",
+			"color": "#777777"
+		},
+		{
+			"content": "realpath ",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"$",
+			"color": "#777777"
+		},
+		{
+			"content": "0",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\")))",
+			"color": "#777777"
+		},
+		{
+			"content": "else",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#333333"
+		},
+		{
+			"content": "$(",
+			"color": "#777777"
+		},
+		{
+			"content": "dirname ",
+			"color": "#448C27"
+		},
+		{
+			"content": "$(",
+			"color": "#777777"
+		},
+		{
+			"content": "dirname ",
+			"color": "#448C27"
+		},
+		{
+			"content": "$(",
+			"color": "#777777"
+		},
+		{
+			"content": "readlink -f ",
+			"color": "#448C27"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "0",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")))",
+			"color": "#777777"
+		},
+		{
+			"content": "fi",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#333333"
+		},
+		{
+			"content": "$(",
+			"color": "#777777"
+		},
+		{
+			"content": "xcode-select -print-path",
+			"color": "#448C27"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#333333"
+		},
+		{
+			"content": "$(",
+			"color": "#777777"
+		},
+		{
+			"content": "xcrun -sdk iphoneos -find lipo",
+			"color": "#448C27"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "function",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "code",
+			"color": "#AA3731"
+		},
+		{
+			"content": "()",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "cd",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "ROOT",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\t",
+			"color": "#777777"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "test",
+			"color": "#AA3731"
+		},
+		{
+			"content": " -d node_modules ",
+			"color": "#333333"
+		},
+		{
+			"content": "||",
+			"color": "#777777"
+		},
+		{
+			"content": " ./scripts/npm.sh install",
+			"color": "#333333"
+		},
+		{
+			"content": "\t",
+			"color": "#777777"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "export",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#333333"
+		},
+		{
+			"content": "\t",
+			"color": "#777777"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "if",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "[[",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"$",
+			"color": "#777777"
+		},
+		{
+			"content": "OSTYPE",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "==",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "darwin",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "*",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "]];",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "then",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "exec",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ./.build/electron/Electron.app/Contents/MacOS/Electron ",
+			"color": "#333333"
+		},
+		{
+			"content": ".",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"$",
+			"color": "#777777"
+		},
+		{
+			"content": "@",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "else",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "exec",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ./.build/electron/electron ",
+			"color": "#333333"
+		},
+		{
+			"content": ".",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"$",
+			"color": "#777777"
+		},
+		{
+			"content": "@",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "fi",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "code ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"$",
+			"color": "#777777"
+		},
+		{
+			"content": "@",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		}
+	],
+	"red": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "if",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " [[ ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$OSTYPE",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "==",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "*",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ]]",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ";",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "then",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "realpath",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "() { [[ ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$1",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " /",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "*",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ]] ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "&&",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "echo",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$1",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "||",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "echo",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$PWD",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "/",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "${1",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "#",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ".",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "/",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "}",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ";",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$(dirname $(dirname $(realpath \"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$0",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\")))",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "else",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$(dirname $(dirname $(readlink -f ",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$0",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": ")))",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "fi",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$(xcode-select -print-path)",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$(xcrun -sdk iphoneos -find lipo)",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "function",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "code",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "cd",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$ROOT",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "test",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " -d node_modules ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "||",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ./scripts/npm.sh install",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "export",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "if",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " [[ ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$OSTYPE",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "==",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "*",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ]]",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ";",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "then",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "exec",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ./.build/electron/Electron.app/Contents/MacOS/Electron ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ".",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$@",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "else",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "exec",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ./.build/electron/electron ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ".",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$@",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "fi",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "code ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$@",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#657B83"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " [[ ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "OSTYPE",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "==",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "*",
+			"color": "#859900"
+		},
+		{
+			"content": " ]]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "then",
+			"color": "#859900"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "realpath",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() { [[ ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "1",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " /",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "*",
+			"color": "#859900"
+		},
+		{
+			"content": " ]] ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "&&",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "echo",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "1",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "||",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "echo",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "PWD",
+			"color": "#268BD2"
+		},
+		{
+			"content": "/",
+			"color": "#2AA198"
+		},
+		{
+			"content": "${",
+			"color": "#859900"
+		},
+		{
+			"content": "1",
+			"color": "#268BD2"
+		},
+		{
+			"content": "#",
+			"color": "#859900"
+		},
+		{
+			"content": ".",
+			"color": "#268BD2"
+		},
+		{
+			"content": "/}",
+			"color": "#859900"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": " }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$(dirname $(dirname $(realpath \"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "0",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\")))",
+			"color": "#2AA198"
+		},
+		{
+			"content": "else",
+			"color": "#859900"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$(dirname $(dirname $(readlink -f ",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "0",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")))",
+			"color": "#2AA198"
+		},
+		{
+			"content": "fi",
+			"color": "#859900"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$(xcode-select -print-path)",
+			"color": "#2AA198"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$(xcrun -sdk iphoneos -find lipo)",
+			"color": "#2AA198"
+		},
+		{
+			"content": "function",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "code",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "cd",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "ROOT",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "test",
+			"color": "#268BD2"
+		},
+		{
+			"content": " -d node_modules ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "||",
+			"color": "#859900"
+		},
+		{
+			"content": " ./scripts/npm.sh install",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "export",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " [[ ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "OSTYPE",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "==",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "*",
+			"color": "#859900"
+		},
+		{
+			"content": " ]]",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "then",
+			"color": "#859900"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "exec",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ./.build/electron/Electron.app/Contents/MacOS/Electron ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ".",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "@",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "else",
+			"color": "#859900"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "exec",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ./.build/electron/electron ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ".",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "@",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "fi",
+			"color": "#859900"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "code ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "@",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " [[ ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "OSTYPE",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "==",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "*",
+			"color": "#859900"
+		},
+		{
+			"content": " ]]",
+			"color": "#586E75"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "then",
+			"color": "#859900"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "realpath",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() { [[ ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "1",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " /",
+			"color": "#586E75"
+		},
+		{
+			"content": "*",
+			"color": "#859900"
+		},
+		{
+			"content": " ]] ",
+			"color": "#586E75"
+		},
+		{
+			"content": "&&",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "echo",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "1",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "||",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "echo",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "PWD",
+			"color": "#268BD2"
+		},
+		{
+			"content": "/",
+			"color": "#2AA198"
+		},
+		{
+			"content": "${",
+			"color": "#859900"
+		},
+		{
+			"content": "1",
+			"color": "#268BD2"
+		},
+		{
+			"content": "#",
+			"color": "#859900"
+		},
+		{
+			"content": ".",
+			"color": "#268BD2"
+		},
+		{
+			"content": "/}",
+			"color": "#859900"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": " }",
+			"color": "#586E75"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#586E75"
+		},
+		{
+			"content": "$(dirname $(dirname $(realpath \"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "0",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\")))",
+			"color": "#2AA198"
+		},
+		{
+			"content": "else",
+			"color": "#859900"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#586E75"
+		},
+		{
+			"content": "$(dirname $(dirname $(readlink -f ",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "0",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")))",
+			"color": "#2AA198"
+		},
+		{
+			"content": "fi",
+			"color": "#859900"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#586E75"
+		},
+		{
+			"content": "$(xcode-select -print-path)",
+			"color": "#2AA198"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#586E75"
+		},
+		{
+			"content": "$(xcrun -sdk iphoneos -find lipo)",
+			"color": "#2AA198"
+		},
+		{
+			"content": "function",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "code",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "cd",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "ROOT",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "test",
+			"color": "#268BD2"
+		},
+		{
+			"content": " -d node_modules ",
+			"color": "#586E75"
+		},
+		{
+			"content": "||",
+			"color": "#859900"
+		},
+		{
+			"content": " ./scripts/npm.sh install",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "export",
+			"color": "#073642"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " [[ ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "OSTYPE",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "==",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "*",
+			"color": "#859900"
+		},
+		{
+			"content": " ]]",
+			"color": "#586E75"
+		},
+		{
+			"content": ";",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "then",
+			"color": "#859900"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "exec",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ./.build/electron/Electron.app/Contents/MacOS/Electron ",
+			"color": "#586E75"
+		},
+		{
+			"content": ".",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "@",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "else",
+			"color": "#859900"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "exec",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ./.build/electron/electron ",
+			"color": "#586E75"
+		},
+		{
+			"content": ".",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "@",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "fi",
+			"color": "#859900"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		},
+		{
+			"content": "code ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "@",
+			"color": "#268BD2"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "#!/usr/bin/env bash",
+			"color": "#7285B7"
+		},
+		{
+			"content": "if",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " [[ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$OSTYPE",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "==",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "*",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ]]",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "then",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "realpath",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "() { [[ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$1",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " /",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "*",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ]] ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "&&",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "echo",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$1",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "||",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "echo",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$PWD",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "/",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "${1",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "#",
+			"color": "#99FFFF"
+		},
+		{
+			"content": ".",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "/",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ";",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$(dirname $(dirname $(realpath \"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$0",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\")))",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "else",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "\tROOT=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$(dirname $(dirname $(readlink -f ",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$0",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ")))",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "fi",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "DEVELOPER=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$(xcode-select -print-path)",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "LIPO=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$(xcrun -sdk iphoneos -find lipo)",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "function",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "code",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "cd",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$ROOT",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "# Node modules",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "test",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " -d node_modules ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "||",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ./scripts/npm.sh install",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "# Configuration",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "export",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "# Launch Code",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " [[ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$OSTYPE",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "==",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"darwin\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "*",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ]]",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ";",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "then",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "exec",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ./.build/electron/Electron.app/Contents/MacOS/Electron ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ".",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$@",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "else",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "exec",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ./.build/electron/electron ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ".",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$@",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "fi",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "code ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$@",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		}
+	]
+}

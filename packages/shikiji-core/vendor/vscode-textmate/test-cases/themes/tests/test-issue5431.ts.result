@@ -1,0 +1,1854 @@
+{
+	"abyss": [
+		{
+			"content": "function",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "foo",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "isAll",
+			"color": "#2277FF"
+		},
+		{
+			"content": ", ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "startTime",
+			"color": "#2277FF"
+		},
+		{
+			"content": ", ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "endTime",
+			"color": "#2277FF"
+		},
+		{
+			"content": ") {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "const",
+			"color": "#9966B8"
+		},
+		{
+			"content": " timeRange ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " isAll ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "?",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "'所有时间'",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": ":",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "`${startTime} - ${endTime}`",
+			"color": "#22AA44"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "return",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "true",
+			"color": "#F280D0"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " foo(isAll, startTime, endTime) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "const",
+			"color": "#569CD6"
+		},
+		{
+			"content": " timeRange = isAll ? ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'所有时间'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " : ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "`",
+			"color": "#CE9178"
+		},
+		{
+			"content": "${",
+			"color": "#569CD6"
+		},
+		{
+			"content": "startTime",
+			"color": "#CE9178"
+		},
+		{
+			"content": "}",
+			"color": "#569CD6"
+		},
+		{
+			"content": " - ",
+			"color": "#CE9178"
+		},
+		{
+			"content": "${",
+			"color": "#569CD6"
+		},
+		{
+			"content": "endTime",
+			"color": "#CE9178"
+		},
+		{
+			"content": "}",
+			"color": "#569CD6"
+		},
+		{
+			"content": "`",
+			"color": "#CE9178"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " foo(isAll, startTime, endTime) {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "const",
+			"color": "#0000FF"
+		},
+		{
+			"content": " timeRange = isAll ? ",
+			"color": "#000000"
+		},
+		{
+			"content": "'所有时间'",
+			"color": "#A31515"
+		},
+		{
+			"content": " : ",
+			"color": "#000000"
+		},
+		{
+			"content": "`",
+			"color": "#A31515"
+		},
+		{
+			"content": "${",
+			"color": "#0000FF"
+		},
+		{
+			"content": "startTime",
+			"color": "#A31515"
+		},
+		{
+			"content": "}",
+			"color": "#0000FF"
+		},
+		{
+			"content": " - ",
+			"color": "#A31515"
+		},
+		{
+			"content": "${",
+			"color": "#0000FF"
+		},
+		{
+			"content": "endTime",
+			"color": "#A31515"
+		},
+		{
+			"content": "}",
+			"color": "#0000FF"
+		},
+		{
+			"content": "`",
+			"color": "#A31515"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "true",
+			"color": "#0000FF"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " foo(isAll, startTime, endTime) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "const",
+			"color": "#569CD6"
+		},
+		{
+			"content": " timeRange ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " isAll ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "?",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'所有时间'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "`",
+			"color": "#CE9178"
+		},
+		{
+			"content": "${",
+			"color": "#569CD6"
+		},
+		{
+			"content": "startTime",
+			"color": "#CE9178"
+		},
+		{
+			"content": "}",
+			"color": "#569CD6"
+		},
+		{
+			"content": " - ",
+			"color": "#CE9178"
+		},
+		{
+			"content": "${",
+			"color": "#569CD6"
+		},
+		{
+			"content": "endTime",
+			"color": "#CE9178"
+		},
+		{
+			"content": "}",
+			"color": "#569CD6"
+		},
+		{
+			"content": "`",
+			"color": "#CE9178"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "foo",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "isAll",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "startTime",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "endTime",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ") {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "const",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "timeRange",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "isAll",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ? ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "'所有时间'",
+			"color": "#CE9178"
+		},
+		{
+			"content": " : ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "`",
+			"color": "#CE9178"
+		},
+		{
+			"content": "${",
+			"color": "#569CD6"
+		},
+		{
+			"content": "startTime",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}",
+			"color": "#569CD6"
+		},
+		{
+			"content": " - ",
+			"color": "#CE9178"
+		},
+		{
+			"content": "${",
+			"color": "#569CD6"
+		},
+		{
+			"content": "endTime",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}",
+			"color": "#569CD6"
+		},
+		{
+			"content": "`",
+			"color": "#CE9178"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "foo",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "isAll",
+			"color": "#001080"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "startTime",
+			"color": "#001080"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "endTime",
+			"color": "#001080"
+		},
+		{
+			"content": ") {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "const",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "timeRange",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "isAll",
+			"color": "#001080"
+		},
+		{
+			"content": " ? ",
+			"color": "#000000"
+		},
+		{
+			"content": "'所有时间'",
+			"color": "#A31515"
+		},
+		{
+			"content": " : ",
+			"color": "#000000"
+		},
+		{
+			"content": "`",
+			"color": "#A31515"
+		},
+		{
+			"content": "${",
+			"color": "#0000FF"
+		},
+		{
+			"content": "startTime",
+			"color": "#001080"
+		},
+		{
+			"content": "}",
+			"color": "#0000FF"
+		},
+		{
+			"content": " - ",
+			"color": "#A31515"
+		},
+		{
+			"content": "${",
+			"color": "#0000FF"
+		},
+		{
+			"content": "endTime",
+			"color": "#001080"
+		},
+		{
+			"content": "}",
+			"color": "#0000FF"
+		},
+		{
+			"content": "`",
+			"color": "#A31515"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "true",
+			"color": "#0000FF"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "function",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "foo",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "isAll",
+			"color": "#DC3958"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "startTime",
+			"color": "#DC3958"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "endTime",
+			"color": "#DC3958"
+		},
+		{
+			"content": ") {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "const",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "timeRange",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "isAll",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ? ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "所有时间",
+			"color": "#889B4A"
+		},
+		{
+			"content": "'",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " : ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "`",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "${",
+			"color": "#889B4A"
+		},
+		{
+			"content": "startTime",
+			"color": "#DC3958"
+		},
+		{
+			"content": "} - ${",
+			"color": "#889B4A"
+		},
+		{
+			"content": "endTime",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}",
+			"color": "#889B4A"
+		},
+		{
+			"content": "`",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "return",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "true",
+			"color": "#F79A32"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "function",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "foo",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "isAll",
+			"color": "#FD971F"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "startTime",
+			"color": "#FD971F"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "endTime",
+			"color": "#FD971F"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "const",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " timeRange ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " isAll ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "?",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "'所有时间'",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ":",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "`${startTime} - ${endTime}`",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "return",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "true",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "function",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "foo",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "isAll",
+			"color": "#6089B4"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "startTime",
+			"color": "#6089B4"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "endTime",
+			"color": "#6089B4"
+		},
+		{
+			"content": ") {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "const",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "timeRange",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "isAll",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "?",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "'所有时间'",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ":",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "`${",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "startTime",
+			"color": "#6089B4"
+		},
+		{
+			"content": "} - ${",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "endTime",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}`",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "return",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "true",
+			"color": "#FF0080"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "function",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "foo",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "isAll",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "startTime",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "endTime",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "const",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "timeRange",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "isAll",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "?",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": "所有时间",
+			"color": "#448C27"
+		},
+		{
+			"content": "'",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "`${",
+			"color": "#777777"
+		},
+		{
+			"content": "startTime",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": " - ",
+			"color": "#448C27"
+		},
+		{
+			"content": "${",
+			"color": "#777777"
+		},
+		{
+			"content": "endTime",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}`",
+			"color": "#777777"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "return",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "true",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		}
+	],
+	"red": [
+		{
+			"content": "function",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "foo",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "isAll",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "startTime",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "endTime",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "const",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "timeRange",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "isAll",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "?",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "'所有时间'",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "`${",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "startTime",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "} - ${",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "endTime",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "}`",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "return",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "true",
+			"color": "#994646FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "function",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "foo",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(isAll, startTime, endTime) {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "const",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "timeRange",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "isAll",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "?",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "'所有时间'",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ":",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "`${",
+			"color": "#2AA198"
+		},
+		{
+			"content": "startTime",
+			"color": "#268BD2"
+		},
+		{
+			"content": "} - ${",
+			"color": "#2AA198"
+		},
+		{
+			"content": "endTime",
+			"color": "#268BD2"
+		},
+		{
+			"content": "}`",
+			"color": "#2AA198"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "true",
+			"color": "#B58900"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "function",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "foo",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(isAll, startTime, endTime) {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "const",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "timeRange",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "isAll",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "?",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "'所有时间'",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": ":",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "`${",
+			"color": "#2AA198"
+		},
+		{
+			"content": "startTime",
+			"color": "#268BD2"
+		},
+		{
+			"content": "} - ${",
+			"color": "#2AA198"
+		},
+		{
+			"content": "endTime",
+			"color": "#268BD2"
+		},
+		{
+			"content": "}`",
+			"color": "#2AA198"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "true",
+			"color": "#B58900"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "function",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "foo",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "isAll",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "startTime",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "endTime",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "const",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "timeRange",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "isAll",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "?",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "'所有时间'",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "`${",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "startTime",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "} - ${",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "endTime",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "}`",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "true",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	]
+}

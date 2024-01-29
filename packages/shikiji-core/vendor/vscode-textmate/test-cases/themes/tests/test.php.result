@@ -1,0 +1,10450 @@
+{
+	"abyss": [
+		{
+			"content": "<",
+			"color": "#6688CC"
+		},
+		{
+			"content": "html",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#6688CC"
+		},
+		{
+			"content": "head",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t<",
+			"color": "#6688CC"
+		},
+		{
+			"content": "title",
+			"color": "#225588"
+		},
+		{
+			"content": ">Example page</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "title",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "head",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#6688CC"
+		},
+		{
+			"content": "body",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<?php",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "function",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "functionName",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(){",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#223355"
+		},
+		{
+			"content": "\t}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#223355"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#223355"
+		},
+		{
+			"content": "\t*/",
+			"color": "#223355"
+		},
+		{
+			"content": "\t$cards ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "array",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"ah\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"ac\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"ad\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"as\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ",",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"2h\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"2c\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"2d\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"2s\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "srand",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "time",
+			"color": "#9966B8"
+		},
+		{
+			"content": "());",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#225588"
+		},
+		{
+			"content": "($i ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "0",
+			"color": "#F280D0"
+		},
+		{
+			"content": "; $i ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "52",
+			"color": "#F280D0"
+		},
+		{
+			"content": "; $i",
+			"color": "#6688CC"
+		},
+		{
+			"content": "++",
+			"color": "#225588"
+		},
+		{
+			"content": ") {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t$count ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "count",
+			"color": "#9966B8"
+		},
+		{
+			"content": "($cards);",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t$random ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "rand",
+			"color": "#9966B8"
+		},
+		{
+			"content": "()",
+			"color": "#6688CC"
+		},
+		{
+			"content": "%",
+			"color": "#225588"
+		},
+		{
+			"content": "$count);",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "if",
+			"color": "#225588"
+		},
+		{
+			"content": "($cards[$random] ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "==",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ") {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t\t$i",
+			"color": "#6688CC"
+		},
+		{
+			"content": "--",
+			"color": "#225588"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t} ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "else",
+			"color": "#225588"
+		},
+		{
+			"content": " {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t\t$deck[] ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " $cards[$random];",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t\t$cards[$random] ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "srand",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "time",
+			"color": "#9966B8"
+		},
+		{
+			"content": "());",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t$starting_point ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "rand",
+			"color": "#9966B8"
+		},
+		{
+			"content": "()",
+			"color": "#6688CC"
+		},
+		{
+			"content": "%",
+			"color": "#225588"
+		},
+		{
+			"content": "51",
+			"color": "#F280D0"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "print",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Starting point for cut cards is: $starting_point<p>\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#223355"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#225588"
+		},
+		{
+			"content": " ($index ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "0",
+			"color": "#F280D0"
+		},
+		{
+			"content": "; $index ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "52",
+			"color": "#F280D0"
+		},
+		{
+			"content": "; $index",
+			"color": "#6688CC"
+		},
+		{
+			"content": "++",
+			"color": "#225588"
+		},
+		{
+			"content": ") {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "if",
+			"color": "#225588"
+		},
+		{
+			"content": " ($starting_point ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "==",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "52",
+			"color": "#F280D0"
+		},
+		{
+			"content": ") { $starting_point ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "0",
+			"color": "#F280D0"
+		},
+		{
+			"content": "; }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "print",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Uncut Point: <strong>$deck[$index]</strong> \"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t$starting_point",
+			"color": "#6688CC"
+		},
+		{
+			"content": "++",
+			"color": "#225588"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "?",
+			"color": "#6688CC"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "body",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "html",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "html",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "head",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Example page",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "head",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "body",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<?php",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " functionName(){",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t*/",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t$cards = array(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"ah\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"ac\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"ad\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"as\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"2h\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"2c\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"2d\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"2s\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\tsrand(time());",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": "($i = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; $i < ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "52",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; $i++) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t$count = count($cards);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t$random = (rand()%$count);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": "($cards[$random] == ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ") {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t\t$i--;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t} ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "else",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t\t$deck[] = $cards[$random];",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t\t$cards[$random] = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\tsrand(time());",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t$starting_point = (rand()%",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "51",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\tprint(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Starting point for cut cards is: $starting_point<p>\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ($index = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; $index < ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "52",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; $index++) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ($starting_point == ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "52",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ") { $starting_point = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\tprint(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Uncut Point: <strong>$deck[$index]</strong> \"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t$starting_point++;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "?",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#569CD6"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "body",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "html",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "<html>",
+			"color": "#800000"
+		},
+		{
+			"content": "<head>",
+			"color": "#800000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "<title>",
+			"color": "#800000"
+		},
+		{
+			"content": "Example page",
+			"color": "#000000"
+		},
+		{
+			"content": "</title>",
+			"color": "#800000"
+		},
+		{
+			"content": "</head>",
+			"color": "#800000"
+		},
+		{
+			"content": "<body>",
+			"color": "#800000"
+		},
+		{
+			"content": "<?php",
+			"color": "#800000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " functionName(){",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#008000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#008000"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#008000"
+		},
+		{
+			"content": "\t*/",
+			"color": "#008000"
+		},
+		{
+			"content": "\t$cards = array(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"ah\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"ac\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"ad\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"as\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"2h\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"2c\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"2d\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"2s\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "\tsrand(time());",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": "($i = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": "; $i < ",
+			"color": "#000000"
+		},
+		{
+			"content": "52",
+			"color": "#09885A"
+		},
+		{
+			"content": "; $i++) {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t$count = count($cards);",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t$random = (rand()%$count);",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#0000FF"
+		},
+		{
+			"content": "($cards[$random] == ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ") {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t\t$i--;",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t} ",
+			"color": "#000000"
+		},
+		{
+			"content": "else",
+			"color": "#0000FF"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t\t$deck[] = $cards[$random];",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t\t$cards[$random] = ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\tsrand(time());",
+			"color": "#000000"
+		},
+		{
+			"content": "\t$starting_point = (rand()%",
+			"color": "#000000"
+		},
+		{
+			"content": "51",
+			"color": "#09885A"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "\tprint(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Starting point for cut cards is: $starting_point<p>\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ($index = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": "; $index < ",
+			"color": "#000000"
+		},
+		{
+			"content": "52",
+			"color": "#09885A"
+		},
+		{
+			"content": "; $index++) {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ($starting_point == ",
+			"color": "#000000"
+		},
+		{
+			"content": "52",
+			"color": "#09885A"
+		},
+		{
+			"content": ") { $starting_point = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": "; }",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\tprint(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Uncut Point: <strong>$deck[$index]</strong> \"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t$starting_point++;",
+			"color": "#000000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "?",
+			"color": "#800000"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "</body>",
+			"color": "#800000"
+		},
+		{
+			"content": "</html>",
+			"color": "#800000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "html",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "head",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Example page",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "head",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "body",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<?php",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " functionName(){",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t*/",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t$cards ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " array(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"ah\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"ac\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"ad\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"as\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"2h\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"2c\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"2d\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"2s\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\tsrand(time());",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": "($i ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; $i ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "52",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; $i",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "++",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t$count ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " count($cards);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t$random ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " (rand()",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "%",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$count);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": "($cards[$random] ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "==",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t\t$i",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "--",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t} ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "else",
+			"color": "#569CD6"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t\t$deck[] ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " $cards[$random];",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t\t$cards[$random] ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\tsrand(time());",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t$starting_point ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " (rand()",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "%",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "51",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\tprint(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Starting point for cut cards is: $starting_point<p>\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ($index ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; $index ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "52",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; $index",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "++",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ($starting_point ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "==",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "52",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ") { $starting_point ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\tprint(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Uncut Point: <strong>$deck[$index]</strong> \"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t$starting_point",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "++",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "?",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ">",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "body",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "html",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "html",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "head",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Example page",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "head",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "body",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<?php",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "function",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "functionName",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(){",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t*/",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$cards",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "array",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"ah\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"ac\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"ad\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"as\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"2h\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"2c\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"2d\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"2s\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "srand",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "time",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "());",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#C586C0"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$i",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$i",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " < ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "52",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$i",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "++) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$count",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "count",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$cards",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$random",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "rand",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "()%",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$count",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#C586C0"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$cards",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "[",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$random",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "] == ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ") {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$i",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "--;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t} ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "else",
+			"color": "#C586C0"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$deck",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "[] = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$cards",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "[",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$random",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "];",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$cards",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "[",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$random",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "] = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "srand",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "time",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "());",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "rand",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "()%",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "51",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "print",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Starting point for cut cards is: ",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "<p>\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$index",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$index",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " < ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "52",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$index",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "++) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " == ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "52",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ") { ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "print",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Uncut Point: <strong>",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$deck",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "[",
+			"color": "#CE9178"
+		},
+		{
+			"content": "$index",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "]</strong> \"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "++;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "?",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#569CD6"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "body",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "html",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "<html>",
+			"color": "#800000"
+		},
+		{
+			"content": "<head>",
+			"color": "#800000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "<title>",
+			"color": "#800000"
+		},
+		{
+			"content": "Example page",
+			"color": "#000000"
+		},
+		{
+			"content": "</title>",
+			"color": "#800000"
+		},
+		{
+			"content": "</head>",
+			"color": "#800000"
+		},
+		{
+			"content": "<body>",
+			"color": "#800000"
+		},
+		{
+			"content": "<?php",
+			"color": "#800000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "function",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "functionName",
+			"color": "#795E26"
+		},
+		{
+			"content": "(){",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#008000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#008000"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#008000"
+		},
+		{
+			"content": "\t*/",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "$cards",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "array",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"ah\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"ac\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"ad\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"as\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"2h\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"2c\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"2d\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"2s\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "srand",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "time",
+			"color": "#795E26"
+		},
+		{
+			"content": "());",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "$i",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": "; ",
+			"color": "#000000"
+		},
+		{
+			"content": "$i",
+			"color": "#001080"
+		},
+		{
+			"content": " < ",
+			"color": "#000000"
+		},
+		{
+			"content": "52",
+			"color": "#09885A"
+		},
+		{
+			"content": "; ",
+			"color": "#000000"
+		},
+		{
+			"content": "$i",
+			"color": "#001080"
+		},
+		{
+			"content": "++) {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "$count",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "count",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "$cards",
+			"color": "#001080"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "$random",
+			"color": "#001080"
+		},
+		{
+			"content": " = (",
+			"color": "#000000"
+		},
+		{
+			"content": "rand",
+			"color": "#795E26"
+		},
+		{
+			"content": "()%",
+			"color": "#000000"
+		},
+		{
+			"content": "$count",
+			"color": "#001080"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "$cards",
+			"color": "#001080"
+		},
+		{
+			"content": "[",
+			"color": "#000000"
+		},
+		{
+			"content": "$random",
+			"color": "#001080"
+		},
+		{
+			"content": "] == ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ") {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "$i",
+			"color": "#001080"
+		},
+		{
+			"content": "--;",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t} ",
+			"color": "#000000"
+		},
+		{
+			"content": "else",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "$deck",
+			"color": "#001080"
+		},
+		{
+			"content": "[] = ",
+			"color": "#000000"
+		},
+		{
+			"content": "$cards",
+			"color": "#001080"
+		},
+		{
+			"content": "[",
+			"color": "#000000"
+		},
+		{
+			"content": "$random",
+			"color": "#001080"
+		},
+		{
+			"content": "];",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "$cards",
+			"color": "#001080"
+		},
+		{
+			"content": "[",
+			"color": "#000000"
+		},
+		{
+			"content": "$random",
+			"color": "#001080"
+		},
+		{
+			"content": "] = ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "srand",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "time",
+			"color": "#795E26"
+		},
+		{
+			"content": "());",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#001080"
+		},
+		{
+			"content": " = (",
+			"color": "#000000"
+		},
+		{
+			"content": "rand",
+			"color": "#795E26"
+		},
+		{
+			"content": "()%",
+			"color": "#000000"
+		},
+		{
+			"content": "51",
+			"color": "#09885A"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "print",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Starting point for cut cards is: ",
+			"color": "#A31515"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#001080"
+		},
+		{
+			"content": "<p>\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "$index",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": "; ",
+			"color": "#000000"
+		},
+		{
+			"content": "$index",
+			"color": "#001080"
+		},
+		{
+			"content": " < ",
+			"color": "#000000"
+		},
+		{
+			"content": "52",
+			"color": "#09885A"
+		},
+		{
+			"content": "; ",
+			"color": "#000000"
+		},
+		{
+			"content": "$index",
+			"color": "#001080"
+		},
+		{
+			"content": "++) {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#001080"
+		},
+		{
+			"content": " == ",
+			"color": "#000000"
+		},
+		{
+			"content": "52",
+			"color": "#09885A"
+		},
+		{
+			"content": ") { ",
+			"color": "#000000"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": "; }",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "print",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Uncut Point: <strong>",
+			"color": "#A31515"
+		},
+		{
+			"content": "$deck",
+			"color": "#001080"
+		},
+		{
+			"content": "[",
+			"color": "#A31515"
+		},
+		{
+			"content": "$index",
+			"color": "#001080"
+		},
+		{
+			"content": "]</strong> \"",
+			"color": "#A31515"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#001080"
+		},
+		{
+			"content": "++;",
+			"color": "#000000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "?",
+			"color": "#800000"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "</body>",
+			"color": "#800000"
+		},
+		{
+			"content": "</html>",
+			"color": "#800000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "html",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "head",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "title",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">Example page</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "title",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "head",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "body",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "<?php",
+			"color": "#18401E"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "function",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "functionName",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(){",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t*/",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "cards",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "array",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "ah",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "ac",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "ad",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "as",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ",",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "2h",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "2c",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "2d",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "2s",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "srand",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "time",
+			"color": "#7E602C"
+		},
+		{
+			"content": "());",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#98676A"
+		},
+		{
+			"content": "($",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "i",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "0",
+			"color": "#F79A32"
+		},
+		{
+			"content": "; $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "i",
+			"color": "#DC3958"
+		},
+		{
+			"content": " < ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "52",
+			"color": "#F79A32"
+		},
+		{
+			"content": "; $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "i",
+			"color": "#DC3958"
+		},
+		{
+			"content": "++) {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "count",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "count",
+			"color": "#7E602C"
+		},
+		{
+			"content": "($",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "cards",
+			"color": "#DC3958"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "random",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = (",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "rand",
+			"color": "#7E602C"
+		},
+		{
+			"content": "()%$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "count",
+			"color": "#DC3958"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "if",
+			"color": "#98676A"
+		},
+		{
+			"content": "($",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "cards",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "random",
+			"color": "#DC3958"
+		},
+		{
+			"content": "] == ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ") {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t\t$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "i",
+			"color": "#DC3958"
+		},
+		{
+			"content": "--;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t} ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "else",
+			"color": "#98676A"
+		},
+		{
+			"content": " {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t\t$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "deck",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[] = $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "cards",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "random",
+			"color": "#DC3958"
+		},
+		{
+			"content": "];",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t\t$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "cards",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "random",
+			"color": "#DC3958"
+		},
+		{
+			"content": "] = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "srand",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "time",
+			"color": "#7E602C"
+		},
+		{
+			"content": "());",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "starting_point",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = (",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "rand",
+			"color": "#7E602C"
+		},
+		{
+			"content": "()%",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "51",
+			"color": "#F79A32"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "print",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Starting point for cut cards is: ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "starting_point",
+			"color": "#DC3958"
+		},
+		{
+			"content": "<p>",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#98676A"
+		},
+		{
+			"content": " ($",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "index",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "0",
+			"color": "#F79A32"
+		},
+		{
+			"content": "; $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "index",
+			"color": "#DC3958"
+		},
+		{
+			"content": " < ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "52",
+			"color": "#F79A32"
+		},
+		{
+			"content": "; $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "index",
+			"color": "#DC3958"
+		},
+		{
+			"content": "++) {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "if",
+			"color": "#98676A"
+		},
+		{
+			"content": " ($",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "starting_point",
+			"color": "#DC3958"
+		},
+		{
+			"content": " == ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "52",
+			"color": "#F79A32"
+		},
+		{
+			"content": ") { $",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "starting_point",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "0",
+			"color": "#F79A32"
+		},
+		{
+			"content": "; }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "print",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Uncut Point: <strong>",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "deck",
+			"color": "#DC3958"
+		},
+		{
+			"content": "[",
+			"color": "#889B4A"
+		},
+		{
+			"content": "$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "index",
+			"color": "#DC3958"
+		},
+		{
+			"content": "]</strong> ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t$",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "starting_point",
+			"color": "#DC3958"
+		},
+		{
+			"content": "++;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "?",
+			"color": "#18401E"
+		},
+		{
+			"content": ">",
+			"color": "#18401E"
+		},
+		{
+			"content": "</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "body",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "html",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "<",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "html",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "head",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t<",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "title",
+			"color": "#F92672"
+		},
+		{
+			"content": ">Example page</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "title",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "head",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "body",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<?php",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "function",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "functionName",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(){",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#75715E"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t*/",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t$cards ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "array",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"ah\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"ac\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"ad\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"as\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"2h\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"2c\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"2d\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"2s\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "srand",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "time",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "());",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#F92672"
+		},
+		{
+			"content": "($i ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "0",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "; $i ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "52",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "; $i",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "++",
+			"color": "#F92672"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t$count ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "count",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "($cards);",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t$random ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "rand",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "()",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "%",
+			"color": "#F92672"
+		},
+		{
+			"content": "$count);",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "if",
+			"color": "#F92672"
+		},
+		{
+			"content": "($cards[$random] ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "==",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t\t$i",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "--",
+			"color": "#F92672"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t} ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "else",
+			"color": "#F92672"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t\t$deck[] ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " $cards[$random];",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t\t$cards[$random] ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "srand",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "time",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "());",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t$starting_point ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "rand",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "()",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "%",
+			"color": "#F92672"
+		},
+		{
+			"content": "51",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "print",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Starting point for cut cards is: $starting_point<p>\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#F92672"
+		},
+		{
+			"content": " ($index ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "0",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "; $index ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "52",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "; $index",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "++",
+			"color": "#F92672"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "if",
+			"color": "#F92672"
+		},
+		{
+			"content": " ($starting_point ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "==",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "52",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ") { $starting_point ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "0",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "; }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "print",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Uncut Point: <strong>$deck[$index]</strong> \"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t$starting_point",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "++",
+			"color": "#F92672"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "?",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "body",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "html",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "<html>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "<head>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<title>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "Example page",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</title>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "</head>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "<body>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "<?php",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "function",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "functionName",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(){",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t*/",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$cards",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "array",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"ah\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"ac\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"ad\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"as\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ",",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"2h\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"2c\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"2d\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"2s\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "srand",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "time",
+			"color": "#9872A2"
+		},
+		{
+			"content": "());",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "for",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$i",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "0",
+			"color": "#6089B4"
+		},
+		{
+			"content": "; ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$i",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "52",
+			"color": "#6089B4"
+		},
+		{
+			"content": "; ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$i",
+			"color": "#6089B4"
+		},
+		{
+			"content": "++",
+			"color": "#676867"
+		},
+		{
+			"content": ") {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$count",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "count",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$cards",
+			"color": "#6089B4"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$random",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "rand",
+			"color": "#9872A2"
+		},
+		{
+			"content": "()",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "%",
+			"color": "#676867"
+		},
+		{
+			"content": "$count",
+			"color": "#6089B4"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "if",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$cards",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$random",
+			"color": "#6089B4"
+		},
+		{
+			"content": "] ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "==",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ") {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$i",
+			"color": "#6089B4"
+		},
+		{
+			"content": "--",
+			"color": "#676867"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t} ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "else",
+			"color": "#9872A2"
+		},
+		{
+			"content": " {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$deck",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[] ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$cards",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$random",
+			"color": "#6089B4"
+		},
+		{
+			"content": "];",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$cards",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$random",
+			"color": "#6089B4"
+		},
+		{
+			"content": "] ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "srand",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "time",
+			"color": "#9872A2"
+		},
+		{
+			"content": "());",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "rand",
+			"color": "#9872A2"
+		},
+		{
+			"content": "()",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "%",
+			"color": "#676867"
+		},
+		{
+			"content": "51",
+			"color": "#6089B4"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "print",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Starting point for cut cards is: ",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#6089B4"
+		},
+		{
+			"content": "<p>\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "for",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$index",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "0",
+			"color": "#6089B4"
+		},
+		{
+			"content": "; ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$index",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "52",
+			"color": "#6089B4"
+		},
+		{
+			"content": "; ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$index",
+			"color": "#6089B4"
+		},
+		{
+			"content": "++",
+			"color": "#676867"
+		},
+		{
+			"content": ") {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "if",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "==",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "52",
+			"color": "#6089B4"
+		},
+		{
+			"content": ") { ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "0",
+			"color": "#6089B4"
+		},
+		{
+			"content": "; }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "print",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Uncut Point: <strong>",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$deck",
+			"color": "#6089B4"
+		},
+		{
+			"content": "[",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "$index",
+			"color": "#6089B4"
+		},
+		{
+			"content": "]</strong> \"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#6089B4"
+		},
+		{
+			"content": "++",
+			"color": "#676867"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "?",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ">",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</body>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "</html>",
+			"color": "#6089B4"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "html",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "head",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "title",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "Example page",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "title",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "head",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "body",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "<?php",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "function",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "functionName",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(){",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#777777"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t*/",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "cards",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "array",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "ah",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ", ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "ac",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ", ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "ad",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ", ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "as",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ",",
+			"color": "#333333"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "2h",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ", ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "2c",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ", ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "2d",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ", ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "2s",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ");",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "srand",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "time",
+			"color": "#AA3731"
+		},
+		{
+			"content": "())",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "for",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "i",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "0",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "i",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "52",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "i",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "++",
+			"color": "#777777"
+		},
+		{
+			"content": ") ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "count",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "count",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "cards",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "random",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "rand",
+			"color": "#AA3731"
+		},
+		{
+			"content": "()",
+			"color": "#333333"
+		},
+		{
+			"content": "%$",
+			"color": "#777777"
+		},
+		{
+			"content": "count",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "if",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "cards",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "[$",
+			"color": "#777777"
+		},
+		{
+			"content": "random",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "]",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "==",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"\"",
+			"color": "#777777"
+		},
+		{
+			"content": ") ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "i",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "--;",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "else",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "deck",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "[]",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "cards",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "[$",
+			"color": "#777777"
+		},
+		{
+			"content": "random",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "];",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "cards",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "[$",
+			"color": "#777777"
+		},
+		{
+			"content": "random",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "]",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"\"",
+			"color": "#777777"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "srand",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "time",
+			"color": "#AA3731"
+		},
+		{
+			"content": "())",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "starting_point",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "rand",
+			"color": "#AA3731"
+		},
+		{
+			"content": "()",
+			"color": "#333333"
+		},
+		{
+			"content": "%",
+			"color": "#777777"
+		},
+		{
+			"content": "51",
+			"color": "#AB6526"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "print",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "Starting point for cut cards is: ",
+			"color": "#448C27"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "starting_point",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "<p>",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#777777"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "for",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "index",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "0",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "index",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "52",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "index",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "++",
+			"color": "#777777"
+		},
+		{
+			"content": ") ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "if",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "starting_point",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "==",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "52",
+			"color": "#AB6526"
+		},
+		{
+			"content": ") ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "starting_point",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "0",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "print",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "Uncut Point: <strong>",
+			"color": "#448C27"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "deck",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "[$",
+			"color": "#777777"
+		},
+		{
+			"content": "index",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "]",
+			"color": "#777777"
+		},
+		{
+			"content": "</strong> ",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "$",
+			"color": "#777777"
+		},
+		{
+			"content": "starting_point",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "++;",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "?",
+			"color": "#777777"
+		},
+		{
+			"content": ">",
+			"color": "#777777"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "body",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "html",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		}
+	],
+	"red": [
+		{
+			"content": "<html>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "<head>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<title>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "Example page",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</title>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "</head>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "<body>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "<?php",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "function",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "functionName",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(){",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t*/",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$cards",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "array",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"ah\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"ac\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"ad\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"as\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"2h\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"2c\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"2d\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"2s\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "srand",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "time",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "());",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "for",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$i",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "0",
+			"color": "#994646FF"
+		},
+		{
+			"content": "; ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$i",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "52",
+			"color": "#994646FF"
+		},
+		{
+			"content": "; ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$i",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "++",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$count",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "count",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$cards",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$random",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "rand",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "()",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "%",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "$count",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "if",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$cards",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "[",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$random",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "] ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "==",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$i",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "--",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t} ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "else",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$deck",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "[] ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$cards",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "[",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$random",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "];",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$cards",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "[",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$random",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "] ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "srand",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "time",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "());",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "rand",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "()",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "%",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "51",
+			"color": "#994646FF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "print",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Starting point for cut cards is: ",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "<p>\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "for",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$index",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "0",
+			"color": "#994646FF"
+		},
+		{
+			"content": "; ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$index",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "52",
+			"color": "#994646FF"
+		},
+		{
+			"content": "; ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$index",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "++",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "if",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "==",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "52",
+			"color": "#994646FF"
+		},
+		{
+			"content": ") { ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "0",
+			"color": "#994646FF"
+		},
+		{
+			"content": "; }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "print",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Uncut Point: <strong>",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$deck",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "[",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "$index",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "]</strong> \"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "++",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "?",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</body>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "</html>",
+			"color": "#EC0D1EFF"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "html",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "head",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "title",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "Example page",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "title",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "head",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "body",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "<?php",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "function",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "functionName",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(){",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#657B83"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t*/",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "cards",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "array",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"ah\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"ac\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"ad\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"as\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ",",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"2h\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"2c\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"2d\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"2s\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "srand",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "time",
+			"color": "#268BD2"
+		},
+		{
+			"content": "());",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": "; ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "52",
+			"color": "#D33682"
+		},
+		{
+			"content": "; ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++",
+			"color": "#859900"
+		},
+		{
+			"content": ") {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "count",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "count",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "cards",
+			"color": "#268BD2"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "random",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "rand",
+			"color": "#268BD2"
+		},
+		{
+			"content": "()",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "%$",
+			"color": "#859900"
+		},
+		{
+			"content": "count",
+			"color": "#268BD2"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "cards",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "random",
+			"color": "#268BD2"
+		},
+		{
+			"content": "] ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "==",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ") {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": "--",
+			"color": "#859900"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t} ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "else",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "deck",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[] ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "cards",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "random",
+			"color": "#268BD2"
+		},
+		{
+			"content": "];",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "cards",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "random",
+			"color": "#268BD2"
+		},
+		{
+			"content": "] ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "srand",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "time",
+			"color": "#268BD2"
+		},
+		{
+			"content": "());",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "starting_point",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "rand",
+			"color": "#268BD2"
+		},
+		{
+			"content": "()",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "%",
+			"color": "#859900"
+		},
+		{
+			"content": "51",
+			"color": "#D33682"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "print",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Starting point for cut cards is: ",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "starting_point",
+			"color": "#268BD2"
+		},
+		{
+			"content": "<p>\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "index",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": "; ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "index",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "52",
+			"color": "#D33682"
+		},
+		{
+			"content": "; ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "index",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++",
+			"color": "#859900"
+		},
+		{
+			"content": ") {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "starting_point",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "==",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "52",
+			"color": "#D33682"
+		},
+		{
+			"content": ") { ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "starting_point",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": "; }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "print",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Uncut Point: <strong>",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "deck",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "index",
+			"color": "#268BD2"
+		},
+		{
+			"content": "]</strong> \"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "starting_point",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++",
+			"color": "#859900"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "?",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "body",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "html",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "<",
+			"color": "#586E75"
+		},
+		{
+			"content": "html",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#586E75"
+		},
+		{
+			"content": "head",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "title",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Example page",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "title",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#586E75"
+		},
+		{
+			"content": "head",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#586E75"
+		},
+		{
+			"content": "body",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "<?php",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "function",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "functionName",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(){",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t}",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t*/",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "cards",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "array",
+			"color": "#D30102"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"ah\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"ac\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"ad\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"as\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ",",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"2h\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"2c\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"2d\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"2s\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "srand",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "time",
+			"color": "#268BD2"
+		},
+		{
+			"content": "());",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": "; ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "52",
+			"color": "#D33682"
+		},
+		{
+			"content": "; ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++",
+			"color": "#859900"
+		},
+		{
+			"content": ") {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "count",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "count",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "cards",
+			"color": "#268BD2"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "random",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "rand",
+			"color": "#268BD2"
+		},
+		{
+			"content": "()",
+			"color": "#586E75"
+		},
+		{
+			"content": "%$",
+			"color": "#859900"
+		},
+		{
+			"content": "count",
+			"color": "#268BD2"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "cards",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "random",
+			"color": "#268BD2"
+		},
+		{
+			"content": "] ",
+			"color": "#586E75"
+		},
+		{
+			"content": "==",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ") {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "i",
+			"color": "#268BD2"
+		},
+		{
+			"content": "--",
+			"color": "#859900"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t} ",
+			"color": "#586E75"
+		},
+		{
+			"content": "else",
+			"color": "#859900"
+		},
+		{
+			"content": " {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "deck",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[] ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "cards",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "random",
+			"color": "#268BD2"
+		},
+		{
+			"content": "];",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "cards",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "random",
+			"color": "#268BD2"
+		},
+		{
+			"content": "] ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t}",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "srand",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "time",
+			"color": "#268BD2"
+		},
+		{
+			"content": "());",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "starting_point",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "rand",
+			"color": "#268BD2"
+		},
+		{
+			"content": "()",
+			"color": "#586E75"
+		},
+		{
+			"content": "%",
+			"color": "#859900"
+		},
+		{
+			"content": "51",
+			"color": "#D33682"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "print",
+			"color": "#D30102"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Starting point for cut cards is: ",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "starting_point",
+			"color": "#268BD2"
+		},
+		{
+			"content": "<p>\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "index",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": "; ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "index",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "52",
+			"color": "#D33682"
+		},
+		{
+			"content": "; ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "index",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++",
+			"color": "#859900"
+		},
+		{
+			"content": ") {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "starting_point",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "==",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "52",
+			"color": "#D33682"
+		},
+		{
+			"content": ") { ",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "starting_point",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": "; }",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "print",
+			"color": "#D30102"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Uncut Point: <strong>",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "deck",
+			"color": "#268BD2"
+		},
+		{
+			"content": "[",
+			"color": "#2AA198"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "index",
+			"color": "#268BD2"
+		},
+		{
+			"content": "]</strong> \"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "$",
+			"color": "#859900"
+		},
+		{
+			"content": "starting_point",
+			"color": "#268BD2"
+		},
+		{
+			"content": "++",
+			"color": "#859900"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t}",
+			"color": "#586E75"
+		},
+		{
+			"content": "?",
+			"color": "#586E75"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#586E75"
+		},
+		{
+			"content": "body",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#586E75"
+		},
+		{
+			"content": "html",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "<html>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "<head>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<title>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "Example page",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</title>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "</head>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "<body>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "<?php",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "function",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "functionName",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(){",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// Code to be executed",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/* Example PHP file",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\tmultiline comment",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t*/",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$cards",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "array",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"ah\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"ac\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"ad\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"as\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"2h\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"2c\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"2d\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"2s\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "srand",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "time",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "());",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$i",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "; ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$i",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "52",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "; ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$i",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "++",
+			"color": "#99FFFF"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$count",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "count",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$cards",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$random",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "rand",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "()",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "%",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "$count",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$cards",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "[",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$random",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "] ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "==",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$i",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "--",
+			"color": "#99FFFF"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t} ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "else",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$deck",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "[] ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$cards",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "[",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$random",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "];",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$cards",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "[",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$random",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "] ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "srand",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "time",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "());",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "rand",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "()",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "%",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "51",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "print",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Starting point for cut cards is: ",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "<p>\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// display shuffled cards (EXAMPLE ONLY)",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$index",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "; ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$index",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "52",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "; ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$index",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "++",
+			"color": "#99FFFF"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "==",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "52",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ") { ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "; }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "print",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Uncut Point: <strong>",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$deck",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "[",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "$index",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "]</strong> \"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "$starting_point",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "++",
+			"color": "#99FFFF"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "?",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ">",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "</body>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "</html>",
+			"color": "#FF9DA4"
+		}
+	]
+}

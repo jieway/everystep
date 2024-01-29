@@ -1,0 +1,758 @@
+{
+	"abyss": [
+		{
+			"content": "rowData.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "push",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "callback",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "new",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Cell",
+			"color": "#FFEEBB"
+		},
+		{
+			"content": "(row, col, ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "false",
+			"color": "#F280D0"
+		},
+		{
+			"content": ")));",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "rowData.push(callback(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "new",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Cell(row, col, ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "false",
+			"color": "#569CD6"
+		},
+		{
+			"content": ")));",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "rowData.push(callback(",
+			"color": "#000000"
+		},
+		{
+			"content": "new",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Cell(row, col, ",
+			"color": "#000000"
+		},
+		{
+			"content": "false",
+			"color": "#0000FF"
+		},
+		{
+			"content": ")));",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "rowData.push(callback(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "new",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Cell(row, col, ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "false",
+			"color": "#569CD6"
+		},
+		{
+			"content": ")));",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "rowData",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "push",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "callback",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "new",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Cell",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "row",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "col",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "false",
+			"color": "#569CD6"
+		},
+		{
+			"content": ")));",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "rowData",
+			"color": "#001080"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "push",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "callback",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "new",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Cell",
+			"color": "#267F99"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "row",
+			"color": "#001080"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "col",
+			"color": "#001080"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "false",
+			"color": "#0000FF"
+		},
+		{
+			"content": ")));",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "rowData",
+			"color": "#DC3958"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "push",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "callback",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(new ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Cell",
+			"color": "#F06431"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "row",
+			"color": "#DC3958"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "col",
+			"color": "#DC3958"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "false",
+			"color": "#F79A32"
+		},
+		{
+			"content": ")));",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "rowData.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "push",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "callback",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "new",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Cell",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(row, col, ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "false",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ")));",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "rowData",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "push",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "callback",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "new",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Cell",
+			"color": "#9B0000"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "row",
+			"color": "#6089B4"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "col",
+			"color": "#6089B4"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "false",
+			"color": "#FF0080"
+		},
+		{
+			"content": ")));",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "rowData",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "push",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "callback",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "new",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Cell",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "row",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "col",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "false",
+			"color": "#AB6526"
+		},
+		{
+			"content": ")))",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		}
+	],
+	"red": [
+		{
+			"content": "rowData",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "push",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "callback",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "new",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Cell",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "row",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "col",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "false",
+			"color": "#994646FF"
+		},
+		{
+			"content": ")));",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "rowData",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "push",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "callback",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "new",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Cell",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "col",
+			"color": "#268BD2"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "false",
+			"color": "#B58900"
+		},
+		{
+			"content": ")));",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "rowData",
+			"color": "#268BD2"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "push",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "callback",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "new",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Cell",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "row",
+			"color": "#268BD2"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "col",
+			"color": "#268BD2"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "false",
+			"color": "#B58900"
+		},
+		{
+			"content": ")));",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "rowData",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "push",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "callback",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "new",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Cell",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "row",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "col",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "false",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ")));",
+			"color": "#FFFFFF"
+		}
+	]
+}

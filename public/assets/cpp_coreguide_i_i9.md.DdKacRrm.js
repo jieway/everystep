@@ -1,0 +1,7 @@
+import{_ as e,c as a,o as t,R as r}from"./chunks/framework.2bglP9T5.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"cpp/coreguide/i/i9.md","filePath":"cpp/coreguide/i/i9.md"}'),o={name:"cpp/coreguide/i/i9.md"},i=r(`<h3 id="i-9-当接口是模板时-用概念来文档化其参数" tabindex="-1"><a name="Ri-concepts"></a>I.9: 当接口是模板时，用概念来文档化其参数 <a class="header-anchor" href="#i-9-当接口是模板时-用概念来文档化其参数" aria-label="Permalink to &quot;&lt;a name=&quot;Ri-concepts&quot;&gt;&lt;/a&gt;I.9: 当接口是模板时，用概念来文档化其参数&quot;">​</a></h3><h5 id="理由" tabindex="-1">理由 <a class="header-anchor" href="#理由" aria-label="Permalink to &quot;理由&quot;">​</a></h5><p>更严谨地说明接口，并使其在（不远的）将来可以在编译时进行检查。</p><h5 id="示例" tabindex="-1">示例 <a class="header-anchor" href="#示例" aria-label="Permalink to &quot;示例&quot;">​</a></h5><p>使用 C++20 风格的必要条件说明。例如：</p><pre><code>template&lt;typename Iter, typename Val&gt;
+  requires input_iterator&lt;Iter&gt; &amp;&amp; equality_comparable_with&lt;iter_value_t&lt;Iter&gt;, Val&gt;
+Iter find(Iter first, Iter last, Val v)
+{
+    // ...
+}
+</code></pre><p><strong>参见</strong>: <a href="#SS-GP">泛型编程</a>和<a href="#SS-concepts">概念</a>。</p><h5 id="强制实施" tabindex="-1">强制实施 <a class="header-anchor" href="#强制实施" aria-label="Permalink to &quot;强制实施&quot;">​</a></h5><p>对未被概念所约束（在其声明式之中或者在一个 <code>requires</code> 子句中所给出）的并非可变数量的模板形参作出警告。</p>`,9),n=[i];function c(l,s,p,d,_,h){return t(),a("div",null,n)}const f=e(o,[["render",c]]);export{m as __pageData,f as default};

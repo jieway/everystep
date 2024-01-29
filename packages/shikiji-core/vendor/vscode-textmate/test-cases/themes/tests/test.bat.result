@@ -1,0 +1,1942 @@
+{
+	"abyss": [
+		{
+			"content": "@",
+			"color": "#6688CC"
+		},
+		{
+			"content": "echo",
+			"color": "#225588"
+		},
+		{
+			"content": " off",
+			"color": "#6688CC"
+		},
+		{
+			"content": "setlocal",
+			"color": "#225588"
+		},
+		{
+			"content": "title",
+			"color": "#225588"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#6688CC"
+		},
+		{
+			"content": "pushd",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "%~dp0",
+			"color": "#2277FF"
+		},
+		{
+			"content": "\\..",
+			"color": "#6688CC"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#223355"
+		},
+		{
+			"content": "if not exist",
+			"color": "#225588"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "call",
+			"color": "#225588"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#6688CC"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#223355"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#6688CC"
+		},
+		{
+			"content": ":: Build",
+			"color": "#223355"
+		},
+		{
+			"content": "if not exist",
+			"color": "#225588"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#6688CC"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#223355"
+		},
+		{
+			"content": "set",
+			"color": "#225588"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#6688CC"
+		},
+		{
+			"content": "set",
+			"color": "#225588"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#6688CC"
+		},
+		{
+			"content": "set",
+			"color": "#225588"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#6688CC"
+		},
+		{
+			"content": "set",
+			"color": "#225588"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#6688CC"
+		},
+		{
+			"content": "set",
+			"color": "#225588"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#6688CC"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#223355"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#6688CC"
+		},
+		{
+			"content": "popd",
+			"color": "#225588"
+		},
+		{
+			"content": "endlocal",
+			"color": "#225588"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "@",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "echo",
+			"color": "#569CD6"
+		},
+		{
+			"content": " off",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "setlocal",
+			"color": "#569CD6"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "pushd",
+			"color": "#569CD6"
+		},
+		{
+			"content": " %~dp0\\..",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#608B4E"
+		},
+		{
+			"content": "if not exist",
+			"color": "#569CD6"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "call",
+			"color": "#569CD6"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#608B4E"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ":: Build",
+			"color": "#608B4E"
+		},
+		{
+			"content": "if not exist",
+			"color": "#569CD6"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#608B4E"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#608B4E"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "popd",
+			"color": "#569CD6"
+		},
+		{
+			"content": "endlocal",
+			"color": "#569CD6"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "@",
+			"color": "#000000"
+		},
+		{
+			"content": "echo",
+			"color": "#0000FF"
+		},
+		{
+			"content": " off",
+			"color": "#000000"
+		},
+		{
+			"content": "setlocal",
+			"color": "#0000FF"
+		},
+		{
+			"content": "title",
+			"color": "#0000FF"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#000000"
+		},
+		{
+			"content": "pushd",
+			"color": "#0000FF"
+		},
+		{
+			"content": " %~dp0\\..",
+			"color": "#000000"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#008000"
+		},
+		{
+			"content": "if not exist",
+			"color": "#0000FF"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#000000"
+		},
+		{
+			"content": "call",
+			"color": "#0000FF"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#000000"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#008000"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#000000"
+		},
+		{
+			"content": ":: Build",
+			"color": "#008000"
+		},
+		{
+			"content": "if not exist",
+			"color": "#0000FF"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#000000"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#008000"
+		},
+		{
+			"content": "set",
+			"color": "#0000FF"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#000000"
+		},
+		{
+			"content": "set",
+			"color": "#0000FF"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#000000"
+		},
+		{
+			"content": "set",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#000000"
+		},
+		{
+			"content": "set",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#000000"
+		},
+		{
+			"content": "set",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#000000"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#008000"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#000000"
+		},
+		{
+			"content": "popd",
+			"color": "#0000FF"
+		},
+		{
+			"content": "endlocal",
+			"color": "#0000FF"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "@",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "echo",
+			"color": "#569CD6"
+		},
+		{
+			"content": " off",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "setlocal",
+			"color": "#569CD6"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "pushd",
+			"color": "#569CD6"
+		},
+		{
+			"content": " %~dp0\\..",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#7CA668"
+		},
+		{
+			"content": "if not exist",
+			"color": "#569CD6"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "call",
+			"color": "#569CD6"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#7CA668"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":: Build",
+			"color": "#7CA668"
+		},
+		{
+			"content": "if not exist",
+			"color": "#569CD6"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#7CA668"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#7CA668"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "popd",
+			"color": "#569CD6"
+		},
+		{
+			"content": "endlocal",
+			"color": "#569CD6"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "@",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "echo",
+			"color": "#569CD6"
+		},
+		{
+			"content": " off",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "setlocal",
+			"color": "#569CD6"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "pushd",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "%~dp0",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\\..",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#608B4E"
+		},
+		{
+			"content": "if not exist",
+			"color": "#C586C0"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "call",
+			"color": "#C586C0"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#608B4E"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ":: Build",
+			"color": "#608B4E"
+		},
+		{
+			"content": "if not exist",
+			"color": "#C586C0"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#608B4E"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "set",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#608B4E"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "popd",
+			"color": "#569CD6"
+		},
+		{
+			"content": "endlocal",
+			"color": "#569CD6"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "@",
+			"color": "#000000"
+		},
+		{
+			"content": "echo",
+			"color": "#0000FF"
+		},
+		{
+			"content": " off",
+			"color": "#000000"
+		},
+		{
+			"content": "setlocal",
+			"color": "#0000FF"
+		},
+		{
+			"content": "title",
+			"color": "#0000FF"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#000000"
+		},
+		{
+			"content": "pushd",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "%~dp0",
+			"color": "#001080"
+		},
+		{
+			"content": "\\..",
+			"color": "#000000"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#008000"
+		},
+		{
+			"content": "if not exist",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#000000"
+		},
+		{
+			"content": "call",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#000000"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#008000"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#000000"
+		},
+		{
+			"content": ":: Build",
+			"color": "#008000"
+		},
+		{
+			"content": "if not exist",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#000000"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#008000"
+		},
+		{
+			"content": "set",
+			"color": "#0000FF"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#000000"
+		},
+		{
+			"content": "set",
+			"color": "#0000FF"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#000000"
+		},
+		{
+			"content": "set",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#000000"
+		},
+		{
+			"content": "set",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#000000"
+		},
+		{
+			"content": "set",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#000000"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#008000"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#000000"
+		},
+		{
+			"content": "popd",
+			"color": "#0000FF"
+		},
+		{
+			"content": "endlocal",
+			"color": "#0000FF"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "@",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "echo",
+			"color": "#98676A"
+		},
+		{
+			"content": " off",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "setlocal",
+			"color": "#98676A"
+		},
+		{
+			"content": "title",
+			"color": "#98676A"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "pushd",
+			"color": "#98676A"
+		},
+		{
+			"content": " %~dp0\\..",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "if not exist",
+			"color": "#98676A"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "call",
+			"color": "#98676A"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":: Build",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "if not exist",
+			"color": "#98676A"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "set",
+			"color": "#98676A"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "set",
+			"color": "#98676A"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "set",
+			"color": "#98676A"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "set",
+			"color": "#98676A"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "set",
+			"color": "#98676A"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#A57A4C"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "popd",
+			"color": "#98676A"
+		},
+		{
+			"content": "endlocal",
+			"color": "#98676A"
+		}
+	],
+	"monokai": [
+		{
+			"content": "@",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "echo",
+			"color": "#F92672"
+		},
+		{
+			"content": " off",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "setlocal",
+			"color": "#F92672"
+		},
+		{
+			"content": "title",
+			"color": "#F92672"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "pushd",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "%~dp0",
+			"color": "#FD971F"
+		},
+		{
+			"content": "\\..",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#75715E"
+		},
+		{
+			"content": "if not exist",
+			"color": "#F92672"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "call",
+			"color": "#F92672"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#75715E"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ":: Build",
+			"color": "#75715E"
+		},
+		{
+			"content": "if not exist",
+			"color": "#F92672"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#75715E"
+		},
+		{
+			"content": "set",
+			"color": "#F92672"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "set",
+			"color": "#F92672"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "set",
+			"color": "#F92672"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "set",
+			"color": "#F92672"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "set",
+			"color": "#F92672"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#75715E"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "popd",
+			"color": "#F92672"
+		},
+		{
+			"content": "endlocal",
+			"color": "#F92672"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "@",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "echo",
+			"color": "#676867"
+		},
+		{
+			"content": " off",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "setlocal",
+			"color": "#676867"
+		},
+		{
+			"content": "title",
+			"color": "#676867"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "pushd",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "%~dp0",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\\..",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "if not exist",
+			"color": "#9872A2"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "call",
+			"color": "#9872A2"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ":: Build",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "if not exist",
+			"color": "#9872A2"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "set",
+			"color": "#676867"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "set",
+			"color": "#676867"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "set",
+			"color": "#676867"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "set",
+			"color": "#676867"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "set",
+			"color": "#676867"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#9A9B99"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "popd",
+			"color": "#676867"
+		},
+		{
+			"content": "endlocal",
+			"color": "#676867"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "@",
+			"color": "#333333"
+		},
+		{
+			"content": "echo",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " off",
+			"color": "#333333"
+		},
+		{
+			"content": "setlocal",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "title",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#333333"
+		},
+		{
+			"content": "pushd",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "%~dp0",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\\..",
+			"color": "#333333"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "if not exist",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#333333"
+		},
+		{
+			"content": "call",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#333333"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#333333"
+		},
+		{
+			"content": ":: Build",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "if not exist",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#333333"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "set",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#333333"
+		},
+		{
+			"content": "set",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#333333"
+		},
+		{
+			"content": "set",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#333333"
+		},
+		{
+			"content": "set",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#333333"
+		},
+		{
+			"content": "set",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#333333"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#333333"
+		},
+		{
+			"content": "popd",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "endlocal",
+			"color": "#4B83CD"
+		}
+	],
+	"red": [
+		{
+			"content": "@",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "echo",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " off",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "setlocal",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "title",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "pushd",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "%~dp0",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "\\..",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "if not exist",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "call",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":: Build",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "if not exist",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "set",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "set",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "set",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "set",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "set",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "popd",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "endlocal",
+			"color": "#F12727FF"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "@",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "echo",
+			"color": "#859900"
+		},
+		{
+			"content": " off",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "setlocal",
+			"color": "#859900"
+		},
+		{
+			"content": "title",
+			"color": "#859900"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "pushd",
+			"color": "#859900"
+		},
+		{
+			"content": " %~dp0\\..",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#657B83"
+		},
+		{
+			"content": "if not exist",
+			"color": "#859900"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "call",
+			"color": "#859900"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#657B83"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ":: Build",
+			"color": "#657B83"
+		},
+		{
+			"content": "if not exist",
+			"color": "#859900"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#657B83"
+		},
+		{
+			"content": "set",
+			"color": "#859900"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "set",
+			"color": "#859900"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "set",
+			"color": "#859900"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "set",
+			"color": "#859900"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "set",
+			"color": "#859900"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#657B83"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "popd",
+			"color": "#859900"
+		},
+		{
+			"content": "endlocal",
+			"color": "#859900"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "@",
+			"color": "#586E75"
+		},
+		{
+			"content": "echo",
+			"color": "#859900"
+		},
+		{
+			"content": " off",
+			"color": "#586E75"
+		},
+		{
+			"content": "setlocal",
+			"color": "#859900"
+		},
+		{
+			"content": "title",
+			"color": "#859900"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#586E75"
+		},
+		{
+			"content": "pushd",
+			"color": "#859900"
+		},
+		{
+			"content": " %~dp0\\..",
+			"color": "#586E75"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "if not exist",
+			"color": "#859900"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#586E75"
+		},
+		{
+			"content": "call",
+			"color": "#859900"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#586E75"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#586E75"
+		},
+		{
+			"content": ":: Build",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "if not exist",
+			"color": "#859900"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#586E75"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "set",
+			"color": "#859900"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#586E75"
+		},
+		{
+			"content": "set",
+			"color": "#859900"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#586E75"
+		},
+		{
+			"content": "set",
+			"color": "#859900"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#586E75"
+		},
+		{
+			"content": "set",
+			"color": "#859900"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#586E75"
+		},
+		{
+			"content": "set",
+			"color": "#859900"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#586E75"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#586E75"
+		},
+		{
+			"content": "popd",
+			"color": "#859900"
+		},
+		{
+			"content": "endlocal",
+			"color": "#859900"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "@",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "echo",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " off",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "setlocal",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "title",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " VSCode Dev",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "pushd",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "%~dp0",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "\\..",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":: Node modules",
+			"color": "#7285B7"
+		},
+		{
+			"content": "if not exist",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " node_modules ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "call",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " .\\scripts\\npm.bat install",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":: Get electron",
+			"color": "#7285B7"
+		},
+		{
+			"content": "node .\\node_modules\\gulp\\bin\\gulp.js electron",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":: Build",
+			"color": "#7285B7"
+		},
+		{
+			"content": "if not exist",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " out node .\\node_modules\\gulp\\bin\\gulp.js compile",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":: Configuration",
+			"color": "#7285B7"
+		},
+		{
+			"content": "set",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " NODE_ENV=development",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "set",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " VSCODE_DEV=1",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "set",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ELECTRON_DEFAULT_ERROR_MODE=1",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "set",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ELECTRON_ENABLE_LOGGING=1",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "set",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ELECTRON_ENABLE_STACK_DUMPING=1",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ":: Launch Code",
+			"color": "#7285B7"
+		},
+		{
+			"content": ".\\.build\\electron\\electron.exe . %*",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "popd",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "endlocal",
+			"color": "#EBBBFF"
+		}
+	]
+}

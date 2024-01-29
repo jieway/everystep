@@ -1,0 +1,3110 @@
+{
+	"abyss": [
+		{
+			"content": "{",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "// a comment",
+			"color": "#223355"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"options\"",
+			"color": "#9966B8"
+		},
+		{
+			"content": ": {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"myBool\"",
+			"color": "#9966B8"
+		},
+		{
+			"content": ": ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "true",
+			"color": "#F280D0"
+		},
+		{
+			"content": ",",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"myInteger\"",
+			"color": "#9966B8"
+		},
+		{
+			"content": ": ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "1",
+			"color": "#F280D0"
+		},
+		{
+			"content": ",",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"myString\"",
+			"color": "#9966B8"
+		},
+		{
+			"content": ": ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"String",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\\u0056",
+			"color": "#F280D0"
+		},
+		{
+			"content": "\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ",",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"myNumber\"",
+			"color": "#9966B8"
+		},
+		{
+			"content": ": ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "1.24",
+			"color": "#F280D0"
+		},
+		{
+			"content": ",",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"myNull\"",
+			"color": "#9966B8"
+		},
+		{
+			"content": ": ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "null",
+			"color": "#F280D0"
+		},
+		{
+			"content": ",",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"myArray\"",
+			"color": "#9966B8"
+		},
+		{
+			"content": ": [ ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "1",
+			"color": "#F280D0"
+		},
+		{
+			"content": ", ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ", ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "true",
+			"color": "#F280D0"
+		},
+		{
+			"content": ", ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "null",
+			"color": "#F280D0"
+		},
+		{
+			"content": ", [], {}],",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"myObject\"",
+			"color": "#9966B8"
+		},
+		{
+			"content": " : {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"foo\"",
+			"color": "#9966B8"
+		},
+		{
+			"content": ": ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"bar\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// a comment",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"options\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myBool\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myInteger\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myString\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"String\\u0056\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myNumber\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1.24",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myNull\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "null",
+			"color": "#569CD6"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myArray\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": [ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "null",
+			"color": "#569CD6"
+		},
+		{
+			"content": ", [], {}],",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myObject\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " : {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"foo\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"bar\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "{",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "// a comment",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"options\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myBool\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "true",
+			"color": "#0000FF"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myInteger\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myString\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"String\\u0056\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myNumber\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "1.24",
+			"color": "#09885A"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myNull\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "null",
+			"color": "#0000FF"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myArray\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": [ ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "true",
+			"color": "#0000FF"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "null",
+			"color": "#0000FF"
+		},
+		{
+			"content": ", [], {}],",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myObject\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": " : {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"foo\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"bar\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// a comment",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"options\"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ": {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myBool\"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myInteger\"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myString\"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"String\\u0056\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myNumber\"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1.24",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myNull\"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "null",
+			"color": "#569CD6"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myArray\"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ": [ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "null",
+			"color": "#569CD6"
+		},
+		{
+			"content": ", [], {}],",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myObject\"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " : {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"foo\"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"bar\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "// a comment",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"options\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myBool\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myInteger\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myString\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"String\\u0056\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myNumber\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1.24",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myNull\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "null",
+			"color": "#569CD6"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myArray\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": [ ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "1",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "true",
+			"color": "#569CD6"
+		},
+		{
+			"content": ", ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "null",
+			"color": "#569CD6"
+		},
+		{
+			"content": ", [], {}],",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"myObject\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " : {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"foo\"",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"bar\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "{",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "// a comment",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"options\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myBool\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "true",
+			"color": "#0000FF"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myInteger\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myString\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"String\\u0056\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myNumber\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "1.24",
+			"color": "#09885A"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myNull\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "null",
+			"color": "#0000FF"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myArray\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": [ ",
+			"color": "#000000"
+		},
+		{
+			"content": "1",
+			"color": "#09885A"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "true",
+			"color": "#0000FF"
+		},
+		{
+			"content": ", ",
+			"color": "#000000"
+		},
+		{
+			"content": "null",
+			"color": "#0000FF"
+		},
+		{
+			"content": ", [], {}],",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"myObject\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": " : {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "\"foo\"",
+			"color": "#0451A5"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"bar\"",
+			"color": "#A31515"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "// a comment",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t\"options\": {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t\"myBool\": ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "true",
+			"color": "#F79A32"
+		},
+		{
+			"content": ",",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t\"myInteger\": ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#F79A32"
+		},
+		{
+			"content": ",",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t\"myString\": ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "String",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\\u0056",
+			"color": "#7E602C"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ",",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t\"myNumber\": ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1.24",
+			"color": "#F79A32"
+		},
+		{
+			"content": ",",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t\"myNull\": ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "null",
+			"color": "#F79A32"
+		},
+		{
+			"content": ",",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t\"myArray\": [ ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "1",
+			"color": "#F79A32"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Hello",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "true",
+			"color": "#F79A32"
+		},
+		{
+			"content": ", ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "null",
+			"color": "#F79A32"
+		},
+		{
+			"content": ", [], {}],",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t\"myObject\" : {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t\t\"foo\": ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "bar",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "{",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "// a comment",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"options\"",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ": {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"myBool\"",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "true",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"myInteger\"",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "1",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"myString\"",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"String",
+			"color": "#CFCFC2"
+		},
+		{
+			"content": "\\u0056",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "\"",
+			"color": "#CFCFC2"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"myNumber\"",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "1.24",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"myNull\"",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "null",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"myArray\"",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ": [ ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "1",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#CFCFC2"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "true",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "null",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ", [], {}],",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"myObject\"",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " : {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"foo\"",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"bar\"",
+			"color": "#CFCFC2"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "{",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "// a comment",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"options\"",
+			"color": "#C7444A"
+		},
+		{
+			"content": ": {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"myBool\"",
+			"color": "#C7444A"
+		},
+		{
+			"content": ": ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "true",
+			"color": "#FF0080"
+		},
+		{
+			"content": ",",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"myInteger\"",
+			"color": "#C7444A"
+		},
+		{
+			"content": ": ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "1",
+			"color": "#6089B4"
+		},
+		{
+			"content": ",",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"myString\"",
+			"color": "#C7444A"
+		},
+		{
+			"content": ": ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"String",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\\u0056",
+			"color": "#8080FF"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ",",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"myNumber\"",
+			"color": "#C7444A"
+		},
+		{
+			"content": ": ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "1.24",
+			"color": "#6089B4"
+		},
+		{
+			"content": ",",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"myNull\"",
+			"color": "#C7444A"
+		},
+		{
+			"content": ": ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "null",
+			"color": "#FF0080"
+		},
+		{
+			"content": ",",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"myArray\"",
+			"color": "#C7444A"
+		},
+		{
+			"content": ": [ ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "1",
+			"color": "#6089B4"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "true",
+			"color": "#FF0080"
+		},
+		{
+			"content": ", ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "null",
+			"color": "#FF0080"
+		},
+		{
+			"content": ", [], {}],",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"myObject\"",
+			"color": "#C7444A"
+		},
+		{
+			"content": " : {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"foo\"",
+			"color": "#C7444A"
+		},
+		{
+			"content": ": ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"bar\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "// a comment",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "options",
+			"color": "#AB6526"
+		},
+		{
+			"content": "\":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "myBool",
+			"color": "#AB6526"
+		},
+		{
+			"content": "\":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "true",
+			"color": "#AB6526"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "myInteger",
+			"color": "#AB6526"
+		},
+		{
+			"content": "\":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "1",
+			"color": "#AB6526"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "myString",
+			"color": "#AB6526"
+		},
+		{
+			"content": "\":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "String",
+			"color": "#448C27"
+		},
+		{
+			"content": "\\u0056\"",
+			"color": "#777777"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "myNumber",
+			"color": "#AB6526"
+		},
+		{
+			"content": "\":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "1.24",
+			"color": "#AB6526"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "myNull",
+			"color": "#AB6526"
+		},
+		{
+			"content": "\":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "null",
+			"color": "#AB6526"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "myArray",
+			"color": "#AB6526"
+		},
+		{
+			"content": "\":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "[",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "1",
+			"color": "#AB6526"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "Hello",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "true",
+			"color": "#AB6526"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "null",
+			"color": "#AB6526"
+		},
+		{
+			"content": ",",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "[],",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{}],",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "myObject",
+			"color": "#AB6526"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "foo",
+			"color": "#AB6526"
+		},
+		{
+			"content": "\":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "bar",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		}
+	],
+	"red": [
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "// a comment",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"options\"",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ": {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"myBool\"",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "true",
+			"color": "#994646FF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"myInteger\"",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "1",
+			"color": "#994646FF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"myString\"",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"String",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "\\u0056",
+			"color": "#FFE862FF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"myNumber\"",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "1.24",
+			"color": "#994646FF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"myNull\"",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "null",
+			"color": "#994646FF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"myArray\"",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ": [ ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "1",
+			"color": "#994646FF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "true",
+			"color": "#994646FF"
+		},
+		{
+			"content": ", ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "null",
+			"color": "#994646FF"
+		},
+		{
+			"content": ", [], {}],",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"myObject\"",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": " : {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"foo\"",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"bar\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "{",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "// a comment",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"options\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"myBool\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "true",
+			"color": "#B58900"
+		},
+		{
+			"content": ",",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"myInteger\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": ",",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"myString\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"String",
+			"color": "#2AA198"
+		},
+		{
+			"content": "\\u0056",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ",",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"myNumber\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1.24",
+			"color": "#D33682"
+		},
+		{
+			"content": ",",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"myNull\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "null",
+			"color": "#B58900"
+		},
+		{
+			"content": ",",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"myArray\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": [ ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "true",
+			"color": "#B58900"
+		},
+		{
+			"content": ", ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "null",
+			"color": "#B58900"
+		},
+		{
+			"content": ", [], {}],",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"myObject\"",
+			"color": "#859900"
+		},
+		{
+			"content": " : {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"foo\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"bar\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "{",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "// a comment",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"options\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"myBool\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#586E75"
+		},
+		{
+			"content": "true",
+			"color": "#B58900"
+		},
+		{
+			"content": ",",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"myInteger\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#586E75"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": ",",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"myString\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"String",
+			"color": "#2AA198"
+		},
+		{
+			"content": "\\u0056",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ",",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"myNumber\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#586E75"
+		},
+		{
+			"content": "1.24",
+			"color": "#D33682"
+		},
+		{
+			"content": ",",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"myNull\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#586E75"
+		},
+		{
+			"content": "null",
+			"color": "#B58900"
+		},
+		{
+			"content": ",",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"myArray\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": [ ",
+			"color": "#586E75"
+		},
+		{
+			"content": "1",
+			"color": "#D33682"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "true",
+			"color": "#B58900"
+		},
+		{
+			"content": ", ",
+			"color": "#586E75"
+		},
+		{
+			"content": "null",
+			"color": "#B58900"
+		},
+		{
+			"content": ", [], {}],",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"myObject\"",
+			"color": "#859900"
+		},
+		{
+			"content": " : {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"foo\"",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"bar\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t}",
+			"color": "#586E75"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "// a comment",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"options\"",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": ": {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myBool\"",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "true",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myInteger\"",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myString\"",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"String",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "\\u0056",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myNumber\"",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1.24",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myNull\"",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "null",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myArray\"",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": ": [ ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "1",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "true",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ", ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "null",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ", [], {}],",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"myObject\"",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": " : {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"foo\"",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"bar\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	]
+}

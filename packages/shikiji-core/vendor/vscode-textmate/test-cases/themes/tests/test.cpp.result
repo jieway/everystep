@@ -1,0 +1,4206 @@
+{
+	"abyss": [
+		{
+			"content": "// classes example",
+			"color": "#223355"
+		},
+		{
+			"content": "#include",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<iostream>",
+			"color": "#22AA44"
+		},
+		{
+			"content": "using",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "namespace",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "std",
+			"color": "#FFEEBB"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "class",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Rectangle",
+			"color": "#FFEEBB"
+		},
+		{
+			"content": " {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "int",
+			"color": "#9966B8"
+		},
+		{
+			"content": " width, height;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "public:",
+			"color": "#225588"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "void",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "set_values",
+			"color": "#DDBB88"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "int",
+			"color": "#9966B8"
+		},
+		{
+			"content": ",",
+			"color": "#6688CC"
+		},
+		{
+			"content": "int",
+			"color": "#9966B8"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "int",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "area",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "() {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "return",
+			"color": "#225588"
+		},
+		{
+			"content": " width",
+			"color": "#6688CC"
+		},
+		{
+			"content": "*",
+			"color": "#225588"
+		},
+		{
+			"content": "height;}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "};",
+			"color": "#6688CC"
+		},
+		{
+			"content": "void",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Rectangle::set_values",
+			"color": "#DDBB88"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "int",
+			"color": "#9966B8"
+		},
+		{
+			"content": " x, ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "int",
+			"color": "#9966B8"
+		},
+		{
+			"content": " y) {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  width ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " x;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  height ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " y;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "int",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "main",
+			"color": "#DDBB88"
+		},
+		{
+			"content": " () {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  rect.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "set_values",
+			"color": "#9966B8"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "3",
+			"color": "#F280D0"
+		},
+		{
+			"content": ",",
+			"color": "#6688CC"
+		},
+		{
+			"content": "4",
+			"color": "#F280D0"
+		},
+		{
+			"content": ");",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  cout ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<<",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"area: \"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<<",
+			"color": "#225588"
+		},
+		{
+			"content": " rect.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "area",
+			"color": "#9966B8"
+		},
+		{
+			"content": "();",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "return",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "0",
+			"color": "#F280D0"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "// classes example",
+			"color": "#608B4E"
+		},
+		{
+			"content": "#include ",
+			"color": "#569CD6"
+		},
+		{
+			"content": "<iostream>",
+			"color": "#CE9178"
+		},
+		{
+			"content": "using",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "namespace",
+			"color": "#569CD6"
+		},
+		{
+			"content": " std;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "class",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Rectangle {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " width, height;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "public:",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " set_values (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " area() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " width*height;}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "};",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Rectangle::set_values (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " x, ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " y) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  width = x;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  height = y;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " main () {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  rect.set_values (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "4",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  cout << ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"area: \"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " << rect.area();",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "// classes example",
+			"color": "#008000"
+		},
+		{
+			"content": "#include ",
+			"color": "#0000FF"
+		},
+		{
+			"content": "<iostream>",
+			"color": "#A31515"
+		},
+		{
+			"content": "using",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "namespace",
+			"color": "#0000FF"
+		},
+		{
+			"content": " std;",
+			"color": "#000000"
+		},
+		{
+			"content": "class",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Rectangle {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " width, height;",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "public:",
+			"color": "#0000FF"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "void",
+			"color": "#0000FF"
+		},
+		{
+			"content": " set_values (",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " area() {",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " width*height;}",
+			"color": "#000000"
+		},
+		{
+			"content": "};",
+			"color": "#000000"
+		},
+		{
+			"content": "void",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Rectangle::set_values (",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " x, ",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " y) {",
+			"color": "#000000"
+		},
+		{
+			"content": "  width = x;",
+			"color": "#000000"
+		},
+		{
+			"content": "  height = y;",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " main () {",
+			"color": "#000000"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#000000"
+		},
+		{
+			"content": "  rect.set_values (",
+			"color": "#000000"
+		},
+		{
+			"content": "3",
+			"color": "#09885A"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "4",
+			"color": "#09885A"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "  cout << ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"area: \"",
+			"color": "#A31515"
+		},
+		{
+			"content": " << rect.area();",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "// classes example",
+			"color": "#7CA668"
+		},
+		{
+			"content": "#include ",
+			"color": "#569CD6"
+		},
+		{
+			"content": "<iostream>",
+			"color": "#CE9178"
+		},
+		{
+			"content": "using",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "namespace",
+			"color": "#569CD6"
+		},
+		{
+			"content": " std;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "class",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Rectangle {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " width, height;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "public:",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " set_values (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " area() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " width",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "*",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "height;}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "};",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Rectangle::set_values (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " x, ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " y) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  width ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " x;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  height ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " y;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " main () {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  rect.set_values (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "4",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  cout ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<<",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"area: \"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<<",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " rect.area();",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "// classes example",
+			"color": "#608B4E"
+		},
+		{
+			"content": "#include",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#569CD6"
+		},
+		{
+			"content": "<iostream>",
+			"color": "#CE9178"
+		},
+		{
+			"content": "using",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "namespace",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "std",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "class",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Rectangle",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " width, height;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "public:",
+			"color": "#569CD6"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "set_values",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "area",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#C586C0"
+		},
+		{
+			"content": " width*height;}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "};",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Rectangle::set_values",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " x, ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " y) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  width = x;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  height = y;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "main",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " () {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  rect.",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "set_values",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "4",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ");",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  cout << ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"area: \"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " << rect.",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "area",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "();",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "// classes example",
+			"color": "#008000"
+		},
+		{
+			"content": "#include",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#0000FF"
+		},
+		{
+			"content": "<iostream>",
+			"color": "#A31515"
+		},
+		{
+			"content": "using",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "namespace",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "std",
+			"color": "#267F99"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "class",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Rectangle",
+			"color": "#267F99"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " width, height;",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "public:",
+			"color": "#0000FF"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "void",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "set_values",
+			"color": "#795E26"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "area",
+			"color": "#795E26"
+		},
+		{
+			"content": "() {",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " width*height;}",
+			"color": "#000000"
+		},
+		{
+			"content": "};",
+			"color": "#000000"
+		},
+		{
+			"content": "void",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Rectangle::set_values",
+			"color": "#795E26"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " x, ",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " y) {",
+			"color": "#000000"
+		},
+		{
+			"content": "  width = x;",
+			"color": "#000000"
+		},
+		{
+			"content": "  height = y;",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "main",
+			"color": "#795E26"
+		},
+		{
+			"content": " () {",
+			"color": "#000000"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#000000"
+		},
+		{
+			"content": "  rect.",
+			"color": "#000000"
+		},
+		{
+			"content": "set_values",
+			"color": "#795E26"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "3",
+			"color": "#09885A"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": "4",
+			"color": "#09885A"
+		},
+		{
+			"content": ");",
+			"color": "#000000"
+		},
+		{
+			"content": "  cout << ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"area: \"",
+			"color": "#A31515"
+		},
+		{
+			"content": " << rect.",
+			"color": "#000000"
+		},
+		{
+			"content": "area",
+			"color": "#795E26"
+		},
+		{
+			"content": "();",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "// classes example",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "#include",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "iostream",
+			"color": "#889B4A"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "using",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "namespace",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "std",
+			"color": "#F06431"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "class",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Rectangle",
+			"color": "#F06431"
+		},
+		{
+			"content": " {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "int",
+			"color": "#98676A"
+		},
+		{
+			"content": " width, height;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "public:",
+			"color": "#98676A"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "void",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "set_values",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": " (",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "int",
+			"color": "#98676A"
+		},
+		{
+			"content": ",",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "int",
+			"color": "#98676A"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "int",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "area",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "() {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "return",
+			"color": "#98676A"
+		},
+		{
+			"content": " width*height;}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "};",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "void",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Rectangle::set_values",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": " (",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "int",
+			"color": "#98676A"
+		},
+		{
+			"content": " x, ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "int",
+			"color": "#98676A"
+		},
+		{
+			"content": " y) {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  width = x;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  height = y;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "int",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "main",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": " () {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  rect.",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "set_values",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": " (",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "3",
+			"color": "#F79A32"
+		},
+		{
+			"content": ",",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "4",
+			"color": "#F79A32"
+		},
+		{
+			"content": ");",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  cout << ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "area: ",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " << rect.",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "area",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "();",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "return",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "0",
+			"color": "#F79A32"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "// classes example",
+			"color": "#75715E"
+		},
+		{
+			"content": "#include",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<iostream>",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "using",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "namespace",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "std",
+			"color": "#A6E22E"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "class",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Rectangle",
+			"color": "#A6E22E"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "int",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " width, height;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "public:",
+			"color": "#F92672"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "void",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "set_values",
+			"color": "#A6E22E"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "int",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "int",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "int",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "area",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "return",
+			"color": "#F92672"
+		},
+		{
+			"content": " width",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "*",
+			"color": "#F92672"
+		},
+		{
+			"content": "height;}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "};",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "void",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Rectangle::set_values",
+			"color": "#A6E22E"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "int",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " x, ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "int",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " y) {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  width ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " x;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  height ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " y;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "int",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "main",
+			"color": "#A6E22E"
+		},
+		{
+			"content": " () {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  rect.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "set_values",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "3",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "4",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  cout ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<<",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"area: \"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<<",
+			"color": "#F92672"
+		},
+		{
+			"content": " rect.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "area",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "();",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "return",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "0",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "// classes example",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "#include",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<iostream>",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "using",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "namespace",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "std",
+			"color": "#9B0000"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "class",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Rectangle",
+			"color": "#9B0000"
+		},
+		{
+			"content": " {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "int",
+			"color": "#9872A2"
+		},
+		{
+			"content": " width, height;",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "public:",
+			"color": "#9872A2"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "void",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "set_values",
+			"color": "#CE6700"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "int",
+			"color": "#9872A2"
+		},
+		{
+			"content": ",",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "int",
+			"color": "#9872A2"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "int",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "area",
+			"color": "#CE6700"
+		},
+		{
+			"content": "() {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "return",
+			"color": "#9872A2"
+		},
+		{
+			"content": " width",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "*",
+			"color": "#676867"
+		},
+		{
+			"content": "height;}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "};",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "void",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Rectangle::set_values",
+			"color": "#CE6700"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "int",
+			"color": "#9872A2"
+		},
+		{
+			"content": " x, ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "int",
+			"color": "#9872A2"
+		},
+		{
+			"content": " y) {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  width ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " x;",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  height ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " y;",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "int",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "main",
+			"color": "#CE6700"
+		},
+		{
+			"content": " () {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  rect.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "set_values",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#0080FF"
+		},
+		{
+			"content": "3",
+			"color": "#6089B4"
+		},
+		{
+			"content": ",",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "4",
+			"color": "#6089B4"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  cout ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<<",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"area: \"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<<",
+			"color": "#676867"
+		},
+		{
+			"content": " rect.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "area",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#0080FF"
+		},
+		{
+			"content": ");",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "return",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "0",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "// classes example",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "#",
+			"color": "#777777"
+		},
+		{
+			"content": "include",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#777777"
+		},
+		{
+			"content": "iostream",
+			"color": "#448C27"
+		},
+		{
+			"content": ">",
+			"color": "#777777"
+		},
+		{
+			"content": "using",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "namespace",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "std",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": "class",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Rectangle",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "int",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " width, height;",
+			"color": "#333333"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "public:",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "void",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#777777"
+		},
+		{
+			"content": "set_values",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "int",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ",",
+			"color": "#333333"
+		},
+		{
+			"content": "int",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "int",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#777777"
+		},
+		{
+			"content": "area",
+			"color": "#AA3731"
+		},
+		{
+			"content": "()",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "return",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " width",
+			"color": "#333333"
+		},
+		{
+			"content": "*",
+			"color": "#777777"
+		},
+		{
+			"content": "height;",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": "void",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#777777"
+		},
+		{
+			"content": "Rectangle::set_values",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "int",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " x, ",
+			"color": "#333333"
+		},
+		{
+			"content": "int",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " y",
+			"color": "#333333"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "  width ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " x;",
+			"color": "#333333"
+		},
+		{
+			"content": "  height ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " y;",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "int",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#777777"
+		},
+		{
+			"content": "main",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "()",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#333333"
+		},
+		{
+			"content": "  rect.",
+			"color": "#333333"
+		},
+		{
+			"content": "set_values",
+			"color": "#AA3731"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "3",
+			"color": "#AB6526"
+		},
+		{
+			"content": ",",
+			"color": "#333333"
+		},
+		{
+			"content": "4",
+			"color": "#AB6526"
+		},
+		{
+			"content": ");",
+			"color": "#333333"
+		},
+		{
+			"content": "  cout ",
+			"color": "#333333"
+		},
+		{
+			"content": "<<",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "area: ",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "<<",
+			"color": "#777777"
+		},
+		{
+			"content": " rect.",
+			"color": "#333333"
+		},
+		{
+			"content": "area",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": ");",
+			"color": "#333333"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "return",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "0",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		}
+	],
+	"red": [
+		{
+			"content": "// classes example",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "#include",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<iostream>",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "using",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "namespace",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "std",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "class",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Rectangle",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "int",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " width, height;",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "public:",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "void",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "set_values",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "int",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "int",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "int",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "area",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "return",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " width",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "*",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "height;}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "};",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "void",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Rectangle::set_values",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "int",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " x, ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "int",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " y) {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  width ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " x;",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  height ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " y;",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "int",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "main",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " () {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  rect.",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "set_values",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "3",
+			"color": "#994646FF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "4",
+			"color": "#994646FF"
+		},
+		{
+			"content": ");",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  cout ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<<",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"area: \"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<<",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " rect.",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "area",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "();",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "return",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "0",
+			"color": "#994646FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "// classes example",
+			"color": "#657B83"
+		},
+		{
+			"content": "#include",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#B58900"
+		},
+		{
+			"content": "<iostream>",
+			"color": "#2AA198"
+		},
+		{
+			"content": "using",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "namespace",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "std",
+			"color": "#CB4B16"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "class",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Rectangle",
+			"color": "#CB4B16"
+		},
+		{
+			"content": " {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "int",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " width, height;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "public:",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "void",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "set_values",
+			"color": "#268BD2"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "int",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ",",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "int",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "int",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "area",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " width",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "*",
+			"color": "#859900"
+		},
+		{
+			"content": "height;}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "};",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "void",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Rectangle::set_values",
+			"color": "#268BD2"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "int",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " x, ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "int",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " y) {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  width ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " x;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  height ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " y;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "int",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "main",
+			"color": "#268BD2"
+		},
+		{
+			"content": " () {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  rect.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "set_values",
+			"color": "#268BD2"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "3",
+			"color": "#D33682"
+		},
+		{
+			"content": ",",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "4",
+			"color": "#D33682"
+		},
+		{
+			"content": ");",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  cout ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"area: \"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<<",
+			"color": "#859900"
+		},
+		{
+			"content": " rect.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "area",
+			"color": "#268BD2"
+		},
+		{
+			"content": "();",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "// classes example",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "#include",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#B58900"
+		},
+		{
+			"content": "<iostream>",
+			"color": "#2AA198"
+		},
+		{
+			"content": "using",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "namespace",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "std",
+			"color": "#268BD2"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "class",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Rectangle",
+			"color": "#268BD2"
+		},
+		{
+			"content": " {",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "int",
+			"color": "#073642"
+		},
+		{
+			"content": " width, height;",
+			"color": "#586E75"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "public:",
+			"color": "#073642"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "void",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "set_values",
+			"color": "#268BD2"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "int",
+			"color": "#073642"
+		},
+		{
+			"content": ",",
+			"color": "#586E75"
+		},
+		{
+			"content": "int",
+			"color": "#073642"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "int",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "area",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() {",
+			"color": "#586E75"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " width",
+			"color": "#586E75"
+		},
+		{
+			"content": "*",
+			"color": "#859900"
+		},
+		{
+			"content": "height;}",
+			"color": "#586E75"
+		},
+		{
+			"content": "};",
+			"color": "#586E75"
+		},
+		{
+			"content": "void",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Rectangle::set_values",
+			"color": "#268BD2"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "int",
+			"color": "#073642"
+		},
+		{
+			"content": " x, ",
+			"color": "#586E75"
+		},
+		{
+			"content": "int",
+			"color": "#073642"
+		},
+		{
+			"content": " y) {",
+			"color": "#586E75"
+		},
+		{
+			"content": "  width ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " x;",
+			"color": "#586E75"
+		},
+		{
+			"content": "  height ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " y;",
+			"color": "#586E75"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		},
+		{
+			"content": "int",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "main",
+			"color": "#268BD2"
+		},
+		{
+			"content": " () {",
+			"color": "#586E75"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#586E75"
+		},
+		{
+			"content": "  rect.",
+			"color": "#586E75"
+		},
+		{
+			"content": "set_values",
+			"color": "#268BD2"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "3",
+			"color": "#D33682"
+		},
+		{
+			"content": ",",
+			"color": "#586E75"
+		},
+		{
+			"content": "4",
+			"color": "#D33682"
+		},
+		{
+			"content": ");",
+			"color": "#586E75"
+		},
+		{
+			"content": "  cout ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"area: \"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<<",
+			"color": "#859900"
+		},
+		{
+			"content": " rect.",
+			"color": "#586E75"
+		},
+		{
+			"content": "area",
+			"color": "#268BD2"
+		},
+		{
+			"content": "();",
+			"color": "#586E75"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "// classes example",
+			"color": "#7285B7"
+		},
+		{
+			"content": "#include",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<iostream>",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "using",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "namespace",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "std",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "class",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Rectangle",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " width, height;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "public:",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "void",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "set_values",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "area",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " width",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "*",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "height;}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "};",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "void",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Rectangle::set_values",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " x, ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " y) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  width ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " x;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  height ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " y;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "main",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": " () {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  Rectangle rect;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  rect.",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "set_values (",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "3",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "4",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  cout ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<<",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"area: \"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<<",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " rect.",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "area(",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": ");",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	]
+}

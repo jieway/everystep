@@ -1,0 +1,6162 @@
+{
+	"abyss": [
+		{
+			"content": "<",
+			"color": "#6688CC"
+		},
+		{
+			"content": "h1",
+			"color": "#225588"
+		},
+		{
+			"content": ">Comments</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "h1",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#6688CC"
+		},
+		{
+			"content": "div",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "id",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"comments\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{#each",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "comments",
+			"color": "#2277FF"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "  <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "h2",
+			"color": "#225588"
+		},
+		{
+			"content": "><",
+			"color": "#6688CC"
+		},
+		{
+			"content": "a",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "href=",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "\"/posts/",
+			"color": "#22AA44"
+		},
+		{
+			"content": "{{",
+			"color": "#9966B8"
+		},
+		{
+			"content": "../permalink",
+			"color": "#2277FF"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "#",
+			"color": "#22AA44"
+		},
+		{
+			"content": "{{",
+			"color": "#9966B8"
+		},
+		{
+			"content": "id",
+			"color": "#2277FF"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{",
+			"color": "#9966B8"
+		},
+		{
+			"content": "title",
+			"color": "#2277FF"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "a",
+			"color": "#225588"
+		},
+		{
+			"content": "></",
+			"color": "#6688CC"
+		},
+		{
+			"content": "h2",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "div",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{",
+			"color": "#9966B8"
+		},
+		{
+			"content": "body",
+			"color": "#2277FF"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "div",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{/each}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "  <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{",
+			"color": "#9966B8"
+		},
+		{
+			"content": "./name",
+			"color": "#2277FF"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": " or ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{",
+			"color": "#9966B8"
+		},
+		{
+			"content": "this/name",
+			"color": "#2277FF"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": " or ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{",
+			"color": "#9966B8"
+		},
+		{
+			"content": "this.name",
+			"color": "#2277FF"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "div",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#6688CC"
+		},
+		{
+			"content": "div",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "class=",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "\"entry\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#223355"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{#if",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "author",
+			"color": "#2277FF"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "    <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "h1",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{",
+			"color": "#9966B8"
+		},
+		{
+			"content": "firstName",
+			"color": "#2277FF"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{",
+			"color": "#9966B8"
+		},
+		{
+			"content": "lastName",
+			"color": "#2277FF"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "h1",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{/if}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "div",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#6688CC"
+		},
+		{
+			"content": "div",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "class=",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{>",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "userMessage",
+			"color": "#2277FF"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "tagName",
+			"color": "#2277FF"
+		},
+		{
+			"content": "=",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "\"h1\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "  <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "h1",
+			"color": "#225588"
+		},
+		{
+			"content": ">Comments</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "h1",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{#each",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "comments",
+			"color": "#2277FF"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{>",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "userMessage",
+			"color": "#2277FF"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "tagName",
+			"color": "#2277FF"
+		},
+		{
+			"content": "=",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "\"h2\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "  ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{{/each}}",
+			"color": "#9966B8"
+		},
+		{
+			"content": "</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "div",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Comments",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "id",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"comments\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{#each comments}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h2",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "a",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "href=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"/posts/{{../permalink}}#{{id}}\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "{{title}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "a",
+			"color": "#569CD6"
+		},
+		{
+			"content": "></",
+			"color": "#808080"
+		},
+		{
+			"content": "h2",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "{{body}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "{{./name}} or {{this/name}} or {{this.name}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "class=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"entry\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#608B4E"
+		},
+		{
+			"content": "  {{#if author}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "{{firstName}} {{lastName}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{/if}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "class=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{> userMessage ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "tagName=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"h1\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " }}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Comments",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{#each comments}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    {{> userMessage ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "tagName=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"h2\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " }}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "<h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "Comments",
+			"color": "#000000"
+		},
+		{
+			"content": "</h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "<div",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "id",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"comments\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "  {{#each comments}}",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<h2><a",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "href=",
+			"color": "#FF0000"
+		},
+		{
+			"content": "\"/posts/{{../permalink}}#{{id}}\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "{{title}}",
+			"color": "#000000"
+		},
+		{
+			"content": "</a></h2>",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<div>",
+			"color": "#800000"
+		},
+		{
+			"content": "{{body}}",
+			"color": "#000000"
+		},
+		{
+			"content": "</div>",
+			"color": "#800000"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p>",
+			"color": "#800000"
+		},
+		{
+			"content": "{{./name}} or {{this/name}} or {{this.name}}",
+			"color": "#000000"
+		},
+		{
+			"content": "</p>",
+			"color": "#800000"
+		},
+		{
+			"content": "</div>",
+			"color": "#800000"
+		},
+		{
+			"content": "<div",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "class=",
+			"color": "#FF0000"
+		},
+		{
+			"content": "\"entry\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#008000"
+		},
+		{
+			"content": "  {{#if author}}",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "<h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "{{firstName}} {{lastName}}",
+			"color": "#000000"
+		},
+		{
+			"content": "</h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "  {{/if}}",
+			"color": "#000000"
+		},
+		{
+			"content": "</div>",
+			"color": "#800000"
+		},
+		{
+			"content": "<div",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "class=",
+			"color": "#FF0000"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "  {{> userMessage ",
+			"color": "#000000"
+		},
+		{
+			"content": "tagName=",
+			"color": "#FF0000"
+		},
+		{
+			"content": "\"h1\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " }}",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "Comments",
+			"color": "#000000"
+		},
+		{
+			"content": "</h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "  {{#each comments}}",
+			"color": "#000000"
+		},
+		{
+			"content": "    {{> userMessage ",
+			"color": "#000000"
+		},
+		{
+			"content": "tagName=",
+			"color": "#FF0000"
+		},
+		{
+			"content": "\"h2\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " }}",
+			"color": "#000000"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#000000"
+		},
+		{
+			"content": "</div>",
+			"color": "#800000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Comments",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "id",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"comments\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{#each comments}}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h2",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "a",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "href=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"/posts/{{../permalink}}#{{id}}\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "{{title}}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "a",
+			"color": "#569CD6"
+		},
+		{
+			"content": "></",
+			"color": "#808080"
+		},
+		{
+			"content": "h2",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "{{body}}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "{{./name}} or {{this/name}} or {{this.name}}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "class=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"entry\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#7CA668"
+		},
+		{
+			"content": "  {{#if author}}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "{{firstName}} {{lastName}}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{/if}}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "class=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{> userMessage ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "tagName=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"h1\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " }}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Comments",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{#each comments}}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    {{> userMessage ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "tagName=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"h2\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " }}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Comments",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "id",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"comments\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{#each ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "comments",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h2",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "a",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "href=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"/posts/{{",
+			"color": "#CE9178"
+		},
+		{
+			"content": "../permalink",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}}#{{",
+			"color": "#CE9178"
+		},
+		{
+			"content": "id",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}}\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "{{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "title",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "a",
+			"color": "#569CD6"
+		},
+		{
+			"content": "></",
+			"color": "#808080"
+		},
+		{
+			"content": "h2",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "{{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "body",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "{{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "./name",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}} or {{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this/name",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}} or {{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "this.name",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "class=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"entry\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#608B4E"
+		},
+		{
+			"content": "  {{#if ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "author",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "{{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "firstName",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}} {{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "lastName",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{/if}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "class=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{> ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "userMessage",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "tagName=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"h1\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " }}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Comments",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "h1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  {{#each ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "comments",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    {{> ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "userMessage",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "tagName=",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "\"h2\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " }}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "div",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "<h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "Comments",
+			"color": "#000000"
+		},
+		{
+			"content": "</h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "<div",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "id",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"comments\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "  {{#each ",
+			"color": "#000000"
+		},
+		{
+			"content": "comments",
+			"color": "#001080"
+		},
+		{
+			"content": "}}",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<h2><a",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "href=",
+			"color": "#FF0000"
+		},
+		{
+			"content": "\"/posts/{{",
+			"color": "#0000FF"
+		},
+		{
+			"content": "../permalink",
+			"color": "#001080"
+		},
+		{
+			"content": "}}#{{",
+			"color": "#0000FF"
+		},
+		{
+			"content": "id",
+			"color": "#001080"
+		},
+		{
+			"content": "}}\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "{{",
+			"color": "#000000"
+		},
+		{
+			"content": "title",
+			"color": "#001080"
+		},
+		{
+			"content": "}}",
+			"color": "#000000"
+		},
+		{
+			"content": "</a></h2>",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<div>",
+			"color": "#800000"
+		},
+		{
+			"content": "{{",
+			"color": "#000000"
+		},
+		{
+			"content": "body",
+			"color": "#001080"
+		},
+		{
+			"content": "}}",
+			"color": "#000000"
+		},
+		{
+			"content": "</div>",
+			"color": "#800000"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p>",
+			"color": "#800000"
+		},
+		{
+			"content": "{{",
+			"color": "#000000"
+		},
+		{
+			"content": "./name",
+			"color": "#001080"
+		},
+		{
+			"content": "}} or {{",
+			"color": "#000000"
+		},
+		{
+			"content": "this/name",
+			"color": "#001080"
+		},
+		{
+			"content": "}} or {{",
+			"color": "#000000"
+		},
+		{
+			"content": "this.name",
+			"color": "#001080"
+		},
+		{
+			"content": "}}",
+			"color": "#000000"
+		},
+		{
+			"content": "</p>",
+			"color": "#800000"
+		},
+		{
+			"content": "</div>",
+			"color": "#800000"
+		},
+		{
+			"content": "<div",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "class=",
+			"color": "#FF0000"
+		},
+		{
+			"content": "\"entry\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#008000"
+		},
+		{
+			"content": "  {{#if ",
+			"color": "#000000"
+		},
+		{
+			"content": "author",
+			"color": "#001080"
+		},
+		{
+			"content": "}}",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "<h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "{{",
+			"color": "#000000"
+		},
+		{
+			"content": "firstName",
+			"color": "#001080"
+		},
+		{
+			"content": "}} {{",
+			"color": "#000000"
+		},
+		{
+			"content": "lastName",
+			"color": "#001080"
+		},
+		{
+			"content": "}}",
+			"color": "#000000"
+		},
+		{
+			"content": "</h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "  {{/if}}",
+			"color": "#000000"
+		},
+		{
+			"content": "</div>",
+			"color": "#800000"
+		},
+		{
+			"content": "<div",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "class=",
+			"color": "#FF0000"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "  {{> ",
+			"color": "#000000"
+		},
+		{
+			"content": "userMessage",
+			"color": "#001080"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "tagName",
+			"color": "#001080"
+		},
+		{
+			"content": "=",
+			"color": "#FF0000"
+		},
+		{
+			"content": "\"h1\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " }}",
+			"color": "#000000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "Comments",
+			"color": "#000000"
+		},
+		{
+			"content": "</h1>",
+			"color": "#800000"
+		},
+		{
+			"content": "  {{#each ",
+			"color": "#000000"
+		},
+		{
+			"content": "comments",
+			"color": "#001080"
+		},
+		{
+			"content": "}}",
+			"color": "#000000"
+		},
+		{
+			"content": "    {{> ",
+			"color": "#000000"
+		},
+		{
+			"content": "userMessage",
+			"color": "#001080"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "tagName",
+			"color": "#001080"
+		},
+		{
+			"content": "=",
+			"color": "#FF0000"
+		},
+		{
+			"content": "\"h2\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " }}",
+			"color": "#000000"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#000000"
+		},
+		{
+			"content": "</div>",
+			"color": "#800000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "h1",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">Comments</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "h1",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "div",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "id",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "comments",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  {{#each ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "comments",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "h2",
+			"color": "#DC3958"
+		},
+		{
+			"content": "><",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "a",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "href=",
+			"color": "#F79A32"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "/posts/{{",
+			"color": "#889B4A"
+		},
+		{
+			"content": "../permalink",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}}#{{",
+			"color": "#889B4A"
+		},
+		{
+			"content": "id",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}}",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ">{{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "title",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}}</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "a",
+			"color": "#DC3958"
+		},
+		{
+			"content": "></",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "h2",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "div",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">{{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "body",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}}</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "div",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">{{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "./name",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}} or {{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "this/name",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}} or {{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "this.name",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}}</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "div",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "div",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "class=",
+			"color": "#F79A32"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "entry",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "  {{#if ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "author",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "h1",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">{{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "firstName",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}} {{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "lastName",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}}</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "h1",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  {{/if}}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "div",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "div",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "class=",
+			"color": "#F79A32"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "post",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  {{> ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "userMessage",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "tagName",
+			"color": "#DC3958"
+		},
+		{
+			"content": "=",
+			"color": "#F79A32"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "h1",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " }}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "h1",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">Comments</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "h1",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  {{#each ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "comments",
+			"color": "#DC3958"
+		},
+		{
+			"content": "}}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    {{> ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "userMessage",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "tagName",
+			"color": "#DC3958"
+		},
+		{
+			"content": "=",
+			"color": "#F79A32"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "h2",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " }}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "div",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "<",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "h1",
+			"color": "#F92672"
+		},
+		{
+			"content": ">Comments</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "h1",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "div",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "id",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"comments\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{#each",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "comments",
+			"color": "#FD971F"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "  <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "h2",
+			"color": "#F92672"
+		},
+		{
+			"content": "><",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "a",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "href=",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "\"/posts/",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "{{",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "../permalink",
+			"color": "#FD971F"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "#",
+			"color": "#E6DB74"
+		},
+		{
+			"content": "{{",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "id",
+			"color": "#FD971F"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "title",
+			"color": "#FD971F"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "a",
+			"color": "#F92672"
+		},
+		{
+			"content": "></",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "h2",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "div",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "body",
+			"color": "#FD971F"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "div",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{/each}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "  <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "./name",
+			"color": "#FD971F"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " or ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "this/name",
+			"color": "#FD971F"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " or ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "this.name",
+			"color": "#FD971F"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "div",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "div",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "class=",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "\"entry\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#75715E"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{#if",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "author",
+			"color": "#FD971F"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "    <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "h1",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "firstName",
+			"color": "#FD971F"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "lastName",
+			"color": "#FD971F"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "h1",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{/if}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "div",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "div",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "class=",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{>",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "userMessage",
+			"color": "#FD971F"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "tagName",
+			"color": "#FD971F"
+		},
+		{
+			"content": "=",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "\"h1\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "  <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "h1",
+			"color": "#F92672"
+		},
+		{
+			"content": ">Comments</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "h1",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{#each",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "comments",
+			"color": "#FD971F"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{>",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "userMessage",
+			"color": "#FD971F"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "tagName",
+			"color": "#FD971F"
+		},
+		{
+			"content": "=",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "\"h2\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{{/each}}",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "div",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "<h1>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "Comments",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</h1>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "<div",
+			"color": "#6089B4"
+		},
+		{
+			"content": " id=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"comments\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ">",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{{#each",
+			"color": "#C7444A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "comments",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<h2><a",
+			"color": "#6089B4"
+		},
+		{
+			"content": " href=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"/posts/",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "{{",
+			"color": "#C7444A"
+		},
+		{
+			"content": "../permalink",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "#",
+			"color": "#9AA83A"
+		},
+		{
+			"content": "{{",
+			"color": "#C7444A"
+		},
+		{
+			"content": "id",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ">",
+			"color": "#6089B4"
+		},
+		{
+			"content": "{{",
+			"color": "#C7444A"
+		},
+		{
+			"content": "title",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "</a></h2>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<div>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "{{",
+			"color": "#C7444A"
+		},
+		{
+			"content": "body",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "</div>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{{/each}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<p>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "{{",
+			"color": "#C7444A"
+		},
+		{
+			"content": "./name",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": " or ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{{",
+			"color": "#C7444A"
+		},
+		{
+			"content": "this/name",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": " or ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{{",
+			"color": "#C7444A"
+		},
+		{
+			"content": "this.name",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "</p>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "</div>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "<div",
+			"color": "#6089B4"
+		},
+		{
+			"content": " class=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"entry\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ">",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{{#if",
+			"color": "#C7444A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "author",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<h1>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "{{",
+			"color": "#C7444A"
+		},
+		{
+			"content": "firstName",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{{",
+			"color": "#C7444A"
+		},
+		{
+			"content": "lastName",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "</h1>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{{/if}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "</div>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "<div",
+			"color": "#6089B4"
+		},
+		{
+			"content": " class=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ">",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{{>",
+			"color": "#C7444A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "userMessage",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "tagName",
+			"color": "#6089B4"
+		},
+		{
+			"content": "=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"h1\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<h1>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "Comments",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</h1>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{{#each",
+			"color": "#C7444A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "comments",
+			"color": "#6089B4"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{{>",
+			"color": "#C7444A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "userMessage",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "tagName",
+			"color": "#6089B4"
+		},
+		{
+			"content": "=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"h2\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{{/each}}",
+			"color": "#C7444A"
+		},
+		{
+			"content": "</div>",
+			"color": "#6089B4"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "h1",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "Comments",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "h1",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "div",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "id",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "comments",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "{{#each",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "comments",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "h2",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "><",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "a",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "href",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "/posts/",
+			"color": "#448C27"
+		},
+		{
+			"content": "{{",
+			"color": "#AB6526"
+		},
+		{
+			"content": "../permalink",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "#",
+			"color": "#448C27"
+		},
+		{
+			"content": "{{",
+			"color": "#AB6526"
+		},
+		{
+			"content": "id",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "{{",
+			"color": "#AB6526"
+		},
+		{
+			"content": "title",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "a",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "></",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "h2",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "div",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "{{",
+			"color": "#AB6526"
+		},
+		{
+			"content": "body",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "div",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "{{/each}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "{{",
+			"color": "#AB6526"
+		},
+		{
+			"content": "./name",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": " or ",
+			"color": "#333333"
+		},
+		{
+			"content": "{{",
+			"color": "#AB6526"
+		},
+		{
+			"content": "this/name",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": " or ",
+			"color": "#333333"
+		},
+		{
+			"content": "{{",
+			"color": "#AB6526"
+		},
+		{
+			"content": "this.name",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "div",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "div",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "class",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "entry",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "{{#if",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "author",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "h1",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "{{",
+			"color": "#AB6526"
+		},
+		{
+			"content": "firstName",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{{",
+			"color": "#AB6526"
+		},
+		{
+			"content": "lastName",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "h1",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "{{/if}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "div",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "div",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "class",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "post",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "{{>",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "userMessage",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "tagName",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "=",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "h1",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "h1",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "Comments",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "h1",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "{{#each",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "comments",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "{{>",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "userMessage",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "tagName",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "=",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "h2",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "{{/each}}",
+			"color": "#AB6526"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "div",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		}
+	],
+	"red": [
+		{
+			"content": "<h1>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "Comments",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</h1>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "<div id=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"comments\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ">",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{{#each",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "comments",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<h2><a href=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"/posts/",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "{{",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "../permalink",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "#",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": "{{",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "id",
+			"color": "#EDEF7DFF"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ">",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "{{",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "title",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "</a></h2>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<div>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "{{",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "body",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "</div>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{{/each}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<p>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "{{",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "./name",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": " or ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{{",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "this/name",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": " or ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{{",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "this.name",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "</p>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "</div>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "<div class=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"entry\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ">",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{{#if",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "author",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<h1>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "{{",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "firstName",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{{",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "lastName",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "</h1>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{{/if}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "</div>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "<div class=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ">",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{{>",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "userMessage",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "tagName",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "=",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "\"h1\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<h1>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "Comments",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</h1>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{{#each",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "comments",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{{>",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "userMessage",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "tagName",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "=",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "\"h2\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{{/each}}",
+			"color": "#EB939AFF"
+		},
+		{
+			"content": "</div>",
+			"color": "#EC0D1EFF"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "Comments",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": " id=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"comments\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "  {{#each comments}}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "h2",
+			"color": "#268BD2"
+		},
+		{
+			"content": "><",
+			"color": "#657B83"
+		},
+		{
+			"content": "a",
+			"color": "#268BD2"
+		},
+		{
+			"content": " href=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"/posts/{{../permalink}}#{{id}}\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "{{title}}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "a",
+			"color": "#268BD2"
+		},
+		{
+			"content": "></",
+			"color": "#657B83"
+		},
+		{
+			"content": "h2",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "{{body}}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "{{./name}} or {{this/name}} or {{this.name}}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": " class=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"entry\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#657B83"
+		},
+		{
+			"content": "  {{#if author}}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "{{firstName}} {{lastName}}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "  {{/if}}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": " class=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "  {{> userMessage tagName=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"h1\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " }}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "Comments",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "  {{#each comments}}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    {{> userMessage tagName=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"h2\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " }}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "<",
+			"color": "#586E75"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">Comments</",
+			"color": "#586E75"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#586E75"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "id",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"comments\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "  {{#each comments}}",
+			"color": "#586E75"
+		},
+		{
+			"content": "  <",
+			"color": "#586E75"
+		},
+		{
+			"content": "h2",
+			"color": "#268BD2"
+		},
+		{
+			"content": "><",
+			"color": "#586E75"
+		},
+		{
+			"content": "a",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "href=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"/posts/{{../permalink}}#{{id}}\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">{{title}}</",
+			"color": "#586E75"
+		},
+		{
+			"content": "a",
+			"color": "#268BD2"
+		},
+		{
+			"content": "></",
+			"color": "#586E75"
+		},
+		{
+			"content": "h2",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "  <",
+			"color": "#586E75"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">{{body}}</",
+			"color": "#586E75"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#586E75"
+		},
+		{
+			"content": "  <",
+			"color": "#586E75"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">{{./name}} or {{this/name}} or {{this.name}}</",
+			"color": "#586E75"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#586E75"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#586E75"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "class=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"entry\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  {{#if author}}",
+			"color": "#586E75"
+		},
+		{
+			"content": "    <",
+			"color": "#586E75"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">{{firstName}} {{lastName}}</",
+			"color": "#586E75"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "  {{/if}}",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#586E75"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#586E75"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "class=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "  {{> userMessage ",
+			"color": "#586E75"
+		},
+		{
+			"content": "tagName=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"h1\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " }}",
+			"color": "#586E75"
+		},
+		{
+			"content": "  <",
+			"color": "#586E75"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">Comments</",
+			"color": "#586E75"
+		},
+		{
+			"content": "h1",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "  {{#each comments}}",
+			"color": "#586E75"
+		},
+		{
+			"content": "    {{> userMessage ",
+			"color": "#586E75"
+		},
+		{
+			"content": "tagName=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"h2\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " }}",
+			"color": "#586E75"
+		},
+		{
+			"content": "  {{/each}}",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#586E75"
+		},
+		{
+			"content": "div",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "<h1>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "Comments",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</h1>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "<div id=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"comments\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ">",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{{#each",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "comments}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<h2><a href=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"/posts/",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "{{../permalink}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "#",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": "{{id}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ">",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "{{title}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "</a></h2>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<div>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "{{body}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "</div>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{{/each}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<p>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "{{./name}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " or ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{{this/name}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " or ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{{this.name}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "</p>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "</div>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "<div class=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"entry\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ">",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{{!-- only output author name if an author exists --}}",
+			"color": "#7285B7"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{{#if",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "author}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<h1>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "{{firstName}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{{lastName}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "</h1>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{{/if}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "</div>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "<div class=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ">",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{{>",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "userMessage",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "tagName",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"h1\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<h1>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "Comments",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</h1>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{{#each",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "comments}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{{>",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "userMessage",
+			"color": "#FFC58F"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "tagName",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"h2\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{{/each}}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "</div>",
+			"color": "#FF9DA4"
+		}
+	]
+}

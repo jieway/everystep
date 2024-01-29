@@ -1,0 +1,2902 @@
+{
+	"abyss": [
+		{
+			"content": "impl",
+			"color": "#9966B8"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "where",
+			"color": "#225588"
+		},
+		{
+			"content": " A: B",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{ }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "impl",
+			"color": "#9966B8"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#9966B8"
+		},
+		{
+			"content": " C",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "where",
+			"color": "#225588"
+		},
+		{
+			"content": " A: B",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{ }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "impl",
+			"color": "#9966B8"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#9966B8"
+		},
+		{
+			"content": " C",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "fn",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "foo",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "where",
+			"color": "#225588"
+		},
+		{
+			"content": " A: B",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    { }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "fn",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "foo",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "where",
+			"color": "#225588"
+		},
+		{
+			"content": " A: B",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{ }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "struct",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Foo",
+			"color": "#FFEEBB"
+		},
+		{
+			"content": "<A,B>",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "where",
+			"color": "#225588"
+		},
+		{
+			"content": " A: B",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{ }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "trait",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Foo",
+			"color": "#FFEEBB"
+		},
+		{
+			"content": "<A,B> : C",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "where",
+			"color": "#225588"
+		},
+		{
+			"content": " A: B",
+			"color": "#6688CC"
+		},
+		{
+			"content": "{ }",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "impl",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{ }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "impl",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " C",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{ }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "impl",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " C",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "fn",
+			"color": "#569CD6"
+		},
+		{
+			"content": " foo<A,B> -> C",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    { }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "fn",
+			"color": "#569CD6"
+		},
+		{
+			"content": " foo<A,B> -> C",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{ }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "struct",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{ }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "trait",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Foo<A,B> : C",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{ }",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "impl",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "where",
+			"color": "#0000FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#000000"
+		},
+		{
+			"content": "{ }",
+			"color": "#000000"
+		},
+		{
+			"content": "impl",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": " C",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "where",
+			"color": "#0000FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#000000"
+		},
+		{
+			"content": "{ }",
+			"color": "#000000"
+		},
+		{
+			"content": "impl",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": " C",
+			"color": "#000000"
+		},
+		{
+			"content": "{",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "fn",
+			"color": "#0000FF"
+		},
+		{
+			"content": " foo<A,B> -> C",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "where",
+			"color": "#0000FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#000000"
+		},
+		{
+			"content": "    { }",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "fn",
+			"color": "#0000FF"
+		},
+		{
+			"content": " foo<A,B> -> C",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "where",
+			"color": "#0000FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#000000"
+		},
+		{
+			"content": "{ }",
+			"color": "#000000"
+		},
+		{
+			"content": "struct",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "where",
+			"color": "#0000FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#000000"
+		},
+		{
+			"content": "{ }",
+			"color": "#000000"
+		},
+		{
+			"content": "trait",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Foo<A,B> : C",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "where",
+			"color": "#0000FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#000000"
+		},
+		{
+			"content": "{ }",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "impl",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{ }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "impl",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " C",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{ }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "impl",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " C",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "fn",
+			"color": "#569CD6"
+		},
+		{
+			"content": " foo<A,B> -> C",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    { }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "fn",
+			"color": "#569CD6"
+		},
+		{
+			"content": " foo<A,B> -> C",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{ }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "struct",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{ }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "trait",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Foo<A,B> : C",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{ }",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "impl",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{ }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "impl",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " C",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{ }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "impl",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " C",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "fn",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "foo",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    { }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "fn",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "foo",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{ }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "struct",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Foo",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": "<A,B>",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{ }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "trait",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Foo",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": "<A,B> : C",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "where",
+			"color": "#569CD6"
+		},
+		{
+			"content": " A: B",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "{ }",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "impl",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "where",
+			"color": "#0000FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#000000"
+		},
+		{
+			"content": "{ }",
+			"color": "#000000"
+		},
+		{
+			"content": "impl",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": " C",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "where",
+			"color": "#0000FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#000000"
+		},
+		{
+			"content": "{ }",
+			"color": "#000000"
+		},
+		{
+			"content": "impl",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": " C",
+			"color": "#000000"
+		},
+		{
+			"content": "{",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "fn",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "foo",
+			"color": "#795E26"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "where",
+			"color": "#0000FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#000000"
+		},
+		{
+			"content": "    { }",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "fn",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "foo",
+			"color": "#795E26"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "where",
+			"color": "#0000FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#000000"
+		},
+		{
+			"content": "{ }",
+			"color": "#000000"
+		},
+		{
+			"content": "struct",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Foo",
+			"color": "#267F99"
+		},
+		{
+			"content": "<A,B>",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "where",
+			"color": "#0000FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#000000"
+		},
+		{
+			"content": "{ }",
+			"color": "#000000"
+		},
+		{
+			"content": "trait",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Foo",
+			"color": "#267F99"
+		},
+		{
+			"content": "<A,B> : C",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "where",
+			"color": "#0000FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#000000"
+		},
+		{
+			"content": "{ }",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "impl",
+			"color": "#98676A"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "where",
+			"color": "#98676A"
+		},
+		{
+			"content": " A: B",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "{ }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "impl",
+			"color": "#98676A"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#98676A"
+		},
+		{
+			"content": " C",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "where",
+			"color": "#98676A"
+		},
+		{
+			"content": " A: B",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "{ }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "impl",
+			"color": "#98676A"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#98676A"
+		},
+		{
+			"content": " C",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "{",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "fn",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "foo",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "where",
+			"color": "#98676A"
+		},
+		{
+			"content": " A: B",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    { }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "fn",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "foo",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "where",
+			"color": "#98676A"
+		},
+		{
+			"content": " A: B",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "{ }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "struct",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Foo",
+			"color": "#F06431"
+		},
+		{
+			"content": "<A,B>",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "where",
+			"color": "#98676A"
+		},
+		{
+			"content": " A: B",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "{ }",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "trait",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Foo",
+			"color": "#F06431"
+		},
+		{
+			"content": "<A,B> : C",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "where",
+			"color": "#98676A"
+		},
+		{
+			"content": " A: B",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "{ }",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "impl",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "where",
+			"color": "#F92672"
+		},
+		{
+			"content": " A: B",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{ }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "impl",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " C",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "where",
+			"color": "#F92672"
+		},
+		{
+			"content": " A: B",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{ }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "impl",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " C",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "fn",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "foo",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "where",
+			"color": "#F92672"
+		},
+		{
+			"content": " A: B",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    { }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "fn",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "foo",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "where",
+			"color": "#F92672"
+		},
+		{
+			"content": " A: B",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{ }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "struct",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Foo",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "<A,B>",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "where",
+			"color": "#F92672"
+		},
+		{
+			"content": " A: B",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{ }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "trait",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Foo",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "<A,B> : C",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "where",
+			"color": "#F92672"
+		},
+		{
+			"content": " A: B",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "{ }",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "impl",
+			"color": "#9872A2"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "where",
+			"color": "#676867"
+		},
+		{
+			"content": " A: B",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{ }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "impl",
+			"color": "#9872A2"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "for",
+			"color": "#9872A2"
+		},
+		{
+			"content": " C",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "where",
+			"color": "#676867"
+		},
+		{
+			"content": " A: B",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{ }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "impl",
+			"color": "#9872A2"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "for",
+			"color": "#9872A2"
+		},
+		{
+			"content": " C",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "fn",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "foo",
+			"color": "#CE6700"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "where",
+			"color": "#676867"
+		},
+		{
+			"content": " A: B",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    { }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "fn",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "foo",
+			"color": "#CE6700"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "where",
+			"color": "#676867"
+		},
+		{
+			"content": " A: B",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{ }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "struct",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Foo",
+			"color": "#9B0000"
+		},
+		{
+			"content": "<A,B>",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "where",
+			"color": "#676867"
+		},
+		{
+			"content": " A: B",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{ }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "trait",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Foo",
+			"color": "#9B0000"
+		},
+		{
+			"content": "<A,B> : C",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "where",
+			"color": "#676867"
+		},
+		{
+			"content": " A: B",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "{ }",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "impl",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "where",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " A: B",
+			"color": "#333333"
+		},
+		{
+			"content": "{ }",
+			"color": "#333333"
+		},
+		{
+			"content": "impl",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#333333"
+		},
+		{
+			"content": "for",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " C",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "where",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " A: B",
+			"color": "#333333"
+		},
+		{
+			"content": "{ }",
+			"color": "#333333"
+		},
+		{
+			"content": "impl",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#333333"
+		},
+		{
+			"content": "for",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " C",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "fn",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "foo",
+			"color": "#AA3731"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "where",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " A: B",
+			"color": "#333333"
+		},
+		{
+			"content": "    { }",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#333333"
+		},
+		{
+			"content": "fn",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "foo",
+			"color": "#AA3731"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "where",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " A: B",
+			"color": "#333333"
+		},
+		{
+			"content": "{ }",
+			"color": "#333333"
+		},
+		{
+			"content": "struct",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Foo",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "<A,B>",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "where",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " A: B",
+			"color": "#333333"
+		},
+		{
+			"content": "{ }",
+			"color": "#333333"
+		},
+		{
+			"content": "trait",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Foo",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "<A,B> : C",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "where",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " A: B",
+			"color": "#333333"
+		},
+		{
+			"content": "{ }",
+			"color": "#333333"
+		}
+	],
+	"red": [
+		{
+			"content": "impl",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "where",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{ }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "impl",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "for",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " C",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "where",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{ }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "impl",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "for",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " C",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "fn",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "foo",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "where",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    { }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "fn",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "foo",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "where",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{ }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "struct",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Foo",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "<A,B>",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "where",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{ }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "trait",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Foo",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "<A,B> : C",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "where",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " A: B",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "{ }",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "impl",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "where",
+			"color": "#859900"
+		},
+		{
+			"content": " A: B",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "{ }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "impl",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "for",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " C",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "where",
+			"color": "#859900"
+		},
+		{
+			"content": " A: B",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "{ }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "impl",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "for",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " C",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "{",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "fn",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "foo",
+			"color": "#268BD2"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "where",
+			"color": "#859900"
+		},
+		{
+			"content": " A: B",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    { }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "fn",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "foo",
+			"color": "#268BD2"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "where",
+			"color": "#859900"
+		},
+		{
+			"content": " A: B",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "{ }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "struct",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Foo",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "<A,B>",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "where",
+			"color": "#859900"
+		},
+		{
+			"content": " A: B",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "{ }",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "trait",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Foo",
+			"color": "#CB4B16"
+		},
+		{
+			"content": "<A,B> : C",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "where",
+			"color": "#859900"
+		},
+		{
+			"content": " A: B",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "{ }",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "impl",
+			"color": "#073642"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "where",
+			"color": "#859900"
+		},
+		{
+			"content": " A: B",
+			"color": "#586E75"
+		},
+		{
+			"content": "{ }",
+			"color": "#586E75"
+		},
+		{
+			"content": "impl",
+			"color": "#073642"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#073642"
+		},
+		{
+			"content": " C",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "where",
+			"color": "#859900"
+		},
+		{
+			"content": " A: B",
+			"color": "#586E75"
+		},
+		{
+			"content": "{ }",
+			"color": "#586E75"
+		},
+		{
+			"content": "impl",
+			"color": "#073642"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#073642"
+		},
+		{
+			"content": " C",
+			"color": "#586E75"
+		},
+		{
+			"content": "{",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "fn",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "foo",
+			"color": "#268BD2"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "where",
+			"color": "#859900"
+		},
+		{
+			"content": " A: B",
+			"color": "#586E75"
+		},
+		{
+			"content": "    { }",
+			"color": "#586E75"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		},
+		{
+			"content": "fn",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "foo",
+			"color": "#268BD2"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "where",
+			"color": "#859900"
+		},
+		{
+			"content": " A: B",
+			"color": "#586E75"
+		},
+		{
+			"content": "{ }",
+			"color": "#586E75"
+		},
+		{
+			"content": "struct",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Foo",
+			"color": "#268BD2"
+		},
+		{
+			"content": "<A,B>",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "where",
+			"color": "#859900"
+		},
+		{
+			"content": " A: B",
+			"color": "#586E75"
+		},
+		{
+			"content": "{ }",
+			"color": "#586E75"
+		},
+		{
+			"content": "trait",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Foo",
+			"color": "#268BD2"
+		},
+		{
+			"content": "<A,B> : C",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "where",
+			"color": "#859900"
+		},
+		{
+			"content": " A: B",
+			"color": "#586E75"
+		},
+		{
+			"content": "{ }",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "impl",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " Foo<A,B>",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "where",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " A: B",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{ }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "impl",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " C",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "where",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " A: B",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{ }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "impl",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " Foo<A,B> ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " C",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "fn",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "foo",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "where",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " A: B",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    { }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "fn",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "foo",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "<A,B> -> C",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "where",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " A: B",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{ }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "struct",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Foo",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": "<A,B>",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "where",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " A: B",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{ }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "trait",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Foo",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": "<A,B> : C",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "where",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " A: B",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{ }",
+			"color": "#FFFFFF"
+		}
+	]
+}

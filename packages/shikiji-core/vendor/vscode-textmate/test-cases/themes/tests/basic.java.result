@@ -1,0 +1,7670 @@
+{
+	"abyss": [
+		{
+			"content": "package",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "foo",
+			"color": "#225588"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "import",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "org.junit.Test",
+			"color": "#225588"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "import",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "org.junit.runners.*",
+			"color": "#225588"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "/*",
+			"color": "#223355"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#223355"
+		},
+		{
+			"content": " */",
+			"color": "#223355"
+		},
+		{
+			"content": "public",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "class",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "TestClass",
+			"color": "#FFEEBB"
+		},
+		{
+			"content": " {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "private",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "String",
+			"color": "#9966B8"
+		},
+		{
+			"content": " aString;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "/**",
+			"color": "#223355"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#223355"
+		},
+		{
+			"content": "\t */",
+			"color": "#223355"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "public",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "void",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "doSomething",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "int",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "a",
+			"color": "#2277FF"
+		},
+		{
+			"content": ") {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "double",
+			"color": "#9966B8"
+		},
+		{
+			"content": " b ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "0.0",
+			"color": "#F280D0"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "double",
+			"color": "#9966B8"
+		},
+		{
+			"content": " c ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "10e3",
+			"color": "#F280D0"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "long",
+			"color": "#9966B8"
+		},
+		{
+			"content": " l ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "134l",
+			"color": "#F280D0"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "/*",
+			"color": "#223355"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#223355"
+		},
+		{
+			"content": "\t */",
+			"color": "#223355"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "value",
+			"color": "#F280D0"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"aString\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ")",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "private",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "long",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "privateMethod",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "long",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "b",
+			"color": "#2277FF"
+		},
+		{
+			"content": "){",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#225588"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "int",
+			"color": "#9966B8"
+		},
+		{
+			"content": " i ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "0",
+			"color": "#F280D0"
+		},
+		{
+			"content": "; i ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "9",
+			"color": "#F280D0"
+		},
+		{
+			"content": "; i",
+			"color": "#6688CC"
+		},
+		{
+			"content": "++",
+			"color": "#225588"
+		},
+		{
+			"content": ") {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "System",
+			"color": "#9966B8"
+		},
+		{
+			"content": ".",
+			"color": "#225588"
+		},
+		{
+			"content": "out",
+			"color": "#6688CC"
+		},
+		{
+			"content": ".",
+			"color": "#225588"
+		},
+		{
+			"content": "println(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "+",
+			"color": "#225588"
+		},
+		{
+			"content": " i);",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "return",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "10",
+			"color": "#F280D0"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#223355"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "@Test",
+			"color": "#9966B8"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "public",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "void",
+			"color": "#9966B8"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "someTests",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "() {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "int",
+			"color": "#9966B8"
+		},
+		{
+			"content": " hex ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "0x5",
+			"color": "#F280D0"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#9966B8"
+		},
+		{
+			"content": " v ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "new",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Vector",
+			"color": "#9966B8"
+		},
+		{
+			"content": "();",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "package",
+			"color": "#569CD6"
+		},
+		{
+			"content": " foo;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "import",
+			"color": "#569CD6"
+		},
+		{
+			"content": " org.junit.Test;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "import",
+			"color": "#569CD6"
+		},
+		{
+			"content": " org.junit.runners.*;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/*",
+			"color": "#608B4E"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#608B4E"
+		},
+		{
+			"content": " */",
+			"color": "#608B4E"
+		},
+		{
+			"content": "public",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "class",
+			"color": "#569CD6"
+		},
+		{
+			"content": " TestClass {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "private",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "String",
+			"color": "#569CD6"
+		},
+		{
+			"content": " aString;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/**",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t */",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "public",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " doSomething(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " a) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "double",
+			"color": "#569CD6"
+		},
+		{
+			"content": " b = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0.0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "double",
+			"color": "#569CD6"
+		},
+		{
+			"content": " c = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "10e3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "long",
+			"color": "#569CD6"
+		},
+		{
+			"content": " l = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "134l",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/*",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t */",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#569CD6"
+		},
+		{
+			"content": "(value = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"aString\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "private",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "long",
+			"color": "#569CD6"
+		},
+		{
+			"content": " privateMethod(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "long",
+			"color": "#569CD6"
+		},
+		{
+			"content": " b){",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " i = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; i < ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "9",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; i++) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "System",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".out.println(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " + i);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "10",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@Test",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "public",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " someTests() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " hex = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0x5",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#569CD6"
+		},
+		{
+			"content": " v = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "new",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Vector",
+			"color": "#569CD6"
+		},
+		{
+			"content": "();",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "package",
+			"color": "#0000FF"
+		},
+		{
+			"content": " foo;",
+			"color": "#000000"
+		},
+		{
+			"content": "import",
+			"color": "#0000FF"
+		},
+		{
+			"content": " org.junit.Test;",
+			"color": "#000000"
+		},
+		{
+			"content": "import",
+			"color": "#0000FF"
+		},
+		{
+			"content": " org.junit.runners.*;",
+			"color": "#000000"
+		},
+		{
+			"content": "/*",
+			"color": "#008000"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#008000"
+		},
+		{
+			"content": " */",
+			"color": "#008000"
+		},
+		{
+			"content": "public",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "class",
+			"color": "#0000FF"
+		},
+		{
+			"content": " TestClass {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "private",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "String",
+			"color": "#0000FF"
+		},
+		{
+			"content": " aString;",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "/**",
+			"color": "#008000"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#008000"
+		},
+		{
+			"content": "\t */",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "public",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "void",
+			"color": "#0000FF"
+		},
+		{
+			"content": " doSomething(",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " a) {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "double",
+			"color": "#0000FF"
+		},
+		{
+			"content": " b = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0.0",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "double",
+			"color": "#0000FF"
+		},
+		{
+			"content": " c = ",
+			"color": "#000000"
+		},
+		{
+			"content": "10e3",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "long",
+			"color": "#0000FF"
+		},
+		{
+			"content": " l = ",
+			"color": "#000000"
+		},
+		{
+			"content": "134l",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "/*",
+			"color": "#008000"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#008000"
+		},
+		{
+			"content": "\t */",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#0000FF"
+		},
+		{
+			"content": "(value = ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"aString\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "private",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "long",
+			"color": "#0000FF"
+		},
+		{
+			"content": " privateMethod(",
+			"color": "#000000"
+		},
+		{
+			"content": "long",
+			"color": "#0000FF"
+		},
+		{
+			"content": " b){",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#0000FF"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " i = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": "; i < ",
+			"color": "#000000"
+		},
+		{
+			"content": "9",
+			"color": "#09885A"
+		},
+		{
+			"content": "; i++) {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "System",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".out.println(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " + i);",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "10",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "@Test",
+			"color": "#0000FF"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "public",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "void",
+			"color": "#0000FF"
+		},
+		{
+			"content": " someTests() {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#0000FF"
+		},
+		{
+			"content": " hex = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0x5",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#0000FF"
+		},
+		{
+			"content": " v = ",
+			"color": "#000000"
+		},
+		{
+			"content": "new",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Vector",
+			"color": "#0000FF"
+		},
+		{
+			"content": "();",
+			"color": "#000000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "package",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "foo",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "import",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "org.junit.Test",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "import",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "org.junit.runners.*",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/*",
+			"color": "#7CA668"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#7CA668"
+		},
+		{
+			"content": " */",
+			"color": "#7CA668"
+		},
+		{
+			"content": "public",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "class",
+			"color": "#569CD6"
+		},
+		{
+			"content": " TestClass {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "private",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "String",
+			"color": "#569CD6"
+		},
+		{
+			"content": " aString;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/**",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t */",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "public",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " doSomething(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " a) {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "double",
+			"color": "#569CD6"
+		},
+		{
+			"content": " b ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0.0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "double",
+			"color": "#569CD6"
+		},
+		{
+			"content": " c ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "10e3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "long",
+			"color": "#569CD6"
+		},
+		{
+			"content": " l ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "134l",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/*",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t */",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#569CD6"
+		},
+		{
+			"content": "(value ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"aString\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "private",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "long",
+			"color": "#569CD6"
+		},
+		{
+			"content": " privateMethod(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "long",
+			"color": "#569CD6"
+		},
+		{
+			"content": " b){",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " i ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; i ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "9",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; i",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "++",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "System",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "out",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "println(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " i);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "10",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@Test",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "public",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "void",
+			"color": "#569CD6"
+		},
+		{
+			"content": " someTests() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#569CD6"
+		},
+		{
+			"content": " hex ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0x5",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#569CD6"
+		},
+		{
+			"content": " v ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "new",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Vector",
+			"color": "#569CD6"
+		},
+		{
+			"content": "();",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "package",
+			"color": "#569CD6"
+		},
+		{
+			"content": " foo;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "import",
+			"color": "#569CD6"
+		},
+		{
+			"content": " org.junit.Test;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "import",
+			"color": "#569CD6"
+		},
+		{
+			"content": " org.junit.runners.*;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/*",
+			"color": "#608B4E"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#608B4E"
+		},
+		{
+			"content": " */",
+			"color": "#608B4E"
+		},
+		{
+			"content": "public",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "class",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "TestClass",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "private",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "String",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " aString;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/**",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t */",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "public",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "void",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "doSomething",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "a",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ") {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "double",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " b = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0.0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "double",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " c = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "10e3",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "long",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " l = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "134l",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "/*",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t */",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": "(value = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"aString\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "private",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "long",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "privateMethod",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "long",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "b",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "){",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " i = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; i < ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "9",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "; i++) {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "System",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": ".out.println(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " + i);",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "return",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "10",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@Test",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "public",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "void",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "someTests",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "() {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "int",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " hex = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0x5",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": " v = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "new",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Vector",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": "();",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "package",
+			"color": "#0000FF"
+		},
+		{
+			"content": " foo;",
+			"color": "#000000"
+		},
+		{
+			"content": "import",
+			"color": "#0000FF"
+		},
+		{
+			"content": " org.junit.Test;",
+			"color": "#000000"
+		},
+		{
+			"content": "import",
+			"color": "#0000FF"
+		},
+		{
+			"content": " org.junit.runners.*;",
+			"color": "#000000"
+		},
+		{
+			"content": "/*",
+			"color": "#008000"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#008000"
+		},
+		{
+			"content": " */",
+			"color": "#008000"
+		},
+		{
+			"content": "public",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "class",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "TestClass",
+			"color": "#267F99"
+		},
+		{
+			"content": " {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "private",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "String",
+			"color": "#267F99"
+		},
+		{
+			"content": " aString;",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "/**",
+			"color": "#008000"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#008000"
+		},
+		{
+			"content": "\t */",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "public",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "void",
+			"color": "#267F99"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "doSomething",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#267F99"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "a",
+			"color": "#001080"
+		},
+		{
+			"content": ") {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "double",
+			"color": "#267F99"
+		},
+		{
+			"content": " b = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0.0",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "double",
+			"color": "#267F99"
+		},
+		{
+			"content": " c = ",
+			"color": "#000000"
+		},
+		{
+			"content": "10e3",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "long",
+			"color": "#267F99"
+		},
+		{
+			"content": " l = ",
+			"color": "#000000"
+		},
+		{
+			"content": "134l",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "/*",
+			"color": "#008000"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#008000"
+		},
+		{
+			"content": "\t */",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#267F99"
+		},
+		{
+			"content": "(value = ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"aString\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "private",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "long",
+			"color": "#267F99"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "privateMethod",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "long",
+			"color": "#267F99"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "b",
+			"color": "#001080"
+		},
+		{
+			"content": "){",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#267F99"
+		},
+		{
+			"content": " i = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#09885A"
+		},
+		{
+			"content": "; i < ",
+			"color": "#000000"
+		},
+		{
+			"content": "9",
+			"color": "#09885A"
+		},
+		{
+			"content": "; i++) {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "System",
+			"color": "#267F99"
+		},
+		{
+			"content": ".out.println(",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#A31515"
+		},
+		{
+			"content": " + i);",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "return",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "10",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#008000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "@Test",
+			"color": "#267F99"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "public",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "void",
+			"color": "#267F99"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "someTests",
+			"color": "#795E26"
+		},
+		{
+			"content": "() {",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "int",
+			"color": "#267F99"
+		},
+		{
+			"content": " hex = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0x5",
+			"color": "#09885A"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#267F99"
+		},
+		{
+			"content": " v = ",
+			"color": "#000000"
+		},
+		{
+			"content": "new",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Vector",
+			"color": "#267F99"
+		},
+		{
+			"content": "();",
+			"color": "#000000"
+		},
+		{
+			"content": "\t}",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "package",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "foo",
+			"color": "#98676A"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "import",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "org.junit.Test",
+			"color": "#98676A"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "import",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "org.junit.runners.*",
+			"color": "#98676A"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "/*",
+			"color": "#A57A4C"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#A57A4C"
+		},
+		{
+			"content": " */",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "public",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "class",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "TestClass",
+			"color": "#F06431"
+		},
+		{
+			"content": " {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "private",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "String",
+			"color": "#98676A"
+		},
+		{
+			"content": " aString;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "/**",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t */",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "public",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "void",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "doSomething",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "int",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "a",
+			"color": "#DC3958"
+		},
+		{
+			"content": ") {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "double",
+			"color": "#98676A"
+		},
+		{
+			"content": " b = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "0.0",
+			"color": "#F79A32"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "double",
+			"color": "#98676A"
+		},
+		{
+			"content": " c = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "10e3",
+			"color": "#F79A32"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "long",
+			"color": "#98676A"
+		},
+		{
+			"content": " l = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "134l",
+			"color": "#F79A32"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "/*",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t */",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#98676A"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "value",
+			"color": "#F79A32"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "aString",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ")",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "private",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "long",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "privateMethod",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "long",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "b",
+			"color": "#DC3958"
+		},
+		{
+			"content": "){",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#98676A"
+		},
+		{
+			"content": " (",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "int",
+			"color": "#98676A"
+		},
+		{
+			"content": " i = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "0",
+			"color": "#F79A32"
+		},
+		{
+			"content": "; i < ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "9",
+			"color": "#F79A32"
+		},
+		{
+			"content": "; i++) {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "System",
+			"color": "#98676A"
+		},
+		{
+			"content": ".out.println(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Hello",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " + i);",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "return",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "10",
+			"color": "#F79A32"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "@Test",
+			"color": "#98676A"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "public",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "void",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "someTests",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "() {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "int",
+			"color": "#98676A"
+		},
+		{
+			"content": " hex = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "0x5",
+			"color": "#F79A32"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#98676A"
+		},
+		{
+			"content": " v = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "new",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Vector",
+			"color": "#98676A"
+		},
+		{
+			"content": "();",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t}",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "package",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "foo",
+			"color": "#F92672"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "import",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "org.junit.Test",
+			"color": "#F92672"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "import",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "org.junit.runners.*",
+			"color": "#F92672"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "/*",
+			"color": "#75715E"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#75715E"
+		},
+		{
+			"content": " */",
+			"color": "#75715E"
+		},
+		{
+			"content": "public",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "class",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "TestClass",
+			"color": "#A6E22E"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "private",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "String",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " aString;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "/**",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t */",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "public",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "void",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "doSomething",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "int",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "a",
+			"color": "#FD971F"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "double",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " b ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "0.0",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "double",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " c ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "10e3",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "long",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " l ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "134l",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "/*",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t */",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "value",
+			"color": "#AE81FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"aString\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "private",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "long",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "privateMethod",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "long",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "b",
+			"color": "#FD971F"
+		},
+		{
+			"content": "){",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#F92672"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "int",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " i ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "0",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "; i ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "9",
+			"color": "#AE81FF"
+		},
+		{
+			"content": "; i",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "++",
+			"color": "#F92672"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "System",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ".",
+			"color": "#F92672"
+		},
+		{
+			"content": "out",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ".",
+			"color": "#F92672"
+		},
+		{
+			"content": "println(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "+",
+			"color": "#F92672"
+		},
+		{
+			"content": " i);",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "return",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "10",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "@Test",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "public",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "void",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "someTests",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "int",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " hex ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "0x5",
+			"color": "#AE81FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " v ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "new",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Vector",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "();",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "package",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "foo",
+			"color": "#9872A2"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "import",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "org.junit.Test",
+			"color": "#9872A2"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "import",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "org.junit.runners.*",
+			"color": "#9872A2"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "/*",
+			"color": "#9A9B99"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#9A9B99"
+		},
+		{
+			"content": " */",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "public",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "class",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "TestClass",
+			"color": "#9B0000"
+		},
+		{
+			"content": " {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "private",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "String",
+			"color": "#9872A2"
+		},
+		{
+			"content": " aString;",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "/**",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t */",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "public",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "void",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "doSomething",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "int",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "a",
+			"color": "#6089B4"
+		},
+		{
+			"content": ") {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "double",
+			"color": "#9872A2"
+		},
+		{
+			"content": " b ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "0.0",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "double",
+			"color": "#9872A2"
+		},
+		{
+			"content": " c ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "10e3",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "long",
+			"color": "#9872A2"
+		},
+		{
+			"content": " l ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "134l",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "/*",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t */",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "value",
+			"color": "#8080FF"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"aString\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ")",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "private",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "long",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "privateMethod",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "long",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "b",
+			"color": "#6089B4"
+		},
+		{
+			"content": "){",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "for",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "int",
+			"color": "#9872A2"
+		},
+		{
+			"content": " i ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "0",
+			"color": "#6089B4"
+		},
+		{
+			"content": "; i ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "9",
+			"color": "#6089B4"
+		},
+		{
+			"content": "; i",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "++",
+			"color": "#676867"
+		},
+		{
+			"content": ") {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "System",
+			"color": "#9872A2"
+		},
+		{
+			"content": ".",
+			"color": "#676867"
+		},
+		{
+			"content": "out",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ".",
+			"color": "#676867"
+		},
+		{
+			"content": "println(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "+",
+			"color": "#676867"
+		},
+		{
+			"content": " i);",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "return",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "10",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "@Test",
+			"color": "#9872A2"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "public",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "void",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "someTests",
+			"color": "#CE6700"
+		},
+		{
+			"content": "() {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "int",
+			"color": "#9872A2"
+		},
+		{
+			"content": " hex ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "0x5",
+			"color": "#6089B4"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#9872A2"
+		},
+		{
+			"content": " v ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "new",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Vector",
+			"color": "#9872A2"
+		},
+		{
+			"content": "();",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "package",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "foo",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "import",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "org",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "junit",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "Test",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "import",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "org",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "junit",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "runners",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "*",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "/*",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": " */",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "public",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "class",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "TestClass",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "private",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "String",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " aString",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "/**",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t */",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "public",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "void",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "doSomething",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "int",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "a",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ") ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "double",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " b ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "0.0",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "double",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " c ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "10e3",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "long",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " l ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "134l",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "/*",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t */",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "value",
+			"color": "#AB6526"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "aString",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "private",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "long",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "privateMethod",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "long",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "b",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "for",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "int",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " i ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "0",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": " i ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "9",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": " i",
+			"color": "#333333"
+		},
+		{
+			"content": "++",
+			"color": "#777777"
+		},
+		{
+			"content": ") ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "System",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "out",
+			"color": "#333333"
+		},
+		{
+			"content": ".",
+			"color": "#777777"
+		},
+		{
+			"content": "println",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "Hello",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "+",
+			"color": "#777777"
+		},
+		{
+			"content": " i",
+			"color": "#333333"
+		},
+		{
+			"content": ");",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "return",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "10",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#777777"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "@Test",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "public",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "void",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "someTests",
+			"color": "#AA3731"
+		},
+		{
+			"content": "() ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "int",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " hex ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "0x5",
+			"color": "#AB6526"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " v ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "new",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Vector",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "()",
+			"color": "#333333"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		}
+	],
+	"red": [
+		{
+			"content": "package",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "foo",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "import",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "org.junit.Test",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "import",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "org.junit.runners.*",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "/*",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": " */",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "public",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "class",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "TestClass",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": " {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "private",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "String",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " aString;",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "/**",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t */",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "public",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "void",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "doSomething",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "int",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "a",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "double",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " b ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "0.0",
+			"color": "#994646FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "double",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " c ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "10e3",
+			"color": "#994646FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "long",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " l ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "134l",
+			"color": "#994646FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "/*",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t */",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "value",
+			"color": "#994646FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"aString\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "private",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "long",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "privateMethod",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "long",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "b",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "){",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "for",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "int",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " i ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "0",
+			"color": "#994646FF"
+		},
+		{
+			"content": "; i ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "9",
+			"color": "#994646FF"
+		},
+		{
+			"content": "; i",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "++",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "System",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": ".",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "out",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ".",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "println(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "+",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " i);",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "return",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "10",
+			"color": "#994646FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "@Test",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "public",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "void",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "someTests",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "() {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "int",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " hex ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "0x5",
+			"color": "#994646FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " v ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "new",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Vector",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": "();",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "package",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "foo",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "import",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "org.junit.Test",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "import",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "org.junit.runners.*",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "/*",
+			"color": "#657B83"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#657B83"
+		},
+		{
+			"content": " */",
+			"color": "#657B83"
+		},
+		{
+			"content": "public",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "class",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "TestClass",
+			"color": "#CB4B16"
+		},
+		{
+			"content": " {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "private",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "String",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " aString;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "/**",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t */",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "public",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "void",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "doSomething",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "int",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " a) {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "double",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " b ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "0.0",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "double",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " c ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "10e3",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "long",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " l ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "134l",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "/*",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t */",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "value",
+			"color": "#CB4B16"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"aString\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "private",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "long",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "privateMethod",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "long",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " b){",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "int",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " i ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": "; i ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "9",
+			"color": "#D33682"
+		},
+		{
+			"content": "; i",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "++",
+			"color": "#859900"
+		},
+		{
+			"content": ") {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "System",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ".",
+			"color": "#859900"
+		},
+		{
+			"content": "out",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ".",
+			"color": "#859900"
+		},
+		{
+			"content": "println(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": " i);",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "10",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "@Test",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "public",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "void",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "someTests",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "int",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " hex ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "0x5",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " v ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "new",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Vector",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "();",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t}",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "package",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "foo",
+			"color": "#073642"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "import",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "org.junit.Test",
+			"color": "#073642"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "import",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "org.junit.runners.*",
+			"color": "#073642"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "/*",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " */",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "public",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "class",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "TestClass",
+			"color": "#268BD2"
+		},
+		{
+			"content": " {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "private",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "String",
+			"color": "#073642"
+		},
+		{
+			"content": " aString;",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "/**",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t */",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "public",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "void",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "doSomething",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "int",
+			"color": "#073642"
+		},
+		{
+			"content": " a) {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "double",
+			"color": "#073642"
+		},
+		{
+			"content": " b ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "0.0",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "double",
+			"color": "#073642"
+		},
+		{
+			"content": " c ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "10e3",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "long",
+			"color": "#073642"
+		},
+		{
+			"content": " l ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "134l",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t}",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "/*",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t */",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#073642"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "value",
+			"color": "#CB4B16"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"aString\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ")",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "private",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "long",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "privateMethod",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "long",
+			"color": "#073642"
+		},
+		{
+			"content": " b){",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "int",
+			"color": "#073642"
+		},
+		{
+			"content": " i ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "0",
+			"color": "#D33682"
+		},
+		{
+			"content": "; i ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "9",
+			"color": "#D33682"
+		},
+		{
+			"content": "; i",
+			"color": "#586E75"
+		},
+		{
+			"content": "++",
+			"color": "#859900"
+		},
+		{
+			"content": ") {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "System",
+			"color": "#073642"
+		},
+		{
+			"content": ".",
+			"color": "#859900"
+		},
+		{
+			"content": "out",
+			"color": "#586E75"
+		},
+		{
+			"content": ".",
+			"color": "#859900"
+		},
+		{
+			"content": "println(",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": " i);",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "return",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "10",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t}",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "@Test",
+			"color": "#073642"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "public",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "void",
+			"color": "#073642"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "someTests",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() {",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "int",
+			"color": "#073642"
+		},
+		{
+			"content": " hex ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "0x5",
+			"color": "#D33682"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#073642"
+		},
+		{
+			"content": " v ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "new",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Vector",
+			"color": "#073642"
+		},
+		{
+			"content": "();",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t}",
+			"color": "#586E75"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "package",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "foo",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "import",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "org.junit.Test",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "import",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "org.junit.runners.*",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/*",
+			"color": "#7285B7"
+		},
+		{
+			"content": " * Multi line comment",
+			"color": "#7285B7"
+		},
+		{
+			"content": " */",
+			"color": "#7285B7"
+		},
+		{
+			"content": "public",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "class",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "TestClass",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": " {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "private",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "String",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " aString;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/**",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t * @param args",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t */",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "public",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "void",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "doSomething",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "a",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "double",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " b ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0.0",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "double",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " c ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "10e3",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "long",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " l ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "134l",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "/*",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t * multiline comment",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t */",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@SuppressWarnings",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "(value ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"aString\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "private",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "long",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "privateMethod",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "long",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "b",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "){",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " i ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "; i ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "9",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "; i",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "++",
+			"color": "#99FFFF"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "System",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ".",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "out",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ".",
+			"color": "#99FFFF"
+		},
+		{
+			"content": "println(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Hello\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "+",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " i);",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "return",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "10",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "//single line comment",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@Test",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "public",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "void",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "someTests",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "() {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "int",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " hex ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0x5",
+			"color": "#FFC58F"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Vector<Number>",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " v ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "new",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Vector",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "();",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	]
+}

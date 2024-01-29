@@ -1,0 +1,1 @@
+import{_ as o,c as e,o as c,R as l}from"./chunks/framework.2bglP9T5.js";const u=JSON.parse('{"title":"简介","description":"","frontmatter":{},"headers":[],"relativePath":"aryadb/README.md","filePath":"aryadb/README.md"}'),i={name:"aryadb/README.md"},t=l("",16),d=[t];function r(n,s,a,g,p,_){return c(),e("div",null,d)}const m=o(i,[["render",r]]);export{u as __pageData,m as default};

@@ -1,0 +1,1146 @@
+{
+	"abyss": [
+		{
+			"content": "--- lao\tSat Jan 26 23:30:39 1991",
+			"color": "#6688CC"
+		},
+		{
+			"content": "+++ tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#6688CC"
+		},
+		{
+			"content": "@@ -1,7 +1,6 @@",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-The Way that can be told of is not the eternal Way;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-The name that can be named is not the eternal name.",
+			"color": "#6688CC"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#6688CC"
+		},
+		{
+			"content": "-The Named is the mother of all things.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "+The named is the mother of all things.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "+",
+			"color": "#6688CC"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#6688CC"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#6688CC"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#6688CC"
+		},
+		{
+			"content": "@@ -9,3 +8,6 @@",
+			"color": "#6688CC"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#6688CC"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#6688CC"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "+They both may be called deep and profound.",
+			"color": "#6688CC"
+		},
+		{
+			"content": "+Deeper and more profound,",
+			"color": "#6688CC"
+		},
+		{
+			"content": "+The door of all subtleties!",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "--- lao\tSat Jan 26 23:30:39 1991",
+			"color": "#569CD6"
+		},
+		{
+			"content": "+++ tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#569CD6"
+		},
+		{
+			"content": "@@ -1,7 +1,6 @@",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "-The Way that can be told of is not the eternal Way;",
+			"color": "#CE9178"
+		},
+		{
+			"content": "-The name that can be named is not the eternal name.",
+			"color": "#CE9178"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "-The Named is the mother of all things.",
+			"color": "#CE9178"
+		},
+		{
+			"content": "+The named is the mother of all things.",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "+",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@@ -9,3 +8,6 @@",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "+They both may be called deep and profound.",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "+Deeper and more profound,",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "+The door of all subtleties!",
+			"color": "#B5CEA8"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "--- lao\tSat Jan 26 23:30:39 1991",
+			"color": "#000080"
+		},
+		{
+			"content": "+++ tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#000080"
+		},
+		{
+			"content": "@@ -1,7 +1,6 @@",
+			"color": "#000000"
+		},
+		{
+			"content": "-The Way that can be told of is not the eternal Way;",
+			"color": "#A31515"
+		},
+		{
+			"content": "-The name that can be named is not the eternal name.",
+			"color": "#A31515"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#000000"
+		},
+		{
+			"content": "-The Named is the mother of all things.",
+			"color": "#A31515"
+		},
+		{
+			"content": "+The named is the mother of all things.",
+			"color": "#09885A"
+		},
+		{
+			"content": "+",
+			"color": "#09885A"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#000000"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#000000"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#000000"
+		},
+		{
+			"content": "@@ -9,3 +8,6 @@",
+			"color": "#000000"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#000000"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#000000"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#000000"
+		},
+		{
+			"content": "+They both may be called deep and profound.",
+			"color": "#09885A"
+		},
+		{
+			"content": "+Deeper and more profound,",
+			"color": "#09885A"
+		},
+		{
+			"content": "+The door of all subtleties!",
+			"color": "#09885A"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "--- lao\tSat Jan 26 23:30:39 1991",
+			"color": "#000080"
+		},
+		{
+			"content": "+++ tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#000080"
+		},
+		{
+			"content": "@@ -1,7 +1,6 @@",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-The Way that can be told of is not the eternal Way;",
+			"color": "#CE9178"
+		},
+		{
+			"content": "-The name that can be named is not the eternal name.",
+			"color": "#CE9178"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-The Named is the mother of all things.",
+			"color": "#CE9178"
+		},
+		{
+			"content": "+The named is the mother of all things.",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "+",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@@ -9,3 +8,6 @@",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "+They both may be called deep and profound.",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "+Deeper and more profound,",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "+The door of all subtleties!",
+			"color": "#B5CEA8"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "--- lao\tSat Jan 26 23:30:39 1991",
+			"color": "#569CD6"
+		},
+		{
+			"content": "+++ tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#569CD6"
+		},
+		{
+			"content": "@@ -1,7 +1,6 @@",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "-The Way that can be told of is not the eternal Way;",
+			"color": "#CE9178"
+		},
+		{
+			"content": "-The name that can be named is not the eternal name.",
+			"color": "#CE9178"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "-The Named is the mother of all things.",
+			"color": "#CE9178"
+		},
+		{
+			"content": "+The named is the mother of all things.",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "+",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@@ -9,3 +8,6 @@",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "+They both may be called deep and profound.",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "+Deeper and more profound,",
+			"color": "#B5CEA8"
+		},
+		{
+			"content": "+The door of all subtleties!",
+			"color": "#B5CEA8"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "--- lao\tSat Jan 26 23:30:39 1991",
+			"color": "#000080"
+		},
+		{
+			"content": "+++ tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#000080"
+		},
+		{
+			"content": "@@ -1,7 +1,6 @@",
+			"color": "#000000"
+		},
+		{
+			"content": "-The Way that can be told of is not the eternal Way;",
+			"color": "#A31515"
+		},
+		{
+			"content": "-The name that can be named is not the eternal name.",
+			"color": "#A31515"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#000000"
+		},
+		{
+			"content": "-The Named is the mother of all things.",
+			"color": "#A31515"
+		},
+		{
+			"content": "+The named is the mother of all things.",
+			"color": "#09885A"
+		},
+		{
+			"content": "+",
+			"color": "#09885A"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#000000"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#000000"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#000000"
+		},
+		{
+			"content": "@@ -9,3 +8,6 @@",
+			"color": "#000000"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#000000"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#000000"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#000000"
+		},
+		{
+			"content": "+They both may be called deep and profound.",
+			"color": "#09885A"
+		},
+		{
+			"content": "+Deeper and more profound,",
+			"color": "#09885A"
+		},
+		{
+			"content": "+The door of all subtleties!",
+			"color": "#09885A"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "--- lao\tSat Jan 26 23:30:39 1991",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "+++ tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "@@ -1,7 +1,6 @@",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "-The Way that can be told of is not the eternal Way;",
+			"color": "#DC3958"
+		},
+		{
+			"content": "-The name that can be named is not the eternal name.",
+			"color": "#DC3958"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "-The Named is the mother of all things.",
+			"color": "#DC3958"
+		},
+		{
+			"content": "+The named is the mother of all things.",
+			"color": "#889B4A"
+		},
+		{
+			"content": "+",
+			"color": "#889B4A"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "@@ -9,3 +8,6 @@",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "+They both may be called deep and profound.",
+			"color": "#889B4A"
+		},
+		{
+			"content": "+Deeper and more profound,",
+			"color": "#889B4A"
+		},
+		{
+			"content": "+The door of all subtleties!",
+			"color": "#889B4A"
+		}
+	],
+	"monokai": [
+		{
+			"content": "--- lao\tSat Jan 26 23:30:39 1991",
+			"color": "#75715E"
+		},
+		{
+			"content": "+++ tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#75715E"
+		},
+		{
+			"content": "@@ -1,7 +1,6 @@",
+			"color": "#75715E"
+		},
+		{
+			"content": "-The Way that can be told of is not the eternal Way;",
+			"color": "#F92672"
+		},
+		{
+			"content": "-The name that can be named is not the eternal name.",
+			"color": "#F92672"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "-The Named is the mother of all things.",
+			"color": "#F92672"
+		},
+		{
+			"content": "+The named is the mother of all things.",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "+",
+			"color": "#A6E22E"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "@@ -9,3 +8,6 @@",
+			"color": "#75715E"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "+They both may be called deep and profound.",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "+Deeper and more profound,",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "+The door of all subtleties!",
+			"color": "#A6E22E"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "--- lao\tSat Jan 26 23:30:39 1991",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "+++ tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "@@ -1,7 +1,6 @@",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-The Way that can be told of is not the eternal Way;",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-The name that can be named is not the eternal name.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "-The Named is the mother of all things.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "+The named is the mother of all things.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "+",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "@@ -9,3 +8,6 @@",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "+They both may be called deep and profound.",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "+Deeper and more profound,",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "+The door of all subtleties!",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "---",
+			"color": "#777777"
+		},
+		{
+			"content": " lao\tSat Jan 26 23:30:39 1991",
+			"color": "#434343"
+		},
+		{
+			"content": "+++",
+			"color": "#777777"
+		},
+		{
+			"content": " tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#434343"
+		},
+		{
+			"content": "@@",
+			"color": "#777777"
+		},
+		{
+			"content": " -1,7 +1,6 ",
+			"color": "#434343"
+		},
+		{
+			"content": "@@",
+			"color": "#777777"
+		},
+		{
+			"content": "-",
+			"color": "#777777"
+		},
+		{
+			"content": "The Way that can be told of is not the eternal Way;",
+			"color": "#000000"
+		},
+		{
+			"content": "-",
+			"color": "#777777"
+		},
+		{
+			"content": "The name that can be named is not the eternal name.",
+			"color": "#000000"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#333333"
+		},
+		{
+			"content": "-",
+			"color": "#777777"
+		},
+		{
+			"content": "The Named is the mother of all things.",
+			"color": "#000000"
+		},
+		{
+			"content": "+",
+			"color": "#777777"
+		},
+		{
+			"content": "The named is the mother of all things.",
+			"color": "#000000"
+		},
+		{
+			"content": "+",
+			"color": "#777777"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#333333"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#333333"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#333333"
+		},
+		{
+			"content": "@@",
+			"color": "#777777"
+		},
+		{
+			"content": " -9,3 +8,6 ",
+			"color": "#434343"
+		},
+		{
+			"content": "@@",
+			"color": "#777777"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#333333"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#333333"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#333333"
+		},
+		{
+			"content": "+",
+			"color": "#777777"
+		},
+		{
+			"content": "They both may be called deep and profound.",
+			"color": "#000000"
+		},
+		{
+			"content": "+",
+			"color": "#777777"
+		},
+		{
+			"content": "Deeper and more profound,",
+			"color": "#000000"
+		},
+		{
+			"content": "+",
+			"color": "#777777"
+		},
+		{
+			"content": "The door of all subtleties!",
+			"color": "#000000"
+		}
+	],
+	"red": [
+		{
+			"content": "--- lao\tSat Jan 26 23:30:39 1991",
+			"color": "#F8F8F8FF"
+		},
+		{
+			"content": "+++ tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#F8F8F8FF"
+		},
+		{
+			"content": "@@ -1,7 +1,6 @@",
+			"color": "#F8F8F8FF"
+		},
+		{
+			"content": "-The Way that can be told of is not the eternal Way;",
+			"color": "#EC9799FF"
+		},
+		{
+			"content": "-The name that can be named is not the eternal name.",
+			"color": "#EC9799FF"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "-The Named is the mother of all things.",
+			"color": "#EC9799FF"
+		},
+		{
+			"content": "+The named is the mother of all things.",
+			"color": "#41A83EFF"
+		},
+		{
+			"content": "+",
+			"color": "#41A83EFF"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "@@ -9,3 +8,6 @@",
+			"color": "#F8F8F8FF"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "+They both may be called deep and profound.",
+			"color": "#41A83EFF"
+		},
+		{
+			"content": "+Deeper and more profound,",
+			"color": "#41A83EFF"
+		},
+		{
+			"content": "+The door of all subtleties!",
+			"color": "#41A83EFF"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "--- lao\tSat Jan 26 23:30:39 1991",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "+++ tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "@@ -1,7 +1,6 @@",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-The Way that can be told of is not the eternal Way;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-The name that can be named is not the eternal name.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "-The Named is the mother of all things.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "+The named is the mother of all things.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "+",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "@@ -9,3 +8,6 @@",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "+They both may be called deep and profound.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "+Deeper and more profound,",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "+The door of all subtleties!",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "--- lao\tSat Jan 26 23:30:39 1991",
+			"color": "#586E75"
+		},
+		{
+			"content": "+++ tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#586E75"
+		},
+		{
+			"content": "@@ -1,7 +1,6 @@",
+			"color": "#586E75"
+		},
+		{
+			"content": "-The Way that can be told of is not the eternal Way;",
+			"color": "#586E75"
+		},
+		{
+			"content": "-The name that can be named is not the eternal name.",
+			"color": "#586E75"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#586E75"
+		},
+		{
+			"content": "-The Named is the mother of all things.",
+			"color": "#586E75"
+		},
+		{
+			"content": "+The named is the mother of all things.",
+			"color": "#586E75"
+		},
+		{
+			"content": "+",
+			"color": "#586E75"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#586E75"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#586E75"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#586E75"
+		},
+		{
+			"content": "@@ -9,3 +8,6 @@",
+			"color": "#586E75"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#586E75"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#586E75"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#586E75"
+		},
+		{
+			"content": "+They both may be called deep and profound.",
+			"color": "#586E75"
+		},
+		{
+			"content": "+Deeper and more profound,",
+			"color": "#586E75"
+		},
+		{
+			"content": "+The door of all subtleties!",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "--- lao\tSat Jan 26 23:30:39 1991",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "+++ tzu\tSat Jan 26 23:30:50 1991",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@@ -1,7 +1,6 @@",
+			"color": "#3E999F"
+		},
+		{
+			"content": "-The Way that can be told of is not the eternal Way;",
+			"color": "#C82829"
+		},
+		{
+			"content": "-The name that can be named is not the eternal name.",
+			"color": "#C82829"
+		},
+		{
+			"content": " The Nameless is the origin of Heaven and Earth;",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "-The Named is the mother of all things.",
+			"color": "#C82829"
+		},
+		{
+			"content": "+The named is the mother of all things.",
+			"color": "#718C00"
+		},
+		{
+			"content": "+",
+			"color": "#718C00"
+		},
+		{
+			"content": " Therefore let there always be non-being,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "   so we may see their subtlety,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " And let there always be being,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@@ -9,3 +8,6 @@",
+			"color": "#3E999F"
+		},
+		{
+			"content": " The two are the same,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " But after they are produced,",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "   they have different names.",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "+They both may be called deep and profound.",
+			"color": "#718C00"
+		},
+		{
+			"content": "+Deeper and more profound,",
+			"color": "#718C00"
+		},
+		{
+			"content": "+The door of all subtleties!",
+			"color": "#718C00"
+		}
+	]
+}

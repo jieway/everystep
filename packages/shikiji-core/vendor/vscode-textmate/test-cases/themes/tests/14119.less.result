@@ -1,0 +1,682 @@
+{
+	"abyss": [
+		{
+			"content": "#f",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(@hm: ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"broken highlighting in VS Code\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ") {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "content",
+			"color": "#9966B8"
+		},
+		{
+			"content": ": ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "#f",
+			"color": "#D7BA7D"
+		},
+		{
+			"content": "(@hm: ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"broken highlighting in VS Code\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ") {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "content",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "#f",
+			"color": "#800000"
+		},
+		{
+			"content": "(@hm: ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"broken highlighting in VS Code\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ") {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "content",
+			"color": "#FF0000"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "#f",
+			"color": "#D7BA7D"
+		},
+		{
+			"content": "(@hm: ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"broken highlighting in VS Code\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "content",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "#f",
+			"color": "#D7BA7D"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@hm",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"broken highlighting in VS Code\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ") {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "content",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ": ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "#f",
+			"color": "#800000"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "@hm",
+			"color": "#001080"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"broken highlighting in VS Code\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ") {",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "content",
+			"color": "#FF0000"
+		},
+		{
+			"content": ": ",
+			"color": "#000000"
+		},
+		{
+			"content": "\"\"",
+			"color": "#A31515"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "#f",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "@hm",
+			"color": "#DC3958"
+		},
+		{
+			"content": ": ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "broken highlighting in VS Code",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ") {",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    content: ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "}",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "#f",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(@hm: ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"broken highlighting in VS Code\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "content",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "#f",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "@hm",
+			"color": "#6089B4"
+		},
+		{
+			"content": ": ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"broken highlighting in VS Code\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ") {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "content",
+			"color": "#676867"
+		},
+		{
+			"content": ": ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\"\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "#",
+			"color": "#AB6526"
+		},
+		{
+			"content": "f",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "(",
+			"color": "#333333"
+		},
+		{
+			"content": "@hm",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "broken highlighting in VS Code",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ") ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "content",
+			"color": "#AB6526"
+		},
+		{
+			"content": ":",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "\"\"",
+			"color": "#777777"
+		},
+		{
+			"content": ";",
+			"color": "#777777"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		}
+	],
+	"red": [
+		{
+			"content": "#f",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "@hm",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"broken highlighting in VS Code\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "content",
+			"color": "#96DD3BFF"
+		},
+		{
+			"content": ": ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "#f(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "@hm",
+			"color": "#268BD2"
+		},
+		{
+			"content": ": ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"broken highlighting in VS Code\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ") {",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "content",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "#f",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "@hm",
+			"color": "#268BD2"
+		},
+		{
+			"content": ": ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"broken highlighting in VS Code\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ") {",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "content",
+			"color": "#859900"
+		},
+		{
+			"content": ": ",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "}",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "#f",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@hm",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"broken highlighting in VS Code\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "content",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": ": ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		}
+	]
+}

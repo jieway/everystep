@@ -1,0 +1,13638 @@
+{
+	"abyss": [
+		{
+			"content": "@",
+			"color": "#225588"
+		},
+		{
+			"content": "{",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "var",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "total",
+			"color": "#225588"
+		},
+		{
+			"content": " = ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "0",
+			"color": "#225588"
+		},
+		{
+			"content": ";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "var",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#225588"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#223355"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#223355"
+		},
+		{
+			"content": "    ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "if",
+			"color": "#225588"
+		},
+		{
+			"content": " (",
+			"color": "#6688CC"
+		},
+		{
+			"content": "IsPost",
+			"color": "#225588"
+		},
+		{
+			"content": ") {",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        // ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "the",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "numbers",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "that",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "the",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "user",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "entered",
+			"color": "#225588"
+		},
+		{
+			"content": ".",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "var",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "num1",
+			"color": "#225588"
+		},
+		{
+			"content": " = ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Request",
+			"color": "#225588"
+		},
+		{
+			"content": "[\"",
+			"color": "#6688CC"
+		},
+		{
+			"content": "text1",
+			"color": "#225588"
+		},
+		{
+			"content": "\"];",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "var",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "num2",
+			"color": "#225588"
+		},
+		{
+			"content": " = ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Request",
+			"color": "#225588"
+		},
+		{
+			"content": "[\"",
+			"color": "#6688CC"
+		},
+		{
+			"content": "text2",
+			"color": "#225588"
+		},
+		{
+			"content": "\"];",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        // ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Convert",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "the",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "entered",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "strings",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "into",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "integers",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "numbers",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "and",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "add",
+			"color": "#225588"
+		},
+		{
+			"content": ".",
+			"color": "#6688CC"
+		},
+		{
+			"content": "        ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "total",
+			"color": "#225588"
+		},
+		{
+			"content": " = ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "num1",
+			"color": "#225588"
+		},
+		{
+			"content": ".",
+			"color": "#6688CC"
+		},
+		{
+			"content": "AsInt",
+			"color": "#225588"
+		},
+		{
+			"content": "() + ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "num2",
+			"color": "#225588"
+		},
+		{
+			"content": ".",
+			"color": "#6688CC"
+		},
+		{
+			"content": "AsInt",
+			"color": "#225588"
+		},
+		{
+			"content": "();",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t\t<",
+			"color": "#6688CC"
+		},
+		{
+			"content": "italic",
+			"color": "#225588"
+		},
+		{
+			"content": "><",
+			"color": "#6688CC"
+		},
+		{
+			"content": "bold",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#225588"
+		},
+		{
+			"content": " = \"",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Total",
+			"color": "#225588"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "total",
+			"color": "#225588"
+		},
+		{
+			"content": ";</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "bold",
+			"color": "#225588"
+		},
+		{
+			"content": "></",
+			"color": "#6688CC"
+		},
+		{
+			"content": "italic",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    }",
+			"color": "#6688CC"
+		},
+		{
+			"content": "}",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<!DOCTYPE html>",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#6688CC"
+		},
+		{
+			"content": "html",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "lang",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"en\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "head",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "title",
+			"color": "#225588"
+		},
+		{
+			"content": ">Add Numbers</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "title",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "meta",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "charset",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"utf-8\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " />",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  </",
+			"color": "#6688CC"
+		},
+		{
+			"content": "head",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#6688CC"
+		},
+		{
+			"content": "body",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": ">Enter two whole numbers and then click <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "strong",
+			"color": "#225588"
+		},
+		{
+			"content": ">Add</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "strong",
+			"color": "#225588"
+		},
+		{
+			"content": ">.</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "form",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "action",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "method",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": "><",
+			"color": "#6688CC"
+		},
+		{
+			"content": "label",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ">First Number:</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "label",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "      <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "input",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "type",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "name",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " />",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    </",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": "><",
+			"color": "#6688CC"
+		},
+		{
+			"content": "label",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "for",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": ">Second Number:</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "label",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "      <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "input",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "type",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "name",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " />",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    </",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "    <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": "><",
+			"color": "#6688CC"
+		},
+		{
+			"content": "input",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "type",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"submit\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "value",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "=",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\"Add\"",
+			"color": "#22AA44"
+		},
+		{
+			"content": " /></",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  </",
+			"color": "#6688CC"
+		},
+		{
+			"content": "form",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "\t",
+			"color": "#6688CC"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#223355"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#223355"
+		},
+		{
+			"content": "  <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#225588"
+		},
+		{
+			"content": "</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  <",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": ">@(totalMessage+\"!\")</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "p",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#6688CC"
+		},
+		{
+			"content": "@domain",
+			"color": "#225588"
+		},
+		{
+			"content": ".",
+			"color": "#6688CC"
+		},
+		{
+			"content": "com",
+			"color": "#225588"
+		},
+		{
+			"content": "</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "body",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		},
+		{
+			"content": "</",
+			"color": "#6688CC"
+		},
+		{
+			"content": "html",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "@",
+			"color": "#569CD6"
+		},
+		{
+			"content": "{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "total",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#569CD6"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#608B4E"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "IsPost",
+			"color": "#569CD6"
+		},
+		{
+			"content": ") {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        // ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "the",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "numbers",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "that",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "the",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "user",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "entered",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "num1",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Request",
+			"color": "#569CD6"
+		},
+		{
+			"content": "[\"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "text1",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\"];",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "num2",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Request",
+			"color": "#569CD6"
+		},
+		{
+			"content": "[\"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "text2",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\"];",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        // ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Convert",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "the",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "entered",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "strings",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "into",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "integers",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "numbers",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "and",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "add",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "total",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "num1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "AsInt",
+			"color": "#569CD6"
+		},
+		{
+			"content": "() + ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "num2",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "AsInt",
+			"color": "#569CD6"
+		},
+		{
+			"content": "();",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "italic",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "bold",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = \"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Total",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "total",
+			"color": "#569CD6"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "bold",
+			"color": "#569CD6"
+		},
+		{
+			"content": "></",
+			"color": "#808080"
+		},
+		{
+			"content": "italic",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<!",
+			"color": "#808080"
+		},
+		{
+			"content": "DOCTYPE html",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "html",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "lang",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"en\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "head",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Add Numbers",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "meta",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "charset",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"utf-8\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " />",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "head",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "body",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Enter two whole numbers and then click ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "strong",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Add",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "strong",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "form",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "action",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "method",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "label",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "First Number:",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "label",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "input",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "type",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "name",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " />",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "label",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Second Number:",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "label",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "input",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "type",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "name",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " />",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "input",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "type",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"submit\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "value",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Add\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " /></",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "form",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#608B4E"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#569CD6"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "@(totalMessage+\"!\")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@domain",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "com",
+			"color": "#569CD6"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "body",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "html",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "@",
+			"color": "#0000FF"
+		},
+		{
+			"content": "{",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "total",
+			"color": "#0000FF"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#0000FF"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#0000FF"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#008000"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#008000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#0000FF"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "IsPost",
+			"color": "#0000FF"
+		},
+		{
+			"content": ") {",
+			"color": "#000000"
+		},
+		{
+			"content": "        // ",
+			"color": "#000000"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "the",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "numbers",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "that",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "the",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "user",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "entered",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "num1",
+			"color": "#0000FF"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "Request",
+			"color": "#0000FF"
+		},
+		{
+			"content": "[\"",
+			"color": "#000000"
+		},
+		{
+			"content": "text1",
+			"color": "#0000FF"
+		},
+		{
+			"content": "\"];",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "num2",
+			"color": "#0000FF"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "Request",
+			"color": "#0000FF"
+		},
+		{
+			"content": "[\"",
+			"color": "#000000"
+		},
+		{
+			"content": "text2",
+			"color": "#0000FF"
+		},
+		{
+			"content": "\"];",
+			"color": "#000000"
+		},
+		{
+			"content": "        // ",
+			"color": "#000000"
+		},
+		{
+			"content": "Convert",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "the",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "entered",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "strings",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "into",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "integers",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "numbers",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "and",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "add",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "total",
+			"color": "#0000FF"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "num1",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "AsInt",
+			"color": "#800000"
+		},
+		{
+			"content": "() + ",
+			"color": "#000000"
+		},
+		{
+			"content": "num2",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "AsInt",
+			"color": "#800000"
+		},
+		{
+			"content": "();",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "<italic><bold>",
+			"color": "#800000"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#0000FF"
+		},
+		{
+			"content": " = \"",
+			"color": "#000000"
+		},
+		{
+			"content": "Total",
+			"color": "#0000FF"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#000000"
+		},
+		{
+			"content": "total",
+			"color": "#0000FF"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "</bold></italic>",
+			"color": "#800000"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "<!",
+			"color": "#800000"
+		},
+		{
+			"content": "DOCTYPE html",
+			"color": "#000000"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "<html",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "lang",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"en\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<head>",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "<title>",
+			"color": "#800000"
+		},
+		{
+			"content": "Add Numbers",
+			"color": "#000000"
+		},
+		{
+			"content": "</title>",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "<meta",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "charset",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"utf-8\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " />",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "</head>",
+			"color": "#800000"
+		},
+		{
+			"content": "<body>",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p>",
+			"color": "#800000"
+		},
+		{
+			"content": "Enter two whole numbers and then click ",
+			"color": "#000000"
+		},
+		{
+			"content": "<strong>",
+			"color": "#800000"
+		},
+		{
+			"content": "Add",
+			"color": "#000000"
+		},
+		{
+			"content": "</strong>",
+			"color": "#800000"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "</p>",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<form",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "action",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "method",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p><label",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "First Number:",
+			"color": "#000000"
+		},
+		{
+			"content": "</label>",
+			"color": "#800000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "<input",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "type",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "name",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " />",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "</p>",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p><label",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "Second Number:",
+			"color": "#000000"
+		},
+		{
+			"content": "</label>",
+			"color": "#800000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "<input",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "type",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "name",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " />",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "</p>",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p><input",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "type",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"submit\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "value",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Add\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " /></p>",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "</form>",
+			"color": "#800000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#008000"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#008000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p>",
+			"color": "#800000"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#0000FF"
+		},
+		{
+			"content": "</p>",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p>",
+			"color": "#800000"
+		},
+		{
+			"content": "@(totalMessage+\"!\")",
+			"color": "#000000"
+		},
+		{
+			"content": "</p>",
+			"color": "#800000"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#000000"
+		},
+		{
+			"content": "@domain",
+			"color": "#0000FF"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "com",
+			"color": "#800000"
+		},
+		{
+			"content": "</body>",
+			"color": "#800000"
+		},
+		{
+			"content": "</html>",
+			"color": "#800000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "@",
+			"color": "#569CD6"
+		},
+		{
+			"content": "{",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "total",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#569CD6"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#7CA668"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#7CA668"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#569CD6"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "IsPost",
+			"color": "#569CD6"
+		},
+		{
+			"content": ") {",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        // ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "the",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "numbers",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "that",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "the",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "user",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "entered",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "num1",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Request",
+			"color": "#569CD6"
+		},
+		{
+			"content": "[\"",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "text1",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\"];",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "num2",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Request",
+			"color": "#569CD6"
+		},
+		{
+			"content": "[\"",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "text2",
+			"color": "#569CD6"
+		},
+		{
+			"content": "\"];",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        // ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Convert",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "the",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "entered",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "strings",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "into",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "integers",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "numbers",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "and",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "add",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "total",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "num1",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "AsInt",
+			"color": "#569CD6"
+		},
+		{
+			"content": "() + ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "num2",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "AsInt",
+			"color": "#569CD6"
+		},
+		{
+			"content": "();",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "italic",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "bold",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = \"",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Total",
+			"color": "#569CD6"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "total",
+			"color": "#569CD6"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "bold",
+			"color": "#569CD6"
+		},
+		{
+			"content": "></",
+			"color": "#808080"
+		},
+		{
+			"content": "italic",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    }",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<!",
+			"color": "#808080"
+		},
+		{
+			"content": "DOCTYPE html",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "html",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "lang",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"en\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "head",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Add Numbers",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "meta",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "charset",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"utf-8\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " />",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "head",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "body",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Enter two whole numbers and then click ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "strong",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Add",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "strong",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "form",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "action",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "method",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "label",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "First Number:",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "label",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "input",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "type",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "name",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " />",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "label",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "for",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Second Number:",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "label",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "input",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "type",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "name",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " />",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "input",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "type",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"submit\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "value",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\"Add\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " /></",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "form",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#7CA668"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#7CA668"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#569CD6"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "@(totalMessage+\"!\")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@domain",
+			"color": "#569CD6"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "com",
+			"color": "#569CD6"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "body",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "html",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "@",
+			"color": "#C586C0"
+		},
+		{
+			"content": "{",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "total",
+			"color": "#C586C0"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "0",
+			"color": "#C586C0"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#C586C0"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#608B4E"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#608B4E"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "if",
+			"color": "#C586C0"
+		},
+		{
+			"content": " (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "IsPost",
+			"color": "#C586C0"
+		},
+		{
+			"content": ") {",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        // ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "the",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "numbers",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "that",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "the",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "user",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "entered",
+			"color": "#C586C0"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "num1",
+			"color": "#C586C0"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Request",
+			"color": "#C586C0"
+		},
+		{
+			"content": "[\"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "text1",
+			"color": "#C586C0"
+		},
+		{
+			"content": "\"];",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "var",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "num2",
+			"color": "#C586C0"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Request",
+			"color": "#C586C0"
+		},
+		{
+			"content": "[\"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "text2",
+			"color": "#C586C0"
+		},
+		{
+			"content": "\"];",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        // ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Convert",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "the",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "entered",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "strings",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "into",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "integers",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "numbers",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "and",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "add",
+			"color": "#C586C0"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "        ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "total",
+			"color": "#C586C0"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "num1",
+			"color": "#C586C0"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "AsInt",
+			"color": "#569CD6"
+		},
+		{
+			"content": "() + ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "num2",
+			"color": "#C586C0"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "AsInt",
+			"color": "#569CD6"
+		},
+		{
+			"content": "();",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\t\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "italic",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "bold",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#C586C0"
+		},
+		{
+			"content": " = \"",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Total",
+			"color": "#C586C0"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "total",
+			"color": "#C586C0"
+		},
+		{
+			"content": ";",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "bold",
+			"color": "#569CD6"
+		},
+		{
+			"content": "></",
+			"color": "#808080"
+		},
+		{
+			"content": "italic",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    }",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "}",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<!",
+			"color": "#808080"
+		},
+		{
+			"content": "DOCTYPE html",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "html",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "lang",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"en\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "head",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Add Numbers",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "title",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "meta",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "charset",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"utf-8\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " />",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "head",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "body",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Enter two whole numbers and then click ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "strong",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Add",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "strong",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "form",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "action",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "method",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "label",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "First Number:",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "label",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "input",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "type",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "name",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " />",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "label",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "for",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "Second Number:",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "label",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "      ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "input",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "type",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "name",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " />",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "    ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "input",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "type",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"submit\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "value",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "\"Add\"",
+			"color": "#CE9178"
+		},
+		{
+			"content": " /></",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "form",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "\t",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#608B4E"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#608B4E"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#C586C0"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "@(totalMessage+\"!\")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "p",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "@domain",
+			"color": "#C586C0"
+		},
+		{
+			"content": ".",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "com",
+			"color": "#569CD6"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "body",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		},
+		{
+			"content": "</",
+			"color": "#808080"
+		},
+		{
+			"content": "html",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "@",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "{",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "total",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "0",
+			"color": "#AF00DB"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#000000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#008000"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#008000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "if",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " (",
+			"color": "#000000"
+		},
+		{
+			"content": "IsPost",
+			"color": "#AF00DB"
+		},
+		{
+			"content": ") {",
+			"color": "#000000"
+		},
+		{
+			"content": "        // ",
+			"color": "#000000"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "the",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "numbers",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "that",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "the",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "user",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "entered",
+			"color": "#AF00DB"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "num1",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "Request",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "[\"",
+			"color": "#000000"
+		},
+		{
+			"content": "text1",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "\"];",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "var",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "num2",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "Request",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "[\"",
+			"color": "#000000"
+		},
+		{
+			"content": "text2",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "\"];",
+			"color": "#000000"
+		},
+		{
+			"content": "        // ",
+			"color": "#000000"
+		},
+		{
+			"content": "Convert",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "the",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "entered",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "strings",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "into",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "integers",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "numbers",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "and",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "add",
+			"color": "#AF00DB"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "        ",
+			"color": "#000000"
+		},
+		{
+			"content": "total",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "num1",
+			"color": "#AF00DB"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "AsInt",
+			"color": "#800000"
+		},
+		{
+			"content": "() + ",
+			"color": "#000000"
+		},
+		{
+			"content": "num2",
+			"color": "#AF00DB"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "AsInt",
+			"color": "#800000"
+		},
+		{
+			"content": "();",
+			"color": "#000000"
+		},
+		{
+			"content": "\t\t",
+			"color": "#000000"
+		},
+		{
+			"content": "<italic><bold>",
+			"color": "#800000"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " = \"",
+			"color": "#000000"
+		},
+		{
+			"content": "Total",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#000000"
+		},
+		{
+			"content": "total",
+			"color": "#AF00DB"
+		},
+		{
+			"content": ";",
+			"color": "#000000"
+		},
+		{
+			"content": "</bold></italic>",
+			"color": "#800000"
+		},
+		{
+			"content": "    }",
+			"color": "#000000"
+		},
+		{
+			"content": "}",
+			"color": "#000000"
+		},
+		{
+			"content": "<!",
+			"color": "#800000"
+		},
+		{
+			"content": "DOCTYPE html",
+			"color": "#000000"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "<html",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "lang",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"en\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<head>",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "<title>",
+			"color": "#800000"
+		},
+		{
+			"content": "Add Numbers",
+			"color": "#000000"
+		},
+		{
+			"content": "</title>",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "<meta",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "charset",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"utf-8\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " />",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "</head>",
+			"color": "#800000"
+		},
+		{
+			"content": "<body>",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p>",
+			"color": "#800000"
+		},
+		{
+			"content": "Enter two whole numbers and then click ",
+			"color": "#000000"
+		},
+		{
+			"content": "<strong>",
+			"color": "#800000"
+		},
+		{
+			"content": "Add",
+			"color": "#000000"
+		},
+		{
+			"content": "</strong>",
+			"color": "#800000"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "</p>",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<form",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "action",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "method",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p><label",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "First Number:",
+			"color": "#000000"
+		},
+		{
+			"content": "</label>",
+			"color": "#800000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "<input",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "type",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "name",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " />",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "</p>",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p><label",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "for",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": ">",
+			"color": "#800000"
+		},
+		{
+			"content": "Second Number:",
+			"color": "#000000"
+		},
+		{
+			"content": "</label>",
+			"color": "#800000"
+		},
+		{
+			"content": "      ",
+			"color": "#000000"
+		},
+		{
+			"content": "<input",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "type",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "name",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " />",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "</p>",
+			"color": "#800000"
+		},
+		{
+			"content": "    ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p><input",
+			"color": "#800000"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "type",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"submit\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "value",
+			"color": "#FF0000"
+		},
+		{
+			"content": "=",
+			"color": "#000000"
+		},
+		{
+			"content": "\"Add\"",
+			"color": "#0000FF"
+		},
+		{
+			"content": " /></p>",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "</form>",
+			"color": "#800000"
+		},
+		{
+			"content": "\t",
+			"color": "#000000"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#008000"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#008000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p>",
+			"color": "#800000"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "</p>",
+			"color": "#800000"
+		},
+		{
+			"content": "  ",
+			"color": "#000000"
+		},
+		{
+			"content": "<p>",
+			"color": "#800000"
+		},
+		{
+			"content": "@(totalMessage+\"!\")",
+			"color": "#000000"
+		},
+		{
+			"content": "</p>",
+			"color": "#800000"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#000000"
+		},
+		{
+			"content": "@domain",
+			"color": "#AF00DB"
+		},
+		{
+			"content": ".",
+			"color": "#000000"
+		},
+		{
+			"content": "com",
+			"color": "#800000"
+		},
+		{
+			"content": "</body>",
+			"color": "#800000"
+		},
+		{
+			"content": "</html>",
+			"color": "#800000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "@",
+			"color": "#98676A"
+		},
+		{
+			"content": "{",
+			"color": "#18401E"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "total",
+			"color": "#98676A"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "0",
+			"color": "#98676A"
+		},
+		{
+			"content": ";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#98676A"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "if",
+			"color": "#98676A"
+		},
+		{
+			"content": " (",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "IsPost",
+			"color": "#98676A"
+		},
+		{
+			"content": ") ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "{",
+			"color": "#18401E"
+		},
+		{
+			"content": "        // ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "the",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "numbers",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "that",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "the",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "user",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "entered",
+			"color": "#98676A"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "num1",
+			"color": "#98676A"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Request",
+			"color": "#98676A"
+		},
+		{
+			"content": "[\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "text1",
+			"color": "#98676A"
+		},
+		{
+			"content": "\"];",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "var",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "num2",
+			"color": "#98676A"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Request",
+			"color": "#98676A"
+		},
+		{
+			"content": "[\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "text2",
+			"color": "#98676A"
+		},
+		{
+			"content": "\"];",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        // ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Convert",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "the",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "entered",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "strings",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "into",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "integers",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "numbers",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "and",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "add",
+			"color": "#98676A"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "        ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "total",
+			"color": "#98676A"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "num1",
+			"color": "#98676A"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "AsInt",
+			"color": "#DC3958"
+		},
+		{
+			"content": "() + ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "num2",
+			"color": "#98676A"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "AsInt",
+			"color": "#DC3958"
+		},
+		{
+			"content": "();",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t\t<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "italic",
+			"color": "#DC3958"
+		},
+		{
+			"content": "><",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "bold",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#98676A"
+		},
+		{
+			"content": " = \"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Total",
+			"color": "#98676A"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "total",
+			"color": "#98676A"
+		},
+		{
+			"content": ";</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "bold",
+			"color": "#DC3958"
+		},
+		{
+			"content": "></",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "italic",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "}",
+			"color": "#18401E"
+		},
+		{
+			"content": "}",
+			"color": "#18401E"
+		},
+		{
+			"content": "<!DOCTYPE html>",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "html",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "lang",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "en",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "head",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "title",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">Add Numbers</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "title",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "meta",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "charset",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "utf-8",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " />",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  </",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "head",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "body",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">Enter two whole numbers and then click <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "strong",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">Add</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "strong",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">.</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "form",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "action",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "method",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "post",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": "><",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "label",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "text1",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ">First Number:</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "label",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "      <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "input",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "type",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "text",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "name",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "text1",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " />",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    </",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": "><",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "label",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "for",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "text2",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": ">Second Number:</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "label",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "      <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "input",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "type",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "text",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "name",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "text2",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " />",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    </",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "    <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": "><",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "input",
+			"color": "#DC3958"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "type",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "submit",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "value",
+			"color": "#F79A32"
+		},
+		{
+			"content": "=",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Add",
+			"color": "#889B4A"
+		},
+		{
+			"content": "\"",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " /></",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  </",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "form",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "\t",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "  <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#98676A"
+		},
+		{
+			"content": "</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  <",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">@(totalMessage+\"!\")</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "p",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "@domain",
+			"color": "#98676A"
+		},
+		{
+			"content": ".",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "com",
+			"color": "#DC3958"
+		},
+		{
+			"content": "</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "body",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "</",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "html",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "@",
+			"color": "#F92672"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "var",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "total",
+			"color": "#F92672"
+		},
+		{
+			"content": " = ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "0",
+			"color": "#F92672"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "var",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#F92672"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#75715E"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#75715E"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "if",
+			"color": "#F92672"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "IsPost",
+			"color": "#F92672"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        // ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "the",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "numbers",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "that",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "the",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "user",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "entered",
+			"color": "#F92672"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "var",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "num1",
+			"color": "#F92672"
+		},
+		{
+			"content": " = ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Request",
+			"color": "#F92672"
+		},
+		{
+			"content": "[\"",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "text1",
+			"color": "#F92672"
+		},
+		{
+			"content": "\"];",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "var",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "num2",
+			"color": "#F92672"
+		},
+		{
+			"content": " = ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Request",
+			"color": "#F92672"
+		},
+		{
+			"content": "[\"",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "text2",
+			"color": "#F92672"
+		},
+		{
+			"content": "\"];",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        // ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Convert",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "the",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "entered",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "strings",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "into",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "integers",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "numbers",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "and",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "add",
+			"color": "#F92672"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "total",
+			"color": "#F92672"
+		},
+		{
+			"content": " = ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "num1",
+			"color": "#F92672"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "AsInt",
+			"color": "#F92672"
+		},
+		{
+			"content": "() + ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "num2",
+			"color": "#F92672"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "AsInt",
+			"color": "#F92672"
+		},
+		{
+			"content": "();",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t\t<",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "italic",
+			"color": "#F92672"
+		},
+		{
+			"content": "><",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "bold",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#F92672"
+		},
+		{
+			"content": " = \"",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Total",
+			"color": "#F92672"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "total",
+			"color": "#F92672"
+		},
+		{
+			"content": ";</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "bold",
+			"color": "#F92672"
+		},
+		{
+			"content": "></",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "italic",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<!DOCTYPE html>",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "html",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "lang",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"en\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "head",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "title",
+			"color": "#F92672"
+		},
+		{
+			"content": ">Add Numbers</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "title",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "meta",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "charset",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"utf-8\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " />",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  </",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "head",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "body",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": ">Enter two whole numbers and then click <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "strong",
+			"color": "#F92672"
+		},
+		{
+			"content": ">Add</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "strong",
+			"color": "#F92672"
+		},
+		{
+			"content": ">.</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "form",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "action",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "method",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": "><",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "label",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ">First Number:</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "label",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "      <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "input",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "type",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "name",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " />",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    </",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": "><",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "label",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "for",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": ">Second Number:</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "label",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "      <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "input",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "type",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "name",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " />",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    </",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "    <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": "><",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "input",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "type",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"submit\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "value",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "=",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\"Add\"",
+			"color": "#E6DB74"
+		},
+		{
+			"content": " /></",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  </",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "form",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#75715E"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#75715E"
+		},
+		{
+			"content": "  <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#F92672"
+		},
+		{
+			"content": "</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  <",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": ">@(totalMessage+\"!\")</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "p",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "@domain",
+			"color": "#F92672"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "com",
+			"color": "#F92672"
+		},
+		{
+			"content": "</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "body",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "</",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "html",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "@",
+			"color": "#9872A2"
+		},
+		{
+			"content": "{",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "total",
+			"color": "#9872A2"
+		},
+		{
+			"content": " = ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "0",
+			"color": "#9872A2"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#9872A2"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "if",
+			"color": "#9872A2"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "IsPost",
+			"color": "#9872A2"
+		},
+		{
+			"content": ") {",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        // ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "the",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "numbers",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "that",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "the",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "user",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "entered",
+			"color": "#9872A2"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "num1",
+			"color": "#9872A2"
+		},
+		{
+			"content": " = ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Request",
+			"color": "#9872A2"
+		},
+		{
+			"content": "[\"",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "text1",
+			"color": "#9872A2"
+		},
+		{
+			"content": "\"];",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "var",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "num2",
+			"color": "#9872A2"
+		},
+		{
+			"content": " = ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Request",
+			"color": "#9872A2"
+		},
+		{
+			"content": "[\"",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "text2",
+			"color": "#9872A2"
+		},
+		{
+			"content": "\"];",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        // ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Convert",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "the",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "entered",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "strings",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "into",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "integers",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "numbers",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "and",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "add",
+			"color": "#9872A2"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "        ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "total",
+			"color": "#9872A2"
+		},
+		{
+			"content": " = ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "num1",
+			"color": "#9872A2"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "AsInt",
+			"color": "#6089B4"
+		},
+		{
+			"content": "() + ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "num2",
+			"color": "#9872A2"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "AsInt",
+			"color": "#6089B4"
+		},
+		{
+			"content": "();",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "\t\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<italic><bold>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#9872A2"
+		},
+		{
+			"content": " = \"",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Total",
+			"color": "#9872A2"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "total",
+			"color": "#9872A2"
+		},
+		{
+			"content": ";",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</bold></italic>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "    }",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "}",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<!",
+			"color": "#6089B4"
+		},
+		{
+			"content": "DOCTYPE html",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ">",
+			"color": "#6089B4"
+		},
+		{
+			"content": "<html",
+			"color": "#6089B4"
+		},
+		{
+			"content": " lang=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"en\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ">",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<head>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<title>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "Add Numbers",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</title>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<meta",
+			"color": "#6089B4"
+		},
+		{
+			"content": " charset=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"utf-8\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " />",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</head>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "<body>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<p>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "Enter two whole numbers and then click ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<strong>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "Add",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</strong>",
+			"color": "#6089B4"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</p>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<form",
+			"color": "#6089B4"
+		},
+		{
+			"content": " action=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " method=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ">",
+			"color": "#6089B4"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<p><label",
+			"color": "#6089B4"
+		},
+		{
+			"content": " for=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ">",
+			"color": "#6089B4"
+		},
+		{
+			"content": "First Number:",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</label>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "      ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<input",
+			"color": "#6089B4"
+		},
+		{
+			"content": " type=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " name=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " />",
+			"color": "#6089B4"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</p>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<p><label",
+			"color": "#6089B4"
+		},
+		{
+			"content": " for=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": ">",
+			"color": "#6089B4"
+		},
+		{
+			"content": "Second Number:",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</label>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "      ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<input",
+			"color": "#6089B4"
+		},
+		{
+			"content": " type=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " name=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " />",
+			"color": "#6089B4"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</p>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "    ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<p><input",
+			"color": "#6089B4"
+		},
+		{
+			"content": " type=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"submit\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " value=",
+			"color": "#D0B344"
+		},
+		{
+			"content": "\"Add\"",
+			"color": "#9AA83A"
+		},
+		{
+			"content": " /></p>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</form>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "\t",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<p>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#9872A2"
+		},
+		{
+			"content": "</p>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<p>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "@(totalMessage+\"!\")",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "</p>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "@domain",
+			"color": "#9872A2"
+		},
+		{
+			"content": ".",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "com",
+			"color": "#6089B4"
+		},
+		{
+			"content": "</body>",
+			"color": "#6089B4"
+		},
+		{
+			"content": "</html>",
+			"color": "#6089B4"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "@",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "var",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "total",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " = ",
+			"color": "#333333"
+		},
+		{
+			"content": "0",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "var",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#333333"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "if",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " (",
+			"color": "#333333"
+		},
+		{
+			"content": "IsPost",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ") ",
+			"color": "#333333"
+		},
+		{
+			"content": "{",
+			"color": "#777777"
+		},
+		{
+			"content": "        // ",
+			"color": "#333333"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "the",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "numbers",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "that",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "the",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "user",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "entered",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ".",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "var",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "num1",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " = ",
+			"color": "#333333"
+		},
+		{
+			"content": "Request",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "[\"",
+			"color": "#333333"
+		},
+		{
+			"content": "text1",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "\"];",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "var",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "num2",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " = ",
+			"color": "#333333"
+		},
+		{
+			"content": "Request",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "[\"",
+			"color": "#333333"
+		},
+		{
+			"content": "text2",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "\"];",
+			"color": "#333333"
+		},
+		{
+			"content": "        // ",
+			"color": "#333333"
+		},
+		{
+			"content": "Convert",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "the",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "entered",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "strings",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "into",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "integers",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "numbers",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "and",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "add",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ".",
+			"color": "#333333"
+		},
+		{
+			"content": "        ",
+			"color": "#333333"
+		},
+		{
+			"content": "total",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " = ",
+			"color": "#333333"
+		},
+		{
+			"content": "num1",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ".",
+			"color": "#333333"
+		},
+		{
+			"content": "AsInt",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "() + ",
+			"color": "#333333"
+		},
+		{
+			"content": "num2",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ".",
+			"color": "#333333"
+		},
+		{
+			"content": "AsInt",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "();",
+			"color": "#333333"
+		},
+		{
+			"content": "\t\t",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "italic",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "><",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "bold",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " = \"",
+			"color": "#333333"
+		},
+		{
+			"content": "Total",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#333333"
+		},
+		{
+			"content": "total",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ";",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "bold",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "></",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "italic",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "}",
+			"color": "#777777"
+		},
+		{
+			"content": "<!DOCTYPE html>",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "html",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "lang",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "en",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "head",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "title",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "Add Numbers",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "title",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "meta",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "charset",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "utf-8",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " />",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "head",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "body",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "Enter two whole numbers and then click ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "strong",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "Add",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "strong",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": ".",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "form",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "action",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\"\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "method",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "post",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "><",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "label",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "for",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "text1",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "First Number:",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "label",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "      ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "input",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "type",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "text",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "name",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "text1",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " />",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "><",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "label",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "for",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "text2",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "Second Number:",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "label",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "      ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "input",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "type",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "text",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "name",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "text2",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " />",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "    ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "><",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "input",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "type",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "submit",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "value",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "=",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": "Add",
+			"color": "#448C27"
+		},
+		{
+			"content": "\"",
+			"color": "#777777"
+		},
+		{
+			"content": " /></",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "form",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "\t",
+			"color": "#333333"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  ",
+			"color": "#333333"
+		},
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "@(totalMessage+\"!\")",
+			"color": "#333333"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "p",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#333333"
+		},
+		{
+			"content": "@domain",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ".",
+			"color": "#333333"
+		},
+		{
+			"content": "com",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "body",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "</",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "html",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		}
+	],
+	"red": [
+		{
+			"content": "@",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "{",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "var",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "total",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " = ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "0",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "var",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "if",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "IsPost",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ") {",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        // ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "the",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "numbers",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "that",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "the",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "user",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "entered",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "var",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "num1",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " = ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Request",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "[\"",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "text1",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "\"];",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "var",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "num2",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " = ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Request",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "[\"",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "text2",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "\"];",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        // ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Convert",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "the",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "entered",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "strings",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "into",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "integers",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "numbers",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "and",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "add",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "        ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "total",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " = ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "num1",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "AsInt",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "() + ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "num2",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "AsInt",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "();",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "\t\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<italic><bold>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " = \"",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Total",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "total",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ";",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</bold></italic>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "    }",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "}",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<!DOCTYPE html>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "<html lang=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"en\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ">",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<head>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<title>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "Add Numbers",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</title>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<meta charset=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"utf-8\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " />",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</head>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "<body>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<p>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "Enter two whole numbers and then click ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<strong>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "Add",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</strong>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</p>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<form action=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " method=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ">",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<p><label for=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ">",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "First Number:",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</label>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<input type=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " name=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " />",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</p>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<p><label for=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": ">",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "Second Number:",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</label>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "      ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<input type=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " name=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " />",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</p>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "    ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<p><input type=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"submit\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " value=",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\"Add\"",
+			"color": "#CD8D8DFF"
+		},
+		{
+			"content": " /></p>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</form>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "\t",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<p>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "</p>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<p>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "@(totalMessage+\"!\")",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "</p>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "@domain",
+			"color": "#F12727FF"
+		},
+		{
+			"content": ".",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "com",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "</body>",
+			"color": "#EC0D1EFF"
+		},
+		{
+			"content": "</html>",
+			"color": "#EC0D1EFF"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "@",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#D30102"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "total",
+			"color": "#859900"
+		},
+		{
+			"content": " = ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "0",
+			"color": "#859900"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#859900"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#657B83"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "IsPost",
+			"color": "#859900"
+		},
+		{
+			"content": ") ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "{",
+			"color": "#D30102"
+		},
+		{
+			"content": "        // ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "the",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "numbers",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "that",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "the",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "user",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "entered",
+			"color": "#859900"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "num1",
+			"color": "#859900"
+		},
+		{
+			"content": " = ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Request",
+			"color": "#859900"
+		},
+		{
+			"content": "[\"",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "text1",
+			"color": "#859900"
+		},
+		{
+			"content": "\"];",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "var",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "num2",
+			"color": "#859900"
+		},
+		{
+			"content": " = ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Request",
+			"color": "#859900"
+		},
+		{
+			"content": "[\"",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "text2",
+			"color": "#859900"
+		},
+		{
+			"content": "\"];",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        // ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Convert",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "the",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "entered",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "strings",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "into",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "integers",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "numbers",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "and",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "add",
+			"color": "#859900"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "        ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "total",
+			"color": "#859900"
+		},
+		{
+			"content": " = ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "num1",
+			"color": "#859900"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "AsInt",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() + ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "num2",
+			"color": "#859900"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "AsInt",
+			"color": "#268BD2"
+		},
+		{
+			"content": "();",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "italic",
+			"color": "#268BD2"
+		},
+		{
+			"content": "><",
+			"color": "#657B83"
+		},
+		{
+			"content": "bold",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#859900"
+		},
+		{
+			"content": " = \"",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Total",
+			"color": "#859900"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "total",
+			"color": "#859900"
+		},
+		{
+			"content": ";",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "bold",
+			"color": "#268BD2"
+		},
+		{
+			"content": "></",
+			"color": "#657B83"
+		},
+		{
+			"content": "italic",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "}",
+			"color": "#D30102"
+		},
+		{
+			"content": "}",
+			"color": "#D30102"
+		},
+		{
+			"content": "<!",
+			"color": "#657B83"
+		},
+		{
+			"content": "DOCTYPE html",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "html",
+			"color": "#268BD2"
+		},
+		{
+			"content": " lang=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"en\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "head",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "title",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "Add Numbers",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "title",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "meta",
+			"color": "#268BD2"
+		},
+		{
+			"content": " charset=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"utf-8\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " />",
+			"color": "#657B83"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "head",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "body",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "Enter two whole numbers and then click ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "strong",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "Add",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "strong",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "form",
+			"color": "#268BD2"
+		},
+		{
+			"content": " action=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " method=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": "><",
+			"color": "#657B83"
+		},
+		{
+			"content": "label",
+			"color": "#268BD2"
+		},
+		{
+			"content": " for=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "First Number:",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "label",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "      ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "input",
+			"color": "#268BD2"
+		},
+		{
+			"content": " type=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " name=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " />",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": "><",
+			"color": "#657B83"
+		},
+		{
+			"content": "label",
+			"color": "#268BD2"
+		},
+		{
+			"content": " for=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "Second Number:",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "label",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "      ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "input",
+			"color": "#268BD2"
+		},
+		{
+			"content": " type=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " name=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " />",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "    ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": "><",
+			"color": "#657B83"
+		},
+		{
+			"content": "input",
+			"color": "#268BD2"
+		},
+		{
+			"content": " type=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"submit\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " value=",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\"Add\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " /></",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "form",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#657B83"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#657B83"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#859900"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "  ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "@(totalMessage+\"!\")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "@domain",
+			"color": "#859900"
+		},
+		{
+			"content": ".",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "com",
+			"color": "#268BD2"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "body",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		},
+		{
+			"content": "</",
+			"color": "#657B83"
+		},
+		{
+			"content": "html",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "@",
+			"color": "#859900"
+		},
+		{
+			"content": "{",
+			"color": "#D30102"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "var",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "total",
+			"color": "#859900"
+		},
+		{
+			"content": " = ",
+			"color": "#586E75"
+		},
+		{
+			"content": "0",
+			"color": "#859900"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "var",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#859900"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "if",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "IsPost",
+			"color": "#859900"
+		},
+		{
+			"content": ") ",
+			"color": "#586E75"
+		},
+		{
+			"content": "{",
+			"color": "#D30102"
+		},
+		{
+			"content": "        // ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "the",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "numbers",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "that",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "the",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "user",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "entered",
+			"color": "#859900"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "var",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "num1",
+			"color": "#859900"
+		},
+		{
+			"content": " = ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Request",
+			"color": "#859900"
+		},
+		{
+			"content": "[\"",
+			"color": "#586E75"
+		},
+		{
+			"content": "text1",
+			"color": "#859900"
+		},
+		{
+			"content": "\"];",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "var",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "num2",
+			"color": "#859900"
+		},
+		{
+			"content": " = ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Request",
+			"color": "#859900"
+		},
+		{
+			"content": "[\"",
+			"color": "#586E75"
+		},
+		{
+			"content": "text2",
+			"color": "#859900"
+		},
+		{
+			"content": "\"];",
+			"color": "#586E75"
+		},
+		{
+			"content": "        // ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Convert",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "the",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "entered",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "strings",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "into",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "integers",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "numbers",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "and",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "add",
+			"color": "#859900"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "        ",
+			"color": "#586E75"
+		},
+		{
+			"content": "total",
+			"color": "#859900"
+		},
+		{
+			"content": " = ",
+			"color": "#586E75"
+		},
+		{
+			"content": "num1",
+			"color": "#859900"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "AsInt",
+			"color": "#268BD2"
+		},
+		{
+			"content": "() + ",
+			"color": "#586E75"
+		},
+		{
+			"content": "num2",
+			"color": "#859900"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "AsInt",
+			"color": "#268BD2"
+		},
+		{
+			"content": "();",
+			"color": "#586E75"
+		},
+		{
+			"content": "\t\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "italic",
+			"color": "#268BD2"
+		},
+		{
+			"content": "><",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "bold",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#859900"
+		},
+		{
+			"content": " = \"",
+			"color": "#586E75"
+		},
+		{
+			"content": "Total",
+			"color": "#859900"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#586E75"
+		},
+		{
+			"content": "total",
+			"color": "#859900"
+		},
+		{
+			"content": ";",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "bold",
+			"color": "#268BD2"
+		},
+		{
+			"content": "></",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "italic",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "}",
+			"color": "#D30102"
+		},
+		{
+			"content": "}",
+			"color": "#D30102"
+		},
+		{
+			"content": "<!DOCTYPE html>",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#586E75"
+		},
+		{
+			"content": "html",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "lang",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"en\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "  <",
+			"color": "#586E75"
+		},
+		{
+			"content": "head",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "title",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Add Numbers",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "title",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "meta",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "charset",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"utf-8\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " />",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  </",
+			"color": "#586E75"
+		},
+		{
+			"content": "head",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#586E75"
+		},
+		{
+			"content": "body",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Enter two whole numbers and then click ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "strong",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Add",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "strong",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "form",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "action",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "method",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": "><",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "label",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "First Number:",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "label",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "input",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "type",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "name",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " />",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": "><",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "label",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "for",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Second Number:",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "label",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "      ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "input",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "type",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "name",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " />",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "    ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": "><",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "input",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "type",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"submit\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "value",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#586E75"
+		},
+		{
+			"content": "\"Add\"",
+			"color": "#2AA198"
+		},
+		{
+			"content": " /></",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "form",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t",
+			"color": "#586E75"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#859900"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  ",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "@(totalMessage+\"!\")",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "p",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#586E75"
+		},
+		{
+			"content": "@domain",
+			"color": "#859900"
+		},
+		{
+			"content": ".",
+			"color": "#586E75"
+		},
+		{
+			"content": "com",
+			"color": "#268BD2"
+		},
+		{
+			"content": "</",
+			"color": "#586E75"
+		},
+		{
+			"content": "body",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#586E75"
+		},
+		{
+			"content": "html",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "@",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "{",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "total",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " = ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "0",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " = \"\";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@* a multiline",
+			"color": "#7285B7"
+		},
+		{
+			"content": "      razor comment embedded in csharp *@",
+			"color": "#7285B7"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "if",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "IsPost",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ") ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "{",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "        // ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Retrieve",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "the",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "numbers",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "that",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "the",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "user",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "entered",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "num1",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " = ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Request",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "[\"",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "text1",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "\"];",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "var",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "num2",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " = ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Request",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "[\"",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "text2",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "\"];",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        // ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Convert",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "the",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "entered",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "strings",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "into",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "integers",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "numbers",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "and",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "add",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "        ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "total",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " = ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "num1",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "AsInt",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "() + ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "num2",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "AsInt",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "();",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "\t\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<italic><bold>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "totalMessage",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " = \"",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Total",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " = \" + ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "total",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ";",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</bold></italic>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "}",
+			"color": "#FFC58F"
+		},
+		{
+			"content": "<!DOCTYPE html>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "<html lang=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"en\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ">",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<head>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<title>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "Add Numbers",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</title>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<meta charset=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"utf-8\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " />",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</head>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "<body>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<p>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "Enter two whole numbers and then click ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<strong>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "Add",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</strong>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</p>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<form action=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " method=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"post\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ">",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<p><label for=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ">",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "First Number:",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</label>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<input type=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " name=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"text1\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " />",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</p>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<p><label for=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": ">",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "Second Number:",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</label>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "      ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<input type=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"text\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " name=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"text2\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " />",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</p>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "    ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<p><input type=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"submit\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " value=",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\"Add\"",
+			"color": "#D1F1A9"
+		},
+		{
+			"content": " /></p>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</form>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "\t",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@* now we call the totalMessage method",
+			"color": "#7285B7"
+		},
+		{
+			"content": "\t   (a multi line razor comment outside code) *@",
+			"color": "#7285B7"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<p>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "@totalMessage",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "</p>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<p>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "@(totalMessage+\"!\")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "</p>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "  An email address (with escaped at character): name@",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "@domain",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": ".",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "com",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "</body>",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "</html>",
+			"color": "#FF9DA4"
+		}
+	]
+}

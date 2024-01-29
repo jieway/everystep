@@ -1,0 +1,498 @@
+{
+	"abyss": [
+		{
+			"content": "<",
+			"color": "#6688CC"
+		},
+		{
+			"content": "ion-view",
+			"color": "#225588"
+		},
+		{
+			"content": "><",
+			"color": "#6688CC"
+		},
+		{
+			"content": "button-view",
+			"color": "#225588"
+		},
+		{
+			"content": "/><",
+			"color": "#6688CC"
+		},
+		{
+			"content": "font-face",
+			"color": "#225588"
+		},
+		{
+			"content": "></",
+			"color": "#6688CC"
+		},
+		{
+			"content": "font-face",
+			"color": "#225588"
+		},
+		{
+			"content": "></",
+			"color": "#6688CC"
+		},
+		{
+			"content": "ion-view",
+			"color": "#225588"
+		},
+		{
+			"content": ">",
+			"color": "#6688CC"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "ion-view",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "button-view",
+			"color": "#569CD6"
+		},
+		{
+			"content": "/",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "font-face",
+			"color": "#569CD6"
+		},
+		{
+			"content": "></",
+			"color": "#808080"
+		},
+		{
+			"content": "font-face",
+			"color": "#569CD6"
+		},
+		{
+			"content": "></",
+			"color": "#808080"
+		},
+		{
+			"content": "ion-view",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "<ion-view><button-view",
+			"color": "#800000"
+		},
+		{
+			"content": "/",
+			"color": "#000000"
+		},
+		{
+			"content": "><font-face></font-face></ion-view>",
+			"color": "#800000"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "ion-view",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "button-view",
+			"color": "#569CD6"
+		},
+		{
+			"content": "/",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "font-face",
+			"color": "#569CD6"
+		},
+		{
+			"content": "></",
+			"color": "#808080"
+		},
+		{
+			"content": "font-face",
+			"color": "#569CD6"
+		},
+		{
+			"content": "></",
+			"color": "#808080"
+		},
+		{
+			"content": "ion-view",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "<",
+			"color": "#808080"
+		},
+		{
+			"content": "ion-view",
+			"color": "#569CD6"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "button-view",
+			"color": "#569CD6"
+		},
+		{
+			"content": "/",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "><",
+			"color": "#808080"
+		},
+		{
+			"content": "font-face",
+			"color": "#569CD6"
+		},
+		{
+			"content": "></",
+			"color": "#808080"
+		},
+		{
+			"content": "font-face",
+			"color": "#569CD6"
+		},
+		{
+			"content": "></",
+			"color": "#808080"
+		},
+		{
+			"content": "ion-view",
+			"color": "#569CD6"
+		},
+		{
+			"content": ">",
+			"color": "#808080"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "<ion-view><button-view",
+			"color": "#800000"
+		},
+		{
+			"content": "/",
+			"color": "#000000"
+		},
+		{
+			"content": "><font-face></font-face></ion-view>",
+			"color": "#800000"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "<",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "ion-view",
+			"color": "#DC3958"
+		},
+		{
+			"content": "><",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "button-view",
+			"color": "#DC3958"
+		},
+		{
+			"content": "/><",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "font-face",
+			"color": "#DC3958"
+		},
+		{
+			"content": "></",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "font-face",
+			"color": "#DC3958"
+		},
+		{
+			"content": "></",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "ion-view",
+			"color": "#DC3958"
+		},
+		{
+			"content": ">",
+			"color": "#D3AF86"
+		}
+	],
+	"monokai": [
+		{
+			"content": "<",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "ion-view",
+			"color": "#F92672"
+		},
+		{
+			"content": "><",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "button-view",
+			"color": "#F92672"
+		},
+		{
+			"content": "/><",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "font-face",
+			"color": "#F92672"
+		},
+		{
+			"content": "></",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "font-face",
+			"color": "#F92672"
+		},
+		{
+			"content": "></",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "ion-view",
+			"color": "#F92672"
+		},
+		{
+			"content": ">",
+			"color": "#F8F8F2"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "<ion-view><button-view",
+			"color": "#6089B4"
+		},
+		{
+			"content": "/",
+			"color": "#9872A2"
+		},
+		{
+			"content": "><font-face></font-face></ion-view>",
+			"color": "#6089B4"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "<",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "ion-view",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "><",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "button-view",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "/><",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "font-face",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "></",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "font-face",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "></",
+			"color": "#91B3E0"
+		},
+		{
+			"content": "ion-view",
+			"color": "#4B83CD"
+		},
+		{
+			"content": ">",
+			"color": "#91B3E0"
+		}
+	],
+	"red": [
+		{
+			"content": "<ion-view><button-view/><font-face></font-face></ion-view>",
+			"color": "#EC0D1EFF"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "<",
+			"color": "#657B83"
+		},
+		{
+			"content": "ion-view",
+			"color": "#268BD2"
+		},
+		{
+			"content": "><",
+			"color": "#657B83"
+		},
+		{
+			"content": "button-view",
+			"color": "#268BD2"
+		},
+		{
+			"content": "/",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "><",
+			"color": "#657B83"
+		},
+		{
+			"content": "font-face",
+			"color": "#268BD2"
+		},
+		{
+			"content": "></",
+			"color": "#657B83"
+		},
+		{
+			"content": "font-face",
+			"color": "#268BD2"
+		},
+		{
+			"content": "></",
+			"color": "#657B83"
+		},
+		{
+			"content": "ion-view",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#657B83"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "<",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "ion-view",
+			"color": "#268BD2"
+		},
+		{
+			"content": "><",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "button-view",
+			"color": "#268BD2"
+		},
+		{
+			"content": "/",
+			"color": "#586E75"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#586E75"
+		},
+		{
+			"content": "font-face",
+			"color": "#268BD2"
+		},
+		{
+			"content": "></",
+			"color": "#586E75"
+		},
+		{
+			"content": "font-face",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#586E75"
+		},
+		{
+			"content": "</",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "ion-view",
+			"color": "#268BD2"
+		},
+		{
+			"content": ">",
+			"color": "#93A1A1"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "<ion-view><button-view/><font-face></font-face></ion-view>",
+			"color": "#FF9DA4"
+		}
+	]
+}

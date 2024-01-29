@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,R as n}from"./chunks/framework.2bglP9T5.js";const y=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"cpp/basic/vptr.md","filePath":"cpp/basic/vptr.md"}'),l={name:"cpp/basic/vptr.md"},h=n("",25),p=[h];function k(t,e,d,r,c,g){return a(),i("div",null,p)}const A=s(l,[["render",k]]);export{y as __pageData,A as default};

@@ -1,0 +1,5510 @@
+{
+	"abyss": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#223355"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#9966B8"
+		},
+		{
+			"content": "LongTask",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "(ByVal Duration ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "As",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Single",
+			"color": "#9966B8"
+		},
+		{
+			"content": ", _",
+			"color": "#6688CC"
+		},
+		{
+			"content": "                     ByVal MinimumInterval ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "As",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Single",
+			"color": "#9966B8"
+		},
+		{
+			"content": ")",
+			"color": "#6688CC"
+		},
+		{
+			"content": "   ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Dim",
+			"color": "#9966B8"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "As",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Single",
+			"color": "#9966B8"
+		},
+		{
+			"content": "   ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Dim",
+			"color": "#9966B8"
+		},
+		{
+			"content": " Start ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "As",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Single",
+			"color": "#9966B8"
+		},
+		{
+			"content": "   ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Dim",
+			"color": "#9966B8"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "As",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Boolean",
+			"color": "#9966B8"
+		},
+		{
+			"content": "   ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#223355"
+		},
+		{
+			"content": "   ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#223355"
+		},
+		{
+			"content": "   Start ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "CSng",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Timer",
+			"color": "#9966B8"
+		},
+		{
+			"content": ")",
+			"color": "#6688CC"
+		},
+		{
+			"content": "   Threshold ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#6688CC"
+		},
+		{
+			"content": "   ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Do",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "While",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "CSng",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Timer",
+			"color": "#9966B8"
+		},
+		{
+			"content": ")",
+			"color": "#6688CC"
+		},
+		{
+			"content": "<",
+			"color": "#225588"
+		},
+		{
+			"content": " (Start ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "+",
+			"color": "#225588"
+		},
+		{
+			"content": " Duration)",
+			"color": "#6688CC"
+		},
+		{
+			"content": "       ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#223355"
+		},
+		{
+			"content": "       ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#223355"
+		},
+		{
+			"content": "       ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "If",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "CSng",
+			"color": "#9966B8"
+		},
+		{
+			"content": "(",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Timer",
+			"color": "#9966B8"
+		},
+		{
+			"content": ")",
+			"color": "#6688CC"
+		},
+		{
+			"content": ">",
+			"color": "#225588"
+		},
+		{
+			"content": " (Start ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "+",
+			"color": "#225588"
+		},
+		{
+			"content": " Threshold) ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Then",
+			"color": "#225588"
+		},
+		{
+			"content": "              RaiseEvent ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "PercentDone",
+			"color": "#DDBB88"
+		},
+		{
+			"content": "( _",
+			"color": "#6688CC"
+		},
+		{
+			"content": "              Threshold / Duration, blnCancel)",
+			"color": "#6688CC"
+		},
+		{
+			"content": "              ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#223355"
+		},
+		{
+			"content": "              ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "If",
+			"color": "#225588"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Then",
+			"color": "#225588"
+		},
+		{
+			"content": " ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#225588"
+		},
+		{
+			"content": "              Threshold ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "=",
+			"color": "#225588"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "+",
+			"color": "#225588"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#6688CC"
+		},
+		{
+			"content": "       ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "End If",
+			"color": "#225588"
+		},
+		{
+			"content": "     ",
+			"color": "#6688CC"
+		},
+		{
+			"content": "Loop",
+			"color": "#225588"
+		},
+		{
+			"content": "End Sub",
+			"color": "#9966B8"
+		}
+	],
+	"dark_vs": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#569CD6"
+		},
+		{
+			"content": "LongTask(ByVal Duration As Single, _",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "                     ByVal MinimumInterval As Single)",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Dim",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Threshold As Single",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Dim",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Start As Single",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Dim",
+			"color": "#569CD6"
+		},
+		{
+			"content": " blnCancel As Boolean",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#608B4E"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "   Start = CSng(Timer)",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "   Threshold = MinimumInterval",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Do",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "While",
+			"color": "#569CD6"
+		},
+		{
+			"content": " CSng(Timer)< (Start + Duration)",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "       ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#608B4E"
+		},
+		{
+			"content": "       ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "       ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "If",
+			"color": "#569CD6"
+		},
+		{
+			"content": " CSng(Timer)> (Start + Threshold) ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Then",
+			"color": "#569CD6"
+		},
+		{
+			"content": "              RaiseEvent PercentDone( _",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "              Threshold / Duration, blnCancel)",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "              ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "              ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "If",
+			"color": "#569CD6"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Then",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#569CD6"
+		},
+		{
+			"content": "              Threshold = Threshold + MinimumInterval",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "       ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "End If",
+			"color": "#569CD6"
+		},
+		{
+			"content": "     ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Loop",
+			"color": "#569CD6"
+		},
+		{
+			"content": "End Sub",
+			"color": "#569CD6"
+		}
+	],
+	"light_vs": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#008000"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#0000FF"
+		},
+		{
+			"content": "LongTask(ByVal Duration As Single, _",
+			"color": "#000000"
+		},
+		{
+			"content": "                     ByVal MinimumInterval As Single)",
+			"color": "#000000"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "Dim",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Threshold As Single",
+			"color": "#000000"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "Dim",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Start As Single",
+			"color": "#000000"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "Dim",
+			"color": "#0000FF"
+		},
+		{
+			"content": " blnCancel As Boolean",
+			"color": "#000000"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#008000"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#008000"
+		},
+		{
+			"content": "   Start = CSng(Timer)",
+			"color": "#000000"
+		},
+		{
+			"content": "   Threshold = MinimumInterval",
+			"color": "#000000"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "Do",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "While",
+			"color": "#0000FF"
+		},
+		{
+			"content": " CSng(Timer)< (Start + Duration)",
+			"color": "#000000"
+		},
+		{
+			"content": "       ",
+			"color": "#000000"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#008000"
+		},
+		{
+			"content": "       ",
+			"color": "#000000"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#008000"
+		},
+		{
+			"content": "       ",
+			"color": "#000000"
+		},
+		{
+			"content": "If",
+			"color": "#0000FF"
+		},
+		{
+			"content": " CSng(Timer)> (Start + Threshold) ",
+			"color": "#000000"
+		},
+		{
+			"content": "Then",
+			"color": "#0000FF"
+		},
+		{
+			"content": "              RaiseEvent PercentDone( _",
+			"color": "#000000"
+		},
+		{
+			"content": "              Threshold / Duration, blnCancel)",
+			"color": "#000000"
+		},
+		{
+			"content": "              ",
+			"color": "#000000"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#008000"
+		},
+		{
+			"content": "              ",
+			"color": "#000000"
+		},
+		{
+			"content": "If",
+			"color": "#0000FF"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#000000"
+		},
+		{
+			"content": "Then",
+			"color": "#0000FF"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#0000FF"
+		},
+		{
+			"content": "              Threshold = Threshold + MinimumInterval",
+			"color": "#000000"
+		},
+		{
+			"content": "       ",
+			"color": "#000000"
+		},
+		{
+			"content": "End If",
+			"color": "#0000FF"
+		},
+		{
+			"content": "     ",
+			"color": "#000000"
+		},
+		{
+			"content": "Loop",
+			"color": "#0000FF"
+		},
+		{
+			"content": "End Sub",
+			"color": "#0000FF"
+		}
+	],
+	"hc_black": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#7CA668"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#569CD6"
+		},
+		{
+			"content": "LongTask(ByVal Duration ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "As",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " Single, _",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "                     ByVal MinimumInterval ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "As",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " Single)",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Dim",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "As",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " Single",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Dim",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Start ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "As",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " Single",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Dim",
+			"color": "#569CD6"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "As",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " Boolean",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#7CA668"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#7CA668"
+		},
+		{
+			"content": "   Start ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " CSng(Timer)",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "   Threshold ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Do",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "While",
+			"color": "#569CD6"
+		},
+		{
+			"content": " CSng(Timer)",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " (Start ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " Duration)",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "       ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#7CA668"
+		},
+		{
+			"content": "       ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#7CA668"
+		},
+		{
+			"content": "       ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "If",
+			"color": "#569CD6"
+		},
+		{
+			"content": " CSng(Timer)",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ">",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " (Start ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " Threshold) ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Then",
+			"color": "#569CD6"
+		},
+		{
+			"content": "              RaiseEvent PercentDone( _",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "              Threshold / Duration, blnCancel)",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "              ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#7CA668"
+		},
+		{
+			"content": "              ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "If",
+			"color": "#569CD6"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Then",
+			"color": "#569CD6"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#569CD6"
+		},
+		{
+			"content": "              Threshold ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "+",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "       ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "End If",
+			"color": "#569CD6"
+		},
+		{
+			"content": "     ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Loop",
+			"color": "#569CD6"
+		},
+		{
+			"content": "End Sub",
+			"color": "#569CD6"
+		}
+	],
+	"dark_plus": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#569CD6"
+		},
+		{
+			"content": "LongTask",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "ByVal",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " Duration As ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Single",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " _",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "                     ByVal MinimumInterval As ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Single",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Dim",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "As ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Single",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Dim",
+			"color": "#569CD6"
+		},
+		{
+			"content": " Start ",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "As ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Single",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Dim",
+			"color": "#569CD6"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "As ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Boolean",
+			"color": "#4EC9B0"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#608B4E"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Start",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " = ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "CSng",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Timer",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Threshold",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " =",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "   ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Do",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "While",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "CSng",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Timer",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": ")< (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Start",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " +",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " Duration",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "       ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#608B4E"
+		},
+		{
+			"content": "       ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "       ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "If",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "CSng",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Timer",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": ")> (",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Start",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " +",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " Threshold",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ") ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Then",
+			"color": "#C586C0"
+		},
+		{
+			"content": "              RaiseEvent ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "PercentDone",
+			"color": "#DCDCAA"
+		},
+		{
+			"content": "(",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " _",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "              ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Threshold",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " /",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " Duration",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ",",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " blnCancel",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": ")",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "              ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#608B4E"
+		},
+		{
+			"content": "              ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "If",
+			"color": "#C586C0"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Then",
+			"color": "#C586C0"
+		},
+		{
+			"content": " ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#C586C0"
+		},
+		{
+			"content": "              ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Threshold",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " =",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " Threshold",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": " +",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#9CDCFE"
+		},
+		{
+			"content": "       ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "End If",
+			"color": "#C586C0"
+		},
+		{
+			"content": "     ",
+			"color": "#D4D4D4"
+		},
+		{
+			"content": "Loop",
+			"color": "#C586C0"
+		},
+		{
+			"content": "End Sub",
+			"color": "#569CD6"
+		}
+	],
+	"light_plus": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#008000"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#0000FF"
+		},
+		{
+			"content": "LongTask",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "ByVal",
+			"color": "#001080"
+		},
+		{
+			"content": " Duration As ",
+			"color": "#000000"
+		},
+		{
+			"content": "Single",
+			"color": "#267F99"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": " _",
+			"color": "#001080"
+		},
+		{
+			"content": "                     ByVal MinimumInterval As ",
+			"color": "#000000"
+		},
+		{
+			"content": "Single",
+			"color": "#267F99"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "Dim",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#001080"
+		},
+		{
+			"content": "As ",
+			"color": "#000000"
+		},
+		{
+			"content": "Single",
+			"color": "#267F99"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "Dim",
+			"color": "#0000FF"
+		},
+		{
+			"content": " Start ",
+			"color": "#001080"
+		},
+		{
+			"content": "As ",
+			"color": "#000000"
+		},
+		{
+			"content": "Single",
+			"color": "#267F99"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "Dim",
+			"color": "#0000FF"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#001080"
+		},
+		{
+			"content": "As ",
+			"color": "#000000"
+		},
+		{
+			"content": "Boolean",
+			"color": "#267F99"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#008000"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#008000"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "Start",
+			"color": "#001080"
+		},
+		{
+			"content": " = ",
+			"color": "#000000"
+		},
+		{
+			"content": "CSng",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "Timer",
+			"color": "#795E26"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "Threshold",
+			"color": "#001080"
+		},
+		{
+			"content": " =",
+			"color": "#000000"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#001080"
+		},
+		{
+			"content": "   ",
+			"color": "#000000"
+		},
+		{
+			"content": "Do",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "While",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "CSng",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "Timer",
+			"color": "#795E26"
+		},
+		{
+			"content": ")< (",
+			"color": "#000000"
+		},
+		{
+			"content": "Start",
+			"color": "#001080"
+		},
+		{
+			"content": " +",
+			"color": "#000000"
+		},
+		{
+			"content": " Duration",
+			"color": "#001080"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": "       ",
+			"color": "#000000"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#008000"
+		},
+		{
+			"content": "       ",
+			"color": "#000000"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#008000"
+		},
+		{
+			"content": "       ",
+			"color": "#000000"
+		},
+		{
+			"content": "If",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "CSng",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": "Timer",
+			"color": "#795E26"
+		},
+		{
+			"content": ")> (",
+			"color": "#000000"
+		},
+		{
+			"content": "Start",
+			"color": "#001080"
+		},
+		{
+			"content": " +",
+			"color": "#000000"
+		},
+		{
+			"content": " Threshold",
+			"color": "#001080"
+		},
+		{
+			"content": ") ",
+			"color": "#000000"
+		},
+		{
+			"content": "Then",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "              RaiseEvent ",
+			"color": "#000000"
+		},
+		{
+			"content": "PercentDone",
+			"color": "#795E26"
+		},
+		{
+			"content": "(",
+			"color": "#000000"
+		},
+		{
+			"content": " _",
+			"color": "#001080"
+		},
+		{
+			"content": "              ",
+			"color": "#000000"
+		},
+		{
+			"content": "Threshold",
+			"color": "#001080"
+		},
+		{
+			"content": " /",
+			"color": "#000000"
+		},
+		{
+			"content": " Duration",
+			"color": "#001080"
+		},
+		{
+			"content": ",",
+			"color": "#000000"
+		},
+		{
+			"content": " blnCancel",
+			"color": "#001080"
+		},
+		{
+			"content": ")",
+			"color": "#000000"
+		},
+		{
+			"content": "              ",
+			"color": "#000000"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#008000"
+		},
+		{
+			"content": "              ",
+			"color": "#000000"
+		},
+		{
+			"content": "If",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#000000"
+		},
+		{
+			"content": "Then",
+			"color": "#AF00DB"
+		},
+		{
+			"content": " ",
+			"color": "#000000"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "              ",
+			"color": "#000000"
+		},
+		{
+			"content": "Threshold",
+			"color": "#001080"
+		},
+		{
+			"content": " =",
+			"color": "#000000"
+		},
+		{
+			"content": " Threshold",
+			"color": "#001080"
+		},
+		{
+			"content": " +",
+			"color": "#000000"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#001080"
+		},
+		{
+			"content": "       ",
+			"color": "#000000"
+		},
+		{
+			"content": "End If",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "     ",
+			"color": "#000000"
+		},
+		{
+			"content": "Loop",
+			"color": "#AF00DB"
+		},
+		{
+			"content": "End Sub",
+			"color": "#0000FF"
+		}
+	],
+	"kimbie_dark": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#98676A"
+		},
+		{
+			"content": "LongTask",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "ByVal",
+			"color": "#DC3958"
+		},
+		{
+			"content": " Duration As Single,",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " _",
+			"color": "#DC3958"
+		},
+		{
+			"content": "                     ByVal MinimumInterval As Single)",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "   ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Dim",
+			"color": "#98676A"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#DC3958"
+		},
+		{
+			"content": "As Single",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "   ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Dim",
+			"color": "#98676A"
+		},
+		{
+			"content": " Start ",
+			"color": "#DC3958"
+		},
+		{
+			"content": "As Single",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "   ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Dim",
+			"color": "#98676A"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#DC3958"
+		},
+		{
+			"content": "As Boolean",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "   ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "   ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "   ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Start",
+			"color": "#DC3958"
+		},
+		{
+			"content": " = ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "CSng",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Timer",
+			"color": "#7E602C"
+		},
+		{
+			"content": ")",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "   ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Threshold",
+			"color": "#DC3958"
+		},
+		{
+			"content": " =",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#DC3958"
+		},
+		{
+			"content": "   ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Do",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "While",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "CSng",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Timer",
+			"color": "#7E602C"
+		},
+		{
+			"content": ")< (",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Start",
+			"color": "#DC3958"
+		},
+		{
+			"content": " +",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " Duration",
+			"color": "#DC3958"
+		},
+		{
+			"content": ")",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "       ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "       ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "       ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "If",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "CSng",
+			"color": "#7E602C"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Timer",
+			"color": "#7E602C"
+		},
+		{
+			"content": ")> (",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Start",
+			"color": "#DC3958"
+		},
+		{
+			"content": " +",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " Threshold",
+			"color": "#DC3958"
+		},
+		{
+			"content": ") ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Then",
+			"color": "#98676A"
+		},
+		{
+			"content": "              RaiseEvent ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "PercentDone",
+			"color": "#8AB1B0"
+		},
+		{
+			"content": "(",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " _",
+			"color": "#DC3958"
+		},
+		{
+			"content": "              ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Threshold",
+			"color": "#DC3958"
+		},
+		{
+			"content": " /",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " Duration",
+			"color": "#DC3958"
+		},
+		{
+			"content": ",",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " blnCancel",
+			"color": "#DC3958"
+		},
+		{
+			"content": ")",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "              ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#A57A4C"
+		},
+		{
+			"content": "              ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "If",
+			"color": "#98676A"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Then",
+			"color": "#98676A"
+		},
+		{
+			"content": " ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#98676A"
+		},
+		{
+			"content": "              ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Threshold",
+			"color": "#DC3958"
+		},
+		{
+			"content": " =",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " Threshold",
+			"color": "#DC3958"
+		},
+		{
+			"content": " +",
+			"color": "#D3AF86"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#DC3958"
+		},
+		{
+			"content": "       ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "End If",
+			"color": "#98676A"
+		},
+		{
+			"content": "     ",
+			"color": "#D3AF86"
+		},
+		{
+			"content": "Loop",
+			"color": "#98676A"
+		},
+		{
+			"content": "End Sub",
+			"color": "#98676A"
+		}
+	],
+	"monokai": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#75715E"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "LongTask",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "(ByVal Duration ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "As",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Single",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ", _",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "                     ByVal MinimumInterval ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "As",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Single",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Dim",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "As",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Single",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Dim",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " Start ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "As",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Single",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Dim",
+			"color": "#66D9EF"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "As",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Boolean",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#75715E"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#75715E"
+		},
+		{
+			"content": "   Start ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "CSng",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Timer",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "   Threshold ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Do",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "While",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "CSng",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Timer",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "<",
+			"color": "#F92672"
+		},
+		{
+			"content": " (Start ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "+",
+			"color": "#F92672"
+		},
+		{
+			"content": " Duration)",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "       ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#75715E"
+		},
+		{
+			"content": "       ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#75715E"
+		},
+		{
+			"content": "       ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "If",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "CSng",
+			"color": "#66D9EF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Timer",
+			"color": "#66D9EF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": ">",
+			"color": "#F92672"
+		},
+		{
+			"content": " (Start ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "+",
+			"color": "#F92672"
+		},
+		{
+			"content": " Threshold) ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Then",
+			"color": "#F92672"
+		},
+		{
+			"content": "              RaiseEvent ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "PercentDone",
+			"color": "#A6E22E"
+		},
+		{
+			"content": "( _",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "              Threshold / Duration, blnCancel)",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "              ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#75715E"
+		},
+		{
+			"content": "              ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "If",
+			"color": "#F92672"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Then",
+			"color": "#F92672"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#F92672"
+		},
+		{
+			"content": "              Threshold ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "=",
+			"color": "#F92672"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "+",
+			"color": "#F92672"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "       ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "End If",
+			"color": "#F92672"
+		},
+		{
+			"content": "     ",
+			"color": "#F8F8F2"
+		},
+		{
+			"content": "Loop",
+			"color": "#F92672"
+		},
+		{
+			"content": "End Sub",
+			"color": "#66D9EF"
+		}
+	],
+	"monokai_dimmed": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#9872A2"
+		},
+		{
+			"content": "LongTask",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "ByVal",
+			"color": "#6089B4"
+		},
+		{
+			"content": " Duration ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "As",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Single",
+			"color": "#C7444A"
+		},
+		{
+			"content": ",",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": " _",
+			"color": "#6089B4"
+		},
+		{
+			"content": "                     ByVal MinimumInterval ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "As",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Single",
+			"color": "#C7444A"
+		},
+		{
+			"content": ")",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "   ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Dim",
+			"color": "#9872A2"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#6089B4"
+		},
+		{
+			"content": "As",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Single",
+			"color": "#C7444A"
+		},
+		{
+			"content": "   ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Dim",
+			"color": "#9872A2"
+		},
+		{
+			"content": " Start ",
+			"color": "#6089B4"
+		},
+		{
+			"content": "As",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Single",
+			"color": "#C7444A"
+		},
+		{
+			"content": "   ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Dim",
+			"color": "#9872A2"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#6089B4"
+		},
+		{
+			"content": "As",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Boolean",
+			"color": "#C7444A"
+		},
+		{
+			"content": "   ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "   ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "   ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Start",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "CSng",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Timer",
+			"color": "#9872A2"
+		},
+		{
+			"content": ")",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "   ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Threshold",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#6089B4"
+		},
+		{
+			"content": "   ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Do",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "While",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "CSng",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Timer",
+			"color": "#9872A2"
+		},
+		{
+			"content": ")",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "<",
+			"color": "#676867"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Start",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "+",
+			"color": "#676867"
+		},
+		{
+			"content": " Duration",
+			"color": "#6089B4"
+		},
+		{
+			"content": ")",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "       ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "       ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "       ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "If",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "CSng",
+			"color": "#9872A2"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Timer",
+			"color": "#9872A2"
+		},
+		{
+			"content": ")",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": ">",
+			"color": "#676867"
+		},
+		{
+			"content": " (",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Start",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "+",
+			"color": "#676867"
+		},
+		{
+			"content": " Threshold",
+			"color": "#6089B4"
+		},
+		{
+			"content": ") ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Then",
+			"color": "#9872A2"
+		},
+		{
+			"content": "              RaiseEvent ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "PercentDone",
+			"color": "#CE6700"
+		},
+		{
+			"content": "(",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": " _",
+			"color": "#6089B4"
+		},
+		{
+			"content": "              ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Threshold",
+			"color": "#6089B4"
+		},
+		{
+			"content": " /",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": " Duration",
+			"color": "#6089B4"
+		},
+		{
+			"content": ",",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": " blnCancel",
+			"color": "#6089B4"
+		},
+		{
+			"content": ")",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "              ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#9A9B99"
+		},
+		{
+			"content": "              ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "If",
+			"color": "#9872A2"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Then",
+			"color": "#9872A2"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#9872A2"
+		},
+		{
+			"content": "              ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Threshold",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "=",
+			"color": "#676867"
+		},
+		{
+			"content": " Threshold",
+			"color": "#6089B4"
+		},
+		{
+			"content": " ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "+",
+			"color": "#676867"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#6089B4"
+		},
+		{
+			"content": "       ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "End If",
+			"color": "#9872A2"
+		},
+		{
+			"content": "     ",
+			"color": "#C5C8C6"
+		},
+		{
+			"content": "Loop",
+			"color": "#9872A2"
+		},
+		{
+			"content": "End Sub",
+			"color": "#9872A2"
+		}
+	],
+	"quietlight": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "LongTask",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "ByVal",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " Duration ",
+			"color": "#333333"
+		},
+		{
+			"content": "As",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Single",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ",",
+			"color": "#333333"
+		},
+		{
+			"content": " _",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "                     ByVal MinimumInterval ",
+			"color": "#333333"
+		},
+		{
+			"content": "As",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Single",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "   ",
+			"color": "#333333"
+		},
+		{
+			"content": "Dim Threshold ",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "As",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Single",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "   ",
+			"color": "#333333"
+		},
+		{
+			"content": "Dim Start ",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "As",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Single",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "   ",
+			"color": "#333333"
+		},
+		{
+			"content": "Dim blnCancel ",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "As",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Boolean",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "   ",
+			"color": "#333333"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "   ",
+			"color": "#333333"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "   ",
+			"color": "#333333"
+		},
+		{
+			"content": "Start",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "CSng",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "Timer",
+			"color": "#AA3731"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "   ",
+			"color": "#333333"
+		},
+		{
+			"content": "Threshold",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "   ",
+			"color": "#333333"
+		},
+		{
+			"content": "Do",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "While",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "CSng",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "Timer",
+			"color": "#AA3731"
+		},
+		{
+			"content": ")<",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "Start",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "+",
+			"color": "#777777"
+		},
+		{
+			"content": " Duration",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "       ",
+			"color": "#333333"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "       ",
+			"color": "#333333"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "       ",
+			"color": "#333333"
+		},
+		{
+			"content": "If",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "CSng",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "Timer",
+			"color": "#AA3731"
+		},
+		{
+			"content": ")>",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": "Start",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "+",
+			"color": "#777777"
+		},
+		{
+			"content": " Threshold",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Then",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "              RaiseEvent ",
+			"color": "#333333"
+		},
+		{
+			"content": "PercentDone",
+			"color": "#AA3731"
+		},
+		{
+			"content": "(",
+			"color": "#777777"
+		},
+		{
+			"content": " _",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "              ",
+			"color": "#333333"
+		},
+		{
+			"content": "Threshold",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " /",
+			"color": "#333333"
+		},
+		{
+			"content": " Duration",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ",",
+			"color": "#333333"
+		},
+		{
+			"content": " blnCancel",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": ")",
+			"color": "#777777"
+		},
+		{
+			"content": "              ",
+			"color": "#333333"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#AAAAAA"
+		},
+		{
+			"content": "              ",
+			"color": "#333333"
+		},
+		{
+			"content": "If",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#333333"
+		},
+		{
+			"content": "Then",
+			"color": "#4B83CD"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "              ",
+			"color": "#333333"
+		},
+		{
+			"content": "Threshold",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "=",
+			"color": "#777777"
+		},
+		{
+			"content": " Threshold",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": " ",
+			"color": "#333333"
+		},
+		{
+			"content": "+",
+			"color": "#777777"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#7A3E9D"
+		},
+		{
+			"content": "       ",
+			"color": "#333333"
+		},
+		{
+			"content": "End If",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "     ",
+			"color": "#333333"
+		},
+		{
+			"content": "Loop",
+			"color": "#4B83CD"
+		},
+		{
+			"content": "End Sub",
+			"color": "#7A3E9D"
+		}
+	],
+	"red": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": "LongTask",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "ByVal",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " Duration ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "As",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Single",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": " _",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "                     ByVal MinimumInterval ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "As",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Single",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Dim",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "As",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Single",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Dim",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " Start ",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "As",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Single",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Dim",
+			"color": "#FF6262FF"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "As",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Boolean",
+			"color": "#9DF39FFF"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Start",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "CSng",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Timer",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Threshold",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "   ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Do",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "While",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "CSng",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Timer",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "<",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Start",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "+",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " Duration",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "       ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "       ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "       ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "If",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "CSng",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Timer",
+			"color": "#FFB454FF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": ">",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " (",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Start",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "+",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " Threshold",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ") ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Then",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "              RaiseEvent ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "PercentDone",
+			"color": "#FEC758FF"
+		},
+		{
+			"content": "(",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": " _",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "              ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Threshold",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " /",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": " Duration",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ",",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": " blnCancel",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": ")",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "              ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#E7C0C0FF"
+		},
+		{
+			"content": "              ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "If",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Then",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "              ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Threshold",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "=",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " Threshold",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": " ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "+",
+			"color": "#F12727FF"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#FB9A4BFF"
+		},
+		{
+			"content": "       ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "End If",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "     ",
+			"color": "#F8F8F8"
+		},
+		{
+			"content": "Loop",
+			"color": "#F12727FF"
+		},
+		{
+			"content": "End Sub",
+			"color": "#FF6262FF"
+		}
+	],
+	"solarized_dark": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#657B83"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "LongTask",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "ByVal",
+			"color": "#268BD2"
+		},
+		{
+			"content": " Duration ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "As",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Single",
+			"color": "#859900"
+		},
+		{
+			"content": ",",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " _",
+			"color": "#268BD2"
+		},
+		{
+			"content": "                     ByVal MinimumInterval ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "As",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Single",
+			"color": "#859900"
+		},
+		{
+			"content": ")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "   ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Dim",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#268BD2"
+		},
+		{
+			"content": "As",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Single",
+			"color": "#859900"
+		},
+		{
+			"content": "   ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Dim",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " Start ",
+			"color": "#268BD2"
+		},
+		{
+			"content": "As",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Single",
+			"color": "#859900"
+		},
+		{
+			"content": "   ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Dim",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#268BD2"
+		},
+		{
+			"content": "As",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Boolean",
+			"color": "#859900"
+		},
+		{
+			"content": "   ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#657B83"
+		},
+		{
+			"content": "   ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#657B83"
+		},
+		{
+			"content": "   ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Start",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "CSng",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Timer",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "   ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Threshold",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#268BD2"
+		},
+		{
+			"content": "   ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Do",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "While",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "CSng",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Timer",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Start",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": " Duration",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "       ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#657B83"
+		},
+		{
+			"content": "       ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#657B83"
+		},
+		{
+			"content": "       ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "If",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "CSng",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Timer",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": ">",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Start",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": " Threshold",
+			"color": "#268BD2"
+		},
+		{
+			"content": ") ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Then",
+			"color": "#859900"
+		},
+		{
+			"content": "              RaiseEvent ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "PercentDone",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " _",
+			"color": "#268BD2"
+		},
+		{
+			"content": "              ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Threshold",
+			"color": "#268BD2"
+		},
+		{
+			"content": " /",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " Duration",
+			"color": "#268BD2"
+		},
+		{
+			"content": ",",
+			"color": "#93A1A1"
+		},
+		{
+			"content": " blnCancel",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "              ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#657B83"
+		},
+		{
+			"content": "              ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "If",
+			"color": "#859900"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Then",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#859900"
+		},
+		{
+			"content": "              ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Threshold",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " Threshold",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#268BD2"
+		},
+		{
+			"content": "       ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "End If",
+			"color": "#859900"
+		},
+		{
+			"content": "     ",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Loop",
+			"color": "#859900"
+		},
+		{
+			"content": "End Sub",
+			"color": "#93A1A1"
+		}
+	],
+	"solarized_light": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#073642"
+		},
+		{
+			"content": "LongTask",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "ByVal",
+			"color": "#268BD2"
+		},
+		{
+			"content": " Duration ",
+			"color": "#586E75"
+		},
+		{
+			"content": "As",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Single",
+			"color": "#859900"
+		},
+		{
+			"content": ",",
+			"color": "#586E75"
+		},
+		{
+			"content": " _",
+			"color": "#268BD2"
+		},
+		{
+			"content": "                     ByVal MinimumInterval ",
+			"color": "#586E75"
+		},
+		{
+			"content": "As",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Single",
+			"color": "#859900"
+		},
+		{
+			"content": ")",
+			"color": "#586E75"
+		},
+		{
+			"content": "   ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Dim",
+			"color": "#073642"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#268BD2"
+		},
+		{
+			"content": "As",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Single",
+			"color": "#859900"
+		},
+		{
+			"content": "   ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Dim",
+			"color": "#073642"
+		},
+		{
+			"content": " Start ",
+			"color": "#268BD2"
+		},
+		{
+			"content": "As",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Single",
+			"color": "#859900"
+		},
+		{
+			"content": "   ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Dim",
+			"color": "#073642"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#268BD2"
+		},
+		{
+			"content": "As",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Boolean",
+			"color": "#859900"
+		},
+		{
+			"content": "   ",
+			"color": "#586E75"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "   ",
+			"color": "#586E75"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "   ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Start",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "CSng",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "Timer",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")",
+			"color": "#586E75"
+		},
+		{
+			"content": "   ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Threshold",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#268BD2"
+		},
+		{
+			"content": "   ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Do",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "While",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "CSng",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "Timer",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")",
+			"color": "#586E75"
+		},
+		{
+			"content": "<",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "Start",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": " Duration",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")",
+			"color": "#586E75"
+		},
+		{
+			"content": "       ",
+			"color": "#586E75"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "       ",
+			"color": "#586E75"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "       ",
+			"color": "#586E75"
+		},
+		{
+			"content": "If",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "CSng",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": "Timer",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")",
+			"color": "#586E75"
+		},
+		{
+			"content": ">",
+			"color": "#859900"
+		},
+		{
+			"content": " (",
+			"color": "#586E75"
+		},
+		{
+			"content": "Start",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": " Threshold",
+			"color": "#268BD2"
+		},
+		{
+			"content": ") ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Then",
+			"color": "#859900"
+		},
+		{
+			"content": "              RaiseEvent ",
+			"color": "#586E75"
+		},
+		{
+			"content": "PercentDone",
+			"color": "#268BD2"
+		},
+		{
+			"content": "(",
+			"color": "#586E75"
+		},
+		{
+			"content": " _",
+			"color": "#268BD2"
+		},
+		{
+			"content": "              ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Threshold",
+			"color": "#268BD2"
+		},
+		{
+			"content": " /",
+			"color": "#586E75"
+		},
+		{
+			"content": " Duration",
+			"color": "#268BD2"
+		},
+		{
+			"content": ",",
+			"color": "#586E75"
+		},
+		{
+			"content": " blnCancel",
+			"color": "#268BD2"
+		},
+		{
+			"content": ")",
+			"color": "#586E75"
+		},
+		{
+			"content": "              ",
+			"color": "#586E75"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#93A1A1"
+		},
+		{
+			"content": "              ",
+			"color": "#586E75"
+		},
+		{
+			"content": "If",
+			"color": "#859900"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Then",
+			"color": "#859900"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#859900"
+		},
+		{
+			"content": "              ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Threshold",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "=",
+			"color": "#859900"
+		},
+		{
+			"content": " Threshold",
+			"color": "#268BD2"
+		},
+		{
+			"content": " ",
+			"color": "#586E75"
+		},
+		{
+			"content": "+",
+			"color": "#859900"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#268BD2"
+		},
+		{
+			"content": "       ",
+			"color": "#586E75"
+		},
+		{
+			"content": "End If",
+			"color": "#859900"
+		},
+		{
+			"content": "     ",
+			"color": "#586E75"
+		},
+		{
+			"content": "Loop",
+			"color": "#859900"
+		},
+		{
+			"content": "End Sub",
+			"color": "#073642"
+		}
+	],
+	"tomorrow_night_blue": [
+		{
+			"content": "' Copyright (c) Microsoft Corporation. All rights reserved.",
+			"color": "#7285B7"
+		},
+		{
+			"content": "Public Sub ",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "LongTask",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "ByVal",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " Duration ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "As",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Single",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " _",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "                     ByVal MinimumInterval ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "As",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Single",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Dim",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " Threshold ",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "As",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Single",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Dim",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " Start ",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "As",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Single",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Dim",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "As",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Boolean",
+			"color": "#FFEEAD"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "' The Timer property of the DateAndTime object returns the seconds",
+			"color": "#7285B7"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "' and milliseconds that have passed since midnight.",
+			"color": "#7285B7"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Start",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "CSng",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Timer",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Threshold",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "   ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Do",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "While",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "CSng",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Timer",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "<",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Start",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "+",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " Duration",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "       ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "' In a real application, some unit of work would",
+			"color": "#7285B7"
+		},
+		{
+			"content": "       ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "' be done here each time through the loop.",
+			"color": "#7285B7"
+		},
+		{
+			"content": "       ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "If",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "CSng",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Timer",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": ">",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " (",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Start",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "+",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " Threshold",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ") ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Then",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "              RaiseEvent ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "PercentDone",
+			"color": "#BBDAFF"
+		},
+		{
+			"content": "(",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " _",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "              ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Threshold",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " /",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " Duration",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ",",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": " blnCancel",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": ")",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "              ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "' Check to see if the operation was canceled.",
+			"color": "#7285B7"
+		},
+		{
+			"content": "              ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "If",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " blnCancel ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Then",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Exit Sub",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "              ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Threshold",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "=",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " Threshold",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": " ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "+",
+			"color": "#99FFFF"
+		},
+		{
+			"content": " MinimumInterval",
+			"color": "#FF9DA4"
+		},
+		{
+			"content": "       ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "End If",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "     ",
+			"color": "#FFFFFF"
+		},
+		{
+			"content": "Loop",
+			"color": "#EBBBFF"
+		},
+		{
+			"content": "End Sub",
+			"color": "#EBBBFF"
+		}
+	]
+}

@@ -1,0 +1,1 @@
+import{_ as e,c as a,o,R as r}from"./chunks/framework.2bglP9T5.js";const b=JSON.parse('{"title":"Arena","description":"","frontmatter":{},"headers":[],"relativePath":"aryadb/3-arean.md","filePath":"aryadb/3-arean.md"}'),l={name:"aryadb/3-arean.md"},c=r("",25),n=[c];function d(t,i,s,h,_,p){return o(),a("div",null,n)}const g=e(l,[["render",d]]);export{b as __pageData,g as default};
