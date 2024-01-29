@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,R as n}from"./chunks/framework.2bglP9T5.js";const c=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"alg/tree/trie.md","filePath":"alg/tree/trie.md"}'),h={name:"alg/tree/trie.md"},l=n("",24),p=[l];function k(t,e,r,d,g,y){return a(),i("div",null,p)}const D=s(h,[["render",k]]);export{c as __pageData,D as default};

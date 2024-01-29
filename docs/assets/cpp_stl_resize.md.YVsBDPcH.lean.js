@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,R as h}from"./chunks/framework.2bglP9T5.js";const c=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"cpp/stl/resize.md","filePath":"cpp/stl/resize.md"}'),n={name:"cpp/stl/resize.md"},k=h("",25),l=[k];function t(p,e,d,r,g,y){return a(),i("div",null,l)}const o=s(n,[["render",t]]);export{c as __pageData,o as default};

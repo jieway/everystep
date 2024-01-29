@@ -1,1 +1,0 @@
-import{_ as e,c as o,o as a,R as l}from"./chunks/framework.2bglP9T5.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"aryadb/cache.md","filePath":"aryadb/cache.md"}'),t={name:"aryadb/cache.md"},r=l("",15),c=[r];function n(i,s,d,h,g,p){return a(),o("div",null,c)}const b=e(t,[["render",n]]);export{u as __pageData,b as default};

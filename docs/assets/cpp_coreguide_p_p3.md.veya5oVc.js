@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as p}from"./chunks/framework.2bglP9T5.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"cpp/coreguide/p/p3.md","filePath":"cpp/coreguide/p/p3.md"}'),c={name:"cpp/coreguide/p/p3.md"};function r(a,o,s,n,d,i){return p(),t("div")}const f=e(c,[["render",r]]);export{m as __pageData,f as default};

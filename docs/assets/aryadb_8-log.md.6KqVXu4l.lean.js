@@ -1,1 +1,0 @@
-import{_ as i,c as s,o as a,R as l}from"./chunks/framework.2bglP9T5.js";const y=JSON.parse('{"title":"Log 模块","description":"","frontmatter":{},"headers":[],"relativePath":"aryadb/8-log.md","filePath":"aryadb/8-log.md"}'),e={name:"aryadb/8-log.md"},t=l("",44),n=[t];function h(r,p,k,d,o,c){return a(),s("div",null,n)}const A=i(e,[["render",h]]);export{y as __pageData,A as default};

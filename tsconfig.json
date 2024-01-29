@@ -29,8 +29,8 @@
   "include": [
     "**/*.ts",
     "**/*.mjs",
-    "src/.vitepress/**/*.ts",
-    "src/.vitepress/**/*.vue"
+    "docs/.vitepress/**/*.ts",
+    "docs/.vitepress/**/*.vue"
   ],
   "exclude": [
     "**/vendor/**",
