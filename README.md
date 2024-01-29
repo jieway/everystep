@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://github.com/weijiew/everystep">
-    <img src="src/assets/logo.jpg" alt="logo" width="200" height="180">
+    <img src="docs/public/logo.svg" alt="logo" width="200" height="180">
   </a>
 
 
@@ -11,7 +11,7 @@
 ![forks](https://img.shields.io/github/forks/weijiew/everystep)
 ![issues](https://img.shields.io/github/issues/weijiew/everystep)
 
-  <img src='src/assets/background-cover_.png' width='800'>
+  <img src='docs/public/background-cover_.png' width='800'>
 
 </div>
 
