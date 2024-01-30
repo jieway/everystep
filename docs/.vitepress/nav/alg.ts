@@ -1,10 +1,13 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const ALGARRAY: DefaultTheme.NavItemWithLink[] = [
-    { text: '二分查找', link: '/alg/array/lc-704' },
-    { text: '螺旋矩阵', link: '/alg/array/lc-59' },
-    { text: '螺旋矩阵进阶', link: '/alg/array/lc-54' },
-  ]
+
+  { text: '283. 移动零', link: '/alg/array/lc-283' },
+  { text: '566. 重塑矩阵', link: '/alg/array/lc-566' },
+  { text: '二分查找', link: '/alg/array/lc-704' },
+  { text: '螺旋矩阵', link: '/alg/array/lc-59' },
+  { text: '螺旋矩阵进阶', link: '/alg/array/lc-54' },
+]
   
 export const ALGLINKLIST: DefaultTheme.NavItemWithLink[] = [
     { text: '203. 移除链表元素', link: '/alg/linklist/lc-203' },
@@ -13,9 +16,9 @@ export const ALGLINKLIST: DefaultTheme.NavItemWithLink[] = [
     { text: '19. 删除链表的倒数第 N 个结点', link: '/alg/linklist/lc-19' },
     { text: '面试题 02.07. 链表相交', link: '/alg/linklist/lc-02-07' },
     { text: '一步一步图解跳表', link: '/alg/linklist/lc-1206' },
-  ]
+]
   
 export const ALGTREE: DefaultTheme.NavItemWithLink[] = [
     { text: 'Trie 树', link: '/alg/tree/trie' },
-  ]
+]
   

@@ -19,8 +19,13 @@ export const MODERNCPP: DefaultTheme.NavItemWithLink[] = [
     { text: 'C++20 consteval 的作用？', link: '/cpp/modern/consteval' },
     { text: 'C++20 format 的作用？', link: '/cpp/modern/format' }, 
     { text: 'C++20 三路比较操作符(<=>)', link: '/cpp/modern/cpp20-<=>' }, 
-  ]
-  
+]
+
+export const OSBG: DefaultTheme.NavItemWithLink[] = [
+  { text: 'OS 内存地址空间的演化历程', link: '/os/pc-address' },
+  { text: 'OS 实模式、保护模式', link: '/os/real-mold' },
+]
+
 export const CPPSTL: DefaultTheme.NavItemWithLink[] = [
     { text: 'STL 组成部分', link: '/cpp/stl/summary' },
     { text: 'STL 容器', link: '/cpp/stl/container' },
@@ -79,7 +84,8 @@ export const CPP: DefaultTheme.NavItemWithLink[] = [
     { text: 'new 和 malloc 的区别？', link: '/cpp/basic/delete-new' },
     { text: '只定义析构函数，会自动生成哪些构造函数？', link: '/cpp/basic/default-construct' },
     { text: '虚析构、虚构造', link: '/cpp/basic/virtual-constructor' },
-    { text: 'C++ 调用 main 之前做了什么？', link: '/cpp/basic/main' },
+    { text: 'C++ 调用 main 之前做了什么？', link: '/cpp/basic/main-before' },
+    { text: 'C++ 调用 main 之后做了什么？', link: '/cpp/basic/main-after' },
 
     // TODO
     // { text: 'C++ 虚函数表', link: '/cpp/basic/vptr' },
