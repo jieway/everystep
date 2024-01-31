@@ -23,7 +23,13 @@ export const MODERNCPP: DefaultTheme.NavItemWithLink[] = [
 
 export const OSBG: DefaultTheme.NavItemWithLink[] = [
   { text: 'OS 内存地址空间的演化历程', link: '/os/pc-address' },
+  { text: 'OS 启动之 BIOS', link: '/os/bios' },
+  { text: 'OS 启动之 Boot Loader', link: '/os/boot-loader' },
+  { text: 'OS 启动之加载操作系统', link: '/os/pc-address' },
+
   { text: 'OS 实模式、保护模式', link: '/os/real-mold' },
+  { text: 'OS 分段、分页', link: '/os/seg-page' },
+
 ]
 
 export const CPPSTL: DefaultTheme.NavItemWithLink[] = [
