@@ -12,7 +12,6 @@
 ![forks](https://img.shields.io/github/forks/weijiew/everystep)
 ![issues](https://img.shields.io/github/issues/weijiew/everystep)
 
-
   <img src='docs/public/background-cover_.png' width='800'>
 
 </div>
@@ -31,7 +30,6 @@
 
 ## 🐲 从零实现模拟器(TODO)
 
-
 ## 本地运行
 
 ```
@@ -48,8 +46,6 @@ cd everystep && pnpm install && pnpm run dev
 [![Star History Chart](https://api.star-history.com/svg?repos=weijiew/everystep&type=Date)](https://star-history.com/#weijiew/everystep&Date)
 
 ## 协议
-
-如果觉得博客对你有帮助，可以帮忙点个 star 。
 
 主题参考自：[vitepress-nav-template (MIT License)](https://github.com/maomao1996/vitepress-nav-template)
 

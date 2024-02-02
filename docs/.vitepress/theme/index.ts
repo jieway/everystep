@@ -53,7 +53,7 @@ export default {
        * https://vitepress.dev/guide/extending-default-theme#layout-slots
        * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/Layout.vue
        */
-      'nav-bar-title-after': () => h(MNavVisitor),
+      // 'nav-bar-title-after': () => h(MNavVisitor),
       'doc-after': () => h(MDocFooter),
       'aside-bottom': () => h(MAsideSponsors)
     })
