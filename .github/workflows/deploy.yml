@@ -44,8 +44,8 @@ jobs:
       - name: Build
         run: pnpm install && pnpm run build:github
 
-      # - name: Copy files
-      #   run: cp README.md ./dist/
+      - name: Copy files
+        run: cp README.md ./dist/
 
       # 部署
       - name: Deploy

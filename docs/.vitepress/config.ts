@@ -2,7 +2,6 @@ import { createWriteStream } from 'node:fs'
 import { resolve } from 'node:path'
 import { SitemapStream } from 'sitemap'
 import { defineConfig, PageData } from 'vitepress'
-
 import { head, nav, sidebar, algolia } from './configs'
 
 const links: { url: string; lastmod: PageData['lastUpdated'] }[] = []
