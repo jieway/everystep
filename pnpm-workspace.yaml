@@ -1,6 +1,0 @@
-packages:
-  - packages/*
-  - playground
-  - examples/*
-  - docs
-  - packages/shikiji-core/vendor/*

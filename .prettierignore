@@ -1,0 +1,14 @@
+package.json
+tsconfig.json
+pnpm-lock.yaml
+
+node_modules
+dist
+cache
+
+docs/fe/javascript/code
+docs/fe/es6/code
+
+docs/public/icons
+
+_redirects

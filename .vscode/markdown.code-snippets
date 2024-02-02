@@ -1,0 +1,63 @@
+{
+  "markdown frontmatter": {
+    "scope": "markdown",
+    "prefix": "fm",
+    "body": [
+      "---",
+      "${1:description}: $2",
+      "---",
+      "",
+    ],
+    "description": "markdown frontmatter"
+  },
+  "vitepress custom containers info": {
+    "scope": "markdown",
+    "prefix": "info",
+    "body": [
+      "::: info $1",
+      "$2",
+      ":::"
+    ],
+    "description": "vitepress 自定义容器 info"
+  },
+  "vitepress custom containers tip": {
+    "scope": "markdown",
+    "prefix": "tip",
+    "body": [
+      "::: tip $1",
+      "$2",
+      ":::"
+    ],
+    "description": "vitepress 自定义容器 tip"
+  },
+  "vitepress custom containers warn": {
+    "scope": "markdown",
+    "prefix": "warn",
+    "body": [
+      "::: warning $1",
+      "$2",
+      ":::"
+    ],
+    "description": "vitepress 自定义容器 warning"
+  },
+  "vitepress custom containers danger": {
+    "scope": "markdown",
+    "prefix": "danger",
+    "body": [
+      "::: danger $1",
+      "$2",
+      ":::"
+    ],
+    "description": "vitepress 自定义容器 danger"
+  },
+  "vitepress custom containers details": {
+    "scope": "markdown",
+    "prefix": "details",
+    "body": [
+      "::: details $1",
+      "$2",
+      ":::"
+    ],
+    "description": "vitepress 自定义容器 details"
+  }
+}

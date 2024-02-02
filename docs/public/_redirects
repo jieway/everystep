@@ -1,0 +1,46 @@
+# https://notes-7w2tusrb9-fe-mm.vercel.app
+
+/interview/base/:path                       /fe/javascript/:path    301
+/interview/html-css/html.html               /fe/html/               301
+/interview/es6/                             /fe/es6/                301
+/interview/concept/:path                    /fe/concept/:path       301
+/interview/network/:path                    /fe/network/tcp         301
+/interview/browser/                         /fe/browser/            301
+/interview/coding/                          /fe/coding/             301
+
+/source-code/:path                          /analysis/utils/:path  301
+
+/utils/:path                                /workflow/utils/:path  301
+
+/node/npm.html                              /workflow/node/npm    301
+/node/toolkit.html                          /terminal/toolkit     301
+/css/                                       /workflow/css/spec    301
+/css/skill.html                             /workflow/css/tricks  301
+/css/sass.html                              /workflow/sass/       301
+/vue/                                       /workflow/vue/        301
+
+/issue/:path                                /pit/:path  301
+
+/terminal/npm                               /workflow/node/npm        301
+/terminal/:path                             /workflow/terminal/:path  301
+
+/git/                                       /workflow/git/          301
+/tricks/git/                                /workflow/git/          301
+/git/command                                /workflow/git/command   301
+/git/command.html                           /workflow/git/command   301
+/tricks/git/command                         /workflow/git/command   301
+
+/software/zsh.html                          /workflow/terminal/zsh        301
+/software/:path                             /efficiency/software/:path    301
+/online-tools/                              /efficiency/online-tools      301
+/online-tools/bookmark-scripts.html         /efficiency/bookmark-scripts  301
+
+# https://notes-ebrva4dk0-fe-mm.vercel.app
+
+/tricks/utils/:path                         /workflow/utils/:path     301
+/tricks/css/:path                           /workflow/css/:path       301
+/tricks/sass                                /workflow/sass/           301
+/tricks/vue/                                /workflow/vue/            301
+
+/efficiency/terminal/npm                    /workflow/node/npm        301
+/efficiency/terminal/:path                  /workflow/terminal/:path  301

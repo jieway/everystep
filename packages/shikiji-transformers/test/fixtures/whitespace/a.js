@@ -1,4 +1,0 @@
-function block( ) {
-  space( )
-		table( ) 
-}

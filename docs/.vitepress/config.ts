@@ -1,239 +1,44 @@
-import type { DefaultTheme } from 'vitepress'
-import { defineConfig } from 'vitepress'
-import { transformerTwoSlash } from 'shikiji-twoslash'
-import { bundledThemes } from 'shikiji'
-import { version } from '../../package.json'
-import vite from './vite.config'
-import { rendererFloatingVue } from './render-floating-vue'
+import { createWriteStream } from 'node:fs'
+import { resolve } from 'node:path'
+import { SitemapStream } from 'sitemap'
+import { defineConfig, PageData } from 'vitepress'
 
-import { MODERNCPP, CPPSTL, CppCoreGuidelinesNotes, CPP, DESIGNPATTERN } from './nav/cpp'
-import { ALGARRAY, ALGLINKLIST, ALGTREE } from './nav/alg' 
-import { ARYADB, SMARTPTR } from './nav/buildx' 
-import { VERSIONS } from './nav/other' 
+import { head, nav, sidebar, algolia } from './configs'
 
-// https://vitepress.dev/reference/site-config
+const links: { url: string; lastmod: PageData['lastUpdated'] }[] = []
+
 export default defineConfig({
+  outDir: '../dist',
+  base: process.env.APP_BASE_PATH || '/',
+
+  lang: 'zh-CN',
   title: 'everystep',
   description: 'Learn by doing!',
-  outDir: '../public',
-  markdown: {
-    theme: {
-      light: 'vitesse-light',
-      dark: 'vitesse-dark',
-    },
-    async shikijiSetup(shikiji) {
-      await Promise.all(Object.keys(bundledThemes).map(async (theme) => {
-        await shikiji.loadTheme(theme as any)
-      }))
-    },
-    codeTransformers: [
-      transformerTwoSlash({
-        explicitTrigger: true,
-        renderer: rendererFloatingVue,
-      }),
-      // HAST treat `template` element specially and ignore its children
-      // We need to render it as `vue-template` and use postprocess to replace it back
-      {
-        postprocess(code) {
-          return code
-            .replace(/(<\/?)vue-template/g, '$1template')
-        },
-      },
-      {
-        // Render custom themes with codeblocks
-        name: 'shikiji:inline-theme',
-        preprocess(code, options) {
-          const reg = /\btheme:([\w,-]+)\b/
-          const match = options.meta?.__raw?.match(reg)
-          if (!match?.[1])
-            return
-          const theme = match[1]
-          const themes = theme.split(',').map(i => i.trim())
-          if (!themes.length)
-            return
-          if (themes.length === 1) {
-            // @ts-expect-error anyway
-            delete options.themes
-            // @ts-expect-error anyway
-            options.theme = themes[0]
-          }
-          else if (themes.length === 2) {
-            // @ts-expect-error anyway
-            delete options.theme
-            // @ts-expect-error anyway
-            options.themes = {
-              light: themes[0],
-              dark: themes[1],
-            }
-          }
-          else {
-            throw new Error(`Only 1 or 2 themes are supported, got ${themes.length}`)
-          }
-          return code
-        },
-      },
-      {
-        name: 'shikiji:vitepress-patch',
-        preprocess(_, options) {
-          const cleanup = options.transformers?.find(i => i.name === 'vitepress:clean-up')
-          if (cleanup)
-            options.transformers?.splice(options.transformers.indexOf(cleanup), 1)
+  head,
 
-          // Disable v-pre for twoslash, because we need render it with FloatingVue
-          if (options.meta?.__raw?.includes('twoslash')) {
-            const vPre = options.transformers?.find(i => i.name === 'vitepress:v-pre')
-            if (vPre)
-              options.transformers?.splice(options.transformers.indexOf(vPre), 1)
-          }
-        },
-      },
-      {
-        name: 'shikiji:remove-escape',
-        postprocess(code) {
-          return code.replace(/\[\\\!code/g, '[!code')
-        },
-      },
-    ],
-  },
 
+  lastUpdated: true,
   cleanUrls: true,
-  vite,
+
+  /* markdown 配置 */
+  markdown: {
+    lineNumbers: true
+  },
 
   locales: {
     root: { label: '简体中文', lang: 'zh-CN' },
   },
 
-
+  /* 主题配置 */
   themeConfig: {
-    logo: '/logo.svg',
-    outline: 'deep',
-    docFooter: {
-      prev: '上一篇',
-      next: '下一篇',
-    },
-    returnToTopLabel: '返回顶部',
-    outlineTitle: '导航栏',
-    darkModeSwitchLabel: '外观',
-    sidebarMenuLabel: '归档',
-    lastUpdatedText: '最后一次更新于',
-    nav: [
-      {
-        text: '从零实现',
-        items: [
-          { text: '🐲 使用现代 C++ 重写 LevelDB', link: '/aryadb/README' },
-          { text: '🐻 从零实现智能指针', link: '/cpp/smartptr/README' },
-          { text: '🍼 从零实现Git', link: '/aryadb/README' },
-          { text: '🍬 从零实现 malloc、free', link: '/aryadb/README' },
-        ],
-      },
-      {
-        text: '🦖 算法',
-        items: [
-          { text: '数组', link: '/alg/array/README' },
-          { text: '链表', link: '/alg/linklist/README' },
-          { text: '树', link: '/alg/tree/README' },
-        ],
-      },
-      {
-        text: 'C++ 总结',
-        items: [
-          { text: '🐷 C++ 基础', link: '/cpp/basic/README' },
-          { text: '🐹 现代 C++', link: '/cpp/modern/README' },
-          { text: '🌱 设计模式', link: '/designpattern/0-designpattern' },
-        ],
-      },
-      {
-        text: `v${version}`,
-        items: VERSIONS,
-      },
-    ],
-
-    sidebar: Object.assign(
-      {},
-      {
-
-        '/': [
-          {
-            text: '🐷 使用现代 C++ 重写 LevelDB',
-            items: ARYADB,
-          },
-        ],
-
-        '/alg/array/': [
-          {
-            text: '🦖 数组',
-            items: [
-              {
-                items: ALGARRAY,
-              },
-            ],
-          },
-        ],
-
-        '/alg/linklist/': [
-          {
-            text: '🦖 链表',
-            items: [
-              {
-                items: ALGLINKLIST,
-              },
-            ],
-          },
-        ],
-
-        '/alg/tree/': [
-          {
-            text: '树 🌲',
-            items: [
-              {
-                items: ALGTREE,
-              },
-            ],
-          },
-        ],
-
-        '/cpp/': [
-          {
-            text: 'C++ 总结',
-            items: [
-              {
-                items: CPP,
-              },
-            ],
-          },
-        ],  
-
-        '/cpp/modern/': [
-          {
-            text: '现代 C++',
-            items: MODERNCPP,
-          },
-        ],        
-
-        '/cpp/smartptr/': [
-          {
-            text: '🐻 从零实现智能指针',
-            items: SMARTPTR,
-          },
-        ],        
-
-        '/designpattern/': [
-          {
-            text: '设计模式',
-            items: DESIGNPATTERN,
-          },
-        ],        
-
-      },
-    ),
-
-    editLink: {
-      pattern: 'https://github.com/weijiew/everystep/edit/master/docs/:path',
-      text: '在 GitHub 上编辑此页',
-    },
-
-    search: {
-      provider: 'local',
+    i18nRouting: false,
+    logo: '/logo.png',
+    nav,
+    sidebar,
+    /* 右侧大纲配置 */
+    outline: {
+      level: 'deep',
+      label: '本页目录'
     },
 
     socialLinks: [
@@ -252,22 +57,58 @@ export default defineConfig({
       message: 'Released under the CC BY-NC-SA 4.0 International License.',
       copyright: 'Copyright © 2019 - 2023 ©weijiew.',
     },
+
+    darkModeSwitchLabel: '外观',
+    returnToTopLabel: '返回顶部',
+    lastUpdatedText: '上次更新',
+    outlineTitle: '导航栏',
+    sidebarMenuLabel: '归档',
+
+    editLink: {
+      pattern: 'https://github.com/weijiew/everystep/edit/master/docs/:path',
+      text: '在 GitHub 上编辑此页',
+    },
+    search: {
+      provider: 'local',
+    },
+  
+    /* Algolia DocSearch 配置 */
+    // algolia,
+
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+    }
+  
+    // head: [
+    //   ['meta', { name: 'theme-color', content: '#ffffff' }],
+    //   ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
+    //   ['meta', { name: 'author', content: 'alex' }],
+    //   ['meta', { property: 'og:title', content: 'everystep' }],
+    //   ['meta', { property: 'og:image', content: '/background-cover_.png' }],
+    //   ['meta', { property: 'og:description', content: 'Learn by doing!' }],
+    //   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    //   ['meta', { name: 'twitter:image', content: '/background-cover_.png' }],
+    //   ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, viewport-fit=cover' }],
+    // ],
+  
+  
   },
 
-  head: [
-    ['meta', { name: 'theme-color', content: '#ffffff' }],
-    ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
-    ['meta', { name: 'author', content: 'alex' }],
-    ['meta', { property: 'og:title', content: 'everystep' }],
-    ['meta', { property: 'og:image', content: '/background-cover_.png' }],
-    ['meta', { property: 'og:description', content: 'Learn by doing!' }],
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:image', content: '/background-cover_.png' }],
-    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, viewport-fit=cover' }],
-  ],
+  /* 生成站点地图 */
+  transformHtml: (_, id, { pageData }) => {
+    if (!/[\\/]404\.html$/.test(id))
+      links.push({
+        url: pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2'),
+        lastmod: pageData.lastUpdated
+      })
+  },
+  buildEnd: async ({ outDir }) => {
+    const sitemap = new SitemapStream({ hostname: 'https://everystep.dev/' })
+    const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
+    sitemap.pipe(writeStream)
+    links.forEach((link) => sitemap.write(link))
+    sitemap.end()
+    await new Promise((r) => writeStream.on('finish', r))
+  }
 })
-
-
-// > 🧊 上述内容如果存在问题可以去 github.com/weijiew/everystep 下面提 issue ，记录所学，感谢指正。
-// > 
-// > 🐻 致力于从零实现操作系统、数据库、编译器。热爱开源，欢迎Star。

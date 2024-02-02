@@ -1,15 +1,18 @@
-.cache
 .DS_Store
-.idea
-*.log
-*.tgz
-coverage
-dist
-lib-cov
-logs
 node_modules
-temp
-packages/shikiji/src/assets/langs
-packages/shikiji/src/assets/themes
-packages/shikiji/src/assets/*.json
+dist
+.temp
 cache
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,3 +1,0 @@
-[submodule "packages/shikiji-core/vendor/vscode-textmate"]
-	path = packages/shikiji-core/vendor/vscode-textmate
-	url = https://github.com/microsoft/vscode-textmate
