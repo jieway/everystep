@@ -3,9 +3,9 @@ layout: home
 layoutClass: 'm-home-layout'
 
 hero:
-  name: "everystep"
-  text: "Learn by doing!"
-  tagline: 从零构建编译器、数据库、操作系统、模拟器、链接器
+  name: 'everystep'
+  text: 'Learn by doing!'
+  tagline: 从零构建模拟器、编译器、数据库、操作系统、模拟器、链接器（正在建设中）
   image:
     src: /logo.png
     alt: everystep
@@ -13,20 +13,25 @@ hero:
     - theme: brand
       text: Get Started
       link: /aryadb/README
-  # actions:
-  #   - text: 前端物语
-  #     link: /fe/es6/
-  #   - text: 前端导航
-  #     link: /nav
-  #     theme: alt
+    - text: RISC-V 模拟器
+      link: /cemu/README
+      theme: alt
 
 features:
-  - title: 从零实现 RPC
-    icon: 🍼
-    details: 从基础开始，一步步构建自己的 RPC 框架。
-  - title: 从零实现 WebServer
-    icon: 😈
-    details: 从基础开始，一步步构建自己的 Web 服务器。
+  - icon: 📖
+    title: C++ 知识点
+    details: 结合具体的例子讲解 C++ 常用知识点<small>（面试八股文）</small><br />
+    link: /aryadb/README
+    linkText: C++ 常用知识
+  - icon: 🍼
+    title: 从零实现模拟器
+    details: 从基础开始，一步步构建自己的 RISC-V 模拟器。
+    link: /cemu/README
+    linkText: RISC-V 模拟器教程，学习 RISC-V 指令。
+
+  # - title: 从零实现 WebServer
+  #   icon: 😈
+  #   details: 从基础开始，一步步构建自己的 Web 服务器。
   - title: 从零实现编译器(TODO)
     icon: 🐹
     details: 探索编译器的核心原理，从词法分析到语法解析，再到代码生成。
@@ -39,12 +44,6 @@ features:
   - title: 从零实现模拟器(TODO)
     icon: 🐲
     details: 揭秘模拟器的开发过程，包括硬件仿真、指令集实现等关键技术。
-
-# - icon: 📖
-#     title: C++ 知识点
-#     details: 结合具体的例子讲解 C++ 常用知识点<small>（面试八股文）</small><br />
-#     link: /fe/javascript/types
-#     linkText: C++ 常用知识
 #   - icon: 📘
 #     title: 源码阅读
 #     details: 了解各种库的实现原理<br />学习其中的小技巧和冷知识
@@ -90,5 +89,5 @@ features:
 </style>
 
 <!-- // > 🧊 上述内容如果存在问题可以去 github.com/weijiew/everystep 下面提 issue ，记录所学，感谢指正。
-// > 
+// >
 // > 🐻 致力于从零实现操作系统、数据库、编译器。热爱开源，欢迎Star。 -->
