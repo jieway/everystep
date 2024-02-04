@@ -1,6 +1,6 @@
 `shared_ptr` 是 C++ 标准库中的智能指针之一，用于管理动态分配的内存。它的主要特点是允许多个智能指针共享同一个堆内存对象，使用引用计数来跟踪对象的所有者数量，当最后一个 `shared_ptr` 离开作用域时，释放对象的内存，从而避免内存泄漏。这种共享所有权的机制使其适用于多个部分需要共享相同资源的情况，例如在多个对象之间共享同一个对象或资源。`shared_ptr` 可以通过 `std::make_shared` 或 `std::shared_ptr` 构造函数来创建。
 
-### `shared_ptr`和`unique_ptr` 的区别？ 
+### `shared_ptr`和`unique_ptr` 的区别？
 
 C++中的`shared_ptr`和`unique_ptr`是智能指针，用于管理动态分配的内存，以避免内存泄漏和资源泄漏。它们之间的主要区别在于所有权管理和性能。
 
@@ -41,6 +41,7 @@ int main() {
 ```
 
 总结：
+
 - `shared_ptr`允许多个指针共享同一资源，适用于共享所有权的情况，但引入了引用计数的开销。
 - `unique_ptr`提供了独占所有权，适用于需要确保资源独占的情况，具有更轻量级的性能开销。
 - 在选择`shared_ptr`和`unique_ptr`之间时，根据您的需求和设计目标来决定哪一个更合适。
@@ -50,25 +51,31 @@ int main() {
 ### 基本结构
 
 #### 类模板 `SharedPtr`
+
 - `template <typename T>`：`SharedPtr`是一个类模板，可以用于任何类型 `T`。
 - 私有成员变量：
   - `T* _p`：原始指针，指向管理的资源。
   - `int* _count`：指向引用计数的指针。
 
 #### 构造函数
+
 - 默认构造函数：初始化 `_p` 为 `nullptr`，引用计数为 0。
 - 参数化构造函数：接受一个原始指针 `T* p`，初始化 `_p` 为 `p`，引用计数设为 1。
 
 #### 拷贝构造函数
+
 - 当一个新的 `SharedPtr` 通过拷贝另一个 `SharedPtr` 创建时，它们共享同一资源，并且引用计数增加。
 
 #### 赋值运算符
+
 - 当一个 `SharedPtr` 被赋予另一个 `SharedPtr` 的值时，它会先减少原有资源的引用计数，必要时释放资源，然后共享新资源并增加引用计数。
 
 #### 析构函数
+
 - 当 `SharedPtr` 对象销毁时，减少引用计数，必要时释放资源。
 
 #### 成员函数
+
 - `get()`：返回原始指针。
 - `operator*` 和 `operator->`：允许通过 `SharedPtr` 直接访问资源。
 - `explicit operator bool()`：允许 `SharedPtr` 在布尔上下文中使用，比如在 `if` 语句中。
@@ -76,6 +83,7 @@ int main() {
 - `reset()`：重置 `SharedPtr`，可更换管理的资源或者放弃当前资源。
 
 #### `make_shared` 函数模板
+
 - 这个函数模板创建一个新的 `T` 类型的对象，并返回一个管理它的 `SharedPtr`。
 
 ### 代码细节
@@ -210,20 +218,25 @@ BadSharedPtr<Widget> ptr1(new Widget()); // ptr1对Widget的引用计数为1
 如果不使用指针来共享引用计数，就无法在`SharedPtr`实例之间同步资源所有权的信息，这会导致资源被错误地释放或泄漏，以及程序运行时的错误。通过使用指针共享引用计数，所有的`SharedPtr`实例可以正确地共同管理一个资源的生命周期，确保资源仅在最后一个引用它的智能指针被销毁时才释放，从而避免了悬挂指针、双重释放等问题。
 
 #### 默认构造函数
+
 ```cpp
 SharedPtr() : _p(nullptr), _count(new int(0)) {}
 ```
+
 - **作用**：创建一个不指向任何资源的 `SharedPtr`。
 - **实现**：将 `_p` 设置为 `nullptr`，表示没有资源，将 `_count` 初始化为指向一个值为 0 的 `int`，表示没有任何 `SharedPtr` 指向资源。
 
 #### 参数化构造函数
+
 ```cpp
 explicit SharedPtr(T* p) : _p(p), _count(new int(1)) {}
 ```
+
 - **作用**：创建一个指向给定资源的 `SharedPtr`。
 - **实现**：将 `_p` 设置为指向传入的资源，将 `_count` 初始化为指向值为 1 的 `int`，表示有一个 `SharedPtr` 指向该资源。
 
 #### 析构函数
+
 ```cpp
 ~SharedPtr() {
     if (_p && --(*_count) == 0) {
@@ -232,12 +245,14 @@ explicit SharedPtr(T* p) : _p(p), _count(new int(1)) {}
     }
 }
 ```
+
 - **作用**：销毁 `SharedPtr`，适当时释放其管理的资源。
 - **实现**：递减 `_count`，如果没有其他 `SharedPtr` 指向资源（计数为 0），则释放资源和计数器。
 
 ### 添加复制能力
 
 #### 拷贝构造函数
+
 ```cpp
 SharedPtr(const SharedPtr& other) : _p(other._p), _count(other._count) {
     if (_p) {
@@ -245,10 +260,12 @@ SharedPtr(const SharedPtr& other) : _p(other._p), _count(other._count) {
     }
 }
 ```
+
 - **作用**：创建一个新的 `SharedPtr`，它与另一个 `SharedPtr` 共享资源。
 - **实现**：复制原始指针 `_p` 和计数器指针 `_count`，并递增计数器（表示现在有另一个 `SharedPtr` 指向资源）。
 
 #### 赋值运算符
+
 ```cpp
 SharedPtr& operator=(const SharedPtr& other) {
     if (this != &other) {
@@ -272,32 +289,39 @@ SharedPtr& operator=(const SharedPtr& other) {
 ### 添加辅助功能
 
 #### 获取原始指针
+
 ```cpp
 T* get() const {
     return _p;
 }
 ```
+
 - **作用**：获取 `SharedPtr` 管理的原始指针。
 - **实现**：返回 `_p`。
 
 #### 解引用和箭头操作符
+
 ```cpp
 T& operator*() const { return *_p; }
 T* operator->() const { return _p; }
 ```
+
 - **作用**：允许直接通过 `SharedPtr` 访问资源。
 - **实现**：`*` 操作符返回资源的引用，`->` 操作符返回资源的指针。
 
 #### 引用计数
+
 ```cpp
 int use_count() const {
     return *_count;
 }
 ```
+
 - **作用**：获取指向资源的 `SharedPtr` 数量。
 - **实现**：返回 `_count` 指向的值。
 
 #### 重置指针
+
 ```cpp
 void reset(T* p = nullptr) {
     if (_p && --(*_count) == 0) {
@@ -308,18 +332,21 @@ void reset(T* p = nullptr) {
     _count = new int(p ? 1 : 0);
 }
 ```
+
 - **作用**：更改 `SharedPtr` 管理的资源或放弃当前资源。
 - **实现**：减少旧资源的计数并在需要时释放。设置 `_p` 为新资源或 `nullptr`，重新初始化 `_count`。
 
 ### 添加工厂方法
 
 #### `make_shared` 函数
+
 ```cpp
 template <typename T, typename... Args>
 SharedPtr<T> make_shared(Args&&... args) {
     return SharedPtr<T>(new T(std::forward<Args>(args)...));
 }
 ```
+
 - **作用**：创建并初始化资源，返回管理它的 `SharedPtr`。
 - **实现**：使用完美转发构造新资源，封装在 `SharedPtr` 中返回。
 
@@ -327,15 +354,16 @@ SharedPtr<T> make_shared(Args&&... args) {
 
 ### 测试
 
-下面我们将结合提供的测试用例来逐步讲解如何使用TDD方法来开发和完善 `SharedPtr` 类。
+下面我们将结合提供的测试用例来逐步讲解如何使用 TDD 方法来开发和完善 `SharedPtr` 类。
 
 ### 测试用例分析
 
 #### TEST1: 基础构造函数
+
 - **目标**：验证基础构造函数和 `get` 方法是否正常工作。
 - **实现**：创建两个 `SharedPtr` 对象，一个管理 `int` 类型，另一个管理 `std::string` 类型，并检查它们是否正确地初始化了值。
 
-```c++
+```cpp
 TEST(SharedPtrTest, TEST1) {
     SharedPtr<int> ptr1{new int{10}};
     EXPECT_EQ(*ptr1.get(), 10);
@@ -346,46 +374,55 @@ TEST(SharedPtrTest, TEST1) {
 ```
 
 #### TEST2: `make_shared` 函数
+
 - **目标**：验证 `make_shared` 方法是否正确创建 `SharedPtr` 对象。
 - **实现**：使用 `make_shared` 创建对象，并验证它们的值。
 
 #### TEST3: 默认构造函数
+
 - **目标**：检查默认构造函数是否正确初始化 `SharedPtr` 为 `nullptr`。
 - **实现**：创建两个空的 `SharedPtr` 对象，并验证它们是否为空（`nullptr`）。
 
 #### TEST4 & TEST5: 拷贝构造函数和引用计数
+
 - **目标**：验证拷贝构造函数和引用计数是否正确。
 - **实现**：创建多个 `SharedPtr` 对象，通过拷贝构造函数共享相同的资源，并检查引用计数是否正确更新。
 
 #### TEST6: 析构函数和 `reset` 方法
+
 - **目标**：验证析构函数和 `reset` 方法是否正确工作。
 - **实现**：创建多个共享资源的 `SharedPtr` 对象，观察它们的生命周期以及对引用计数的影响，同时验证 `reset` 方法的效果。
 
-#### TEST7: 解引用操作符 *
+#### TEST7: 解引用操作符 \*
+
 - **目标**：检查解引用操作符是否正确返回资源。
 - **实现**：创建 `SharedPtr` 对象并通过解引用操作符检查它们的值。
 
 #### TEST8: 箭头操作符 ->
+
 - **目标**：验证箭头操作符是否正确工作。
 - **实现**：创建 `SharedPtr` 对象并通过箭头操作符访问它们的成员。
 
 #### TEST9 & TEST10: `reset` 方法
+
 - **目标**：进一步验证 `reset` 方法的不同使用方式。
 - **实现**：创建 `SharedPtr` 对象，使用 `reset` 方法重置它们，并检查结果。
 
 #### TEST11: 隐式转换到 bool
+
 - **目标**：验证 `SharedPtr` 的隐式转换到 `bool` 是否正确。
 - **实现**：创建 `SharedPtr` 对象，检查它们在布尔上下文中的行为。
 
 #### TEST12: 赋值运算符
+
 - **目标**：验证赋值运算符是否正确处理自赋值和正常赋值。
 - **实现**：创建 `SharedPtr` 对象，进行自赋值和普通赋值操作，并检查结果。
 
-### 使用TDD逐步开发 `SharedPtr`
+### 使用 TDD 逐步开发 `SharedPtr`
 
 1. **编写第一个测试（TEST1）**：首先，我们编写一个测试用例来验证基本的构造函数功能。然后，我们实现 `SharedPtr` 类以通过这个测试。
 
-2. **逐步增加测试和功能**：随着每个新的测试用例（如TEST2, TEST3等），我们增加 `SharedPtr` 类的新功能或改进现有功能。
+2. **逐步增加测试和功能**：随着每个新的测试用例（如 TEST2, TEST3 等），我们增加 `SharedPtr` 类的新功能或改进现有功能。
 
 3. **重构和改善**：在新的测试通过后，可能需要重构代码以提高其效率和可读性，同时保持所有测试的通过。
 

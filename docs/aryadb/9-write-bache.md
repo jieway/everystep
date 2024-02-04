@@ -1,12 +1,11 @@
-
 `WriteBatch` 用于将多个写操作（插入或删除）捆绑成一个批次，以便这些操作可以作为一个整体原子性地应用到数据库中。
 
 ### `WriteBatch` 类的结构和成员
 
 - **`rep_`**: `std::string` 类型的成员变量，用于存储编码后的写操作序列。其格式包括序列号、操作计数和实际数据记录。
-  
-  - **序列号（Sequence）**: 一个固定长度（64位）的数字，用于跟踪批次中操作的顺序。
-  - **计数（Count）**: 一个固定长度（32位）的数字，表示批次中的操作数量。
+
+  - **序列号（Sequence）**: 一个固定长度（64 位）的数字，用于跟踪批次中操作的顺序。
+  - **计数（Count）**: 一个固定长度（32 位）的数字，表示批次中的操作数量。
   - **数据（Data）**: 一系列记录，每个记录代表一个写操作，可以是插入（`kTypeValue`）或删除（`kTypeDeletion`）。
 
 - **`WriteBatch::Handler`**: 一个嵌套类，定义了用于处理写操作的接口。它有两个虚函数：`Put` 和 `Delete`，供子类实现。
@@ -108,7 +107,6 @@ batch.Delete("key2");
 
 `WriteBatch` 对象中的操作追加到当前 `rep_` 中。
 
-
 ### 实际应用场景
 
 当使用 LevelDB 进行数据操作时，`WriteBatch` 提供了一种有效的方式来批量处理多个更新操作。通过将多个操作组合成一个批处理，可以减少磁盘 I/O 操作，从而提高性能。在实际的使用场景中，例如：
@@ -130,10 +128,9 @@ batch.Put("key3", "value3");
 
 总之，`std::string rep_;` 在 `WriteBatch` 类中作为一个核心成员，存储着所有待处理的数据库操作。通过精心设计的编码方式，它支持高效的数据处理，同时保持了 LevelDB 操作的原子性和一致性。
 
-
 ### WriteBatchInternal::Count
 
-```c++
+```cpp
 int WriteBatchInternal::Count(const WriteBatch* b) {
   return DecodeFixed32(b->rep_.data() + 8);
 }
@@ -154,7 +151,6 @@ void WriteBatchInternal::SetCount(WriteBatch* b, int n) {
 这里的 `DecodeFixed32` 函数用于从指定的位置解码出一个 32 位整数（在这个场景下，是操作计数）。通过从 `rep_` 的第 8 个字节开始解码，我们得到存储在那里的操作数量。这是解析具有特定二进制格式的数据时常见的做法。
 
 ### Put、Delete、Append
-
 
 `WriteBatch` 类的三个方法，这些方法用于批量处理数据库写入操作，包括添加新的键值对、删除现有键和将一个批处理的内容追加到另一个批处理中。下面是对每个方法的中文解释：
 

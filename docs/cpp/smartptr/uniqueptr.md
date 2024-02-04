@@ -56,7 +56,7 @@ std::unique_ptr<int> uniquePtr = std::make_unique<int>(10);
 - **易用性**：智能指针的接口和标准库的集成使得它们更易于使用和理解。
 - **性能**：虽然智能指针引入了一定的性能开销（如引用计数管理），但对于`std::unique_ptr`来说，这种开销非常小，几乎可以忽略不计。
 
-总的来说，智能指针如`std::unique_ptr`在现代C++编程中被推荐使用，以提高代码的安全性、可读性和健壮性。然而，在一些性能敏感或底层的场景中，传统指针仍然有其用武之地。
+总的来说，智能指针如`std::unique_ptr`在现代 C++编程中被推荐使用，以提高代码的安全性、可读性和健壮性。然而，在一些性能敏感或底层的场景中，传统指针仍然有其用武之地。
 
 ### `std::unique_ptr` 最小实现
 
@@ -180,7 +180,6 @@ UniquePtr<Resource> resPtrCopy = resPtr; // 编译错误
 
 通过这个例子，我们看到 `UniquePtr` 通过禁止拷贝构造和拷贝赋值来维护资源的独占所有权，避免了重复释放同一资源的问题。同时，通过支持移动语义，它允许资源的所有权在不同的 `UniquePtr` 实例之间安全转移。这些特性使得 `UniquePtr` 成为管理动态分配资源的安全且有效的工具。
 
-
 ### 进一步扩展：添加辅助功能
 
 为了使 `UniquePtr` 更实用，我们添加一些辅助功能，比如获取原始指针、重载解引用操作符、重载箭头操作符、提供隐式类型转换到 `bool`、重置指针和释放指针所有权的功能。
@@ -235,7 +234,6 @@ UniquePtr<T> make_unique(Args&&... args) {
 
 这篇文章专门讲解了完美转发的用法：[C++ 完美转发](https://mp.weixin.qq.com/s?__biz=MjM5NjAxMzk4NA==&mid=2247484843&idx=1&sn=4d174bb6a33b527e5298aae9fda92707&chksm=a6eef76491997e72708f5b25c37eabbd7e7f6e984af36cea44ad4d6e496fd1a6fd6b74f6a724&token=155455026&lang=zh_CN#rd) 。
 
-
 这样，我们就完成了从最小实现到完整实现的逐步扩展。每一步都是在基础功能上添加更多的实用性和便利性。
 
 ### 单元测试
@@ -244,8 +242,7 @@ UniquePtr<T> make_unique(Args&&... args) {
 
 - **TEST1**: 验证通过直接使用`new`操作符初始化`UniquePtr`可以正确存储和访问基本类型和对象类型的值。
 
-
-```c++
+```cpp
 TEST(UniquePtrTest, TEST1) {
     UniquePtr<int> ptr1{new int{10}};
     EXPECT_EQ(*ptr1.get(), 10);

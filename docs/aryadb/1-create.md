@@ -22,7 +22,7 @@ $ mkdir aryadb && cd aryadb
 
 创建 main.cpp 并输入下面的内容
 
-```c++
+```cpp
 #include <iostream>
 
 int main()
@@ -63,26 +63,27 @@ add_executable(aryadb main.cpp)
 
 ```shell
 mkdir -p build && cd build
-cmake .. && make -j $(nproc) 
+cmake .. && make -j $(nproc)
 ./aryadb
 ```
 
 1. `mkdir -p build && cd build`
+
    - `mkdir -p build`: 这个命令创建一个名为 `build` 的新目录。如果这个目录已经存在，`-p`（代表“父级”）参数确保命令不会失败。这通常用于创建一个用于存放构建输出的目录，以保持项目根目录的整洁。
    - `&&`: 这是一个命令连接符，它确保只有在左侧的命令（`mkdir -p build`）成功执行后，才会执行右侧的命令（`cd build`）。
    - `cd build`: 这个命令切换当前目录到刚刚创建的 `build` 目录中。
 
 2. `cmake .. && make -j $(nproc)`
+
    - `cmake ..`: 这个命令运行 CMake，指导它配置项目。`..` 是一个相对路径，指向当前目录的上一级目录，也就是您的项目根目录（这里假设您的 `CMakeLists.txt` 文件在那里）。CMake 会读取 `CMakeLists.txt` 文件，并生成相应的构建系统文件（如 Makefile）。
    - `make -j $(nproc)`: 这个命令实际上开始构建过程。
-      - `make` 是一个构建工具，用于实际编译代码和链接二进制文件。
-      - `-j $(nproc)` 是一个加速编译过程的技巧。`-j` 参数允许 `make` 并行执行多个任务，而 `$(nproc)` 会被替换为当前系统可用的处理器核心数，从而使构建过程尽可能快地运行。
+     - `make` 是一个构建工具，用于实际编译代码和链接二进制文件。
+     - `-j $(nproc)` 是一个加速编译过程的技巧。`-j` 参数允许 `make` 并行执行多个任务，而 `$(nproc)` 会被替换为当前系统可用的处理器核心数，从而使构建过程尽可能快地运行。
 
 3. `./aryadb`
    - 这个命令运行编译后生成的可执行文件 `aryadb`。`./` 指示终端在当前目录下查找名为 `aryadb` 的可执行文件并运行它。
 
 综上所述，这些命令组合用于创建一个构建目录，使用 CMake 配置项目，编译项目，并最终运行编译后的程序。这是 C++ 项目通常的构建和运行流程。
-
 
 ## 3. Google Test
 
@@ -132,37 +133,35 @@ cmake .. && make -j $(nproc)
     gtest_discover_tests(g_test)
    ```
 
-
 5. **创建 `g_test.cc` 文件并输入下述内容，用于验证 gtest 能否正常使用。**
 
-    ```c++
-    #include "gtest/gtest.h"
+   ```cpp
+   #include "gtest/gtest.h"
 
-    TEST(HelloTest, BasicAssertions) {
-        EXPECT_STRNE("hello", "world");
-        EXPECT_EQ(7 * 6, 42);
-    }
-    ```
+   TEST(HelloTest, BasicAssertions) {
+       EXPECT_STRNE("hello", "world");
+       EXPECT_EQ(7 * 6, 42);
+   }
+   ```
 
 6. **验证是否成功**
 
-    ```
-    cd build && cmake .. && make -j $(nproc) && ./g_test
-    ...
-    [==========] Running 1 test from 1 test suite.
-    [----------] Global test environment set-up.
-    [----------] 1 test from HelloTest
-    [ RUN      ] HelloTest.BasicAssertions
-    [       OK ] HelloTest.BasicAssertions (0 ms)
-    [----------] 1 test from HelloTest (0 ms total)
+   ```
+   cd build && cmake .. && make -j $(nproc) && ./g_test
+   ...
+   [==========] Running 1 test from 1 test suite.
+   [----------] Global test environment set-up.
+   [----------] 1 test from HelloTest
+   [ RUN      ] HelloTest.BasicAssertions
+   [       OK ] HelloTest.BasicAssertions (0 ms)
+   [----------] 1 test from HelloTest (0 ms total)
 
-    [----------] Global test environment tear-down
-    [==========] 1 test from 1 test suite ran. (0 ms total)
-    [  PASSED  ] 1 test.
-    ```
+   [----------] Global test environment tear-down
+   [==========] 1 test from 1 test suite ran. (0 ms total)
+   [  PASSED  ] 1 test.
+   ```
 
 这些步骤将 Google Test 作为一个子模块添加到 Gitsbs 项目中，使得可以方便地共享和更新测试框架。使用子模块还有助于保持项目的整洁和组织，同时确保依赖项的版本一致性。
-
 
 ## 4. 使用 Leveldb
 

@@ -7,11 +7,11 @@
 
 本教程参考了 [Asami](https://github.com/d0iasm) 所写的 Rust 版本的模拟器[教程](https://book.rvemu.app/) ，但是原版只写了前三章。此外也参考了 [Rare](https://github.com/siriusdemon/Rare) 对 rvemu 的改进 [Rare](https://siriusdemon.github.io/Rare/) 。
 
-本教程相较于上述内容最大的不同是用了**现代 C++**从零实现，而原版是 Rust 实现。此外重新组织了实现方式，一定程度上降低了难度梯度。对 rust 版本感兴趣的可以参考上面给出的链接原的教程。
+本教程相较于上述内容最大的不同是用了现代 C++从零实现，而原版是 Rust 实现。此外重新组织了实现方式，一定程度上降低了难度梯度。对 rust 版本感兴趣的可以参考上面所给出对应的链接。
 
 ### 前置知识
 
-假设读者掌握 C 语言并且了解一点 C++ 的基本概念，即 C with class 水平即可。
+假设读者学过 C 语言并且了解一点 C++ 的基本概念，即 C with class 水平即可。
 
 对于 RISC-V 方面的知识可以参考下面的内容：
 
@@ -23,7 +23,7 @@
 
 - Linux / Win(WSL) / MacOS
 
-使用 docker 开发。
+使用 docker 开发，其内部包含了一个 Ubuntu 20.04，也可以用 clang 。
 
 lab0-start-code 分支是一个包含了 gtest 的启动代码。
 
@@ -43,8 +43,8 @@ cmake .. && make -j $(nproc) && ./g_test
 
 ### 目录
 
-1. [ ] 加法器
-2. [ ] 内存和总线
+1. [x] 加法器
+2. [x] 内存和总线
 3. [ ] 控制状态寄存器
 4. [ ] 特权模式
 5. [ ] 异常

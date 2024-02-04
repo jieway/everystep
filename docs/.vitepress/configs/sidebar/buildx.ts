@@ -21,7 +21,8 @@ export const LEVELDB: DefaultTheme.NavItemWithLink[] = [
 
 export const CEMU: DefaultTheme.NavItemWithLink[] = [
   { text: '前言', link: '/cemu/README' },
-  { text: '加法器', link: '/cemu/v1-add' }
+  { text: '最简 CPU', link: '/cemu/v1-add' },
+  { text: '内存和总线', link: '/cemu/v2-mem' }
 ]
 
 export const SMARTPTR: DefaultTheme.NavItemWithLink[] = [
