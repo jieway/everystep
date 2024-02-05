@@ -38,9 +38,10 @@ export const CPPSTL: DefaultTheme.NavItemWithLink[] = [
   { text: 'STL 迭代器', link: '/cpp/stl/iterator' },
   { text: 'STL 迭代器失效', link: '/cpp/stl/iterator-fail' },
   { text: '空间配置器', link: '/cpp/stl/allocator' },
+  { text: '容器动态链接可能产生的问题？', link: '/cpp/stl/dll' },
+  { text: '容器是否线程安全', link: '/cpp/stl/sec' },
   { text: 'resize 和 reserve 的区别', link: '/cpp/stl/resize' },
-  { text: 'STL 容器动态链接可能产生的问题？', link: '/cpp/stl/dll' },
-  { text: 'STL 容器是否线程安全', link: '/cpp/stl/sec' }
+  { text: 'vector 中 emplace_back 和 push_back 的区别？', link: '/cpp/stl/vector-push-back' }
 ]
 
 export const CppCoreGuidelinesNotes: DefaultTheme.NavItemWithLink[] = [
@@ -70,6 +71,7 @@ export const CPP: DefaultTheme.NavItemWithLink[] = [
   { text: '动态链接库和静态链接库的区别？', link: '/cpp/basic/dll-lib' },
   { text: '野指针', link: '/cpp/basic/dangling-pointer' },
   { text: '五种构造函数', link: '/cpp/basic/constructor' },
+  { text: '只定义析构函数，会自动生成哪些构造函数？', link: '/cpp/basic/default-construct' },
   { text: '内存泄露', link: '/cpp/basic/memory-leak' },
   { text: 'C++ Rule of Three/Five/Zero ', link: '/cpp/basic/rule-three-five-zero' },
   { text: '重载和重写的区别？', link: '/cpp/basic/rewrite' },
@@ -88,17 +90,12 @@ export const CPP: DefaultTheme.NavItemWithLink[] = [
   { text: '仿函数', link: '/cpp/basic/function-object' },
   { text: '类模版和模版类的区别？', link: '/cpp/basic/template-class' },
   { text: '引用和指针的区别', link: '/cpp/basic/reference' },
+  { text: 'Placement new', link: '/cpp/basic/placement-new' },
   { text: 'new 和 malloc 的区别？', link: '/cpp/basic/delete-new' },
-  { text: '只定义析构函数，会自动生成哪些构造函数？', link: '/cpp/basic/default-construct' },
   { text: '虚析构、虚构造', link: '/cpp/basic/virtual-constructor' },
   { text: 'C++ 调用 main 之前做了什么？', link: '/cpp/basic/main-before' },
   { text: 'C++ 调用 main 之后做了什么？', link: '/cpp/basic/main-after' },
-  { text: '常量指针和指针常量区别？', link: '/cpp/basic/main-after' }
-
-  // TODO
-  // { text: 'C++ 虚函数表', link: '/cpp/basic/vptr' },
-  // { text: '内存对齐', link: '/cpp/basic/memory-alignment' },
-  // { text: 'C++ 组成部分', link: '/cpp/basic/organization' },
+  { text: '成员初始化列表', link: '/cpp/basic/var-init' }
 ]
 
 export const DESIGNPATTERN: DefaultTheme.NavItemWithLink[] = [
@@ -109,8 +106,4 @@ export const DESIGNPATTERN: DefaultTheme.NavItemWithLink[] = [
   { text: '建造者模式', link: '/designpattern/4-builder' },
   { text: '原型模式', link: '/designpattern/5-prototype' },
   { text: '适配器模式', link: '/designpattern/6-adapter' }
-]
-
-export const GDB: DefaultTheme.NavItemWithLink[] = [
-  { text: '什么是 GDB ？', link: '/cpp/basic/main' }
 ]
