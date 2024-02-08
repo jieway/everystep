@@ -14,7 +14,7 @@ hero:
       text: Get Started
       link: /aryadb/README
     - text: RISC-V 模拟器
-      link: /cemu/README
+      link: /crvemu/README
       theme: alt
 
 features:
@@ -26,7 +26,7 @@ features:
   - icon: 🍼
     title: 从零实现模拟器
     details: 从基础开始，一步步构建自己的 RISC-V 模拟器。
-    link: /cemu/README
+    link: /crvemu/README
     linkText: RISC-V 模拟器教程，学习 RISC-V 指令。
 
   # - title: 从零实现 WebServer

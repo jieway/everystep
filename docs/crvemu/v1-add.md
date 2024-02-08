@@ -1,6 +1,6 @@
 本节实现一个最简的 CPU ，最终能够解析 `add` 和 `addi` 两个指令。如果对计算机组成原理已经有所了解可以跳过下面的内容直接看代码实现。
 
-完整代码在这个分支：[lab1-cpu-add](https://github.com/weijiew/cemu/tree/lab1-cpu-add)，本章节尾有运行的具体指令。
+完整代码在这个分支：[lab1-cpu-add](https://github.com/weijiew/crvemu/tree/lab1-cpu-add)，本章节尾有运行的具体指令。
 
 ## 1. 冯诺依曼结构
 
@@ -462,11 +462,11 @@ $ riscv64-unknown-elf-objcopy -O binary add-addi add-addi.bin
 运行并测试是否正确：
 
 ```sh
-mkdir -p build && cd build && cmake .. && make && ./cemu ../add-addi.bin
+mkdir -p build && cd build && cmake .. && make && ./crvemu ../add-addi.bin
 ```
 
 ```
-~/cemu/build$ ./cemu ../add-addi.bin
+~/crvemu/build$ ./crvemu ../add-addi.bin
 --------------------------------------------------------------------------------
 x0(zero) = 0000000000000000 000x1(ra) = 0000000000000000 000x2(sp) = 0000000007ffffff 000x3(gp) = 0000000000000000
 000x4(tp) = 0000000000000000 000x5(t0) = 0000000000000000 000x6(t1) = 0000000000000000 000x7(t2) = 0000000000000000

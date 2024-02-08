@@ -44,6 +44,10 @@ export const CPPSTL: DefaultTheme.NavItemWithLink[] = [
   { text: 'vector 中 emplace_back 和 push_back 的区别？', link: '/cpp/stl/vector-push-back' }
 ]
 
+export const CPPOOP: DefaultTheme.NavItemWithLink[] = [
+  { text: '简单对象模型', link: '/cpp/oop/simple-oop' }
+]
+
 export const CppCoreGuidelinesNotes: DefaultTheme.NavItemWithLink[] = [
   { text: 'CppCoreGuidelines 读书笔记', link: '/cpp/coreguide/summary' },
   { text: 'C++ 编写健壮、可维护和可移植代码的策略', link: '/cpp/coreguide/iso' },

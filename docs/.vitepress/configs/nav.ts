@@ -6,7 +6,7 @@ export const nav: DefaultTheme.Config['nav'] = [
   {
     text: '从零实现 🔥',
     items: [
-      { text: '🍬 从零实现 RISC-V 模拟器', link: '/cemu/README' },
+      { text: '🍬 从零实现 RISC-V 模拟器', link: '/crvemu/README' },
       { text: '🐲 使用现代 C++ 重写 LevelDB', link: '/aryadb/README' },
       { text: '🐻 从零实现智能指针', link: '/cpp/smartptr/README' },
       { text: '🍼 从零实现Git', link: '/aryadb/README' }

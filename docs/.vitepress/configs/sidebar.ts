@@ -87,7 +87,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     }
   ],
 
-  '/cemu/': [
+  '/crvemu/': [
     {
       text: '🍬 从零实现 RISC-V 模拟器',
       items: CEMU

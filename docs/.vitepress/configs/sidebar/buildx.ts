@@ -20,9 +20,10 @@ export const LEVELDB: DefaultTheme.NavItemWithLink[] = [
 ]
 
 export const CEMU: DefaultTheme.NavItemWithLink[] = [
-  { text: '前言', link: '/cemu/README' },
-  { text: '最简 CPU', link: '/cemu/v1-add' },
-  { text: '内存和总线', link: '/cemu/v2-mem' }
+  { text: '前言', link: '/crvemu/README' },
+  { text: '最简 CPU', link: '/crvemu/v1-add' },
+  { text: '内存和总线', link: '/crvemu/v2-mem' },
+  { text: '指令解析', link: '/crvemu/v3-inst' }
 ]
 
 export const SMARTPTR: DefaultTheme.NavItemWithLink[] = [
