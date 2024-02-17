@@ -28,7 +28,7 @@
 lab0-start-code 分支是一个包含了 gtest 的启动代码。项目名称为 crvemu ，即 C++ RISC-V emulate 的缩写。
 
 ```sh
-git clone --recurse-submodules https://github.com/weijiew/crvemu/tree/lab0-start-code
+git clone --recurse-submodules https://github.com/weijiew/crvemu
 cd crvemu && mkdir -p build && cd build
 cmake .. && make -j $(nproc)
 ./crvemu
@@ -43,4 +43,4 @@ cmake .. && make -j $(nproc) && ./g_test
 
 ### 问题
 
-如有任何问题，可以随时提 [crvemu issue](https://github.com/weijiew/crvemu/issue)。
+如有任何问题，可以随时提 [crvemu issue](https://github.com/weijiew/crvemu/issues)。

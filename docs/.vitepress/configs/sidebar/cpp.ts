@@ -6,6 +6,7 @@ export const MODERNCPP: DefaultTheme.NavItemWithLink[] = [
   { text: 'C++11 列表初始化', link: '/cpp/modern/init' },
   { text: 'C++11 nullptr', link: '/cpp/modern/nullptr' },
   { text: 'C++11 future', link: '/cpp/modern/future' },
+  { text: 'C++11 tuple', link: '/cpp/modern/tuple' },
   { text: '左值、右值', link: '/cpp/basic/lrvalue' },
   { text: 'C++11 move', link: '/cpp/modern/move' },
   { text: '完美转发', link: '/cpp/modern/forward' },
@@ -18,6 +19,7 @@ export const MODERNCPP: DefaultTheme.NavItemWithLink[] = [
   { text: 'C++17 string_view', link: '/cpp/basic/string' },
   { text: 'C++20 consteval 的作用？', link: '/cpp/modern/consteval' },
   { text: 'C++20 format 的作用？', link: '/cpp/modern/format' },
+  { text: 'C++20 concept', link: '/cpp/modern/concept' },
   { text: 'C++20 三路比较操作符(<=>)', link: '/cpp/modern/cpp20-<=>' }
 ]
 
@@ -63,6 +65,7 @@ export const CppCoreGuidelinesNotes: DefaultTheme.NavItemWithLink[] = [
 
 export const CPP: DefaultTheme.NavItemWithLink[] = [
   { text: '基础概念', link: '/cpp/basic/README' },
+  { text: 'C++标准化：ANSI到ISO，从C++98到C++23的演变', link: '/cpp/basic/cpp-iso' },
   { text: 'const 和 define 的区别？', link: '/cpp/basic/const-define' },
   { text: '模版（template）', link: '/cpp/basic/template' },
   { text: 'enum class', link: '/cpp/basic/enum-class' },
@@ -99,7 +102,8 @@ export const CPP: DefaultTheme.NavItemWithLink[] = [
   { text: '虚析构、虚构造', link: '/cpp/basic/virtual-constructor' },
   { text: 'C++ 调用 main 之前做了什么？', link: '/cpp/basic/main-before' },
   { text: 'C++ 调用 main 之后做了什么？', link: '/cpp/basic/main-after' },
-  { text: '成员初始化列表', link: '/cpp/basic/var-init' }
+  { text: '成员初始化列表', link: '/cpp/basic/var-init' },
+  { text: '宏do while包裹的好处？', link: '/cpp/basic/do-while' }
 ]
 
 export const DESIGNPATTERN: DefaultTheme.NavItemWithLink[] = [

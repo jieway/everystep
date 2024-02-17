@@ -23,7 +23,11 @@ export const CEMU: DefaultTheme.NavItemWithLink[] = [
   { text: '前言', link: '/crvemu/README' },
   { text: '最简 CPU', link: '/crvemu/v1-add' },
   { text: '内存和总线', link: '/crvemu/v2-mem' },
-  { text: '指令解析', link: '/crvemu/v3-inst' }
+  { text: '指令解析', link: '/crvemu/v3-inst' },
+  { text: '完善 log 支持并支持更多指令', link: '/crvemu/v4-load-store' },
+  { text: 'CSR', link: '/crvemu/v5-csr' },
+  { text: '特权级别', link: '/crvemu/v6-privilege-level' },
+  { text: '异常和中断', link: '/crvemu/v7-exception-trap' }
 ]
 
 export const SMARTPTR: DefaultTheme.NavItemWithLink[] = [
