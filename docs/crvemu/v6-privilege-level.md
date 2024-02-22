@@ -75,7 +75,7 @@ std::optional<uint64_t> executeFence(Cpu& cpu, uint32_t inst) {
 
 `SRET` 指令用于从 Supervisor 模式返回到先前的特权级别。在执行异常处理程序时，如果发生了从用户态到 Supervisor 模式的特权级别切换，那么 `SRET` 会将程序计数器（PC）和一些相关的状态从 `sepc` 和 `sstatus` 寄存器中恢复，从而返回到用户态。以下是一个示例：
 
-```assembly
+```
 # Exception or interrupt handler in Supervisor mode
 exception_handler:
     # ... (处理异常的代码)
@@ -90,7 +90,7 @@ exception_handler:
 
 `MRET` 指令类似于 `SRET`，但用于从 Machine 模式返回到先前的特权级别。在执行异常处理程序时，如果发生了从用户态到 Machine 模式的特权级别切换，`MRET` 会将程序计数器（PC）和一些相关的状态从 `mepc` 和 `mstatus` 寄存器中恢复，从而返回到用户态。以下是一个示例：
 
-```assembly
+```
 # Exception or interrupt handler in Machine mode
 exception_handler:
     # ... (处理异常的代码)

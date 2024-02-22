@@ -22,6 +22,15 @@ export const nav: DefaultTheme.Config['nav'] = [
     ]
   },
   {
+    text: '操作系统 🤖',
+    items: [
+      { text: '🐷 启动篇', link: '/os/start/README' },
+      { text: '🐹 内核篇', link: '/os/kern/README' },
+      { text: '🌱 进程篇', link: '/os/process/README' },
+      { text: '🍼 附录', link: '/os/appendix/README' }
+    ]
+  },
+  {
     text: 'C++ 总结 🍼',
     items: [
       { text: '🐷 C++ 基础', link: '/cpp/basic/README' },

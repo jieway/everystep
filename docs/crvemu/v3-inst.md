@@ -194,7 +194,7 @@ RISC-V 指令 `SLLI`（Shift Left Logical Immediate）用于将寄存器中的�
 
 假设有以下 `SLLI` 指令：
 
-```assembly
+```
 SLLI x1, x2, 4
 ```
 
@@ -236,7 +236,7 @@ SLLI x1, x2, 4
 
 以下是一个例子，假设我们有如下 RISC-V 汇编代码：
 
-```assembly
+```
 slti x3, x1, 10
 ```
 
@@ -254,7 +254,7 @@ slti x3, x1, 10
 
 下面是一个 RISC-V 汇编指令的示例：
 
-```assembly
+```
 SRAI x1, x2, 2
 ```
 
