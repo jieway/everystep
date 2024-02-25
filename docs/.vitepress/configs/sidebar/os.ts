@@ -18,10 +18,20 @@ export const OSKERN: DefaultTheme.NavItemWithLink[] = [
   { text: 'OS 内核空间映射细节', link: '/os/kern/map' }
 ]
 
-export const OSPROCESS: DefaultTheme.NavItemWithLink[] = [
-  { text: 'OS 进程内部的实现细节？', link: '/os/process/process-mem' },
-  { text: 'OS 如何将程序加载到虚拟内存中并执行？', link: '/os/process/process-load' },
-  { text: 'OS 中断和异常', link: '/os/process/trap' }
+export const OSUSER: DefaultTheme.NavItemWithLink[] = [
+  { text: 'OS 进程内部的实现细节', link: '/os/user/process-mem' },
+  { text: 'OS 如何将程序加载到虚拟内存中并执行', link: '/os/user/process-load' },
+  { text: 'OS 什么是中断和异常？', link: '/os/user/trap-theory' },
+  { text: 'OS 中断和异常实现细节', link: '/os/user/trap-impl' },
+  { text: 'OS 页面错误实现细节', link: '/os/user/page-fault' },
+  { text: 'OS 断点异常实现细节', link: '/os/user/break-point' },
+  { text: 'OS 系统调用实现细节', link: '/os/user/system-call' }
+]
+
+export const OSMULT: DefaultTheme.NavItemWithLink[] = [
+  { text: '多核 OS 初始化细节', link: '/os/mult/apic-intro' },
+  { text: '多核 OS 启动 AP 实现细节', link: '/os/mult/ap-start' },
+  { text: 'OS 系统调用实现细节', link: '/os/mult/apic-intro' }
 ]
 
 export const OSAPPENDIX: DefaultTheme.NavItemWithLink[] = [

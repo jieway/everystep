@@ -2,7 +2,7 @@ import type { DefaultTheme } from 'vitepress'
 import { ALGARRAY, ALGLINKLIST, ALGTREE, HASHTABLE } from './sidebar/alg'
 import { MODERNCPP, CPPSTL, CppCoreGuidelinesNotes, CPP, DESIGNPATTERN } from './sidebar/cpp'
 import { ARYADB, SMARTPTR, CEMU } from './sidebar/buildx'
-import { OSKERN, OSSTART, OSPROCESS, OSAPPENDIX } from './sidebar/os'
+import { OSKERN, OSSTART, OSUSER, OSAPPENDIX } from './sidebar/os'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/': [
@@ -78,12 +78,12 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     }
   ],
 
-  '/os/process/': [
+  '/os/user/': [
     {
-      text: '进程篇',
+      text: '用户篇',
       items: [
         {
-          items: OSPROCESS
+          items: OSUSER
         }
       ]
     }

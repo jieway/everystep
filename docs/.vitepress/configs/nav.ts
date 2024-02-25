@@ -26,7 +26,8 @@ export const nav: DefaultTheme.Config['nav'] = [
     items: [
       { text: '🐷 启动篇', link: '/os/start/README' },
       { text: '🐹 内核篇', link: '/os/kern/README' },
-      { text: '🌱 进程篇', link: '/os/process/README' },
+      { text: '🌱 用户篇', link: '/os/user/README' },
+      { text: '🐻 多核篇', link: '/os/mult/README' },
       { text: '🍼 附录', link: '/os/appendix/README' }
     ]
   },
