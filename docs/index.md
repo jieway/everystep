@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /aryadb/README
+      link: /crvemu/README
     - text: RISC-V 模拟器
       link: /crvemu/README
       theme: alt

@@ -31,7 +31,7 @@ export const OSUSER: DefaultTheme.NavItemWithLink[] = [
 export const OSMULT: DefaultTheme.NavItemWithLink[] = [
   { text: '多核 OS 初始化细节', link: '/os/mult/apic-intro' },
   { text: '多核 OS 启动 AP 实现细节', link: '/os/mult/ap-start' },
-  { text: 'OS 系统调用实现细节', link: '/os/mult/apic-intro' }
+  { text: '多核 OS 系统调用实现细节', link: '/os/mult/apic-intro' }
 ]
 
 export const OSAPPENDIX: DefaultTheme.NavItemWithLink[] = [
