@@ -1,4 +1,4 @@
-书接上文，BIOS 启动计算机，检查和准备硬件后，接下来会将控制权传递给 Boot Loader。Boot Loader 负责将操作系统从磁盘加载到内存中。接下来讲解 Boot Loader 的实现细节。
+BIOS 启动计算机，检查和准备硬件后，接下来会将控制权传递给 Boot Loader。Boot Loader 负责将操作系统从磁盘加载到内存中。接下来讲解 Boot Loader 的实现细节。
 
 在 JOS 中 Boot Loader 分为了汇编和 C 语言两部分来实现的，这章节讲解汇编部分 `boot/boot.S`，下一章讲解 C 语言部分`boot/main.c`。
 

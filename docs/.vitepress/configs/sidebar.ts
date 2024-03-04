@@ -58,7 +58,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
 
   '/os/start/': [
     {
-      text: '启动篇',
+      text: '启动',
       items: [
         {
           items: OSSTART
@@ -69,7 +69,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
 
   '/os/kern/': [
     {
-      text: '内核篇',
+      text: '内核',
       items: [
         {
           items: OSKERN
@@ -80,7 +80,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
 
   '/os/user/': [
     {
-      text: '用户篇',
+      text: '用户',
       items: [
         {
           items: OSUSER
@@ -90,7 +90,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   ],
   '/os/mult/': [
     {
-      text: '多核篇',
+      text: '多核',
       items: [
         {
           items: OSMULT

@@ -13,6 +13,7 @@ export const OSSTART: DefaultTheme.NavItemWithLink[] = [
 export const OSKERN: DefaultTheme.NavItemWithLink[] = [
   { text: 'OS 内核入口实现细节', link: '/os/kern/os-asm' },
   { text: 'OS 内核内存、堆栈布局', link: '/os/kern/os-stack' },
+  { text: 'OS backtrace 实现细节', link: '/os/kern/back-trace' },
   { text: 'OS 物理页面管理', link: '/os/kern/phy-manage' },
   { text: 'OS 如何建立虚拟内存映射？', link: '/os/kern/vir-mem' },
   { text: 'OS 内核空间映射细节', link: '/os/kern/map' }
@@ -30,8 +31,11 @@ export const OSUSER: DefaultTheme.NavItemWithLink[] = [
 
 export const OSMULT: DefaultTheme.NavItemWithLink[] = [
   { text: '多核 OS 初始化细节', link: '/os/mult/apic-intro' },
-  { text: '多核 OS 启动 AP 实现细节', link: '/os/mult/ap-start' },
-  { text: '多核 OS 系统调用实现细节', link: '/os/mult/apic-intro' }
+  { text: '多处理器内核栈和环境初始化实现细节', link: '/os/mult/ap-init' },
+  { text: '多核 OS AP 启动细节', link: '/os/mult/ap-start' },
+  { text: 'OS 自旋锁实现细节', link: '/os/mult/spin-lock' },
+  { text: 'OS 循环调度实现细节', link: '/os/mult/round-robin' },
+  { text: 'OS COW Fork 实现细节', link: '/os/mult/cow-fork' }
 ]
 
 export const OSAPPENDIX: DefaultTheme.NavItemWithLink[] = [

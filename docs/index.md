@@ -5,45 +5,46 @@ layoutClass: 'm-home-layout'
 hero:
   name: 'everystep'
   text: 'Learn by doing!'
-  tagline: 从零构建模拟器、编译器、数据库、操作系统、模拟器、链接器（正在建设中）
+  # tagline: 从零构建模拟器、编译器、数据库、操作系统、模拟器、链接器（正在建设中）
   image:
     src: /logo.png
     alt: everystep
   actions:
     - theme: brand
       text: Get Started
-      link: /crvemu/README
-    - text: RISC-V 模拟器
-      link: /crvemu/README
-      theme: alt
+      link: /os/start/README
+    # - text: RISC-V 模拟器
+    #   link: /crvemu/README
+    #   theme: alt
 
 features:
   - icon: 📖
     title: C++ 知识点
-    details: 结合具体的例子讲解 C++ 常用知识点<small>（面试八股文）</small><br />
-    link: /aryadb/README
+    # details: 结合具体的例子讲解 C++ 常用知识点<small>（面试八股文）</small><br />
+    # details: 总结遇到的 C++ 常见内容<br />
+    link: /cpp/basic/README
     linkText: C++ 常用知识
   - icon: 🍼
-    title: 从零实现模拟器
-    details: 从基础开始，一步步构建自己的 RISC-V 模拟器。
-    link: /crvemu/README
-    linkText: RISC-V 模拟器教程，学习 RISC-V 指令。
+    title: OS 笔记
+    # details: 实现 OS 过程中遇到的概念，总结为笔记。<br />
+    link: /os/start/README
+    linkText: OS 学习笔记
 
   # - title: 从零实现 WebServer
   #   icon: 😈
   #   details: 从基础开始，一步步构建自己的 Web 服务器。
-  - title: 从零实现编译器(TODO)
-    icon: 🐹
-    details: 探索编译器的核心原理，从词法分析到语法解析，再到代码生成。
-  - title: 从零实现 OS (TODO)
-    icon: 🐷
-    details: 详细介绍操作系统的设计与实现。包括进程管理、内存管理、文件系统等核心概念。
-  - title: 从零实现数据库(TODO)
-    icon: 🚀
-    details: 从基础的数据存储到复杂的查询优化，深入浅出地讲解数据库的内部结构和工作原理，最终实现一个数据库。
-  - title: 从零实现模拟器(TODO)
-    icon: 🐲
-    details: 揭秘模拟器的开发过程，包括硬件仿真、指令集实现等关键技术。
+  # - title: 从零实现编译器(TODO)
+  #   icon: 🐹
+  #   details: 探索编译器的核心原理，从词法分析到语法解析，再到代码生成。
+  # - title: 从零实现 OS (TODO)
+  #   icon: 🐷
+  #   details: 详细介绍操作系统的设计与实现。包括进程管理、内存管理、文件系统等核心概念。
+  # - title: 从零实现数据库(TODO)
+  #   icon: 🚀
+  #   details: 从基础的数据存储到复杂的查询优化，深入浅出地讲解数据库的内部结构和工作原理，最终实现一个数据库。
+  # - title: 从零实现模拟器(TODO)
+  #   icon: 🐲
+  #   details: 揭秘模拟器的开发过程，包括硬件仿真、指令集实现等关键技术。
 #   - icon: 📘
 #     title: 源码阅读
 #     details: 了解各种库的实现原理<br />学习其中的小技巧和冷知识
