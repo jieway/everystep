@@ -1,4 +1,6 @@
-## this script deploys the static website of course.rs to github pages
+## this script deploys the static website of everystep to github pages
+git commit -am "update."
+git push -u -f origin master
 
 ## build static website for book
 mdbook build
