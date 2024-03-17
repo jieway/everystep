@@ -5,12 +5,12 @@ import { ARYADB, SMARTPTR, CEMU } from './sidebar/buildx'
 import { OSKERN, OSSTART, OSUSER, OSMULT, OSAPPENDIX } from './sidebar/os'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
-  '/': [
-    {
-      text: '🐷 使用现代 C++ 重写 LevelDB',
-      items: ARYADB
-    }
-  ],
+  // '/': [
+  //   {
+  //     text: '🐷 使用现代 C++ 重写 LevelDB',
+  //     items: ARYADB
+  //   }
+  // ],
 
   '/alg/array/': [
     {

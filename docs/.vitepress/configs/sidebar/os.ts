@@ -23,6 +23,7 @@ export const OSUSER: DefaultTheme.NavItemWithLink[] = [
   { text: 'OS 进程内部的实现细节', link: '/os/user/process-mem' },
   { text: 'OS 如何将程序加载到虚拟内存中并执行', link: '/os/user/process-load' },
   { text: 'OS 什么是中断和异常？', link: '/os/user/trap-theory' },
+  { text: 'OS 用户态和内核态之间的切换细节', link: '/os/user/uk-trans' },
   { text: 'OS 中断和异常实现细节', link: '/os/user/trap-impl' },
   { text: 'OS 页面错误实现细节', link: '/os/user/page-fault' },
   { text: 'OS 断点异常实现细节', link: '/os/user/break-point' },
@@ -35,7 +36,17 @@ export const OSMULT: DefaultTheme.NavItemWithLink[] = [
   { text: '多核 OS AP 启动细节', link: '/os/mult/ap-start' },
   { text: 'OS 自旋锁实现细节', link: '/os/mult/spin-lock' },
   { text: 'OS 循环调度实现细节', link: '/os/mult/round-robin' },
-  { text: 'OS COW Fork 实现细节', link: '/os/mult/cow-fork' }
+  { text: 'OS COW Fork 原理图解', link: '/os/mult/fork-intro' },
+  { text: 'COW Fork 页面错误实现细节', link: '/os/mult/cow-fork-pagefalt' },
+  { text: 'COW Fork 创建进程实现细节', link: '/os/mult/cow-fork-init' },
+  { text: 'OS 时钟中断实现细节', link: '/os/mult/os-irq' },
+  { text: 'OS IPC 进程通信实现细节', link: '/os/mult/os-ipc' }
+]
+
+export const OSFILE: DefaultTheme.NavItemWithLink[] = [
+  { text: '多核 OS 初始化细节', link: '/os/file/file' },
+  { text: 'OS 时钟中断实现细节', link: '/os/mult/os-irq' },
+  { text: 'OS IPC 进程通信实现细节', link: '/os/mult/os-ipc' }
 ]
 
 export const OSAPPENDIX: DefaultTheme.NavItemWithLink[] = [
