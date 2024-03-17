@@ -15,7 +15,7 @@ git config user.email "836678589@qq.com"
 git add .
 git commit -m 'deploy'
 git branch -M gh-pages
-git remote add origin https://github.com/weijiew/rust-course
+git remote add origin git@github.com:weijiew/everystep.git
 
 ## push to github pages
 git push -u -f origin gh-pages
