@@ -1,1 +1,0 @@
-https://www.reddit.com/r/rust/comments/si0j6v/im_preparing_for_a_rust_interview/

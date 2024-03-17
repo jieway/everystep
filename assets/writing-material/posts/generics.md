@@ -1,1 +1,0 @@
-https://stackoverflow.com/questions/37606035/pass-generic-function-as-argument
