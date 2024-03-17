@@ -1,18 +1,19 @@
-# everystep
+<h1 align="center">everystep</h1>
 
 <div align="center">
+
   <a href="https://github.com/weijiew/everystep">
-    <img src="docs/public/logo.png" alt="logo" width="200" height="180">
+    <img src="src/public/logo.png" alt="logo" width="200" height="180">
   </a>
 
-![访问量](https://visitor-badge.laobi.icu/badge?page_id=weijiew.everystep&left_color=0047ab&right_color=add8e6)
+  ![访问量](https://visitor-badge.laobi.icu/badge?page_id=weijiew.everystep&left_color=0047ab&right_color=add8e6)
 
-[![阅读](https://img.shields.io/badge/阅读-read-brightgreen.svg)](https://everystep.dev)
-![Stars](https://img.shields.io/github/stars/weijiew/everystep)
-![forks](https://img.shields.io/github/forks/weijiew/everystep)
-![issues](https://img.shields.io/github/issues/weijiew/everystep)
+  ![issues](https://img.shields.io/github/issues/weijiew/everystep)
+  [![Stars Count](https://img.shields.io/github/stars/weijiew/rust-course?style=flat)](https://github.com/weijiew/everystep/stargazers)
+  [![](https://img.shields.io/github/issues-pr-closed-raw/weijiew/everystep.svg?style=flat)](https://github.com/weijiew/everystep/issues)
+  [![阅读](https://img.shields.io/badge/阅读-read-brightgreen.svg)](https://weijiew.github.io/everystep)
 
-  <img src='docs/public/background-cover_.png' width='800'>
+  <img src='src/public/banner.png' width='800'>
 
 </div>
 
@@ -40,7 +41,7 @@
 
 ```
 git clone https://github.com/weijiew/everystep.git
-cd everystep && pnpm install && pnpm run dev
+cd everystep && mdbook serve --open
 ```
 
 ## 贡献
@@ -53,8 +54,6 @@ cd everystep && pnpm install && pnpm run dev
 
 ## 协议
 
-主题参考自：[vitepress-nav-template (MIT License)](https://github.com/maomao1996/vitepress-nav-template)
-
 本仓库的主题是 MIT License，文字内容版权均为 CC BY-NC-SA 4.0 International License. 引用的话注明出处。
 
-2019 - 2023 [©weijiew](https://github.com/weijiew/). Released under the CC BY-NC-SA 4.0 International License.
+2019 - 2024 [©weijiew](https://github.com/weijiew/). Released under the CC BY-NC-SA 4.0 International License.
