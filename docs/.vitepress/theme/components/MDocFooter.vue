@@ -13,7 +13,7 @@ const pageId = computed(() => route.path.replace('/everystep', ''))
   <div class="copyright">
     <div class="copyright-text">
       <span>
-        Copyright © 2019 - 2023
+        Copyright © 2019 - 2024
         <a href="https://github.com/weijiew" target="_blank">©weijiew</a>.
       </span>
       <br>

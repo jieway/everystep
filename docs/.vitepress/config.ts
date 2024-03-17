@@ -29,6 +29,10 @@ export default defineConfig({
 
   /* 主题配置 */
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
+
     i18nRouting: false,
     logo: '/logo.png',
     nav,
@@ -53,7 +57,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the CC BY-NC-SA 4.0 International License.',
-      copyright: 'Copyright © 2019 - 2023 ©weijiew.'
+      copyright: 'Copyright © 2019 - 2024 ©weijiew.'
     },
 
     darkModeSwitchLabel: '外观',
@@ -67,12 +71,8 @@ export default defineConfig({
       text: '在 GitHub 上编辑此页'
     },
 
-    // search: {
-    //   provider: 'local',
-    // },
-
     /* Algolia DocSearch 配置 */
-    algolia,
+    // algolia,
 
     docFooter: {
       prev: '上一篇',
