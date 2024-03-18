@@ -1,5 +1,3 @@
-<h1 align="center">everystep</h1>
-
 <div align="center">
 
   <a href="https://github.com/weijiew/everystep">
@@ -17,7 +15,10 @@
 
 </div>
 
-该项目最初为写名校 lab 过程中留下了的记录，但是因为[学术诚信](http://integrity.mit.edu/)的缘故，公开解决方案甚至代码是不合适的。但是直接删了有点可惜，后来想尝试换一门语言重写 lab/proj/hw 等内容，所以逐渐演化为用其他语言重写，造轮子过程中的笔记。例如从零实现 OS/Compiler/DB/ld 等，此外和课程答案相关的内容确实会逐渐删去。
+## 简介
+
+该项目最初为写名校 lab 过程中留下了的记录，最初只是单纯想记录实现的心路历程，所踩过的坑，但是因为[学术诚信](http://integrity.mit.edu/)的缘故，公开解决方案甚至代码是不合适的。但是直接删了有点可惜，后来想尝试换一门语言重写 lab/proj/hw 等内容，所以逐渐演化为用其他语言重写，造轮子过程中的笔记。例如从零实现 OS/Compiler/DB/ld 等，此外和课程答案相关的内容确实会逐渐删去。
+
 
 <!-- ## 🐲 从零实现模拟器(TODO)
 
