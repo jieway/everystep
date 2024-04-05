@@ -55,11 +55,13 @@
    <!-- - [Linux 常用命令使用技巧](os/shell-tech.md) -->
 
 - [计算机网络](net/README.md)
+
   - [TCP 篇](net/tcp/README.md)
     - [TCP 报文格式](net/tcp/tcp-field.md)
     - [TCP 粘包、拆包问题](net/tcp/pack.md)
     - [TCP 和 UDP的区别？](net/tcp/tcp-udp.md)
     - [TCP 三次握手](net/tcp/three-hand.md)
+      - [Socket 编程中的 TCP 三次握手](net/tcp/three-hand-socket.md)
     - [TCP 超时重传](net/tcp/timeout-try.md)
     - [TCP 四次挥手](net/tcp/four-hand.md)
 
@@ -88,6 +90,8 @@
     - [大小端](cpp/basic/byte-ordering.md)
     - [构造函数](cpp/basic/constructor.md)
     - [一个空类默认生成哪些函数？](cpp/basic/null-class.md)
+    - [new 和 Placement new 的区别](cpp/basic/placement-new.md)
+    - [new 和 malloc 的区别](cpp/basic/delete-new.md)
 
   - [四种转换](cpp/basic/cast.md)
 
