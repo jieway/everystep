@@ -1,15 +1,15 @@
 <div align="center">
 
-  <a href="https://github.com/weijiew/everystep">
+  <a href="https://github.com/jieway/everystep">
     <img src="src/public/logo.png" alt="logo" width="200" height="180">
   </a>
 
-  ![访问量](https://visitor-badge.laobi.icu/badge?page_id=weijiew.everystep&left_color=0047ab&right_color=add8e6)
+  ![访问量](https://visitor-badge.laobi.icu/badge?page_id=jieway.everystep&left_color=0047ab&right_color=add8e6)
 
-  ![issues](https://img.shields.io/github/issues/weijiew/everystep)
-  [![Stars Count](https://img.shields.io/github/stars/weijiew/rust-course?style=flat)](https://github.com/weijiew/everystep/stargazers)
-  [![](https://img.shields.io/github/issues-pr-closed-raw/weijiew/everystep.svg?style=flat)](https://github.com/weijiew/everystep/issues)
-  [![阅读](https://img.shields.io/badge/阅读-read-brightgreen.svg)](https://weijiew.github.io/everystep)
+  ![issues](https://img.shields.io/github/issues/jieway/everystep)
+  [![Stars Count](https://img.shields.io/github/stars/jieway/rust-course?style=flat)](https://github.com/jieway/everystep/stargazers)
+  [![](https://img.shields.io/github/issues-pr-closed-raw/jieway/everystep.svg?style=flat)](https://github.com/jieway/everystep/issues)
+  [![阅读](https://img.shields.io/badge/阅读-read-brightgreen.svg)](https://jieway.github.io/everystep)
 
   <img src='src/public/banner.png' width='800'>
 
@@ -41,7 +41,7 @@
 ## 本地运行
 
 ```
-git clone https://github.com/weijiew/everystep.git
+git clone https://github.com/jieway/everystep.git
 cd everystep && mdbook serve --open
 ```
 
@@ -51,10 +51,10 @@ cd everystep && mdbook serve --open
 
 ## Star 历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=weijiew/everystep&type=Date)](https://star-history.com/#weijiew/everystep&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=jieway/everystep&type=Date)](https://star-history.com/#jieway/everystep&Date)
 
 ## 协议
 
 本仓库的主题是 MIT License，文字内容版权均为 CC BY-NC-SA 4.0 International License. 引用的话注明出处。
 
-2019 - 2024 [©weijiew](https://github.com/weijiew/). Released under the CC BY-NC-SA 4.0 International License.
+2019 - 2024 [©jieway](https://github.com/jieway/). Released under the CC BY-NC-SA 4.0 International License.

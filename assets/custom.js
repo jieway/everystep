@@ -99,24 +99,24 @@ var initAll = function () {
         };
         iframe.contentWindow.postMessage({ giscus: msg }, 'https://giscus.app');
     });
-    
+
     pagePath = pagePath.replace("index.md", "");
     pagePath = pagePath.replace(".md", "");
     if (pagePath.length > 0) {
-        if (pagePath.charAt(pagePath.length-1) == "/"){
-            pagePath = pagePath.substring(0, pagePath.length-1)
+        if (pagePath.charAt(pagePath.length - 1) == "/") {
+            pagePath = pagePath.substring(0, pagePath.length - 1)
         }
-    }else {
+    } else {
         pagePath = "index"
     }
 
     // add visitors count
     var ele = document.createElement("div");
-    ele.setAttribute("align","center");
+    ele.setAttribute("align", "center");
     var count = document.createElement("img")
     count.setAttribute("src", "https://visitor-badge.glitch.me/badge?page_id=" + path);
     ele.appendChild(count);
-    var divider =document.createElement("hr")
+    var divider = document.createElement("hr")
 
     document.getElementById("giscus-container").appendChild(ele);
     document.getElementById("giscus-container").appendChild(divider);
@@ -136,7 +136,7 @@ var initAll = function () {
     script.src = "https://giscus.app/client.js";
     script.async = true;
     script.crossOrigin = "anonymous";
-    script.setAttribute("data-repo", "weijiew/everystep");
+    script.setAttribute("data-repo", "jieway/everystep");
     script.setAttribute("data-repo-id", "MDEwOlJlcG9zaXRvcnkyNDUxMTU1NTU=");
     script.setAttribute("data-category", "章节评论区");
     script.setAttribute("data-category-id", "DIC_kwDODpwqo84Ca6Sv");

@@ -12,12 +12,12 @@ cp ./assets/sitemap.xml ./book/
 ## init git repo
 cd book
 git init
-git config user.name "weijiew"
+git config user.name "jieway"
 git config user.email "836678589@qq.com"
 git add .
 git commit -m 'deploy'
 git branch -M gh-pages
-git remote add origin git@github.com:weijiew/everystep.git
+git remote add origin git@github.com:jieway/everystep.git
 
 ## push to github pages
 git push -u -f origin gh-pages

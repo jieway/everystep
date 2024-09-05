@@ -1,19 +1,18 @@
 [rust]
-edition = "2021"   #在线运行用2021版本的
+edition = "2021" #在线运行用2021版本的
 
 [book]
-authors = ["weijiew"]
+authors = ["jieway"]
 language = "zh-CN"
 title = "everystep"
 src = "src"
 
 
-
 [output.html]
 additional-css = ["theme/style.css"]
 additional-js = ["assets/custom.js", "assets/bigPicture.js"]
-git-repository-url = "https://github.com/weijiew/everystep"
-edit-url-template = "https://github.com/weijiew/everystep/edit/master/{path}"
+git-repository-url = "https://github.com/jieway/everystep"
+edit-url-template = "https://github.com/jieway/everystep/edit/master/{path}"
 
 [output.html.playground]
 editable = true
@@ -23,4 +22,3 @@ copy-js = true
 [output.html.fold]
 enable = true
 level = 0
-

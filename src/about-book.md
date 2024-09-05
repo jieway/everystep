@@ -1,6 +1,6 @@
 <div align="center">
 
-  <a href="https://github.com/weijiew/everystep">
+  <a href="https://github.com/jieway/everystep">
     <img src="public/logo.png" alt="logo" width="200" height="180">
   </a>
 
@@ -33,7 +33,7 @@
 ## 本地运行
 
 ```
-git clone https://github.com/weijiew/everystep.git
+git clone https://github.com/jieway/everystep.git
 cd everystep && mdbook serve --open
 ```
 
