@@ -3,463 +3,529 @@ title: 'lambda 表达式：匿名函数与闭包'
 description: 'C++11 的 lambda 让“临时写个小函数”变成日常操作，也把回调、算法和并发写得更顺手。'
 ---
 
-lambda 不是突然冒出来的。
+那几年，写 STL 算法像背咒语。
 
-它是 C++ 很长一段历史里。
+你会在代码里看到 `bind1st`、`bind2nd`、`mem_fun`。
 
-“回调”和“算法”把人逼出来的产物。
+像一串古老的法术名。
 
-九十年代 STL 把算法搬进标准库。
+懂的人很淡定。
 
-`sort`、`find_if`、`for_each` 这些东西一出来。
+不懂的人会怀疑自己是不是学错了语言。
 
-大家就开始不断地问一个问题。
+当年的痛点其实很朴素。
 
-比较规则放哪。
+你只是想“临时写个小函数”。
 
-过滤条件放哪。
+比如给 `sort` 换一行比较规则。
 
-那会儿最省事的做法是函数指针。
+结果你得先造一个类。
 
-```cpp
-bool by_length(const std::string& a, const std::string& b) {
-    return a.size() < b.size();
-}
-```
+起名。
 
-能用。
+放头文件。
+
+然后在 code review 里解释：它真的只用一次。
+
+更麻烦的是回调。
+
+函数指针能救急。
 
 但它带不走上下文。
 
-你想要一个“阈值”。
+阈值、配置、对象指针，全都没地方放。
 
-想要一个“表”。
+于是当年的人就开始“发明解决方案”。
 
-想要一个“配置”。
+先是函数对象。
 
-函数指针就开始装死。
+再是各种适配器和绑定器。
 
-于是 C++ 的老派解法登场。
+后来 Boost 也来帮忙，`_1`、`_2` 这些占位符满天飞。
 
-函数对象。
+能用。
 
-也就是写个类。
+也能把编译错误变成一面墙。
 
-把状态塞进去。
+所以 C++11 的 lambda 不是潮流。
 
-再实现 `operator()`。
+它更像一场“被现实逼出来的收敛”。
 
-它很强。
+把逻辑写回现场。
 
-也很啰嗦。
+把环境也一起带走。
 
-而且只要你写过一堆一次性比较器。
+也顺便把生命周期问题摊在你面前。
 
-你就会明白。
+### 当年还没有 lambda 的时候
 
-这不是“工程设计”。
+STL 算法爱收“可调用对象”。
 
-这是“为了写一行算法调用，先铺十行仪式”。
+这句话对刚学 C++ 的人不太友好。
 
-再后来。
+我先翻译成人话。
 
-社区开始用库来补洞。
+所谓“可调用对象”，就是“你能写成 `x(...)` 这种样子去调用它”的东西。
 
-Boost 里就出现过好几代“库级 lambda”。
+函数当然算。
 
-表达力很猛。
+但更常见的是一种小对象：它重载了 `operator()`。
 
-代价也很猛。
+这种小对象很多人叫它“函数对象”。
 
-编译错误像瀑布。
+你想塞一个比较规则，就得给 `sort` 一个函数对象。
 
-编译时间像冬天。
-
-这些尝试的价值不在于让你天天用。
-
-它们更像是在跟委员会说。
-
-> 需求已经摆在桌上了。
->
-> 不要逼大家继续用库硬凑。
-
-到了 C++0x（后来改名 C++11）。
-
-标准委员会要解决的不只是“写起来帅不帅”。
-
-而是两件更朴素的事。
-
-让算法和回调能在现场写。
-
-让状态能安全地跟着走。
-
-于是 lambda 作为语言特性进了标准。
-
-它的语法也很直白。
-
-`[]` 是口袋。
-
-口袋里装捕获。
-
-`()` 是参数。
-
-`{}` 是函数体。
-
-下面我们先从“没有 lambda 的年代”开始。
-
-你会看到。
-
-它到底替你省掉了哪些仪式。
-
-### 没有 lambda 的年代
-
-先看一个最常见的场景。
-
-按长度排序字符串。
-
-C++11 之前你经常这么写。
+也就是说，你得给它一个 `operator()`。
 
 ```cpp
 #include <algorithm>
 #include <string>
 #include <vector>
 
-struct ByLength {
+struct ByLen {
     bool operator()(const std::string& a, const std::string& b) const {
         return a.size() < b.size();
     }
 };
 
-int main() {
-    std::vector<std::string> v{"aaa", "b", "cc"};
-    std::sort(v.begin(), v.end(), ByLength{});
+std::vector<std::string> v{"aaa", "b", "cc"};
+std::sort(v.begin(), v.end(), ByLen{});
+```
+
+这段代码没错。
+
+但你为了“一行比较”，制造了一个类型。
+
+类型一旦出现，就开始有名字、有文件、有复用压力。
+
+回调问题更要命。
+
+你当然可以用函数指针。
+
+但函数指针有一个硬伤：它带不走环境。
+
+```cpp
+#include <cstddef>
+#include <string>
+
+int g_limit = 2;
+
+bool longer_equal_limit(const std::string& s) {
+    return s.size() >= static_cast<std::size_t>(g_limit);
 }
 ```
 
-能用。
+你看，环境被我塞进了全局变量。
 
-也够“正统”。
+能跑。
 
-但它有一个很现实的问题。
+也很容易把“配置是谁写的、什么时候改的”变成下一次事故的导火索。
 
-这段比较逻辑只在这里用一次。
+如果你写过 C，你可能会想到另一条路。
 
-你还是得给它起名字。
+回调函数不带环境没关系。
 
-还得给它放个地方。
-
-最后你得到一堆“只用一次的类型”。
-
-代码像抽屉里的塑料袋。
-
-越攒越多。
-
-### lambda 的核心：把临时函数写在原地
-
-C++11 的 lambda 长这样。
+我额外塞一个 `void* user_data`。
 
 ```cpp
-[]() {
-}
-```
+#include <cstddef>
+#include <cstring>
 
-它看起来像三块。
-
-`[]`。
-
-`()`。
-
-`{}`。
-
-我习惯把它理解成。
-
-“我现在要在这里造一个函数对象”。
-
-最简单的例子。
-
-```cpp
-auto f = []() {
-    return 42;
+struct Ctx {
+    std::size_t limit;
 };
 
-int x = f();
+bool pred(const char* s, void* user) {
+    auto* ctx = static_cast<Ctx*>(user);
+    return std::strlen(s) >= ctx->limit;
+}
+
+bool call_pred(const char* s, bool (*p)(const char*, void*), void* user) {
+    return p(s, user);
+}
+
+Ctx ctx{2};
+bool ok = call_pred("abc", pred, &ctx);
+(void)ok;
+```
+
+这种写法非常“C”。
+
+但它也把责任全丢给你了：强转对不对、`user` 活没活着、谁负责释放。
+
+你要是想把环境塞回局部变量里。
+
+那在当年通常就得写成“带状态的函数对象”。
+
+```cpp
+#include <algorithm>
+#include <cstddef>
+#include <string>
+#include <vector>
+
+struct LongerEqual {
+    std::size_t limit;
+    bool operator()(const std::string& s) const { return s.size() >= limit; }
+};
+
+std::vector<std::string> v{"aaa", "b", "cc"};
+auto it = std::find_if(v.begin(), v.end(), LongerEqual{2});
+(void)it;
+```
+
+这段代码更像“正经 C++”。
+
+但你又一次为了一个小逻辑，制造了一个类型。
+
+### 那些年社区怎么补洞（以及借鉴了谁）
+
+在 lambda 还没来之前，大家不是坐等标准。
+
+大家会先想办法活下去。
+
+一种常见做法是“绑定参数”。
+
+意思是：先把一部分参数和对象塞进去，做成一个新的可调用对象。
+
+```cpp
+#include <functional>
+#include <string>
+
+struct Cmp {
+    bool by_len(const std::string& a, const std::string& b) const {
+        return a.size() < b.size();
+    }
+};
+
+Cmp c;
+auto f = std::bind(&Cmp::by_len, c, std::placeholders::_1, std::placeholders::_2);
+```
+
+这就是“把成员函数和对象先绑在一起”。
+
+如果你是刚学 C++ 的读者，你大概率会卡在两个点。
+
+一个是：`&Cmp::by_len` 为什么长这样。
+
+它叫“指向成员函数的指针”，和普通函数指针不是一回事。
+
+另一个是：`_1`、`_2` 是什么鬼。
+
+它们是“占位符”，意思是“到时候调用时把第一个/第二个实参塞进来”。
+
+lambda 出来之后，同一件事会变得更像人话。
+
+```cpp
+#include <string>
+
+struct Cmp {
+    bool by_len(const std::string& a, const std::string& b) const {
+        return a.size() < b.size();
+    }
+};
+
+Cmp c;
+auto f = [&c](const std::string& a, const std::string& b) {
+    return c.by_len(a, b);
+};
+```
+
+你不再需要 `_1`、`_2`。
+
+也不用解释“成员函数指针到底怎么调用”。
+
+### 横向对比：别的语言怎么写这类回调
+
+这类需求并不是 C++ 独有。
+
+它更像“写业务代码的自然形态”。
+
+在 Java 早些年，你会写匿名内部类。
+
+逻辑很短。
+
+样板很长。
+
+```java
+// Java 早年的“匿名内部类”风格
+Collections.sort(list, new Comparator<String>() {
+    public int compare(String a, String b) {
+        return a.length() - b.length();
+    }
+});
+```
+
+你想表达的只是比较规则。
+
+但你得先把样板写完。
+
+在 C# 里，lambda 早早成了日常。
+
+写起来像在写数学。
+
+```csharp
+// C# 的 lambda 更像“直接把规则写出来”
+list.Sort((a, b) => a.Length.CompareTo(b.Length));
+```
+
+这也是为什么很多人第一次见到 C++11 lambda 会说：终于像个人了。
+
+而 C++ 之所以更拧巴，是因为它要同时照顾：零开销、泛型、老代码。
+
+### 事故是怎么来的
+
+我当时在写一个小服务。
+
+为了省事，把一次性的小逻辑塞进异步线程。
+
+然后我用了最省事的捕获：`[&]`。
+
+```cpp
+#include <thread>
+
+void spawn() {
+    int retry = 3;
+    std::thread([&] { (void)retry; }).detach();
+}
+```
+
+`retry` 是局部变量。
+
+线程函数按引用捕获它。
+
+`spawn()` 一返回，`retry` 就结束生命周期了。
+
+线程里那一眼看过去，就是悬空引用。
+
+这里顺手再解释一句“生命周期”。
+
+对刚学 C++ 的你来说，它就是：变量从“进入作用域被创建”到“离开作用域被销毁”的那段时间。
+
+引用能指向一个变量。
+
+但引用挡不住变量死亡。
+
+这类 bug 之所以恶心。
+
+是因为它不一定当场炸。
+
+它喜欢等内存被别的东西覆盖以后再炸。
+
+### lambda 到底是什么
+
+你可以把 lambda 当成“匿名的函数对象”。
+
+它长得像函数，但本质更像一个带 `operator()` 的小对象。
+
+```cpp
+auto f = [](int x) { return x + 1; };
+int y = f(41);
 ```
 
 `f` 不是函数指针。
 
-它是一个匿名类型的对象。
+它是一个编译器生成的匿名类型的对象。
 
-它有一个 `operator()`。
+你写的函数体，变成了它的 `operator()`。
 
-所以你可以像调用函数一样调用它。
+### 编译器到底生成了什么
 
-这就是为什么很多人说。
+你可以把 lambda 想成一种“编译器帮你写的结构体”。
 
-lambda 的本质是“匿名函数对象”。
+按值捕获的变量，会变成这个结构体的成员变量。
 
-### 回到排序：把比较逻辑贴回现场
+lambda 里的函数体，会变成 `operator()`。
 
-刚才那段排序。
-
-现在可以写成这样。
+比如你写这样一段。
 
 ```cpp
-#include <algorithm>
-#include <string>
-#include <vector>
-
-int main() {
-    std::vector<std::string> v{"aaa", "b", "cc"};
-
-    std::sort(v.begin(), v.end(),
-              [](const std::string& a, const std::string& b) {
-                  return a.size() < b.size();
-              });
-}
+int x = 10;
+auto add_x = [x](int y) { return x + y; };
+int z = add_x(1);
+(void)z;
 ```
 
-你一眼就知道它在比什么。
+`x` 就是那份“随身行李”。
 
-你也不用去找 `ByLength` 在哪。
+它不是到处引用外面的 `x`。
 
-这对“读代码”来说，是实打实的效率。
-
-### 那对方说的“闭包”到底是什么
-
-你会听到另一句话。
-
-lambda 是闭包。
-
-别被术语吓到。
-
-它讲的其实就是一件事。
-
-lambda 可以“带着环境一起走”。
-
-也就是捕获。
-
-### 捕获：把外面的变量带进来
-
-先看一个最朴素的。
-
-我们想筛掉长度小于某个阈值的字符串。
-
-阈值是运行时决定的。
+它是把 `x` 的值塞进了闭包对象。
 
 ```cpp
-#include <algorithm>
-#include <string>
-#include <vector>
-
-int main() {
-    std::vector<std::string> v{"aaa", "b", "cc"};
-    std::size_t limit = 2;
-
-    auto it = std::find_if(v.begin(), v.end(),
-                           [limit](const std::string& s) {
-                               return s.size() >= limit;
-                           });
-
-    (void)it;
-}
-```
-
-这里的 `[limit]` 就是捕获列表。
-
-它表示。
-
-把外面的 `limit` 按值拷贝一份。
-
-拷贝进这个 lambda 对象里。
-
-所以它才叫“闭包”。
-
-它把 `limit` 这份上下文封在里面了。
-
-### 按值捕获 vs 按引用捕获
-
-按值捕获。
-
-安全。
-
-但它不会跟着外界变化。
-
-```cpp
-int x = 1;
-auto f = [x]() { return x; };
-
-x = 2;
-int v = f(); // 还是 1
-```
-
-按引用捕获。
-
-灵活。
-
-但你就要开始关心生命周期。
-
-```cpp
-int x = 1;
-auto f = [&x]() { return x; };
-
-x = 2;
-int v = f(); // 变成 2
-```
-
-这就是工程里经常踩的坑。
-
-lambda 把引用带走了。
-
-变量却早就死了。
-
-尤其是你把 lambda 塞进回调。
-
-塞进线程。
-
-塞进异步任务。
-
-那就更容易“看着没问题”。
-
-然后在某个晚上炸。
-
-### 让 lambda 修改按值捕获：mutable
-
-C++11 里。
-
-按值捕获默认是只读的。
-
-```cpp
-int x = 1;
-
-auto f = [x]() {
-    // x++; // ❌ 不允许
-    return x;
+struct __Closure {
+    int x;
+    int operator()(int y) const { return x + y; }
 };
 ```
 
-如果你确实想改那份“拷贝进来的 x”。
+你当然不会真的写出 `__Closure`。
 
-可以加 `mutable`。
+但你脑子里有这个模型，很多语法细节就不再神秘了。
+
+理解了这点，你就更容易理解：为什么按值捕获是副本，为什么按引用捕获会悬空。
+
+### `[]` 里装的是什么
+
+`[]` 叫“捕获列表”。
+
+捕获的意思是：把外面的变量，塞进这个小对象里。
+
+这个“带着环境的小对象”，很多人叫它“闭包”。
+
+闭包听起来像数学。
+
+你可以把它翻译成人话：函数带着随身行李。
+
+```cpp
+#include <cstddef>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+std::vector<std::string> v{"aaa", "b", "cc"};
+std::size_t limit = 2;
+auto it = std::find_if(v.begin(), v.end(),
+                       [limit](const std::string& s) { return s.size() >= limit; });
+(void)it;
+```
+
+`[limit]` 是按值捕获。
+
+等价于：闭包对象里有一个成员变量，保存了 `limit` 的副本。
+
+### 按值捕获：稳，但不“同步”
+
+按值捕获最适合跨线程、跨回调。
+
+因为它把数据复制进去了。
 
 ```cpp
 int x = 1;
-
-auto f = [x]() mutable {
-    x++;
-    return x;
-};
-
-int a = f(); // 2
-int b = f(); // 3
+auto f = [x] { return x; };
+x = 2;
+int y = f();
 ```
 
-注意。
+`y` 还是 1。
 
-你改的是闭包对象内部的那份副本。
+你捕获的是“当时的值”。
 
-不是外面的 `x`。
+外面怎么改，它不关心。
 
-### 捕获 this：很方便，也很危险
+### 按引用捕获：灵，但要盯住寿命
 
-成员函数里写 lambda。
+按引用捕获就像拿着一张“指路牌”。
 
-很自然会捕获 `this`。
+它不搬家。
+
+它只记住你家地址。
+
+```cpp
+int x = 1;
+auto f = [&x] { return x; };
+x = 2;
+int y = f();
+```
+
+`y` 变成 2。
+
+但你必须保证：`x` 在 `f()` 被调用时仍然活着。
+
+否则就是我上面那种凌晨两点的故事。
+
+### `mutable`：改副本，不改原件
+
+按值捕获默认是“只读”。
+
+因为编译器默认 `operator()` 是 `const`。
+
+你要在 lambda 里改那份副本，就得加 `mutable`。
+
+```cpp
+int x = 1;
+auto f = [x]() mutable { return ++x; };
+```
+
+这会修改闭包对象内部那份 `x`。
+
+外面的 `x` 不会动。
+
+### 捕获 `this`：顺手，但最容易把自己送走
+
+在成员函数里写 lambda，最顺手的是捕获 `this`。
+
+它让你在回调里直接用成员变量。
 
 ```cpp
 #include <functional>
 
 struct Worker {
     int base = 10;
-
     std::function<int(int)> make() {
-        return [this](int x) {
-            return base + x;
-        };
+        return [this](int x) { return base + x; };
     }
 };
 ```
 
-这段代码能跑。
+这段代码的隐含前提是：回调执行时，`*this` 还活着。
 
-但风险也很明显。
+如果对象先析构，回调晚点才跑。
 
-你把 lambda 返回出去了。
+`this` 就变成悬空指针。
 
-lambda 里握着 `this`。
+于是你会得到一种“看起来像内存被鬼摸了”的崩溃。
 
-如果 `Worker` 先销毁。
+如果你只是想用当下的成员值。
 
-lambda 再被调用。
-
-那就是悬空指针。
-
-很多“回调偶现崩溃”。
-
-背后就是这种故事。
-
-在 C++11 里。
-
-你得自己保证对象活得比回调久。
-
-或者让回调捕获 `shared_ptr`。
-
-别让 `this` 裸奔。
-
-### 返回类型：大多数时候不用写
-
-lambda 的返回类型通常可以自动推导。
+更稳的办法是把它拷贝出来，再按值捕获。
 
 ```cpp
-auto f = [](int x) {
-    return x + 1;
-};
-```
+#include <functional>
 
-但有一个经典场景会卡住。
-
-分支返回不同类型。
-
-```cpp
-auto g = [](bool ok) {
-    if (ok) {
-        return 1;
+struct Worker {
+    int base = 10;
+    std::function<int(int)> make() {
+        int base_copy = base;
+        return [base_copy](int x) { return base_copy + x; };
     }
-    return 0; // 这还好
 };
 ```
 
-如果分支里返回的类型不一致。
+这会把“访问成员变量”变成“使用一份快照”。
 
-你就需要明确写返回类型。
+代价是：对象之后再改 `base`，这个回调也不会同步。
+
+### 返回类型：需要时再写
+
+大多数 lambda 的返回类型可以自动推导。
+
+你不用写。
 
 ```cpp
-auto h = [](bool ok) -> int {
-    if (ok) {
-        return 1;
-    }
-    return 0;
-};
+auto f = [](int x) { return x > 0; };
 ```
 
-C++11 的规则比较朴素。
+但当你写了多分支，并且返回类型推不出来时，就要显式写 `-> T`。
 
-它希望你别让编译器猜你到底想要什么。
+```cpp
+auto g = [](bool ok) -> int { return ok ? 1 : 0; };
+```
 
-### 把 lambda 放到哪里
+这不是啰嗦。
 
-lambda 的类型是匿名的。
+这是在告诉编译器：别猜了，我给你定死。
 
-所以你最常见的接法是 `auto`。
+### lambda 要放到哪里
+
+能用 `auto` 就用 `auto`。
+
+因为 lambda 的真实类型你写不出来。
 
 ```cpp
 auto pred = [](int x) { return x > 0; };
 ```
 
-但有时你需要把它存到容器里。
-
-或者做成接口返回。
-
-这时很多人会用 `std::function`。
+当你需要“统一类型”时，比如要把回调塞进容器，才会用 `std::function`。
 
 ```cpp
 #include <functional>
@@ -467,113 +533,70 @@ auto pred = [](int x) { return x > 0; };
 std::function<int(int)> f = [](int x) { return x + 1; };
 ```
 
-这能用。
+`std::function` 做的是类型擦除。
 
-代价也真实。
+“类型擦除”这四个字很吓人。
 
-`std::function` 是类型擦除。
+你可以把它理解成：把各种不同类型的可调用对象，装进同一个盒子里，对外只暴露一种调用方式。
 
-可能有一次堆分配。
+这条路在 Boost 时代就有人走过。
 
-也会引入间接调用。
+`std::function` 的祖先之一就是 `boost::function`。
 
-性能敏感路径上。
+它可能带来堆分配，也可能带来一次间接调用。
 
-你要心里有数。
-
-如果你在写模板库。
-
-更常见的做法是。
-
-让调用方把 lambda 作为模板参数传进来。
+写库时，若能让它走模板参数，通常更轻。
 
 ```cpp
 template <class F>
-int apply(F f, int x) {
-    return f(x);
-}
-
-int main() {
-    int v = apply([](int x) { return x + 1; }, 41);
-    (void)v;
-}
+int apply(F f, int x) { return f(x); }
 ```
 
-这样通常可以内联。
+这类写法更容易内联。
 
-也不会产生类型擦除的开销。
+也更接近“零成本抽象”的理想。
 
-### lambda 和线程：最容易踩的一个雷
+### 回到事故现场：怎么写才不炸
 
-你把 lambda 丢给线程。
+回到那个线程例子。
 
-最常见的坑是。
+你最稳的修法就是按值捕获。
 
-按引用捕获了一个局部变量。
-
-然后线程还没跑完。
-
-局部变量就没了。
+把你要用的东西，复制进闭包对象里。
 
 ```cpp
 #include <thread>
 
-std::thread spawn() {
-    int x = 42;
-    return std::thread([&]() {
-        (void)x;
-    });
+void spawn() {
+    int retry = 3;
+    std::thread([retry] { (void)retry; }).detach();
 }
 ```
 
-这段代码的危险点不在语法。
+现在 `retry` 的副本跟着线程函数一起活。
 
-在生命周期。
+`spawn()` 返回也没关系。
 
-最稳的办法。
+你不是在引用一个尸体。
 
-要么按值捕获。
-
-要么把需要的东西搬进线程对象里。
-
-你别让线程去借一个“马上要还的变量”。
+你是在用你自己口袋里的零钱。
 
 ### 小结
 
-lambda 不是为了炫技。
+lambda 的核心就两句话。
 
-它解决的，是“临时小逻辑到处放”的老毛病。
+它把临时逻辑贴回现场。
 
-它让使用点和逻辑点贴在一起。
+它把需要的上下文装进对象。
 
-读代码的人少搬家。
+真正的坑也就一件事。
 
-写代码的人少起名。
+你捕获的不是语法。
 
-但它也把一个更老的工程问题推到你面前。
+你捕获的是生命周期。
 
-生命周期。
+写得顺手的时候。
 
-你捕获什么。
+最好多看一眼 `[]`。
 
-捕获的是值还是引用。
-
-`this` 能不能安全带出去。
-
-这些问题。
-
-在没有 lambda 的年代也存在。
-
-只是那时你写得更啰嗦。
-
-所以更容易意识到“我在把东西带走”。
-
-到了 lambda。
-
-一切变顺手了。
-
-也就更容易顺手埋雷。
-
-写得爽。
-
-也得写得清醒。
+你到底带走了谁。
